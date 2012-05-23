@@ -11,7 +11,7 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'TYPO3 Installation and Upgrading',
+	'title' => 'TYPO3 Installation and Upgrade',
 	'description' => 'Very important document describing the filestructure of TYPO3 and taking you step by step through the installation. 
 Does not deal with specific servers/OSes - just general TYPO3 installation issues.',
 	'category' => 'doc',
@@ -22,11 +22,12 @@ Does not deal with specific servers/OSes - just general TYPO3 installation issue
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
+	'doNotLoadInFE' => 1,
 	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'modify_tables' => '',
-	'clearcacheonload' => 0,
+	'clearCacheOnLoad' => 0,
 	'lockType' => '',
 	'author' => 'Official Documentation',
 	'author_email' => 'documentation@typo3.org',
