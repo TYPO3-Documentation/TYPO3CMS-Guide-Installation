@@ -27,12 +27,13 @@ Does not deal with specific servers/OSes - just general TYPO3 installation issue
 	'modify_tables' => '',
 	'clearCacheOnLoad' => 0,
 	'lockType' => '',
-	'author' => 'Kasper SkÃ¥rhÃ¸j',
-	'author_email' => 'kasper@typo3.com',
+	'author' => 'Kasper Skårhøj, maintained by the DocTeam (Susanne Moog)',
+	'author_email' => 'typo3@susanne-moog.de',
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
-	'version' => '1.1.0',
+	'version' => '1.2.0',
+	'doNotLoadInFE' => 1,
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '3.5.0-0.0.0',
