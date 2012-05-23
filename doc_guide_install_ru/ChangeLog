@@ -1,0 +1,44 @@
+2011-09-02  Christopher  <chrissitopher@gmx.de>
+
+	* Update ext_emconf.php
+	* Release Russian version 2.0.2
+
+2011-09-02  Andrey Aksenov  <aksenovaa@bk.ru>
+
+	* Last updates before release
+
+2011-02-17  Andrey Aksenov  <aksenovaa@bk.ru>
+
+	* Translation to Russian based on the English version 2.0.2
+
+2011-02-06  Susanne Moog  <typo3@susanne-moog.de>
+
+	* Fixed bug #12719: Section "Upgrade" misses instructions for the Upgrade Wizard
+	* Fixed bug #12663: Correct meta data
+	* Release as version 2.0.2
+
+2011-02-02  Christopher  <chrissitopher@gmx.de>
+
+	* Fixed bug #12720: Rework the manual
+
+2011-01-30  Susanne Moog  <typo3@susanne-moog.de>
+
+	* Refreshed the manual: new key (doc_inst_upgr --> doc_guide_install)
+	* New screenshots [for TYPO3 v4.5]
+	* New texts [for TYPO3 v4.5]
+
+2010-01-19  Susanne Moog  <typo3@susanne-moog.de>
+
+	* Added new screenshots, fixed some typos, added some explanations for newer features such as "ENABLE_INSTALL_TOOL" file
+
+2009-01-04  Kasper Skårhøj  <kasper@typo3.com>
+
+	* Updated screenshots, added pdf-version, used new manual layout, adapted some chapters to reflect current TYPO3 structure
+
+2004-04-22  Kasper Skårhøj  <kasper@typo3.com>
+
+	* doc_inst_upgr uploaded to TER as version 1.0.0
+
+2003  Kasper Skårhøj  <kasper@typo3.com>
+
+	* Uploaded initial version 0.0.1 for TYPO3 3.5.0
