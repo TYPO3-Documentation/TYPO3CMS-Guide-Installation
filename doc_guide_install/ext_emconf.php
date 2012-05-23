@@ -1,13 +1,13 @@
 <?php
 
 ########################################################################
-# Extension Manager/Repository config file for ext "doc_inst_upgr".
+# Extension Manager/Repository config file for ext: "doc_inst_upgr"
 #
-# Auto generated 30-11-2002 17:37
+# Auto generated 01-12-2008 14:05
 #
 # Manual updates:
-# Only the data in the array - everything else is removed by next
-# writing. "version" and "dependencies" must not be touched!
+# Only the data in the array - anything else is removed by next write.
+# "version" and "dependencies" must not be touched!
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
@@ -29,10 +29,10 @@ Does not deal with specific servers/OSes - just general Typo3 installation issue
 	'lockType' => '',
 	'author' => 'Kasper Skårhøj',
 	'author_email' => 'kasper@typo3.com',
-	'author_company' => 'Curby Soft Multimedia',
+	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
-	'version' => '0.0.1',
+	'version' => '1.0.0',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '3.5.0-0.0.0',
@@ -43,7 +43,7 @@ Does not deal with specific servers/OSes - just general Typo3 installation issue
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:4:{s:12:"ext_icon.gif";s:4:"1bdc";s:14:"doc/manual.sxw";s:4:"ccfa";s:19:"doc/wizard_form.dat";s:4:"138d";s:20:"doc/wizard_form.html";s:4:"2841";}',
+	'_md5_values_when_last_written' => 'a:3:{s:12:"ext_icon.gif";s:4:"1bdc";s:12:"doc/TODO.txt";s:4:"fa11";s:14:"doc/manual.sxw";s:4:"87b6";}',
 );
 
 ?>

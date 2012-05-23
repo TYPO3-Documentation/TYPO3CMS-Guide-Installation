@@ -1,0 +1,3 @@
+- Document the moving of tslib/ to typo3/sysext/cms/
+- General review an cleanup of the images positioned inside. Maybe update of screenshots if needed.
+- Notice about: followSymlinks, document root/rewrite rules, index.php default document!
