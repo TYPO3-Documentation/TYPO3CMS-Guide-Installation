@@ -11,9 +11,9 @@
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'Typo3 Installation and Upgrading',
-	'description' => 'Very important document describing the filestructure of Typo3 and taking you step by step through the installation. 
-Does not deal with specific servers/OSes - just general Typo3 installation issues.',
+	'title' => 'TYPO3 Installation and Upgrading',
+	'description' => 'Very important document describing the filestructure of TYPO3 and taking you step by step through the installation. 
+Does not deal with specific servers/OSes - just general TYPO3 installation issues.',
 	'category' => 'doc',
 	'shy' => 0,
 	'dependencies' => '',
@@ -32,7 +32,7 @@ Does not deal with specific servers/OSes - just general Typo3 installation issue
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
-	'version' => '1.0.0',
+	'version' => '1.1.0',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '3.5.0-0.0.0',
