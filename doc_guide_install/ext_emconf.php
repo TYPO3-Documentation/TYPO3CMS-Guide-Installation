@@ -1,9 +1,9 @@
 <?php
 
 ########################################################################
-# Extension Manager/Repository config file for ext "doc_inst_upgr".
+# Extension Manager/Repository config file for ext "doc_guide_install".
 #
-# Auto generated 22-08-2011 16:50
+# Auto generated 30-01-2011 21:45
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -16,34 +16,34 @@ $EM_CONF[$_EXTKEY] = array(
 Does not deal with specific servers/OSes - just general TYPO3 installation issues.',
 	'category' => 'doc',
 	'shy' => 0,
-	'version' => '1.2.1',
+	'version' => '2.0.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
-	'state' => 'obsolete',
+	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'modify_tables' => '',
 	'clearcacheonload' => 0,
 	'lockType' => '',
-	'author' => 'Kasper SkÃ¥rhÃ¸j, maintained by the DocTeam (Susanne Moog)',
-	'author_email' => 'typo3@susanne-moog.de',
+	'author' => 'Documentation Team',
+	'author_email' => 'documentation@typo3.org',
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
 	'constraints' => array(
+		'0' => array(
+		),
 		'depends' => array(
-			'typo3' => '3.5.0-0.0.0',
-			'php' => '3.0.0-0.0.0',
 		),
 		'conflicts' => array(
 		),
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:4:{s:12:"ext_icon.gif";s:4:"b4e6";s:12:"doc/TODO.txt";s:4:"fa11";s:14:"doc/manual.pdf";s:4:"8178";s:14:"doc/manual.sxw";s:4:"2fe6";}',
+	'_md5_values_when_last_written' => 'a:6:{s:12:"ext_icon.gif";s:4:"b4e6";s:19:"doc/Unbenannt 1.odt";s:4:"517a";s:14:"doc/manual.odt";s:4:"2ce8";s:14:"doc/manual.pdf";s:4:"0384";s:14:"doc/manual.rtf";s:4:"4a91";s:14:"doc/manual.sxw";s:4:"f300";}',
 	'suggests' => array(
 	),
 );
