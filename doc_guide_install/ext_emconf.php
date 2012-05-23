@@ -1,13 +1,13 @@
 <?php
 
 ########################################################################
-# Extension Manager/Repository config file for ext: "doc_inst_upgr"
+# Extension Manager/Repository config file for ext "doc_inst_upgr".
 #
-# Auto generated 01-12-2008 14:05
+# Auto generated 22-08-2011 16:50
 #
 # Manual updates:
-# Only the data in the array - anything else is removed by next write.
-# "version" and "dependencies" must not be touched!
+# Only the data in the array - everything else is removed by next
+# writing. "version" and "dependencies" must not be touched!
 ########################################################################
 
 $EM_CONF[$_EXTKEY] = array(
@@ -16,24 +16,23 @@ $EM_CONF[$_EXTKEY] = array(
 Does not deal with specific servers/OSes - just general TYPO3 installation issues.',
 	'category' => 'doc',
 	'shy' => 0,
+	'version' => '1.2.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
-	'state' => 'stable',
+	'state' => 'obsolete',
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'modify_tables' => '',
-	'clearCacheOnLoad' => 0,
+	'clearcacheonload' => 0,
 	'lockType' => '',
-	'author' => 'Kasper Sk�rh�j, maintained by the DocTeam (Susanne Moog)',
+	'author' => 'Kasper SkÃ¥rhÃ¸j, maintained by the DocTeam (Susanne Moog)',
 	'author_email' => 'typo3@susanne-moog.de',
 	'author_company' => '',
 	'CGLcompliance' => '',
 	'CGLcompliance_note' => '',
-	'version' => '1.2.0',
-	'doNotLoadInFE' => 1,
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '3.5.0-0.0.0',
@@ -44,7 +43,9 @@ Does not deal with specific servers/OSes - just general TYPO3 installation issue
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:3:{s:12:"ext_icon.gif";s:4:"1bdc";s:12:"doc/TODO.txt";s:4:"fa11";s:14:"doc/manual.sxw";s:4:"87b6";}',
+	'_md5_values_when_last_written' => 'a:4:{s:12:"ext_icon.gif";s:4:"b4e6";s:12:"doc/TODO.txt";s:4:"fa11";s:14:"doc/manual.pdf";s:4:"8178";s:14:"doc/manual.sxw";s:4:"2fe6";}',
+	'suggests' => array(
+	),
 );
 
 ?>
