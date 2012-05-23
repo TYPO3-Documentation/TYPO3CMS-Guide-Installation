@@ -1,0 +1,263 @@
+﻿Installation and Upgrade of TYPO3
+Extension Key: doc_guide_install
+Language: en
+Version: 2.0.1
+Keywords: forAdmins, forBeginners
+Copyright 2000-2011, Documentation Team, <documentation@typo3.org>
+
+This document is published under the Open Content License
+available from http://www.opencontent.org/opl.shtml
+
+The content of this document is related to TYPO3 
+- a GNU/GPL CMS/Framework available from www.typo3.org
+
+
+
+
+
+
+Official documentation
+This document is included as part of the official TYPO3 documentation. It has been approved by the TYPO3 Documentation Team following a peer-review process. The reader should expect the information in this document to be accurate - please report discrepancies to the Documentation Team (documentation@typo3.org). Official documents are kept up-to-date to the best of the Documentation Team's abilities.
+
+Guide
+This document is a Guide. Guides are designed to familiarize a reader with a specific topic in order to provide a working knowledge of that particular process. Readers should peruse the guide from cover to cover in order to gain a practical overview of the process. Once completed, the Guide becomes a practical reference tool that a reader will refer to as needed. Guides offer advice on how best to achieve a given task.
+Table of Contents
+Installation and Upgrade of TYPO3	1
+Introduction	3
+About this document	3
+What's new	3
+Credits	3
+Feedback	3
+Installing TYPO3 – Quick Install	4
+1-2-3	4
+The Install Tool	4
+In-Depth Installation	10
+Which Package and which File Format?	10
+The Distributions in Detail	10
+Using the Source Distribution effectively	12
+The upgrade advantage	13
+The Install Tool	13
+Upgrade	15
+1: Backup	15
+2: Install the new Source	15
+3: Use the upgrade wizard	15
+4: Compare and Update the Database	15
+5: Install the new static Tables and Description Tables	17
+6: Clear Caches, temporary Files and User Settings	18
+7: Remove "temp_CACHED_" files	18
+8: Check the ChangeLog and NEWS.txt	19
+Trouble Shooting	20
+Cached Files in typo3conf/	20
+Possible Problems with the cached Files	20
+PHP Caches, Extension Classes etc.	20
+Changing Image processing Settings 	21
+
+
+Introduction
+About this document
+This manual should give you an introduction on how to install or upgrade your TYPO3 installation. It is meant for beginners with TYPO3 who will work as administrators for their projects.
+Hopefully this manual will help you. If you find errors, typos or just think there are things missing, please file a bug report at http://forge.typo3.org/projects/typo3v4-doc_guide_install/issues. Thank you!
+What's new
+Updated the manual to the new template and adapted the screenshots for TYPO3 version 4.5.
+Credits
+This manual was originally written by Kasper Skårhøj and is now kept up to date by the documentation team.
+Feedback
+For general questions about the documentation get in touch by writing to documentation@typo3.org.
+If you find a bug in this manual, please file an issue in this manual's bug tracker: http://forge.typo3.org/projects/typo3v4-doc_guide_install/issues
+Maintaining quality documentation is hard work and the Documentation Team is always looking for volunteers. If you feel like helping please join the documentation mailing list (typo3.projects.documentation on lists.typo3.org).
+
+Installing TYPO3 – Quick Install
+1-2-3
+1. Download the matching package for your requirements from http://typo3.org/download/packages/ (If you are not sure which package you should choose read the section "Which package and which file format" in the in-depth part of the manual).
+2. Upload the contents of this package to your webserver. 
+Tip
+The package contains thousands of files, so if you're able to unzip or untar the file on the server, better do that!
+3. Hit the site with your browser and follow the Install Tool (http://www.example.com/typo3/install/index.php?mode=123&step=1). 
+
+The Install Tool will help you to 
+1. setup MySQL username/password/database, 
+2. dump any default database content and 
+3. check the configuration of your PHP installation for compatibility. This is outlined below.
+4. After the Install Tool, you should seriously consider to protect the folder typo3/install/ with a password or simply delete the ENABLE_INSTALL_TOOL file. The file gets deleted automatically after one hour.
+The Install Tool
+The Install Tool is located in 'typo3/install/' and should automatically start in "1-2-3"-mode with password 'joh316', if you have not set up any database for the site. 
+In other words, this is what you should see:
+
+
+
+
+
+
+
+
+
+After you finished the basic installation procedure, TYPO3 basically is working. However, there still are options, which have not been configured yet. We therefore recommend to go to the install tool in normal mode to change the install tool password and to verify the details of your configuration. Click the "Configure TYPO3" link to do so. 
+You can find more information in the section "In-Depth Installation", subsection "The Install Tool" below. 
+In-Depth Installation
+Which Package and which File Format?
+TYPO3 is available in various "packages" and each package is available in different formats.
+Which Package to use
+You can download the Introduction package, the Source package and the Dummy package.
+An overview of all available packages and versions can be found at http://typo3.org/download/packages/
+Introduction package
+The introduction package is a complete demo website. It contains the contents of the Source package, the Dummy package and a lot of default content for testing and learning. Please try this, if you are a newbee!
+This is what the filenames of the Introduction package might be:
+introductionpackage-4.5.0.zip
+introductionpackage-4.5.0.tar.gz
+TYPO3 Source
+This contains the source files of the TYPO3 CMS. They are mandatory in all TYPO3 systems. Nothing is changed in these folders when you run TYPO3. When you do an update, these folders must be replaced. 
+TYPO3 Dummy
+This is a skeleton for a new TYPO3 website. The contents of these folders are modified when you run TYPO3. They will later contain the files which are in that way only needed in your installation, e.g. configuration files and images or documents which you present the visitors of your website. 
+Recommendation
+For every website made with TYPO3 you will need both the Dummy and the Source package. 
+For testing and learning we recommend you to use the introduction package. 
+For building your own website from scratch, use the dummy and source package. In contrast to using the Introduction package, you will get a completely empty installation of TYPO3 then. 
+Which File Format to use
+Each package is normally available as a .zip or .tar.gz distribution. The main difference is that the .tar.gz distribution contains symlinks: The .tar.gz distribution of the Dummy package contains symlinks to link to the Source package. 
+If you use a Windows server, you should use the .zip distribution, because symlinks are not easy to use on Windows. 
+If you run TYPO3 on a Unix server, you can use both packages. Using the .tar.gz distribution with symlinks generally is recommended, as it e.g. makes updating easier. Use this only if you know how symlinks work.
+The Distributions in Detail
+The .zip distribution
+These are the contents of the introduction package .zip-file:
+
+The .tar.gz distribution
+The .tar.gz distribution is mainly targeted at Unix users as it contains relative symlinks. If you untar both the dummy and the source at the same level and leave the file names intact, you will automatically have correct symlinks.
+The contents of the folder in which you extracted the Dummy package might then be called something like "dummy-4.5.0" and the contents might look like this: 
+The main point is - compared to the .zip distribution - that the source directory only needs to be stored in the file-structure of the Unix server only once. Then every website using the same TYPO3 version can use symlinks to the proper folders of the source. Thus you save space, because you avoid redundant files and get easy maintenance, e.g. when you want to do an upgrade. 
+TYPO3 Folders and Documents
+The following files and folders are part of the TYPO3 Source package.
+t3lib/ and typo3/ contain the TYPO3 source code, files, images and scripts distributed with TYPO3. 
+index.php is the main script for the website frontend (same as typo3/sysext/cms/tslib/index_ts.php).
+clear.gif is a 1x1 clear-pixel gif-file. Used in many places.
+NEWS.txt describes what has changed in the TYPO3 Source since the last major version. Read this carefully if you are going to update your system.
+INSTALL.txt contains a short installation how-to.
+All these files are a part of the TYPO3 Core. You should never change them and you can write protect them, if you like! They are the ones you must upgrade when you install a new version of TYPO3.
+Site specific Folders and Documents
+The following files and folders are part of the TYPO3 Dummy package.
+fileadmin/ contains files of your choice, local to the website. You can e.g. put templates, user uploads, external scripts, external html and images here. Also used by default to store uploaded files. Must be writable for the webserver user.
+typo3temp/ should be empty from the beginning. But gradually temporary files will appear here. The directory must be writable.
+uploads/ contains folders used to store documents attached to database records - hence they should be writable!
+typo3conf/ contains configuration for the local site.
+_.htaccess contains configuration for Apache webservers, which can improve performance. It is not used by default.
+typo3conf/localconf.php is the main configuration file of your installation and the one all the install tool options get written to. It therefore has to be writable.
+Custom folders?
+Yes, just add whatever you like. Why not?
+Using the Source Distribution effectively
+The .tar.gz distribution of the Source has an advantage over the .zip distribution: It provides a minimum of space usage and maintenance, if used intelligently. This is our suggestion:
+1. Extract the .tar.gz file somewhere on your server.
+2. From the directory holding the root-directory of your website, create a symlink to the source folder. Call this symlink 'typo3_src':
+3. Afterwards create links to the index.php file and the t3lib/ and typo3/ folder as shown. Note that those just link to the typo3_src link created before. (In most Dummy packages currently available these symlinks are already included by default, so you just have to create/change the typo3_src link to point to your source directory, if needed.)
+The upgrade advantage
+The advantages of this approach apparently is that when you wish to upgrade to a new TYPO3 version, you simply change one symlink and every distributed TYPO3 file is upgraded instantly!
+Remember the Install Tool!
+After switching the sources around you have to enter the Install Tool of every single site that is sharing the upgraded source and do any changes that are required in the database and clear the cache tables.
+The Install Tool
+To go on installing your new TYPO3 site, you can either use the 1-2-3 wizard as described in the "Quick Install" section or you can do it in more detail via the advanced mode of the install tool. This advanced installation is described here. 
+First go to your site and enter the install tool (http://www.example.com/typo3/install). 
+Basic Configuration
+The section basic configuration checks some prerequisites for installing TYPO3. 
+There is a check for necessary folders and their rights. If anything is wrong in this section, you have to add the folders and adjust the file permissions before you continue. 
+The next checks concern php.ini settings such as safe_mode, max_execution_time and so on. Again if something is wrong, fix it before going any further.
+One of the major features of TYPO3 is the ability to work with images (transform them, use layers, masks etc.). For that to work you need to have freetype, gdlib and ImageMagick or GraphicsMagick available. The next section checks for these. 
+Note
+If the text in the freetype text image exceeds the image borders, you are using Freetype 2 and need to set TYPO3_CONF_VARS[GFX][TTFdpi]=96. 
+Now in the next part you have to enter your database settings. Note that you have to save after entering your username and host. After the page has reloaded, you will get the database select box.
+Choose a site name for your new website. This will later be displayed in various places in the backend.
+Database Analyser
+In this section you can get an overview of the database which is currently selected compared with the needed tables and fields of a correctly installed TYPO3 version. You can also import SQL data directly into the database or upgrade tables from earlier versions of TYPO3.
+If you came here while installing your new web site, you have to click "COMPARE" and then check all changes. After that click "Write to database". This may take a little while. 
+Afterwards choose "IMPORT" to import static data. Static data are predefined data sets that can be used by TYPO3, for example languages, currencies or TYPO3 repository locations. If you don't know what you'll need just import all of them.
+If you did not use the 1-2-3 mode, you have to create an admin user via "Create admin user". 
+Note: Since TYPO3 4.1 InnoDB is used as database engine for several tables. This helps to prevent locks and increases performance. Also InnoDB is more crash-resistant compared to MyISAM. We recommend to review your MySQL configuration and to ensure that your table space has the "autoexpand" option enabled. See the MySQL manual for more information about configuring InnoDB. If you do not have InnoDB enabled, MySQL will use MyISAM automatically and you don't need to take any actions.
+Upgrade Wizard
+You don't need the upgrade wizard while installing TYPO3 for the first time. It will be explained in a later chapter about upgrading TYPO3. 
+Image Processing
+The section image processing contains an explanation of the image manipulation capabilities of TYPO3 and a test menu at the bottom. Try each test to see if you configured your image generation settings correctly. If you have problems, check the explanation of the test for a hint on how to solve them. Additionally have a look at the image processing settings in the section "All configuration". 
+You might also find help in the Trouble Shooting section below. 
+All Configuration
+Here you can configure all options concerning your TYPO3 installation. We suggest you go through the whole list and read the description of the settings carefully at least once, so you get an impression of what you can configure. Normally you can, but you don't have to change anything here while installing as the steps before already took care of the most important settings. 
+Clean Up
+You don't need this section while installing TYPO3. This section is meant to provide methods to clean up your TYPO3 installation after it is running for a while. 
+phpinfo()
+Here are some information about your installation, the full output of phpinfo() and some constants used by TYPO3 which can help a lot when finding and solving problems with your configuration.
+Edit files in typo3conf/
+Here you can edit the files in typo3conf/ directly, if you want to make some quick changes. You normally don't need this section either.
+About
+The "About" section describes each of the install tool sections and – more important – provides a possibility to change the install tool password which you should always do when installing TYPO3.
+Change the install tool password
+You should consider changing the install tool password as the very first thing you do when installing TYPO3. The default password is widely known and should never ever be in use on a live web server.
+Upgrade
+When a new version of TYPO3 arrives, you should always follow any additional upgrade information carefully. You might also need to skim the included ChangeLog to see if any features affect the way your site works. (Look for lines prepended with "!!!" - those are the really important ones!)
+Basically these steps are involved in updating your TYPO3 site:
+1: Backup
+Make a backup of both your folders and your database. Also you may prefer to upgrade a copy of your site first if there has been a lot of changes and some of them seems to interfere with your site. See the ChangeLog.
+2: Install the new Source
+Upgrade the distributed source files to the new version. 
+If you use the .tar.gz Distribution of the Source files: 
+Just extract the package on your web server and adjust the typo3_src symlink.
+If you use the .zip Distribution of the Source files: 
+Download the zip source package, extract it and copy (and overwrite) the contents coming from it in your TYPO3 root folder.
+3: Use the upgrade wizard
+Enter the Install Tool at '.../typo3/install/' on your TYPO3 site. 
+(If you have password/access problems, please see the section about the Install Tool in this document).
+TYPO3 provides an upgrade wizard for easy upgrading. Go to the “Upgrade Wizard” section and take a look at the different wizards provided. You should start by using the “Version Compatibility” wizard, which sets the compatibility version of your TYPO3 installation to the new version. Afterwards you will get redirected to the next wizard. Please note that some wizards provide optional features, like installing system extension (for example simulate static or open docs) that you may not need in your current installation, so take care to only use the wizards needed. 
+4: Compare and Update the Database
+Go to the section "Database Analyser". There you can check, if the database configuration is correct and correct it if needed. 
+
+Click "Compare". Now all ext_tables.sql files from core and extensions are read and compared to your current database tables and fields. Any discrepancies will be shown and you'll be able to execute queries sufficient to upgrade your database so it corresponds to the structure required for the new TYPO3 version.
+Caution
+Be aware if you have deliberately added fields and/or tables to your TYPO3 database for your own purposes! Those tables and fields are removed only if you mark them to be deleted of course, but please be alert that you don't overlook them!
+In the next step the changes you applied don't show up again. If you chose to delete some fields or tables, you will see that they have only been renamed. Now you can consider to let them be and delete them later when you're sure you're not going to need them. Or you can mark them again and drop them finally.
+If you made TYPO3 apply all changes, you should after clicking "Write to database" see a notice like this:
+
+5: Install the new static Tables and Description Tables
+The table 'static_template' (and some other "static_" tables) contains information that you should never alter yourself. These tables contain static information distributed with TYPO3 releases. Follow these steps to upgrade the tables with the newest information.
+Go to the section "Database Analyser".
+Then click "IMPORT" in the line "Dump static data":
+
+Then tick the check box "Import the whole file..." and click "Write to database":
+
+
+... and you should see this:
+
+6: Clear Caches, temporary Files and User Settings
+You should always clear the cache tables. Go to "Database Analyser" → "Clear tables" and select the tables beginning with "cache_". Then press "Write to database".
+After an upgrade to a new major version you should also delete the temporary files, which TYPO3 saves in typo3temp/. Go to "Clean up" to do so.
+You might also consider clearing the backend user preferences. This can avoid problems, if something in the upgrade requires this. Go to "Database Analyser" → "Reset user preferences" and write to database.
+7: Remove "temp_CACHED_" files
+In typo3conf/ you will most likely find cached files of ext_localconf.php and ext_tables.php files. These must be removed as well. 
+All files in typo3conf/ directory which are named "temp_CACHED_*_ext_localconf.php" or "temp_CACHED_*_ext_tables.php" should be removed!
+An easy way to clear these files is pressing the link which you find at the top right side of the backend when you are logged in as an admin user. Open the "Clear cache" menu and click "Clear configuration cache":
+
+However, only two "temp_CACHED_" files in typo3conf/ will be removed by this method. If you see more than two of these, you have to remove the rest either manually or with the "extdeveval" extension!
+8: Check the ChangeLog and NEWS.txt
+Look through the ChangeLog and the NEWS.txt file in your TYPO3 root folder. It is a good place to get an idea about new functions you might need or be interested in.
+Especially pay attention to the lines starting with "!!!". They are important, because they are about changes that may affect the operation of some websites.
+Trouble Shooting
+Cached Files in typo3conf/
+Generally you should know that TYPO3 generates temporary "cached" scripts in typo3conf/. Those look like these:
+-rw-r--r--   1 www-data   www-data   61555  2011-01-11 16:28   temp_CACHED_ps3f58_ext_localconf.php
+-rw-r--r--   1 www-data   www-data   81995  2011-01-11 16:28   temp_CACHED_ps3f58_ext_tables.php
+-rw-r--r--   1 www-data   www-data   47098  2011-01-11 16:28   temp_CACHED_FE_ps3f58_ext_localconf.php
+-rw-r--r--   1 www-data   www-data   45517  2011-01-11 16:28   temp_CACHED_FE_ps3f58_ext_tables.php
+
+You can experience more than these files. In that case it will be because of multiple paths, symlinks or just old files. 
+You can remove these files at any time; they will be re-written on the next hit to the system. These files simply contain all ext_tables.php and ext_localconf.php files from the installed extensions concatenated in the order they are loaded. Therefore including one of these files would be the same as including potentially hundred PHP-files and that saves some milliseconds for the system.
+The "temp_CACHED_FE" files have been introduced in TYPO3 v4.3. They contain only the ext_tables.php and ext_localconf.php files of those extensions which are needed to render frontend output. Since these files are smaller than the temp_CACHED files with the configuration of all extensions, this should save some additional milliseconds. 
+Concerning these files you have to consider the following:
+a) Making changes to these files does not make sense, because they can be removed and recreated from the "originals" at anytime. You should instead change the "originals".
+b) If you make changes to the original "ext_tables.php" or "ext_localconf.php" files, you will have to clear the cached files away for your changes to take effect!
+Possible Problems with the cached Files
+Changing absolute paths to TYPO3
+If you change the path of the TYPO3 installation, you might get a lot of errors like "Failed opening …" or "Unable to access ...". The problem is that absolute file paths are hard coded inside the cached files.
+Fix: Manually remove the temp_CACHED_*.php files via FTP or via the file system. Then hit the page again.
+PHP Caches, Extension Classes etc.
+There are some situations, which can cause what looks like totally illogical problems after an upgrade:
+If extensions override classes in which functions have changed. 
+Solution: Try to disable all extensions and enable them one by one again until the error occurs again.
+If a PHP-cache somehow fails to re-cache scripts, in particular if a change happened to a parent class overridden by a child class which was not updated. 
+Solution: Remove ALL cached PHP files (for PHP-Accelerator, remove "/tmp/phpa_*") and restart Apache.
+
+Changing Image processing Settings 
+When you change the settings for Image Processing (in normal mode), you must take into account that old images may still be in the typo3temp/ folder and that they prevent new files from being generated! This is especially important to know, if you are trying to set up image processing for the very first time.
+The problem is solved by clearing the files in the typo3temp/ folder. Also make sure to clear the database table "cache_pages". 

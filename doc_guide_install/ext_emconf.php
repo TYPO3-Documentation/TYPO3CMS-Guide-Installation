@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "doc_guide_install".
 #
-# Auto generated 30-01-2011 21:45
+# Auto generated 06-02-2011 14:27
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -16,7 +16,7 @@ $EM_CONF[$_EXTKEY] = array(
 Does not deal with specific servers/OSes - just general TYPO3 installation issues.',
 	'category' => 'doc',
 	'shy' => 0,
-	'version' => '2.0.0',
+	'version' => '2.0.2',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -28,7 +28,7 @@ Does not deal with specific servers/OSes - just general TYPO3 installation issue
 	'modify_tables' => '',
 	'clearcacheonload' => 0,
 	'lockType' => '',
-	'author' => 'Documentation Team',
+	'author' => 'Official Documentation',
 	'author_email' => 'documentation@typo3.org',
 	'author_company' => '',
 	'CGLcompliance' => '',
@@ -43,7 +43,7 @@ Does not deal with specific servers/OSes - just general TYPO3 installation issue
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:6:{s:12:"ext_icon.gif";s:4:"b4e6";s:19:"doc/Unbenannt 1.odt";s:4:"517a";s:14:"doc/manual.odt";s:4:"2ce8";s:14:"doc/manual.pdf";s:4:"0384";s:14:"doc/manual.rtf";s:4:"4a91";s:14:"doc/manual.sxw";s:4:"f300";}',
+	'_md5_values_when_last_written' => 'a:6:{s:9:"ChangeLog";s:4:"e9ac";s:12:"ext_icon.gif";s:4:"7277";s:14:"doc/manual.odt";s:4:"3e17";s:14:"doc/manual.pdf";s:4:"56ef";s:14:"doc/manual.sxw";s:4:"f34e";s:14:"doc/manual.txt";s:4:"8502";}',
 	'suggests' => array(
 	),
 );
