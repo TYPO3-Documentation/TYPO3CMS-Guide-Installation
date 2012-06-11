@@ -1,0 +1,7 @@
+﻿.. |img-14|     image:: ../../Images/manual_html_2575b188.png
+   :height: 296
+   :width: 631
+.. :align: right
+.. :border: 0
+.. :name: Grafik20
+
