@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 The Distributions in Detail
@@ -24,7 +16,7 @@ The .zip distribution
 
 These are the contents of the introduction package .zip-file:
 
-|img-9| 
+|img-9|
 The .tar.gz distribution
 """"""""""""""""""""""""
 

@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 The Install Tool
@@ -151,7 +143,7 @@ About
 
 The "About" section describes each of the install tool sections and –
 more important – provides a possibility to change the install tool
-password which you should :underline:`always` do when installing
+password which you should *always* do when installing
 TYPO3.
 
 |img-13| **Change the install tool password**

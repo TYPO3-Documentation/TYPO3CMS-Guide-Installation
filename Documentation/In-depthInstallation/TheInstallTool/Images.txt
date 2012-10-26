@@ -1,13 +1,13 @@
 ﻿.. |img-12|     image:: ../../Images/manual_html_f1a6686.png
-   :height: 28
-   :width: 28
+.. :height: 28
+.. :width: 28
 .. :align: left
 .. :border: 0
 .. :name: Grafik10
 
 .. |img-13|     image:: ../../Images/manual_html_3cd9b3b7.png
-   :height: 28
-   :width: 28
+.. :height: 28
+.. :width: 28
 .. :align: left
 .. :border: 0
 .. :name: Grafik11

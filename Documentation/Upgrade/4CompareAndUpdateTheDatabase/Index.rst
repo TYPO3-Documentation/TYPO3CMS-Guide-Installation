@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 4: Compare and Update the Database
@@ -43,7 +35,7 @@ them again and drop them finally.
 If you made TYPO3 apply all changes, you should after clicking "Write
 to database" see a notice like this:
 
-|img-16| 
+|img-16|
 5: Install the new static Tables and Description Tables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -61,7 +53,7 @@ database":
 
 |img-18| ... and you should see this:
 
-|img-19| 
+|img-19|
 6: Clear Caches, temporary Files and User Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

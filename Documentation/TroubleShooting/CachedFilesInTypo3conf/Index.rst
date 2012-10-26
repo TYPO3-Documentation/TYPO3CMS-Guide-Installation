@@ -1,27 +1,16 @@
-﻿
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
 
 
 Cached Files in typo3conf/
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Generally you should know that TYPO3 generates temporary "cached"
-scripts in typo3conf/. Those look like these:
-
-::
+scripts in typo3conf/. Those look like these::
 
    -rw-r--r--   1 www-data   www-data   61555  2011-01-11 16:28   temp_CACHED_ps3f58_ext_localconf.php
    -rw-r--r--   1 www-data   www-data   81995  2011-01-11 16:28   temp_CACHED_ps3f58_ext_tables.php

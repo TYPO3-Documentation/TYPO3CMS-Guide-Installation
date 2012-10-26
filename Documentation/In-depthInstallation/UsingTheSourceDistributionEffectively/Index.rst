@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 Using the Source Distribution effectively
@@ -26,7 +18,7 @@ used intelligently. This is our suggestion:
 
 #. From the directory holding the root-directory of your website, create
    a symlink to the source folder. Call this symlink 'typo3\_src':
-   
+
    |img-11|
 
 #. Afterwards create links to the index.php file and the t3lib/ and

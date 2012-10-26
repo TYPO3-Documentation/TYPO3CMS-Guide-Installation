@@ -1,18 +1,10 @@
-﻿.. include:: Images.txt
-
 .. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. ==================================================
-.. DEFINE SOME TEXTROLES
-.. --------------------------------------------------
-.. role::   underline
-.. role::   typoscript(code)
-.. role::   ts(typoscript)
-   :class:  typoscript
-.. role::   php(code)
+.. include:: ../../Includes.txt
+.. include:: Images.txt
 
 
 1-2-3
@@ -25,9 +17,9 @@
    file format" in the in-depth part of the manual).
 
 #. Upload the contents of this package to your webserver.
-   
+
    |img-3| **Tip**
-   
+
    The package contains thousands of files, so if you're able to unzip or
    untar the file on the server, better do that!
 
@@ -35,11 +27,11 @@
    `http://www.example.com/typo3/install/index.php?mode=123&step=1
    <http://www.example.com/typo3/install/index.php?mode=123&step=1>`_
    ).The Install Tool will help you to
-   
+
    #. setup MySQL username/password/database,
-   
+
    #. dump any default database content and
-   
+
    #. check the configuration of your PHP installation for compatibility.
       This is outlined below.
 
