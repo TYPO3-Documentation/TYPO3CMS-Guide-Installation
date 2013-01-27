@@ -7,6 +7,8 @@
 .. include:: Images.txt
 
 
+.. _start:
+
 =================================
 Installation and Upgrade of TYPO3
 =================================
