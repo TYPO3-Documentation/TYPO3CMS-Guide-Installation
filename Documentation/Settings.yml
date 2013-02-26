@@ -1,9 +1,8 @@
 # Settings.yml
-
 ---
 conf.py:
+  project: Installation and Upgrade Guide
   copyright: 2000-2013
-  project: Frontend Localization Guide
   version: 2.0.2
   release: 2.0.2
 ...

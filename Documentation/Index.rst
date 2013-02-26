@@ -9,9 +9,9 @@
 
 .. _start:
 
-=================================
-Installation and Upgrade of TYPO3
-=================================
+==============================
+Installation and Upgrade Guide
+==============================
 
 :Previous Key:
       doc_guide_install
@@ -29,7 +29,7 @@ Installation and Upgrade of TYPO3
       forAdmins, forBeginners
 
 :Copyright:
-      2000-2011
+      2000-2013
 
 :Author:
       Documentation Team
