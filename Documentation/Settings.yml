@@ -3,6 +3,6 @@
 conf.py:
   project: Installation and Upgrade Guide
   copyright: 2000-2013
-  version: 2.0.2
-  release: 2.0.2
+  version: 2.0.3
+  release: 2.0.3
 ...

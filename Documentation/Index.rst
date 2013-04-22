@@ -17,7 +17,7 @@ Installation and Upgrade Guide
       doc_guide_install
 
 :Version:
-      2.0.2
+      2.0.3
 
 :Language:
       en
