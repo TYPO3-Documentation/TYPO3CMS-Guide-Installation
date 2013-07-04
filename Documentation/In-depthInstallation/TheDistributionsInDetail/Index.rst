@@ -1,4 +1,4 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -7,9 +7,13 @@
 .. include:: Images.txt
 
 
+.. _the-distributions-in-detail:
+
 The Distributions in Detail
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+.. _the-zip-distribution:
 
 The .zip distribution
 """""""""""""""""""""
@@ -37,6 +41,8 @@ space, because you avoid redundant files and get easy maintenance,
 e.g. when you want to do an upgrade.
 
 
+.. _typo3-folders-and-documents:
+
 TYPO3 Folders and Documents
 """""""""""""""""""""""""""
 
@@ -60,6 +66,8 @@ All these files are a part of the TYPO3 Core. You should never change
 them and you can write protect them, if you like! They are the ones
 you must upgrade when you install a new version of TYPO3.
 
+
+.. _site-specific-folders-and-documents:
 
 Site specific Folders and Documents
 """""""""""""""""""""""""""""""""""
@@ -86,6 +94,8 @@ can improve performance. It is not used by default.
 installation and the one all the install tool options get written to.
 It therefore has to be writable.
 
+
+.. _custom-folders:
 
 Custom folders?
 """""""""""""""

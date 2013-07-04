@@ -1,10 +1,12 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../Includes.txt
 
+
+.. _installing-typo3-quick-install:
 
 Installing TYPO3 – Quick Install
 --------------------------------

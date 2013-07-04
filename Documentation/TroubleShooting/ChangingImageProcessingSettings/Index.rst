@@ -1,10 +1,12 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
 
+
+.. _changing-image-processing-settings:
 
 Changing Image processing Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

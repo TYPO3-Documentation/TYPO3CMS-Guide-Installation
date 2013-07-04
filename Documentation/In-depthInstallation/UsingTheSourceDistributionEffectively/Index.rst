@@ -1,4 +1,4 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 .. include:: Images.txt
 
+
+.. _using-the-source-distribution-effectively:
 
 Using the Source Distribution effectively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -29,6 +31,8 @@ used intelligently. This is our suggestion:
    if needed.)
 
 
+.. _the-upgrade-advantage:
+
 The upgrade advantage
 """""""""""""""""""""
 
@@ -36,6 +40,8 @@ The advantages of this approach apparently is that when you wish to
 upgrade to a new TYPO3 version, you simply change one symlink and
 every distributed TYPO3 file is upgraded instantly!
 
+
+.. _remember-the-install-tool:
 
 Remember the Install Tool!
 """"""""""""""""""""""""""

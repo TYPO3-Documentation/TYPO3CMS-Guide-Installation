@@ -1,4 +1,4 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -6,12 +6,16 @@
 .. include:: ../../Includes.txt
 
 
+.. _which-package-and-which-file-format:
+
 Which Package and which File Format?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 TYPO3 is available in various "packages" and each package is available
 in different formats.
 
+
+.. _which-package-to-use:
 
 Which Package to use
 """"""""""""""""""""
@@ -23,6 +27,8 @@ An overview of all available packages and versions can be found at
 `http://typo3.org/download/packages/
 <http://typo3.org/download/packages/>`_
 
+
+.. _introduction-package:
 
 Introduction package
 ~~~~~~~~~~~~~~~~~~~~
@@ -39,6 +45,8 @@ This is what the filenames of the Introduction package might be:
 - introductionpackage-4.5.0.tar.gz
 
 
+.. _typo3-source:
+
 TYPO3 Source
 ~~~~~~~~~~~~
 
@@ -46,6 +54,8 @@ This contains the source files of the TYPO3 CMS. They are mandatory in
 all TYPO3 systems. Nothing is changed in these folders when you run
 TYPO3. When you do an update, these folders must be replaced.
 
+
+.. _typo3-dummy:
 
 TYPO3 Dummy
 ~~~~~~~~~~~
@@ -56,6 +66,8 @@ files which are in that way only needed in  *your* installation, e.g.
 configuration files and images or documents which you present the
 visitors of your website.
 
+
+.. _recommendation:
 
 Recommendation
 ~~~~~~~~~~~~~~
@@ -70,6 +82,8 @@ For building your own website from scratch, use the dummy and source
 package. In contrast to using the Introduction package, you will get a
 completely empty installation of TYPO3 then.
 
+
+.. _which-file-format-to-use:
 
 Which File Format to use
 """"""""""""""""""""""""

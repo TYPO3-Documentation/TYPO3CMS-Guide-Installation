@@ -1,4 +1,4 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -6,6 +6,8 @@
 .. include:: ../../Includes.txt
 .. include:: Images.txt
 
+
+.. _the-install-tool:
 
 The Install Tool
 ^^^^^^^^^^^^^^^^
@@ -19,6 +21,8 @@ First go to your site and enter the install tool (
 `http://www.example.com/typo3/install
 <http://www.example.com/typo3/install>`_ ).
 
+
+.. _basic-configuration:
 
 Basic Configuration
 """""""""""""""""""
@@ -53,6 +57,8 @@ Choose a site name for your new website. This will later be displayed
 in various places in the backend.
 
 
+.. _database-analyser:
+
 Database Analyser
 """""""""""""""""
 
@@ -84,12 +90,16 @@ enabled, MySQL will use MyISAM automatically and you don't need to
 take any actions.
 
 
+.. _upgrade-wizard:
+
 Upgrade Wizard
 """"""""""""""
 
 You don't need the upgrade wizard while installing TYPO3 for the first
 time. It will be explained in a later chapter about upgrading TYPO3.
 
+
+.. _image-processing:
 
 Image Processing
 """"""""""""""""
@@ -104,6 +114,8 @@ processing settings in the section "All configuration".
 You might also find help in the Trouble Shooting section below.
 
 
+.. _all-configuration:
+
 All Configuration
 """""""""""""""""
 
@@ -115,6 +127,8 @@ anything here while installing as the steps before already took care
 of the most important settings.
 
 
+.. _clean-up:
+
 Clean Up
 """"""""
 
@@ -122,6 +136,8 @@ You don't need this section while installing TYPO3. This section is
 meant to provide methods to clean up your TYPO3 installation after it
 is running for a while.
 
+
+.. _phpinfo:
 
 phpinfo()
 """""""""
@@ -131,12 +147,16 @@ phpinfo() and some constants used by TYPO3 which can help a lot when
 finding and solving problems with your configuration.
 
 
+.. _edit-files-in-typo3conf:
+
 Edit files in typo3conf/
 """"""""""""""""""""""""
 
 Here you can edit the files in typo3conf/ directly, if you want to
 make some quick changes. You normally don't need this section either.
 
+
+.. _about:
 
 About
 """""

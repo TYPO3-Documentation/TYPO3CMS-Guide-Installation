@@ -1,4 +1,4 @@
-.. ==================================================
+﻿.. ==================================================
 .. FOR YOUR INFORMATION
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
@@ -6,9 +6,13 @@
 .. include:: ../../Includes.txt
 
 
+.. _possible-problems-with-the-cached-files:
+
 Possible Problems with the cached Files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
+.. _changing-absolute-paths-to-typo3:
 
 Changing absolute paths to TYPO3
 """"""""""""""""""""""""""""""""
