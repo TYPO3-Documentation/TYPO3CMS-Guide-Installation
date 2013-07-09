@@ -18,8 +18,8 @@ Enter the Install Tool at '.../typo3/install/' on your TYPO3 site.
 the Install Tool in this document).
 
 |img-14| TYPO3 provides an upgrade wizard for easy upgrading. Go to the
-“Upgrade Wizard” section and take a look at the different wizards
-provided. You should start by using the “Version Compatibility”
+"Upgrade Wizard" section and take a look at the different wizards
+provided. You should start by using the "Version Compatibility"
 wizard, which sets the compatibility version of your TYPO3
 installation to the new version. Afterwards you will get redirected to
 the next wizard. Please note that some wizards provide optional
