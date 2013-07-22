@@ -17,8 +17,8 @@ Trouble Shooting
    :titlesonly:
    :glob:
 
-   CachedFilesInTypo3conf/Index
-   PossibleProblemsWithTheCachedFiles/Index
-   PhpCachesExtensionClassesEtc/Index
-   ChangingImageProcessingSettings/Index
+   CachedFiles/Index
+   ProblemsWithCachedFiles/Index
+   PhpCachesExtensionClasses/Index
+   ImageProcessing/Index
 

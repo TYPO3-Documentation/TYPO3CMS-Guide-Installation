@@ -38,36 +38,4 @@ If you made TYPO3 apply all changes, you should after clicking "Write
 to database" see a notice like this:
 
 |img-16|
-5: Install the new static Tables and Description Tables
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The table 'static\_template' (and some other "static\_" tables)
-contains information that you should never alter yourself. These
-tables contain static information distributed with TYPO3 releases.
-Follow these steps to upgrade the tables with the newest information.
-
-Go to the section " **Database Analyser** ".
-
-Then click " **IMPORT** " in the line " **Dump static data** ":
-
-|img-17| Then tick the check box "Import the whole file..." and click "Write to
-database":
-
-|img-18| ... and you should see this:
-
-|img-19|
-6: Clear Caches, temporary Files and User Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You should always clear the cache tables. Go to "Database Analyser" →
-"Clear tables" and select the tables beginning with "cache\_". Then
-press "Write to database".
-
-After an upgrade to a new major version you should also delete the
-temporary files, which TYPO3 saves in typo3temp/. Go to "Clean up" to
-do so.
-
-You might also consider clearing the backend user preferences. This
-can avoid problems, if something in the upgrade requires this. Go to
-"Database Analyser" → "Reset user preferences" and write to database.
 

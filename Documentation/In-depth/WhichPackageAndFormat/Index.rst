@@ -34,7 +34,7 @@ Introduction package
 ~~~~~~~~~~~~~~~~~~~~
 
 The introduction package is a complete demo website. It contains the
-contents of the Source package, the Dummy package anda lot of default
+contents of the Source package, the Dummy package and a lot of default
 content for testing and learning. Please try this, if you are a
 newbee!
 
@@ -62,7 +62,7 @@ TYPO3 Dummy
 
 This is a skeleton for a new TYPO3 website. The contents of these
 folders are modified when you run TYPO3. They will later contain the
-files which are in that way only needed in  *your* installation, e.g.
+files which are in that way only needed in *your* installation, e.g.
 configuration files and images or documents which you present the
 visitors of your website.
 

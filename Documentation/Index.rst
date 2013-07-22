@@ -78,8 +78,8 @@ given task.
    :glob:
 
    Introduction/Index
-   InstallingTypo3QuickInstall/Index
-   In-depthInstallation/Index
+   QuickInstall/Index
+   In-depth/Index
    Upgrade/Index
    TroubleShooting/Index
    Targets

@@ -17,8 +17,8 @@ In-Depth Installation
    :titlesonly:
    :glob:
 
-   WhichPackageAndWhichFileFormat/Index
+   WhichPackageAndFormat/Index
    TheDistributionsInDetail/Index
-   UsingTheSourceDistributionEffectively/Index
+   DistributeEffectively/Index
    TheInstallTool/Index
 

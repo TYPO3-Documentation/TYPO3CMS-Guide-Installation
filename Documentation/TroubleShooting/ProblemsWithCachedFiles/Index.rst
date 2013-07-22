@@ -18,7 +18,7 @@ Changing absolute paths to TYPO3
 """"""""""""""""""""""""""""""""
 
 If you change the path of the TYPO3 installation, you might get a lot
-of errors like "Failed opening …" or "Unable to access ...". The
+of errors like "Failed opening ..." or "Unable to access ...". The
 problem is that absolute file paths are hard coded inside the cached
 files.
 
