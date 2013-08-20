@@ -17,6 +17,7 @@ In-Depth Installation
    :titlesonly:
    :glob:
 
+   SystemRequirements/Index
    WhichPackageAndFormat/Index
    TheDistributionsInDetail/Index
    DistributeEffectively/Index
