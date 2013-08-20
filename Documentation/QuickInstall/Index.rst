@@ -6,10 +6,10 @@
 .. include:: ../Includes.txt
 
 
-.. _installing-typo3-quick-install:
+.. _quick-installation:
 
-Installing TYPO3 – Quick Install
---------------------------------
+Quick Installation
+------------------
 
 
 .. toctree::

@@ -13,8 +13,8 @@
 ^^^^^
 
 #. Download the matching package for your requirements from
-   `http://typo3.org/download/packages/
-   <http://typo3.org/download/packages/>`_ (If you are not sure which
+   `http://typo3.org/download/
+   <http://typo3.org/download/>`_ (If you are not sure which
    package you should choose read the section "Which package and which
    file format" in the in-depth part of the manual).
 

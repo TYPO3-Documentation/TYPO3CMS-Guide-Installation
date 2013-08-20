@@ -24,8 +24,8 @@ You can download the Introduction package, the Source package and the
 Dummy package.
 
 An overview of all available packages and versions can be found at
-`http://typo3.org/download/packages/
-<http://typo3.org/download/packages/>`_
+`http://typo3.org/download/
+<http://typo3.org/download/>`_
 
 
 .. _introduction-package:
@@ -50,9 +50,9 @@ This is what the filenames of the Introduction package might be:
 TYPO3 Source
 ~~~~~~~~~~~~
 
-This contains the source files of the TYPO3 CMS. They are mandatory in
-all TYPO3 systems. Nothing is changed in these folders when you run
-TYPO3. When you do an update, these folders must be replaced.
+This contains the source files of TYPO3 CMS. They are mandatory in all
+TYPO3 systems. Nothing is changed in these folders when you run TYPO3.
+When you do an update, these folders must be replaced.
 
 
 .. _typo3-dummy:

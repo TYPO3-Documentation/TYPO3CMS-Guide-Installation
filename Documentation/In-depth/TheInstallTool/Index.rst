@@ -7,7 +7,7 @@
 .. include:: Images.txt
 
 
-.. _the-install-tool:
+.. _the-install-tool-in-depth:
 
 The Install Tool
 ^^^^^^^^^^^^^^^^

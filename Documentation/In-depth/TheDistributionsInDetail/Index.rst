@@ -21,6 +21,9 @@ The .zip distribution
 These are the contents of the introduction package .zip-file:
 
 |img-9|
+
+.. _the-targz-distribution:
+
 The .tar.gz distribution
 """"""""""""""""""""""""
 
