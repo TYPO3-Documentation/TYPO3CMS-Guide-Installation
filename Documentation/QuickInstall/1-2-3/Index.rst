@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _1-2-3:
@@ -20,7 +19,10 @@
 
 #. Upload the contents of this package to your webserver.
 
-   |img-3| **Tip**
+   .. figure:: ../../Images/icon_info.png
+      :alt: Information
+
+    **Tip**
 
    The package contains thousands of files, so if you're able to unzip or
    untar the file on the server (instead of on your local PC), better do

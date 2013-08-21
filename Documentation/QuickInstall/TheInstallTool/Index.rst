@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _the-install-tool:
@@ -18,16 +17,31 @@ have not set up any database for the site.
 
 In other words, this is what you should see:
 
-|img-4|  *Click "Continue".*
+.. figure:: ../../Images/Quick-1-2-3-Start.png
+   :alt: Install Tool in 1-2-3 mode.
 
-|img-5|  *Enter your database credentials.*
+*Click "Continue".*
 
-|img-6|  *Create a new database for TYPO3 or use an existing empty
+.. figure:: ../../Images/Quick-1-2-3-First-Step.png
+   :alt: Install Tool in 1-2-3 mode, first step.
+
+*Enter your database credentials.*
+
+.. figure:: ../../Images/Quick-1-2-3-Second-Step.png
+   :alt: Install Tool in 1-2-3 mode, second step.
+
+*Create a new database for TYPO3 or use an existing empty
 database.*
 
-|img-7|  *Import the default database tables.*
+.. figure:: ../../Images/Quick-1-2-3-Third-Step.png
+   :alt: Install Tool in 1-2-3 mode, third step.
 
-|img-8|  *The basic installation is now complete.*
+*Import the default database tables.*
+
+.. figure:: ../../Images/Quick-1-2-3-Finished.png
+   :alt: Install Tool in 1-2-3 mode, installation finished.
+
+*The basic installation is now complete.*
 
 After you finished the basic installation procedure, TYPO3 basically
 is working. However, there still are options, which have not been

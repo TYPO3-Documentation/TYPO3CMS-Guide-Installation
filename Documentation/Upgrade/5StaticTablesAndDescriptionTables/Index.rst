@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _5-install-the-new-static-tables-and-description-tables:
@@ -17,14 +16,21 @@ contain information that you should never alter yourself. These
 tables contain static information distributed with TYPO3 releases.
 Follow these steps to upgrade the tables with the newest information.
 
-Go to the section " **Database Analyser** ".
+Go to the section "**Database Analyser**".
 
-Then click " **IMPORT** " in the line " **Dump static data** ":
+Then click "**IMPORT**" in the line "**Dump static data**":
 
-|img-17| Then tick the check box "Import the whole file..." and click "Write to
+.. figure:: ../../Images/Database-Analyser-Static-Data.png
+   :alt: The Database Analyser: Import static data.
+
+Then tick the check box "Import the whole file..." and click "Write to
 database":
 
-|img-18| ... and you should see this:
+.. figure:: ../../Images/Database-Analyser-Static-Data-Import.png
+   :alt: The Database Analyser after clicking "Import the whole file".
 
-|img-19|
+... and you should see this:
+
+.. figure:: ../../Images/Database-Analyser-Static-Data-Import-Finished.png
+   :alt: The Database Analyser after import.
 

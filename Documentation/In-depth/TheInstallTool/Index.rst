@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _the-install-tool-in-depth:
@@ -43,7 +42,10 @@ One of the major features of TYPO3 is the ability to work with images
 have freetype, gdlib and ImageMagick or GraphicsMagick available. The
 next section checks for these.
 
-|img-12| **Note**
+.. figure:: ../../Images/icon_note.png
+   :alt: Note
+
+**Note**
 
 If the text in the freetype text image exceeds the image borders, you
 are using Freetype 2 and need to set
@@ -166,7 +168,10 @@ more important – provides a possibility to change the install tool
 password which you should *always* do when installing
 TYPO3.
 
-|img-13| **Change the install tool password**
+.. figure:: ../../Images/icon_warning.png
+   :alt: Warning!
+
+**Change the install tool password**
 
 You should consider changing the install tool password as the very
 first thing you do when installing TYPO3. The default password is

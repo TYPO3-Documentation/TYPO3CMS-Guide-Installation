@@ -1,6 +1,0 @@
-﻿.. |img-20|     image:: ../../Images/manual_html_m8b2fac5.png
-.. :height: 119
-.. :width: 184
-.. :align: left
-.. :border: 0
-.. :name: Grafik18

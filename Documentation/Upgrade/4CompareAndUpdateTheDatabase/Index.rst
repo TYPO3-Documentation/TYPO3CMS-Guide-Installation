@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _4-compare-and-update-the-database:
@@ -15,13 +14,19 @@
 Go to the section "Database Analyser". There you can check, if the
 database configuration is correct and correct it if needed.
 
-|img-15| Click "Compare". Now all ext\_tables.sql files from core and
+.. figure:: ../../Images/Database-Analyser.png
+   :alt: The Database Analyser in the Install Tool.
+
+Click "Compare". Now all ext\_tables.sql files from core and
 extensions are read and compared to your current database tables and
 fields. Any discrepancies will be shown and you'll be able to execute
 queries sufficient to upgrade your database so it corresponds to the
 structure required for the new TYPO3 version.
 
-|img-13| **Caution**
+.. figure:: ../../Images/icon_warning.png
+   :alt: Warning!
+
+**Caution**
 
 Be aware if you have deliberately added fields and/or tables to your
 TYPO3 database for your own purposes! Those tables and fields are
@@ -37,5 +42,7 @@ them again and drop them finally.
 If you made TYPO3 apply all changes, you should after clicking "Write
 to database" see a notice like this:
 
-|img-16|
+.. figure:: ../../Images/Database-Analyser-Finished.png
+   :alt: The Database Analyser after successfully updating all table
+         and field definitions.
 

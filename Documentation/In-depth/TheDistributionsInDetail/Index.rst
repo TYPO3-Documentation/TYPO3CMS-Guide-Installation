@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _the-distributions-in-detail:
@@ -20,7 +19,8 @@ The .zip distribution
 
 These are the contents of the introduction package .zip-file:
 
-|img-9|
+.. figure:: ../../Images/Zip-Distribution.png
+   :alt: Files and folders of the .zip-file.
 
 .. _the-targz-distribution:
 
@@ -36,7 +36,10 @@ The contents of the folder in which you extracted the Dummy package
 might then be called something like "dummy-4.5.0" and the contents
 might look like this:
 
-|img-10| The main point is - compared to the .zip distribution - that the
+.. figure:: ../../Images/Tar.gz-Distribution.png
+   :alt: Files and folders of the .tar.gz-file.
+
+The main point is - compared to the .zip distribution - that the
 source directory only needs to be stored in the file-structure of the
 Unix server only once. Then every website using the same TYPO3 version
 can use symlinks to the proper folders of the source. Thus you save

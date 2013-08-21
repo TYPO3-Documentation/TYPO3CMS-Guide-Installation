@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _7-remove-temp-cached-files:
@@ -25,7 +24,10 @@ at the top right side of the backend when you are logged in as an
 admin user. Open the "Clear cache" menu and click "Clear configuration
 cache":
 
-|img-20| However, only two "temp\_CACHED\_" files in typo3conf/ will be removed
+.. figure:: ../../Images/Clear-Configuration-Cache.png
+   :alt: The option "Clear configuration cache" in the Backend.
+
+However, only two "temp\_CACHED\_" files in typo3conf/ will be removed
 by this method. If you see more than two of these, you have to remove
 the rest either manually or with the "extdeveval" extension!
 

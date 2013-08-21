@@ -4,7 +4,6 @@
 .. -*- coding: utf-8 -*- with BOM.
 
 .. include:: ../../Includes.txt
-.. include:: Images.txt
 
 
 .. _using-the-source-distribution-effectively:
@@ -21,7 +20,8 @@ used intelligently. This is our suggestion:
 #. From the directory holding the root-directory of your website, create
    a symlink to the source folder. Call this symlink 'typo3\_src':
 
-   |img-11|
+   .. figure:: ../../Images/Extracted-TYPO3-Package.png
+      :alt: File and folder structure with symlink typo3_src.
 
 #. Afterwards create links to the index.php file and the t3lib/ and
    typo3/ folder as shown. Note that those just link to the typo3\_src
