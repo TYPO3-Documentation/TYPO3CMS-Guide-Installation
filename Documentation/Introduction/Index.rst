@@ -32,7 +32,7 @@ Thank you!
 What's new
 ^^^^^^^^^^
 
-Updated the manual for TYPO3 version 4.7.
+Updated the manual for TYPO3 version 6.0.
 
 
 .. _credits:
