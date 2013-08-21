@@ -22,4 +22,5 @@ In-Depth Installation
    TheDistributionsInDetail/Index
    DistributeEffectively/Index
    TheInstallTool/Index
+   TranslatingTheBackend/Index
 

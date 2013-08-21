@@ -20,7 +20,6 @@
 #. Upload the contents of this package to your webserver.
 
    .. figure:: ../../Images/icon_info.png
-      :alt: Information
 
     **Tip**
 
