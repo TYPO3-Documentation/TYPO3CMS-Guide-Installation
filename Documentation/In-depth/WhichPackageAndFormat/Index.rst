@@ -40,9 +40,9 @@ newbee!
 
 This is what the filenames of the introduction package might be:
 
-- introductionpackage-4.5.0.zip
+- introductionpackage-4.7.0.zip
 
-- introductionpackage-4.5.0.tar.gz
+- introductionpackage-4.7.0.tar.gz
 
 
 .. blank-package:

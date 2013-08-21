@@ -32,8 +32,7 @@ Thank you!
 What's new
 ^^^^^^^^^^
 
-Updated the manual to the new template and adapted the screenshots for
-TYPO3 version 4.5.
+Updated the manual for TYPO3 version 4.7.
 
 
 .. _credits:
