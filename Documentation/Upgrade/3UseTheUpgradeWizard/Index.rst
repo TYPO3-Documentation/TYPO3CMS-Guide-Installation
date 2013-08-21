@@ -23,7 +23,7 @@ provided. You should start by using the "Version Compatibility"
 wizard, which sets the compatibility version of your TYPO3
 installation to the new version. Afterwards you will get redirected to
 the next wizard. Please note that some wizards provide optional
-features, like installing system extension (for example simulate
+features, like installing system extensions (for example simulate
 static or open docs) that you may not need in your current
 installation, so take care to only use the wizards needed.
 
