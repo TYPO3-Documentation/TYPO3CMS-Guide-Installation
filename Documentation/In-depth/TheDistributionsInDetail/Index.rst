@@ -96,9 +96,14 @@ database records - hence they should be writable!
 **\_.htaccess** contains configuration for Apache webservers, which
 can improve performance. It is not used by default.
 
-**typo3conf/localconf.php** is the main configuration file of your
-installation and the one all the install tool options get written to.
-It therefore has to be writable.
+**typo3conf/LocalConfiguration.php** is the main configuration file of
+your installation and the one all the install tool options get written
+to. It therefore has to be writable.
+
+**typo3conf/AdditionalConfiguration.php** is an additional
+configuration file, which is executed on every request after
+LocalConfiguration.php has been loaded. It can be used to manipulate
+$GLOBALS['TYPO3_CONF_VARS'].
 
 
 .. _custom-folders:
