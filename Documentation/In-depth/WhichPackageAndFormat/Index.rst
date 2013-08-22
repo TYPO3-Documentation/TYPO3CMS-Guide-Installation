@@ -43,9 +43,9 @@ new to TYPO3!
 
 This is what the filenames of the introduction package might be:
 
-- introductionpackage-6.0.0.zip
+- introductionpackage-6.1.0.zip
 
-- introductionpackage-6.0.0.tar.gz
+- introductionpackage-6.1.0.tar.gz
 
 
 .. _government-package:
