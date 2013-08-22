@@ -20,24 +20,22 @@ download the translations and then select them for the Backend users.
 Download Translations for the Backend
 """""""""""""""""""""""""""""""""""""
 
-Go to the Extension Manager and choose "Translation handling".
+Go to the Backend module "Language".
 
-In the section "Translation Settings" select the language(s), which you
-want to have available for use in the Backend. Then hit "Save
-selection".
+In the section "Languages" select the language(s), which you want to
+have available for use in the Backend.
 
-Now you can click "Check status against repository". This will compare
-your translations with those from the Translation Server.
-
-After that click "Update from repository" to actually update the
-translations. This may take some time. Some extensions do not have
-translatable texts and so also do not have translations available. If
-for an extension you get an error message, wait until the update has
-finished and then press "Update from repository" again.
+After that click "Update from repository" to update the translations.
+This may take some time. Some extensions do not have translatable texts
+and so also do not have translations available. If for an extension you
+get an error message, wait until the update has finished and then press
+"Update from repository" again.
 
 When later you install new extensions you might see that those are
-displaying in English only. In that case you can repeat the steps above
-to get translations for those extensions as well.
+displaying in English only. In that case you can click on "Not checked"
+next to the according extension to only download the translation for
+*this one* extension. Alternatively you can repeat the steps above
+to get the newest translations for *all* extensions.
 
 
 .. _change-the-language-for-a-backend-user:
