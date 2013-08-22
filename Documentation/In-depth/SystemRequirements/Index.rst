@@ -26,3 +26,6 @@ GraphicsMagick or ImageMagick 6 or newer. A detailed list of these
 requirements is enclosed in the file INSTALL.txt inside each TYPO3
 package.
 
+Should you encounter problems, maybe the "Trouble Shooting" section at
+the end of this document helps you.
+

@@ -17,8 +17,8 @@ Trouble Shooting
    :titlesonly:
    :glob:
 
-   CachedFiles/Index
-   ProblemsWithCachedFiles/Index
-   PhpCachesExtensionClasses/Index
-   ImageProcessing/Index
+   Apache/Index
+   Php/Index
+   Mysql/Index
+   Typo3Specific/Index
 
