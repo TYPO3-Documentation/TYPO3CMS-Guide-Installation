@@ -31,7 +31,7 @@ Basically these steps are involved in updating your TYPO3 site:
    4CompareAndUpdateTheDatabase/Index
    5StaticTablesAndDescriptionTables/Index
    6ClearCachesTemporaryFilesAndUserSettings/Index
-   7RemoveTempCachedFiles/Index
+   7RemoveTemporaryCacheFiles/Index
    8ChangelogAndNewstxt/Index
    9UpdateExtensions/Index
 

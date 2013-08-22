@@ -12,18 +12,16 @@ TYPO3-specific
 ^^^^^^^^^^^^^^
 
 
-.. _cached-files-in-typo3conf:
+.. _cached-files-in-typo3temp:
 
-Cached Files in typo3conf/
+Cached Files in typo3temp/
 """"""""""""""""""""""""""
 
 Generally you should know that TYPO3 generates temporary "cached"
-scripts in typo3conf/. Those look like these::
+scripts in typo3temp/Cache/Code/cache_core/. Those look like these::
 
-   -rw-r--r--   1 www-data   www-data   61555  2013-08-22 16:28   temp_CACHED_ps3f58_ext_localconf.php
-   -rw-r--r--   1 www-data   www-data   81995  2013-08-22 16:28   temp_CACHED_ps3f58_ext_tables.php
-   -rw-r--r--   1 www-data   www-data   47098  2013-08-22 16:28   temp_CACHED_FE_ps3f58_ext_localconf.php
-   -rw-r--r--   1 www-data   www-data   45517  2013-08-22 16:28   temp_CACHED_FE_ps3f58_ext_tables.php
+   -rw-r--r--   1 www-data   www-data   61555  2013-08-22 16:28   ext_localconf_8b0519db6112697cceedb50296df89b0ce04ff70.php
+   -rw-r--r--   1 www-data   www-data   81995  2013-08-22 16:28   ext_tables_c3638687920118a92ab652cbf23a9ca69d4a6469.php
 
 You can experience more than these files. In that case it will be
 because of multiple paths, symlinks or just old files.
@@ -35,17 +33,10 @@ concatenated in the order they are loaded. Therefore including one of
 these files would be the same as including potentially hundred PHP-
 files and that saves some milliseconds for the system.
 
-The "temp\_CACHED\_FE" files have been introduced in TYPO3 v4.3. They
-contain only the ext\_tables.php and ext\_localconf.php files of
-*those* extensions which are needed to render frontend output. Since
-these files are smaller than the temp\_CACHED files with the
-configuration of  *all* extensions, this should save some additional
-milliseconds.
-
 Concerning these files you have to consider the following:
 
 a) Making changes to these files does not make sense, because they can
-be removed and recreated from the "originals" at anytime. You should
+be removed and recreated from the "originals" at any time. You should
 instead change the "originals".
 
 b) If you make changes to the original "ext\_tables.php" or
@@ -59,18 +50,19 @@ Possible Problems with the cached Files
 """""""""""""""""""""""""""""""""""""""
 
 
-.. _changing-absolute-paths-to-typo3:
+.. _changing-the-absolute-path-to-typo3:
 
 Changing the absolute path to TYPO3
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you change the path of the TYPO3 installation, you might get a lot
 of errors like "Failed opening ..." or "Unable to access ...". The
-problem is that absolute file paths are hard coded inside the cached
+problem is that absolute file paths are hard-coded inside the cached
 files.
 
-Fix: Manually remove the temp\_CACHED\_\*.php files via FTP or via the
-file system. Then hit the page again.
+Fix: Manually remove the temporary ext\_localconf\_*.php and
+ext\_tables\_*.php files via FTP or via the file system. Then hit the
+page again.
 
 
 .. _changing-image-processing-settings:
