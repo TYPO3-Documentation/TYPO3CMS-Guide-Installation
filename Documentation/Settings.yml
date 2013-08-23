@@ -3,6 +3,6 @@
 conf.py:
   project: Installation and Upgrade Guide
   copyright: 2000-2013
-  version: 6.1
-  release: 6.1
+  version: 6.2
+  release: 6.2
 ...

@@ -16,7 +16,7 @@ Installation and Upgrade Guide
       doc_guide_install
 
 :Version:
-      6.1
+      6.2
 
 :Language:
       en

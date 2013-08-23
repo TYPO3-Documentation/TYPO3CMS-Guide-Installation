@@ -33,7 +33,7 @@ at the same level and leave the file names intact, you will
 automatically have correct symlinks.
 
 The contents of the folder in which you extracted the Dummy package
-might then be called something like "dummy-6.1.0" and the contents
+might then be called something like "dummy-6.2.0" and the contents
 might look like this:
 
 .. figure:: ../../Images/Tar.gz-Distribution.png
