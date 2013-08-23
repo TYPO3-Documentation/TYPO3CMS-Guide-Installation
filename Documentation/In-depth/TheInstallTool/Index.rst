@@ -33,23 +33,10 @@ There is a check for necessary folders and their rights. If anything
 is wrong in this section, you have to add the folders and adjust the
 file permissions before you continue.
 
-The next checks concern php.ini settings such as safe\_mode,
-max\_execution\_time and so on. Again if something is wrong, fix it
-before going any further.
-
 One of the major features of TYPO3 is the ability to work with images
 (transform them, use layers, masks etc.). For that to work you need to
-have freetype, gdlib and ImageMagick or GraphicsMagick available. The
+have FreeType, gdlib and ImageMagick or GraphicsMagick available. The
 next section checks for these.
-
-.. figure:: ../../Images/icon_note.png
-   :alt: Note
-
-**Note**
-
-If the text in the freetype text image exceeds the image borders, you
-are using Freetype 2 and need to set
-TYPO3\_CONF\_VARS[GFX][TTFdpi]=96.
 
 Now in the next part you have to enter your database settings. Note
 that you have to save after entering your username and host. After the
@@ -57,6 +44,26 @@ page has reloaded, you will get the database select box.
 
 Choose a site name for your new website. This will later be displayed
 in various places in the backend.
+
+
+.. _system-environment:
+
+System Environment
+""""""""""""""""""
+
+In the section system environment TYPO3 will inform you about errors
+and warnings in your setup: Errors - displayed in red - point to an
+actual problem and *must* be fixed in order to allow TYPO3 to perform
+as expected. Warnings - displayed in yellow - point to a *potential*
+problem and *should* be fixed.
+
+These checks concern Apache settings and php.ini settings such as
+memory\_limit, max\_execution\_time and so on. Again if something is
+wrong, fix it before going any further.
+
+.. figure:: ../../Images/System-Environment.png
+   :alt: The section "System Environment" in the Install Tool showing
+         a warning.
 
 
 .. _database-analyser:
