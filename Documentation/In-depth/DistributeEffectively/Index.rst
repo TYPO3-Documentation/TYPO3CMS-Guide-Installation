@@ -23,12 +23,11 @@ used intelligently. This is our suggestion:
    .. figure:: ../../Images/Extracted-TYPO3-Package.png
       :alt: File and folder structure with symlink typo3_src.
 
-#. Afterwards create links to the index.php file and the t3lib/ and
-   typo3/ folder as shown. Note that those just link to the typo3\_src
-   link created before. (In most Dummy packages currently available these
-   symlinks are already included by default, so you just have to
-   create/change the typo3\_src link to point to your source directory,
-   if needed.)
+#. Afterwards create links to the index.php file and the typo3/ folder as
+   shown. Note that those just link to the typo3\_src link created
+   before. (In most Dummy packages currently available these symlinks are
+   already included by default, so you just have to create/change the
+   typo3\_src link to point to your source directory, if needed.)
 
 
 .. _the-upgrade-advantage:

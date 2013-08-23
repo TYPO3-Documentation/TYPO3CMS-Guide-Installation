@@ -54,8 +54,8 @@ TYPO3 Folders and Documents
 
 The following files and folders are part of the TYPO3 Source package.
 
-**t3lib/ and typo3/** contain the TYPO3 source code, files, images and
-scripts distributed with TYPO3.
+**typo3/** contains the TYPO3 source code, files, images and scripts
+distributed with TYPO3.
 
 **index.php** is the main script for the website Frontend.
 
