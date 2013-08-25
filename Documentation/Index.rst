@@ -22,7 +22,10 @@ Installation and Upgrade Guide
       en
 
 :Description:
-      Important document describing the file structure of TYPO3 and taking you step by step through the installation. Does not deal with specific servers/OSes - just general TYPO3 installation issues.
+      This document describes the file structure of TYPO3 and takes you
+      step by step through the installation. It does not focus on
+      specific operating systems, but contains some hints on general
+      TYPO3 installation issues with regards to Apache, PHP and MySQL.
 
 :Keywords:
       forAdmins, forBeginners

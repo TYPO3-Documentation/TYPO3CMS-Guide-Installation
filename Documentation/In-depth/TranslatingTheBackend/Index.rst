@@ -20,7 +20,7 @@ download the translations and then select them for the Backend users.
 Download Translations for the Backend
 """""""""""""""""""""""""""""""""""""
 
-Go to the Backend module "Language".
+Log in to the Backend and go to the Backend module "Language".
 
 In the section "Languages" select the language(s), which you want to
 have available for use in the Backend.

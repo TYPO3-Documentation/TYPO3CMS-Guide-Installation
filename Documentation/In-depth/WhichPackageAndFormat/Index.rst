@@ -20,15 +20,17 @@ in different formats.
 Which Package to use
 """"""""""""""""""""
 
-For installing TYPO3 you should download one of these packages: the
-introduction package, the government package or the blank package.
+For installing TYPO3 you should download one of these packages:
+
+* the introduction package,
+* the government package or
+* the blank package.
 
 Do *not* use the source package or the dummy package - they are not
 interesting for you now.
 
 An overview of all available packages and versions can be found at
-`http://typo3.org/download/
-<http://typo3.org/download/>`_
+`http://typo3.org/download/ <http://typo3.org/download/>`_
 
 
 .. _introduction-package:
@@ -133,16 +135,17 @@ you will get a completely empty installation of TYPO3 then.
 Which File Format to use
 """"""""""""""""""""""""
 
-Each package is normally available as a .zip or .tar.gz distribution.
+Each package is usually available as a .zip or .tar.gz distribution.
 The main difference is that the .tar.gz distribution contains
-symlinks: The .tar.gz distribution of the dummy package contains
-symlinks to link to the source package.
+symlinks: The .tar.gz distributions contain symlinks to link to the
+TYPO3 source.
 
 If you use a Windows server, you should use the .zip distribution,
 because symlinks are not easy to use on Windows.
 
-If you run TYPO3 on a Unix server, you can use both packages. Using
-the .tar.gz distribution with symlinks generally is recommended, as it
-e.g. makes updating easier. Use this only if you know how symlinks
-work.
+If you run TYPO3 on a Unix server, you can use both packages. If you
+know how symlinks work, you should use the .tar.gz distribution, as
+symlinks e.g. make updating easier.
 
+For more information on the different distributions see the section
+:ref:`the-distributions-in-detail`.

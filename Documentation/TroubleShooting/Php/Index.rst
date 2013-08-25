@@ -17,11 +17,11 @@ PHP
 Install Tool
 """"""""""""
 
-In the Install Tool the section "Basic Configuration" informs about
+In the Install Tool the section "System environment" informs about
 missing PHP modules and problematic settings.
 
 E.g. the PHP extensions openssl and fileinfo must be enabled. This can
-be done by adding (or uncommenting) the following lines to the [PHP]
+be done by adding (or uncommenting) the following lines in the [PHP]
 section in php.ini::
 
    extension=fileinfo.so

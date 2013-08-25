@@ -18,7 +18,12 @@ About this document
 
 This manual should give you an introduction on how to install or
 upgrade your TYPO3 installation. It is meant for beginners with TYPO3
-who will work as administrators for their projects.
+who will work as TYPO3 administrators for their projects.
+
+You *must* go through the steps in the section "Quick Installation" in
+order to get your TYPO3 installation up and running. During or after
+that you *can* go through the section "In-Depth Installation" to
+configure TYPO3 in more detail.
 
 Hopefully this manual will help you. If you find errors, typos or just
 think there are things missing, please file a bug report at

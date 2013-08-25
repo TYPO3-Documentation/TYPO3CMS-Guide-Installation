@@ -17,6 +17,6 @@ Quick Installation
    :titlesonly:
    :glob:
 
-   1-2-3/Index
+   GetAndUnpack/Index
    TheInstallTool/Index
 

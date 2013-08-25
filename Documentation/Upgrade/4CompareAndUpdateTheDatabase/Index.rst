@@ -17,21 +17,19 @@ database configuration is correct and correct it if needed.
 .. figure:: ../../Images/Database-Analyser.png
    :alt: The Database Analyser in the Install Tool.
 
-Click "Compare". Now all ext\_tables.sql files from core and
-extensions are read and compared to your current database tables and
-fields. Any discrepancies will be shown and you'll be able to execute
-queries sufficient to upgrade your database so it corresponds to the
-structure required for the new TYPO3 version.
+Next to "Update required tables" click "COMPARE". Now all
+ext\_tables.sql files from core and extensions are read and compared to
+your current database tables and fields. Any discrepancies will be
+shown and you'll be able to execute queries sufficient to upgrade your
+database so that it corresponds to the structure required for the new
+TYPO3 version.
 
-.. figure:: ../../Images/icon_warning.png
-   :alt: Warning!
+.. warning::
 
-**Caution**
-
-Be aware if you have deliberately added fields and/or tables to your
-TYPO3 database for your own purposes! Those tables and fields are
-removed only if you mark them to be deleted of course, but please be
-alert that you don't overlook them!
+   Be aware if you have deliberately added fields and/or tables to your
+   TYPO3 database for your own purposes! Those tables and fields are
+   removed only if you mark them to be deleted of course, but please be
+   alert that you don't delete them by mistake!
 
 In the next step the changes you applied don't show up again. If you
 chose to delete some fields or tables, you will see that they have

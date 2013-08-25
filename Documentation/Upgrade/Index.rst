@@ -11,13 +11,14 @@
 Upgrade
 -------
 
-When a new version of TYPO3 arrives, you should always follow any
-additional upgrade information carefully. You might also need to skim
+When a new version of TYPO3 is released, you should follow the
+guideline in is chapter in order to do an upgrade. Also follow any
+additional upgrade information carefully. You might e.g. want to skim
 the included ChangeLog to see if any features affect the way your site
 works. (Look for lines prepended with "!!!" - those are the really
 important ones!)
 
-Basically these steps are involved in updating your TYPO3 site:
+Basically these are the steps to be done to update your TYPO3 site:
 
 
 .. toctree::
@@ -30,7 +31,7 @@ Basically these steps are involved in updating your TYPO3 site:
    3UseTheUpgradeWizard/Index
    4CompareAndUpdateTheDatabase/Index
    5StaticTablesAndDescriptionTables/Index
-   6ClearCachesTemporaryFilesAndUserSettings/Index
+   6ClearCachesAndUserSettings/Index
    7RemoveTemporaryCacheFiles/Index
    8ChangelogAndNewstxt/Index
    9UpdateExtensions/Index
