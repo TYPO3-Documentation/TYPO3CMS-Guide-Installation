@@ -12,10 +12,10 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Look through the ChangeLog and the NEWS.txt file in your TYPO3 root
-folder. It is a good place to get an idea about new functions you
-might need or be interested in.
+folder. They contain information about new functions you might need or
+be interested in.
 
-Especially pay attention to the lines starting with "!!!". They are
-important, because they are about changes that may affect the
-operation of some websites.
+Especially pay attention to lines starting with "!!!". They are
+especially important, because they are about changes that may affect
+the operation of some websites.
 

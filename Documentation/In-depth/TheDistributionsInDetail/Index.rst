@@ -28,13 +28,7 @@ The .tar.gz distribution
 """"""""""""""""""""""""
 
 The .tar.gz distribution is mainly targeted at Unix users as it
-contains relative symlinks. If you untar both the dummy and the source
-at the same level and leave the file names intact, you will
-automatically have correct symlinks.
-
-The contents of the folder in which you extracted the Dummy package
-might then be called something like "dummy-6.1.0" and the contents
-might look like this:
+contains relative symlinks. The contents might look like this:
 
 .. figure:: ../../Images/Tar.gz-Distribution.png
    :alt: Files and folders of the .tar.gz-file.
@@ -59,17 +53,16 @@ scripts distributed with TYPO3.
 
 **index.php** is the main script for the website Frontend.
 
-**clear.gif** is a 1x1 clear-pixel gif file. Used in many places.
-
 **NEWS.txt** describes what has changed in the TYPO3 Source since the
 last major version. Read this carefully if you are going to update
-your system.
+your system!
 
-**INSTALL.txt** contains a short installation how-to.
+**INSTALL.txt** contains system requirements and a short installation
+how-to.
 
 All these files are a part of the TYPO3 Core. You should never change
-them and you can write protect them, if you like! They are the ones
-you must upgrade when you install a new version of TYPO3.
+them and you can make them write-protected, if you like! They are the
+ones you must upgrade when you install a new version of TYPO3.
 
 
 .. _site-specific-folders-and-documents:
@@ -81,8 +74,9 @@ The following files and folders are part of the TYPO3 Dummy package.
 
 **fileadmin/** contains files of your choice, local to the website.
 You can e.g. put templates, user uploads, external scripts, external
-html and images here. Also used by default to store uploaded files.
-Must be writable for the webserver user.
+html and images here. By default this folder is also used to store
+files, which were uploaded in TYPO3. It must be writable for the
+webserver user.
 
 **typo3temp/** should be empty from the beginning. But gradually
 temporary files will appear here. The directory must be writable.
@@ -94,6 +88,8 @@ database records - hence they should be writable!
 
 **\_.htaccess** contains configuration for Apache webservers, which
 can improve performance. It is not used by default.
+
+**clear.gif** is a 1x1 clear-pixel gif file. It is used in many places.
 
 **typo3conf/LocalConfiguration.php** is the main configuration file of
 your installation and the one all the install tool options get written

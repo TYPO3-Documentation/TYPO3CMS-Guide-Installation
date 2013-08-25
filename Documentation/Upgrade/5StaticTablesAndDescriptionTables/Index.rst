@@ -11,20 +11,21 @@
 5: Install the new static Tables and Description Tables
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The table 'static\_template' (and some other "static\_" tables)
-contain information that you should never alter yourself. These
-tables contain static information distributed with TYPO3 releases.
-Follow these steps to upgrade the tables with the newest information.
+The table 'tx\_extensionmanager\_domain\_model\_repository' (and some
+other tables) contain information that you should never alter yourself.
+These tables contain static information distributed with TYPO3
+releases. Follow these steps to upgrade the tables with the newest
+information.
 
-Go to the section "**Database Analyser**".
+Go to the section "Database Analyser".
 
-Then click "**IMPORT**" in the line "**Dump static data**":
+Then in the line "Dump static data" click "IMPORT":
 
 .. figure:: ../../Images/Database-Analyser-Static-Data.png
    :alt: The Database Analyser: Import static data.
 
-Then tick the check box "Import the whole file..." and click "Write to
-database":
+Then at the bottom tick the check box "Import the whole file..." and
+click "Write to database":
 
 .. figure:: ../../Images/Database-Analyser-Static-Data-Import.png
    :alt: The Database Analyser after clicking "Import the whole file".

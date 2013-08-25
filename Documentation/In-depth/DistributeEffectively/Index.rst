@@ -11,9 +11,9 @@
 Using the Source Distribution effectively
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The .tar.gz distribution of the Source has an advantage over the .zip
-distribution: It provides a minimum of space usage and maintenance, if
-used intelligently. This is our suggestion:
+The .tar.gz distributions have the advantage over the .zip distribution
+that - if used intelligently - they provide a minimum of space usage
+and maintenance. Using them is our suggestion:
 
 #. Extract the .tar.gz file somewhere on your server.
 
@@ -23,12 +23,11 @@ used intelligently. This is our suggestion:
    .. figure:: ../../Images/Extracted-TYPO3-Package.png
       :alt: File and folder structure with symlink typo3_src.
 
-#. Afterwards create links to the index.php file and the t3lib/ and
-   typo3/ folder as shown. Note that those just link to the typo3\_src
-   link created before. (In most Dummy packages currently available these
-   symlinks are already included by default, so you just have to
-   create/change the typo3\_src link to point to your source directory,
-   if needed.)
+   .. note::
+
+      Current packages of TYPO3 already *have* this symlink in place.
+      You need to change it only, if you want to use TYPO3 source
+      files, which are stored at another place.
 
 
 .. _the-upgrade-advantage:
@@ -36,7 +35,7 @@ used intelligently. This is our suggestion:
 The upgrade advantage
 """""""""""""""""""""
 
-The advantages of this approach apparently is that when you wish to
+One advantage of this approach apparently is that when you wish to
 upgrade to a new TYPO3 version, you simply change one symlink and
 every distributed TYPO3 file is upgraded instantly!
 
@@ -46,8 +45,8 @@ every distributed TYPO3 file is upgraded instantly!
 Remember the Install Tool!
 """"""""""""""""""""""""""
 
-After switching the sources around  *you have to* enter the Install
-Tool of every single site that is sharing the upgraded source and do
+After switching the sources around you *have to* enter the Install
+Tool of *every single site* that is sharing the upgraded source and do
 any changes that are required in the database and clear the cache
 tables.
 
