@@ -12,7 +12,7 @@ Upgrade
 -------
 
 When a new version of TYPO3 is released, you should follow the
-guideline in is chapter in order to do an upgrade. Also follow any
+guideline in this chapter in order to do an upgrade. Also follow any
 additional upgrade information carefully. You might e.g. want to skim
 the included ChangeLog to see if any features affect the way your site
 works. (Look for lines prepended with "!!!" - those are the really
