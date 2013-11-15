@@ -12,8 +12,8 @@ The Install Tool
 ^^^^^^^^^^^^^^^^
 
 To go on installing your new TYPO3 site, you can use the advanced mode
-of the install tool. This allows you set up more details. This advanced
-installation is described here.
+of the install tool. This allows you to set up more details. This
+advanced installation is described here.
 
 First go to your site and enter the install tool (
 `http://www.example.com/typo3/install
