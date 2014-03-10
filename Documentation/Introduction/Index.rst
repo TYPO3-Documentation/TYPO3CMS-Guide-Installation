@@ -37,7 +37,8 @@ Thank you!
 What's new
 ^^^^^^^^^^
 
-Updated the manual for TYPO3 CMS version 6.2.
+Updated the manual for TYPO3 CMS version 6.2 and added a chapter for
+upgrading from 4.5 LTS to 6.2 LTS.
 
 
 .. _credits:

@@ -2,7 +2,13 @@
 ---
 conf.py:
   project: Installation and Upgrade Guide
-  copyright: 2000-2013
+  copyright: 2000-2014
   version: 6.2
   release: 6.2
+  extensions:
+  - sphinx.ext.intersphinx
+  - t3sphinx.ext.t3extras
+  - t3sphinx.ext.t3tablerows
+  - t3sphinx.ext.targets
+  - sphinx.ext.todo
 ...

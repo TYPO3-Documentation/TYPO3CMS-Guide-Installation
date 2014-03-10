@@ -31,7 +31,7 @@ Installation and Upgrade Guide
       forAdmins, forBeginners
 
 :Copyright:
-      2000-2013
+      2000-2014
 
 :Author:
       Documentation Team
@@ -84,5 +84,6 @@ given task.
    QuickInstall/Index
    In-depth/Index
    Upgrade/Index
+   UpgradeLTS/Index
    TroubleShooting/Index
    Targets
