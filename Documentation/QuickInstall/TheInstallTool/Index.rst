@@ -9,52 +9,57 @@
 .. _the-install-tool:
 
 The Install Tool
-^^^^^^^^^^^^^^^^
+================
 
-The Install Tool is located in 'typo3/install/' and should
-automatically start in "1-2-3"-mode with password 'joh316'.
+#. Hit the start page of your freshly created site with your browser
+   and the Install Tool will open in the so called "1-2-3 mode",
+   which will guide you through the steps for installing TYPO3 for the
+   first time
+   (`http://www.example.com/typo3/install/ <http://www.example.com/typo3/install/>`_).
 
-In other words, this is what you should see:
+#. This is what you should see:
 
-.. figure:: ../../Images/Quick-1-2-3-Start.png
-   :alt: Install Tool in 1-2-3 mode.
+   .. figure:: ../../Images/QuickInstall-1-System-Environment.png
+      :alt: Install Tool in 1-2-3 mode, first step.
 
-To get to the next step, always click "Continue".
+#. In case you have some problems in your Environment, you will get
+   warnings or hints in this screen. In this case, you should try to
+   fix it.
 
-.. figure:: ../../Images/Quick-1-2-3-First-Step.png
-   :alt: Install Tool in 1-2-3 mode, first step.
+#. *Enter your database credentials.* Enter MySQL username and password.
+   In most cases the database host is "localhost".
 
-*Enter your database credentials.* Enter MySQL username and password.
-In most cases the database host is "localhost".
+   .. figure:: ../../Images/QuickInstall-2-Database-Connection.png
+      :alt: Install Tool in 1-2-3 mode, second step.
 
-.. figure:: ../../Images/Quick-1-2-3-Second-Step.png
-   :alt: Install Tool in 1-2-3 mode, second step.
+#. *Create a new database for TYPO3 or use an existing empty
+   database.*:
 
-*Create a new database for TYPO3 or use an existing empty
-database.*
+   .. figure:: ../../Images/QuickInstall-3-Database-Selection.png
+      :alt: Install Tool in 1-2-3 mode, third step.
 
-.. figure:: ../../Images/Quick-1-2-3-Third-Step.png
-   :alt: Install Tool in 1-2-3 mode, third step.
+#. Enter an username and password for your first admin user. This
+   password will also be configured for the Install Tool. The "site
+   name" will identify this installation (in the page tree and browser
+   title).
 
-*Choose a package.* The actual installation process may take some time.
+   .. figure:: ../../Images/QuickInstall-4-Admin-User-Sitename.png
+      :alt: Install Tool in 1-2-3 mode, forth step.
 
-.. figure:: ../../Images/Quick-1-2-3-Fourth-Step.png
-   :alt: Install Tool in 1-2-3 mode, fourth step.
+#. In the last step you will get the choice to download and install
+   an existing distribution after first login. If you want to start
+   with a clean package, untick this checkbox.
 
-*Enter a password and choose a color.* Enter a password for the Install
-Tool and for the preconfigured TYPO3 Backend users.
+   .. figure:: ../../Images/QuickInstall-5-Last-Step.png
+      :alt: Install Tool in 1-2-3 mode, fifth step.
 
-.. figure:: ../../Images/Quick-1-2-3-Finished.png
-   :alt: Install Tool in 1-2-3 mode, installation finished.
+#. *The basic installation is now complete!*
 
-*The basic installation is now complete!*
+After you finished the basic installation procedure, TYPO3 is working
+and the most appropriate settings will have been made for you. You
+will get redirected to the Backend and can login.
 
-After you finished the basic installation procedure, TYPO3 basically
-is working. However, there still are options, which have not been
-configured yet. We therefore recommend to go to the install tool in
-normal mode to verify the details of your configuration. Click the
-"Skip this wizard (for power users only)" link to do so.
-
-You can find more information in the section "In-Depth Installation",
-subsection ":ref:`the-install-tool-in-depth`" below.
-
+If you later want to make changes to your installation settings,
+use the "Install Tool". You can find more information in the section
+"In-Depth Installation", subsection ":ref:`the-install-tool-in-depth`"
+below.
