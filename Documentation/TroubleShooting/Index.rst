@@ -8,7 +8,7 @@
 
 .. _trouble-shooting:
 
-Trouble Shooting
+Troubleshooting
 ----------------
 
 The following sections contain some hints, which should help you solve
