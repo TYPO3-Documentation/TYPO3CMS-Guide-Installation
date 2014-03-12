@@ -19,8 +19,7 @@ In-Depth Installation
 
    SystemRequirements/Index
    WhichPackageAndFormat/Index
-   TheDistributionsInDetail/Index
-   DistributeEffectively/Index
+   ThePackageInDetail/Index
    TheInstallTool/Index
    TranslatingTheBackend/Index
 
