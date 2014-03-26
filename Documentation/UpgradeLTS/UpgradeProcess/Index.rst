@@ -5,12 +5,13 @@
 
 .. include:: ../Includes.txt
 
+
 .. _lts-upgrade-process:
 
 LTS Upgrade Process
-===================
+^^^^^^^^^^^^^^^^^^^
 
-When the preparations are done the :ref:`upgrade process <upgrade>` itself
+When the preparations are done, the :ref:`upgrade process <upgrade>` itself
 is the same as before for minor level releases like from 6.1 to 6.2.
 
 You can even skip minor versions in between, so there is no need to do
@@ -18,7 +19,7 @@ any intermediate upgrades to upgrade from 4.5 (or 4.7) to 6.2.
 
 .. note::
    You need to at least have upgraded to TYPO3 4.5 in order to
-   upgrade to 6.2.
+   upgrade to 6.2!
 
 .. attention::
 
@@ -30,10 +31,10 @@ any intermediate upgrades to upgrade from 4.5 (or 4.7) to 6.2.
    - the file:`typo3conf/localconf.php` will be adapted to the new 6.x style of
      configuration :file:`LocalConfiguration.php`
 
-   - installed extensions will be moved to :file:`PackageStates.php`
-     file
+   - information about installed extensions will be moved to
+     :file:`PackageStates.php` file
 
-   - saltedpasswords Extension will be installed and activated if it
+   - saltedpasswords extension will be installed and activated if it
      was not used before
 
 #. Make sure you have gone through ":ref:`lts_upgrade_preparation`".
@@ -54,7 +55,7 @@ any intermediate upgrades to upgrade from 4.5 (or 4.7) to 6.2.
 #. Use the "Upgrade Wizard" as usual to migrate your installation
 
 Post Upgrade
-------------
+""""""""""""
 
 If you have not used DAM before and were just using regular files with
 TYPO3 Content Elements, the "Upgrade Wizards" will have converted
@@ -66,3 +67,4 @@ Abstraction Layer).
 
 DAM and its related extensions no longer work with TYPO3 CMS 6.x.
 For this, read on in the next chapter.
+

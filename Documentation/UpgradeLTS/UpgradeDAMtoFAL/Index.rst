@@ -5,10 +5,11 @@
 
 .. include:: ../Includes.txt
 
+
 .. _lts-upgrade-dam:
 
 From DAM to FAL
-===============
+^^^^^^^^^^^^^^^
 
 If you have been working with "DAM" (Digital Asset Management) in TYPO3
 4.5 or 4.7, you will want to migrate your data to the core "FAL" (File
@@ -22,3 +23,4 @@ TYPO3 CMS 6.x.
    published
 
 - Read its documentation to learn about its capabilities and usage.
+
