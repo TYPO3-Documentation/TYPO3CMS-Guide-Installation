@@ -69,7 +69,7 @@ Compatibility Check
 ~~~~~~~~~~~~~~~~~~~
 
 Install the extension `smoothmigration`__ in your old installation. This
-extension provides a module in the backend that is able to analyse your
+extension provides a module in the Backend that is able to analyse your
 current installation, in particular the installed extensions, and give
 you hints on compatibility problems.
 

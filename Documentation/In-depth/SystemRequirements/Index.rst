@@ -28,5 +28,5 @@ newer installed on the server.
 A detailed list of these requirements is enclosed in the file
 :file:`INSTALL.md` inside the TYPO3 source package.
 
-Should you encounter problems, the ":ref:`trouble-shooting`" section at
+Should you encounter problems, the ":ref:`troubleshooting`" section at
 the end of this document helps you.

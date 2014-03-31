@@ -21,5 +21,6 @@ In-Depth Installation
    WhichPackageAndFormat/Index
    ThePackageInDetail/Index
    TheInstallTool/Index
+   Distributions/Index
    TranslatingTheBackend/Index
 

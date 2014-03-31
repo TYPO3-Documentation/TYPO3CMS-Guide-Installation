@@ -13,9 +13,9 @@ The Install Tool
 
 The Install Tool provides tools around maintainance of your
 installation: Upgrading, checking system environment, configuring
-settings from `$TYPO3_CONF_VARS` and solving problems. Its usage is
-not dependent of a working Backend, and you login with it using a
-single password.
+settings from :code:`$TYPO3_CONF_VARS` and solving problems. Its
+usage is not dependent on a working Backend, and you login with it
+using a single password.
 
 First go to your site and enter the install tool (http://www.example.com/typo3/install).
 
@@ -30,10 +30,55 @@ First go to your site and enter the install tool (http://www.example.com/typo3/i
 Important actions
 """""""""""""""""
 
+The section provides basic information about your system and several
+functions, which you need for maintenance tasks or during an upgrade.
+
+.. figure:: ../../Images/Important-Actions.png
+      :alt: The "Important Actions" section of the Install Tool.
+
+The **Database analyzer** can be used to compare the current structure
+of your database with the expected structure for the TYPO3 version you
+use. In a following step, it allows you to update the structure of your
+database accordingly.
+
+The **Clear all Cache** functionality can empty all caches, Frontend
+and Backend caches as well as language caches.
+
+The **Check for broken extensions** can be executed to make sure that
+all :file:`ext_tables` and :file:`ext_localconf` files contain valid
+PHP code, so that they can be loaded without breaking the system.
+
+The **Core update** can update the TYPO3 Core to the newest minor version.
+
+Apart from these functions, this section also contains a possibility to
+change the install tool password, to change the site name, to change the
+encryption key and to create a Backend administrator user. Usually you
+do not need these functions.
+
+
 .. _configuration-presets:
 
 Configuration presets
 """""""""""""""""""""
+
+This section provides default settings for different setups.
+
+The section "Character set conversion settings" allows to select the
+program, which should be used for character set conversions.
+
+The section "Development / Production settings" allows to set an
+application context, in which TYPO3 should be running. E.g. if set to
+"Development", all kinds of error reporting, debugging and deprecation
+logging will be activated. If set to "Production" all these settings
+will be deactivated.
+
+The "Image handling settings" contain presets for different image
+processing programs (namely ImageMagick and Graphics Magick). Select
+the one you have available.
+
+Finally the preset "Extbase object cache" allows to choose the kind of
+caching system for Extbase to use.
+
 
 .. _all-configuration:
 
@@ -43,9 +88,10 @@ All configuration
 Here you can configure *all* installation options concerning your TYPO3
 installation. We suggest you go through the whole list and read the
 description of the settings carefully at least once, so you get an
-impression of what you can configure. Normally you can, but you don't
-have to change anything here during installation as the steps before
+impression of what you can configure. Normally you *can*, but you *don't
+have to* change anything here during installation, as the steps before
 already took care of the most important settings.
+
 
 .. _upgrade-wizard:
 
@@ -55,22 +101,53 @@ Upgrade wizard
 You don't need the upgrade wizard while *installing* TYPO3. It will be
 explained in a later chapter about upgrading TYPO3.
 
+
 .. _system-environment:
 
 System environment
 """"""""""""""""""
+
+The section contains a huge number of environment checks, which notify
+you of (potential) problems in your installation. It checks Apache
+settings, the status of important PHP modules and PHP settings. It does
+also contain full output of :code:`phpinfo()` and some constants used
+by TYPO3.
+
 
 .. _folder-structure:
 
 Folder structure
 """"""""""""""""
 
+This section shows, if the files and folders in your installation have
+the right permissions set. This is important to ensure that on the one
+hand TYPO3 can function properly while on the other hand other users on
+the webserver do not get access to (possibly confidential) data.
+
+
 .. _test-setup:
 
 Test setup
-""""""""""""""""
+""""""""""
+
+The section "Test setup" contains a test for the mail function and for
+image processing. Try each test to see if you configured your image
+generation settings correctly. If you have problems, check the
+explanation of the test for a hint on how to solve them. Additionally
+have a look at the image processing settings in the section "All
+configuration".
+
+You might also find help in the :ref:`trouble-shooting` section below.
+
 
 .. _clean-up:
 
 Clean up
 """"""""
+
+You don't need this section while installing TYPO3. This section is
+meant to provide methods to clean up your TYPO3 installation after it
+has been running for a while. You can use it to delete cached images,
+which is helpful when you are configuring the image processing
+settings. This section is also relevant during an upgrade.
+

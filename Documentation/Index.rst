@@ -85,5 +85,5 @@ given task.
    In-depth/Index
    Upgrade/Index
    UpgradeLTS/Index
-   TroubleShooting/Index
+   Troubleshooting/Index
    Targets

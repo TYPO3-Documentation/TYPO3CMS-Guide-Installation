@@ -11,11 +11,12 @@
 Get and Unpack the TYPO3 Package
 ================================
 
-#. Download the matching package for your requirements from
-   `http://typo3.org/download/ <http://typo3.org/download/>`_
-   (If you are not sure which package you should choose read the
-   section ":ref:`which-package-and-which-file-format`" in the in-depth
-   part of the manual).
+#. Download the Source Package from `http://typo3.org/download/
+   <http://typo3.org/download/>`_ For this manual, we will use
+   the :file:`.tar.gz` file. (If you are not sure which package
+   you should choose read the section
+   ":ref:`which-package-and-which-file-format`" in the in-depth part
+   of the manual).
 
 #. Upload this package to your webserver.
 
@@ -33,7 +34,7 @@ Get and Unpack the TYPO3 Package
       so if you're able to unzip or untar the package on the server, better
       do that!
 
-#. Create the symlinks in your Document Root::
+#. Create these symlinks in your Document Root::
 
        cd htdocs
        ln -s ../typo3_src-6.2.x typo3_src
@@ -41,7 +42,8 @@ Get and Unpack the TYPO3 Package
        ln -s typo3_src/typo3 typo3
 
 
-#. In case you use Apache, copy the .htaccess to your Document Root::
+#. In case you use the Apache webserver, copy the :file:`.htaccess` file to
+   your Document Root::
 
        cp typo3_src/_.htaccess .htaccess
 
@@ -54,13 +56,14 @@ Get and Unpack the TYPO3 Package
        htdocs/index.php -> typo3_src/index.php
        htdocs/.htaccess
 
-The advantage of this setup, is that all files from the TYPO3 Source
-package are kept together and separated in the :file:`typo3_src-6.2.x`
-folder. This allows easily to exchange this folder when a new patchlevel
-version is released.
+The advantage of this setup is that all files from the TYPO3 Source
+package are kept together and separated from other files of your
+installation in the :file:`typo3_src-6.2.x` folder. This allows you to
+easily exchange this folder when a new patchlevel version of TYPO3 is
+released.
 
 .. note::
    This setup allows the administrator to use the "Core Updater"
-   feature from the Install Tool to later easily update the TYPO3
+   feature in the Install Tool to later easily update the TYPO3
    Source files.
 

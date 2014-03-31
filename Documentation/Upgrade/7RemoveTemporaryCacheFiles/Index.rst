@@ -16,7 +16,7 @@ named "ext\_localconf\_\*.php" or "ext\_tables\_\*.php". These files
 must be removed as well.
 
 An easy way to clear these files is pressing the link which you find
-in the top right-hand corner of the backend when you are logged in as
+in the top right-hand corner of the Backend when you are logged in as
 an administrator. Open the "Clear cache" menu and click "Clear
 configuration cache":
 

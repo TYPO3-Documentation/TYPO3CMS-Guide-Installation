@@ -6,10 +6,10 @@
 .. include:: ../Includes.txt
 
 
-.. _trouble-shooting:
+.. _troubleshooting:
 
 Troubleshooting
-----------------
+---------------
 
 The following sections contain some hints, which should help you solve
 common problems, which you might encounter. Note that you should also
