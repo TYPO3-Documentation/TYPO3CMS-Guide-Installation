@@ -16,7 +16,7 @@ structure of your database with the expected structure. While in the
 previous step, tables and columns have been *changed or added*, this
 step now gives you the possibility to *remove* old and unneeded tables
 and columns from the database. Click "Compare current database with
-specification". 
+specification".
 
 .. figure:: ../../Images/Important-Actions-Database-Analyzer.png
    :alt: The Database Analyzer before analyzing the database.

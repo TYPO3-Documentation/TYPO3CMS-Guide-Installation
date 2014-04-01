@@ -37,7 +37,7 @@ are read and compared to your current database tables and columns. Any
 missing tables and columns will be shown and you'll be able to execute
 queries sufficient to add them.
 
-After that go on to the next wizard.
+After you added these tables and columns, go on to the next wizard.
 
 The "Version Compatibility" wizard sets the compatibility version of
 your TYPO3 installation to the new version. This allows your Frontend
@@ -47,7 +47,7 @@ next wizard.
 
 Go through all wizards and apply the (database) updates they propose.
 Please note that some wizards provide optional features, like
-installing system extensions (for example simulate static) that you may
+installing system extensions (for example simulatestatic) that you may
 not need in your current installation, so take care to only apply those
 wizards, which you really need.
 
