@@ -15,8 +15,10 @@ A number of distributions is available for TYPO3, which you can use in
 your installation. If in the last step of the installation process in
 the Install Tool, you chose that you want to install a distribution,
 you will after your first Backend login be redirected to the "Get
-preconfigured distribution" screen of the Extension Manager.
-(Otherwise you can navigate there manually as well.)
+preconfigured distribution" screen of the Extension Manager
+automatically. (Otherwise you can navigate there manually as well.)
+
+The following distributions are available:
 
 
 .. _introduction-package:
@@ -58,10 +60,6 @@ If exactly adhering to web standards is especially important for you
 (as it e.g. is for government bodies in the EU), you might want to try
 the government package.
 
-For building your own website from scratch, just go ahead *without*
-using a distribution. You can then start with a completely empty
-installation of TYPO3.
-
 Just choose the distributions you like and hit "Install".
 
 .. note::
@@ -69,4 +67,8 @@ Just choose the distributions you like and hit "Install".
    a current laptop I had to wait around 100 minutes for the introduction
    package to finish installing. Do not aboard this process - be patient and
    wait!
+
+For building your own website from scratch, just go ahead *without*
+using a distribution. You can then start with a completely empty
+installation of TYPO3.
 

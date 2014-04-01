@@ -120,9 +120,10 @@ Folder structure
 """"""""""""""""
 
 This section shows, if the files and folders in your installation have
-the right permissions set. This is important to ensure that on the one
-hand TYPO3 can function properly while on the other hand other users on
-the webserver do not get access to (possibly confidential) data.
+the right permissions set. This is important to ensure so that on the
+one hand TYPO3 can function properly while on the other hand other
+users on the webserver do not get access to (possibly confidential)
+data.
 
 
 .. _test-setup:
@@ -137,7 +138,7 @@ explanation of the test for a hint on how to solve them. Additionally
 have a look at the image processing settings in the section "All
 configuration".
 
-You might also find help in the :ref:`trouble-shooting` section below.
+You might also find help in the :ref:`troubleshooting` section below.
 
 
 .. _clean-up:

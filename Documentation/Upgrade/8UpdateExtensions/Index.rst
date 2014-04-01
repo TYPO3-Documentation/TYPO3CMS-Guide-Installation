@@ -6,9 +6,9 @@
 .. include:: ../../Includes.txt
 
 
-.. _9-update-extensions:
+.. _8-update-extensions:
 
-9: Update Extensions
+8: Update Extensions
 ^^^^^^^^^^^^^^^^^^^^
 
 Go to the extension manager and update the extensions you use. Take the

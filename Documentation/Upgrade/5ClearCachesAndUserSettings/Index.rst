@@ -6,17 +6,17 @@
 .. include:: ../../Includes.txt
 
 
-.. _6-clear-caches-and-user-settings:
+.. _5-clear-caches-and-user-settings:
 
-6: Clear Caches and User Settings
+5: Clear Caches and User Settings
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You should always clear the cache tables. Go to "Database Analyser",
-click "Clear tables" and select the tables beginning with "cache\_".
-Then press "Write to database".
+You should always clear the cache tables. Go to "Clean up",
+scroll down to "Clear tables" and select the tables beginning with
+"cache\_". Then press "Clear selected tables".
 
 You might also consider clearing the Backend user preferences. This
 can avoid problems, if something in the upgrade requires this. Go to
-"Database Analyser", click "Reset user preferences" and write to
-database.
+"Clean up", scroll to "Reset user preferences" and click "Reset backend
+user preferences".
 

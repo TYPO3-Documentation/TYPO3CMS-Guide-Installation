@@ -6,13 +6,13 @@
 .. include:: ../../Includes.txt
 
 
-.. _8-check-the-changelog-and-news-txt:
+.. _7-check-the-changelog-and-news-md:
 
-8: Check the ChangeLog and NEWS.txt
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+7: Check the ChangeLog and NEWS.md
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Look through the ChangeLog and the NEWS.txt file in your TYPO3 root
-folder. They contain information about new functions you might need or
+Look through the ChangeLog and the NEWS.md file in your extracted TYPO3
+package. They contain information about new functions you might need or
 be interested in.
 
 Especially pay attention to lines starting with "!!!". They are

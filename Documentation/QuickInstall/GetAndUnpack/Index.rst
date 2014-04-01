@@ -48,7 +48,7 @@ Get and Unpack the TYPO3 Package
        cp typo3_src/_.htaccess .htaccess
 
 
-   You end up with the follow structure of files::
+   You end up with the following structure of files::
 
        typo3_src-6.2.x/
        htdocs/typo3_src -> ../typo3_src-6.2.x/

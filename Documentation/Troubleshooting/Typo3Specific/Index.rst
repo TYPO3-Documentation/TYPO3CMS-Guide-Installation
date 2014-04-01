@@ -32,11 +32,11 @@ should be safe to use regardless of the corrupt state of the Caches.
 Amongst other caches, under :file:`typo3temp/Cache/Code/cache_core/`
 you find files like these::
 
-   -rw-r--r--   1 www-data   www-data   61555  2013-08-22 16:28   ext_localconf_8b0519db6112697cceedb50296df89b0ce04ff70.php
-   -rw-r--r--   1 www-data   www-data   81995  2013-08-22 16:28   ext_tables_c3638687920118a92ab652cbf23a9ca69d4a6469.php
+   -rw-rw----   1 www-data   www-data   61555  2014-03-26 16:28   ext_localconf_8b0519db6112697cceedb50296df89b0ce04ff70.php
+   -rw-rw----   1 www-data   www-data   81995  2014-03-26 16:28   ext_tables_c3638687920118a92ab652cbf23a9ca69d4a6469.php
 
 These files simply contain all :file:`ext\_tables.php` and
-:file:`ext\_localconf.php` files from the installed extensions
+:file:`ext\_localconf.php` files of the installed extensions
 concatenated in the order they are loaded. Therefore including one of
 these files would be the same as including potentially hundred PHP-
 files and that saves some milliseconds for the system.
@@ -67,8 +67,9 @@ of errors like "Failed opening ..." or "Unable to access ...". The
 problem is that absolute file paths are hard-coded inside the cached
 files.
 
-Fix: clean the cache using the Install Tool "Important Actions"
-module "Clear all caches". Then hit the page again.
+Fix: Clean the cache using the Install Tool: Go to "Important Actions"
+and use the "Clear all caches" function. Then hit the page again.
+
 
 .. _changing-image-processing-settings:
 
