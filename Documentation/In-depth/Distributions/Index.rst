@@ -26,10 +26,9 @@ The following distributions are available:
 Introduction Package
 """"""""""""""""""""
 
-The introduction package is a complete demo website. It contains the
-contents of the source package, the dummy package and a lot of default
-content for testing and learning. Please try this one, if you are
-new to TYPO3!
+The introduction package is a complete demo website. It it based on a
+responsive design and contains a lot of default content for testing and
+learning. Please try this one, if you are new to TYPO3!
 
 
 .. _government-package:

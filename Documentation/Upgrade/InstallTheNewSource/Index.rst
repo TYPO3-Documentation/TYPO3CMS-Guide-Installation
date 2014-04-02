@@ -6,10 +6,10 @@
 .. include:: ../../Includes.txt
 
 
-.. _2-install-the-new-source:
+.. _install-the-new-source:
 
-2: Install the new Source
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Install the new Source
+^^^^^^^^^^^^^^^^^^^^^^
 
 Upgrade the distributed source files to the new version. You can do
 this either using the Core updater or manually.
@@ -80,7 +80,7 @@ Root - adjust the typo3\_src symlink.
 In case you did a *minor update*, e.g. from TYPO3 6.2.2 to 6.2.3,
 database updates are usually *not* necessary. All you still have to do
 is to :ref:`remove the temporary cache files 
-<6-remove-temporary-cache-files>`. After that your update is finished.
+<remove-temporary-cache-files>`. After that your update is finished.
 
 In case of a *major update*, e.g. from TYPO3 6.1 to 6.2, go ahead with
 the next step!

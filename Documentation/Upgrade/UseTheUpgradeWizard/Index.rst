@@ -6,10 +6,10 @@
 .. include:: ../../Includes.txt
 
 
-.. _3-use-the-upgrade-wizard:
+.. _use-the-upgrade-wizard:
 
-3: Use the upgrade wizard
-^^^^^^^^^^^^^^^^^^^^^^^^^
+Use the upgrade wizard
+^^^^^^^^^^^^^^^^^^^^^^
 
 Enter the Install Tool at '.../typo3/install/' on your TYPO3 site.
 
@@ -41,9 +41,12 @@ After you added these tables and columns, go on to the next wizard.
 
 The "Version Compatibility" wizard sets the compatibility version of
 your TYPO3 installation to the new version. This allows your Frontend
-output to use new features of the new TYPO3 version and might affect
-how your website is rendered. Afterwards you will get redirected to the
-next wizard.
+output to use new features of the new TYPO3 version.
+
+.. note::
+   This wizard might affect how your website is rendered. After finishing
+   the upgrade, check that your website still displays the way it is
+   supposed to be and adjust your TypoScript if necessary.
 
 Go through all wizards and apply the (database) updates they propose.
 Please note that some wizards provide optional features, like

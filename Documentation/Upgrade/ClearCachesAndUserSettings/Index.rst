@@ -6,10 +6,10 @@
 .. include:: ../../Includes.txt
 
 
-.. _5-clear-caches-and-user-settings:
+.. _clear-caches-and-user-settings:
 
-5: Clear Caches and User Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Clear Caches and User Settings
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 You should always clear the cache tables. Go to "Clean up",
 scroll down to "Clear tables" and select the tables beginning with

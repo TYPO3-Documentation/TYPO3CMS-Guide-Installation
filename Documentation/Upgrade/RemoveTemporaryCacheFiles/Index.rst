@@ -6,10 +6,10 @@
 .. include:: ../../Includes.txt
 
 
-.. _6-remove-temporary-cache-files:
+.. _remove-temporary-cache-files:
 
-6: Remove temporary cache files
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Remove temporary cache files
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In typo3temp/Cache/Code/cache_core you will most likely find files
 named "ext\_localconf\_\*.php" or "ext\_tables\_\*.php". These files

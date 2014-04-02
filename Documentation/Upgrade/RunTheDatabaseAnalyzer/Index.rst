@@ -6,10 +6,10 @@
 .. include:: ../../Includes.txt
 
 
-.. _4-run-the-database-analyzer:
+.. _run-the-database-analyzer:
 
-4: Run the Database Analyzer
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Run the Database Analyzer
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Now you can use the section "Important actions" to compare the
 structure of your database with the expected structure. While in the

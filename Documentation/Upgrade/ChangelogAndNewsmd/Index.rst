@@ -6,10 +6,10 @@
 .. include:: ../../Includes.txt
 
 
-.. _7-check-the-changelog-and-news-md:
+.. _check-the-changelog-and-news-md:
 
-7: Check the ChangeLog and NEWS.md
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Check the ChangeLog and NEWS.md
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Look through the ChangeLog and the NEWS.md file in your extracted TYPO3
 package. They contain information about new functions you might need or

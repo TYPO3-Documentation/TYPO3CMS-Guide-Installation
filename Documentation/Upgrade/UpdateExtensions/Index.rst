@@ -6,11 +6,11 @@
 .. include:: ../../Includes.txt
 
 
-.. _8-update-extensions:
+.. _update-extensions:
 
-8: Update Extensions
-^^^^^^^^^^^^^^^^^^^^
+Update Extensions
+^^^^^^^^^^^^^^^^^
 
-Go to the extension manager and update the extensions you use. Take the
-opportunity to remove all unused extensions!
+In the Backend, go to the extension manager and update the extensions
+you use. Take the opportunity to remove all unused extensions!
 

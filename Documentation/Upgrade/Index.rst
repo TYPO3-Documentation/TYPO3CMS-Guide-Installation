@@ -18,6 +18,22 @@ the included ChangeLog to see if any features affect the way your site
 works. (Look for lines prepended with "!!!" - those are the really
 important ones!)
 
+.. note::
+
+   **Version specific upgrade notes**
+
+   While this guide is the general guideline to follow for a TYPO3
+   Upgrade, some `version specific information are additionally available
+   in the TYPO3 Wiki <http://wiki.typo3.org/Upgrade>`_. Use them as an
+   amendment to this guide!
+
+.. note::
+
+   **Think of active users**
+
+   Think of users who might want to do any changes during your upgrading
+   and/or fallback. Inform them **before** you start!
+
 Basically these are the steps to be done to update your TYPO3 site:
 
 
@@ -26,12 +42,14 @@ Basically these are the steps to be done to update your TYPO3 site:
    :titlesonly:
    :glob:
 
-   1Backup/Index
-   2InstallTheNewSource/Index
-   3UseTheUpgradeWizard/Index
-   4RunTheDatabaseAnalyzer/Index
-   5ClearCachesAndUserSettings/Index
-   6RemoveTemporaryCacheFiles/Index
-   7ChangelogAndNewsmd/Index
-   8UpdateExtensions/Index
+   Backup/Index
+   InstallTheNewSource/Index
+   ConvertGlobalExtensions/Index
+   UseTheUpgradeWizard/Index
+   RunTheDatabaseAnalyzer/Index
+   ClearCachesAndUserSettings/Index
+   RemoveTemporaryCacheFiles/Index
+   ChangelogAndNewsmd/Index
+   UpdateExtensions/Index
+   UpdateTranslations/Index
 
