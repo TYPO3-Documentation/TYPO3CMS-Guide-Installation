@@ -34,5 +34,5 @@ Which File Format to use
 The TYPO3 Source package is available as a :file:`.zip` or
 :file:`.tar.gz` distribution. Their content is the same and you should
 download the one that you will be able to extract directly on your
-webserver.
+web server.
 

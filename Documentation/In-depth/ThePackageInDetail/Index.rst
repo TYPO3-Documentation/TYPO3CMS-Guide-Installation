@@ -26,9 +26,9 @@ The following files and folders are part of the TYPO3 Source package.
   the main script for the website Frontend
 
 :file:`\_.htaccess`
-  contains an example configuration for Apache webservers, which
+  contains an example configuration for Apache web servers, which
   can improve performance. It is not used by default. To activate it,
-  copy the file to :file:`.htaccess` in your Document Root.
+  copy the file to :file:`.htaccess` in your document root.
 
 :file:`NEWS.md`
   describes what has changed in the TYPO3 Source since the last major
@@ -56,7 +56,7 @@ installation of TYPO3:
   images here. By default this folder is used to store files, which
   have been uploaded in the TYPO3 Backend (:file:`fileadmin/` is
   configured as the first default storage). :file:`fileadmin/` must
-  be writable for the webserver user.
+  be writable for the web server user.
 
 :file:`typo3conf/`
   contains configuration, extensions and translations for the local
@@ -90,11 +90,11 @@ installation of TYPO3:
 :file:`typo3temp/`
   will be empty at the beginning. But gradually temporary
   files will appear here. The directory must be writable for the
-  webserver user.
+  web server user.
 
 :file:`uploads/`
   (deprecated) contains folders used to store documents attached to
-  database records, hence must be writable by the webserver. This folder
+  database records, hence must be writable by the web server. This folder
   is used for compatibility reasons with older TYPO3 releases and
   extensions. Newer extensions and the TYPO3 core do not use this
   folder anymore; instead files should be managed by the File

@@ -26,9 +26,9 @@ required:
 
 * It only works under Unix and MacOS (needs symlink support).
 * typo3_src must be a symlink.
-* This symlink needs to be writable (and deletable) by the webserver user.
-* Document Root needs to be writable.
-* One path above Document Root ("../") needs to be writable (new
+* This symlink needs to be writable (and deletable) by the web server user.
+* document root needs to be writable.
+* One path above document root ("../") needs to be writable (new
   directories need to be allowed to be created).
 * The "tar" command must be available for extracting the Source package.
 
@@ -74,8 +74,14 @@ Installing the source manually
 Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and
 download the Source package of the new TYPO3 version.
 
-Extract the package on your web server and - in your TYPO3 Document
-Root - adjust the typo3\_src symlink.
+Extract the package on your web server and - in your TYPO3 document
+root - adjust the typo3\_src symlink.
+
+
+.. _install-next-step:
+
+What's the next step?
+"""""""""""""""""""""
 
 In case you did a *minor update*, e.g. from TYPO3 6.2.2 to 6.2.3,
 database updates are usually *not* necessary. All you still have to do

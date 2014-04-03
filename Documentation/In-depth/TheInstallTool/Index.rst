@@ -122,7 +122,7 @@ Folder structure
 This section shows, if the files and folders in your installation have
 the right permissions set. This is important to ensure so that on the
 one hand TYPO3 can function properly while on the other hand other
-users on the webserver do not get access to (possibly confidential)
+users on the web server do not get access to (possibly confidential)
 data.
 
 
