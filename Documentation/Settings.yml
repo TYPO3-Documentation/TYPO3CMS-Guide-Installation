@@ -12,3 +12,7 @@ conf.py:
   - t3sphinx.ext.targets
   - sphinx.ext.todo
 ...
+  html_theme_options:
+    github_repository: TYPO3-Documentation/TYPO3CMS-Guide-Installation
+    github_branch: latest
+...
