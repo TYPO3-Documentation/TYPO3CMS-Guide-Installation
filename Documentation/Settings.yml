@@ -5,4 +5,18 @@ conf.py:
   copyright: 2000-2013
   version: 4.5
   release: 4.5
+  html_theme_options:
+    github_repository: TYPO3-Documentation/TYPO3CMS-Guide-Installation
+    github_branch: 4-5
+  latex_documents:
+  - - Index
+    - t3install.tex
+    - Installation and Upgrade Guide
+    - Documentation Team
+    - manual
+
+  latex_elements:
+    papersize: a4paper
+    pointsize: 10pt
+    preamble: \usepackage{typo3}
 ...
