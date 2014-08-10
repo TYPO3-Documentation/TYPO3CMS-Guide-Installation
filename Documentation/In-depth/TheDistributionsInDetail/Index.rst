@@ -36,7 +36,7 @@ The contents of the folder in which you extracted the Dummy package
 might then be called something like "dummy-4.7.0" and the contents
 might look like this:
 
-.. figure:: ../../Images/Tar.gz-Distribution.png
+.. figure:: ../../Images/Tar-gz-Distribution.png
    :alt: Files and folders of the .tar.gz-file.
 
 The main point is - compared to the .zip distribution - that the
