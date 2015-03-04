@@ -38,17 +38,14 @@ On a Windows-based server, these are the extension files::
 PHP Caches, Extension Classes etc.
 """"""""""""""""""""""""""""""""""
 
-There are some situations, which can cause what looks like totally
+There are some situations which can cause what appear to be totally
 illogical problems after an upgrade:
 
-- If extensions override classes in which functions have
-  changed.
-  Solution: Try to disable all extensions and enable them one by
-  one again until the error occurs again.
+- If extensions override classes in which functions have changed.
+  Solution: Try disabling all extensions and then enable them one by
+  one until the error recurs.
 
-- If a PHP cache somehow fails to re-cache scripts, in particular if a
-  change happened to a parent class overridden by a child class which
-  was not updated.
-  Solution: Remove ALL cached PHP files (for PHP-
-  Accelerator, remove "/tmp/phpa\_\*") and restart Apache.
+- If a PHP cache somehow fails to re-cache scripts: in particular, if a
+  change happened to a parent class overridden by a child class which was not updated.
+  Solution: Remove ALL cached PHP files (for PHP-Accelerator, remove "/tmp/phpa\_\*") and restart Apache.
 

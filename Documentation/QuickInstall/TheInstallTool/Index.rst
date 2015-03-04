@@ -47,7 +47,7 @@ The Install Tool
    .. figure:: ../../Images/QuickInstall-4-Admin-User-Sitename.png
       :alt: Install Tool in 1-2-3 mode, forth step.
 
-#. In the last step you can choose, if you want to download and install
+#. In the last step you can choose whether you want to download and install
    an existing distribution after your first Backend login. If you want
    to start with an empty installation, untick this checkbox.
 
@@ -56,12 +56,11 @@ The Install Tool
 
 #. **The basic installation is now complete!**
 
-After you finished the basic installation procedure, TYPO3 is working
+After the basic installation procedure is complete, TYPO3 will be working
 and the most appropriate settings will have been made for you. You
-will get redirected to the Backend and can log in with your admin user.
+will get redirected to the Backend and can log in with your admin user account.
 
-If you later want to make changes to your installation settings,
+If you want to make changes to your installation settings at a later date,
 use the "Install Tool". You can find more information in the section
 "In-Depth Installation", subsection ":ref:`the-install-tool-in-depth`"
 below.
-

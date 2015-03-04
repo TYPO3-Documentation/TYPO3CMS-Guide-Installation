@@ -16,17 +16,17 @@ Introduction
 About this document
 ^^^^^^^^^^^^^^^^^^^
 
-This manual should give you an introduction on how to install or
+This manual gives you an introduction on how to install or
 upgrade your TYPO3 CMS installation.
 
-The installation part is aimed at beginners who want to have
-a fresh TYPO3 CMS website up and running. The update part targets
-those who already have a running website and want to move it
+The "Installation" section is aimed at beginners who want to get
+a fresh TYPO3 CMS website up and running. The "Update" section targets
+those who already have a running website and want to migrate it
 to a newer version of TYPO3 CMS.
 
 You *must* go through the steps in the section "Quick Installation" in
 order to get your TYPO3 installation up and running. During or after
-that you *can* go through the section "In-Depth Installation" to
+that, you have the option go through the section "In-Depth Installation" to
 configure TYPO3 in more detail.
 
 
