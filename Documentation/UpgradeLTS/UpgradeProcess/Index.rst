@@ -17,18 +17,16 @@ is the same as before for minor level releases. (E.g. 6.1 to 6.2.)
 You can skip intermediate minor versions, so there is no need to do
 an intermediate upgrade to upgrade from 4.5 (or 4.7) to 6.2.
 
-.. note::
-   You need to have upgraded to at least TYPO3 4.5 in order to
-   upgrade to 6.2!
-
 .. attention::
+
+   You need to have upgraded to at least TYPO3 4.5 in order to upgrade to 6.2!
 
    Several things will be done automatically when you run the
    Install Tool of the new version for the first time. Some actions 
    will even happen *before* the Install Tool opens. So *don't forget to make a backup*!
 
    - The file:`typo3conf/localconf.php` will be adapted to the new 6.x style of
-     configuration :file:`LocalConfiguration.php`.
+     configuration and saved as :file:`LocalConfiguration.php`.
 
    - Information about installed extensions will be moved to
      :file:`PackageStates.php` file.
@@ -60,7 +58,7 @@ If you have not used DAM before and were just using regular files with
 TYPO3 Content Elements, the "Upgrade Wizards" will have converted
 your structure to FAL and you are all set and ready.
 
-If you have been working with "DAM" (Digital Asset Management) in TYPO3
+If you were working with "DAM" (Digital Asset Management) in TYPO3
 4.5 or 4.7, you will want to migrate your data to the core "FAL" (File
 Abstraction Layer).
 
