@@ -39,7 +39,8 @@ The Install Tool
    .. figure:: ../../Images/QuickInstall-3-Database-Selection.png
       :alt: Install Tool in 1-2-3 mode, third step.
 
-#. Enter a username and password for your first TYPO3 admin user. This
+#. Enter a username and password for your first TYPO3 admin user. (For security 
+   reasons, it's best not to use the name *admin*.) This
    password will also be configured for the Install Tool. The "site
    name" will identify this installation (in the page tree and browser
    title).
