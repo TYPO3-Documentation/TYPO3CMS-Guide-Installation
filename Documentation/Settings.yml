@@ -2,9 +2,9 @@
 ---
 conf.py:
   project: Installation and Upgrade Guide
-  copyright: 2000-2014
-  version: 6.2
-  release: 6.2
+  copyright: 2000-2015
+  version: 7
+  release: 7
   extensions:
   - sphinx.ext.intersphinx
   - t3sphinx.ext.t3extras
@@ -20,9 +20,12 @@ conf.py:
     - Installation and Upgrade Guide
     - Documentation Team
     - manual
-
   latex_elements:
     papersize: a4paper
     pointsize: 10pt
     preamble: \usepackage{typo3}
+  intersphinx_mapping:
+    t3api:
+    - http://docs.typo3.org/typo3cms/CoreApiReference/
+    - null
 ...
