@@ -11,7 +11,7 @@
 Use the upgrade wizard
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Enter the Install Tool at '.../typo3/install/' on your TYPO3 site.
+Enter the Install Tool at ``http://yourwebsite.com/typo3/install/`` on your TYPO3 site.
 
 (If you don't know the current Install Tool password, you can set a new
 one by entering one in the Install Tool login screen, hitting enter and
@@ -32,7 +32,7 @@ fields" wizard, which adds new tables and columns to the database.
 .. figure:: ../../Images/Upgrade-Wizard-Add-Tables-Columns.png
    :alt: Add tables and columns to the database.
 
-Click "Execute". Now all ext\_tables.sql files from core and extensions
+Click "Execute". Now all :file:`ext_tables.sql` files from core and extensions
 are read and compared to your current database tables and columns. Any
 missing tables and columns will be shown and you'll be able to execute
 queries sufficient to add them.

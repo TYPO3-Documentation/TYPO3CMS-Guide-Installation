@@ -11,7 +11,7 @@
 Check the ChangeLog and NEWS.md
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Look through the ChangeLog and the NEWS.md file in your extracted TYPO3
+Look through the :file:`ChangeLog` and the :file:`NEWS.md` files in your extracted TYPO3
 package. They contain information about new functions you might need or
 be interested in.
 

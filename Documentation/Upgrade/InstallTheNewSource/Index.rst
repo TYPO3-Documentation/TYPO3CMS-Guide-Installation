@@ -25,12 +25,12 @@ to update the TYPO3 Core. For this to work, the following setup is
 required:
 
 * It only works under Unix and MacOS (needs symlink support).
-* typo3_src must be a symlink.
+* :file:`typo3_src` must be a symlink.
 * This symlink needs to be writable (and deletable) by the web server user.
 * document root needs to be writable.
-* One path above document root ("../") needs to be writable (new
+* One path above document root (:file:`../`) needs to be writable (new
   directories need to be allowed to be created).
-* The "tar" command must be available for extracting the Source package.
+* The :program:`tar` command must be available for extracting the Source package.
 
 In the section "Important Actions" scroll down to "Core update" and
 click the "Check for core updates" button. If above requirements are
@@ -75,7 +75,7 @@ Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and
 download the Source package of the new TYPO3 version.
 
 Extract the package on your web server and - in your TYPO3 document
-root - adjust the typo3\_src symlink.
+root - adjust the :file:`typo3_src` symlink.
 
 
 .. _install-next-step:
@@ -85,7 +85,7 @@ What's the next step?
 
 In case you did a *minor update*, e.g. from TYPO3 6.2.2 to 6.2.3,
 database updates are usually *not* necessary. All you still have to do
-is to :ref:`remove the temporary cache files 
+is to :ref:`remove the temporary cache files
 <remove-temporary-cache-files>`. After that your update is finished.
 
 In case of a *major update*, e.g. from TYPO3 6.1 to 6.2, go ahead with

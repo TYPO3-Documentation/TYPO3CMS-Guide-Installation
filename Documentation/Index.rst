@@ -16,7 +16,7 @@ Installation and Upgrade Guide
       doc_guide_install
 
 :Version:
-      6.2
+      |release|
 
 :Language:
       en
@@ -31,7 +31,7 @@ Installation and Upgrade Guide
       forAdmins, forBeginners
 
 :Copyright:
-      2000-2014
+      2000-2015
 
 :Author:
       Documentation Team

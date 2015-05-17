@@ -12,7 +12,7 @@ Remove temporary cache files
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In typo3temp/Cache/Code/cache_core you will most likely find files
-named "ext\_localconf\_\*.php" or "ext\_tables\_\*.php". These files
+named :file:`ext_localconf_*.php` or :file:`ext_tables_*.php`. These files
 must be removed as well.
 
 Go to "Important actions" and click "Clear all cache":
@@ -21,9 +21,9 @@ Go to "Important actions" and click "Clear all cache":
    :alt: The option "Clear all Cache" in the Install Tool.
 
 This method will remove all files from the folder
-typo3temp/Cache/Code/cache_core.
+:file:`typo3temp/Cache/Code/cache_core/`.
 
 Additionally, after an upgrade to a new major version, you should also
-delete the other temporary files, which TYPO3 saves in typo3temp/. In
+delete the other temporary files, which TYPO3 saves in :file:`typo3temp/`. In
 the Install Tool go to "Clean up" to do so.
 
