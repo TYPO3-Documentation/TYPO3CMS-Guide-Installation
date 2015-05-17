@@ -22,7 +22,7 @@ an intermediate upgrade to upgrade from 4.5 (or 4.7) to 6.2.
    You need to have upgraded to at least TYPO3 4.5 in order to upgrade to 6.2!
 
    Several things will be done automatically when you run the
-   Install Tool of the new version for the first time. Some actions 
+   Install Tool of the new version for the first time. Some actions
    will even happen *before* the Install Tool opens. So *don't forget to make a backup*!
 
    - The file:`typo3conf/localconf.php` will be adapted to the new 6.x style of
@@ -65,6 +65,6 @@ Abstraction Layer).
 DAM and its related extensions no longer work with TYPO3 CMS 6.x.
 For this, read on in the next chapter.
 
-In TYPO3 CMS 4.5 languages could be defined by setting config.language = xy in TypoScript and having according labels in <languageKey index="xy" type="array"> in language files.
-In TYPO3 CMS 6.2 by default this is possible only for those language keys that have been defined in typo3/sysext/core/Classes/Localization/Locales.php.
-If you want to use a language without a definition there (e.g. en_US), you have to add it on your own as described here: http://xavier.perseguers.ch/tutoriels/typo3/articles/managing-localization-files.html#c954
+In TYPO3 CMS 4.5 languages could be defined by setting ``config.language = xy`` in TypoScript and having according labels in ``<languageKey index="xy" type="array">`` in language files.
+In TYPO3 CMS 6.2 by default this is possible only for those language keys that have been defined in :file:`typo3/sysext/core/Classes/Localization/Locales.php`.
+If you want to use a language without a definition there (e.g. en_US), you have to add it on your own as described here: :ref:`t3api:xliff-translating-languages`.
