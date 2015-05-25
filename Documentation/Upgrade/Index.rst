@@ -9,7 +9,7 @@
 .. _upgrade:
 
 Upgrade
--------
+=======
 
 When a new version of TYPO3 is released, you should follow the
 guideline in this chapter in order to do an upgrade. Also follow any
@@ -34,13 +34,6 @@ important ones!)
    Think of users who might want to do any changes during your upgrading
    and/or fallback. Inform them **before** you start!
 
-.. Links::
-
-   **Unofficial Guides**
-  
-   Upgrade walkthroughs by TYPO3 users: 
-   `Upgrade guide by jweiland.net (in german) <https://jweiland.net/typo3/vortraege/typo3camp-berlin-2014.html>`
-   `Upgrading 4.5->6.2 with OS X and Linux (StackOverflow) <http://stackoverflow.com/questions/28675796/how-to-upgrade-typo3-4-5-to-6-2/>`
 
 Basically these are the steps to be done to update your TYPO3 site:
 
@@ -60,4 +53,14 @@ Basically these are the steps to be done to update your TYPO3 site:
    ChangelogAndNewsmd/Index
    UpdateExtensions/Index
    UpdateTranslations/Index
+
+
+Links
+-----
+
+Upgrade walkthroughs by TYPO3 users
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- `Upgrade guide by jweiland.net (in german) <https://jweiland.net/typo3/vortraege/typo3camp-berlin-2014.html>`__
+- `Upgrading 4.5->6.2 with OS X and Linux (StackOverflow) <http://stackoverflow.com/questions/28675796/how-to-upgrade-typo3-4-5-to-6-2/>`__
 
