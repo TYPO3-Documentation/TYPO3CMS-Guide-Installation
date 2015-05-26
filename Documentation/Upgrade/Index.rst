@@ -35,8 +35,20 @@ important ones!)
    and/or fallback. Inform them **before** you start!
 
 
-Basically these are the steps to be done to update your TYPO3 site:
+Links
+-----
 
+Upgrade walkthroughs by TYPO3 users
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- `Upgrade guide by jweiland.net (in German) <https://jweiland.net/typo3/vortraege/typo3camp-berlin-2014.html>`_
+- `Upgrading 4.5->6.2 with OS X and Linux (Stack Overflow) <http://stackoverflow.com/questions/28675796/how-to-upgrade-typo3-4-5-to-6-2/>`_
+
+
+Steps
+-----
+
+Basically these are the steps to be done to update your TYPO3 site:
 
 .. toctree::
    :maxdepth: 5
@@ -53,14 +65,3 @@ Basically these are the steps to be done to update your TYPO3 site:
    ChangelogAndNewsmd/Index
    UpdateExtensions/Index
    UpdateTranslations/Index
-
-
-Links
------
-
-Upgrade walkthroughs by TYPO3 users
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- `Upgrade guide by jweiland.net (in German) <https://jweiland.net/typo3/vortraege/typo3camp-berlin-2014.html>`_
-- `Upgrading 4.5->6.2 with OS X and Linux (Stack Overflow) <http://stackoverflow.com/questions/28675796/how-to-upgrade-typo3-4-5-to-6-2/>`_
-
