@@ -26,6 +26,6 @@ conf.py:
     preamble: \usepackage{typo3}
   intersphinx_mapping:
     t3api:
-    - http://docs.typo3.org/typo3cms/CoreApiReference/
+    - https://docs.typo3.org/typo3cms/CoreApiReference/
     - null
 ...
