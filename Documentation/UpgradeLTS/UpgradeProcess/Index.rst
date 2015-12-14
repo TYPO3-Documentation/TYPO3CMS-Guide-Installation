@@ -67,4 +67,4 @@ For this, read on in the next chapter.
 
 In TYPO3 CMS 4.5 languages could be defined by setting ``config.language = xy`` in TypoScript and having according labels in ``<languageKey index="xy" type="array">`` in language files.
 In TYPO3 CMS 6.2 by default this is possible only for those language keys that have been defined in :file:`typo3/sysext/core/Classes/Localization/Locales.php`.
-If you want to use a language without a definition there (e.g. en_US), you have to add it on your own as described here: :ref:`t3api:xliff-translating-languages`.
+If you want to use a language without a definition there (e.g. en_US), you have to add it on your own as described here: :ref:`t3coreapi:xliff-translating-languages`.

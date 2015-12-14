@@ -25,7 +25,7 @@ conf.py:
     pointsize: 10pt
     preamble: \usepackage{typo3}
   intersphinx_mapping:
-    t3api:
+    t3coreapi:
     - https://docs.typo3.org/typo3cms/CoreApiReference/
     - null
 ...
