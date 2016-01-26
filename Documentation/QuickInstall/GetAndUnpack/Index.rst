@@ -25,11 +25,11 @@ Installing on a Unix server
    the manual). Use the shell to execute the according commands::
 
        /var/www/site/htdocs/$ cd ..
-       /var/www/site/$ wget get.typo3.org/6.2 -O typo3_src-6.2.x.tar.gz
+       /var/www/site/$ wget get.typo3.org/7.6 -O typo3_src-7.6.x.tar.gz
 
-#. Unpack the :file:`typo3_src-6.2.x.tar.gz` file on your web server::
+#. Unpack the :file:`typo3_src-7.6.x.tar.gz` file on your web server::
 
-       /var/www/site/$ tar xzf typo3_src-6.2.x.tar.gz
+       /var/www/site/$ tar xzf typo3_src-7.6.x.tar.gz
 
    .. tip::
 
@@ -41,9 +41,15 @@ Installing on a Unix server
 #. Create these symlinks in your document root::
 
        cd htdocs
-       ln -s ../typo3_src-6.2.x typo3_src
+       ln -s ../typo3_src-7.6.x typo3_src
        ln -s typo3_src/index.php index.php
        ln -s typo3_src/typo3 typo3
+
+
+#. Create an empty file :file:`FIRST_INSTALL` to enable the Install Tool
+   to set up and configure the instance in the next step::
+
+       touch FIRST_INSTALL
 
 
 #. In case you use the Apache web server, copy the :file:`.htaccess` file to
@@ -54,14 +60,14 @@ Installing on a Unix server
 
    You end up with the following structure of files::
 
-       typo3_src-6.2.x/
-       htdocs/typo3_src -> ../typo3_src-6.2.x/
+       typo3_src-7.6.x/
+       htdocs/typo3_src -> ../typo3_src-7.6.x/
        htdocs/typo3 -> typo3_src/typo3/
        htdocs/index.php -> typo3_src/index.php
        htdocs/.htaccess
 
 The advantage of this setup is that all files from the TYPO3 Source
-package are kept together in the :file:`typo3_src-6.2.x` folder and
+package are kept together in the :file:`typo3_src-7.6.x` folder and
 separated from other files of your installation. This allows you to
 easily exchange this folder when a new patchlevel version of TYPO3 is
 released.
@@ -89,7 +95,7 @@ Installing on a Windows server
 #. Use the shell to create these symbolic links in your document root::
 
        cd htdocs
-       mklink /d typo3_src ..\typo3_src-6.2.x
+       mklink /d typo3_src ..\typo3_src-7.6.x
        mklink /d typo3 typo3_src\typo3
        mklink index.php typo3_src\index.php
 
@@ -100,8 +106,8 @@ Installing on a Windows server
 
    You end up with the following structure of files::
 
-       typo3_src-6.2.x/
-       htdocs/typo3_src -> ../typo3_src-6.2.x/
+       typo3_src-7.6.x/
+       htdocs/typo3_src -> ../typo3_src-7.6.x/
        htdocs/typo3 -> typo3_src/typo3/
        htdocs/index.php -> typo3_src/index.php
        htdocs/.htaccess
