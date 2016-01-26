@@ -1,0 +1,31 @@
+# Settings.yml
+---
+conf.py:
+  project: Installation and Upgrade Guide
+  copyright: 2000-2015
+  version: 7
+  release: 7
+  extensions:
+  - sphinx.ext.intersphinx
+  - t3sphinx.ext.t3extras
+  - t3sphinx.ext.t3tablerows
+  - t3sphinx.ext.targets
+  - sphinx.ext.todo
+  html_theme_options:
+    github_repository: TYPO3-Documentation/TYPO3CMS-Guide-Installation
+    github_branch: latest
+  latex_documents:
+  - - Index
+    - t3install.tex
+    - Installation and Upgrade Guide
+    - Documentation Team
+    - manual
+  latex_elements:
+    papersize: a4paper
+    pointsize: 10pt
+    preamble: \usepackage{typo3}
+  intersphinx_mapping:
+    t3coreapi:
+    - https://docs.typo3.org/typo3cms/CoreApiReference/
+    - null
+...
