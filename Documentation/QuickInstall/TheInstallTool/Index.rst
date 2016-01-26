@@ -18,26 +18,29 @@ The Install Tool
    e.g.
    `http://www.example.com/typo3/install/ <http://www.example.com/typo3/install/>`_.)
 
+.. note::
+    If you can't access 'typo3/install' use the full install URL: 'typo3/sysext/install/Start/Install.php'
+
 #. This is what you should see:
 
    .. figure:: ../../Images/QuickInstall-1-System-Environment.png
-      :alt: Install Tool in 1-2-3 mode, first step.
+      :alt: Install Tool, system environment
 
 #. In case you have problems in your Environment, you will get warnings
    or hints in this screen. In this case, you should try to fix them;
    the ":ref:`troubleshooting`" section might help you.
 
 #. *Enter your database credentials.* Enter MySQL username and password.
-   In most cases the database host is "localhost".
+   In most cases the type is "Socket Based Connection".
 
    .. figure:: ../../Images/QuickInstall-2-Database-Connection.png
-      :alt: Install Tool in 1-2-3 mode, second step.
+      :alt: Install Tool, database connection
 
 #. *Create a new database for TYPO3 or use an existing empty
    database.*
 
    .. figure:: ../../Images/QuickInstall-3-Database-Selection.png
-      :alt: Install Tool in 1-2-3 mode, third step.
+      :alt: Install Tool, third step.
 
 #. Enter a username and password for your first TYPO3 admin user. (For security 
    reasons, it's best not to use the name *admin*.) This
@@ -46,14 +49,13 @@ The Install Tool
    title).
 
    .. figure:: ../../Images/QuickInstall-4-Admin-User-Sitename.png
-      :alt: Install Tool in 1-2-3 mode, forth step.
+      :alt: Install Tool, Admin User and Site Name
 
-#. In the last step you can choose whether you want to download and install
-   an existing distribution after your first Backend login. If you want
-   to start with an empty installation, untick this checkbox.
+#. In the last step you can decide to download a list of distributions (pre-configured sites), or to create a
+   base empty page, or just start with an empty installation.
 
    .. figure:: ../../Images/QuickInstall-5-Last-Step.png
-      :alt: Install Tool in 1-2-3 mode, fifth step.
+      :alt: Install Tool, last step and distributions in 1-2-3 mode, fifth step.
 
 #. **The basic installation is now complete!**
 

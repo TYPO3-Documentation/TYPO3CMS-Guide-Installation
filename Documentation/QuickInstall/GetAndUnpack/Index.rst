@@ -29,7 +29,7 @@ Installing on a Unix server
 
 #. Unpack the :file:`typo3_src-7.6.x.tar.gz` file on your web server::
 
-       /var/www/site/$ tar xzf typo3_src-7.6.x.tar.gz
+       /var/www/site/$ tar -xzf typo3_src-7.6.x.tar.gz
 
    .. tip::
 
@@ -42,9 +42,14 @@ Installing on a Unix server
 
        cd htdocs
        ln -s ../typo3_src-7.6.x typo3_src
-       ln -s typo3_src/index.php index.php
        ln -s typo3_src/typo3 typo3
+       ln -s typo3_src/index.php index.php
 
+.. note::
+    Some servers installations do not allow a symlink on a php file, especially on shared hosting environments. Here you should copy the index.php like this:
+
+        cp typo3_src/index.php index.php
+    
 
 #. Create an empty file :file:`FIRST_INSTALL` to enable the Install Tool
    to set up and configure the instance in the next step::
