@@ -49,13 +49,13 @@ The Install Tool
    title).
 
    .. figure:: ../../Images/QuickInstall-4-Admin-User-Sitename.png
-      :alt: Install Tool, Admin User and Site Name
+      :alt: Install Tool, admin user and site Name
 
 #. In the last step you can decide to download a list of distributions (pre-configured sites), or to create a
    base empty page, or just start with an empty installation.
 
    .. figure:: ../../Images/QuickInstall-5-Last-Step.png
-      :alt: Install Tool, last step and distributions in 1-2-3 mode, fifth step.
+      :alt: Install Tool, last step and distributions
 
 #. **The basic installation is now complete!**
 
