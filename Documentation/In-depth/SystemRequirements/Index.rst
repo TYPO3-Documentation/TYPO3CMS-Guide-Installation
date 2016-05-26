@@ -14,9 +14,9 @@ System Requirements
 TYPO3 requires a web server, PHP and a database system.
 
 * TYPO3 requires a web server which can run PHP (e.g. Apache or IIS).
-* TYPO3 6.2 requires at least PHP 5.3.7.
+* TYPO3 8 requires at least PHP 7.x.
 * TYPO3 can be used with a great many database systems. If you use
-  MySQL, you will need to implement at least MySQL 5.1.
+  MySQL, you will need to implement at least MySQL 5.5.
 
 If you use the Apache web server, the module mod_rewrite must be
 activated. Certain PHP extensions are necessary, others recommended.
