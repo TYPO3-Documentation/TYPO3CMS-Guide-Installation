@@ -36,7 +36,7 @@ Installing on a Unix server
 #. Create these symlinks in your document root::
 
        cd htdocs
-       ln -s ../typo3_src-7.6.x typo3_src
+       ln -s ../typo3_src-7.6.x/ typo3_src
        ln -s typo3_src/index.php index.php
        ln -s typo3_src/typo3 typo3
 
