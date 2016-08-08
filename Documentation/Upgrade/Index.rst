@@ -24,7 +24,7 @@ important ones!)
 
    While this guide is the general guideline to follow for a TYPO3
    Upgrade, some `version specific information are additionally available
-   in the TYPO3 Wiki <http://wiki.typo3.org/Upgrade>`_. Use them as an
+   in the TYPO3 Wiki <https://wiki.typo3.org/Upgrade>`_. Use them as an
    amendment to this guide!
 
 .. note::
@@ -34,20 +34,6 @@ important ones!)
    Think of users who might want to do any changes during your upgrading
    and/or fallback. Inform them **before** you start!
 
-
-Links
------
-
-Upgrade walkthroughs by TYPO3 users
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- `Upgrade guide by jweiland.net (in German) <https://jweiland.net/typo3/vortraege/typo3camp-berlin-2014.html>`_
-- `Upgrading 4.5->6.2 with OS X and Linux (Stack Overflow) <http://stackoverflow.com/questions/28675796/how-to-upgrade-typo3-4-5-to-6-2/>`_
-
-
-Steps
------
-
 Basically these are the steps to be done to update your TYPO3 site:
 
 .. toctree::
@@ -56,6 +42,7 @@ Basically these are the steps to be done to update your TYPO3 site:
    :glob:
 
    Backup/Index
+   UpdateReferenceIndex/Index
    InstallTheNewSource/Index
    ConvertGlobalExtensions/Index
    UseTheUpgradeWizard/Index

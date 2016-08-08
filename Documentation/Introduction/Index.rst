@@ -35,8 +35,7 @@ configure TYPO3 in more detail.
 What's new
 ^^^^^^^^^^
 
-Updated the manual for TYPO3 CMS version 6.2 and added a chapter for
-upgrading from 4.5 LTS to 6.2 LTS.
+Updated the manual for TYPO3 CMS version 7.6.
 
 
 .. _credits:

@@ -66,11 +66,10 @@ This section provides default settings for different setups.
 The section "Character set conversion settings" allows you to select 
 the program which should be used for character set conversions.
 
-The section "Development / Production settings" allows you to set an
-application context, in which TYPO3 should be running. E.g. if set to
-"Development", all kinds of error reporting, debugging and deprecation
-logging will be activated. If set to "Production", all these settings
-will be deactivated.
+The section "Debug settings" allows you to activate debugging. E.g. if
+set to "Debug", all kinds of error reporting, debugging and deprecation
+logging will be activated. If set to "Live", all these settings will be
+deactivated.
 
 The "Image handling settings" contain presets for different image
 processing programs (namely ImageMagick and GraphicsMagick). Select

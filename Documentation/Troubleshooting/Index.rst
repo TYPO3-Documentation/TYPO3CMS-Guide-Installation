@@ -18,6 +18,13 @@ in your installation which might influence performance.
 Follow the advice given there to fix those issues. This helps to
 solve or prevent most issues.
 
+During troubleshooting, in the "Configuration Presets" section of the Install 
+Tool, under "Debug settings", you should select the "Debug" preset. This is 
+especially helpful, if e.g. in the Frontend you only see a blank page. With 
+debug settings activated, the PHP error message will be displayed, which will 
+help you narrow down the problem.
+
+
 .. toctree::
    :maxdepth: 5
    :titlesonly:

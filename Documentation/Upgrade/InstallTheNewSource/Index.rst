@@ -83,11 +83,11 @@ root - adjust the :file:`typo3_src` symlink.
 What's the next step?
 """""""""""""""""""""
 
-In case you did a *minor update*, e.g. from TYPO3 6.2.2 to 6.2.3,
+In case you did a *minor update*, e.g. from TYPO3 7.6.2 to 7.6.3,
 database updates are usually *not* necessary. All you still have to do
 is to :ref:`remove the temporary cache files
 <remove-temporary-cache-files>`. After that your update is finished.
 
-In case of a *major update*, e.g. from TYPO3 6.1 to 6.2, go ahead with
+In case of a *major update*, e.g. from TYPO3 6.2 to 7.6, go ahead with
 the next step!
 
