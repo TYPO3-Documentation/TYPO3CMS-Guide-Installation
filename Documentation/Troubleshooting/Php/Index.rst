@@ -42,5 +42,6 @@ illogical problems after an upgrade:
 
 - If a PHP cache somehow fails to re-cache scripts: in particular, if a
   change happened to a parent class overridden by a child class which was not updated.
-  Solution: Remove ALL cached PHP files (for PHP-Accelerator, remove :file:`/tmp/phpa_*`) and restart Apache.
+  Solution: Remove ALL cached PHP files (for PHP-Accelerator, remove :file:`/tmp/phpa_*`)
+  and restart Apache.
 

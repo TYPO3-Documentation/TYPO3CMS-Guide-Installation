@@ -30,7 +30,7 @@ configure TYPO3 in more detail.
 What's new
 ^^^^^^^^^^
 
-Updated the manual for TYPO3 CMS version 7.6
+Updated the manual for TYPO3 CMS version 7.6.
 
 
 .. _credits:
