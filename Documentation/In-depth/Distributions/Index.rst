@@ -61,7 +61,7 @@ If accurately adhering to web standards is especially important to you
 (e.g. as required for government bodies in the European Union), you might want to try
 the Government Package.
 
-Just choose the Distribution you'd like to use and hit "Install". Clicking on 
+Just choose the Distribution you'd like to use and hit "Install". 
 
 .. note::
    The installation process of a Distribution can take a **long** time. On
