@@ -43,6 +43,9 @@ The **Check for broken extensions** can be run to make sure that
 all :file:`ext_tables` and :file:`ext_localconf` files contain valid
 PHP code, so that they can be loaded without breaking the system.
 
+The **TCA Migrations** can be used to check whether the current TCA
+needs migrations and displays applied migrations.
+
 The **Core update** can update the TYPO3 Core to the newest minor version.
 
 Apart from these functions, this section also contains options to
