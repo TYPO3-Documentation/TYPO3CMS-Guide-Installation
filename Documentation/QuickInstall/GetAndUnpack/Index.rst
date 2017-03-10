@@ -60,6 +60,7 @@ Installing on a Unix server
        htdocs/typo3 -> typo3_src/typo3/
        htdocs/index.php -> typo3_src/index.php
        htdocs/.htaccess
+       htdocs/FIRST_INSTALL
 
 The advantage of this setup is that all files from the TYPO3 Source
 package are kept together in the :file:`typo3_src-7.6.x` folder and
