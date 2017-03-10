@@ -25,7 +25,11 @@ Installing on a Unix server
 #. Unpack the :file:`typo3_src-7.6.x.tar.gz` file on your web server::
 
        /var/www/site/$ tar xzf typo3_src-7.6.x.tar.gz
-
+       
+   .. note::
+      Be aware that the `x` in the extracted folder will be replaced with the 
+      latest bugfix version, e.g. typo3_src-7.6.16.
+      
    .. tip::
 
       You can also unpack the package on your local PC and *then* upload the
