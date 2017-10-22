@@ -6,7 +6,7 @@
 The Install Tool
 ^^^^^^^^^^^^^^^^
 
-The Install Tool provides tools to help you with the maintainance of your
+The Install Tool provides tools to help you with the maintenance of your
 installation: Upgrading, checking the system environment, configuring
 settings from :code:`$TYPO3_CONF_VARS` and solving problems. Its
 usage is not dependent on a working Backend, and you access it
@@ -61,9 +61,6 @@ Configuration presets
 
 This section provides default settings for different setups.
 
-The section "Character set conversion settings" allows you to select 
-the program which should be used for character set conversions.
-
 The section "Debug settings" allows you to activate debugging. E.g. if
 set to "Debug", all kinds of error reporting, debugging and deprecation
 logging will be activated. If set to "Live", all these settings will be
@@ -73,8 +70,11 @@ The "Image handling settings" contain presets for different image
 processing programs (namely ImageMagick and GraphicsMagick). Select
 the one you have available.
 
-Finally the preset "Extbase object cache" allows you to choose the kind of
-caching system for Extbase to use.
+The preset "Extbase object cache" allows you to choose the kind of
+caching system for Extbase (a TYPO3 Extension Building Framework) to use.
+
+Finally, in the "Mail Handling Settings" you can configure how TYPO3 sends
+mails (via SMTP or sendmail for example).
 
 
 .. _all-configuration:
@@ -92,10 +92,10 @@ took care of the most important settings.
 
 .. _upgrade-wizard:
 
-Upgrade wizard
-""""""""""""""
+Upgrade wizard & Upgrade Analysis
+"""""""""""""""""""""""""""""""""
 
-You don't need the upgrade wizard while *installing* TYPO3. This function 
+You don't need the upgrade wizard while *installing* TYPO3. These functions
 will be explained in a later chapter about upgrading TYPO3.
 
 

@@ -22,10 +22,7 @@ TYPO3 provides an upgrade wizard for easy upgrading. Go to the
 provided. You should go them through one by one.
 
 You must start by using the "Update database schema: Create tables and
-fields" wizard, which adds new tables and columns to the database.
-
-.. figure:: ../../Images/Upgrade-Wizard-Add-Tables-Columns.png
-   :alt: Add tables and columns to the database.
+fields" wizard if it's displayed, which adds new tables and columns to the database.
 
 Click "Execute". Now all :file:`ext_tables.sql` files from core and extensions
 are read and compared to your current database tables and columns. Any
@@ -49,9 +46,9 @@ installing system extensions (for example simulatestatic) that you may
 not need in your current installation, so take care to only apply those
 wizards, which you really need.
 
-The last upgrade wizard "Update database schema: Modify tables and
-fields" finally changes definitions of existing tables and columns as
-needed. You will be able to execute queries to adapt them so that
+After running through the upgrade wizards go again to the
+`Database Analyzer`.
+You will be able to execute queries to adapt them so that
 the tables and columns used by the TYPO3 Core correspond to the
 structure required for the new TYPO3 version.
 

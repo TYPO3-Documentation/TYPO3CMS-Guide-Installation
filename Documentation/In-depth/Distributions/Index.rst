@@ -18,7 +18,11 @@ the installation process (in the Install Tool), you will be redirected to the
 "Get preconfigured distribution" screen of the Extension Manager after logging
 in to the backend. (You can also navigate there manually, of course.)
 
-Amongst non-core options, the following Core Distributions are available:
+.. note::
+	If you installed TYPO3 via composer all extension downloads as well as distribution
+	installations have to be done via composer command line, too.
+
+Amongst non-core options, the following Core Distribution is available:
 
 .. _introduction-package:
 
@@ -26,34 +30,16 @@ Introduction Package
 """"""""""""""""""""
 
 The Introduction Package is a complete demo website. It it based on a
-responsive design and contains a lot of default content for testing and
-learning. Try this one if you are new to TYPO3.
+responsive design using bootstrap templates and contains a lot of default
+content for testing and learning. Try this one if you are new to TYPO3.
 
-
-.. _government-package:
-
-Government Package
-""""""""""""""""""
-
-The Government Package is a demo website. It contains a collection of
-best practices to enhance the level of web accessibility. The contents
-are rendered in HTML5 based on the famous HTML5Boilerplate. Navigation
-and content elements are defined to be accessible for screen readers
-and keyboard navigation. HTML5 semantics are used to add more meaning
-and structure to the appropriate elements. Since web accessibility
-guidelines are strict on contrast ratio and readability, an alternative
-view has been integrated, which allows you to use an alternative,
-contrast-enhanced stylesheet.
-
-.. note::
-
-   The Government Package is currently unmaintained and is not
-   compatible with recent versions of TYPO3 CMS.
+.. figure:: ../../Images/IntroductionPackage.png
+	:alt: The Introduction Package provides a full website based on bootstrap.
 
 .. _installing-distributions:
 
-Installing Distributions
-""""""""""""""""""""""""
+Installing Distributions without composer
+"""""""""""""""""""""""""""""""""""""""""
 
 For testing and learning we recommend that you use the Introduction Package,
 but several other distributions are available.
@@ -66,3 +52,22 @@ button.
 If you want to build your web site from scratch, just go ahead *without*
 using a Distribution. You can then start with a completely empty
 installation of TYPO3.
+
+Installing Distributions with composer
+"""""""""""""""""""""""""""""""""""""""
+
+To install the introduction package or any other distribution on a composer
+based installation use :bash:`composer require typo3/cms-introduction` (change
+the package name to the distribution you want). Afterwards use the
+following commands to activate the extension(s) via command line:
+
+.. code-block::bash
+
+	./vendor/bin/typo3 extensionmanager:extension:install bootstrap_package
+	./vendor/bin/typo3 extensionmanager:extension:install introduction
+
+In this case, the introduction package depends on the bootstrap_package, so
+both packages have to be installed.
+
+.. note::
+	On windows, use :file:`.\vendor\bin\typo3.bat` instead.

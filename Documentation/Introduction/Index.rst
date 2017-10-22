@@ -30,7 +30,7 @@ configure TYPO3 in more detail.
 What's new
 ^^^^^^^^^^
 
-Updated the manual for TYPO3 CMS version 7.6.
+Updated the manual for TYPO3 CMS version 8.7.
 
 
 .. _credits:
@@ -59,5 +59,6 @@ using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Ins
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
 If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/).
+mailing list/forum (http://forum.typo3.org/index.php/f/44/) or
+the slack channel #typo3-documentation.
 

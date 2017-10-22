@@ -3,8 +3,8 @@
 
 .. _update-extensions:
 
-Update Extensions
-^^^^^^^^^^^^^^^^^
+Update Extensions (only on non-composer installations)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In the Backend, go to the extension manager and update the extensions
 you use. TYPO3 CMS stores a reference list of available extensions locally, 
