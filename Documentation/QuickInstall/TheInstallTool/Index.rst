@@ -7,7 +7,13 @@ The Install Tool
 ================
 
 #. Hit the start page of your freshly created site with your browser
-   and the Install Tool will open in the so called "1-2-3 mode".
+   and you should see the "thank you for downloading"-message.
+
+   .. figure:: ../../Images/FirstInstall.png
+      :alt: Success message after download.
+
+#. Create the file FIRST_INSTALL in your web root directory and reload
+   the page. You will be redirected to the install tool.
    It will guide you through the steps for installing TYPO3. (The
    Install Tool is located in 'typo3/install' in your installation,
    e.g.
@@ -43,9 +49,8 @@ The Install Tool
    .. figure:: ../../Images/QuickInstall-4-Admin-User-Sitename.png
       :alt: Install Tool in 1-2-3 mode, forth step.
 
-#. In the last step you can choose whether you want to download and install
-   an existing distribution after your first Backend login. If you want
-   to start with an empty installation, untick this checkbox.
+#. In the last step you can choose whether you want to start with an
+   empty TYPO3 or if you want to have a basis to start from.
 
    .. figure:: ../../Images/QuickInstall-5-Last-Step.png
       :alt: Install Tool in 1-2-3 mode, fifth step.

@@ -3,14 +3,19 @@
 
 .. _check-the-changelog-and-news-md:
 
-Check the ChangeLog and NEWS.md
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Check the ChangeLog
+^^^^^^^^^^^^^^^^^^^
 
-Look through the :file:`ChangeLog` and the :file:`NEWS.md` files in your extracted TYPO3
-package. They contain information about new functions you might need or
-be interested in.
+Look through the `ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/8.7/>`_ online
+The ChangeLog is divided into four sections "Breaking Changes", "Features", "Deprecation" and
+"Important". Before upgrading you should at least take a look at the sections "Breaking Changes"
+and "Important" - changes described in those areas might affect your website.
 
-Especially pay attention to lines starting with "!!!". They are
-especially important, because they are about changes that may affect
-the operation of some websites.
+The detailed information contains a section called "Affected Installations" which contains hints
+whether or not your website is affected by the change.
 
+You can also find the ChangeLog in the Install Tool at "Upgrade Analysis". Here you can mark files
+as read after checking them, so you get a ToDo list for the upgrade.
+
+.. figure:: ../../Images/Upgrade-Analysis.png
+	:alt: The "Uprade Analysis" in the Install Tool

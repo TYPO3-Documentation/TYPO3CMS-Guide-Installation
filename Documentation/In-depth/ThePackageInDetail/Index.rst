@@ -11,7 +11,9 @@ The Package in Detail
 TYPO3 Folders and Files
 """""""""""""""""""""""
 
-The following files and folders are part of the TYPO3 Source package.
+The following files and folders are part of the TYPO3 package. In case of
+a `composer` based installation, only the necessary files will be linked in
+the web root. You can find the full package in :file:`vendor/typo3/cms/`.
 
 :file:`typo3/`
   contains the TYPO3 source code, files, images and scripts
@@ -47,11 +49,15 @@ installation of TYPO3:
 
 :file:`fileadmin/`
   contains your site assets and files, local to the website.
-  You can e.g. put templates, user uploads, external scripts and
-  images here. By default this folder is used to store files, which
+  You can e.g. put images, user uploads and other assets here.
+  By default this folder is used to store files, which
   have been uploaded in the TYPO3 Backend (:file:`fileadmin/` is
   configured as the first default storage). :file:`fileadmin/` must
   be writable for the web server user.
+  Files in :file:`fileadmin/` are for editors, you should not put any
+  site configuration files here. Exclude the :file:`fileadmin/` folder from
+  your version control to make sure not to mix development files and user
+  files.
 
 :file:`typo3conf/`
   contains configuration, extensions and translations for the local

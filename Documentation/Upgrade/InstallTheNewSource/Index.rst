@@ -7,7 +7,7 @@ Install the new Source
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Upgrade the distributed source files to the new version. You can do
-this either using the Core updater or manually.
+this either using the Core updater, via composer or manually.
 
 
 .. _install-core-updater:
@@ -73,16 +73,33 @@ Extract the package on your web server and - in your TYPO3 document
 root - adjust the :file:`typo3_src` symlink.
 
 
+Upgrading a composer based system
+"""""""""""""""""""""""""""""""""
+
+Use composer to update your system via
+:bash:`composer require typo3/cms:^8.7 --update-with-dependencies`
+
+If you have extensions installed, you will have to find the corresponding
+newer versions you want to install for your new major version and update them, too.
+
+For example: :bash:`composer require typo3/cms:^8.7 georgringer/news:^6.1 --update-with-dependencies`
+
+To find the matching extension versions you can go to `packagist.org <https://packagist.org/>`_,
+search for your extension and take a look at the requires section.
+
+.. figure:: ../../Images/ext-on-packagist.png
+	:alt: The "News" extension on packagist
+
 .. _install-next-step:
 
 What's the next step?
 """""""""""""""""""""
 
-In case you did a *minor update*, e.g. from TYPO3 7.6.2 to 7.6.3,
+In case you did a *minor update*, e.g. from TYPO3 8.7.6 to 8.7.7,
 database updates are usually *not* necessary. All you still have to do
 is to :ref:`remove the temporary cache files
 <remove-temporary-cache-files>`. After that your update is finished.
 
-In case of a *major update*, e.g. from TYPO3 6.2 to 7.6, go ahead with
+In case of a *major update*, e.g. from TYPO3 7.6 to 8.7, go ahead with
 the next step!
 

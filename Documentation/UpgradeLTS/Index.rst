@@ -7,10 +7,10 @@ Upgrade from LTS to LTS
 -----------------------
 
 This chapter provides in depth information about how to update from 
-TYPO3 6.2 LTS to the TYPO3 CMS 7.6 LTS version. 
+TYPO3 7.6 LTS to the TYPO3 CMS 8.7 LTS version.
 
 This chapter will give you a perspective on relevant changes since 
-TYPO3 6.2 and what to expect from the migration from 6.2 to 7.6.
+TYPO3 7.6 and what to expect from the migration from 7.6 to 8.7.
 
 
 .. _lts-upgrade-precondition:
@@ -20,11 +20,11 @@ Precondition
 
 #. TYPO3 Version
 
-   Make sure your installation is running at least TYPO3 6.2 LTS. 
-   The TYPO3 7.6 upgrade process is possible from version 6.2 - not 
+   Make sure your installation is running at least TYPO3 7.6 LTS.
+   The TYPO3 8.7 upgrade process is possible from version 7.6 - not
    from older versions. 
    
-   If you are running a lower version of TYPO3, please upgrade to 6.2 first. 
+   If you are running a lower version of TYPO3, please upgrade to 7.6 first.
 
 
 .. _lts-upgrade-process:
@@ -35,38 +35,21 @@ LTS Upgrade Process
 Do the upgrade as described in the previous chapter. When you use the 
 "Upgrade Wizards" note the following:
 
-- The upgrade wizard, which installs extension compatibility6 from TER, is 
+- The upgrade wizard, which installs extension compatibility7 from TER, is
   not necessarily needed. It provides a compatibility layer for extensions, 
-  which are compatible with TYPO3 6.2, but not yet with TYPO3 7.6, e.g. because 
+  which are compatible with TYPO3 7.6, but not yet with TYPO3 8.7, e.g. because
   they are still using old class names. If you are not using such extensions, 
-  you do not need to install the compatibility6 extension. 
+  you do not need to install the compatibility7 extension.
 
-- The upgrade wizard, which install the mediace extension, makes sure that the 
-  Media Content Element still is available in your installation. If you have not 
-  used this Content Element and if you do not want to use it in the future, you 
-  do not need this extension. Otherwise install it! 
+- The upgrade wizard, which migrates css_styled_content/fluid_styled_content allows
+  parallel installation of both extensions in the system, making it possible to
+  smoothly migrate from the now deprecated css_styled_content to fluid_styled_content.
 
+- The extension `form_legacy` contains the old form content element. The complete form
+  element was replaced by a new form builder in the TYPO3 backend. If you are currently
+  using forms, you should install `form_legacy` - and think about migrating your forms
+  to the new extension.
 
-.. _lts-upgrade-after:
-
-After the Upgrade
-"""""""""""""""""
-
-When you insert content elements into your website, you have the content elements 
-"Regular Text Element", "Text & Images" and "Images Only". These content elements 
-are provided by the extension css\_styled\_content. 
-
-In TYPO3 CMS 7, a replacement called fluid\_styled\_content is available. If you 
-install this extension instead of css\_styled\_content, other content elements 
-will be available, namely the one called "Text and Media". With this content 
-element, you can combine text with any type of media, e.g. a PDF file, a video 
-or an image. fluid\_styled\_content has the advantage that Fluid templates can 
-directly be edited to influence rendering; it is not necessary to write TypoScript 
-rendering definitions. Note however that some options no longer are available in 
-fluid\_styled\_content, e.g. image processing options. If you use 
-fluid\_styled\_content, your old content elements can be/have to be migrated to it. 
-
-Note that fluid\_styled\_content is in an early phase. At this time it is no 
-problem to continue using css\_styled\_content. If and how fluid\_styled\_content 
-will replace css\_styled\_content is not clear. 
-
+- The extension `rtehtmlarea` contains the old rich text editor which was replaced by
+  ckeditor. Before installing you should check whether the new editor is already fulfilling
+  all your requirements. ckeditor is easier to configure and runs smoother.
