@@ -35,6 +35,7 @@ Basically these are the steps to be done to update your TYPO3 site:
    :titlesonly:
    :glob:
 
+   Preparation/Index
    Backup/Index
    UpdateReferenceIndex/Index
    InstallTheNewSource/Index
