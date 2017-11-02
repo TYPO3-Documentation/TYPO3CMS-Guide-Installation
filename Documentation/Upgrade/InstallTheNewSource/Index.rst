@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _install-the-new-source:
@@ -77,12 +77,17 @@ Upgrading a composer based system
 """""""""""""""""""""""""""""""""
 
 Use composer to update your system via
-:bash:`composer require typo3/cms:^8.7 --update-with-dependencies`
+`composer require typo3/cms:^8.7 --update-with-dependencies`
 
 If you have extensions installed, you will have to find the corresponding
 newer versions you want to install for your new major version and update them, too.
 
-For example: :bash:`composer require typo3/cms:^8.7 georgringer/news:^6.1 --update-with-dependencies`
+Example:
+
+.. code-block:: shell
+
+   composer require typo3/cms:^8.7 georgringer/news:^6.1 --update-with-dependencies
+
 
 To find the matching extension versions you can go to `packagist.org <https://packagist.org/>`_,
 search for your extension and take a look at the requires section.
