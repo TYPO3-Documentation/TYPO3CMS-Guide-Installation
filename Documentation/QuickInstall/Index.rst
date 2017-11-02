@@ -18,5 +18,6 @@ Pre-Requisites:
    :titlesonly:
    :glob:
 
+   Composer/Index
    GetAndUnpack/Index
    TheInstallTool/Index
