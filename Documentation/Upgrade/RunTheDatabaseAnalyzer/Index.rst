@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _run-the-database-analyzer:
@@ -15,6 +15,8 @@ specification".
 
 .. figure:: ../../Images/Important-Actions-Database-Analyzer.png
    :alt: The Database Analyzer before analyzing the database.
+   :class: with-shadow
+
 
 You will be able to execute queries to remove these tables and columns
 so that your database corresponds to the structure required for the new
@@ -37,14 +39,20 @@ If you made TYPO3 apply all changes, you should after clicking
 "Execute" see a notice like this:
 
 .. figure:: ../../Images/Important-Actions-Database-Analyzer-Updates-Executed.png
-   :alt: The Database Analyzer after successfully updating all table
-         and field definitions.
+   :class: with-shadow
+   :alt: Database analyzer
+
+   The Database Analyzer after successfully updating all table and field
+   definitions.
 
 When you then click "Compare current database with specification" again
 and you only see the message
 
 .. figure:: ../../Images/Important-Actions-Database-Analyzer-Database-Analyzed.png
-   :alt: The Database Analyzer with no updates to do.
+   :class: with-shadow
+   :alt: Database analyzer
+
+   The Database Analyzer with no updates to do.
 
 then all database updates have been applied.
 

@@ -38,6 +38,7 @@ content for testing and learning. Try this one if you are new to TYPO3.
 
 .. figure:: ../../Images/IntroductionPackage.png
    :alt: Introduction Package
+   :class: with-shadow
 
    The Introduction Package provides a full website based on bootstrap.
 

@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _the-install-tool:
@@ -10,8 +10,10 @@ The Install Tool
    and you should see the "thank you for downloading"-message.
 
    .. figure:: ../../Images/FirstInstall.png
-      :alt: Success message after download.
       :class: with-shadow
+      :alt: Success message after download.
+
+      Success message after download.
 
 #. Create the file FIRST_INSTALL in your web root directory and reload
    the page. You will be redirected to the install tool.
@@ -50,7 +52,7 @@ The Install Tool
 
       Install Tool in 1-2-3 mode, third step.
 
-#. Enter a username and password for your first TYPO3 admin user. (For security 
+#. Enter a username and password for your first TYPO3 admin user. (For security
    reasons, it's best not to use the name *admin*.) This
    password will also be configured for the Install Tool. The "site
    name" will identify this installation (in the page tree and browser

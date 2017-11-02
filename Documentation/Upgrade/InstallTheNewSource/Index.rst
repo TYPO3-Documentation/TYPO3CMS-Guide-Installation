@@ -93,8 +93,10 @@ To find the matching extension versions you can go to `packagist.org <https://pa
 search for your extension and take a look at the requires section.
 
 .. figure:: ../../Images/ext-on-packagist.png
-   :alt: The "News" extension on packagist
    :class: with-shadow
+   :alt: extension on packagist
+
+   The "News" extension on packagist
 
 .. _install-next-step:
 

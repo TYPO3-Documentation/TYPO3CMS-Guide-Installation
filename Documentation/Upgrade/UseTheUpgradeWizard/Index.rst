@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _use-the-upgrade-wizard:
@@ -15,7 +15,10 @@ then setting the displayed hash as value of
 :file:`typo3conf/LocalConfiguration.php`.)
 
 .. figure:: ../../Images/Upgrade-Wizard.png
-   :alt: The Upgrade Wizard in the Install Tool.
+   :class: with-shadow
+   :alt: Upgrade wizard
+
+   The Upgrade Wizard in the Install Tool.
 
 TYPO3 provides an upgrade wizard for easy upgrading. Go to the
 "Upgrade Wizard" section and take a look at the different wizards
@@ -36,6 +39,7 @@ your TYPO3 installation to the new version. This allows your Frontend
 output to use new features of the new TYPO3 version.
 
 .. note::
+
    This wizard might affect how your website is rendered. After finishing
    the upgrade, check that your website still displays the way it is
    supposed to be and adjust your TypoScript if necessary.

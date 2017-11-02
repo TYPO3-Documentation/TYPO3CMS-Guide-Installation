@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _remove-temporary-cache-files:
@@ -13,7 +13,11 @@ must be removed as well.
 Go to "Important actions" and click "Clear all cache":
 
 .. figure:: ../../Images/Important-Actions-Clear-All-Cache.png
-   :alt: The option "Clear all Cache" in the Install Tool.
+   :class: with-shadow
+   :alt: Clear all Cache
+
+   The option "Clear all Cache" in the Install Tool.
+
 
 This method will remove all files from the folder
 :file:`typo3temp/Cache/Code/cache_core/`.

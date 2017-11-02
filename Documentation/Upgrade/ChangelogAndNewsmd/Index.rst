@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _check-the-changelog-and-news-md:
@@ -18,4 +18,7 @@ You can also find the ChangeLog in the Install Tool at "Upgrade Analysis". Here 
 as read after checking them, so you get a ToDo list for the upgrade.
 
 .. figure:: ../../Images/Upgrade-Analysis.png
-	:alt: The "Uprade Analysis" in the Install Tool
+   :class: with-shadow
+   :alt: Uprade Analysis
+
+   The "Uprade Analysis" in the Install Tool

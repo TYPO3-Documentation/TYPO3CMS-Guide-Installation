@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+﻿.. include:: ../../Includes.txt
 
 
 .. _the-install-tool-in-depth:
@@ -15,9 +15,10 @@ using a single password.
 First go to your site and enter the install tool (http://www.example.com/typo3/install).
 
 .. hint::
-	If you see a message "The Install Tool is locked", create a new file
-	named "ENABLE_INSTALL_TOOL" in the folder :file:`typo3conf/`. Then reload the
-	page.
+
+   If you see a message "The Install Tool is locked", create a new file
+   named "ENABLE_INSTALL_TOOL" in the folder :file:`typo3conf/`. Then reload the
+   page.
 
 
 .. _important-actions:
@@ -29,14 +30,19 @@ The section provides basic information about your system and several
 functions which you need for maintenance tasks or during an upgrade.
 
 .. figure:: ../../Images/Important-Actions.png
-      :alt: The "Important Actions" section of the Install Tool.
+   :class: with-shadow
+   :alt: Important Actions
+
+   The "Important Actions" section of the Install Tool.
+
+
 
 The **Database analyzer** can be used to compare the current structure
 of your database with the expected structure for the TYPO3 version you
 are using. The next step allows you to update the structure of your
 database accordingly.
 
-The **Clear all Cache** functionality can empty all caches: Frontend, 
+The **Clear all Cache** functionality can empty all caches: Frontend,
 Backend and language caches.
 
 The **Check for broken extensions** can be run to make sure that
@@ -86,7 +92,7 @@ Here you can configure *all* installation options concerning your TYPO3
 installation. We suggest you go through the whole list and read the
 description of the settings carefully at least once, so you get an
 impression of what you can configure. Normally you *can*, but you *don't
-have to* change anything here during installation, as the previous steps 
+have to* change anything here during installation, as the previous steps
 took care of the most important settings.
 
 
@@ -106,8 +112,8 @@ System environment
 
 The section contains a huge number of environment checks, which notify
 you of (potential) problems in your installation. It checks Apache
-settings and the status of important PHP modules and PHP settings. It 
-also contains full output of :code:`phpinfo()` and some constants used 
+settings and the status of important PHP modules and PHP settings. It
+also contains full output of :code:`phpinfo()` and some constants used
 by TYPO3.
 
 
@@ -117,7 +123,7 @@ Folder structure
 """"""""""""""""
 
 This section shows whether the files and folders in your installation have
-the correct permissions. This is important so that TYPO3 can function properly 
+the correct permissions. This is important so that TYPO3 can function properly
 and so that other users on the web server do not get access to (possibly confidential)
 data.
 
@@ -130,7 +136,7 @@ Test setup
 The section "Test setup" contains a test for the mail function and for
 image processing. Try each test to see if you have configured your image
 generation settings correctly. If you have problems, check the
-explanation of the test for a hint on how to solve them. Additionally, 
+explanation of the test for a hint on how to solve them. Additionally,
 have a look at the image processing settings in the section "All
 configuration".
 
