@@ -35,15 +35,15 @@ LTS Upgrade Process
 Do the upgrade as described in the previous chapter. When you use the 
 "Upgrade Wizards" note the following:
 
-- The upgrade wizard, which installs extension compatibility7 from TER, is
+- The upgrade wizard, which installs extension `compatibility7` from TER, is
   not necessarily needed. It provides a compatibility layer for extensions, 
   which are compatible with TYPO3 7.6, but not yet with TYPO3 8.7, e.g. because
   they are still using old class names. If you are not using such extensions, 
-  you do not need to install the compatibility7 extension.
+  you do not need to install the `compatibility7` extension.
 
-- The upgrade wizard, which migrates css_styled_content/fluid_styled_content allows
+- The upgrade wizard, which migrates `css_styled_content`/`fluid_styled_content`, allows
   parallel installation of both extensions in the system, making it possible to
-  smoothly migrate from the now deprecated css_styled_content to fluid_styled_content.
+  smoothly migrate from the now deprecated `css_styled_content` to `fluid_styled_content`.
 
 - The extension `form_legacy` contains the old form content element. The complete form
   element was replaced by a new form builder in the TYPO3 backend. If you are currently
@@ -51,5 +51,5 @@ Do the upgrade as described in the previous chapter. When you use the
   to the new extension.
 
 - The extension `rtehtmlarea` contains the old rich text editor which was replaced by
-  ckeditor. Before installing you should check whether the new editor is already fulfilling
-  all your requirements. ckeditor is easier to configure and runs smoother.
+  `rte_ckeditor`. Before installing you should check whether the new editor is already fulfilling
+  all your requirements. CKEditor is easier to configure and runs smoother.
