@@ -8,7 +8,7 @@ The Install Tool
 
 The Install Tool provides tools to help you with the maintenance of your
 installation: Upgrading, checking the system environment, configuring
-settings from :code:`$TYPO3_CONF_VARS` and solving problems. Its
+settings from :php:`$GLOBALS['TYPO3_CONF_VARS']` and solving problems. Its
 usage is not dependent on a working Backend, and you access it
 using a single password.
 
