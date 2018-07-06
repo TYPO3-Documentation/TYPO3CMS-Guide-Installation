@@ -111,3 +111,7 @@ is to :ref:`remove the temporary cache files
 In case of a *major update*, e.g. from TYPO3 7.6 to 8.7, go ahead with
 the next step!
 
+Also check out the breaking changes listed in `Changelog
+<https://docs.typo3.org/typo3cms/extensions/core/>`_ for the new version.  E.g.
+the database configuration inside `LocalConfiguration.php` has to be migrated by
+hand for Updates to 8.7 LTS.
