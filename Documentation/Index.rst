@@ -80,5 +80,6 @@ given task.
    In-depth/Index
    Upgrade/Index
    UpgradeLTS/Index
+   MigrateToComposer/Index
    Troubleshooting/Index
    Targets
