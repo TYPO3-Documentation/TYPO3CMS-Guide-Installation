@@ -123,18 +123,22 @@ You only need to known the package name. And here is a way to find it:
    `TER <https://extensions.typo3.org>`__.
 
 #. Click button "Take a look into the code".
-   |TER screenshot|
+
+   |TER screen shot|
 
 #. Open file :file:`composer.json`.
-   |TER screenshot|
+
+   |file list|
 
 #. Search for line with property ``"name"``, it's value should be
    formatted like ``vendor/package``.
-   |TER screenshot|
+
+   |file content|
 
 #. Check, if the package can be found on
    `packagist.org <https://packagist.org>`__.
-   |TER screenshot|
+
+   |packagist screen shot|
 
 | **Example:**
 | To install the news extension in version 7.0.\*, type::
@@ -274,7 +278,7 @@ To complete our example ``composer.json``, this would like this:
         }
     }
 
-.. |TER screenshot| image:: ../Images/ter-code-link.png
-.. |TER screenshot| image:: ../Images/github-composer-file.png
-.. |TER screenshot| image:: ../Images/github-composer-name.png
-.. |TER screenshot| image:: ../Images/packagist-news.png
+.. |TER screen shot| image:: ../Images/ter-code-link.png
+.. |file list| image:: ../Images/github-composer-file.png
+.. |file content| image:: ../Images/github-composer-name.png
+.. |packagist screen shot| image:: ../Images/packagist-news.png
