@@ -4,14 +4,15 @@
 Co-working
 ==========
 
-Add to version conrol system
+Add to version control system
 ----------------------------
 
-| If you use a version control system like Git, it's important to add
-  both files, the :file:`composer.json` and :file:`composer.lock` (which
-  automatically was created during the previous steps).
-| On the other side, some files and folders, which are added by
-  composer, should be excluded:
+If you use a version control system like Git, it's important to add
+both files, the :file:`composer.json` and :file:`composer.lock` (which
+automatically was created during the previous steps).
+
+On the other side, some files and folders, which are added by
+composer, should be excluded:
 
 -  :file:`web/index.php`
 -  :file:`web/typo3/`

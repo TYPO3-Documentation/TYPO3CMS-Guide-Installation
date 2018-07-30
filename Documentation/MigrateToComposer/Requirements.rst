@@ -36,8 +36,8 @@ must change that.
 You need a web root folder inside your project. You can find many
 tutorials with different names for your web root folder. The truth is:
 the name does not matter, because we can configure it in the settings in
-a later step. I will use ``web`` in my example, because it's a very
-common name on many systems.
+a later step. I will use ``web`` in my example, because it's used in
+many other TYPO3 related tutorials.
 
 **Good:**
 
