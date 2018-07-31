@@ -5,7 +5,7 @@ Co-working
 ==========
 
 Add to version control system
-----------------------------
+-----------------------------
 
 If you use a version control system like Git, it's important to add
 both files, the :file:`composer.json` and :file:`composer.lock` (which
