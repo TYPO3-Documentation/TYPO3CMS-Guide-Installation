@@ -10,7 +10,7 @@ Run composer locally
 You should not run composer on your live webspace. You always should run
 composer on your local machine, so you can test if everything worked
 fine. After running your tests, you can deploy the :file:`vendor` and
-:file:`web` folder you your webserver.
+:file:`web` folder you your web server.
 
 To avoid conflicts between your local and your server's PHP version, you
 can define your server's PHP version in your :file:`composer.json` file
@@ -35,7 +35,7 @@ Update single packages
 ----------------------
 
 When you want to update single packages, you can call the ``update``
-command with the package name. You should alway add
+command with the package name. You should always add
 ``--with-dependencies`` attribute to also update the required third
 party packages.
 
