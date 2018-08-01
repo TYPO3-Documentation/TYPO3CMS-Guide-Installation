@@ -62,6 +62,12 @@ Code integrity
 --------------
 
 Your project must have the TYPO3 core and all installed extensions in
-original state. If you changed files, like templates or configurations
-directly in core or the extensions, you have a problem. That's not how
-TYPO3 works.
+original state. If you applied manual changes to the files, these will
+be lost during the migration steps.
+
+.. note ::
+
+    If you need to apply hotfixes or patches to the TYPO3 core or public
+    available extensions, this `tutorial about applying patches via composer
+    <https://typo3worx.eu/2017/08/patch-typo3-using-composer/>`__ could help,
+    but requires some advanced steps.
