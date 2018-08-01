@@ -167,6 +167,13 @@ extension in version 6.5.\*, type::
 You can browse all available extensions and versions via
 https://composer.typo3.org/satis.html.
 
+.. note ::
+
+    If you do not include any packages this way, you can remove the
+    repository block with ``https://composer.typo3.org`` from your
+    :file:`composer.json` to safe some performance and speed up your
+    environment.
+
 Install extension from version control system (e.g. GitHub, Gitlab, ...)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
