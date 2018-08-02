@@ -117,7 +117,13 @@ You already know the TER and always used it to install extensions? Fine.
 But with composer, the **preferred way** is to install extensions
 directly from `packagist.org <https://packagist.org>`__. This works great, when the maintainer uploaded them
 to there. Many well known extensions are already available.
-You only need to known the package name. And here is a way to find it:
+You only need to known the package name. There are multiple ways to find it.
+
+Check manually
+^^^^^^^^^^^^^^
+
+This is the most exhausting way. But it will work, even if the extension maintainer
+does not provide additional information.
 
 #. Search and open the extension, you want to install, in
    `TER <https://extensions.typo3.org>`__.
@@ -144,6 +150,24 @@ You only need to known the package name. And here is a way to find it:
 To install the news extension in version 7.0.\*, type::
 
    composer require georgringer/news:~7.0.0
+
+Check in TER satis
+^^^^^^^^^^^^^^^^^^
+
+Extension maintainers optionally can link their TYPO3 extension in TER with the
+correct composer key on `packagist.org <https://packagist.org>`__. Some maintainers already did that and if you
+search the extension in https://composer.typo3.org/satis.html, you will see a message, which composer key should be
+used to install this extension.
+
+|satis abandoned note|
+
+See warning during composer require command
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+If you still install one of the abandoned extensios via its ``typo3-ter`` package key,
+you also will see a warning during the ``composer require`` command.
+
+|composer abandoned note|
 
 Install extension from TER
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -290,3 +314,5 @@ To complete our example ``composer.json``, it would look like this:
 .. |file list| image:: ../Images/github-composer-file.png
 .. |file content| image:: ../Images/github-composer-name.png
 .. |packagist screen shot| image:: ../Images/packagist-news.png
+.. |satis abandoned note| image:: ../Images/satis-abandoned.png
+.. |composer abandoned note| image:: ../Images/composer-ter-abandoned.png
