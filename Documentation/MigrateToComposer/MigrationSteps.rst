@@ -10,8 +10,8 @@ Delete files
 Yes, that's true. You have to delete some files, because they will be created by
 composer in some of the next steps.
 
-You have to delete, :file:`web/index.php`, :file:`web/typo3/` and all the
-extensions inside :file:`web/typo3conf/ext/`, you downloaded from TER or any
+You have to delete, :file:`public/index.php`, :file:`public/typo3/` and all the
+extensions inside :file:`public/typo3conf/ext/`, you downloaded from TER or any
 other resources like GitHub. You even have to delete your own extensions, if
 they are available in a separate Git repository and, for example, included as
 Git submodule.
@@ -38,7 +38,7 @@ your web root. At the moment, only these few lines are required:
         "extra": {
             "typo3/cms": {
                 "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                "web-dir": "web"
+                "web-dir": "public"
             }
         }
     }
@@ -229,7 +229,7 @@ additional lines added to the ``composer.json`` from above:
         "extra": {
             "typo3/cms": {
                 "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                "web-dir": "web"
+                "web-dir": "public"
             }
         }
     }
@@ -251,7 +251,7 @@ Include individual extensions like sitepackages
 
 It's not necessary to move your project's sitepackage to a dedicated
 Git repository to re-include it in your project. You can keep the files
-in your main project (e.g. ``web/typo3conf/my_sitepackage``). There is
+in your main project (e.g. ``public/typo3conf/my_sitepackage``). There is
 only one thing to do; Because TYPO3's autoload feature works differently
 in composer based installations, you have to register your PHP class
 names in composer. This is very easy when you use PHP namespaces:
@@ -260,8 +260,8 @@ names in composer. This is very easy when you use PHP namespaces:
 
         "autoload": {
             "psr-4": {
-                "VendorName\\MySitepackage\\": "web/typo3conf/ext/my_sitepackage/Classes/",
-                "VendorName\\AnyOtherExtension\\": "web/typo3conf/ext/any_other_extension/Classes/"
+                "VendorName\\MySitepackage\\": "public/typo3conf/ext/my_sitepackage/Classes/",
+                "VendorName\\AnyOtherExtension\\": "public/typo3conf/ext/any_other_extension/Classes/"
             }
         }
 
@@ -273,8 +273,8 @@ manually or if composer should search for them inside a folder:
 
         "autoload": {
             "classmap": [
-                "web/typo3conf/ext/my_old_extension/pi1/",
-                "web/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
+                "public/typo3conf/ext/my_old_extension/pi1/",
+                "public/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
             ]
         }
 
@@ -296,17 +296,17 @@ To complete our example ``composer.json``, it would look like this:
         "extra": {
             "typo3/cms": {
                 "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                "web-dir": "web"
+                "web-dir": "public"
             }
         },
         "autoload": {
             "psr-4": {
-                "VendorName\\MySitepackage\\": "web/typo3conf/ext/my_sitepackage/Classes/",
-                "VendorName\\AnyOtherExtension\\": "web/typo3conf/ext/any_other_extension/Classes/"
+                "VendorName\\MySitepackage\\": "public/typo3conf/ext/my_sitepackage/Classes/",
+                "VendorName\\AnyOtherExtension\\": "public/typo3conf/ext/any_other_extension/Classes/"
             },
             "classmap": [
-                "web/typo3conf/ext/my_old_extension/pi1/",
-                "web/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
+                "public/typo3conf/ext/my_old_extension/pi1/",
+                "public/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
             ]
         }
     }

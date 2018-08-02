@@ -14,20 +14,20 @@ automatically was created during the previous steps).
 On the other side, some files and folders, which are added by
 composer, should be excluded:
 
--  :file:`web/index.php`
--  :file:`web/typo3/`
+-  :file:`public/index.php`
+-  :file:`public/typo3/`
 -  :file:`vendor/`
 -  The extensions, you added via composer
 
 A :file:`.gitignore` file could look like this::
 
     /vendor/*
-    /web/index.php
-    /web/typo3/*
-    /web/typo3conf/ext/*
+    /public/index.php
+    /public/typo3/*
+    /public/typo3conf/ext/*
     # allow some extensions
-    !/web/typo3conf/ext/my_sitepackage/
-    !/web/typo3conf/ext/prefix_*
+    !/public/typo3conf/ext/my_sitepackage/
+    !/public/typo3conf/ext/prefix_*
 
 Checkout from version control system
 ------------------------------------

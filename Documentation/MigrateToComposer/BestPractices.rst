@@ -10,7 +10,7 @@ Run composer locally
 You should not run composer on your live webspace. You always should run
 composer on your local machine, so you can test if everything worked
 fine. After running your tests, you can deploy the :file:`vendor` and
-:file:`web` folder to your web server.
+:file:`public` folder to your web server.
 
 To avoid conflicts between your local and your server's PHP version, you
 can define your server's PHP version in your :file:`composer.json` file
