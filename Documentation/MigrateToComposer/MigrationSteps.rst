@@ -53,7 +53,7 @@ require``. The full syntax is::
 
     composer require anyvendorname/anypackagename:version
 
-Example::
+**Example**::
 
     composer require typo3/cms:~7.6.0
 
@@ -140,8 +140,8 @@ You only need to known the package name. And here is a way to find it:
 
    |packagist screen shot|
 
-| **Example:**
-| To install the news extension in version 7.0.\*, type::
+**Example:**
+To install the news extension in version 7.0.\*, type::
 
    composer require georgringer/news:~7.0.0
 
@@ -158,11 +158,12 @@ some lines above. There are little naming conventions:
 *  Underscores ``_`` are replaced by dash ``-``.
 
 **Example:**
-The well known extension ``static_info_table``'s auto generated
-composer package name is ``typo3-ter/static-info-tables``. To add this
-extension in version 6.5.\*, type::
 
-   composer require typo3-ter/static-info-tables:~6.5.0
+The extension ``any_fancy_extension``'s auto generated composer package
+name would be ``typo3-ter/any-fancy-extension``. To add this extension in
+version 1.2.\*, type::
+
+   composer require typo3-ter/any-fancy-extension:~1.2.0
 
 You can browse all available extensions and versions via
 https://composer.typo3.org/satis.html.
