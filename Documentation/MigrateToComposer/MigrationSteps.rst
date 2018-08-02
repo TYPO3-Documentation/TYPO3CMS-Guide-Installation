@@ -237,8 +237,9 @@ additional lines added to the ``composer.json`` from above:
 The Git repository must be a TYPO3 extension, with all the required
 files (e.g. ``ext_emconf.php``) and must contain a valid
 ``composer.json`` itself. How this file should look in your extension,
-can be found on https://composer.typo3.org/. Please note, that Git tags
-are used as version numbers.
+can be found on `composer.typo3.org <https://composer.typo3.org/>`__ or
+`this blog post from Helmut Hummel <https://insight.helhum.io/post/148886148725/composerjson-specification-for-typo3-extensions>`__.
+Please note, that Git tags are used as version numbers.
 
 If you fulfill these requirements, you can add your extension in the
 same way like the other examples::
