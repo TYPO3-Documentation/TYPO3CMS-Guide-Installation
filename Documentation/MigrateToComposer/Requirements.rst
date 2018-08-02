@@ -14,7 +14,7 @@ Composer
 Of course, you need ``composer``. It's a program, written in PHP.
 Because you already use TYPO3, you should know how to install PHP.
 Instructions how to download and install ``composer`` can be found on
-https://getcomposer.org.
+`getcomposer.org <https://getcomposer.org>`__.
 
 Folder structure
 ----------------
