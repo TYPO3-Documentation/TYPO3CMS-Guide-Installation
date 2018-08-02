@@ -9,7 +9,7 @@ by Albrecht Köhnlein July, 2018.
 
 
 .. toctree::
-   :titlesonly:
+   :maxdepth: 2
 
    Requirements
    MigrationSteps

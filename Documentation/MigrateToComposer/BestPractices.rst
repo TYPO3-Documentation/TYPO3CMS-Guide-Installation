@@ -38,7 +38,7 @@ match the defined version constraints.
     You always should prefer to update your packages separately.
 
 Update single packages
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
 When you want to update single packages, you can call the ``update``
 command with the package name. You should always add
@@ -46,7 +46,7 @@ command with the package name. You should always add
 party packages.
 
 Update TYPO3 core
-~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^
 
 **Without "subtree split"**
 
@@ -61,7 +61,7 @@ Update TYPO3 core
     composer update typo3/cms-* --with-dependencies
 
 Update extensions like "news"
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ::
 
