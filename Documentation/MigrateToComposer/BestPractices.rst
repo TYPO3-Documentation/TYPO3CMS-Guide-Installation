@@ -104,9 +104,31 @@ Check for available updates
 
 Run ``composer outdated`` to see a list of available updates.
 
+Useful packages and bundles
+---------------------------
+
 Simplify "subtree split" installations
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Instead of explicitly requiring each core extension, you can require
 `typo3/minimal <https://packagist.org/packages/typo3/minimal>`__, which
 brings the minimal required set of system extensions.
+
+TYPO3 CMS Base Distribution
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Primarily, `typo3/cms-base-distribution <https://packagist.org/packages/typo3/cms-base-distribution>`__
+is not meant to be used with `composer require`, but to really quickly start new composer based TYPO3 projects.
+
+Nevertheless, it's very good to have heard about it. If you're interested in more information, you should check
+the packages `README <https://github.com/TYPO3/TYPO3.CMS.BaseDistribution>`__.
+
+Secure Web
+~~~~~~~~~~
+
+`helhum/typo3-secure-web <https://packagist.org/packages/helhum/typo3-secure-web>`__
+follows the very interesting concept to split the traditional web root directory into
+two parts: the "public" one for all the resources, that must be directly accessible via
+HTTP (images, styles, etc.) - and the "private" folder, where all the PHP will be located.
+
+This helps to make your TYPO3 installations even more secure!
