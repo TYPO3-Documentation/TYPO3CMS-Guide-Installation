@@ -31,6 +31,12 @@ Run ``composer update`` without any other attributes, to update all
 packages. Composer will always try to install the newest packages that
 match the defined version constraints.
 
+.. note::
+
+    Be careful with that. This command may cause negative effects if you
+    do not have proper version constraints in your :file:`composer.json`.
+    You always should prefer to update your packages separately.
+
 Update single packages
 ----------------------
 
