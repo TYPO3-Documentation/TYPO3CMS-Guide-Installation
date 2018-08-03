@@ -311,6 +311,14 @@ To complete our example ``composer.json``, it would look like this:
         }
     }
 
+.. note::
+
+    If you want to keep your :file:`typo3conf/ext` directory empty and ``autoload`` information only
+    in extensions' :file:`composer.json`, but not in your project's :file:`composer.json`,
+    there is an alternative way to include your individual extensions in the chapter
+    `completely clear "typo3conf/ext" folder <./BestPractices.html#completely-clear-typo3conf-ext-folder>`__
+    in the "Best practices" section.
+
 .. |TER screen shot| image:: ../Images/ter-code-link.png
 .. |file list| image:: ../Images/github-composer-file.png
 .. |file content| image:: ../Images/github-composer-name.png
