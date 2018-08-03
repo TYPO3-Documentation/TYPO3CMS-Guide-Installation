@@ -164,7 +164,7 @@ used to install this extension.
 See warning during composer require command
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If you still install one of the abandoned extensios via its ``typo3-ter`` package key,
+If you still install one of the abandoned extensions via its ``typo3-ter`` package key,
 you also will see a warning during the ``composer require`` command.
 
 |composer abandoned note|
