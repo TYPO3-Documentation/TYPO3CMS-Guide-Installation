@@ -20,7 +20,7 @@ Folder structure
 ----------------
 
 If your project root folder is identical to your web root folder, you
-must change that. `composer` will add a :file:`vendor` folder to your project
+must change that. ``composer`` will add a :file:`vendor` folder to your project
 root and if your project root and your web root are identical, this can
 be a security issue, because files in the :file:`vendor` could be accessible
 directly via HTTP request.
@@ -54,8 +54,8 @@ a later step. I will use ``public`` in my example.
         typo3temp/
 
 If you do not have such a web root directory, you must refactor your
-project before continuing. Please be aware to update tell your web server
-about the change web root folder, if necessary.
+project before continuing. Please be aware to tell your web server
+about the changed web root folder, if necessary.
 
 Code integrity
 --------------
