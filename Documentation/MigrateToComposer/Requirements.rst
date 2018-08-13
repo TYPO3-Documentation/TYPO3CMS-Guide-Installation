@@ -1,3 +1,7 @@
+.. include:: ../Includes.txt
+.. highlight:: bash
+
+
 Requirements
 ============
 
@@ -61,3 +65,5 @@ Your project must have the TYPO3 core and all installed extensions in
 original state. If you changed files, like templates or configurations
 directly in core or the extensions, you have a problem. That's not how
 TYPO3 works.
+
+
