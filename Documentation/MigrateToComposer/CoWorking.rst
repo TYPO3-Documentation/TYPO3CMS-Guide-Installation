@@ -1,11 +1,12 @@
 .. include:: ../Includes.txt
 .. highlight:: bash
 
+==========
 Co-working
 ==========
 
 Add to version control system
------------------------------
+=============================
 
 If you use a version control system like Git, it's important to add
 both files, the :file:`composer.json` and :file:`composer.lock` (which
@@ -30,7 +31,7 @@ A :file:`.gitignore` file could look like this::
     !/web/typo3conf/ext/prefix_*
 
 Checkout from version control system
-------------------------------------
+====================================
 
 All your co-workers should always run ``composer install`` after they
 checked out the files. This command will install the packages and

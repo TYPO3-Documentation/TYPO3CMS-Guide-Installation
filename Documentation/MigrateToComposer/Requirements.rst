@@ -1,19 +1,19 @@
 .. include:: ../Includes.txt
 .. highlight:: bash
 
-
+============
 Requirements
 ============
 
 TYPO3 version
--------------
+=============
 
 TYPO3 composer packages on `packagist.org <https://packagist.org>`__ can
 be found down to version 6.2.0:
 `typo3/cms <https://packagist.org/packages/typo3/cms>`__
 
 Composer
---------
+========
 
 Of course, you need ``composer``. It's a program, written in PHP.
 Because you already use TYPO3, you should know how to install PHP.
@@ -21,7 +21,7 @@ Instructions how to download and install ``composer`` can be found on
 https://getcomposer.org.
 
 Folder structure
-----------------
+================
 
 If your project root folder is identical to your web root folder, you
 must change that.
@@ -59,7 +59,7 @@ If you do not have such a web root directory, you must refactor your
 project before continuing.
 
 Code integrity
---------------
+==============
 
 Your project must have the TYPO3 core and all installed extensions in
 original state. If you changed files, like templates or configurations
