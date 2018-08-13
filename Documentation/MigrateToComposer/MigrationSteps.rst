@@ -1,11 +1,12 @@
 .. include:: ../Includes.txt
 .. highlight:: bash
 
+===============
 Migration steps
 ===============
 
 Delete files
-------------
+============
 
 Yes, that's true. You have to delete some files, because they will be created by
 composer in some of the next steps.
@@ -21,7 +22,7 @@ explicitly built for your current project and does not have an own Git
 repository.
 
 Configure composer
-------------------
+==================
 
 Create a file with name :file:`composer.json` in your project root, not inside
 your web root. At the moment, only these few lines are required:
@@ -46,7 +47,7 @@ your web root. At the moment, only these few lines are required:
 You must set the correct name of your web root folder in property ``web-dir``.
 
 Add all required packages to your project
------------------------------------------
+=========================================
 
 You can add all your required packages with the composer command ``composer
 require``. The full syntax is::
@@ -73,10 +74,10 @@ In short:
 You have to decide by yourself, which syntax fits best to your needs.
 
 Install the core
-~~~~~~~~~~~~~~~~
+----------------
 
 The old way: add everything
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As already written above, the line to install TYPO3 7 LTS would be::
 
@@ -87,7 +88,7 @@ While installing TYPO3 8 LTS works with this line::
     composer require typo3/cms:~8.7.0
 
 The new way: add only code, you need
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Since TYPO3 8.7.10 you **can** use a concept, called "subtree split". It
 will be **mandatory** for TYPO3 9. The concept means, you will not copy
@@ -111,7 +112,7 @@ convention
 e.g. ``typo3/cms-fluid-styled-content``.
 
 Install extensions from packagist.org
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------------
 
 You already know the TER and always used it to install extensions? Fine.
 But with composer, the **preferred way** is to install extensions
@@ -146,7 +147,7 @@ You only need to known the package name. And here is a way to find it:
    composer require georgringer/news:~7.0.0
 
 Install extension from TER
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 If the extension is not available on packagist, the good news is: All
 TER extensions are available via composer! That's, why we added
@@ -168,7 +169,7 @@ You can browse all available extensions and versions via
 https://composer.typo3.org/satis.html.
 
 Install extension from version control system (e.g. GitHub, Gitlab, ...)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------------------------------------------------
 
 In some cases, you will have to install an TYPO3 extension, which is not
 available on packagist.org or in the TER. Examples could be:
@@ -214,7 +215,7 @@ same way like the other examples::
     composer require foo/bar:~1.0.0
 
 Include individual extensions like sitepackages
------------------------------------------------
+===============================================
 
 It's not necessary to move your project's sitepackage to a dedicated
 Git repository to re-include it in your project. You can keep the files
