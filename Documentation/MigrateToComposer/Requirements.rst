@@ -66,4 +66,3 @@ original state. If you changed files, like templates or configurations
 directly in core or the extensions, you have a problem. That's not how
 TYPO3 works.
 
-

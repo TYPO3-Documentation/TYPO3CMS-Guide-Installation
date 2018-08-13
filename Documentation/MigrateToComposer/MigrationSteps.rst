@@ -1,9 +1,42 @@
 .. include:: ../Includes.txt
 .. highlight:: bash
 
+.. _mig-composer-migrate:
+
 ===============
 Migration steps
 ===============
+
+.. _mig-composer-sysext-list:
+
+Get list of extensions
+======================
+
+If you use the subtree split mechanism (recommended), you might want to
+get a list of installed system extensions from your working TYPO3
+installation before you begin.
+
+The extension `typo3_console <https://extensions.typo3.org/extension/typo3_console/>`__
+can be used to get information about your installation from the command line.
+
+Example: Get a list of all installed extensions:
+
+.. code-block:: bash
+
+   ./typo3cms extension:list --active --raw
+
+
+Example: Get a list of all installed system extensions
+
+.. code-block:: bash
+
+   for i in `./typo3cms extension:list --active --raw`;do if [ ! -d typo3conf/ext/$i ];then echo "$i";fi;done | sort -u
+
+
+For some extensions with underscores (`_`), the composer package name is different,
+e.g. for *wizard_sortpages*, the package name is *typo3/cms-wizard-sortpages*.
+
+
 
 Delete files
 ============
@@ -20,6 +53,8 @@ Git submodule.
 Please keep only your sitepackage extension or any other extension, which was
 explicitly built for your current project and does not have an own Git
 repository.
+
+.. _mig-composer-configure-composer:
 
 Configure composer
 ==================
@@ -45,6 +80,9 @@ your web root. At the moment, only these few lines are required:
     }
 
 You must set the correct name of your web root folder in property ``web-dir``.
+
+
+.. _mig-composer-require:
 
 Add all required packages to your project
 =========================================
@@ -87,6 +125,9 @@ While installing TYPO3 8 LTS works with this line::
 
     composer require typo3/cms:~8.7.0
 
+
+.. _mig-composer-require-subtree-spit:
+
 The new way: add only code, you need
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -110,6 +151,12 @@ To find the correct package names, you can either take a look in the
 convention
 ``typo3/cms-<extension name with dash "-" instead of underscore "_">``,
 e.g. ``typo3/cms-fluid-styled-content``.
+
+If you obtained the list of sytem extensions earlier (as described in
+:ref:`_mig-composer-sysext-list`), you can use this, for example::
+
+   for i in `cat extention-list`;do composer require typo3/cms-$i:~8.7.0;done
+
 
 Install extensions from packagist.org
 -------------------------------------
