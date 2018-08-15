@@ -1,15 +1,19 @@
+.. include:: ../Includes.txt
+.. highlight:: bash
+
+============
 Requirements
 ============
 
 TYPO3 version
--------------
+=============
 
 TYPO3 composer packages on `packagist.org <https://packagist.org>`__ can
 be found down to version 6.2.0:
 `typo3/cms <https://packagist.org/packages/typo3/cms>`__
 
 Composer
---------
+========
 
 Of course, you need ``composer``. It's a program, written in PHP.
 Because you already use TYPO3, you should know how to install PHP.
@@ -17,7 +21,7 @@ Instructions how to download and install ``composer`` can be found on
 `getcomposer.org <https://getcomposer.org>`__.
 
 Folder structure
-----------------
+================
 
 If your project root folder is identical to your web root folder, you
 must change that. ``composer`` will add a :file:`vendor` folder to your project
@@ -58,7 +62,7 @@ project before continuing. Please be aware to tell your web server
 about the changed web root folder, if necessary.
 
 Code integrity
---------------
+==============
 
 Your project must have the TYPO3 core and all installed extensions in
 original state. If you applied manual changes to the files, these will
@@ -70,3 +74,5 @@ be lost during the migration steps.
     available extensions, this `tutorial about applying patches via composer
     <https://typo3worx.eu/2017/08/patch-typo3-using-composer/>`__ could help,
     but requires some advanced steps.
+
+

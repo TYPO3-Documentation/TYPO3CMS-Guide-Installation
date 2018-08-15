@@ -1,5 +1,6 @@
 .. include:: ../Includes.txt
 
+===================================================
 Convert TYPO3 project from non-composer to composer
 ===================================================
 

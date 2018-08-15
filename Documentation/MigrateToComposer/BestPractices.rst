@@ -1,11 +1,12 @@
 .. include:: ../Includes.txt
 .. highlight:: bash
 
+==============
 Best practices
 ==============
 
 Run composer locally
---------------------
+====================
 
 You should not run composer on your live webspace. You always should run
 composer on your local machine, so you can test if everything worked
@@ -18,14 +19,14 @@ can define your server's PHP version in your :file:`composer.json` file
 the correct dependencies.
 
 Update packages
----------------
+===============
 
 After updating any packages, you always should commit your
 :file:`composer.lock` to your version control system and your co-workers
 should run ``composer install`` after checking out the updates.
 
 Update all packages
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Run ``composer update`` without any other attributes, to update all
 packages. Composer will always try to install the newest packages that
@@ -38,7 +39,7 @@ match the defined version constraints.
     You always should prefer to update your packages separately.
 
 Update single packages
-~~~~~~~~~~~~~~~~~~~~~~
+======================
 
 When you want to update single packages, you can call the ``update``
 command with the package name. You should always add
@@ -46,7 +47,7 @@ command with the package name. You should always add
 party packages.
 
 Update TYPO3 core
-^^^^^^^^^^^^^^^^^
+-----------------
 
 **Without "subtree split"**
 
@@ -61,14 +62,14 @@ Update TYPO3 core
     composer update typo3/cms-* --with-dependencies
 
 Update extensions like "news"
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+-----------------------------
 
 ::
 
     composer update georgringer/news --with-dependencies
 
 Use "dev requirements"
-----------------------
+======================
 
 Add packages with ``--dev`` attribute to add packages only to your local
 development environment. This is very useful for packages, you do not
@@ -87,7 +88,7 @@ attribute ``--no-dev``. So the dev requirements are not installed.
     composer install --no-dev
 
 Remove extensions
------------------
+=================
 
 You can use the composer command ``remove`` to uninstall extensions or
 other composer packages.
@@ -106,7 +107,7 @@ control system.
     `extension "typo3_console" <https://docs.typo3.org/typo3cms/extensions/typo3_console/CommandReference/Index.html#install-generatepackagestates>`__ for that
 
 Check for available updates
----------------------------
+===========================
 
 Run ``composer outdated`` to see a list of available updates.
 
@@ -171,7 +172,7 @@ Useful packages and bundles
 ---------------------------
 
 Simplify "subtree split" installations
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+======================================
 
 Instead of explicitly requiring each core extension, you can require
 `typo3/minimal <https://packagist.org/packages/typo3/minimal>`__, which
