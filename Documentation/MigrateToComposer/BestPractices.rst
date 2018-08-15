@@ -39,7 +39,7 @@ match the defined version constraints.
     You always should prefer to update your packages separately.
 
 Update single packages
-======================
+----------------------
 
 When you want to update single packages, you can call the ``update``
 command with the package name. You should always add
@@ -47,7 +47,7 @@ command with the package name. You should always add
 party packages.
 
 Update TYPO3 core
------------------
+~~~~~~~~~~~~~~~~~
 
 **Without "subtree split"**
 
@@ -62,7 +62,7 @@ Update TYPO3 core
     composer update typo3/cms-* --with-dependencies
 
 Update extensions like "news"
------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
@@ -112,7 +112,7 @@ Check for available updates
 Run ``composer outdated`` to see a list of available updates.
 
 Completely clear "typo3conf/ext" folder
----------------------------------------
+=======================================
 
 In the "Migration Steps" chapter, this tutorial explained, how you can
 `keep your individual extension in "typo3conf/ext" <./MigrationSteps.html#include-individual-extensions-like-sitepackages>`__
@@ -125,7 +125,7 @@ clean and unify the extension handling even for your project's individual
 extension, this chapter might be useful.
 
 Define a local path repository
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 Create a directory :file:`packages` in your project root folder and define
 this folder as a repository of type "path" in your :file:`composer.json`::
@@ -140,7 +140,7 @@ this folder as a repository of type "path" in your :file:`composer.json`::
     }
 
 Include your individual extensions from "packages" folder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------------
 
 In the next step, you move all your individual extensions from
 :file:`public/typo3conf/ext` to :file:`packages`. And for this way to include them,
@@ -162,24 +162,24 @@ number, but tell composer to use the latest ``dev``state.
     :file:`composer.json`.
 
 Exclude "typo3conf/ext" from version control system
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------------------------------
 
 To finish your cleanup of "typo3conf/ext", you should keep the line
 ``/public/typo3conf/ext/*`` in your :file:`.gitignore`, but remove all lines,
 starting with ``!/public/typo3conf/ext/``.
 
 Useful packages and bundles
----------------------------
+===========================
 
 Simplify "subtree split" installations
-======================================
+--------------------------------------
 
 Instead of explicitly requiring each core extension, you can require
 `typo3/minimal <https://packagist.org/packages/typo3/minimal>`__, which
 brings the minimal required set of system extensions.
 
 TYPO3 CMS Base Distribution
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
 Primarily, `typo3/cms-base-distribution <https://packagist.org/packages/typo3/cms-base-distribution>`__
 is not meant to be used with ``composer require``, but to really quickly start new composer based TYPO3 projects.
@@ -188,7 +188,7 @@ Nevertheless, it's very good to have heard about it. If you're interested in mor
 the packages `README <https://github.com/TYPO3/TYPO3.CMS.BaseDistribution>`__.
 
 Secure Web
-~~~~~~~~~~
+----------
 
 `helhum/typo3-secure-web <https://packagist.org/packages/helhum/typo3-secure-web>`__
 follows the very interesting concept to split the traditional web root directory into

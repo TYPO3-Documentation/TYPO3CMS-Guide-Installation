@@ -121,7 +121,7 @@ to there. Many well known extensions are already available.
 You only need to known the package name. There are multiple ways to find it.
 
 Check manually
-^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~
 
 This is the most exhausting way. But it will work, even if the extension maintainer
 does not provide additional information.
@@ -153,7 +153,7 @@ To install the news extension in version 7.0.\*, type::
    composer require georgringer/news:~7.0.0
 
 Check in TER satis
-^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~
 
 Extension maintainers optionally can link their TYPO3 extension in TER with the
 correct composer key on `packagist.org <https://packagist.org>`__. Some maintainers already did that and if you
@@ -163,7 +163,7 @@ used to install this extension.
 |satis abandoned note|
 
 See warning during composer require command
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you still install one of the abandoned extensions via its ``typo3-ter`` package key,
 you also will see a warning during the ``composer require`` command.
