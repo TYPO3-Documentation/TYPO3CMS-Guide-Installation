@@ -247,6 +247,8 @@ same way like the other examples::
 
     composer require foo/bar:~1.0.0
 
+.. _mig-composer-include-individual-extensions:
+
 Include individual extensions like sitepackages
 ===============================================
 
@@ -317,8 +319,8 @@ To complete our example ``composer.json``, it would look like this:
     If you want to keep your :file:`typo3conf/ext` directory empty and ``autoload`` information only
     in extensions' :file:`composer.json`, but not in your project's :file:`composer.json`,
     there is an alternative way to include your individual extensions in the chapter
-    `completely clear "typo3conf/ext" folder <./BestPractices.html#completely-clear-typo3conf-ext-folder>`__
-    in the "Best practices" section.
+    :ref:`completely clear "typo3conf/ext" folder <mig-composer-clear-typo3conf-ext-folder>`
+    in the :ref:`Best practices <mig-composer-best-practices>` section.
 
 .. |TER screen shot| image:: ../Images/ter-code-link.png
 .. |file list| image:: ../Images/github-composer-file.png

@@ -1,6 +1,8 @@
 .. include:: ../Includes.txt
 .. highlight:: bash
 
+.. _mig-composer-best-practices:
+
 ==============
 Best practices
 ==============
@@ -111,11 +113,13 @@ Check for available updates
 
 Run ``composer outdated`` to see a list of available updates.
 
+.. _mig-composer-clear-typo3conf-ext-folder:
+
 Completely clear "typo3conf/ext" folder
 =======================================
 
 In the "Migration Steps" chapter, this tutorial explained, how you can
-`keep your individual extension in "typo3conf/ext" <./MigrationSteps.html#include-individual-extensions-like-sitepackages>`__
+:ref:`keep your individual extension in "typo3conf/ext" <mig-composer-include-individual-extensions>`
 and in the "Co-working" section, there was a part about how to add rules
 to your :file:`.gitignore` file to exclude :file:`typo3conf/ext` from,
 but keep your individual extensions in Git.
