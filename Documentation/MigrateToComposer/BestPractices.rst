@@ -153,7 +153,7 @@ Assumed, your package key is, ``foo/bar``, you can type the following command to
     composer require foo/bar:@dev
 
 In this case, it's the easiest way to not define any composer version
-number, but tell composer to use the latest ``dev``state.
+number, but tell composer to use the latest ``dev`` state.
 
 .. note::
 
