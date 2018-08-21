@@ -11,8 +11,8 @@ Delete files
 Yes, that's true. You have to delete some files, because they will be created by
 composer in some of the next steps.
 
-You have to delete, :file:`web/index.php`, :file:`web/typo3/` and all the
-extensions inside :file:`web/typo3conf/ext/`, you downloaded from TER or any
+You have to delete, :file:`public/index.php`, :file:`public/typo3/` and all the
+extensions inside :file:`public/typo3conf/ext/`, you downloaded from TER or any
 other resources like GitHub. You even have to delete your own extensions, if
 they are available in a separate Git repository and, for example, included as
 Git submodule.
@@ -39,7 +39,7 @@ your web root. At the moment, only these few lines are required:
         "extra": {
             "typo3/cms": {
                 "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                "web-dir": "web"
+                "web-dir": "public"
             }
         }
     }
@@ -54,7 +54,7 @@ require``. The full syntax is::
 
     composer require anyvendorname/anypackagename:version
 
-Example::
+**Example**::
 
     composer require typo3/cms:~7.6.0
 
@@ -118,7 +118,13 @@ You already know the TER and always used it to install extensions? Fine.
 But with composer, the **preferred way** is to install extensions
 directly from `packagist.org <https://packagist.org>`__. This works great, when the maintainer uploaded them
 to there. Many well known extensions are already available.
-You only need to known the package name. And here is a way to find it:
+You only need to known the package name. There are multiple ways to find it.
+
+Check manually
+~~~~~~~~~~~~~~
+
+This is the most exhausting way. But it will work, even if the extension maintainer
+does not provide additional information.
 
 #. Search and open the extension, you want to install, in
    `TER <https://extensions.typo3.org>`__.
@@ -141,10 +147,28 @@ You only need to known the package name. And here is a way to find it:
 
    |packagist screen shot|
 
-| **Example:**
-| To install the news extension in version 7.0.\*, type::
+**Example:**
+To install the news extension in version 7.0.\*, type::
 
    composer require georgringer/news:~7.0.0
+
+Check in TER satis
+~~~~~~~~~~~~~~~~~~
+
+Extension maintainers optionally can link their TYPO3 extension in TER with the
+correct composer key on `packagist.org <https://packagist.org>`__. Some maintainers already did that and if you
+search the extension in https://composer.typo3.org/satis.html, you will see a message, which composer key should be
+used to install this extension.
+
+|satis abandoned note|
+
+See warning during composer require command
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you still install one of the abandoned extensions via its ``typo3-ter`` package key,
+you also will see a warning during the ``composer require`` command.
+
+|composer abandoned note|
 
 Install extension from TER
 --------------------------
@@ -159,14 +183,22 @@ some lines above. There are little naming conventions:
 *  Underscores ``_`` are replaced by dash ``-``.
 
 **Example:**
-The well known extension ``static_info_table``'s auto generated
-composer package name is ``typo3-ter/static-info-tables``. To add this
-extension in version 6.5.\*, type::
 
-   composer require typo3-ter/static-info-tables:~6.5.0
+The extension ``any_fancy_extension``'s auto generated composer package
+name would be ``typo3-ter/any-fancy-extension``. To add this extension in
+version 1.2.\*, type::
+
+   composer require typo3-ter/any-fancy-extension:~1.2.0
 
 You can browse all available extensions and versions via
 https://composer.typo3.org/satis.html.
+
+.. note ::
+
+    If you do not include any packages this way, you can remove the
+    repository block with ``https://composer.typo3.org`` from your
+    :file:`composer.json` to safe some performance and speed up your
+    environment.
 
 Install extension from version control system (e.g. GitHub, Gitlab, ...)
 ------------------------------------------------------------------------
@@ -198,7 +230,7 @@ additional lines added to the ``composer.json`` from above:
         "extra": {
             "typo3/cms": {
                 "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                "web-dir": "web"
+                "web-dir": "public"
             }
         }
     }
@@ -206,20 +238,23 @@ additional lines added to the ``composer.json`` from above:
 The Git repository must be a TYPO3 extension, with all the required
 files (e.g. ``ext_emconf.php``) and must contain a valid
 ``composer.json`` itself. How this file should look in your extension,
-can be found on https://composer.typo3.org/. Please note, that Git tags
-are used as version numbers.
+can be found on `composer.typo3.org <https://composer.typo3.org/>`__ or
+`this blog post from Helmut Hummel <https://insight.helhum.io/post/148886148725/composerjson-specification-for-typo3-extensions>`__.
+Please note, that Git tags are used as version numbers.
 
 If you fulfill these requirements, you can add your extension in the
 same way like the other examples::
 
     composer require foo/bar:~1.0.0
 
+.. _mig-composer-include-individual-extensions:
+
 Include individual extensions like sitepackages
 ===============================================
 
 It's not necessary to move your project's sitepackage to a dedicated
 Git repository to re-include it in your project. You can keep the files
-in your main project (e.g. ``web/typo3conf/my_sitepackage``). There is
+in your main project (e.g. ``public/typo3conf/my_sitepackage``). There is
 only one thing to do; Because TYPO3's autoload feature works differently
 in composer based installations, you have to register your PHP class
 names in composer. This is very easy when you use PHP namespaces:
@@ -228,8 +263,8 @@ names in composer. This is very easy when you use PHP namespaces:
 
         "autoload": {
             "psr-4": {
-                "VendorName\\MySitepackage\\": "web/typo3conf/ext/my_sitepackage/Classes/",
-                "VendorName\\AnyOtherExtension\\": "web/typo3conf/ext/any_other_extension/Classes/"
+                "VendorName\\MySitepackage\\": "public/typo3conf/ext/my_sitepackage/Classes/",
+                "VendorName\\AnyOtherExtension\\": "public/typo3conf/ext/any_other_extension/Classes/"
             }
         }
 
@@ -241,8 +276,8 @@ manually or if composer should search for them inside a folder:
 
         "autoload": {
             "classmap": [
-                "web/typo3conf/ext/my_old_extension/pi1/",
-                "web/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
+                "public/typo3conf/ext/my_old_extension/pi1/",
+                "public/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
             ]
         }
 
@@ -264,22 +299,32 @@ To complete our example ``composer.json``, it would look like this:
         "extra": {
             "typo3/cms": {
                 "cms-package-dir": "{$vendor-dir}/typo3/cms",
-                "web-dir": "web"
+                "web-dir": "public"
             }
         },
         "autoload": {
             "psr-4": {
-                "VendorName\\MySitepackage\\": "web/typo3conf/ext/my_sitepackage/Classes/",
-                "VendorName\\AnyOtherExtension\\": "web/typo3conf/ext/any_other_extension/Classes/"
+                "VendorName\\MySitepackage\\": "public/typo3conf/ext/my_sitepackage/Classes/",
+                "VendorName\\AnyOtherExtension\\": "public/typo3conf/ext/any_other_extension/Classes/"
             },
             "classmap": [
-                "web/typo3conf/ext/my_old_extension/pi1/",
-                "web/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
+                "public/typo3conf/ext/my_old_extension/pi1/",
+                "public/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
             ]
         }
     }
+
+.. note::
+
+    If you want to keep your :file:`typo3conf/ext` directory empty and ``autoload`` information only
+    in extensions' :file:`composer.json`, but not in your project's :file:`composer.json`,
+    there is an alternative way to include your individual extensions in the chapter
+    :ref:`completely clear "typo3conf/ext" folder <mig-composer-clear-typo3conf-ext-folder>`
+    in the :ref:`Best practices <mig-composer-best-practices>` section.
 
 .. |TER screen shot| image:: ../Images/ter-code-link.png
 .. |file list| image:: ../Images/github-composer-file.png
 .. |file content| image:: ../Images/github-composer-name.png
 .. |packagist screen shot| image:: ../Images/packagist-news.png
+.. |satis abandoned note| image:: ../Images/satis-abandoned.png
+.. |composer abandoned note| image:: ../Images/composer-ter-abandoned.png
