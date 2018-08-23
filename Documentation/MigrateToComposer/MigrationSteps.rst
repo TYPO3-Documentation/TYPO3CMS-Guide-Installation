@@ -254,7 +254,7 @@ Include individual extensions like sitepackages
 
 It's not necessary to move your project's sitepackage to a dedicated
 Git repository to re-include it in your project. You can keep the files
-in your main project (e.g. ``public/typo3conf/my_sitepackage``). There is
+in your main project (e.g. ``public/typo3conf/ext/my_sitepackage``). There is
 only one thing to do; Because TYPO3's autoload feature works differently
 in composer based installations, you have to register your PHP class
 names in composer. This is very easy when you use PHP namespaces:
