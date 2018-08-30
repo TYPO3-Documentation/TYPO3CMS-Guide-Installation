@@ -197,8 +197,7 @@ https://composer.typo3.org/satis.html.
 
     If you do not include any packages this way, you can remove the
     repository block with ``https://composer.typo3.org`` from your
-    :file:`composer.json` to safe some performance and speed up your
-    environment.
+    :file:`composer.json` to speed up your environment.
 
 Install extension from version control system (e.g. GitHub, Gitlab, ...)
 ------------------------------------------------------------------------
