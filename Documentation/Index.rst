@@ -68,13 +68,12 @@ can refer as needed. Guides offer advice on how best to achieve a
 given task.
 
 
-**Table of Contents**
+**Contents:**
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
-   :glob:
 
+   Sitemap/Index
    Introduction/Index
    QuickInstall/Index
    In-depth/Index
@@ -82,4 +81,4 @@ given task.
    UpgradeLTS/Index
    MigrateToComposer/Index
    Troubleshooting/Index
-   Targets
+   Linktargets/Index
