@@ -25,22 +25,24 @@ TYPO3 version.
 Handling deprecations
 =====================
 
-TYPO3 promises a certain amount of backwards-compatibility between versions:
+TYPO3 aims to provide a reliable backwards compatibility between versions:
 
--  Minor versions are always backwards-compatible
+-  Minor versions are always backwards compatible
 
 -  Major versions may contain breaking changes - normally these are deprecated
    in the version before
 
-Here is an example. If the TYPO3 team decides that an API method is no longer
-useful and should be removed they will first add a deprecation notice for the
-next major version and will remove that method only in the major version after
-that. So for example a method getting deprecated in version 9 will only be
-removed in version 10.
+-  Most breaking changes usually happen in the first Sprint Release
 
-This methodology gives you one major version (usually 1 1/2 years) advance
-notice of any changes you need to make to your code to stay compatible to
-coming TYPO3 versions.
+If PHP classes, methods, constants, functions or parameters should be removed,
+they will be *marked as deprecated* first and not removed until the next major
+release of TYPO3. For example: a method that gets deprecated in version 9.4.0
+will remain fully functional in all 9.x.x releases, but will be removed in
+version 10.
+
+This strategy gives developers sufficient time to adjust their TYPO3 extensions,
+assuming many agencies upgrade from one LTS release to the next (usually 1.5
+years).
 
 If you notice some API you are using is deprecated, you should look up the
 corresponding changelog entry and see how to migrate your code corresponding to
