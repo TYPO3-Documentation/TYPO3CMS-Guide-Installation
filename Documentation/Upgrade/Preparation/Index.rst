@@ -34,7 +34,7 @@ TYPO3 aims at providing a reliable backwards compatibility between versions:
 
 -  Most breaking changes usually happen in the first Sprint Release
 
-If PHP classes, methods, constants, functions or parameters should be removed,
+If PHP classes, methods, constants, functions or parameters are to be removed,
 they will be *marked as deprecated* first and not removed until the next major
 release of TYPO3. For example: a method that gets deprecated in version 9.4.0
 will remain fully functional in all 9.x.x releases, but will be removed in
