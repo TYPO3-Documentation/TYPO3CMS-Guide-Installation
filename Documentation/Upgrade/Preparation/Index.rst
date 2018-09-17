@@ -25,7 +25,7 @@ TYPO3 version.
 Handling deprecations
 =====================
 
-TYPO3 aims to provide a reliable backwards compatibility between versions:
+TYPO3 aims at providing a reliable backwards compatibility between versions:
 
 -  Minor versions are always backwards compatible
 
