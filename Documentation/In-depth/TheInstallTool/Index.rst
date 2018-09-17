@@ -92,8 +92,10 @@ Here you can configure *all* installation options concerning your TYPO3
 installation. We suggest you go through the whole list and read the
 description of the settings carefully at least once, so you get an
 impression of what you can configure. Normally you *can*, but you *don't
-have to* change anything here during installation, as the previous steps
+need to* change anything here during installation, as the previous steps
 took care of the most important settings.
+
+Set the `SYS->sitename` to the name of your website.
 
 
 .. _upgrade-wizard:
