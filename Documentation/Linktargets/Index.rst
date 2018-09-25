@@ -19,8 +19,13 @@ Linktargets
    Understand: :ref:`About Intersphinx
    <h2document:Intersphinx-How-to-link-to-topics-of-other-manuals>`
 
+Only in the html version of this manual.
 
 Targets for Cross-Referencing
 
-.. ref-targets-list::
+.. only:: html
+
+   .. ref-targets-list::
+   
+   
 
