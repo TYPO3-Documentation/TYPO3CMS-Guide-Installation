@@ -13,11 +13,11 @@ Installing on a Unix server
 
 #. Get the Source Package from `http://typo3.org/download/
    <http://typo3.org/download/>`_ and upload this package to your
-   web server. Put it one level above the document root. For this
-   manual, we will use the :file:`.tar.gz` file. (If you are not sure
+   web server. Put it one level above the document root. In this
+   example, we will use the :file:`.tar.gz` file format. (If you are not sure
    which package you should choose, read the section
    ":ref:`which-package-and-which-file-format`" in the in-depth part of
-   the manual). Use the shell to execute the according commands::
+   the manual). Use the shell to execute the following commands::
 
        /var/www/site/htdocs/$ cd ..
        /var/www/site/$ wget get.typo3.org/8.7 -O typo3_src-8.7.x.tar.gz
@@ -25,17 +25,17 @@ Installing on a Unix server
 #. Unpack the :file:`typo3_src-8.7.x.tar.gz` file on your web server::
 
        /var/www/site/$ tar xzf typo3_src-8.7.x.tar.gz
-       
+
    .. note::
-      Be aware that the `x` in the extracted folder will be replaced with the 
+      Be aware that the `x` in the extracted folder will be replaced with the
       latest bugfix version, e.g. typo3_src-8.7.8.
-      
+
    .. tip::
 
       You can also unpack the package on your local PC and *then* upload the
-      *unpacked* contents. However, the package contains thousands of files,
-      so if you're able to unzip or untar the package on the server, better
-      do that!
+      *unpacked* contents onto your web server. However, the package contains
+      several thousand files which will then need to uploaded one at a time. This
+      process is time intensive and not recommended.
 
 #. Create these symlinks in your document root::
 
@@ -51,13 +51,13 @@ Installing on a Unix server
        touch FIRST_INSTALL
 
 
-#. In case you use the Apache web server, copy the :file:`.htaccess` file to
+#. If you use Apache, copy the :file:`.htaccess` file to
    your document root::
 
        cp typo3_src/_.htaccess .htaccess
 
 
-   You end up with the following structure of files::
+   Your document root should resemble the example below::
 
        typo3_src-8.7.x/
        htdocs/typo3_src -> ../typo3_src-8.7.x/
@@ -69,13 +69,12 @@ Installing on a Unix server
 The advantage of this setup is that all files from the TYPO3 Source
 package are kept together in the :file:`typo3_src-8.7.x` folder and
 separated from other files of your installation. This allows you to
-easily exchange this folder when a new patchlevel version of TYPO3 is
+easily replace this folder when a new patchlevel version of TYPO3 is
 released.
 
 .. note::
    This setup allows the administrator to use the "Core Updater"
-   feature in the Install Tool to later easily update the TYPO3
-   Source files.
+   feature in the Install Tool to easily update the TYPO3 installation.
 
 
 .. _installation-windows:
@@ -99,12 +98,16 @@ Installing on a Windows server
        mklink /d typo3 typo3_src\typo3
        mklink index.php typo3_src\index.php
 
-#. In case you use the Apache web server, copy the :file:`.htaccess` file to
+#. If you use Apache, copy the :file:`.htaccess` file to
    your document root::
 
-       copy typo3_src/_.htaccess .htaccess
+    copy typo3_src/_.htaccess .htaccess
 
-   You end up with the following structure of files::
+#. IIS users, copy the :file:`web.config` file to your document root::
+
+    copy typo3_src/_web.config .web.config
+
+   Your document root should resemble the example below::
 
        typo3_src-8.7.x/
        htdocs/typo3_src -> ../typo3_src-8.7.x/
