@@ -6,13 +6,7 @@
 Use the upgrade wizard
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Enter the Install Tool at ``http://yourwebsite.com/typo3/install/`` on your TYPO3 site.
-
-(If you don't know the current Install Tool password, you can set a new
-one by entering one in the Install Tool login screen, hitting enter and
-then setting the displayed hash as value of
-['BE']['installToolPassword'] in
-:file:`typo3conf/LocalConfiguration.php`.)
+Enter the Install Tool at ``https://example.com/typo3/install.php`` on your TYPO3 site.
 
 .. figure:: ../../Images/Upgrade-Wizard.png
    :class: with-shadow
@@ -33,6 +27,17 @@ missing tables and columns will be shown and you'll be able to execute
 queries sufficient to add them.
 
 After you added these tables and columns, go on to the next wizard.
+
+.. hint::
+   If you have CLI access you can run the update wizards on command line, too.
+   This allows you to run all upgrade wizards at once and might help with long 
+   running wizards that may fail because of webserver timeouts otherwise
+
+   Run `./vendor/bin/typo3 upgrade:list -a` to show a complete status of upgrade wizards.
+
+   Use `./vendor/bin/typo3 upgrade:run <wizardName>` to run a specific wizard.
+   
+   Use `./vendor/bin/typo3 upgrade:run` to run all wizards.
 
 The "Version Compatibility" wizard sets the compatibility version of
 your TYPO3 installation to the new version. This allows your Frontend
@@ -56,3 +61,10 @@ You will be able to execute queries to adapt them so that
 the tables and columns used by the TYPO3 Core correspond to the
 structure required for the new TYPO3 version.
 
+.. note::
+
+    If you don't know the current Install Tool password, you can set a new
+    one by entering one in the Install Tool login screen, hitting enter and
+    then setting the displayed hash as value of
+    ['BE']['installToolPassword'] in
+    :file:`typo3conf/LocalConfiguration.php`.
