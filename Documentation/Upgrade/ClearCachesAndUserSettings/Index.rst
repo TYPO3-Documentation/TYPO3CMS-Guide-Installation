@@ -3,8 +3,9 @@
 
 .. _clear-caches-and-user-settings:
 
+===================
 Clear User Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===================
 
 You might consider clearing the Backend user preferences. This
 can avoid problems, if something in the upgrade requires this. Go to

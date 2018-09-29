@@ -3,14 +3,14 @@
 
 .. _update-translations:
 
+===================
 Update Translations
-^^^^^^^^^^^^^^^^^^^
+===================
 
-In the Install tool, go to the module "Maintenance" -> "Manage languages" and update your
-translations. If you don't update your translations, new texts will
-only be displayed in English. (The translations are available,
-after the `Translation Team`_ for your language has translated the
-texts.)
+In the Install tool, go to the module "Maintenance" -> "Manage languages" and
+update your translations. If you don't update your translations, new texts will
+only be displayed in English. The translations are available, once the
+`Translation Team`_ for your language has translated the texts.
 
 .. figure:: ../../Images/Install-Language-Packs.png
    :class: with-shadow
