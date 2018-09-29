@@ -3,15 +3,17 @@
 
 .. _clear-caches-and-user-settings:
 
-Clear Caches and User Settings
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===================
+Clear User Settings
+===================
 
-You should always clear the cache tables. Go to "Clean up",
-scroll down to "Clear tables" and select the tables beginning with
-"cache\_". Then press "Clear selected tables".
-
-You might also consider clearing the Backend user preferences. This
+You might consider clearing the Backend user preferences. This
 can avoid problems, if something in the upgrade requires this. Go to
 "Clean up", scroll to "Reset user preferences" and click "Reset backend
 user preferences".
 
+.. figure:: ../../Images/Reset-User-Preferences.png
+   :class: with-shadow
+   :alt: Reset User Preferences
+
+   Reset user preferences in install tool.

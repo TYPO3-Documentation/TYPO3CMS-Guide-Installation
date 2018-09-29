@@ -3,8 +3,9 @@
 
 .. _check-the-changelog-and-news-md:
 
+===================
 Check the ChangeLog
-^^^^^^^^^^^^^^^^^^^
+===================
 
 Look through the `ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/>`_ online
 The ChangeLog is divided into four sections "Breaking Changes", "Features", "Deprecation" and

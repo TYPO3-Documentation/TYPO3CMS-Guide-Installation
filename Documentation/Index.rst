@@ -78,7 +78,6 @@ given task.
    QuickInstall/Index
    In-depth/Index
    Upgrade/Index
-   UpgradeLTS/Index
    MigrateToComposer/Index
    Troubleshooting/Index
    Linktargets/Index
