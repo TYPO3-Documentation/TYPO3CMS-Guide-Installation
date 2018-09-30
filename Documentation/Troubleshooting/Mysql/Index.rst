@@ -9,12 +9,11 @@ MySQL
 
 .. _character-sets:
 
-Character Sets
+Character Set
 """"""""""""""
 
-Current versions of TYPO3 use UTF-8 encoding. You should make sure
-that MySQL uses UTF-8 as well. This is done most easily by checking
-that the new, empty database uses the character set UTF-8. In a
-database *with* content, all tables and those columns, which *have* a
-character set, must use UTF-8.
-
+TYPO3 uses UTF-8 encoding, you will need to ensure that your
+instance of MySQL also uses UTF-8. When installing TYPO3 for
+the first time, you can select UTF-8 encoding when you create
+the database for the first time. For an existing database, you
+will have to set each table and column to use UTF-8.
