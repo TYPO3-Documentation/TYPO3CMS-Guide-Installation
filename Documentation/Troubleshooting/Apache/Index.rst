@@ -18,11 +18,10 @@ Enable necessary Modules
 TYPO3 makes use of several Apache modules, two modules that will need
 to be enabled are mod_expires and mod_rewrite. Apache modules can be
 enabled by editing your http.conf file, locating the required module
-and removing the preceding hash symbol.
+and removing the preceding hash symbol::
 
    #LoadModule expires_module modules/mod_expires.so
    #LoadModule rewrite_module modules/mod_rewrite.so
-
 
 .. _adjust-threadstacksize-on-windows:
 
