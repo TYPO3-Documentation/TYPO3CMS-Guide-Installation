@@ -68,6 +68,7 @@ installation of TYPO3:
 
 :file:`index.php`
   the main script for the website Frontend
+
 .. _custom-folders:
 
 The `var/` folder

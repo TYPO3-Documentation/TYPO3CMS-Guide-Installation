@@ -18,7 +18,7 @@ To create a new TYPO3 project use the TYPO3 Base Distribution:
 
 .. note::
 	To install TYPO3 via composer on windows composer should be started as
-	admin or explicitly given the right to create symlinks (use for example a 
+	admin or explicitly given the right to create symlinks (use for example a
 	powershell or git bash started with admin rights).
 
 After composer finishes, you should have the following folder structure:
@@ -34,13 +34,4 @@ Point the document root of your web server to the `public` folder.
 
 After composer installation continue with the steps in :ref:`the-install-tool`
 
-If you do not want to use composer, follow the package installation guide: 
-
-.. toctree::
-   :maxdepth: 5
-   :titlesonly:
-   :glob:
-
-   Composer/Index
-   GetAndUnpack/Index
-   TheInstallTool/Index
+If you do not want to use composer, follow the :ref:`package installation guide`.

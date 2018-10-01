@@ -17,9 +17,8 @@ Pre-Requisites:
 
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
-   :glob:
 
+   GetAndUnpack/Index
    Composer/Index
    TheInstallTool/Index
