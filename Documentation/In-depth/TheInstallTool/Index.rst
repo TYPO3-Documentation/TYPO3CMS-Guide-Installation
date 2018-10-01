@@ -139,17 +139,17 @@ do not need these functions.
 .. _upgrade-wizard:
 
 Upgrade
-""""""""
+"""""""
 
 You don't need the upgrade section while *installing* TYPO3. These functions
 will be explained in a later chapter about upgrading TYPO3. See
-:ref:`_upgrade`.
+:ref:`upgrade`.
 
 
 .. _system-environment:
 
 Environment
-""""""""""""""""""
+"""""""""""
 
 The section contains a huge number of environment checks, which notify
 you of (potential) problems in your installation.
