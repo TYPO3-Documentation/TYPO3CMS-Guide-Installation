@@ -10,7 +10,7 @@ MySQL
 .. _character-sets:
 
 Character Set
-""""""""""""""
+"""""""""""""
 
 TYPO3 uses UTF-8 encoding, you will need to ensure that your
 instance of MySQL also uses UTF-8. When installing TYPO3 for
