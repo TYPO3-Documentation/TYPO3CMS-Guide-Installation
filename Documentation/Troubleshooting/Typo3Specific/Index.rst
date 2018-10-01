@@ -19,8 +19,8 @@ structure and all the caches will be re-written on the next hit to the
 system.
 
 A shortcut to remove these caches can be found in the Install Tool,
-under "Important Actions". This might be handy in case some of your
-cache files is damaged and your system is not running correctly. The
+under "Important Actions". This might be useful in the event your
+cache files become damaged and your system is not running correctly. The
 Install Tool won't load any of these caches or any extension, so it
 should be safe to use regardless of the corrupt state of the Caches.
 
@@ -33,8 +33,8 @@ you find files like these::
 These files simply contain all :file:`ext\_tables.php` and
 :file:`ext\_localconf.php` files of the installed extensions
 concatenated in the order they are loaded. Therefore including one of
-these files would be the same as including potentially hundred PHP-
-files and that saves some milliseconds for the system.
+these files would be the same as including potentially hundreds of PHP
+files and should improve performance.
 
 Concerning these files you have to consider the following:
 

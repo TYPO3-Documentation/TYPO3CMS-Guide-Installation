@@ -6,8 +6,8 @@
 Apache
 ^^^^^^
 
-There are some settings in the server setup, which might need
-adjustment.
+Some settings may require adjustment for TYPO3 to operate
+correctly.
 
 
 .. _enable-necessary-modules:
@@ -15,26 +15,25 @@ adjustment.
 Enable necessary Modules
 """"""""""""""""""""""""
 
-TYPO3 relies on a number of Apache modules. Especially the modules
-mod_expires and mod_rewrite should be enabled in the Apache
-configuration. This can be done in the Apache configuration files,
-e.g. in httpd.conf, with these lines::
+TYPO3 makes use of several Apache modules, two modules that will need
+to be enabled are mod_expires and mod_rewrite. Apache modules can be
+enabled by editing your http.conf file, locating the required module
+and removing the preceding hash symbol::
 
-   LoadModule expires_module modules/mod_expires.so
-   LoadModule rewrite_module modules/mod_rewrite.so
-
+   #LoadModule expires_module modules/mod_expires.so
+   #LoadModule rewrite_module modules/mod_rewrite.so
 
 .. _adjust-threadstacksize-on-windows:
 
 Adjust ThreadStackSize on Windows
 """""""""""""""""""""""""""""""""
 
-If your server is running on Windows, the extension manager might not
-show up. Instead you might only see a blank screen in the right frame.
+If you are running TYPO3 on top of Windows, the extension manager might not
+appear. Instead you might only see a blank screen in the right frame.
 
 This problem is caused by the value of ThreadStackSize, which on
-Windows systems by default is way too low. To fix this, add the
-following lines at the end of httpd.conf::
+Windows systems by default is set too low. To fix this, add the
+following lines at the end of your httpd.conf file::
 
    <IfModule mpm_winnt_module>
      ThreadStackSize 8388608

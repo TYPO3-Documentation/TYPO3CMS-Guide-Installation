@@ -12,12 +12,13 @@ PHP
 Install Tool
 """"""""""""
 
-In the Install Tool the section "System environment" informs about
-missing PHP modules and problematic settings.
+The "System Environment" section of the Install Tool provides detailed
+information about any missing PHP modules and any other settings that
+may not be configured correctly.
 
-E.g. the PHP extensions openssl and fileinfo must be enabled. This can
-be done by adding (or uncommenting) the following lines in the [PHP]
-section in php.ini::
+For example, the PHP extensions openssl and fileinfo must be enabled. This can
+be achieved by adding (or uncommenting) the following lines in the [PHP]
+section of your php.ini file::
 
    extension=fileinfo.so
    extension=openssl.so
