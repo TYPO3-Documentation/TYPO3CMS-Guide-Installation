@@ -3,17 +3,20 @@
 
 .. _which-package-and-which-file-format:
 
+===============================
 Which Package and which Format?
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+===============================
 
-It is recommended to install TYPO3 via the PHP package manager `composer`.
-See :ref:`install-via-composer`. If you are not able to use composer for
-your project, download the source package from `get.typo3.org <https://get.typo3.org/>`_.
+It is recommended to install TYPO3 via the PHP package manager `composer`. See
+:ref:`install-via-composer`. If you are not able to use composer for your
+project, download the source package from `get.typo3.org
+<https://get.typo3.org/>`_.
+
 
 .. _which-file-format-to-use:
 
 Which File Format to use
-""""""""""""""""""""""""
+========================
 
 The TYPO3 Source package is available as a :file:`.zip` or
 :file:`.tar.gz` distribution. Their content is the same and you should

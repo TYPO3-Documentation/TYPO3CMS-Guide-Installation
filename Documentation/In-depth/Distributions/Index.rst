@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+.. include:: ../../Includes.txt
 
 
 .. _the-distributions:
@@ -11,16 +11,17 @@ Several Distributions are available for TYPO3 for use in your installation. In
 essence, a Distribution is an extension which sets up and configures TYPO3 to
 get you started. A Distribution often creates an example page structure and
 content elements, as well as automatically handling the installation and
-activation of useful extensions. 
+activation of useful extensions.
 
-For testing and learning TYPO3 we recommend to start with the introduction package
-(see below).
+For testing and learning TYPO3 we recommend to start with the introduction
+package (see below).
 
-If you want to build your web site from scratch, just go ahead *without*
-using a Distribution. You can then start with a completely empty
-installation of TYPO3.
+If you want to build your web site from scratch, just go ahead *without* using
+a Distribution. You can then start with a completely empty installation of
+TYPO3.
 
 The following distribution is available from the Core directly:
+
 
 .. _introduction-package:
 
@@ -42,9 +43,9 @@ Installing Distributions with composer
 ======================================
 
 To install the introduction package or any other distribution on a composer
-based installation use `composer require typo3/cms-introduction` (change
-the package name to the distribution you want). Afterwards use the
-following commands to activate the extension(s) via command line:
+based installation use `composer require typo3/cms-introduction` (change the
+package name to the distribution you want). Afterwards use the following
+commands to activate the extension(s) via command line:
 
 .. code-block:: shell
 
@@ -59,7 +60,6 @@ both packages have to be activated.
 Installing Distributions without composer
 =========================================
 
-Move to the **ADMIN TOOLS > Extensions** module and choose
-"Get preconfigured distribution" from the menu in the docheader.
-Just choose the Distribution you would like to use and hit the "Install"
-button.
+Move to the **ADMIN TOOLS > Extensions** module and choose "Get preconfigured
+distribution" from the menu in the docheader. Just choose the Distribution you
+would like to use and hit the "Install" button.
