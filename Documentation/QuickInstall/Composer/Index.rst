@@ -1,22 +1,41 @@
 .. include:: ../../Includes.txt
-.. highlight:: bash
+.. highlight:: shell
+
 
 .. _install-via-composer:
 
+==========================
 Install TYPO3 via composer
-================================
+==========================
 
-The recommended way of installing TYPO3 is via composer.
+.. attention::
 
-To create a new TYPO3 project use the TYPO3 Base Distribution:
+   The recommended way of installing TYPO3 is via composer.
 
-.. code-block:: bash
 
-	# Download the Base Distribution, the latest "stable" release (8.7)
+To create a new TYPO3 project use the TYPO3 Base Distribution::
+
+	# Download the Base Distribution, the latest "stable" release (9.5)
 	composer create-project typo3/cms-base-distribution YourNewProjectFolder
 
 .. note::
-	To install TYPO3 via composer on windows composer should be started as
-	admin or explicitly given the right to create symlinks.
 
-After installation continue with the steps in :ref:`the-install-tool`
+   To install TYPO3 via composer on windows composer should be started as admin
+   or explicitly given the right to create symlinks (use for example a
+   powershell or git bash started with admin rights).
+
+After composer finishes, you should have the following folder structure:
+
+.. figure:: ../../Images/folder-structure-composer.png
+   :class: with-shadow
+   :alt: Folder Structure
+
+   The folder structure after composer installation.
+
+
+Point the document root of your web server to the `public` folder.
+
+After composer installation continue with the steps in :ref:`the-install-tool`
+
+If you do not want to use composer, follow the :ref:`package installation
+guide`.
