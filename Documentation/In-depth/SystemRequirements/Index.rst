@@ -9,7 +9,7 @@ System Requirements
 TYPO3 requires a web server, PHP and a database system.
 
 * TYPO3 requires a web server which can run PHP (e.g. Apache, Nginx or IIS).
-* TYPO3 8 requires at least PHP 7.x.
+* TYPO3 9 requires at least PHP 7.2.x
 * TYPO3 can be used with a great many database systems (e.g. MySQL or Postgres). If you use
   MySQL, you will need to install at least MySQL 5.5.
 
@@ -23,8 +23,8 @@ scaling or cropping – you will need GraphicsMagick or ImageMagick (version 6 o
 newer) installed on the server.
 
 A detailed list of these requirements is enclosed in the file
-`INSTALL.md <https://github.com/TYPO3/TYPO3.CMS/blob/TYPO3_8-7/INSTALL.md>`_
-inside the TYPO3 source package.
+`INSTALL.md` inside the TYPO3 source repository or on 
+`get.typo3.org <https://get.typo3.org/version/9#system-requirements>`_.
 
 Should you encounter problems, the ":ref:`troubleshooting`" section at
 the end of this document will help.

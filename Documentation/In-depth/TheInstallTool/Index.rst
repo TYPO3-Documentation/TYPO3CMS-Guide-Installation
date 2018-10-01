@@ -3,47 +3,123 @@
 
 .. _the-install-tool-in-depth:
 
-The Install Tool
-^^^^^^^^^^^^^^^^
+TYPO3 System Management
+^^^^^^^^^^^^^^^^^^^^^^^
 
-The Install Tool provides tools to help you with the maintenance of your
+The TYPO3 Admin Tool area provides tools to help with the maintenance of your
 installation: Upgrading, checking the system environment, configuring
-settings from :php:`$GLOBALS['TYPO3_CONF_VARS']` and solving problems. Its
-usage is not dependent on a working Backend, and you access it
-using a single password.
+settings from and solving problems. The standalone tool usage is not dependent on a
+ working Backend, and you access it using a single password.
 
-First go to your site and enter the install tool (http://www.example.com/typo3/install).
+First go to your site and enter the admin tool (http://www.example.com/typo3/install.php).
 
 .. hint::
 
    If you see a message "The Install Tool is locked", create a new file
-   named "ENABLE_INSTALL_TOOL" in the folder :file:`typo3conf/`. Then reload the
+   named "ENABLE_INSTALL_TOOL" in the folder :file:`public/typo3conf/`. Then reload the
    page.
 
+.. note::
+   
+   The Admin tool was called "Install Tool" in earlier versions, you will likely still 
+   see that term in some places.
 
 .. _important-actions:
 
-Important actions
+Maintenance
 """""""""""""""""
 
 The section provides basic information about your system and several
-functions which you need for maintenance tasks or during an upgrade.
+functions which you need for maintenance tasks.
 
-.. figure:: ../../Images/Important-Actions.png
+.. figure:: ../../Images/admin-tools-maintenance-overview.png
    :class: with-shadow
-   :alt: Important Actions
+   :alt: Admin Tools: Maintenance Overview
 
-   The "Important Actions" section of the Install Tool.
+   The "Maintenance" section of the Install Tool.
 
 
+The **Flush TYPO3 and PHP Cache** functionality can empty all caches: Frontend,
+Backend, language caches and the OPCode Cache.
 
-The **Database analyzer** can be used to compare the current structure
+With **Analyze Database Structure** you can compare the current structure
 of your database with the expected structure for the TYPO3 version you
 are using. The next step allows you to update the structure of your
 database accordingly.
 
-The **Clear all Cache** functionality can empty all caches: Frontend,
-Backend and language caches.
+**Remove Temporary Assets** allows you to clear temporary files and will 
+trigger regeneration when they are needed next. 
+
+**Rebuild PHP Autoload Information** resets autoload information for all 
+active third party extensions.
+
+With **Clear persistent database tables** you can cleanup non-caching tables
+like the history, log or backend sessions. Be aware that clearing backend sessions
+will log out all active users. Clearing the history will remove all history entries,
+you will not be able to use the content element history to undo changes anymore.
+
+"Create administrative user" allows to create a new administrator (if wanted with system
+maintenance role on top). The system maintainer role adds the maintenance tools to the menu
+and allows easy access to the standalone admin tool.
+
+If for some reason you or your editors have problems when editing in the TYPO3 backend,
+clearing the backend user settings might help. In those preferences various settings of 
+a backend editor are stored, for example: which page tree nodes are currently expanded.
+Click on "Reset backend user preferences" to clear these settings and set them to their 
+defaults.
+
+.. note::
+
+    Some technical background: User settings get saved in the database table `be_users`
+    in the `uc` (=User Configuration) field. When resetting the backend user preferences
+    this field is set to an empty string.
+
+Install new TYPO3 backend languages with the **Manage language packs** functionality.
+You can update existing language packs (for example after installing new extensions) or
+add new languages to the system. Afterwards, you can choose between all installed languages
+in your user settings.
+
+
+Settings
+"""""""""""""""""
+
+This area allows you to configure both TYPO3 extensions as well as the core.
+
+In **Extension Configuration** you can configure all enabled extensions that 
+provide custom configuration options.
+
+Via **Change Install Tool Password** you can set a new password for the maintenance
+area.
+
+With **Manage system maintainers** you can add new system maintainers (admin users
+with the additional role of **system maintainers**). System maintainers have easier 
+access to the maintenance tools of TYPO3. Be aware that this is mainly a usability 
+enhancement, blinding maintenance options for normal administrators. As administrators
+still have elevated permissions you should still be careful which users can be trusted 
+with these rights.
+
+At **Configuration Presets** TYPO3 offers presets for common settings groups. It allows for
+easier configuration of settings for debugging, image handling, mail configuration and password
+hashing.
+
+TYPO3 provides **Feature Toggles** for certain features that have a major impact on your system.
+You can enable or disable these features here. 
+
+.. tip::
+    On new installation it is recommended to activate the 
+    following features for TYPO3 9 LTS:
+
+        - unifiedPageTranslationHandling
+        - TypoScript.strictSyntax
+        - simplifiedControllerActionDispatching 
+
+**Configure Installation-Wide Options** (previously known as "All Configuration") allows you to configure
+settings that impact how your complete TYPO3 installation behaves.
+
+.. tip::
+    If you are new to TYPO3, take some time to read through all the options and their explanation to get
+    an impression of what TYPO3 offers.
+
 
 The **Check for broken extensions** can be run to make sure that
 all :file:`ext_tables` and :file:`ext_localconf` files contain valid
@@ -60,97 +136,46 @@ encryption key and to create a Backend administrator user. Usually you
 do not need these functions.
 
 
-.. _configuration-presets:
-
-Configuration presets
-"""""""""""""""""""""
-
-This section provides default settings for different setups.
-
-The section "Debug settings" allows you to activate debugging. E.g. if
-set to "Debug", all kinds of error reporting, debugging and deprecation
-logging will be activated. If set to "Live", all these settings will be
-deactivated.
-
-The "Image handling settings" contain presets for different image
-processing programs (namely ImageMagick and GraphicsMagick). Select
-the one you have available.
-
-The preset "Extbase object cache" allows you to choose the kind of
-caching system for Extbase (a TYPO3 Extension Building Framework) to use.
-
-Finally, in the "Mail Handling Settings" you can configure how TYPO3 sends
-mails (via SMTP or sendmail for example).
-
-
-.. _all-configuration:
-
-All configuration
-"""""""""""""""""
-
-Here you can configure *all* installation options concerning your TYPO3
-installation. We suggest you go through the whole list and read the
-description of the settings carefully at least once, so you get an
-impression of what you can configure. Normally you *can*, but you *don't
-have to* change anything here during installation, as the previous steps
-took care of the most important settings.
-
-
 .. _upgrade-wizard:
 
-Upgrade wizard & Upgrade Analysis
-"""""""""""""""""""""""""""""""""
+Upgrade
+""""""""
 
-You don't need the upgrade wizard while *installing* TYPO3. These functions
-will be explained in a later chapter about upgrading TYPO3.
+You don't need the upgrade section while *installing* TYPO3. These functions
+will be explained in a later chapter about upgrading TYPO3. See 
+    :ref:`_upgrade`.
 
 
 .. _system-environment:
 
-System environment
+Environment
 """"""""""""""""""
 
 The section contains a huge number of environment checks, which notify
-you of (potential) problems in your installation. It checks Apache
-settings and the status of important PHP modules and PHP settings. It
-also contains full output of :code:`phpinfo()` and some constants used
-by TYPO3.
+you of (potential) problems in your installation.
 
+The **Environment Overview** provides a short system overview that you can also access
+via Application Information in the top bar.
 
-.. _folder-structure:
+The **Environment Status** runs checks on your server environment and reports potentially 
+wrong or missing settings.
 
-Folder structure
-""""""""""""""""
+With **Directory Status** you can check whether all required files and folders exist and 
+are writable when necessary. It also shows the default file and folder permissions TYPO3
+will apply on creation of assets.
 
-This section shows whether the files and folders in your installation have
-the correct permissions. This is important so that TYPO3 can function properly
-and so that other users on the web server do not get access to (possibly confidential)
-data.
+**PHP Info** simply outputs the `phpinfo()`. 
 
+**Test Mail Setup** allows you to test the mail setup of TYPO3 by sending a test mail. 
 
-.. _test-setup:
+.. tip::
+    If the test mail does not arrive, check the settings via "Settings" > "Configuration Presets" > "Mail".
 
-Test setup
-""""""""""
+**Image Processing** checks various image rendering capabilities of your system and displays hints if something goes wrong.
 
-The section "Test setup" contains a test for the mail function and for
-image processing. Try each test to see if you have configured your image
-generation settings correctly. If you have problems, check the
-explanation of the test for a hint on how to solve them. Additionally,
-have a look at the image processing settings in the section "All
-configuration".
+.. tip::
+    If rendering fails you can copy the executed command and see if it works on your favorite command line. If that works,
+    the tool itself is working but TYPO3 might have problems executing it. If the command does not work, you might need to
+    adjust the settings (via "Settings" > "Configuration Presets" > "Image Handling").
 
-You might also find help in the :ref:`troubleshooting` section below.
-
-
-.. _clean-up:
-
-Clean up
-""""""""
-
-You don't need this section whilst installing TYPO3. This section is
-meant to provide methods to clean up your TYPO3 installation after it
-has been running for a while. You can use it to delete cached images,
-which is helpful when you are configuring the image processing
-settings. This section is also relevant during an upgrade.
 
