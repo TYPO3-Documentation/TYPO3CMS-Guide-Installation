@@ -15,7 +15,7 @@ The following files and folders are part of the TYPO3 package in a composer base
 installation.
 
 :file:`public/`
-  is the document root and public entry point. 
+  is the document root and public entry point.
 
 :file:`var/`
   contains system files, like caches, logs, sessions...
@@ -23,8 +23,8 @@ installation.
 :file:`vendor/`
   the composer vendor directory contains third-party packages, libraries etc.
 
-The `public/` folder
-+++++++++++++++++
+The 'public/' folder
+++++++++++++++++++++
 
 The following files and folders will be created in the public folder during the
 installation of TYPO3:
@@ -51,7 +51,7 @@ installation of TYPO3:
 :file:`typo3conf/LocalConfiguration.php`
   is the main configuration file of your installation and the one the
   customized values of all the Install Tool options get written to. It
-  has to be writable and will be updated automatically by the Maintenance Tools 
+  has to be writable and will be updated automatically by the Maintenance Tools
   and the Extension Manager. You can edit this file manually, but
   make sure you keep the PHP syntax working.
 
@@ -80,7 +80,7 @@ The `var/` folder
   contains charset conversion tables.
 
 :file:`labels/`
-  contains language labels for a translated TYPO3 backend. You can download more languages via 
+  contains language labels for a translated TYPO3 backend. You can download more languages via
   "Maintenance" > "Manage language labels"
 
 :file:`lock/`

@@ -9,7 +9,7 @@ TYPO3 System Management
 The TYPO3 Admin Tool area provides tools to help with the maintenance of your
 installation: Upgrading, checking the system environment, configuring
 settings from and solving problems. The standalone tool usage is not dependent on a
- working Backend, and you access it using a single password.
+working Backend, and you access it using a single password.
 
 First go to your site and enter the admin tool (http://www.example.com/typo3/install.php).
 
@@ -20,8 +20,8 @@ First go to your site and enter the admin tool (http://www.example.com/typo3/ins
    page.
 
 .. note::
-   
-   The Admin tool was called "Install Tool" in earlier versions, you will likely still 
+
+   The Admin tool was called "Install Tool" in earlier versions, you will likely still
    see that term in some places.
 
 .. _important-actions:
@@ -47,10 +47,10 @@ of your database with the expected structure for the TYPO3 version you
 are using. The next step allows you to update the structure of your
 database accordingly.
 
-**Remove Temporary Assets** allows you to clear temporary files and will 
-trigger regeneration when they are needed next. 
+**Remove Temporary Assets** allows you to clear temporary files and will
+trigger regeneration when they are needed next.
 
-**Rebuild PHP Autoload Information** resets autoload information for all 
+**Rebuild PHP Autoload Information** resets autoload information for all
 active third party extensions.
 
 With **Clear persistent database tables** you can cleanup non-caching tables
@@ -63,9 +63,9 @@ maintenance role on top). The system maintainer role adds the maintenance tools 
 and allows easy access to the standalone admin tool.
 
 If for some reason you or your editors have problems when editing in the TYPO3 backend,
-clearing the backend user settings might help. In those preferences various settings of 
+clearing the backend user settings might help. In those preferences various settings of
 a backend editor are stored, for example: which page tree nodes are currently expanded.
-Click on "Reset backend user preferences" to clear these settings and set them to their 
+Click on "Reset backend user preferences" to clear these settings and set them to their
 defaults.
 
 .. note::
@@ -85,17 +85,17 @@ Settings
 
 This area allows you to configure both TYPO3 extensions as well as the core.
 
-In **Extension Configuration** you can configure all enabled extensions that 
+In **Extension Configuration** you can configure all enabled extensions that
 provide custom configuration options.
 
 Via **Change Install Tool Password** you can set a new password for the maintenance
 area.
 
 With **Manage system maintainers** you can add new system maintainers (admin users
-with the additional role of **system maintainers**). System maintainers have easier 
-access to the maintenance tools of TYPO3. Be aware that this is mainly a usability 
+with the additional role of **system maintainers**). System maintainers have easier
+access to the maintenance tools of TYPO3. Be aware that this is mainly a usability
 enhancement, blinding maintenance options for normal administrators. As administrators
-still have elevated permissions you should still be careful which users can be trusted 
+still have elevated permissions you should still be careful which users can be trusted
 with these rights.
 
 At **Configuration Presets** TYPO3 offers presets for common settings groups. It allows for
@@ -103,15 +103,15 @@ easier configuration of settings for debugging, image handling, mail configurati
 hashing.
 
 TYPO3 provides **Feature Toggles** for certain features that have a major impact on your system.
-You can enable or disable these features here. 
+You can enable or disable these features here.
 
 .. tip::
-    On new installation it is recommended to activate the 
+    On new installation it is recommended to activate the
     following features for TYPO3 9 LTS:
 
         - unifiedPageTranslationHandling
         - TypoScript.strictSyntax
-        - simplifiedControllerActionDispatching 
+        - simplifiedControllerActionDispatching
 
 **Configure Installation-Wide Options** (previously known as "All Configuration") allows you to configure
 settings that impact how your complete TYPO3 installation behaves.
@@ -142,8 +142,8 @@ Upgrade
 """"""""
 
 You don't need the upgrade section while *installing* TYPO3. These functions
-will be explained in a later chapter about upgrading TYPO3. See 
-    :ref:`_upgrade`.
+will be explained in a later chapter about upgrading TYPO3. See
+:ref:`_upgrade`.
 
 
 .. _system-environment:
@@ -157,16 +157,16 @@ you of (potential) problems in your installation.
 The **Environment Overview** provides a short system overview that you can also access
 via Application Information in the top bar.
 
-The **Environment Status** runs checks on your server environment and reports potentially 
+The **Environment Status** runs checks on your server environment and reports potentially
 wrong or missing settings.
 
-With **Directory Status** you can check whether all required files and folders exist and 
+With **Directory Status** you can check whether all required files and folders exist and
 are writable when necessary. It also shows the default file and folder permissions TYPO3
 will apply on creation of assets.
 
-**PHP Info** simply outputs the `phpinfo()`. 
+**PHP Info** simply outputs the `phpinfo()`.
 
-**Test Mail Setup** allows you to test the mail setup of TYPO3 by sending a test mail. 
+**Test Mail Setup** allows you to test the mail setup of TYPO3 by sending a test mail.
 
 .. tip::
     If the test mail does not arrive, check the settings via "Settings" > "Configuration Presets" > "Mail".
