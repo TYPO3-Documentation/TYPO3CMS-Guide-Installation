@@ -26,7 +26,7 @@ Installation and Upgrade Guide
       forAdmins, forBeginners
 
 :Copyright:
-      2000-2015
+      2000-2018
 
 :Author:
       Documentation Team
