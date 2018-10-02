@@ -22,6 +22,5 @@ Pre-Requisites:
 .. toctree::
    :titlesonly:
 
-   GetAndUnpack/Index
    Composer/Index
    TheInstallTool/Index
