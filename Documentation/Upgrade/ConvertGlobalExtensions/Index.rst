@@ -10,7 +10,7 @@ Convert global Extensions
 If you use global extensions, convert them to local ones.
 
 Global extensions used to be saved in folders inside
-:file:`typo3/ext/`, such as :file:`typo3/ext/realurl`. In current
+:file:`typo3/ext/`, such as :file:`typo3/ext/`. In current
 versions of TYPO3, this location should no longer be used. Instead,
 use local extensions below :file:`typo3conf/ext/`.
 
