@@ -18,7 +18,7 @@ With command line (recommended)
 
 In a composer installation execute::
 
-   ./vendor/bin/typo3 referenceinde:update
+   ./vendor/bin/typo3 referenceindex:update
 
 In a non-composer installation execute::
 
