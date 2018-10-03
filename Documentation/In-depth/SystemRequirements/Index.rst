@@ -18,14 +18,13 @@ TYPO3 requires a web server, PHP and a database system.
 
 If you use an Apache web server, the module mod_rewrite must be activated.
 Certain PHP extensions are necessary, others recommended. You possibly want to
-adjust the memory limit; at least 128 MB is recommended.
+adjust the memory limit; see below.
 
 If you want TYPO3 to automatically carry out image processing – for example
 scaling or cropping – you will need GraphicsMagick or ImageMagick (version 6 or
 newer) installed on the server.
 
-A detailed list of these requirements is enclosed in the file `INSTALL.md`
-inside the TYPO3 source repository or on `get.typo3.org
+For an overview see also `get.typo3.org
 <https://get.typo3.org/version/9#system-requirements>`_.
 
 Should you encounter problems, the ":ref:`troubleshooting`" section at the end
@@ -72,7 +71,7 @@ Apache
 PHP environment
 ---------------
 
-* memory_limit set to at least 64M (128M recommended)
+* memory_limit set to at least 256M recommended
 
 * max_execution_time set to at least 30 (240 seconds recommended)
 
