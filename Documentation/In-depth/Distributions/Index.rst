@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+.. include:: ../../Includes.txt
 
 
 .. _the-distributions:
@@ -7,53 +7,52 @@
 The Distributions
 =================
 
-Several Distributions are available for TYPO3 for use in your installation. In
-essence, a Distribution is an extension which sets up and configures TYPO3 to
-get you started. A Distribution often creates an example page structure and
-content elements, as well as automatically handling the installation and
-activation of useful extensions like `RealURL
-<http://typo3.org/extensions/repository/view/realurl/>`__.
+Distributions were created to give new users easy access to a
+preconfigured installation of TYPO3 that they could then use without the
+need to set up and configure various parts of the CMS such as page
+structure, content and templating.
 
-If you selected the option to load preconfigured Distributions during the final
-step of the installation process (in the Install Tool), you will be redirected
-to the "Get preconfigured distribution" screen of the Extension Manager after
-logging in to the backend. You can also navigate there manually, of course.
+When installing TYPO3 for the first time, you will be given the option to
+access a set of "Preconfigured Distributions" once the installation is complete.
+Upon selecting this option, you will be redirected to your installations "Extension Manger"
+and given a list of Distributions to choose from.
+
+For an existing installation of TYPO3, distributions are already available and
+can be accessed in the Extension Manager.
 
 .. note::
 
-   If you installed TYPO3 via composer all extension downloads as well as
-   distribution installations have to be done via composer command line, too.
-
-
-Amongst non-core options, the following Core Distribution is available:
+   If you installed TYPO3 via Composer, all extensions and distributions
+   will need to be installed and managed via Composer.
 
 .. _introduction-package:
 
 Introduction Package
 ====================
 
-The Introduction Package is a complete demo website. It it based on a
-responsive design using bootstrap templates and contains a lot of default
-content for testing and learning. Try this one if you are new to TYPO3.
+The Introduction Package is a complete, fully operational website. It it based on a
+responsive design using bootstrap templates and contains example
+content for testing and evaluation. This is ideal for new users who wish
+to have a "look around" and get more familiar with the CMS.
 
 .. figure:: ../../Images/IntroductionPackage.png
    :alt: Introduction Package
    :class: with-shadow
 
-   The Introduction Package provides a full website based on bootstrap.
+   The Introduction Package provides a fully operational website based on bootstrap.
 
 
 .. _installing-distributions:
 
-Installing Distributions without composer
+Installing Distributions without Composer
 =========================================
 
-For testing and learning we recommend that you use the Introduction Package,
+For testing and evaluation we recommend that you use the Introduction Package,
 but several other distributions are available.
 
 Move to the **ADMIN TOOLS > Extensions** module and choose
 "Get preconfigured distribution" from the menu in the docheader.
-Just choose the Distribution you would like to use and hit the "Install"
+Select the Distribution you would like to use and select the "Install"
 button.
 
 If you want to build your web site from scratch, just go ahead *without*
@@ -61,10 +60,10 @@ using a Distribution. You can then start with a completely empty
 installation of TYPO3.
 
 
-Installing Distributions with composer
+Installing Distributions with Composer
 ======================================
 
-To install the introduction package or any other distribution on a composer
+To install the Introduction Package or any other distribution on a Composer
 based installation use `composer require typo3/cms-introduction` (change
 the package name to the distribution you want). Afterwards use the
 following commands to activate the extension(s) via command line:
@@ -74,7 +73,7 @@ following commands to activate the extension(s) via command line:
    .vendor/bin/typo3 extensionmanager:extension:install bootstrap_package
    ./vendor/bin/typo3 extensionmanager:extension:install introduction
 
-In this case, the introduction package depends on the bootstrap_package, so
+In this case, the Introduction Package depends on the bootstrap_package, so
 both packages have to be installed.
 
 On Windows: Use use :file:`.\vendor\bin\typo3.bat` instead.
