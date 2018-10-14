@@ -1,14 +1,17 @@
 .. include:: ../../Includes.txt
 
-
 .. _which-package-and-which-file-format:
 
 Which Package and which Format?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-It is recommended to install TYPO3 via the PHP package manager `composer`.
-See :ref:`install-via-composer`. If you are not able to use composer for
-your project, download the source package from `https://typo3.org/download/ <https://typo3.org/download/>`_.
+The recommended way of installing TYPO3 is via the PHP package manager `Composer`.
+For detailed instructions on how to install TYPO3 using Composer, visit the
+:ref:`install-via-composer`section of this manual.
+
+If you do not have access to Composer, you can install TYPO3 by downloading
+and then extracting its source package on your web server. TYPO3's source package
+can be found here: `https://get.typo3.org <https://get.typo3.org>`_.
 
 .. _which-file-format-to-use:
 
