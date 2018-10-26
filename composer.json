@@ -1,0 +1,6 @@
+{
+    "name": "typo3/guide-installation",
+    "type": "typo3-cms-documentation",
+    "description": "Installation and Upgrade Guide",
+    "license": "OPL-1.0"
+}
