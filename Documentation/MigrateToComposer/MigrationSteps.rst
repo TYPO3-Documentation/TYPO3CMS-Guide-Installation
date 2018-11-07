@@ -76,6 +76,8 @@ You have to decide by yourself, which syntax fits best to your needs.
 Install the core
 ----------------
 
+.. _composer-migration-require-all:
+
 The old way: add everything
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -86,6 +88,8 @@ As already written above, the line to install TYPO3 7 LTS would be::
 While installing TYPO3 8 LTS works with this line::
 
     composer require typo3/cms:~8.7.0
+
+.. _composer-migration-require-subtree-packages:
 
 The new way: add only code, you need
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
