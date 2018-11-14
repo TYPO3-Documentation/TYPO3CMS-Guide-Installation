@@ -2,22 +2,25 @@
 
 .. _quick-installation:
 
+==================
 Quick Installation
 ==================
 
-The following instructions assume you are able to create symlinks on
-the target machine.
+For those already familiar with running web software, get started quickly with
+this quick install guide. For a more detailed description, take a look at the
+section :ref:`in-depth-installation`.
+
+The following instructions assume you are able to create symlinks on the target
+machine (which needs elevated permissions on Windows machines).
 
 Pre-Requisites:
-   * Running web server (Apache, Nginx, IIS...)
-   * PHP > 7 installed
+
+* Running web server (Apache, Nginx, IIS...)
+* PHP > 7.2 installed
 
 
 .. toctree::
-   :maxdepth: 5
    :titlesonly:
-   :glob:
 
    Composer/Index
-   GetAndUnpack/Index
    TheInstallTool/Index

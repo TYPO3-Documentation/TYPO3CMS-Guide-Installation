@@ -25,6 +25,7 @@ can be accessed in the Extension Manager.
    If you installed TYPO3 via Composer, all extensions and distributions
    will need to be installed and managed via Composer.
 
+
 .. _introduction-package:
 
 Introduction Package
@@ -68,12 +69,15 @@ based installation use `composer require typo3/cms-introduction` (change
 the package name to the distribution you want). Afterwards use the
 following commands to activate the extension(s) via command line:
 
+
 .. code-block:: shell
 
-   .vendor/bin/typo3 extensionmanager:extension:install bootstrap_package
-   ./vendor/bin/typo3 extensionmanager:extension:install introduction
+   ./vendor/bin/typo3 extension:activate bootstrap_package
+   ./vendor/bin/typo3 extension:activate introduction
 
 In this case, the Introduction Package depends on the bootstrap_package, so
 both packages have to be installed.
 
-On Windows: Use use :file:`.\vendor\bin\typo3.bat` instead.
+Move to the **ADMIN TOOLS > Extensions** module and choose "Get preconfigured
+distribution" from the menu in the docheader. Just choose the Distribution you
+would like to use and hit the "Install" button.
