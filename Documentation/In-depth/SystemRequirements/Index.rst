@@ -21,7 +21,7 @@ Certain PHP extensions are necessary, others recommended. You possibly want to
 adjust the memory limit; see below.
 
 If you want TYPO3 to automatically carry out image processing – for example
-scaling or cropping – you will need GraphicsMagick or ImageMagick (version 6 or
+scaling or cropping – you will need GraphicsMagick (version 1.3 or newer) or ImageMagick (version 6 or
 newer) installed on the server.
 
 For an overview see also `get.typo3.org
