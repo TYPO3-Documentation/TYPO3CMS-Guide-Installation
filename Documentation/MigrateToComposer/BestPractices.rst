@@ -45,7 +45,7 @@ Update single packages
 
 When you want to update single packages, you can call the ``update``
 command with the package name. You should always add
-``--with-dependencies`` attribute to also update the required third
+``--with-all-dependencies`` attribute to also update the required third
 party packages.
 
 Update TYPO3 core
@@ -55,20 +55,20 @@ Update TYPO3 core
 
 ::
 
-    composer update typo3/cms --with-dependencies
+    composer update typo3/cms --with-all-dependencies
 
 **With "subtree split"**
 
 ::
 
-    composer update typo3/cms-* --with-dependencies
+    composer update typo3/cms-* --with-all-dependencies
 
 Update extensions like "news"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
-    composer update georgringer/news --with-dependencies
+    composer update georgringer/news --with-all-dependencies
 
 Use "dev requirements"
 ======================
