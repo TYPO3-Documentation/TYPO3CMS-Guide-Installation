@@ -23,4 +23,5 @@ Pre-Requisites:
    :titlesonly:
 
    Composer/Index
+   GetAndUnpack/Index
    TheInstallTool/Index
