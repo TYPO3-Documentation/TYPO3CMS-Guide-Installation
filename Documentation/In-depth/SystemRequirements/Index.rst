@@ -22,7 +22,7 @@ adjust the memory limit; see below.
 
 If you want TYPO3 to automatically carry out image processing – for example
 scaling or cropping – you will need GraphicsMagick (version 1.3 or newer) or ImageMagick (version 6 or
-newer) installed on the server.
+newer) installed on the server. (GraphicsMagick should be prefered.)
 
 For an overview see also `get.typo3.org
 <https://get.typo3.org/version/9#system-requirements>`_.
