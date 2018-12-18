@@ -8,7 +8,7 @@ Which Package and which Format?
 
 The recommended way of installing TYPO3 is via the PHP package manager `Composer`.
 For detailed instructions on how to install TYPO3 using Composer, visit the
-:ref:`install-via-composer`section of this manual.
+:ref:`install-via-composer` section of this manual.
 
 If you do not have access to Composer, you can install TYPO3 by downloading
 and then extracting its source package on your web server. TYPO3's source package
