@@ -134,6 +134,11 @@ key you can use to install this extension.
 
 |TER composer command|
 
+.. note ::
+
+    The command ``composer req`` is short for ``composer require``. Both commands
+    exactly do the same and are interchangeable.
+
 Check in TER satis
 ~~~~~~~~~~~~~~~~~~
 
