@@ -122,7 +122,34 @@ You already know the TER and always used it to install extensions? Fine.
 But with composer, the **preferred way** is to install extensions
 directly from `packagist.org <https://packagist.org>`__. This works great, when the maintainer uploaded them
 to there. Many well known extensions are already available.
-You only need to known the package name. There are multiple ways to find it.
+You only need to known the package name. There are multiple ways to find it:
+
+Notice on extension's TER page
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Extension maintainers optionally can link their TYPO3 extension in TER with the
+correct composer key on `packagist.org <https://packagist.org>`__. Some maintainers already did that and if you
+search the extension in TER, you will see a message, which command and composer
+key you can use to install this extension.
+
+|TER composer command|
+
+Check in TER satis
+~~~~~~~~~~~~~~~~~~
+
+If you search the extension in https://composer.typo3.org/satis.html and it's linked to
+`packagist.org <https://packagist.org>`__, they are marked as "abandoned" and you
+will see a message, which composer key should be used to install this extension.
+
+|satis abandoned note|
+
+See warning during composer require command
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you still install one of the abandoned extensions via its ``typo3-ter`` package key,
+you also will see a warning during the ``composer require`` command.
+
+|composer abandoned note|
 
 Check manually
 ~~~~~~~~~~~~~~
@@ -152,27 +179,9 @@ does not provide additional information.
    |packagist screen shot|
 
 **Example:**
-To install the news extension in version 7.0.\*, type::
+To install the mask extension in version 4.1.\*, type::
 
-   composer require georgringer/news:~7.0.0
-
-Check in TER satis
-~~~~~~~~~~~~~~~~~~
-
-Extension maintainers optionally can link their TYPO3 extension in TER with the
-correct composer key on `packagist.org <https://packagist.org>`__. Some maintainers already did that and if you
-search the extension in https://composer.typo3.org/satis.html, you will see a message, which composer key should be
-used to install this extension.
-
-|satis abandoned note|
-
-See warning during composer require command
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you still install one of the abandoned extensions via its ``typo3-ter`` package key,
-you also will see a warning during the ``composer require`` command.
-
-|composer abandoned note|
+   composer require mask/mask:~4.1.0
 
 Install extension from TER
 --------------------------
@@ -325,9 +334,10 @@ To complete our example ``composer.json``, it would look like this:
     :ref:`completely clear "typo3conf/ext" folder <mig-composer-clear-typo3conf-ext-folder>`
     in the :ref:`Best practices <mig-composer-best-practices>` section.
 
+.. |TER composer command| image:: ../Images/ter-composer-command.png
 .. |TER screen shot| image:: ../Images/ter-code-link.png
 .. |file list| image:: ../Images/github-composer-file.png
 .. |file content| image:: ../Images/github-composer-name.png
-.. |packagist screen shot| image:: ../Images/packagist-news.png
+.. |packagist screen shot| image:: ../Images/packagist-mask.png
 .. |satis abandoned note| image:: ../Images/satis-abandoned.png
 .. |composer abandoned note| image:: ../Images/composer-ter-abandoned.png
