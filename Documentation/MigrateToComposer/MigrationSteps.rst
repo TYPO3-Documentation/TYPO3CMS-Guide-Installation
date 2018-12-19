@@ -335,9 +335,14 @@ To complete our example ``composer.json``, it would look like this:
     in the :ref:`Best practices <mig-composer-best-practices>` section.
 
 .. |TER composer command| image:: ../Images/ter-composer-command.png
+   :scale: 65 %
 .. |TER screen shot| image:: ../Images/ter-code-link.png
+   :scale: 65 %
 .. |file list| image:: ../Images/github-composer-file.png
+   :scale: 80 %
 .. |file content| image:: ../Images/github-composer-name.png
+   :scale: 80 %
 .. |packagist screen shot| image:: ../Images/packagist-mask.png
+   :scale: 65 %
 .. |satis abandoned note| image:: ../Images/satis-abandoned.png
 .. |composer abandoned note| image:: ../Images/composer-ter-abandoned.png
