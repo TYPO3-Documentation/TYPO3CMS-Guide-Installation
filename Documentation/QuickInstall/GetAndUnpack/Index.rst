@@ -7,6 +7,10 @@
 Get and Unpack the TYPO3 Package
 ================================
 
+.. attention::
+
+   This is an alternative method of installation to composer installation.
+   The recommended way of installing TYPO3 is :ref:`via composer <install-via-composer>`.
 
 .. _installation-unix:
 

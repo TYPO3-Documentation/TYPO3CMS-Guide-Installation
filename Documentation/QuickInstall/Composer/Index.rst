@@ -10,7 +10,8 @@ Install TYPO3 via composer
 
 .. attention::
 
-   The recommended way of installing TYPO3 is via composer.
+   The recommended way of installing TYPO3 is via composer, as described on
+   this page.
 
 
 To create a new TYPO3 project use the TYPO3 Base Distribution::
@@ -38,12 +39,10 @@ Point the document root of your web server to the `public` folder.
 After composer installation continue with the steps in :ref:`the-install-tool`
 
 If you do not want to use composer, follow the :ref:`package installation
-guide`.
+guide <get-and-unpack-the-typo3-package>`.
 
+Next Steps
+==========
 
-.. toctree::
-   :titlesonly:
-
-   ../GetAndUnpack/Index
-
+Continue with :ref:`the-install-tool`.
 
