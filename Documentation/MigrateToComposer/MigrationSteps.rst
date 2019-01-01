@@ -2,14 +2,14 @@
 .. highlight:: bash
 
 ===============
-Migration steps
+Migration Steps
 ===============
 
-Delete files
+Delete Files
 ============
 
 Yes, that's true. You have to delete some files, because they will be created by
-composer in some of the next steps.
+Composer in some of the next steps.
 
 You have to delete, :file:`public/index.php`, :file:`public/typo3/` and all the
 extensions inside :file:`public/typo3conf/ext/`, you downloaded from TER or any
@@ -21,13 +21,13 @@ Please keep only your sitepackage extension or any other extension, which was
 explicitly built for your current project and does not have an own Git
 repository.
 
-Configure composer
+Configure Composer
 ==================
 
 Create a file with name :file:`composer.json` in your project root, not inside
 your web root. At the moment, only these few lines are required:
 
-.. code:: json
+.. code-block:: json
 
     {
         "repositories": [
@@ -46,11 +46,11 @@ your web root. At the moment, only these few lines are required:
 
 You must set the correct name of your web root folder in property ``web-dir``.
 
-Add all required packages to your project
+Add All Required Packages to Your Project
 =========================================
 
-You can add all your required packages with the composer command ``composer
-require``. The full syntax is::
+You can add all your required packages with the composer command `composer
+require`. The full syntax is::
 
     composer require anyvendorname/anypackagename:version
 
@@ -59,26 +59,26 @@ require``. The full syntax is::
     composer require typo3/cms:~7.6.0
 
 There are different ways to define the version of the package, you want
-to install. The most common syntaxes start with ``^`` (e.g.
-``^7.6``) or with ``~`` (e.g. ``~7.6.0``). A full documentation can be
+to install. The most common syntaxes start with `^` (e.g.
+`^7.6`) or with `~` (e.g. `~7.6.0`). A full documentation can be
 found at https://getcomposer.org/doc/articles/versions.md
 
 In short:
 
-*  ``^7.6`` or ``^7.6.0`` tells composer to add newest package of
+*  `^7.6` or `^7.6.0` tells composer to add newest package of
    version 7.\* with at least 7.6.0, but not version 8.
 
-*  ``~7.6.0`` tells composer to add the newest package of version
+*  `~7.6.0` tells composer to add the newest package of version
    7.6.\* with at least 7.6.0, but not version 7.7.
 
 You have to decide by yourself, which syntax fits best to your needs.
 
-Install the core
+Install the Core
 ----------------
 
 .. _composer-migration-require-all:
 
-The old way: add everything
+The Old Way: Add Everything
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 As already written above, the line to install TYPO3 7 LTS would be::
@@ -91,14 +91,14 @@ While installing TYPO3 8 LTS works with this line::
 
 .. _composer-migration-require-subtree-packages:
 
-The new way: add only code, you need
+The New Way: Add Only Code, You Need
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Since TYPO3 8.7.10 you **can** use a concept, called "subtree split". It
 will be **mandatory** for TYPO3 9. The concept means, you will not copy
 the full TYPO3 core package, including all system extensions, you will
 never use. But only install what you really want. You will not be able
-to install ``typo3/cms:^9``, but have to name each system extension::
+to install `typo3/cms:^9`, but have to name each system extension::
 
     composer require typo3/cms-core:~9.0.0
     composer require typo3/cms-backend:~9.0.0
@@ -110,13 +110,13 @@ Or in one line::
     composer require typo3/cms-core:~9.0.0 typo3/cms-backend:~9.0.0 typo3/cms-frontend:~9.0.0 ... 
 
 To find the correct package names, you can either take a look in the
-``composer.json`` of any system extension or follow the naming
+:file:`composer.json` of any system extension or follow the naming
 convention
-``typo3/cms-<extension name with dash "-" instead of underscore "_">``,
-e.g. ``typo3/cms-fluid-styled-content``.
+:file:`typo3/cms-<extension name with dash "-" instead of underscore "_">`,
+e.g. :file:`typo3/cms-fluid-styled-content`.
 
-Install extensions from packagist.org
--------------------------------------
+Install Extensions from Packagist
+---------------------------------
 
 You already know the TER and always used it to install extensions? Fine.
 But with composer, the **preferred way** is to install extensions
@@ -124,7 +124,7 @@ directly from `packagist.org <https://packagist.org>`__. This works great, when 
 to there. Many well known extensions are already available.
 You only need to known the package name. There are multiple ways to find it:
 
-Notice on extension's TER page
+Notice on Extension's TER Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Extension maintainers optionally can link their TYPO3 extension in TER with the
@@ -136,10 +136,10 @@ key you can use to install this extension.
 
 .. note ::
 
-    The command ``composer req`` is short for ``composer require``. Both commands
+    The command `composer req` is short for `composer require`. Both commands
     exactly do the same and are interchangeable.
 
-Check in TER satis
+Check in TER Satis
 ~~~~~~~~~~~~~~~~~~
 
 If you search the extension in https://composer.typo3.org/satis.html and it's linked to
@@ -148,15 +148,15 @@ will see a message, which composer key should be used to install this extension.
 
 |satis abandoned note|
 
-See warning during composer require command
+See Warning During composer require Command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-If you still install one of the abandoned extensions via its ``typo3-ter`` package key,
-you also will see a warning during the ``composer require`` command.
+If you still install one of the abandoned extensions via its `typo3-ter` package key,
+you will also see a warning during the `composer require` command.
 
 |composer abandoned note|
 
-Check manually
+Check Manually
 ~~~~~~~~~~~~~~
 
 This is the most exhausting way. But it will work, even if the extension maintainer
@@ -173,8 +173,8 @@ does not provide additional information.
 
    |file list|
 
-#. Search for line with property ``"name"``, it's value should be
-   formatted like ``vendor/package``.
+#. Search for line with property `"name"`, it's value should be
+   formatted like `vendor/package`.
 
    |file content|
 
@@ -188,22 +188,22 @@ To install the mask extension in version 4.1.\*, type::
 
    composer require mask/mask:~4.1.0
 
-Install extension from TER
+Install Extension from TER
 --------------------------
 
 If the extension is not available on packagist, the good news is: All
 TER extensions are available via composer! That's, why we added
-``https://composer.typo3.org/`` as repository to our ``composer.json``
+`https://composer.typo3.org/` as repository to our :file:`composer.json`
 some lines above. There are little naming conventions:
 
-*  Vendor name is ``typo3-ter``.
+*  Vendor name is `typo3-ter`.
 
-*  Underscores ``_`` are replaced by dash ``-``.
+*  Underscores `_` are replaced by dash `-`.
 
 **Example:**
 
-The extension ``any_fancy_extension``'s auto generated composer package
-name would be ``typo3-ter/any-fancy-extension``. To add this extension in
+The extension `any_fancy_extension`'s auto generated composer package
+name would be `typo3-ter/any-fancy-extension`. To add this extension in
 version 1.2.\*, type::
 
    composer require typo3-ter/any-fancy-extension:~1.2.0
@@ -217,21 +217,20 @@ https://composer.typo3.org/satis.html.
     repository block named `https://composer.typo3.org` from your
     :file:`composer.json` to improve speed.
 
-Install extension from version control system (e.g. GitHub, Gitlab, ...)
+Install Extension from Version Control Xystem (e.g. GitHub, Gitlab, ...)
 ------------------------------------------------------------------------
 
-In some cases, you will have to install an TYPO3 extension, which is not
+In some cases, you will have to install a TYPO3 extension, which is not
 available on packagist.org or in the TER. Examples could be:
 
 *  non-public extension only used by your company.
-
 *  you forked and modified an existing extension.
 
 As first step, you have to define the repository in your
-``composer.json``'s "repository" section. In this example, you find the
-additional lines added to the ``composer.json`` from above:
+:file:`composer.json`'s "repository" section. In this example, you find the
+additional lines added to the :file:`composer.json` from above:
 
-.. code:: json
+.. code-block:: json
 
     {
         "repositories": [
@@ -253,8 +252,8 @@ additional lines added to the ``composer.json`` from above:
     }
 
 The Git repository must be a TYPO3 extension, with all the required
-files (e.g. ``ext_emconf.php``) and must contain a valid
-``composer.json`` itself. How this file should look in your extension,
+files (e.g. :file:`ext_emconf.php`) and must contain a valid
+:file:`composer.json` itself. How this file should look in your extension,
 can be found on `composer.typo3.org <https://composer.typo3.org/>`__ or
 `this blog post from Helmut Hummel <https://insight.helhum.io/post/148886148725/composerjson-specification-for-typo3-extensions>`__.
 Please note, that Git tags are used as version numbers.
@@ -266,17 +265,17 @@ same way like the other examples::
 
 .. _mig-composer-include-individual-extensions:
 
-Include individual extensions like sitepackages
-===============================================
+Include Individual Extensions like Site Packages
+================================================
 
-It's not necessary to move your project's sitepackage to a dedicated
+It's not necessary to move your project's site package to a dedicated
 Git repository to re-include it in your project. You can keep the files
-in your main project (e.g. ``public/typo3conf/ext/my_sitepackage``). There is
+in your main project (e.g. :file:`public/typo3conf/ext/my_sitepackage`). There is
 only one thing to do; Because TYPO3's autoload feature works differently
 in composer based installations, you have to register your PHP class
 names in composer. This is very easy when you use PHP namespaces:
 
-.. code:: json
+.. code-block:: json
 
         "autoload": {
             "psr-4": {
@@ -289,7 +288,7 @@ For extension without PHP namespaces, this section has to look a bit
 differently. You can decide by yourself, if you want to list each PHP file
 manually or if composer should search for them inside a folder:
 
-.. code:: json
+.. code-block:: json
 
         "autoload": {
             "classmap": [
@@ -298,9 +297,9 @@ manually or if composer should search for them inside a folder:
             ]
         }
 
-To complete our example ``composer.json``, it would look like this:
+To complete our example :file:`composer.json`, it would look like this:
 
-.. code:: json
+.. code-block:: json
 
     {
         "repositories": [
@@ -333,7 +332,7 @@ To complete our example ``composer.json``, it would look like this:
 
 .. note::
 
-    If you want to keep your :file:`typo3conf/ext` directory empty and ``autoload`` information only
+    If you want to keep your :file:`typo3conf/ext` directory empty and `autoload` information only
     in extensions' :file:`composer.json`, but not in your project's :file:`composer.json`,
     there is an alternative way to include your individual extensions in the chapter
     :ref:`completely clear "typo3conf/ext" folder <mig-composer-clear-typo3conf-ext-folder>`
