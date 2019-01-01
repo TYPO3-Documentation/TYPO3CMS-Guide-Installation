@@ -15,16 +15,15 @@ be found down to version 6.2.0:
 Composer
 ========
 
-Of course, you need ``composer``. It's a program, written in PHP.
-Because you already use TYPO3, you should know how to install PHP.
-Instructions how to download and install ``composer`` can be found on
+Of course, you need Composer. It's a program, written in PHP.
+Instructions how to download and install Ccomposer can be found on
 `getcomposer.org <https://getcomposer.org>`__.
 
 Folder structure
 ================
 
 If your project root folder is identical to your web root folder, you
-must change that. ``composer`` will add a :file:`vendor` folder to your project
+must change that. Composer will add a :file:`vendor` folder to your project
 root and if your project root and your web root are identical, this can
 be a security issue, because files in the :file:`vendor` could be accessible
 directly via HTTP request.
@@ -61,7 +60,7 @@ If you do not have such a web root directory, you must refactor your
 project before continuing. Please be aware to tell your web server
 about the changed web root folder, if necessary.
 
-Code integrity
+Code Integrity
 ==============
 
 Your project must have the TYPO3 core and all installed extensions in
@@ -70,8 +69,8 @@ be lost during the migration steps.
 
 .. note ::
 
-    If you need to apply hotfixes or patches to the TYPO3 core or public
-    available extensions, this `tutorial about applying patches via composer
+    If you need to apply hotfixes or patches to the TYPO3 core or publicly
+    available extensions, this `tutorial about applying patches via Composer
     <https://typo3worx.eu/2017/08/patch-typo3-using-composer/>`__ could help,
     but requires some advanced steps.
 

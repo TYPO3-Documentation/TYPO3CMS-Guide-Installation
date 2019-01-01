@@ -31,14 +31,14 @@ Should you encounter problems, the ":ref:`troubleshooting`" section at the end
 of this document will help.
 
 
-Database environment
+Database Environment
 ====================
 
 TYPO3 works with database management systems in the above mentioned versions.
 The InnoDB engine is required to be enabled in MySQL.
 
 
-Required database privileges
+Required Database Privileges
 ----------------------------
 
 The database user needs at least the following privileges on the TYPO3
@@ -55,7 +55,7 @@ It is recommended to also grant the following privileges:
 * EXECUTE, CREATE ROUTINE, ALTER ROUTINE
 
 
-Web server environment
+Web Server Environment
 ======================
 
 Apache
@@ -68,7 +68,7 @@ Apache
   urls)
 
 
-PHP environment
+PHP Environment
 ---------------
 
 * memory_limit set to at least 256M recommended
@@ -78,7 +78,7 @@ PHP environment
 * max_input_vars set to at least 1500
 
 
-PHP required extensions
+PHP Required Extensions
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 Your PHP needs to support the following extensions. Install will check if these

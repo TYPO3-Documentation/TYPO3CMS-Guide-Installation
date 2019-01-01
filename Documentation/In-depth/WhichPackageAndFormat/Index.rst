@@ -3,7 +3,7 @@
 .. _which-package-and-which-file-format:
 
 ===============================
-Which Package and which Format?
+Which Package and Which Format?
 ===============================
 
 The recommended way of installing TYPO3 is via the PHP package manager `Composer`.
@@ -16,7 +16,7 @@ can be found here: `https://get.typo3.org <https://get.typo3.org>`_.
 
 .. _which-file-format-to-use:
 
-Which File Format to use
+Which File Format to Use
 ========================
 
 The TYPO3 Source package is available as a :file:`.zip` or

@@ -8,7 +8,7 @@ Introduction
 
 .. _about-this-document:
 
-About this document
+About this Document
 ^^^^^^^^^^^^^^^^^^^
 
 This manual provides instructions on how to install and
@@ -27,7 +27,7 @@ to find out how to further configure and customize your installation of TYPO3.
 
 .. _what-s-new:
 
-What's new
+What's New
 ^^^^^^^^^^
 
 Updated the manual for TYPO3 CMS version 8.7.

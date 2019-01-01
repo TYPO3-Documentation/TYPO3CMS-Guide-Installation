@@ -45,7 +45,7 @@ to have a "look around" and get more familiar with the CMS.
 
 .. _installing-distributions:
 
-Installing Distributions without Composer
+Installing Distributions Without Composer
 =========================================
 
 For testing and evaluation we recommend that you use the Introduction Package,
@@ -61,7 +61,7 @@ using a Distribution. You can then start with a completely empty
 installation of TYPO3.
 
 
-Installing Distributions with Composer
+Installing Distributions With Composer
 ======================================
 
 To install the Introduction Package or any other distribution on a Composer
