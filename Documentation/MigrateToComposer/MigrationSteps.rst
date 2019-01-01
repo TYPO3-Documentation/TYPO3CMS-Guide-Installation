@@ -49,7 +49,7 @@ You must set the correct name of your web root folder in property ``web-dir``.
 Add All Required Packages to Your Project
 =========================================
 
-You can add all your required packages with the composer command `composer
+You can add all your required packages with the Composer command `composer
 require`. The full syntax is::
 
     composer require anyvendorname/anypackagename:version
@@ -65,10 +65,10 @@ found at https://getcomposer.org/doc/articles/versions.md
 
 In short:
 
-*  `^7.6` or `^7.6.0` tells composer to add newest package of
+*  `^7.6` or `^7.6.0` tells `composer` to add newest package of
    version 7.\* with at least 7.6.0, but not version 8.
 
-*  `~7.6.0` tells composer to add the newest package of version
+*  `~7.6.0` tells `composer` to add the newest package of version
    7.6.\* with at least 7.6.0, but not version 7.7.
 
 You have to decide by yourself, which syntax fits best to your needs.
@@ -119,7 +119,7 @@ Install Extensions from Packagist
 ---------------------------------
 
 You already know the TER and always used it to install extensions? Fine.
-But with composer, the **preferred way** is to install extensions
+But with Composer, the **preferred way** is to install extensions
 directly from `packagist.org <https://packagist.org>`__. This works great, when the maintainer uploaded them
 to there. Many well known extensions are already available.
 You only need to known the package name. There are multiple ways to find it:
@@ -128,8 +128,8 @@ Notice on Extension's TER Page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Extension maintainers optionally can link their TYPO3 extension in TER with the
-correct composer key on `packagist.org <https://packagist.org>`__. Some maintainers already did that and if you
-search the extension in TER, you will see a message, which command and composer
+correct Composer key on `packagist.org <https://packagist.org>`__. Some maintainers already did that and if you
+search the extension in TER, you will see a message, which command and Composer
 key you can use to install this extension.
 
 |TER composer command|
@@ -144,7 +144,7 @@ Check in TER Satis
 
 If you search the extension in https://composer.typo3.org/satis.html and it's linked to
 `packagist.org <https://packagist.org>`__, they are marked as "abandoned" and you
-will see a message, which composer key should be used to install this extension.
+will see a message, which Composer key should be used to install this extension.
 
 |satis abandoned note|
 
@@ -192,7 +192,7 @@ Install Extension from TER
 --------------------------
 
 If the extension is not available on packagist, the good news is: All
-TER extensions are available via composer! That's, why we added
+TER extensions are available via Composer! That's, why we added
 `https://composer.typo3.org/` as repository to our :file:`composer.json`
 some lines above. There are little naming conventions:
 
@@ -202,7 +202,7 @@ some lines above. There are little naming conventions:
 
 **Example:**
 
-The extension `any_fancy_extension`'s auto generated composer package
+The extension `any_fancy_extension`'s auto generated Composer package
 name would be `typo3-ter/any-fancy-extension`. To add this extension in
 version 1.2.\*, type::
 
@@ -272,8 +272,8 @@ It's not necessary to move your project's site package to a dedicated
 Git repository to re-include it in your project. You can keep the files
 in your main project (e.g. :file:`public/typo3conf/ext/my_sitepackage`). There is
 only one thing to do; Because TYPO3's autoload feature works differently
-in composer based installations, you have to register your PHP class
-names in composer. This is very easy when you use PHP namespaces:
+in Composer based installations, you have to register your PHP class
+names in Composer. This is very easy when you use PHP namespaces:
 
 .. code-block:: json
 
@@ -286,7 +286,7 @@ names in composer. This is very easy when you use PHP namespaces:
 
 For extension without PHP namespaces, this section has to look a bit
 differently. You can decide by yourself, if you want to list each PHP file
-manually or if composer should search for them inside a folder:
+manually or if Composer should search for them inside a folder:
 
 .. code-block:: json
 

@@ -9,12 +9,12 @@ Get and Unpack the TYPO3 Package
 
 .. attention::
 
-   This is an alternative method of installation to composer installation.
-   The recommended way of installing TYPO3 is :ref:`via composer <install-via-composer>`.
+   The recommended way of installing TYPO3 is :ref:`via Composer <install-via-composer>`.
+   This page describes an alternative method of installing TYPO3 without Composer.
 
 .. _installation-unix:
 
-Installing on a Unix server
+Installing on a Unix Server
 ===========================
 
 #. Get the Source Package from `http://typo3.org/download/
@@ -78,7 +78,7 @@ a new patchlevel version of TYPO3 is released.
 
 .. _installation-windows:
 
-Installing on a Windows server
+Installing on a Windows Server
 ==============================
 
 #. Get the Source Package from `http://typo3.org/download/

@@ -10,10 +10,10 @@ The Package in Detail
 
 .. _typo3-folders-and-documents:
 
-TYPO3 Folders and Files on root level
+TYPO3 Folders and Files on Root Level
 =====================================
 
-The following files and folders are part of the TYPO3 package in a composer
+The following files and folders are part of the TYPO3 package in a Composer
 based installation.
 
 :file:`public/`
@@ -23,10 +23,10 @@ based installation.
   contains system files, like caches, logs, sessions...
 
 :file:`vendor/`
-  the composer vendor directory contains third-party packages, libraries etc.
+  the Composer vendor directory contains third-party packages, libraries etc.
 
-The 'public/' folder
---------------------
+The 'public' Folder
+-------------------
 
 The following files and folders will be created in the public folder during the
 installation of TYPO3:
@@ -46,7 +46,7 @@ installation of TYPO3:
 
 :file:`typo3conf/ext/`
   will hold the local extensions available for this installation, extensions
-  can be required via composer.
+  can be required via Composer.
 
 :file:`typo3conf/LocalConfiguration.php`
   is the main configuration file of your installation and the one the
@@ -72,8 +72,8 @@ installation of TYPO3:
 
 .. _custom-folders:
 
-The `var/` folder
------------------
+The `var` Folder
+----------------
 
 :file:`cache/`
   is where file based caches will be stored.
@@ -100,7 +100,7 @@ The `var/` folder
   acts as transient storage during file operations for example.
 
 
-Custom folders?
+Custom Folders?
 ===============
 
 Yes, just add whatever you like. Why not?

@@ -4,33 +4,34 @@
 .. _mig-composer-best-practices:
 
 ==============
-Best practices
+Best Practices
 ==============
 
-Run composer locally
+Run Composer Locally
 ====================
 
-You should not run composer on your live webspace. You always should run
-composer on your local machine, so you can test if everything worked
+You should not run `composer` on your live webspace. You should always run
+`composer` on your local or a dedicated deployment machine, so you can test
+if everything worked
 fine. After running your tests, you can deploy the :file:`vendor` and
 :file:`public` folder to your web server.
 
 To avoid conflicts between your local and your server's PHP version, you
 can define your server's PHP version in your :file:`composer.json` file
-(e.g. ``{"platform": {"php": "7.2"}}``), so composer will always check
+(e.g. ``{"platform": {"php": "7.2"}}``), so `composer` will always check
 the correct dependencies.
 
-Update packages
+Update Packages
 ===============
 
 After updating any packages, you always should commit your
 :file:`composer.lock` to your version control system and your co-workers
-should run ``composer install`` after checking out the updates.
+should run `composer install` after checking out the updates.
 
-Update all packages
+Update all Packages
 -------------------
 
-Run ``composer update`` without any other attributes, to update all
+Run `composer update` without any other attributes, to update all
 packages. Composer will always try to install the newest packages that
 match the defined version constraints.
 
@@ -40,38 +41,34 @@ match the defined version constraints.
     do not have proper version constraints in your :file:`composer.json`.
     You always should prefer to update your packages separately.
 
-Update single packages
+Update Single Packages
 ----------------------
 
-When you want to update single packages, you can call the ``update``
-command with the package name. You should always add
+When you want to update single packages, you can call `composer update`
+with the package name. You should always add
 ``--with-all-dependencies`` attribute to also update the required third
 party packages.
 
-Update TYPO3 core
+Update TYPO3 Core
 ~~~~~~~~~~~~~~~~~
 
-**Without "subtree split"**
-
-::
+Without "subtree split"::
 
     composer update typo3/cms --with-all-dependencies
 
-**With "subtree split"**
-
-::
+With "subtree split"::
 
     composer update typo3/cms-* --with-all-dependencies
 
-Update extensions like "news"
+Update Extensions Like "news"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ::
 
     composer update georgringer/news --with-all-dependencies
 
-Use "dev requirements"
-======================
+Use Dev Requirements
+====================
 
 Add packages with ``--dev`` attribute to add packages only to your local
 development environment. This is very useful for packages, you do not
@@ -89,10 +86,10 @@ attribute ``--no-dev``. So the dev requirements are not installed.
 
     composer install --no-dev
 
-Remove extensions
+Remove Extensions
 =================
 
-You can use the composer command ``remove`` to uninstall extensions or
+You can use the composer command `remove` to uninstall extensions or
 other composer packages.
 
 ::
@@ -104,18 +101,18 @@ control system.
 
 .. note::
 
-    Please be sure to disable extensions in TYPO3's Extension Manager, before removing them with composer.
+    Please be sure to disable extensions in TYPO3's Extension Manager, before removing them with `composer`.
     Or ensure to regenerate your :file:`typo3conf/PackageStates.php` file automatically, after removing the packages. You could use the
     `extension "typo3_console" <https://docs.typo3.org/typo3cms/extensions/typo3_console/CommandReference/Index.html#install-generatepackagestates>`__ for that
 
-Check for available updates
+Check for Available Updates
 ===========================
 
-Run ``composer outdated`` to see a list of available updates.
+Run `composer outdated` to see a list of available updates.
 
 .. _mig-composer-clear-typo3conf-ext-folder:
 
-Completely clear "typo3conf/ext" folder
+Completely Clear `typo3conf/ext` Folder
 =======================================
 
 In the "Migration Steps" chapter, this tutorial explained, how you can
@@ -128,7 +125,7 @@ If you are searching for a solution to keep your :file:`typo3conf/ext` folder
 clean and unify the extension handling even for your project's individual
 extension, this chapter might be useful.
 
-Define a local path repository
+Define a Local Path Repository
 ------------------------------
 
 Create a directory :file:`packages` in your project root folder and define
@@ -143,7 +140,7 @@ this folder as a repository of type "path" in your :file:`composer.json`::
         ]
     }
 
-Include your individual extensions from "packages" folder
+Include Your Individual Extensions From `packages` Folder
 ---------------------------------------------------------
 
 In the next step, you move all your individual extensions from
@@ -165,17 +162,17 @@ number, but tell composer to use the latest ``dev`` state.
     :file:`composer.json` and can be removed from your project's
     :file:`composer.json`.
 
-Exclude "typo3conf/ext" from version control system
+Exclude `typo3conf/ext` from Version Control System
 ---------------------------------------------------
 
 To finish your cleanup of "typo3conf/ext", you should keep the line
 ``/public/typo3conf/ext/*`` in your :file:`.gitignore`, but remove all lines,
 starting with ``!/public/typo3conf/ext/``.
 
-Useful packages and bundles
+Useful Packages and Bundles
 ===========================
 
-Simplify "subtree split" installations
+Simplify "Subtree Split" Installations
 --------------------------------------
 
 Instead of explicitly requiring each core extension, you can require
@@ -186,7 +183,7 @@ TYPO3 CMS Base Distribution
 ---------------------------
 
 Primarily, `typo3/cms-base-distribution <https://packagist.org/packages/typo3/cms-base-distribution>`__
-is not meant to be used with ``composer require``, but to really quickly start new composer based TYPO3 projects.
+is not meant to be used with `composer require`, but to really quickly start new composer based TYPO3 projects.
 
 Nevertheless, it's very good to have heard about it. If you're interested in more information, you should check
 the packages `README <https://github.com/TYPO3/TYPO3.CMS.BaseDistribution>`__.
