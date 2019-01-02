@@ -62,7 +62,7 @@ Apache
 ------
 
 * Make sure AllowOverride in the webserver configuration includes "Indexes" and
-  "FileInfo" if you use Apache as webserver (see FAQ below)
+  "FileInfo" if you use Apache as webserver.
 
 * Enabled modules "mod_expires" and "mod_rewrite" (to enable human readable
   urls)
