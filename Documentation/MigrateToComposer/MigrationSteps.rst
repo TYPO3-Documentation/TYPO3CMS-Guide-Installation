@@ -217,7 +217,7 @@ https://composer.typo3.org/satis.html.
     repository block named `https://composer.typo3.org` from your
     :file:`composer.json` to improve speed.
 
-Install Extension from Version Control Xystem (e.g. GitHub, Gitlab, ...)
+Install Extension from Version Control System (e.g. GitHub, Gitlab, ...)
 ------------------------------------------------------------------------
 
 In some cases, you will have to install a TYPO3 extension, which is not
