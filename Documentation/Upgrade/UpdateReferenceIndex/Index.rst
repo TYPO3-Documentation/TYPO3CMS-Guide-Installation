@@ -22,7 +22,7 @@ In a composer installation execute::
 
 In a non-composer installation execute::
 
-   php ./typo3/sysext/core/bin/typo3
+   php ./typo3/sysext/core/bin/typo3 referenceindex:update
 
 
 Without command line
