@@ -16,7 +16,7 @@ machine (which needs elevated permissions on Windows machines).
 Pre-Requisites:
 
 * Running web server (Apache, Nginx, IIS...)
-* PHP > 7.2 installed
+* PHP ≥ 7.2 installed
 
 
 .. toctree::
