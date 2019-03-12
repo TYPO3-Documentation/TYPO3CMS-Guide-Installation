@@ -227,7 +227,7 @@ available on packagist.org or in the TER. Examples could be:
 *  you forked and modified an existing extension.
 
 As first step, you have to define the repository in your
-:file:`composer.json`'s "repository" section. In this example, you find the
+:file:`composer.json`'s "repositories" section. In this example, you find the
 additional lines added to the :file:`composer.json` from above:
 
 .. code-block:: json
