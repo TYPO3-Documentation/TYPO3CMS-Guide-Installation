@@ -9,7 +9,7 @@ Upgrade
 When a new version of TYPO3 is released, you should follow the
 guideline in this chapter in order to do an upgrade. Also follow any
 additional upgrade information carefully. You might e.g. want to skim
-the `ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/8.7/>`_ to
+the `Release Notes <https://get.typo3.org/release-notes>`_ to
 see if any features affect the way your site works.
 
 .. note::
