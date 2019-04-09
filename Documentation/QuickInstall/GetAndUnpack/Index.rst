@@ -2,10 +2,11 @@
 .. highlight:: shell
 
 .. _get-and-unpack-the-typo3-package:
+.. _install-typo3-without-composer:
 
-================================
-Get and Unpack the TYPO3 Package
-================================
+==============================
+Install TYPO3 Without Composer
+==============================
 
 .. attention::
 
