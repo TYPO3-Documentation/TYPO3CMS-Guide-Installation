@@ -71,7 +71,6 @@ given task.
 **Contents:**
 
 .. toctree::
-   :titlesonly:
 
    Sitemap/Index
    Introduction/Index
