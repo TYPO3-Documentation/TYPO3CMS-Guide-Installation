@@ -77,6 +77,7 @@ given task.
    Introduction/Index
    QuickInstall/Index
    In-depth/Index
+   ExtensionInstallation/Index
    Upgrade/Index
    MigrateToComposer/Index
    Troubleshooting/Index
