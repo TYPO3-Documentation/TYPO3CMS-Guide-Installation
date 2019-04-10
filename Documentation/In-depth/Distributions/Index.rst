@@ -44,6 +44,7 @@ to have a "look around" and get more familiar with the CMS.
 
 
 .. _installing-distributions:
+.. _installing-distributions-without-composer:
 
 Installing Distributions Without Composer
 =========================================
@@ -60,14 +61,39 @@ If you want to build your web site from scratch, just go ahead *without*
 using a Distribution. You can then start with a completely empty
 installation of TYPO3.
 
+.. _installing-introduction-package-with-composer:
+.. _installing-distributions-wit-composer:
 
 Installing Distributions With Composer
 ======================================
 
+
+.. important::
+
+   The steps for installing a distribution with Composer are the same as
+   installing an extension with Composer. See the section
+   :ref:`install-extension-with-composer` if you wish to install additional
+   extensions. You can also find more information in that section.
+
 To install the Introduction Package or any other distribution on a Composer
-based installation use `composer require typo3/cms-introduction` (change
-the package name to the distribution you want). Afterwards use the
-following commands to activate the extension(s) via command line:
+based installation use:
+
+.. code-block:: shell
+
+   composer require typo3/cms-introduction
+
+Change the package name to the distribution you want. Find out more about
+Composer package names in :ref:`find-out-composer-package-name`.
+
+
+After that, do
+
+.. code-block:: shell
+
+   composer update
+
+
+Use the following commands to activate the extension(s) via the command line:
 
 
 .. code-block:: shell
@@ -75,8 +101,13 @@ following commands to activate the extension(s) via command line:
    ./vendor/bin/typo3 extension:activate bootstrap_package
    ./vendor/bin/typo3 extension:activate introduction
 
-In this case, the Introduction Package depends on the bootstrap_package, so
-both packages have to be installed.
+In this case, the Introduction Package depends on the Bootstrap Package
+(extension key: `bootstrap_package`), so both packages have to be activated.
+
+See more information:
+
+* about dependencies in :ref:`composer-extension-dependencies`
+* about finding extension keys in :ref:`find-out-extension-key`.
 
 Move to the **ADMIN TOOLS > Extensions** module and choose "Get preconfigured
 distribution" from the menu in the docheader. Just choose the Distribution you
