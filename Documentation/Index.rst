@@ -29,7 +29,7 @@ Installation and Upgrade Guide
       2000-2018
 
 :Author:
-      Documentation Team
+      Documentation Team & TYPO3 community (see :ref:`credits`)
 
 :Email:
       documentation@typo3.org

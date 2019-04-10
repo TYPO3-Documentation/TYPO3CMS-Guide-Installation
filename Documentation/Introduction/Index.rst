@@ -39,7 +39,10 @@ Credits
 ^^^^^^^
 
 This manual was originally written by Kasper Skårhøj and is now kept
-up to date by the documentation team.
+up to date by the Documentation Team and the TYPO3 community.
+
+The section on :ref:`migrating to Composer <migrate-to-composer>`
+was added by Albrecht Köhnlein (July 2018).
 
 
 .. _feedback:
