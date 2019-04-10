@@ -73,11 +73,11 @@ given task.
 .. toctree::
    :titlesonly:
 
-   Sitemap/Index
    Introduction/Index
    QuickInstall/Index
    In-depth/Index
    Upgrade/Index
    MigrateToComposer/Index
    Troubleshooting/Index
+   Sitemap/Index
    Linktargets/Index
