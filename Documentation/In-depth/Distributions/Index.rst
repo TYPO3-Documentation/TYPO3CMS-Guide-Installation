@@ -109,6 +109,3 @@ See more information:
 * about dependencies in :ref:`composer-extension-dependencies`
 * about finding extension keys in :ref:`find-out-extension-key`.
 
-Move to the **ADMIN TOOLS > Extensions** module and choose "Get preconfigured
-distribution" from the menu in the docheader. Just choose the Distribution you
-would like to use and hit the "Install" button.
