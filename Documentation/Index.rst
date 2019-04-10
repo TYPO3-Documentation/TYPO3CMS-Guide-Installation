@@ -71,7 +71,6 @@ given task.
 **Contents:**
 
 .. toctree::
-   :titlesonly:
 
    Introduction/Index
    QuickInstall/Index
