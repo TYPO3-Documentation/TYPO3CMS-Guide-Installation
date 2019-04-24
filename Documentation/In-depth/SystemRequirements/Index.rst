@@ -14,7 +14,7 @@ System Requirements
 TYPO3 requires a web server, PHP and a database system.
 
 * TYPO3 requires a web server which can run PHP (e.g. Apache or IIS).
-* TYPO3 7.6 requires PHP 5.5 - 7.0.
+* TYPO3 7.6 requires PHP 5.5 - 7.2.
 * TYPO3 can be used with a great many database systems. If you use
   MySQL, you will need to implement at least MySQL 5.5.
 
