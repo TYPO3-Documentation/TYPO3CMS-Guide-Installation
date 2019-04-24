@@ -82,13 +82,13 @@ On the command line:
 
    .. code-block:: shell
 
-      composer require composer req <packagename>
+      composer require <packagename>
 
    For example:
 
    .. code-block:: shell
 
-      composer require composer req georgringer/news
+      composer require georgringer/news
 
    This will add the extension requirement to your :file:`composer.json`.
 
