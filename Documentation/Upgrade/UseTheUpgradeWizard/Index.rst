@@ -4,7 +4,7 @@
 .. _use-the-upgrade-wizard:
 
 ======================
-Use the upgrade wizard
+Use the Upgrade Wizard
 ======================
 
 Enter the Install Tool at `https://example.com/typo3/install.php` on your

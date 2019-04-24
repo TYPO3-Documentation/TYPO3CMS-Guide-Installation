@@ -3,13 +3,14 @@
 
 .. _introduction:
 
+============
 Introduction
-------------
+============
 
 .. _about-this-document:
 
 About this Document
-^^^^^^^^^^^^^^^^^^^
+===================
 
 This manual provides instructions on how to install and
 also upgrade an existing TYPO3 CMS installation.
@@ -28,7 +29,7 @@ to find out how to further configure and customize your installation of TYPO3.
 .. _what-s-new:
 
 What's New
-^^^^^^^^^^
+==========
 
 Updated the manual for TYPO3 CMS version 8.7.
 
@@ -36,7 +37,7 @@ Updated the manual for TYPO3 CMS version 8.7.
 .. _credits:
 
 Credits
-^^^^^^^
+=======
 
 This manual was originally written by Kasper Skårhøj and is now kept
 up to date by the Documentation Team and the TYPO3 community.
@@ -48,7 +49,7 @@ was added by Albrecht Köhnlein (July 2018).
 .. _feedback:
 
 Feedback
-^^^^^^^^
+========
 
 For general questions about the documentation get in touch by writing
 to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .

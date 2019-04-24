@@ -80,4 +80,4 @@ given task.
    MigrateToComposer/Index
    Troubleshooting/Index
    Sitemap/Index
-   Linktargets/Index
+   Linktargets

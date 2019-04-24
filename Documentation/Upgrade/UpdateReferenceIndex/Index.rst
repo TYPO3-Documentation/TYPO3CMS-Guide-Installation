@@ -8,7 +8,7 @@ Reference Index
 ===============
 
 
-With command line (recommended)
+With Command Line (Recommended)
 ===============================
 
 .. sidebar:: Why CLI?
@@ -25,7 +25,7 @@ In a non-composer installation execute::
    php ./typo3/sysext/core/bin/typo3 referenceindex:update
 
 
-Without command line
+Without Command Line
 ====================
 
 Still in your old TYPO3 version, go to the "System" > "DB check" module and use

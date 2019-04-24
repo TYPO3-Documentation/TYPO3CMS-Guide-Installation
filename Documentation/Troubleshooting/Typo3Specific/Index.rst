@@ -3,14 +3,15 @@
 
 .. _typo3-specific:
 
-TYPO3-specific
-^^^^^^^^^^^^^^
+=====
+TYPO3
+=====
 
 
 .. _cached-files-in-typo3temp:
 
 Cached Files in typo3temp/
-""""""""""""""""""""""""""
+==========================
 
 Generally you should know that TYPO3 generates temporary "cached"
 files and PHP scripts in :file:`typo3temp/Cache/`. You can remove the
@@ -49,13 +50,13 @@ Concerning these files you have to consider the following:
 
 .. _possible-problems-with-the-cached-files:
 
-Possible Problems with the cached Files
-"""""""""""""""""""""""""""""""""""""""
+Possible Problems With the Cached Files
+=======================================
 
 .. _changing-the-absolute-path-to-typo3:
 
 Changing the absolute path to TYPO3
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-----------------------------------
 
 If you change the path of the TYPO3 installation, you might get a lot
 of errors like "Failed opening ..." or "Unable to access ...". The
@@ -68,8 +69,8 @@ and use the "Clear all caches" function. Then hit the page again.
 
 .. _changing-image-processing-settings:
 
-Changing Image processing Settings
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Changing Image Processing Settings
+----------------------------------
 
 When you change the settings for Image Processing (in normal mode),
 you must take into account that old images may still be in the

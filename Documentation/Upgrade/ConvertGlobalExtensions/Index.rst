@@ -4,7 +4,7 @@
 .. _convert-global-extensions:
 
 =========================
-Convert global Extensions
+Convert Global Extensions
 =========================
 
 If you use global extensions, convert them to local ones.

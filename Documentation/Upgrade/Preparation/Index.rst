@@ -8,7 +8,7 @@ Preparation
 ===========
 
 
-Before you start
+Before You Start
 ================
 
 Before starting the upgrade check your system for compatibility with a newer
@@ -26,7 +26,7 @@ TYPO3 version.
 
 
 
-Handling deprecations
+Handling Deprecations
 =====================
 
 If you notice some API you are using is deprecated, you should look up the

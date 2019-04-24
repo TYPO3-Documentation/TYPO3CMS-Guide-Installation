@@ -3,14 +3,15 @@
 
 .. _php:
 
+===
 PHP
-^^^
+===
 
 
-.. install-tool_:
+.. _install-tool:
 
 Install Tool
-""""""""""""
+============
 
 The "System Environment" section of the Install Tool provides detailed
 information about any missing PHP modules and any other settings that
@@ -32,7 +33,7 @@ On a Windows-based server, these are the extension files::
 .. _php-caches-extension-classes-etc:
 
 PHP Caches, Extension Classes etc.
-""""""""""""""""""""""""""""""""""
+==================================
 
 There are some situations which can cause what appear to be totally
 illogical problems after an upgrade:

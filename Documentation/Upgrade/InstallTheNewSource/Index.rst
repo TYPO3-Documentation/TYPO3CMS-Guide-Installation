@@ -4,7 +4,7 @@
 .. _install-the-new-source:
 
 ======================
-Install the new Source
+Install the New Source
 ======================
 
 .. note::
@@ -12,7 +12,7 @@ Install the new Source
    The recommended installation of TYPO3 is based on composer.
 
 
-Upgrading a composer based system
+Upgrading a Composer Based System
 =================================
 
 .. caution::
@@ -115,7 +115,7 @@ automatically install the new source code.
 
 .. _install-manually:
 
-Installing the source manually
+Installing the Source Manually
 ==============================
 
 Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and download
@@ -125,7 +125,7 @@ Extract the package on your web server and - in your TYPO3 document root -
 adjust the :file:`typo3_src` symlink.
 
 
-What's the next step?
+What's the Next Step?
 =====================
 
 In case you did a *minor update*, e.g. from TYPO3 9.5.0 to 9.5.1, database

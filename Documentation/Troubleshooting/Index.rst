@@ -3,8 +3,9 @@
 
 .. _troubleshooting:
 
+===============
 Troubleshooting
----------------
+===============
 
 The following sections contain hints to help you solve common problems. 
 Note that you should also check the section "System Environment" in the 

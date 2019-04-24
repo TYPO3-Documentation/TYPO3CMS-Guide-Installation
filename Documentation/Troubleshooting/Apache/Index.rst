@@ -3,8 +3,9 @@
 
 .. _apache:
 
+======
 Apache
-^^^^^^
+======
 
 Some settings may require adjustment for TYPO3 to operate
 correctly.
@@ -12,8 +13,8 @@ correctly.
 
 .. _enable-necessary-modules:
 
-Enable necessary Modules
-""""""""""""""""""""""""
+Enable Necessary Modules
+========================
 
 TYPO3 makes use of several Apache modules, two modules that will need
 to be enabled are mod_expires and mod_rewrite. Apache modules can be
@@ -26,7 +27,7 @@ and removing the preceding hash symbol::
 .. _adjust-threadstacksize-on-windows:
 
 Adjust ThreadStackSize on Windows
-"""""""""""""""""""""""""""""""""
+=================================
 
 If you are running TYPO3 on top of Windows, the extension manager might not
 appear. Instead you might only see a blank screen in the right frame.
