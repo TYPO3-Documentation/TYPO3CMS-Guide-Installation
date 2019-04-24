@@ -90,18 +90,12 @@ On the command line:
 
       composer require georgringer/news
 
-   This will add the extension requirement to your :file:`composer.json`.
-
-3. Install
-
-   .. code-block:: shell
-
-      composer update
-
+   This will add the extension requirement to your :file:`composer.json`
+   and install the extension.
 
    The extension will - not yet - be active. You must activate it with:
 
-4. Activate
+3. Activate
 
    .. code-block:: shell
 
