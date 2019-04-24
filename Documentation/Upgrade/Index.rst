@@ -1,16 +1,26 @@
+﻿.. ==================================================
+.. FOR YOUR INFORMATION
+.. --------------------------------------------------
+.. -*- coding: utf-8 -*- with BOM.
+
 .. include:: ../Includes.txt
 
 
 .. _upgrade:
 
-Upgrade
-=======
+===================
+Major TYPO3 Upgrade
+===================
+
+This section handles major TYPO3 updates. For patch updates (e.g. 9.5.2
+to 9.5.3), please see the chapter :ref:`update`.
 
 When a new version of TYPO3 is released, you should follow the
 guideline in this chapter in order to do an upgrade. Also follow any
 additional upgrade information carefully. You might e.g. want to skim
-the `Release Notes <https://get.typo3.org/release-notes>`_ to
-see if any features affect the way your site works.
+the included ChangeLog to see if any features affect the way your site
+works. (Look for lines prepended with "!!!" - those are the really
+important ones!)
 
 .. note::
 
@@ -35,7 +45,6 @@ Basically these are the steps to be done to update your TYPO3 site:
    :titlesonly:
    :glob:
 
-   Preparation/Index
    Backup/Index
    UpdateReferenceIndex/Index
    InstallTheNewSource/Index

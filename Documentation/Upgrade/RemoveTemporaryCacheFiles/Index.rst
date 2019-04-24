@@ -2,6 +2,7 @@
 
 
 .. _remove-temporary-cache-files:
+.. _clear-cache:
 
 ============
 Clear Caches

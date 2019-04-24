@@ -2,6 +2,7 @@
 
 
 .. _update-extensions:
+.. _update-extensions-without-composer:
 
 ==============================================
 Update Extensions (non-Composer Installations)
