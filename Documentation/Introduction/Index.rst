@@ -31,7 +31,7 @@ to find out how to further configure and customize your installation of TYPO3.
 What's New
 ==========
 
-Updated the manual for TYPO3 CMS version 8.7.
+Updated the manual for TYPO3 CMS version 9.5.
 
 
 .. _credits:
@@ -45,14 +45,12 @@ up to date by the Documentation Team and the TYPO3 community.
 The section on :ref:`migrating to Composer <migrate-to-composer>`
 was added by Albrecht Köhnlein (July 2018).
 
-
 .. _feedback:
+.. _contribute:
 
-Feedback
-========
+Contribution
+============
 
-For general questions about the documentation get in touch by writing
-to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
 
 If you find a bug in this manual, please be so kind as to check the
 online version on https://docs.typo3.org/typo3cms/InstallationGuide/.
@@ -62,7 +60,22 @@ using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Ins
 
 Maintaining high quality documentation requires time and effort
 and the TYPO3 Documentation Team always appreciates support.
-If you want to support us, please join the documentation
-mailing list/forum (http://forum.typo3.org/index.php/f/44/) or
-the slack channel #typo3-documentation.
+If you want to support us, please contact us as described in
+the next section.
 
+.. _contact-doc-team:
+
+Contact the Documentation Team
+==============================
+
+For general questions about the documentation get in touch by writing
+to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
+
+Or contact us on the Slack channel #typo3-documentation:
+
+.. rst-class:: bignums
+
+1. `Register for a typo3.org account <https://my.typo3.org/registration/sign-up/>`__
+2. `Register for Slack <https://my.typo3.org/about-mytypo3org/slack/>`__
+3. Join the TYPO3 Slack workspace: https://typo3.slack.com
+4. Join the **#typo3-documentation** channel and ask your question
