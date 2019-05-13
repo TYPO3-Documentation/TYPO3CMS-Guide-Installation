@@ -79,6 +79,7 @@ a GNU/GPL CMS/Framework available from `www.typo3.org
    Introduction/Index
    QuickInstall/Index
    In-depth/Index
+   Composer/Index
    ExtensionInstallation/Index
    Upgrade/Index
    MigrateToComposer/Index
