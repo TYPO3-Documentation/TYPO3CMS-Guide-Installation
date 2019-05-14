@@ -24,7 +24,7 @@ TYPO3 version.
 
 *  Run the extension scanner (see below)
 
-
+.. _handling-deprecations:
 
 Handling Deprecations
 =====================
