@@ -26,14 +26,19 @@ To create a new TYPO3 project use the TYPO3 Base Distribution::
    powershell or git bash started with admin rights).
 
 After `composer create project ...` executed, you should have the following folder structure:
+ 
+.. code-block:: none
 
-.. figure:: ../../Images/folder-structure-composer.png
-   :class: with-shadow
-   :alt: Folder Structure
-
-   The folder structure after composer installation.
-
-
+    .
+    ├── .gitignore  
+    ├── composer.json
+    ├── composer.lock
+    ├── LICENSE
+    ├── public
+    ├── README.md
+    ├── var
+    └── vendor   
+   
 Point the document root of your web server to the `public` folder.
 
 If you do not want to use Composer, follow the :ref:`package installation
