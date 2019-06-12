@@ -22,4 +22,4 @@ as read after checking them, so you get a ToDo list for the upgrade.
    :class: with-shadow
    :alt: Uprade Analysis
 
-   The "Uprade Analysis" in the Install Tool
+   The "Upgrade Analysis" in the Install Tool
