@@ -16,7 +16,7 @@ Composer
 ========
 
 Of course, you need Composer. It's a program, written in PHP.
-Instructions how to download and install Ccomposer can be found on
+Instructions how to download and install Composer can be found on
 `getcomposer.org <https://getcomposer.org>`__.
 
 Folder structure
