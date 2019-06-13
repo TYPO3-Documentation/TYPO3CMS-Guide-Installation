@@ -28,7 +28,7 @@ in detail.
 .. tip::
 
    You may want to optimize your update procedure or for example add a
-   deployment toolchain (see :ref:`composer-best-practice-deployment`).
+   deployment toolchain.
    Here, we only show the most basic steps.
 
 

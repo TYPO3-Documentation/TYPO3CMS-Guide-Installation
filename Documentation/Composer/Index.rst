@@ -52,6 +52,9 @@ with the package name. You should always add
 ``--with-all-dependencies`` attribute to also update the required third
 party packages.
 
+
+.. _update-typo3-core-with-composer:
+
 Update TYPO3 Core
 ~~~~~~~~~~~~~~~~~
 
@@ -62,6 +65,8 @@ Without "subtree split"::
 With "subtree split"::
 
     composer update typo3/cms-* --with-all-dependencies
+
+.. _update-exensions-with-composer:
 
 Update Extensions Like "news"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -107,6 +112,9 @@ control system.
     Please be sure to disable extensions in TYPO3's Extension Manager, before removing them with `composer`.
     Or ensure to regenerate your :file:`typo3conf/PackageStates.php` file automatically, after removing the packages. You could use the
     `extension "typo3_console" <https://docs.typo3.org/typo3cms/extensions/typo3_console/CommandReference/Index.html#install-generatepackagestates>`__ for that
+
+
+.. _composer-check-for-available-updates:
 
 Check for Available Updates
 ===========================
