@@ -14,7 +14,7 @@ TYPO3 requires a web server, PHP and a database system.
 * TYPO3 9 requires at least PHP 7.2.x
 
 * TYPO3 can be used with a great many database systems (e.g. MySQL or
-  Postgres). If you use MySQL, you will need to install at least MySQL 5.5.
+  Postgres). If you use MySQL, you will need to install at least MySQL 5.5. and maximum MySQL 5.7
 
 If you use an Apache web server, the module mod_rewrite must be activated.
 Certain PHP extensions are necessary, others recommended. You possibly want to
