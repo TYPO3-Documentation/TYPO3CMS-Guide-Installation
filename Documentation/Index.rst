@@ -70,7 +70,7 @@ a GNU/GPL CMS/Framework available from `www.typo3.org
    | `Issues <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/issues>`__
 
 
-**:ref:`sitemap`**
+:ref:`sitemap`
 
 .. toctree::
    :hidden:
