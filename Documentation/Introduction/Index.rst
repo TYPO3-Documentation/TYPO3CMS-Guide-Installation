@@ -69,14 +69,5 @@ the next section.
 Contact the Documentation Team
 ==============================
 
-For general questions about the documentation get in touch by writing
-to `documentation@typo3.org <mailto:documentation@typo3.org>`_ .
-
-Or contact us on the Slack channel #typo3-documentation:
-
-.. rst-class:: bignums
-
-1. `Register for a typo3.org account <https://my.typo3.org/registration/sign-up/>`__
-2. `Register for Slack <https://my.typo3.org/about-mytypo3org/slack/>`__
-3. Join the TYPO3 Slack workspace: https://typo3.slack.com
-4. Join the **#typo3-documentation** channel and ask your question
+For general questions about the documentation get in touch with
+the `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__.

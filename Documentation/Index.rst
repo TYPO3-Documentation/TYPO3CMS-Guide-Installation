@@ -8,19 +8,16 @@ Installation and Upgrade Guide
 ==============================
 
 :Version:
-      9.5
+      |release|
 
 :Language:
       en
 
 :Copyright:
-      2000-2019
+      Since 2000
 
 :Author:
-      Documentation Team & TYPO3 community (see :ref:`credits`)
-
-:Email:
-      documentation@typo3.org
+      `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__ & TYPO3 community (see :ref:`credits`)
 
 :License:
       Open Publication License available from `www.opencontent.org/openpub/
@@ -72,9 +69,11 @@ a GNU/GPL CMS/Framework available from `www.typo3.org
    | `GitHub repository <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation>`__
    | `Issues <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/issues>`__
 
-**Contents:**
+
+**:ref:`sitemap`**
 
 .. toctree::
+   :hidden:
 
    Introduction/Index
    QuickInstall/Index
