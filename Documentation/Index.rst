@@ -8,7 +8,7 @@ Installation and Upgrade Guide
 ==============================
 
 :Version:
-      9.5
+      |release|
 
 :Language:
       en
