@@ -86,13 +86,6 @@ Change the package name to the distribution you want. Find out more about
 Composer package names in :ref:`find-out-composer-package-name`.
 
 
-After that, do
-
-.. code-block:: shell
-
-   composer update
-
-
 Use the following commands to activate the extension(s) via the command line:
 
 
