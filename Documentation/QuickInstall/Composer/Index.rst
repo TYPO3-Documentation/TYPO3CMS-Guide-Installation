@@ -44,6 +44,11 @@ Point the document root of your web server to the `public` folder.
 If you do not want to use Composer, follow the :ref:`package installation
 guide <get-and-unpack-the-typo3-package>`.
 
+Tutorial from the official TYPO3 YouTube channel
+================================================
+
+.. youtube:: M4imQOUKDe4
+
 Next Steps
 ==========
 
