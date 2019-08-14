@@ -12,7 +12,7 @@ To create a new TYPO3 project use the TYPO3 Base Distribution:
 
 .. code-block:: bash
 
-	# Download the Base Distribution, the latest "stable" release (8.7)
+	# Download the Base Distribution with the latest "stable" TYPOv8 release
 	composer create-project typo3/cms-base-distribution:^8 YourNewProjectFolder
 
 .. note::
