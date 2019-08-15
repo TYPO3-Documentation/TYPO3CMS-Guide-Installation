@@ -72,6 +72,24 @@ Apache
 * Enabled modules "mod_expires" and "mod_rewrite" (to enable human readable
   urls)
 
+* During the installation process (first install) the default htaccess file is copied to the document root folder of the project, if the file does not exist already.
+
+* Default htaccess file with rewrite rules can be found in EXT:install/Resources/Private/FolderStructureTemplateFiles/root-htaccess
+
+Microsoft Internet Information Services (IIS)
+---------------------------------------------
+
+* During the installation process (first install) the default IIS web config file is copied to the document root folder of the project, if the file does not exist already.
+
+* Default IIS web config file with rewrite rules can be found in EXT:install/Resources/Private/FolderStructureTemplateFiles/root-web-config
+
+NGINX
+-----
+
+* NGINX web server does not support any static file like htaccess in the document root by default. The NGINX configuration has to be setup manually.
+
+* Examples of NGINX vHost config files with rewrite rules can be found in TYPO3 Forge. `Provide a Nginx server configuration <https://forge.typo3.org/issues/54316>`.
+
 
 PHP Environment
 ---------------
