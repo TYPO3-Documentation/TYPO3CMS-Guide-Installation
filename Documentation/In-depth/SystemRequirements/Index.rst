@@ -88,7 +88,7 @@ NGINX
 
 * NGINX web server does not support any static file like htaccess in the document root by default. The NGINX configuration has to be setup manually.
 
-* Examples of NGINX vHost config files with rewrite rules can be found in TYPO3 Forge. `Provide a Nginx server configuration <https://forge.typo3.org/issues/54316>`.
+* Examples of NGINX vHost config files with rewrite rules can be found in TYPO3 Forge. `Provide a Nginx server configuration <https://forge.typo3.org/issues/54316>`__.
 
 
 PHP Environment
