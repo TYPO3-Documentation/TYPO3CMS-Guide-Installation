@@ -34,8 +34,13 @@ of this document will help.
 Database Environment
 ====================
 
-TYPO3 works with database management systems in the above mentioned versions.
-The InnoDB engine is required to be enabled in MySQL.
+TYPO3 works with database management systems in various versions - see  `get.typo3.org
+<https://get.typo3.org/version/9#system-requirements>`_ for details. 
+
+The InnoDB engine is required in case you are using MySQL.
+
+If you are creating the database yourself, you should use `utf8mb4` as charset and 
+(naming depending on your dbms) `utf8mb4_unicode_ci` as collation.
 
 
 Required Database Privileges
