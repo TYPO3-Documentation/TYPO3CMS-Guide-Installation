@@ -85,7 +85,7 @@ Microsoft Internet Information Services (IIS)
   copied to the document root folder of the project, if the file does not exist already.
 
 * Default IIS web config file with rewrite rules can be found in
-  file:`EXT:install/Resources/Private/FolderStructureTemplateFiles/root-web-config`
+  :file:`EXT:install/Resources/Private/FolderStructureTemplateFiles/root-web-config`
 
 NGINX
 -----
