@@ -15,6 +15,14 @@ Extension Installation
 
 .. _install-extension-without-composer:
 
+In the context of the TYPO3 extension manager ("EM"), the words "install" and "uninstall" differ from their mainstream
+meaning. To avoid mixing these terms up with the other EM verbs, here is a clarification:
+
+* **Import** means "downloading an extension from TER and copying it to typo3conf/ext/".
+* **Install** means "activating the already imported extension inside the extension manager and performing database changes mandated by the extension".
+* **Uninstall** means "deactivating an extension, but leaving it on the disk".
+* **Delete** means "removing extension files permanently from disk".
+
 Install an Extension Without Composer
 =====================================
 
@@ -55,9 +63,72 @@ In the backend:
 8. Click on the icon with a :guilabel:`"+"` sign for your extension
    in the :guilabel:`"A/D"` column.
 
+Uninstall an Extension Without Composer
+=======================================
 
+If you installed TYPO3 via composer you should uninstall Extensions via composer.
+
+Check Dependencies
+------------------
+
+First find out, which other extensions and functions of your Typo3-Installation are dependent of the extension you
+want to deinstall. Major dependeancies you can find out by checking the Extension Repository. Look for the extension
+you want to deinstall and the others you have installed. Read for all of them the chapters 'Dependencies' and
+'Reverse dependencies'.
+
+Contemplate, whether you made referrals to the extension in any setup, config or other Typoscript-section. Think of
+the results of deleting them and finally do it.
+
+If you are not sure, or just testing, you might as well deinstall the extension (which is without deleting) and see
+what happens. This could lead to your backend no longer loading. In that case you can manually add the extension again by
+editing the :file:`PackageStates.php`. However, you can always undo it. Be sure not to do it under time pressure.
+
+Uninstall / Deinstall / Remove Extension via TYPO3 Backend
+----------------------------------------------------------
+
+Log into the TYPO3 Backend and open the Extension Manager ('Ext Manager'). From the menu choose 'Install extensions'.
+You get an overview about installed extensions.
+
+On the left side you see an icon, which shows the status of each extension, and what you can do:
+
+* Grey Extension Install Icon: The extension is not installed. (Click once to install)
+* Green Extension UnInstall Icon: The extension is installed and running. (Click once to uninstall)
+
+Next to the extension you want to deinstall click on Extension UnInstall Icon. After some seconds the icon changes to
+the grey Extension Install Icon.
+
+Uninstall Extension Manually
+----------------------------
+
+At times an extension causes a problem an the TYPO3 Backend can not be opened anymore due to it. In such a case the
+Extension can be uninstalled manually. Since TYPO3 6.2 this can be done by editing the file :file:`PackageStates.php`
+
+1) Open the file :file:`typo3conf/PackageStates.php`
+
+2) Search for your ext_key in the array.
+
+.. code-block:: php
+
+   'ext_key' => [
+      'composerName' => '...',
+      'state' => 'active',
+      'packagePath' => '.../',
+      'suggestions' => [],
+   ],
+   ...
+
+3) Change :php:`'state' => 'active'` to :php:`'state' => 'inactive'`
 
 .. _install-extension-with-composer:
+
+Deleting an Extension
+---------------------
+You should only delete an Extension that you uninstalled successfully. Make a backup first. Then you can permanently
+delete an extension by deleting its folder at :path:`typo3conf/ext/[extensionname]`. The corresponding database tables
+can be deleted in the Install Tool -> Important Actions -> Database analyzer -> Compare current database with specification.
+Since TYPO3 6.2 it is no longer possible to delete extensions directly via the Extension Manager in the TYPO3 Backend.
+
+
 
 Install an Extension With Composer
 ==================================
