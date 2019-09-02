@@ -27,18 +27,18 @@ Installing on a Unix Server
    commands::
 
       /var/www/site/htdocs/$ cd ..
-      /var/www/site/$ wget get.typo3.org/9.5 -O typo3_src-9.5.x.tar.gz
+      /var/www/site/$ wget --content-disposition https://get.typo3.org/10
 
 
 #. Unpack the :file:`typo3_src-9.5.x.tar.gz` file on your web server::
 
-      /var/www/site/$ tar xzf typo3_src-9.5.x.tar.gz
+      /var/www/site/$ tar xzf typo3_src-10.0.x.tar.gz
 
 
    .. note::
 
       Be aware that the `x` in the extracted folder will be replaced with the
-      latest bugfix version, e.g. typo3_src-9.5.1.
+      latest bugfix version, e.g. typo3_src-10.0.1.
 
    .. tip::
 
@@ -51,21 +51,21 @@ Installing on a Unix Server
 #. Create these symlinks in your document root::
 
       cd htdocs
-      ln -s ../typo3_src-9.5.x typo3_src
+      ln -s ../typo3_src-10.0.x typo3_src
       ln -s typo3_src/index.php index.php
       ln -s typo3_src/typo3 typo3
 
 
 You end up with the following structure of files::
 
-   typo3_src-9.5.x/
-   htdocs/typo3_src -> ../typo3_src-9.5.x/
+   typo3_src-10.0.x/
+   htdocs/typo3_src -> ../typo3_src-10.0.x/
    htdocs/typo3 -> typo3_src/typo3/
    htdocs/index.php -> typo3_src/index.php
 
 
 The advantage of this setup is that all files from the TYPO3 Source package are
-kept together in the :file:`typo3_src-9.5.x` folder and separated from other
+kept together in the :file:`typo3_src-10.0.x` folder and separated from other
 files of your installation. This allows you to easily replace this folder when
 a new patchlevel version of TYPO3 is released.
 
@@ -94,15 +94,15 @@ Installing on a Windows Server
 #. Use the shell to create these symbolic links in your document root::
 
       cd htdocs
-      mklink /d typo3_src ..\typo3_src-9.5.x
+      mklink /d typo3_src ..\typo3_src-10.0.x
       mklink /d typo3 typo3_src\typo3
       mklink index.php typo3_src\index.php
 
 
    You end up with the following structure of files::
 
-      typo3_src-9.5.x/
-      htdocs/typo3_src -> ../typo3_src-9.5.x/
+      typo3_src-10.0.x/
+      htdocs/typo3_src -> ../typo3_src-10.0.x/
       htdocs/typo3 -> typo3_src/typo3/
       htdocs/index.php -> typo3_src/index.php
 
