@@ -30,7 +30,7 @@ Installing on a Unix Server
       /var/www/site/$ wget --content-disposition https://get.typo3.org/10
 
 
-#. Unpack the :file:`typo3_src-9.5.x.tar.gz` file on your web server::
+#. Unpack the :file:`typo3_src-10.0.x.tar.gz` file on your web server::
 
       /var/www/site/$ tar xzf typo3_src-10.0.x.tar.gz
 
