@@ -80,7 +80,7 @@ based installation use:
 
 .. code-block:: shell
 
-   composer require typo3/cms-introduction
+   composer require typo3/cms-introduction ^4.0
 
 Change the package name to the distribution you want. Find out more about
 Composer package names in :ref:`find-out-composer-package-name`.
