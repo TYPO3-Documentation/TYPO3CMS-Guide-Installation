@@ -34,6 +34,14 @@ To create a new TYPO3 project use the TYPO3 Base Distribution::
    * composer create-project typo3/cms-base-distribution:^^9 YourNewProjectFolder
    * composer create-project "typo3/cms-base-distribution:^9" YourNewProjectFolder
 
+.. note::
+
+   In *nix shells the Asterisk character `*` has also a special meaning and has to be
+   properly escaped by surrounding double quotes `"`:
+
+   * composer create-project "typo3/cms-base-distribution:*" YourNewProjectFolder
+   * composer create-project typo3/cms-base-distribution YourNewProjectFolder "*"
+
 After `composer create project ...` executed, you should have the following folder structure:
  
 .. code-block:: none
