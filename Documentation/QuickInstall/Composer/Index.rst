@@ -25,6 +25,15 @@ To create a new TYPO3 project use the TYPO3 Base Distribution::
    or explicitly given the right to create symlinks (use for example a
    powershell or git bash started with admin rights).
 
+.. important::
+
+   The caret character `^` is the escape character in a Windows command line (cmd.exe). To
+   be able to use it in version constraints, every occurance has to be escaped by adding a
+   second caret `^` or by enclosing the whole argument in double brakets `"`:
+
+   * composer create-project typo3/cms-base-distribution:^^9 YourNewProjectFolder
+   * composer create-project "typo3/cms-base-distribution:^9" YourNewProjectFolder
+
 After `composer create project ...` executed, you should have the following folder structure:
  
 .. code-block:: none
