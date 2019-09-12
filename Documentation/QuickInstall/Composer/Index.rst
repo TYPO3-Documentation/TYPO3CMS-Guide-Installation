@@ -16,7 +16,7 @@ Install TYPO3 via composer
 
 To create a new TYPO3 project use the TYPO3 Base Distribution::
 
-	# Download the Base Distribution, the latest "stable" release (9.5)
+	# Download the Base Distribution, the latest "sprint" release (10)
 	composer create-project typo3/cms-base-distribution YourNewProjectFolder
 
 .. note::
