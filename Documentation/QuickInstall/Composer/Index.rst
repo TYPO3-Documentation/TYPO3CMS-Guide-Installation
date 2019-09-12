@@ -21,7 +21,7 @@ To create a new TYPO3 project use the TYPO3 Base Distribution::
 
 .. note::
 
-   To install TYPO3 via the `composer` command on windows, it should be started as admin
+   To install TYPO3 via the `composer` command on Windows, it should be started as admin
    or explicitly given the right to create symlinks (use for example a
    powershell or git bash started with admin rights).
 
