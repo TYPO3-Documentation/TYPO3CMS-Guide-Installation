@@ -16,14 +16,31 @@ Install TYPO3 via composer
 
 To create a new TYPO3 project use the TYPO3 Base Distribution::
 
-	# Download the Base Distribution, the latest "stable" release (9.5)
+	# Download the Base Distribution, the latest "sprint" release (10)
 	composer create-project typo3/cms-base-distribution YourNewProjectFolder
 
 .. note::
 
-   To install TYPO3 via the `composer` command on windows, it should be started as admin
+   To install TYPO3 via the `composer` command on Windows, it should be started as admin
    or explicitly given the right to create symlinks (use for example a
    powershell or git bash started with admin rights).
+
+.. important::
+
+   The caret character `^` is the escape character in a Windows command line (cmd.exe). To
+   be able to use it in version constraints, every occurance has to be escaped by adding a
+   second caret `^` or by enclosing the whole argument in double quotes `"`:
+
+   * composer create-project typo3/cms-base-distribution:^^9 YourNewProjectFolder
+   * composer create-project "typo3/cms-base-distribution:^9" YourNewProjectFolder
+
+.. note::
+
+   In *nix shells the Asterisk character `*` has also a special meaning and has to be
+   properly escaped by surrounding double quotes `"`:
+
+   * composer create-project "typo3/cms-base-distribution:*" YourNewProjectFolder
+   * composer create-project typo3/cms-base-distribution YourNewProjectFolder "*"
 
 After `composer create project ...` executed, you should have the following folder structure:
  
