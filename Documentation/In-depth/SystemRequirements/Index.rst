@@ -134,8 +134,11 @@ are available.
   * sqlsrv (if you use SQL Server as DBMS)
   * sqlite (if you use SQLite as DBMS)
 
-..warning::
+.. warning::
 
-  * Mac-Users: On macOS 10.13.6 and probably also 10.14.* (unconfirmed) pcre causes troubles, with brew as well as native or MAMP installations. It is recommended to use php 7.2. More info can be found here:
-    `Not working after upgrading to 7.3 <https://github.com/bobthecow/psysh/issues/540>`_
-    `Bug #77260	preg_match_all(): JIT compilation failed: no more memory <https://bugs.php.net/bug.php?id=77260>`_
+    With **PHP 7.3** in combination with **macOS** 10.13.6 (and probably also 10.14 - unconfirmed)
+    pcre causes problems with brew as well as native or MAMP installations. It is
+    recommended to use PHP 7.2. More information can be found here:
+
+    * `Not working after upgrading to 7.3 <https://github.com/bobthecow/psysh/issues/540>`_
+    * `Bug #77260	preg_match_all(): JIT compilation failed: no more memory <https://bugs.php.net/bug.php?id=77260>`_
