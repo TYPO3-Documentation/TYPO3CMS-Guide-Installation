@@ -46,7 +46,7 @@ After you added these tables and columns, go on to the next wizard.
    Use `./vendor/bin/typo3 upgrade:run` to run all wizards.
 
    For Classic Mode (Non Composer Mode) replace `./vendor/bin/typo3` with
-   `.typo3/sysext/core/bin/typo3`.
+   `./typo3/sysext/core/bin/typo3`.
 
 The "Version Compatibility" wizard sets the compatibility version of your TYPO3
 installation to the new version. This allows your Frontend output to use new
