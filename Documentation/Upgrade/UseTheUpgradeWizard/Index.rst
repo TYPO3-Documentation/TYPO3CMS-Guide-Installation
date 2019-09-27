@@ -38,15 +38,15 @@ After you added these tables and columns, go on to the next wizard.
 
    For Composer Mode
 
-   Run `./vendor/bin/typo3 upgrade:list -a` to show a complete status of
+   Run :bash:`./vendor/bin/typo3 upgrade:list -a` to show a complete status of
    upgrade wizards.
 
-   Use `./vendor/bin/typo3 upgrade:run <wizardName>` to run a specific wizard.
+   Use :bash:`./vendor/bin/typo3 upgrade:run <wizardName>` to run a specific wizard.
 
-   Use `./vendor/bin/typo3 upgrade:run` to run all wizards.
+   Use :bash:`./vendor/bin/typo3 upgrade:run` to run all wizards.
 
-   For Classic Mode (Non Composer Mode) replace `./vendor/bin/typo3` with
-   `.typo3/sysext/core/bin/typo3`.
+   For Classic Mode (Non Composer Mode) replace :bash:`./vendor/bin/typo3` with
+   `./typo3/sysext/core/bin/typo3`.
 
 The "Version Compatibility" wizard sets the compatibility version of your TYPO3
 installation to the new version. This allows your Frontend output to use new
@@ -70,7 +70,8 @@ TYPO3 version.
 
 .. note::
 
-    If you don't know the current Install Tool password, you can set a new one
-    by entering one in the Install Tool login screen, hitting enter and then
-    setting the displayed hash as value of ['BE']['installToolPassword'] in
-    :file:`typo3conf/LocalConfiguration.php`.
+    If you don't know the current Install Tool password,
+    you can set a new one by entering one in the Install Tool login screen,
+    hitting enter and then setting the displayed hash as value
+    of :php:`$GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword']`
+    in :file:`typo3conf/LocalConfiguration.php`.
