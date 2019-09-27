@@ -16,6 +16,7 @@
 .. role::   ts(typoscript)
    :class:  typoscript
 
+.. role::   bash(code)
 .. role::   php(code)
 
 .. highlight:: guess
