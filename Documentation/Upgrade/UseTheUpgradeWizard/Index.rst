@@ -34,6 +34,24 @@ queries sufficient to add them.
 
 After you added these tables and columns, go on to the next wizard.
 
+.. hint::
+
+   If you have CLI access you can run the update wizards on command line, too.
+   This allows you to run all upgrade wizards at once and might help with long
+   running wizards that may fail because of webserver timeouts otherwise
+
+   For Composer Mode
+
+   Run :bash:`./vendor/bin/typo3 upgrade:list -a` to show a complete status of
+   upgrade wizards.
+
+   Use :bash:`./vendor/bin/typo3 upgrade:run <wizardName>` to run a specific wizard.
+
+   Use :bash:`./vendor/bin/typo3 upgrade:run` to run all wizards.
+
+   For Classic Mode (Non Composer Mode) replace :bash:`./vendor/bin/typo3` with
+   `./typo3/sysext/core/bin/typo3`.
+
 The "Version Compatibility" wizard sets the compatibility version of
 your TYPO3 installation to the new version. This allows your Frontend
 output to use new features of the new TYPO3 version.
