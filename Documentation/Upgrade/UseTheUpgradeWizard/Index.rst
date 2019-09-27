@@ -38,14 +38,14 @@ After you added these tables and columns, go on to the next wizard.
 
    For Composer Mode
 
-   Run `./vendor/bin/typo3 upgrade:list -a` to show a complete status of
+   Run :bash:`./vendor/bin/typo3 upgrade:list -a` to show a complete status of
    upgrade wizards.
 
-   Use `./vendor/bin/typo3 upgrade:run <wizardName>` to run a specific wizard.
+   Use :bash:`./vendor/bin/typo3 upgrade:run <wizardName>` to run a specific wizard.
 
-   Use `./vendor/bin/typo3 upgrade:run` to run all wizards.
+   Use :bash:`./vendor/bin/typo3 upgrade:run` to run all wizards.
 
-   For Classic Mode (Non Composer Mode) replace `./vendor/bin/typo3` with
+   For Classic Mode (Non Composer Mode) replace :bash:`./vendor/bin/typo3` with
    `./typo3/sysext/core/bin/typo3`.
 
 The "Version Compatibility" wizard sets the compatibility version of your TYPO3
