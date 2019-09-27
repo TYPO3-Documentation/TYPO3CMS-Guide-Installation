@@ -70,7 +70,8 @@ TYPO3 version.
 
 .. note::
 
-    If you don't know the current Install Tool password, you can set a new one
-    by entering one in the Install Tool login screen, hitting enter and then
-    setting the displayed hash as value of ['BE']['installToolPassword'] in
-    :file:`typo3conf/LocalConfiguration.php`.
+    If you don't know the current Install Tool password,
+    you can set a new one by entering one in the Install Tool login screen,
+    hitting enter and then setting the displayed hash as value
+    of :php:`$GLOBALS['TYPO3_CONF_VARS']['BE']['installToolPassword']`
+    in :file:`typo3conf/LocalConfiguration.php`.
