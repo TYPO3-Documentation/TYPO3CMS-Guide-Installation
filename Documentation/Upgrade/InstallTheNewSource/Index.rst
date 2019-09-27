@@ -29,6 +29,13 @@ typo3/cms-extensionmanager:^9.5 typo3/cms-filelist:^9.5 typo3/cms-fluid:^9.5
 typo3/cms-frontend:^9.5 typo3/cms-install:^9.5 typo3/cms-recordlist:^9.5
 --update-with-dependencies`
 
+.. note::
+
+   If you get a RuntimeException like `/web/typo3/sysext/core does not exist and 
+   could not be created.` make sure you have deleted the symlinks from your TYPO3 8 
+   composer installation `typo3 -> ../vendor/typo3/cms/typo3` and 
+   `index.php -> ../vendor/typo3/cms/index.php`
+
 If you have extensions installed, you will have to find the corresponding newer
 versions you want to install for your new major version and update them, too.
 
