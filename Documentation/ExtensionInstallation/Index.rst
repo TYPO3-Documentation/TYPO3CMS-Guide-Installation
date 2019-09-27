@@ -69,7 +69,7 @@ In the backend:
 8. Click on the icon with a :guilabel:`"+"` sign for your extension
    in the :guilabel:`"A/D"` column.
 
-.. _uninstall_extension_without_composer
+.. _uninstall_extension_without_composer:
 
 Uninstall an Extension Without Composer
 =======================================
