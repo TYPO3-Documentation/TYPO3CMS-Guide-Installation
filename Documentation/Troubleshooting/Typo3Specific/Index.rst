@@ -19,8 +19,8 @@ whole :file:`typo3temp/Cache` directory at any time; the directory
 structure and all the caches will be re-written on the next hit to the
 system.
 
-A way to remove these caches can be found in :guilabel:`"ADMIN TOOLS > Maintenance >Flush
-TYPO33 and PHP Cache"`.
+A way to flush these caches can be found in :guilabel:`"ADMIN TOOLS > Maintenance >Flush
+TYPO3 and PHP Cache"`.
 
 Flushing the caches might be useful in the event your
 cache files become damaged and your system is not running correctly.
