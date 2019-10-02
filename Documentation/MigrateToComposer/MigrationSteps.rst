@@ -38,7 +38,7 @@ your web root. At the moment, only these few lines are required:
         ]
     }
 
-Note, that you only need to include this composer repository, if you have to use
+Note, that you only need to include this Composer repository, if you have to use
 legacy extensions that are not available on Packagist, but only in TER.
 
 Add All Required Packages to Your Project
@@ -51,7 +51,7 @@ require`. The full syntax is::
 
 **Example**::
 
-    composer require typo3/cms:~9.5.0
+    composer require typo3/minimal:^9.5
 
 There are different ways to define the version of the package, you want
 to install. The most common syntaxes start with `^` (e.g.
@@ -60,7 +60,7 @@ found at https://getcomposer.org/doc/articles/versions.md
 
 In short:
 
-*  `^9.5` or `^9.5.0` tells `composer` to add newest package of
+*  `^9.5` or `^9.5.0` tells Composer to add newest package of
    version 7.\* with at least 9.5.0, but not version 10.
 
 *  `~9.5.0` tells `composer` to add the newest package of version
@@ -80,13 +80,9 @@ As already written above, the line to install TYPO3 7 LTS would be::
 
     composer require typo3/cms:~7.6.0
 
-While installing TYPO3 9 LTS works with this line::
-
-    composer require typo3/minimal:~9.5.0
-
 .. _composer-migration-require-subtree-packages:
 
-Add Only Code, You Need
+Add only code you need
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Since TYPO3 8.7.10 you **should** only add code you need, thus require individual
@@ -97,13 +93,13 @@ the full TYPO3 core package, including all system extensions, you will
 never use. But only install what you really want. You will not be able
 to install `typo3/cms:^9`, but have to name each system extension::
 
-    composer require typo3/cms-minimal:~9.5.0
-    composer require typo3/cms-scheduler:~9.5.0
+    composer require typo3/minimal:^9.5
+    composer require typo3/cms-scheduler:^9.5
     composer require ... 
 
 Or in one line::
 
-    composer require typo3/cms-minimal:~9.5.0 typo3/cms-scheduler:~9.5.0 ... 
+    composer require typo3/cms-minimal:^9.5 typo3/cms-scheduler:^9.5 ... 
 
 To find the correct package names, you can either take a look in the
 :file:`composer.json` of any system extension or follow the naming
@@ -128,7 +124,7 @@ correct Composer key on `packagist.org <https://packagist.org>`__. Some maintain
 search the extension in TER, you will see a message, which command and Composer
 key you can use to install this extension.
 
-|TER composer command|
+|TER Composer command|
 
 .. note ::
 
@@ -144,7 +140,7 @@ will see a message, which Composer key should be used to install this extension.
 
 |satis abandoned note|
 
-See Warning During composer require Command
+See Warning During `composer require` Command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you still install one of the abandoned extensions via its `typo3-ter` package key,
