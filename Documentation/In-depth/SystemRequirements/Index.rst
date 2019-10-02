@@ -58,20 +58,44 @@ It is recommended to also grant the following privileges:
 Web Server Environment
 ======================
 
+.. _system-requirements-apache:
+
 Apache
 ------
 
-* Make sure AllowOverride in the webserver configuration includes "Indexes" and
-  "FileInfo" if you use Apache as webserver.
+* Make sure `AllowOverride <https://httpd.apache.org/docs/current/mod/core.html#allowoverride>`__
+  in the webserver configuration includes "Indexes" and "FileInfo" if you use Apache as
+  webserver and override the default configuration with :file:`.htaccess` (as done by default).
 
-* Enabled modules "mod_expires" and "mod_rewrite" (to enable human readable
-  urls)
+* Enable Apache modules (see :ref:`enable-necessary-modules` in the Troubleshooting
+  section). The following modules are used by the default :file:`.htaccess`:
 
-* During the installation process (first install) the default htaccess file is
+  * **mod_alias**: Block access to vcs directories
+    (strongly recommended for security reasons)
+  * **mod_authz_core**: Block access to specific files and directories
+    (strongly recommended for security reasons)
+  * **mod_autoindex**: Used for disabling directory listings which is
+    strongly recommended for security reasons.
+  * **mod_deflate**: compression, better performance
+  * **mod_expires**: adds HTTP headers for browser caching and better
+    performance
+  * **mod_filter**: used with mod_deflate. For Apache versions below
+    version 2.3.7 you don't need to enable `mod_filter`.
+  * **mod_headers**
+  * **mod_rewrite**: to enable human readable urls
+  * **mod_setenvif**: used with mod_deflate
+
+.. tip::
+
+   Look for `<IfModule>` directives in the default :file:`.htaccess` file
+   `EXT:install/Resources/Private/FolderStructureTemplateFiles/root-htaccess <https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/install/Resources/Private/FolderStructureTemplateFiles/root-htaccess>`__
+   for more clues about which modules are used for what purpose (but not all used modules
+   may have directives in the .htaccess file so do not necessarily expect .htaccess to contain
+   a complete list of modules).
+
+* During the installation process (first install) the default :file:`.htaccess` file is
   copied to the document root folder of the project, if the file does not exist already.
 
-* Default htaccess file with rewrite rules can be found in
-  :file:`EXT:install/Resources/Private/FolderStructureTemplateFiles/root-htaccess`
 
 Microsoft Internet Information Services (IIS)
 ---------------------------------------------
