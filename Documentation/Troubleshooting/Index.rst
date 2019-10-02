@@ -8,18 +8,41 @@ Troubleshooting
 ===============
 
 The following sections contain hints to help you solve common problems. 
-Note that you should also check the section "System Environment" in the 
-Install Tool, in which TYPO3 will inform you about errors and warnings 
-in your installation which might influence performance.
-Follow the advice given there to fix those issues. This helps to
-solve or prevent most issues.
+Note that you should also check the section
+:guilabel:`"ADMIN TOOLS > Environment > Environment Status"` in the
+Install Tool or TYPO3 backend. TYPO3 will inform you about errors and
+warnings in your installation. Follow the advice given there to fix those issues.
+This helps to solve or prevent most issues.
 
-During troubleshooting, in the "Configuration Presets" section of the Install 
+During troubleshooting, in the :guilabel:`"Settings > Configuration Presets"` section of the Install
 Tool, under "Debug settings", you should select the "Debug" preset. This is 
 especially helpful, if e.g. in the Frontend you only see a blank page. With 
 debug settings activated, the PHP error message will be displayed, which will 
 help you narrow down the problem.
 
+You may also have to enable this TypoScript setting:
+
+.. code-block:: typoscript
+
+   config.contentObjectExceptionHandler = 0
+
+.. seealso::
+
+   :ref:`t3coreapi:error-handling-configuration-examples-debug`
+
+.. important::
+
+   Do not permanently enable debug presets, but set it back to production ("Live")
+   after you have fixed the problem (or analyze the problem on a test system).
+
+If necessary, look in relevant logs for further clues:
+
+* Webserver log files for general problems (e.g. :file:`/var/log/apache2` on
+  Linux bases system)
+* TYPO3 Administration log in :guilabel:`SYSTEM > Log`
+* TYPO3 logs writting by :ref:`Logging Framework <t3coreapi:logging>` in :file:`typo3temp/var/log`
+
+What gets written where depends on how you have configured the error handling and logging.
 
 .. _apache:
 
