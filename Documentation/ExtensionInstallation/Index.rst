@@ -93,7 +93,7 @@ warns you about dependencies that are written in an extensions :file:`ext_emconf
 that you depend on the extensions developers faithfully noting all dependencies in this config file.
 
 If you get an exception and can't even access the Extension Manager anymore because of it, you can uninstall / install
-extensions manually with :file:`PackageStates.php` as a last resort, see :ref:`install-extension-manually`
+extensions manually with :file:`PackageStates.php` as a last resort, see :ref:`uninstall-extension-manually`
 
 .. tip::
    Be sure not to uninstall extensions by trial and error on production systems, expecially not under time pressure.
@@ -131,7 +131,7 @@ Remove an Extension via the TYPO3 Backend
 After successfully uninstalling an extension via the Extension Manager you can permanently remove the extension by
 clicking on the waste-basket symbol "Remove" beside the extensions entry in the Extension Manager.
 
-.. _install-extension-manually:
+.. _uninstall-extension-manually:
 
 Uninstalling an Extension Manually
 ----------------------------------
@@ -238,10 +238,16 @@ On the command line:
       ./vendor/bin/typo3 extension:activate news
 
 
+Remove Extensions With Composer
+===============================
+
+
+see :ref:`composer-remove-extension`
+
 .. _find-out-composer-package-name:
 
 Find out Composer Package Name for an Extension
------------------------------------------------
+===============================================
 
 For example go to the `Extension Repository <https://extensions.typo3.org/>`__,
 and search for the extension.

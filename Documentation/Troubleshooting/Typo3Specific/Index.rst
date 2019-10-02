@@ -7,6 +7,18 @@
 TYPO3
 =====
 
+Broken Extensions
+=================
+
+In case there are severe problems with an extension throwing exceptions,
+you may have to deactivate it.
+
+As a last resort, you can remove the extension from :file:`typo3conf/PackageStates.php`
+as described in
+
+* :ref:`composer-remove-extension` (for Composer based installations)
+* :ref:`install-extension-manually` (for non Composer based installations)
+
 
 .. _cached-files-in-typo3temp:
 
