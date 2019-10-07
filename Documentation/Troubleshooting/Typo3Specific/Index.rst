@@ -26,7 +26,7 @@ Flushing the caches might be useful in the event your
 cache files become damaged and your system is not running correctly.
 
 If this is the case and you can no longer access the TYPO3 backend, you
-can create a file file:`ENABLE_INSTALL_TOOL` in the directory
+can create a file :file:`ENABLE_INSTALL_TOOL` in the directory
 :file:`typo3conf` and directly access the Install Tool with /typo3/install.php
 (for example https://example.com/typo3/install.php).
 The Install Tool won't load any of these caches or any extension, so it
