@@ -19,11 +19,24 @@ whole :file:`typo3temp/Cache` directory at any time; the directory
 structure and all the caches will be re-written on the next hit to the
 system.
 
-A shortcut to remove these caches can be found in the Install Tool,
-under "Important Actions". This might be useful in the event your
-cache files become damaged and your system is not running correctly. The
-Install Tool won't load any of these caches or any extension, so it
+A way to flush these caches can be found in :guilabel:`"ADMIN TOOLS > Maintenance >Flush
+TYPO3 and PHP Cache"`.
+
+Flushing the caches might be useful in the event your
+cache files become damaged and your system is not running correctly.
+
+If this is the case and you can no longer access the TYPO3 backend, you
+can create a file :file:`ENABLE_INSTALL_TOOL` in the directory
+:file:`typo3conf` and directly access the Install Tool with /typo3/install.php
+(for example https://example.com/typo3/install.php).
+The Install Tool won't load any of these caches or any extension, so it
 should be safe to use regardless of the corrupt state of the Caches.
+
+.. important::
+
+   Flushing the TYPO3 cache will require the entire cache to rebuild
+   on the next load of a web page and will result in higher load on
+   your system and impede performance. Do not do this unless you must.
 
 Amongst other caches, under :file:`typo3temp/Cache/Code/cache_core/`
 you find files like these::
@@ -31,7 +44,7 @@ you find files like these::
    -rw-rw----   1 www-data   www-data   61555  2014-03-26 16:28   ext_localconf_8b0519db6112697cceedb50296df89b0ce04ff70.php
    -rw-rw----   1 www-data   www-data   81995  2014-03-26 16:28   ext_tables_c3638687920118a92ab652cbf23a9ca69d4a6469.php
 
-These files simply contain all :file:`ext\_tables.php` and
+The files in :file:`typo3temp/Cache/` simply contain all :file:`ext\_tables.php` and
 :file:`ext\_localconf.php` files of the installed extensions
 concatenated in the order they are loaded. Therefore including one of
 these files would be the same as including potentially hundreds of PHP
