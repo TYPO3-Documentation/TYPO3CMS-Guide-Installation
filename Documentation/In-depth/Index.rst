@@ -13,6 +13,7 @@ In-Depth Installation
    :glob:
 
    SystemRequirements/Index
+   KnownProblems/Index
    WhichPackageAndFormat/Index
    ThePackageInDetail/Index
    TheInstallTool/Index

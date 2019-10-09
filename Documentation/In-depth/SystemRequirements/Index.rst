@@ -11,7 +11,7 @@ TYPO3 requires a web server, PHP and a database system.
 
 * TYPO3 requires a web server which can run PHP (e.g. Apache, Nginx or IIS).
 
-* TYPO3 10 requires at least PHP 7.2.x (Mac users: see warning a the end of this document)
+* TYPO3 10 requires at least PHP 7.2.x (Mac users: see warning: :ref:`php-73-pcre-mac`)
 
 * TYPO3 can be used with a great many database systems (e.g. MySQL or
   Postgres). If you use MySQL, you will need to install at least MySQL 5.5. and maximum MySQL 5.7
@@ -182,11 +182,3 @@ are available.
   * sqlsrv (if you use SQL Server as DBMS)
   * sqlite (if you use SQLite as DBMS)
 
-.. warning::
-
-    With **PHP 7.3** in combination with **macOS** 10.13.6 (and probably also 10.14 - unconfirmed)
-    pcre causes problems with brew as well as native or MAMP installations. It is
-    recommended to use PHP 7.2. More information can be found here:
-
-    * `Not working after upgrading to 7.3 <https://github.com/bobthecow/psysh/issues/540>`_
-    * `Bug #77260	preg_match_all(): JIT compilation failed: no more memory <https://bugs.php.net/bug.php?id=77260>`_
