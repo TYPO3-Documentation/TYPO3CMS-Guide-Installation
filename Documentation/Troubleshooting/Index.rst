@@ -54,17 +54,38 @@ correctly.
 
 
 .. _enable-necessary-modules:
+.. _enable-mod_rewrite:
 
-Enable Necessary Modules
-------------------------
+Enable mod_rewrite
+------------------
 
-TYPO3 makes use of several Apache modules, two modules that will need
-to be enabled are mod_expires and mod_rewrite. Apache modules can be
-enabled by editing your http.conf file, locating the required module
+TYPO3 makes use of several Apache modules (see
+:ref:`System Requirements <system-requirements-apache>` for more information).
+
+If mod_rewrite is not enabled, the URL handling will not work
+properly (specifically the mapping of the URLs TYPO3 uses internally
+to "speaking URLs") and you might get 404 (page not found) errors.
+
+.. tip::
+
+   How Apache modules are enabled, depends on your system. Look in the
+   documentation for your operating system distribution.
+
+For example, the modules can be
+enabled by editing your http.conf file, locating the required modules
 and removing the preceding hash symbol::
 
    #LoadModule expires_module modules/mod_expires.so
    #LoadModule rewrite_module modules/mod_rewrite.so
+
+Or, just do
+
+.. code-block:: bash
+
+   a2enmod rewrite expires
+
+As usual, after changing configuration, you must reload / restart the
+Apache service.
 
 .. _adjust-threadstacksize-on-windows:
 
