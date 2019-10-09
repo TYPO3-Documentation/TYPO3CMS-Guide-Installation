@@ -27,8 +27,7 @@ newer) installed on the server. (GraphicsMagick should be prefered.)
 For an overview see also `get.typo3.org
 <https://get.typo3.org/version/9#system-requirements>`_.
 
-Should you encounter problems, the ":ref:`troubleshooting`" section at the end
-of this document will help.
+Should you encounter problems, the ":ref:`troubleshooting`" chapter will help.
 
 
 Database Environment
