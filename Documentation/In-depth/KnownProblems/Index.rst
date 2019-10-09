@@ -46,9 +46,24 @@ fail on NFS storage.
 
 More information:
 
-
 * :ref:`t3coreapi:locking-api-caveats`
 * `Forge Issue: FileLockStrategy fails on NFS folders <https://forge.typo3.org/issues/72074>`__
+
+How this may affect you:
+
+* Error messages in frontend when loading pages
+
+.. image:: ../../Images/error-locking.png
+   :class: with-shadow
+
+* Messages in TYPO3 log (backend System > Log)
+
+.. code-block:: none
+
+   Core: Exception handler (WEB): Uncaught TYPO3 Exception: #1294586098:
+   Could not acquire access lock for "pages"". | RuntimeException thrown in file
+   /var/www/mysite/public/typo3/sysext/frontend/Classes/Controller/TypoScriptFrontendController.php in line 4943.
+   Requested URL: https://example.org/
 
 Solution / workaround:
 
