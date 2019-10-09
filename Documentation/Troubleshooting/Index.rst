@@ -20,6 +20,29 @@ especially helpful, if e.g. in the Frontend you only see a blank page. With
 debug settings activated, the PHP error message will be displayed, which will 
 help you narrow down the problem.
 
+You may also have to enable this TypoScript setting:
+
+.. code-block:: typoscript
+
+   config.contentObjectExceptionHandler = 0
+
+.. seealso::
+
+   :ref:`t3coreapi:error-handling-configuration-examples-debug`
+
+.. important::
+
+   Do not permanently enable debug presets, but set it back to production ("Live")
+   after you have fixed the problem (or analyze the problem on a test system).
+
+If necessary, look in relevant logs for further clues:
+
+* Webserver log files for general problems (e.g. :file:`/var/log/apache2` on
+  Linux based system)
+* TYPO3 Administration log in :guilabel:`SYSTEM > Log` (in the backend)
+* TYPO3 logs writting by :ref:`Logging Framework <t3coreapi:logging>` in :file:`typo3temp/var/log`
+
+What gets written where depends on how you have configured the error handling and logging.
 
 .. _apache:
 
