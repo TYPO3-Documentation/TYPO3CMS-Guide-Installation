@@ -79,3 +79,16 @@ Solution / workaround:
 
 * You can use the extension bp_pagetree (as described in the Stack Overflow answer with the
   mentioned drawback)
+
+
+.. _system-extensions:
+
+System Extensions
+=================
+
+Depending on which system extensions you are using, you may find more known problems:
+
+* `felogin <https://docs.typo3.org/c/typo3/cms-felogin/master/en-us//KnownProblems/Index.html>`__
+* `indexed_search <https://docs.typo3.org/c/typo3/cms-indexed-search/master/en-us//KnownProblems/Index.html>`__
+* `scheduler <https://docs.typo3.org/c/typo3/cms-scheduler/master/en-us//KnownProblems/Index.html>`__
+
