@@ -38,8 +38,8 @@ You may also have to enable this TypoScript setting:
 If necessary, look in relevant logs for further clues:
 
 * Webserver log files for general problems (e.g. :file:`/var/log/apache2` on
-  Linux bases system)
-* TYPO3 Administration log in :guilabel:`SYSTEM > Log`
+  Linux based system)
+* TYPO3 Administration log in :guilabel:`SYSTEM > Log` (in the backend)
 * TYPO3 logs writting by :ref:`Logging Framework <t3coreapi:logging>` in :file:`typo3temp/var/log`
 
 What gets written where depends on how you have configured the error handling and logging.
