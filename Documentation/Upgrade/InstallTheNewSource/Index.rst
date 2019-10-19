@@ -1,5 +1,9 @@
 ﻿.. include:: ../../Includes.txt
 
+.. Use syntax highlighting for shell commands by default
+   on this page
+
+.. highlight:: shell
 
 .. _install-the-new-source:
 
@@ -23,18 +27,18 @@ Upgrading a Composer Based System
    selecting the packages easier, you can use
    https://get.typo3.org/misc/composer/helper to find the packages you need.
 
-Use composer to update your system via for example `composer require
-typo3/cms-backend:^9.5 typo3/cms-core:^9.5 typo3/cms-extbase:^9.5
-typo3/cms-extensionmanager:^9.5 typo3/cms-filelist:^9.5 typo3/cms-fluid:^9.5
-typo3/cms-frontend:^9.5 typo3/cms-install:^9.5 typo3/cms-recordlist:^9.5
---update-with-dependencies`
+Use composer to update your system via for example::
+
+   composer require typo3/cms-backend:^9.5 typo3/cms-core:^9.5 \
+      typo3/cms-extbase:^9.5 typo3/cms-extensionmanager:^9.5 \
+      typo3/cms-filelist:^9.5 typo3/cms-fluid:^9.5 typo3/cms-frontend:^9.5 \
+      typo3/cms-install:^9.5 typo3/cms-recordlist:^9.5 \
+      --update-with-dependencies
 
 If you have extensions installed, you will have to find the corresponding newer
 versions you want to install for your new major version and update them, too.
 
-Example:
-
-.. code-block:: shell
+Example::
 
    composer require typo3/cms-backend:^9.5 typo3/cms-core:^9.5 \
       typo3/cms-extbase:^9.5 typo3/cms-extensionmanager:^9.5 \
@@ -85,32 +89,37 @@ automatically install the new source code.
    * The :program:`tar` command must be available for extracting the Source
      package.
 
-.. note::
+Disabling the Core Updater
+--------------------------
 
-   **Disabling the Core Updater**
+The Core Updater functionality can be disabled, in order to avoid users using it,
+i.e. if you use your own update mechanism.
 
-   The Core Updater functionality can be disabled (in order to avoid users
-   using it, i.e. if you use your own update mechanism). To disable the
-   core updater, you can set this environment variable::
+This feature is already disabled when TYPO3 is installed via composer.
 
-      TYPO3_DISABLE_CORE_UPDATER=1
+To disable the core updater, you can set this environment variable::
 
-   For example in Apache::
+   TYPO3_DISABLE_CORE_UPDATER=1
 
-      SetEnv TYPO3_DISABLE_CORE_UPDATER 1
+For example in Apache:
 
-   or for nginx::
+.. code-block:: apacheconf
 
-      server {
-        location ~ path/to/it {
-          include fastcgi_params;
-          fastcgi_param TYPO3_DISABLE_CORE_UPDATER "1";
-        }
-      }
+   SetEnv TYPO3_DISABLE_CORE_UPDATER 1
 
-   This will disable the button and all related functionality in the Install
-   Tool.
+or for nginx:
 
+.. code-block:: nginx
+
+   server {
+     location ~ path/to/it {
+       include fastcgi_params;
+       fastcgi_param TYPO3_DISABLE_CORE_UPDATER "1";
+     }
+   }
+
+This will disable the button and all related functionality in the Install
+Tool.
 
 
 .. _install-manually:
