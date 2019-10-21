@@ -9,26 +9,29 @@ System Requirements
 
 TYPO3 requires a web server, PHP and a database system.
 
-* TYPO3 requires a web server which can run PHP (e.g. Apache, Nginx or IIS).
+* TYPO3 requires a **web server** which can run PHP (e.g. Apache, Nginx or IIS).
+  If you use an Apache web server, some module (e.g. mod_rewrite) must be activated.
+  See :ref:`system-requirements-webserver` for details.
 
-* TYPO3 10 requires at least PHP 7.2.x (Mac users: see warning a the end of this document)
+* TYPO3 10 requires **PHP >= 7.2 <= 7.4** (Mac users: see warning at the end of this document).
+  For PHP, several PHP extensions are necessary, others recommended. You possibly want to
+  adjust the memory limit. See :ref:`system-requirements-php`.
 
-* TYPO3 can be used with a great many database systems (e.g. MySQL or
-  Postgres). If you use MySQL, you will need to install at least MySQL 5.5. and maximum MySQL 5.7
+* TYPO3 can be used with a great many **database** systems (e.g. MySQL >= 5 <= 5.7,
+  PostgreSQL, Microsoft SQL Server, SQLite or MariaDB >= 10 <= 10.3).
+  See :ref:`system-requirements-database` on this page for details.
 
-If you use an Apache web server, the module mod_rewrite must be activated.
-Certain PHP extensions are necessary, others recommended. You possibly want to
-adjust the memory limit; see below.
-
-If you want TYPO3 to automatically carry out image processing – for example
-scaling or cropping – you will need GraphicsMagick (version 1.3 or newer) or ImageMagick (version 6 or
-newer) installed on the server. (GraphicsMagick should be prefered.)
+* If you want TYPO3 to automatically carry out **image processing** – for example
+  scaling or cropping – you will need GraphicsMagick (version 1.3 or newer) or
+  ImageMagick (version 6 or
+  newer) installed on the server. (GraphicsMagick should be preferred.)
 
 For an overview see also `get.typo3.org
 <https://get.typo3.org/version/9#system-requirements>`_.
 
 Should you encounter problems, the ":ref:`troubleshooting`" chapter will help.
 
+.. _system-requirements-database:
 
 Database Environment
 ====================
@@ -53,6 +56,8 @@ It is recommended to also grant the following privileges:
 
 * EXECUTE, CREATE ROUTINE, ALTER ROUTINE
 
+
+.. _system-requirements-webserver:
 
 Web Server Environment
 ======================
@@ -138,6 +143,8 @@ NGINX
 * Examples of NGINX vHost config files with rewrite rules can be found in
   TYPO3 Forge. `Provide a Nginx server configuration <https://forge.typo3.org/issues/54316>`__.
 
+
+.. _system-requirements-php:
 
 PHP Environment
 ---------------
