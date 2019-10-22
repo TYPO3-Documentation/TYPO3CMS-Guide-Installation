@@ -27,7 +27,7 @@ TYPO3 requires a web server, PHP and a database system.
   newer) installed on the server. (GraphicsMagick should be preferred.)
 
 For an overview see also `get.typo3.org
-<https://get.typo3.org/version/9#system-requirements>`_.
+<https://get.typo3.org/version/10#system-requirements>`_.
 
 Should you encounter problems, the ":ref:`troubleshooting`" chapter will help.
 

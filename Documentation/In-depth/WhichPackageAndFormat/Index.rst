@@ -12,7 +12,7 @@ For detailed instructions on how to install TYPO3 using Composer, visit the
 
 If you do not have access to Composer, you can install TYPO3 by downloading
 and then extracting its source package on your web server. TYPO3's source package
-can be found here: `https://get.typo3.org <https://get.typo3.org>`_.
+can be found here: `https://get.typo3.org <https://get.typo3.org/version/10>`_.
 
 .. _which-file-format-to-use:
 
