@@ -18,7 +18,11 @@ To create a new TYPO3 project use the TYPO3 Base Distribution::
 	# Download the Base Distribution, the latest "sprint" release (10)
 	composer create-project typo3/cms-base-distribution YourNewProjectFolder
 
+If you want to create a new TYPO3 project with a certain version, add ":version number" : ::
 
+	# Download the Base Distribution e.g version 9.5
+	composer create-project typo3/cms-base-distribution:9.5 YourNewProjectFolder
+   
 .. note::
 
    **For Windows users:** To install TYPO3 via the `composer` command, it should be started as admin
