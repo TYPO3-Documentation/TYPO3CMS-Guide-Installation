@@ -107,6 +107,14 @@ convention
 :file:`typo3/cms-<extension name with dash "-" instead of underscore "_">`,
 e.g. :file:`typo3/cms-fluid-styled-content`.
 
+.. note ::
+
+    To find out all TYPO3 Core packages, you can visit the TYPO3 Composer Helper website.
+    https://get.typo3.org/misc/composer/helper
+    From this website, you can select TYPO3 Core Packages you need and generate 
+    the composer command to require them.
+    
+
 Install Extensions from Packagist
 ---------------------------------
 
@@ -126,7 +134,7 @@ key you can use to install this extension.
 
 |TER Composer command|
 
-.. note ::
+.. note::
 
     The command `composer req` is short for `composer require`. Both commands
     exactly do the same and are interchangeable.
