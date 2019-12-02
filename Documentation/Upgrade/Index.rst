@@ -16,10 +16,9 @@ see if any features affect the way your site works.
 
    **Version specific upgrade notes**
 
-   While this guide is the general guideline to follow for a TYPO3
-   Upgrade, some `version specific information are additionally available
-   in the TYPO3 Wiki <https://wiki.typo3.org/Upgrade>`_. Use them as an
-   amendment to this guide!
+   While the upgrade instructions remain basically the same for each major
+   upgrade, additional `specific information <upgradevVersionSpecific>`_ is
+   available for each upgrade.
 
 .. note::
 
@@ -47,3 +46,4 @@ Basically these are the steps to be done to update your TYPO3 site:
    ChangelogAndNewsmd/Index
    UpdateExtensions/Index
    UpdateTranslations/Index
+   UpgradeToV9
