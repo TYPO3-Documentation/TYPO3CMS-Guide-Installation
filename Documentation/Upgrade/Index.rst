@@ -47,3 +47,4 @@ Basically these are the steps to be done to update your TYPO3 site:
    ChangelogAndNewsmd/Index
    UpdateExtensions/Index
    UpdateTranslations/Index
+   UpgradeToV10/Index
