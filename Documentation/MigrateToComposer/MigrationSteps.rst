@@ -149,7 +149,7 @@ will see a message, which Composer key should be used to install this extension.
 |satis abandoned note|
 
 See Warning During `composer require` Command
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you still install one of the abandoned extensions via its `typo3-ter` package key,
 you will also see a warning during the `composer require` command.

@@ -183,7 +183,7 @@ Removing an Extension Manually
 ------------------------------
 Removing an extension manually is not common practice and should only be done as a last resort. You should only remove
 an extension that you uninstalled successfully. Make a backup first. Then you can permanently
-remove an extension by removing its folder at :path:`typo3conf/ext/[extensionname]`. The corresponding database tables
+remove an extension by removing its folder at :file:`typo3conf/ext/[extensionname]`. The corresponding database tables
 can be removed in the :guilabel:`Install Tool -> Important Actions -> Database analyzer -> Compare current database
 with specification`.
 
