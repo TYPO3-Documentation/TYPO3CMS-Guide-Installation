@@ -108,7 +108,12 @@ is signed as well - however it contains the signature inline in the same file.
 
 .. code-block:: bash
 
-   ~$ gpg --verify RELEASE-7.6.4.txt
+   gpg --verify RELEASE-7.6.4.txt
+
+Output:
+
+.. code-block:: none
+
    gpg: Signature made Tue 23 Feb 2016 12:18:26 PM CET using RSA key ID 59BC94C4
    gpg: Can't check signature: public key not found
 
@@ -118,7 +123,12 @@ obtained by any key server - a popular one is `pgpkeys.mit.edu`_.
 
 .. code-block:: bash
 
-   ~$ wget -qO- https://get.typo3.org/KEYS | gpg --import
+   wget -qO- https://get.typo3.org/KEYS | gpg --import
+
+Output:
+
+.. code-block:: none
+
    gpg: requesting key 59BC94C4 from hkp server pgpkeys.mit.edu
    gpg: key 59BC94C4: public key "TYPO3 Release Team (RELEASE) <typo3cms@typo3.org>" imported
    gpg: key FA9613D1: public key "Benjamin Mack <benni@typo3.org>" imported
@@ -132,7 +142,12 @@ signature of the ``RELEASE.txt`` file can be repeated.
 
 .. code-block:: bash
 
-   ~$ gpg --verify RELEASE-7.6.4.txt
+   gpg --verify RELEASE-7.6.4.txt
+
+Output:
+
+.. code-block:: none
+
    gpg:  Signature made Tue 23 Feb 2016 12:18:26 PM CET using RSA key ID 59BC94C4
    gpg: Good signature from "TYPO3 Release Team (RELEASE) <typo3cms@typo3.org>"
    gpg: WARNING: This key is not certified with a trusted signature!
@@ -146,7 +161,12 @@ this case the correct one for TYPO3 CMS release packages.
 
 .. code-block:: bash
 
-   ~$ gpg --fingerprint 59BC94C4
+   gpg --fingerprint 59BC94C4
+
+Output:
+
+.. code-block:: none
+
    pub   4096R/59BC94C4 2016-02-21 [expires: 2021-02-22]
          Key fingerprint = 7AF5 1AAA DED9 D002 4F89  B06B 9B9C B92E 59BC 94C4
    uid                  TYPO3 Release Team (RELEASE) <typo3cms@typo3.org>
@@ -157,7 +177,12 @@ which has to be downloaded as well.
 
 .. code-block:: bash
 
-   ~$ gpg --verify typo3_src-7.6.4.tar.gz.sig typo3_src-7.6.4.tar.gz
+   gpg --verify typo3_src-7.6.4.tar.gz.sig typo3_src-7.6.4.tar.gz
+
+Output:
+
+.. code-block:: none
+
    gpg: Signature made Tue 23 Feb 2016 12:18:24 PM CET using RSA key ID 59BC94C4
    gpg: Good signature from "TYPO3 Release Team (RELEASE) <typo3cms@typo3.org>"
 
@@ -175,7 +200,12 @@ Checking signatures on Git tags works similar to verifying the results using the
 
 .. code-block:: bash
 
-   ~$ git tag --verify 7.6.4
+   git tag --verify 7.6.4
+
+Output:
+
+.. code-block:: none
+
    object bd0c7f6ca9cb3093bd647e85035e9f36bf1e9e86
    type commit
    tag 7.6.4
@@ -189,7 +219,12 @@ The ``git show`` command on the name of the tag reveals more details.
 
 .. code-block:: bash
 
-   ~$ git show 7.6.4
+   git show 7.6.4
+
+Output:
+
+.. code-block:: none
+
    tag 7.6.4
    Tagger: TYPO3 Release Team <typo3cms@typo3.org>
    Date:   Tue Feb 23 12:17:25 2016 +0100

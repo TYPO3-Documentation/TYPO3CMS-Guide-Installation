@@ -277,12 +277,14 @@ names in Composer. This is very easy when you use PHP namespaces:
 
 .. code-block:: json
 
+    {
         "autoload": {
             "psr-4": {
                 "VendorName\\MySitepackage\\": "public/typo3conf/ext/my_sitepackage/Classes/",
                 "VendorName\\AnyOtherExtension\\": "public/typo3conf/ext/any_other_extension/Classes/"
             }
         }
+    }
 
 For extension without PHP namespaces, this section has to look a bit
 differently. You can decide by yourself, if you want to list each PHP file
@@ -290,12 +292,14 @@ manually or if Composer should search for them inside a folder:
 
 .. code-block:: json
 
+    {
         "autoload": {
             "classmap": [
                 "public/typo3conf/ext/my_old_extension/pi1/",
                 "public/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
             ]
         }
+    }
 
 To complete our example :file:`composer.json`, it would look like this:
 

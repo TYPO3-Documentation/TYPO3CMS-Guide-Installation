@@ -86,3 +86,4 @@ a GNU/GPL CMS/Framework available from `www.typo3.org
    ReleaseIntegrity/Index
    Troubleshooting/Index
    Sitemap/Index
+   Linktargets

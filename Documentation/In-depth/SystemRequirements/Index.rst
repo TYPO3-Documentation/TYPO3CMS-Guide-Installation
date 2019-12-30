@@ -72,7 +72,7 @@ Apache
   in the webserver configuration includes "Indexes" and "FileInfo" if you use Apache as
   webserver and override the default configuration with :file:`.htaccess` (as done by default).
 
-* Enable Apache modules (see :ref:`enable-necessary-modules` in the Troubleshooting
+* Enable Apache modules (see :ref:`apache-enable-necessary-modules` in the Troubleshooting
   section). The following modules are used by the default :file:`.htaccess`:
 
 mod_alias:

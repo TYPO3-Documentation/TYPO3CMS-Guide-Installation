@@ -44,7 +44,7 @@ If necessary, look in relevant logs for further clues:
 
 What gets written where depends on how you have configured the error handling and logging.
 
-.. _apache:
+.. _troubleshooting-apache:
 
 Apache
 ======
@@ -53,8 +53,8 @@ Some settings may require adjustment for TYPO3 to operate
 correctly.
 
 
-.. _enable-necessary-modules:
-.. _enable-mod_rewrite:
+.. _apache-enable-necessary-modules:
+.. _apache-enable-mod_rewrite:
 
 Enable mod_rewrite
 ------------------
@@ -104,7 +104,7 @@ following lines at the end of your httpd.conf file::
    </IfModule>
 
 
-.. _php:
+.. _troubleshooting-php:
 
 PHP
 ===
@@ -149,13 +149,13 @@ illogical problems after an upgrade:
   and restart Apache.
 
 
-.. _mysql:
+.. _troubleshooting-mysql:
 
 MySQL
 =====
 
 
-.. _character-sets:
+.. _troubleshooting-mysql-character-sets:
 
 Character Set
 -------------
@@ -167,7 +167,7 @@ the database for the first time. For an existing database, you
 will have to set each table and column to use UTF-8.
 
 
-.. _typo3-specific:
+.. _troubleshooting-typo3-specific:
 
 TYPO3
 =====

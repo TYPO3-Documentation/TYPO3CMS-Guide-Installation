@@ -118,15 +118,15 @@ Extension Development
 
 .. tip::
 
-   Extension Developers should regularly check the `Changelog <https://docs.typo3.org/c/typo3/cms-core/master/en-us/>`__
+   Extension Developers should regularly check the `Changelog <https://docs.typo3.org/c/typo3/cms-core/9.5/en-us/>`__
    for Deprecations and Breaking Changes.
 
 TypoScript
 
 * The `old TypoScript condition syntax is deprecated <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/9.5/Deprecation-86068-OldConditionSyntax.html>`__
   and will be removed in TYPO3 CMS 10.
-  The new syntax is based on the symfony expression language. The implementation is described
-  at :ref:`t3tsref:conditions`
+  The new syntax is based on the symfony expression language. It is described
+  at :ref:`t3coreapi:typoscript-syntax-conditions`
   "Global Configuration" setting `[SYS][features][TypoScript.strictSyntax]` can be used to toggle
   support for the old syntax on and off.
 * Amongst others, `cObject FILE <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/9.5/Deprecation-85970-FileContentObject.html>`__

@@ -63,12 +63,6 @@ Install an Extension With Composer
 ==================================
 
 
-.. hint::
-
-   These are the same steps that are used for :ref:`installing a distribution
-   with Composer <installing-distribution-with-composer>`.
-
-
 On the command line:
 
 .. rst-class:: bignums
@@ -157,14 +151,16 @@ or in the composer.json file of the extension, for example:
 
 .. code-block:: json
 
-   "require": {
-      "typo3/cms-core": "^9.5",
-      "typo3/cms-impexp": "^9.5",
-      "typo3/cms-form": "^9.5",
-      "typo3/cms-indexed-search": "^9.5",
-      "typo3/cms-felogin": "^9.5",
-      "bk2k/bootstrap-package": "^10.0"
-   },
+   {
+       "require": {
+          "typo3/cms-core": "^9.5",
+          "typo3/cms-impexp": "^9.5",
+          "typo3/cms-form": "^9.5",
+          "typo3/cms-indexed-search": "^9.5",
+          "typo3/cms-felogin": "^9.5",
+          "bk2k/bootstrap-package": "^10.0"
+       }
+   }
 
 Here, the package name is bk2k/bootstrap-package, but the extension key is bootstrap_package,
 as is explained in :ref:`find-out-composer-package-name`.
