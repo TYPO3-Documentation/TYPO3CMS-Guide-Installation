@@ -312,6 +312,8 @@ To complete our example ``composer.json``, it would look like this:
             ]
         }
     }
+    
+After adding files to the autoload you should run `composer dumpautoload`. This command will re-generate the vendor/autoload.php file
 
 .. note::
 
