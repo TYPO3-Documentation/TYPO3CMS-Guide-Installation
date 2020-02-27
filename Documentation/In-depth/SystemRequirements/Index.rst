@@ -13,21 +13,22 @@ TYPO3 requires a web server, PHP and a database system.
   If you use an Apache web server, some module (e.g. mod_rewrite) must be activated.
   See :ref:`system-requirements-webserver` for details.
 
-* TYPO3 10 requires **PHP >= 7.2 <= 7.4** (Mac users: see warning at the end of this document).
-  For PHP, several PHP extensions are necessary, others recommended. You possibly want to
-  adjust the memory limit. See :ref:`system-requirements-php`.
+* TYPO3 requires **PHP** (Mac users: see warning at the end of this document).
+  For PHP, several PHP extensions are necessary, others recommended. You possibly
+  want to adjust the memory limit. See :ref:`system-requirements-php`.
 
-* TYPO3 can be used with a great many **database** systems (e.g. MySQL >= 5 <= 5.7,
-  PostgreSQL, Microsoft SQL Server, SQLite or MariaDB >= 10 <= 10.3).
+* TYPO3 can be used with a many **database** systems (e.g. MySQL, PostgreSQL,
+  Microsoft SQL Server, SQLite or MariaDB).
   See :ref:`system-requirements-database` on this page for details.
 
 * If you want TYPO3 to automatically carry out **image processing** – for example
   scaling or cropping – you will need GraphicsMagick (version 1.3 or newer) or
-  ImageMagick (version 6 or
-  newer) installed on the server. (GraphicsMagick should be preferred.)
+  ImageMagick (version 6 or newer) installed on the server. (GraphicsMagick should
+  be preferred.)
 
-For an overview see also `get.typo3.org
-<https://get.typo3.org/version/10#system-requirements>`_.
+For details about the supported versions head to `get.typo3.org
+<https://get.typo3.org/version/10#system-requirements>`_ where you always find up
+to date information.
 
 Should you encounter problems, the ":ref:`troubleshooting`" chapter will help.
 
