@@ -12,5 +12,9 @@
 .. role:: ts(typoscript)
    :class: typoscript
 
+.. role:: js-webserver
+.. role:: js-php
+.. role:: js-database
+
 .. default-role:: code
 .. highlight:: php
