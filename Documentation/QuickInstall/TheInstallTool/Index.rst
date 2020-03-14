@@ -79,7 +79,28 @@ The Install Tool
       :class: with-shadow
 
       Install Tool in 1-2-3 mode, fifth step.
+      
+   **Introduction distribution**
+   
+   If you are new to TYPO3 you might want to start with example pages and 
+   content added. The `official Introduction Package 
+   <https://extensions.typo3.org/extension/introduction/>`__ showcases TYPO3s 
+   capabilities and gives you a head start to play around with a functioning 
+   site. It uses the `extension bootstrap_package
+   <https://extensions.typo3.org/extension/bootstrap_package/>`__ which 
+   uses the Bootstrap CSS framework and adds custom content elements to make
+   use of it within TYPO3. 
+   
+   #. **If you installed TYPO3 with composer**
+      
+      You have to `add a composer package and enable the extension
+      <https://docs.typo3.org/typo3cms/extensions/introduction/stable/Installation.html>`__.
 
+   #. **If you installed TYPO3 without composer**
+   
+      You can select "Yes, download the list of distributions" here. 
+      On first backend login, you will be redirected to a page where you can 
+      install the "Official introduction package" with one click.
 
 #. **The basic installation is now complete!**
 
