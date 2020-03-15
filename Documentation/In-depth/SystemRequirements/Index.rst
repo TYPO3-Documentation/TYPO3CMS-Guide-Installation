@@ -8,18 +8,18 @@ System Requirements
 
 TYPO3 requires a web server, PHP and a database system.
 
-* TYPO3 requires a web server which can run PHP (e.g. Apache, Nginx or IIS).
-* TYPO3 8 requires at least PHP 7.x.
-* TYPO3 can be used with a great many database systems (e.g. MySQL or Postgres). If you use
-  MySQL, you will need to install at least MySQL 5.5.
+* TYPO3 requires a web server which can run PHP (Apache httpd, Nginx, Microsoft IIS).
+* TYPO3 8 requires PHP >= 7.0.8 <= 7.4.99.
+* TYPO3 can be used with a great many database systems (MariaDB >= 10.0.0 <= 10.2.26,
+  Microsoft SQL Server, MySQL >= 5.0 <= 5.7, PostgreSQL).
 
 If you use an Apache web server, the module mod_rewrite must be
 activated. Certain PHP extensions are necessary, others recommended.
 You possibly want to adjust the memory limit; at least 128 MB is
 recommended.
 
-If you want TYPO3 to automatically carry out image processing – for example 
-scaling or cropping – you will need GraphicsMagick or ImageMagick (version 6 or 
+If you want TYPO3 to automatically carry out image processing – for example
+scaling or cropping – you will need GraphicsMagick or ImageMagick (version 6 or
 newer) installed on the server.
 
 A detailed list of these requirements is enclosed in the file
