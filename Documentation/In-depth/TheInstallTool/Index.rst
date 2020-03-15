@@ -12,8 +12,7 @@ installation: Upgrading, checking the system environment, configuring settings
 from and solving problems. The standalone tool usage is not dependent on a
 working Backend, and you access it using a single password.
 
-First go to your site and enter the admin tool
-(http://www.example.com/typo3/install.php).
+First go to your site and enter the admin tool via `/typo3/install.php`, e.g. https://www.example.com/typo3/install.php.
 
 .. hint::
 
