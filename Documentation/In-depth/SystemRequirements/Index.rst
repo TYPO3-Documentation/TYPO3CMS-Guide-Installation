@@ -9,7 +9,8 @@ System Requirements
 
 TYPO3 requires a web server, PHP and a database system.
 
-* TYPO3 requires a **web server** which can run PHP (e.g. Apache, Nginx or IIS).
+* TYPO3 requires a **web server** which can run PHP (Apache httpd, Nginx,
+  Microsoft IIS, Caddy Server).
   If you use an Apache web server, some module (e.g. mod_rewrite) must be activated.
   See :ref:`system-requirements-webserver` for details.
 
@@ -17,8 +18,8 @@ TYPO3 requires a web server, PHP and a database system.
   For PHP, several PHP extensions are necessary, others recommended. You possibly want to
   adjust the memory limit. See :ref:`system-requirements-php`.
 
-* TYPO3 can be used with a great many **database** systems (e.g. MySQL >= 5 <= 5.7,
-  PostgreSQL, Microsoft SQL Server, SQLite or MariaDB >= 10 <= 10.3).
+* TYPO3 can be used with a great many **database** systems (MariaDB >= 10.2 <= 10.3,
+  Microsoft SQL Server, MySQL >= 5.7 <= 8.1, PostgreSQL, SQLite).
   See :ref:`system-requirements-database` on this page for details.
 
 * If you want TYPO3 to automatically carry out **image processing** – for example
