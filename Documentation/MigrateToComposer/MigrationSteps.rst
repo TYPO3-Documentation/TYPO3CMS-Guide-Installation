@@ -329,6 +329,8 @@ To complete our example :file:`composer.json`, it would look like this:
             ]
         }
     }
+    
+After adding paths to the autoload you should run `composer dumpautoload`. This command will re-generate the autoload info and should be run anytime you add new paths to the autoload portion in the :file:`composer.json`.
 
 .. note::
 
