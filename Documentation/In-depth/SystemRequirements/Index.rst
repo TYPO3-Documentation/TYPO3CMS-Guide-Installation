@@ -9,12 +9,13 @@ System Requirements
 
 TYPO3 requires a web server, PHP and a database system.
 
-* TYPO3 requires a web server which can run PHP (e.g. Apache, Nginx or IIS).
+* TYPO3 requires a web server which can run PHP (Apache httpd, Nginx,
+  Microsoft IIS, Caddy Server).
 
-* TYPO3 9 requires at least PHP 7.2.x
+* TYPO3 9 requires PHP >= 7.2 <= 7.4
 
-* TYPO3 can be used with a great many database systems (e.g. MySQL or
-  Postgres). If you use MySQL, you will need to install at least MySQL 5.5. and maximum MySQL 5.7
+* TYPO3 can be used with a great many database systems (MariaDB >= 10.0 <= 10.3,
+  Microsoft SQL Server, MySQL >= 5.0 <= 5.7, PostgreSQL, SQLite)
 
 If you use an Apache web server, the module mod_rewrite must be activated.
 Certain PHP extensions are necessary, others recommended. You possibly want to
@@ -35,11 +36,11 @@ Database Environment
 ====================
 
 TYPO3 works with database management systems in various versions - see  `get.typo3.org
-<https://get.typo3.org/version/9#system-requirements>`_ for details. 
+<https://get.typo3.org/version/9#system-requirements>`_ for details.
 
 The InnoDB engine is required in case you are using MySQL.
 
-If you are creating the database yourself, you should use `utf8mb4` as charset and 
+If you are creating the database yourself, you should use `utf8mb4` as charset and
 (naming depending on your dbms) `utf8mb4_unicode_ci` as collation.
 
 
