@@ -83,3 +83,4 @@ You can find out more about how to do this in :ref:`contribute`.
    ReleaseIntegrity/Index
    Troubleshooting/Index
    Sitemap/Index
+   Linktargets

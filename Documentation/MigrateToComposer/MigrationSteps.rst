@@ -275,7 +275,9 @@ only one thing to do; Because TYPO3's autoload feature works differently
 in Composer based installations, you have to register your PHP class
 names in Composer. This is very easy when you use PHP namespaces:
 
-.. code-block:: json
+.. this is json but results in warnings if lex "json" is used
+
+.. code-block:: none
 
         "autoload": {
             "psr-4": {
@@ -288,7 +290,9 @@ For extension without PHP namespaces, this section has to look a bit
 differently. You can decide by yourself, if you want to list each PHP file
 manually or if Composer should search for them inside a folder:
 
-.. code-block:: json
+.. this is json but results in warnings if lex "json" is used
+
+.. code-block:: none
 
         "autoload": {
             "classmap": [

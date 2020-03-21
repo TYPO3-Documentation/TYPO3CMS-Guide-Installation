@@ -193,12 +193,6 @@ Install an Extension With Composer
 ==================================
 
 
-.. hint::
-
-   These are the same steps that are used for :ref:`installing a distribution
-   with Composer <installing-distribution-with-composer>`.
-
-
 On the command line:
 
 .. rst-class:: bignums
@@ -291,7 +285,9 @@ or in the composer.json file of the extension, for example:
 
 :file:`public/typo3conf/ext/introduction/composer.json`:
 
-.. code-block:: json
+.. this is json but results in warnings if lex "json" is used
+
+.. code-block:: none
 
    "require": {
       "typo3/cms-core": "^9.5",

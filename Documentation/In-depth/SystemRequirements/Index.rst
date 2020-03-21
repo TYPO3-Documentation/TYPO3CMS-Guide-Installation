@@ -143,7 +143,7 @@ NGINX
 
 Example Configuration:
 
-.. code-block:: 
+.. code-block:: nginx
 
    # Compressing resource files will save bandwidth and so improve loading speed especially for users
    # with slower internet connections. TYPO3 can compress the .js and .css files for you.
