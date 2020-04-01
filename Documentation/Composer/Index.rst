@@ -118,7 +118,7 @@ Check for Available Updates
 
 Run `composer outdated` to see a list of available updates.
 
-Run `composer outdated -D` to see a list available updates for directly required packages.
+Run `composer outdated -D` to see a list of available updates for directly required packages.
 
 Useful Packages and Bundles
 ===========================
