@@ -1,14 +1,14 @@
-.. include:: ../Includes.txt
+.. include:: ../../Includes.txt
 
-.. highlights:: bash
+.. highlight:: bash
 
-.. _upgradevVersionSpecific:
+.. _upgradeToLts:
 
-=========================
-Addendum: Upgrade to v9.5
-=========================
+===============
+Upgrade to v9.5
+===============
 
-You should follow the general upgrade instructions.
+You should follow the :ref:`general upgrade instructions <upgrade>`.
 
 This page gives additional information about upgrading that is specific for upgrading
 from 8.7 to 9.5.
@@ -89,12 +89,7 @@ More Information on New Features
 
 Administration / Configuration:
 
-* Sites, languages and URL configuration are now handled in the new Sites module:
-
-   * :ref:`Sites <t3coreapi:sitehandling>`
-   * :ref:`additional language configurations <t3coreapi:sitehandling-addingLanguages>`
-   * :ref:`t3coreapi:routing-advanced-routing-configuration`
-
+* Sites, languages and URL configuration are now handled in the new :ref:`Sites module <t3coreapi:sitehandling>`
 * Learn more about how TYPO3 9 now handles :ref:`readable URLs <t3coreapi:routing>` out of the box
   so that extensions like RealURL become unnecessary.
 * TYPO3 9 has a new redirects Module (no documentation yet)

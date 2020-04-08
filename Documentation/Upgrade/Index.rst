@@ -16,9 +16,8 @@ see if any features affect the way your site works.
 
    **Version specific upgrade notes**
 
-   While the upgrade instructions remain basically the same for each major
-   upgrade, additional `specific information <upgradevVersionSpecific>`_ is
-   available for each upgrade.
+   While the upgrade instructions remain basically the same for each
+   upgrade, additional information is available for each major version: :ref:`upgradeToLts`.
 
 .. note::
 
@@ -46,4 +45,4 @@ Basically these are the steps to be done to update your TYPO3 site:
    ChangelogAndNewsmd/Index
    UpdateExtensions/Index
    UpdateTranslations/Index
-   UpgradeToV9
+   UpgradeToLts/Index
