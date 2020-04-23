@@ -13,7 +13,7 @@ Install the New Source
 
 .. note::
 
-   The recommended installation of TYPO3 is based on composer.
+   The recommended installation of TYPO3 is based on Composer.
 
 
 Upgrading a Composer Based System
@@ -23,11 +23,9 @@ Upgrading a Composer Based System
 
    TYPO3 v9 LTS has no support for the package `typo3/cms` anymore - instead
    all TYPO3 system extensions are now single packages. When upgrading, remove
-   the `typo3/cms` package and require the single packages you need. To make
-   selecting the packages easier, you can use
-   https://get.typo3.org/misc/composer/helper to find the packages you need.
+   the `typo3/cms` package and require the single packages you need.
 
-Use composer to update your system via for example::
+Use Composer to update your system via for example::
 
    composer require typo3/cms-backend:^9.5 typo3/cms-core:^9.5 \
       typo3/cms-extbase:^9.5 typo3/cms-extensionmanager:^9.5 \
@@ -45,6 +43,12 @@ Example::
       typo3/cms-filelist:^9.5 typo3/cms-fluid:^9.5 typo3/cms-frontend:^9.5 \
       typo3/cms-install:^9.5 typo3/cms-recordlist:^9.5 georgringer/news:^7.0 \
       --update-with-dependencies
+
+.. tip::
+
+   To make selecting the packages easier, you can use the TYPO3
+   `Composer Helper<https://get.typo3.org/misc/composer/helper>`_
+   to find the packages you need.
 
 To find the matching extension versions you can go to `packagist.org
 <https://packagist.org/>`_, search for your extension and take a look at the
@@ -95,7 +99,7 @@ Disabling the Core Updater
 The Core Updater functionality can be disabled, in order to avoid users using it,
 i.e. if you use your own update mechanism.
 
-This feature is already disabled when TYPO3 is installed via composer.
+This feature is already disabled when TYPO3 is installed via Composer.
 
 To disable the core updater, you can set this environment variable::
 
@@ -128,7 +132,7 @@ Installing the Source Manually
 ==============================
 
 Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and download
-the Source package of the new TYPO3 version.
+the source package of the new TYPO3 version.
 
 Extract the package on your web server and - in your TYPO3 document root -
 adjust the :file:`typo3_src` symlink.
