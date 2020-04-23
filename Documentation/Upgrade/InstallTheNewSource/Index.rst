@@ -46,9 +46,8 @@ Example::
 
 .. tip::
 
-   To make selecting the packages easier, you can use the TYPO3
-   `Composer Helper<https://get.typo3.org/misc/composer/helper>`_
-   to find the packages you need.
+   To make selecting the packages easier, you can use the TYPO3 `Composer Helper
+   <https://get.typo3.org/misc/composer/helper>`_ to find the packages you need.
 
 To find the matching extension versions you can go to `packagist.org
 <https://packagist.org/>`_, search for your extension and take a look at the
