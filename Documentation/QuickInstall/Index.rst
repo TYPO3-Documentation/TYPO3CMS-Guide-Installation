@@ -25,3 +25,9 @@ Pre-Requisites:
    Composer/Index
    GetAndUnpack/Index
    TheInstallTool/Index
+
+You must choose one method of installing TYPO3 (either with Composer or without).
+
+.. tip::
+
+   For information about whether to use Composer, see :ref:`which-package-and-which-file-format`.
