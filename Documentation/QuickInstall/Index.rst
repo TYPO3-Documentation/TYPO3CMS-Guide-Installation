@@ -13,11 +13,14 @@ section :ref:`in-depth-installation`.
 The following instructions assume you are able to create symlinks on the target
 machine (which needs elevated permissions on Windows machines).
 
-Pre-Requisites:
+**Pre-Requisites:**
 
 * Running web server (Apache, Nginx, IIS...)
 * PHP ≥ 7.2 installed
+* ... more see :ref:`system-requirements`
 
+
+**Table of contents:**
 
 .. toctree::
    :titlesonly:
@@ -25,3 +28,4 @@ Pre-Requisites:
    Composer/Index
    GetAndUnpack/Index
    TheInstallTool/Index
+
