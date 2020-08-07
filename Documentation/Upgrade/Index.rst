@@ -22,10 +22,10 @@ important ones!)
 
    **Version specific upgrade notes**
 
-   While this guide is the general guideline to follow for a TYPO3
-   Upgrade, some `version specific information are additionally available
-   in the TYPO3 Wiki <https://wiki.typo3.org/Upgrade>`_. Use them as an
-   amendment to this guide!
+   While this chapter is a general guideline to follow for a TYPO3
+   Upgrade, some :ref:`specific information for upgrading to 7.6
+   <upgradeToLts>` is additionally available. Use that as an
+   amendment to the general upgrade instructions!
 
 .. note::
 
@@ -52,3 +52,4 @@ Basically these are the steps to be done to update your TYPO3 site:
    ChangelogAndNewsmd/Index
    UpdateExtensions/Index
    UpdateTranslations/Index
+   UpgradeToLts/Index
