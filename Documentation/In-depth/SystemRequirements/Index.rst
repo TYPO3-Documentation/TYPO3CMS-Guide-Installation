@@ -134,6 +134,8 @@ Microsoft Internet Information Services (IIS)
 
 * Default IIS web config file with rewrite rules can be found in
   :file:`EXT:install/Resources/Private/FolderStructureTemplateFiles/root-web-config`
+  
+* Make sure that the `URL Rewrite plugin <https://www.iis.net/downloads/microsoft/url-rewrite>`__ is installed on your system.  
 
 NGINX
 -----
