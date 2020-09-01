@@ -12,11 +12,18 @@ The recommended way of installing TYPO3 is via Composer, as described on
 this page. If you do not want to use Composer, follow the :ref:`package installation
 guide <get-and-unpack-the-typo3-package>`.
 
+You have more ways to install TYPO3 via composer:
+* Install regular via loading the needed packages. Use `Composer helper <https://get.typo3.org/misc/composer/helper/>`_ to generate the composer command.
+* Install the cms-base-distribution package. This is helpful when you are use ddev, because it configures your database and mailserver for Mailhog.
 
-To create a new TYPO3 project use the TYPO3 Base Distribution::
+To create a new TYPO3 project using the TYPO3 Base Distribution::
 
 	# Download the Base Distribution, the latest "sprint" release (10)
 	composer create-project typo3/cms-base-distribution YourNewProjectFolder
+   
+To create a new TYPO3 project using the TYPO3 Base Distribution in a ddev environment::
+	# Download the Base Distribution, the latest "LTS" release (10)
+   ddev composer create "typo3/cms-base-distribution:^10" --prefer-dist
 
 
 .. note::
