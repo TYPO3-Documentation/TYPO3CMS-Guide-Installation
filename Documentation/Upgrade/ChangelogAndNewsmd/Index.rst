@@ -1,7 +1,7 @@
-﻿.. include:: ../../Includes.txt
+﻿:orphan:
 
 
-.. _check-the-changelog-and-news-md:
+The content of this page was moved to :ref:`check-the-changelog-and-news-md`.
 
 ===================
 Check the ChangeLog
@@ -18,8 +18,3 @@ whether or not your website is affected by the change.
 You can also find the ChangeLog in the Install Tool at "Upgrade Analysis". Here you can mark files
 as read after checking them, so you get a ToDo list for the upgrade.
 
-.. figure:: ../../Images/Upgrade-Analysis.png
-   :class: with-shadow
-   :alt: Uprade Analysis
-
-   The "Upgrade Analysis" in the Install Tool
