@@ -22,7 +22,8 @@ To create a new TYPO3 project using the TYPO3 Base Distribution::
 	composer create-project typo3/cms-base-distribution YourNewProjectFolder
    
 To create a new TYPO3 project using the TYPO3 Base Distribution in a ddev environment::
-	# Download the Base Distribution, the latest "LTS" release (10)
+
+   # Download the Base Distribution, the latest "LTS" release (10)
    ddev composer create "typo3/cms-base-distribution:^10" --prefer-dist
 
 
