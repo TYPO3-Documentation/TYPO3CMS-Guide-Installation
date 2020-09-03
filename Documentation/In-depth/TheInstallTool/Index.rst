@@ -113,9 +113,9 @@ impact on your system. You can enable or disable these features here.
    On new installation it is recommended to activate the following features for
    TYPO3 9 LTS:
 
-      - unifiedPageTranslationHandling
-      - TypoScript.strictSyntax
-      - simplifiedControllerActionDispatching
+   - unifiedPageTranslationHandling
+   - TypoScript.strictSyntax
+   - simplifiedControllerActionDispatching
 
 **Configure Installation-Wide Options** (previously known as "All
 Configuration") allows you to configure settings that impact how your complete
