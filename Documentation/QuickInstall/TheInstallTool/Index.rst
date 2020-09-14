@@ -4,8 +4,12 @@
 .. _the-install-tool:
 
 ================
-The Install Tool
+The Admin Tool
 ================
+
+.. tip::
+
+   The "Admin Tool" was formerly called "Install Tool".
 
 
 #. Hit the start page of your freshly created site with your browser and you
@@ -74,19 +78,30 @@ The Install Tool
 #. In the last step you can choose whether you want to start with an empty
    TYPO3 or if you want to have a basis to start from.
 
+
    .. figure:: ../../Images/QuickInstall-5-Last-Step.png
       :alt: fifth step
       :class: with-shadow
 
       Install Tool in 1-2-3 mode, fifth step.
 
+   .. tip::
 
-#. **The basic installation is now complete!**
+      If you wish to install the "Introduction Package" in order to create a
+      demo site, choose:
 
-After the basic installation procedure is complete, TYPO3 will be working and
-the most appropriate settings will have been made for you. You will get
-redirected to the Backend and can log in with your administrator account.
+      * With Composer: :guilabel:`"Take me straight to the backend"`
+      * Without Composer: :guilabel:`"Get preconfigured distributions"`
 
-If you want to make changes to your installation settings at a later date, use
-the "Admin Tools" in the backend. You can find more information in the section
-"In-Depth Installation", subsection ":ref:`the-install-tool-in-depth`" below.
+      Proceed with :ref:`install-introduction-package`
+
+
+If you do not wish to install the "Introduction Package", choose
+:guilabel:`"Take me straight to the backend"` or
+:guilabel:`"Create empty starting page"`
+
+**The installation is now complete.**
+
+Find some more tips in :ref:`install-next-steps`.
+
+
