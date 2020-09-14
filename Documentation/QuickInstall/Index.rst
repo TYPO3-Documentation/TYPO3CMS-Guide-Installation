@@ -43,6 +43,12 @@ machine (which needs elevated permissions on Windows machines).
 
    * :ref:`the-install-tool`
 
+4. Install "Introduction Package" (optional)
+
+   This is recommended if you wish to create a TYPO3 demo site.
+
+   * :ref:`install-introduction-package`
+
 
 .. toctree::
    :titlesonly:
@@ -51,4 +57,5 @@ machine (which needs elevated permissions on Windows machines).
    Composer/Index
    GetAndUnpack/Index
    TheInstallTool/Index
-
+   IntroductionPackage/Index
+   NextSteps/Index

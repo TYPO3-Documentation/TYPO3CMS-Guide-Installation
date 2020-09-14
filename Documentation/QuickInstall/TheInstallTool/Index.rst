@@ -4,8 +4,12 @@
 .. _the-install-tool:
 
 ================
-The Install Tool
+The Admin Tool
 ================
+
+.. tip::
+
+   The "Admin Tool" was formerly called "Install Tool".
 
 
 #. Hit the start page of your freshly created site with your browser and you
@@ -74,48 +78,30 @@ The Install Tool
 #. In the last step you can choose whether you want to start with an empty
    TYPO3 or if you want to have a basis to start from.
 
+
    .. figure:: ../../Images/QuickInstall-5-Last-Step.png
       :alt: fifth step
       :class: with-shadow
 
       Install Tool in 1-2-3 mode, fifth step.
-      
-   **Introduction distribution**
-   
-   If you are using TYPO3 for the first time you may want to
-   see a working example of the CMS before you start work on
-   your own project.
-   The `Official Introduction Package
-   <https://extensions.typo3.org/extension/introduction/>`__ showcases many of 
-   TYPO3's capabilities and gives you the ability to try them first hand.
-   The Introduction Package utilizes the `bootstrap_package extension
-   <https://extensions.typo3.org/extension/bootstrap_package/>`__
-   to generate multiple responsive HTML templates that you can select and try
-   out.
-   It also features examples of the different kinds page content that you 
-   typically see on a website. Such as paragraphs of text, images, tables 
-   and navigation menus.
-   
-   #. **If you installed TYPO3 with composer**
-      
-      You will need to `add the composer package and enable the extension in 
-      the backend of the CMS
-      <https://docs.typo3.org/typo3cms/extensions/introduction/stable/Installation.html>`__.
 
-   #. **If you installed TYPO3 without composer**
-   
-      You can select "Yes, download the list of distributions" when you finish 
-      installing the CMS.
-      Then, when you log in to the backend for the first time, you will be 
-      presented with a list of available packages including the "Official 
-      Introduction Package".
+   .. tip::
 
-#. **The basic installation is now complete!**
+      If you wish to install the "Introduction Package" in order to create a
+      demo site, choose:
 
-After the basic installation procedure is complete, TYPO3 will be working and
-the most appropriate settings will have been made for you. You will get
-redirected to the Backend and can log in with your administrator account.
+      * With Composer: :guilabel:`"Take me straight to the backend"`
+      * Without Composer: :guilabel:`"Get preconfigured distributions"`
 
-If you want to make changes to your installation settings at a later date, use
-the "Admin Tools" in the backend. You can find more information in the section
-"In-Depth Installation", subsection ":ref:`the-install-tool-in-depth`" below.
+      Proceed with :ref:`install-introduction-package`
+
+
+If you do not wish to install the "Introduction Package", choose
+:guilabel:`"Take me straight to the backend"` or
+:guilabel:`"Create empty starting page"`
+
+**The installation is now complete.**
+
+Find some more tips in :ref:`install-next-steps`.
+
+
