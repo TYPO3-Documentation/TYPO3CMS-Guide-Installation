@@ -3,7 +3,7 @@
 .. _quick-installation:
 
 ==================
-Quick Installation
+Installation steps
 ==================
 
 For those already familiar with running web software, get started quickly with
@@ -12,8 +12,6 @@ section :ref:`in-depth-installation`.
 
 The following instructions assume you are able to create symlinks on the target
 machine (which needs elevated permissions on Windows machines).
-
-**Installation steps:**
 
 .. rst-class:: bignums-xxl
 
