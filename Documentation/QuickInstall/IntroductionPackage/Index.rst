@@ -87,7 +87,7 @@ In the backend:
 First steps with the Introduction Package
 =========================================
 
-The "Introduction Pages" creates some pages. The top level page is named "Congratulations".
+The "Introduction Package" creates some pages. The top level page is named "Congratulations".
 
 .. rst-class:: bignums-xxl
 
