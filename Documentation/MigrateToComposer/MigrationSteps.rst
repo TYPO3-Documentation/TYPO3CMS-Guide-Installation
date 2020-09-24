@@ -68,30 +68,22 @@ In short:
 
 You have to decide by yourself, which syntax fits best to your needs.
 
+.. _composer-migration-require-all:
+.. _composer-migration-require-subtree-packages:
+
 Install the Core
 ----------------
 
-.. _composer-migration-require-all:
+.. hint::
 
-The Old Way: Add Everything
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Since TYPO3 9, TYPO3 must be installed as individual packages for
+   each system extension (see subtree split).
+   The concept means, you will not copy
+   the full TYPO3 core package, including all system extensions, you will
+   never use. But only install what you really want. You will not be able
+   to install the full core `typo3/cms:^9`.
 
-As already written above, the line to install TYPO3 7 LTS would be::
-
-    composer require typo3/cms:~7.6.0
-
-.. _composer-migration-require-subtree-packages:
-
-Add only code you need
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Since TYPO3 8.7.10 you **should** only add code you need, thus require individual
-TYPO3 core extensions instead of the full `typo3/cms` package, like it was necessary
-for TYPO3 7.6 or older. It is **mandatory** to do so for TYPO3 9 LTS. 
-The concept means, you will not copy
-the full TYPO3 core package, including all system extensions, you will
-never use. But only install what you really want. You will not be able
-to install `typo3/cms:^9`, but have to name each system extension::
+Install the system extensions::
 
     composer require typo3/minimal:^9.5
     composer require typo3/cms-scheduler:^9.5
@@ -107,7 +99,7 @@ convention
 :file:`typo3/cms-<extension name with dash "-" instead of underscore "_">`,
 e.g. :file:`typo3/cms-fluid-styled-content`.
 
-.. note ::
+.. note::
 
     To find out all TYPO3 Core packages, you can visit the TYPO3 Composer Helper website.
     https://get.typo3.org/misc/composer/helper
