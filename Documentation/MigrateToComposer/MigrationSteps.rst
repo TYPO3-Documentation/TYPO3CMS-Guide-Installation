@@ -76,12 +76,10 @@ Install the Core
 
 .. hint::
 
-   Since TYPO3 9, TYPO3 must be installed as individual packages for
-   each system extension (see subtree split).
-   The concept means, you will not copy
-   the full TYPO3 core package, including all system extensions, you will
-   never use. But only install what you really want. You will not be able
-   to install the full core `typo3/cms:^9`.
+   Since version 9 TYPO3 must be installed using individual `typo3/cms-*` packages
+   (see "subtree split" for details). This means that you will only install the
+   system extensions you really need. This, among others, increases security. The
+   former `typo3/cms` package cannot be installed anymore.
 
 Install the system extensions::
 
