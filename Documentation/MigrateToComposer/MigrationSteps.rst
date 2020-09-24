@@ -56,49 +56,37 @@ require`. The full syntax is::
 
 **Example**::
 
-    composer require typo3/cms:~7.6.0
+    composer require typo3/cms-core:~9.5.0
 
 There are different ways to define the version of the package, you want
 to install. The most common syntaxes start with `^` (e.g.
-`^7.6`) or with `~` (e.g. `~7.6.0`). A full documentation can be
+`^9.5`) or with `~` (e.g. `~9.5.0`). A full documentation can be
 found at https://getcomposer.org/doc/articles/versions.md
 
 In short:
 
-*  `^7.6` or `^7.6.0` tells `composer` to add newest package of
-   version 7.\* with at least 7.6.0, but not version 8.
+*  `^9.5` or `^9.5.0` tells `composer` to add newest package of
+   version 9.\* with at least 9.5.0, but not version 10.
 
-*  `~7.6.0` tells `composer` to add the newest package of version
-   7.6.\* with at least 7.6.0, but not version 7.7.
+*  `~9.5.0` tells `composer` to add the newest package of version
+   9.5.\* with at least 9.5.0, but not version 9.6.
 
 You have to decide by yourself, which syntax fits best to your needs.
+
+.. _composer-migration-require-all:
+.. _composer-migration-require-subtree-packages:
 
 Install the Core
 ----------------
 
-.. _composer-migration-require-all:
+.. hint::
 
-The Old Way: Add Everything
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Since version 9 TYPO3 must be installed using individual `typo3/cms-*` packages
+   (see "subtree split" for details). This means that you will only install the
+   system extensions you really need. This, among others, increases security. The
+   former `typo3/cms` package cannot be installed anymore.
 
-As already written above, the line to install TYPO3 7 LTS would be::
-
-    composer require typo3/cms:~7.6.0
-
-While installing TYPO3 8 LTS works with this line::
-
-    composer require typo3/cms:~8.7.0
-
-.. _composer-migration-require-subtree-packages:
-
-The New Way: Add Only Code, You Need
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Since TYPO3 8.7.10 you **can** use a concept, called "subtree split". It
-will be **mandatory** for TYPO3 9. The concept means, you will not copy
-the full TYPO3 core package, including all system extensions, you will
-never use. But only install what you really want. You will not be able
-to install `typo3/cms:^9`, but have to name each system extension::
+Install the system extensions::
 
     composer require typo3/cms-core:~9.0.0
     composer require typo3/cms-backend:~9.0.0
@@ -114,6 +102,14 @@ To find the correct package names, you can either take a look in the
 convention
 :file:`typo3/cms-<extension name with dash "-" instead of underscore "_">`,
 e.g. :file:`typo3/cms-fluid-styled-content`.
+
+.. note::
+
+    To find out all TYPO3 Core packages, you can visit the TYPO3 Composer Helper website.
+    https://get.typo3.org/misc/composer/helper
+    From this website, you can select TYPO3 Core Packages you need and generate 
+    the composer command to require them.
+    
 
 Install Extensions from Packagist
 ---------------------------------

@@ -55,11 +55,8 @@ party packages.
 Update TYPO3 Core
 ~~~~~~~~~~~~~~~~~
 
-Without "subtree split"::
 
-    composer update typo3/cms --with-all-dependencies
-
-With "subtree split"::
+Update all system extensions::
 
     composer update typo3/cms-* --with-all-dependencies
 
