@@ -235,11 +235,25 @@ additional lines added to the :file:`composer.json` from above:
         ],
         "extra": {
             "typo3/cms": {
-                "cms-package-dir": "{$vendor-dir}/typo3/cms",
                 "web-dir": "public"
             }
         }
     }
+
+.. note::
+   `cms-package-dir` `is no longer supported <https://github.com/TYPO3/CmsComposerInstallers/issues/75#issuecomment-674998506>`__
+   since subtree split. You will sometimes see composer.json files with this:
+
+   .. code-block:: json
+
+      "extra": {
+            "typo3/cms": {
+                "cms-package-dir": "{$vendor-dir}/typo3/cms"
+            }
+       }
+
+   There is no harm in that, but it won't have any effect.
+
 
 The Git repository must be a TYPO3 extension, with all the required
 files (e.g. :file:`ext_emconf.php`) and must contain a valid
@@ -308,7 +322,6 @@ To complete our example :file:`composer.json`, it would look like this:
         ],
         "extra": {
             "typo3/cms": {
-                "cms-package-dir": "{$vendor-dir}/typo3/cms",
                 "web-dir": "public"
             }
         },
