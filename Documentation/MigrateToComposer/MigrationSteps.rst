@@ -61,7 +61,7 @@ found at https://getcomposer.org/doc/articles/versions.md
 In short:
 
 *  `^9.5` or `^9.5.0` tells Composer to add newest package of
-   version 7.\* with at least 9.5.0, but not version 10.
+   version 9.\* with at least 9.5.0, but not version 10.
 
 *  `~9.5.0` tells `composer` to add the newest package of version
    9.5.\* with at least 9.5.0, but not version 9.6.
