@@ -58,8 +58,8 @@ requires section.
    The list of extensions developed directly in the core repository changes from 
    time to time: Some extensions are merged into others, some are integrated, 
    others abandoned from core and maintained at a different place. 
-   If you want to know why this happened, you can have a look at this `list 
-   <https://docs.typo3.org/Home/SystemExtensions.html> or search in the `breaking 
+   If you want to know some details, you can have a look at this `list 
+   <https://docs.typo3.org/Home/SystemExtensions.html>`_ or search in the `breaking 
    changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_ 
    for the extension key (not the package name!).
 
