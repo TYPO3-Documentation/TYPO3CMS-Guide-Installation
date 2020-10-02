@@ -55,10 +55,13 @@ requires section.
 
 .. tip::
 
-   Sometimes core extension get removed or merged into other extension. If you
-   want to know why this happened, you have to search in the `breaking changes 
-   <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_ for
-   the extension key (not package name!).
+   The list of extensions developed directly in the core repository changes from 
+   time to time: Some extensions are merged into others, some are integrated, 
+   others abandoned from core and maintained at a different place. 
+   If you want to know why this happened, you can have a look at this `list 
+   <https://docs.typo3.org/Home/SystemExtensions.html> or search in the `breaking 
+   changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_ 
+   for the extension key (not the package name!).
 
 .. figure:: ../../Images/ext-on-packagist.png
    :class: with-shadow
