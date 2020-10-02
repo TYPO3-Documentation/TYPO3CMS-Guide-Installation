@@ -53,6 +53,13 @@ To find the matching extension versions you can go to `packagist.org
 <https://packagist.org/>`_, search for your extension and take a look at the
 requires section.
 
+.. tip::
+
+   Sometimes core extension get removed or merged into other extension. If you
+   want to know why this happened, you have to search in the `breaking changes 
+   <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_ for
+   the extension key (not package name!).
+
 .. figure:: ../../Images/ext-on-packagist.png
    :class: with-shadow
    :alt: extension on packagist
