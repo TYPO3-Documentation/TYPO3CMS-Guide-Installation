@@ -50,6 +50,17 @@ To find the matching extension versions you can go to `packagist.org
 <https://packagist.org/>`_, search for your extension and take a look at the
 requires section.
 
+.. tip::
+
+   The list of system extensions developed directly in the TYPO3 core repository
+   changes from time to time: Some extensions are merged into others, new system extensions
+   are added and others abandoned or released to the public and therefore maintained at a
+   different place.
+   If you want to know details, you can have a look at this `list
+   <https://docs.typo3.org/Home/SystemExtensions.html>`_ or search in the
+   `breaking changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_
+   for the extension key (not the package name!).
+
 .. figure:: ../../Images/ext-on-packagist.png
    :class: with-shadow
    :alt: extension on packagist
