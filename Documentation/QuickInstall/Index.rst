@@ -26,6 +26,11 @@ machine (which needs elevated permissions on Windows machines).
    * Database server (MySQL, PostgreSQL, MariaDB ...)
    * ... more see :ref:`system-requirements`
 
+   .. tip::
+      Alternatively, you can use a container solution such as
+      `DDEV <https://www.ddev.com/get-started/>`__ which comes with preconfigured
+      configuration for TYPO3.
+
 2. Install the TYPO3 core
 
    This can be done either using the package manager Composer or by unpacking
