@@ -3,8 +3,9 @@
 
 .. _in-depth-installation:
 
-In-Depth Installation
----------------------
+======================
+Installation explained
+======================
 
 
 .. toctree::
