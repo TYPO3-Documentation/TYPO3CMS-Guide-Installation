@@ -2,9 +2,9 @@
 
 .. _quick-installation:
 
-==================
-Installation steps
-==================
+================
+Installing TYPO3
+================
 
 For those already familiar with running web software, get started quickly with
 this quick install guide. For a more detailed description, take a look at the
