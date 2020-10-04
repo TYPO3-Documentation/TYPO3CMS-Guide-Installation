@@ -1,13 +1,13 @@
 .. include:: ../../Includes.txt
 
-.. _upgradev10:
+.. _upgradeToLts:
 
-==============
-Upgrade to v10
-==============
+=======================
+Upgrade to v11 from v10
+=======================
 
-Besides following the general upgrade guide, you can find some additional info on new v10 
-features here.
+Besides following the general information in this chapter, you can find some additional information specific for
+upgrading to v11 from the previous LTS.
 
 General Changes
 ===============
