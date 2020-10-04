@@ -1,10 +1,10 @@
 .. include:: ../../Includes.txt
 
-.. _upgradev10:
+.. _upgradeToLts:
 
-==============
-Upgrade to v10
-==============
+======================
+Upgrade to v10 from v9
+======================
 
 Besides following the general upgrade guide, you can find some additional info on new v10 
 features here.
