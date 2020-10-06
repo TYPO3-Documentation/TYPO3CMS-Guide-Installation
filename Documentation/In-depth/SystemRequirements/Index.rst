@@ -19,7 +19,7 @@ TYPO3 requires a web server, PHP and a database system.
   adjust the memory limit. See :ref:`system-requirements-php`.
 
 * TYPO3 can be used with a great many **database** systems (MariaDB >= 10.2 <= 10.3,
-  Microsoft SQL Server, MySQL >= 5.5 <= 8.1, PostgreSQL, SQLite).
+  Microsoft SQL Server, MySQL 5.5+, PostgreSQL, SQLite).
   See :ref:`system-requirements-database` on this page for details.
 
 * If you want TYPO3 to automatically carry out **image processing** – for example
