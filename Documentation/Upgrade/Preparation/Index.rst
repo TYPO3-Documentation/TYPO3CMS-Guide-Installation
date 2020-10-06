@@ -46,10 +46,11 @@ Read where to find deprecation documentation in the chapter about
 
    TYPO3 aims at providing a reliable backwards compatibility between versions:
 
-   *  Minor versions are always backwards compatible
+   *  Minor versions are always backwards compatible - unless explicitly stated 
+      otherwise (for example in case of security updates)
 
    *  Major versions may contain breaking changes - normally these are
-      deprecated in the version before
+      deprecated one major version in advance
 
    *  Most breaking changes usually happen in the first Sprint Release
 
