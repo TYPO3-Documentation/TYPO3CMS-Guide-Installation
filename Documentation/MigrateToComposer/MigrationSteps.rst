@@ -61,37 +61,27 @@ found at https://getcomposer.org/doc/articles/versions.md
 In short:
 
 *  `^9.5` or `^9.5.0` tells Composer to add newest package of
-   version 7.\* with at least 9.5.0, but not version 10.
+   version 9.\* with at least 9.5.0, but not version 10.
 
 *  `~9.5.0` tells `composer` to add the newest package of version
    9.5.\* with at least 9.5.0, but not version 9.6.
 
 You have to decide by yourself, which syntax fits best to your needs.
 
+.. _composer-migration-require-all:
+.. _composer-migration-require-subtree-packages:
+
 Install the Core
 ----------------
 
-.. _composer-migration-require-all:
+.. hint::
 
-The Old Way: Add Everything
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   Since version 9 TYPO3 must be installed using individual `typo3/cms-*` packages
+   (see "subtree split" for details). This means that you will only install the
+   system extensions you really need. This, among others, increases security. The
+   former `typo3/cms` package cannot be installed anymore.
 
-As already written above, the line to install TYPO3 7 LTS would be::
-
-    composer require typo3/cms:~7.6.0
-
-.. _composer-migration-require-subtree-packages:
-
-Add only code you need
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Since TYPO3 8.7.10 you **should** only add code you need, thus require individual
-TYPO3 core extensions instead of the full `typo3/cms` package, like it was necessary
-for TYPO3 7.6 or older. It is **mandatory** to do so for TYPO3 9 LTS. 
-The concept means, you will not copy
-the full TYPO3 core package, including all system extensions, you will
-never use. But only install what you really want. You will not be able
-to install `typo3/cms:^9`, but have to name each system extension::
+Install the system extensions::
 
     composer require typo3/minimal:^9.5
     composer require typo3/cms-scheduler:^9.5
@@ -107,7 +97,7 @@ convention
 :file:`typo3/cms-<extension name with dash "-" instead of underscore "_">`,
 e.g. :file:`typo3/cms-fluid-styled-content`.
 
-.. note ::
+.. note::
 
     To find out all TYPO3 Core packages, you can visit the TYPO3 Composer Helper website.
     https://get.typo3.org/misc/composer/helper
@@ -245,11 +235,25 @@ additional lines added to the :file:`composer.json` from above:
         ],
         "extra": {
             "typo3/cms": {
-                "cms-package-dir": "{$vendor-dir}/typo3/cms",
                 "web-dir": "public"
             }
         }
     }
+
+.. note::
+   `cms-package-dir` `is no longer supported <https://github.com/TYPO3/CmsComposerInstallers/issues/75#issuecomment-674998506>`__
+   since subtree split. You will sometimes see composer.json files with this:
+
+   .. code-block:: json
+
+      "extra": {
+            "typo3/cms": {
+                "cms-package-dir": "{$vendor-dir}/typo3/cms"
+            }
+       }
+
+   There is no harm in that, but it won't have any effect.
+
 
 The Git repository must be a TYPO3 extension, with all the required
 files (e.g. :file:`ext_emconf.php`) and must contain a valid
@@ -318,7 +322,6 @@ To complete our example :file:`composer.json`, it would look like this:
         ],
         "extra": {
             "typo3/cms": {
-                "cms-package-dir": "{$vendor-dir}/typo3/cms",
                 "web-dir": "public"
             }
         },

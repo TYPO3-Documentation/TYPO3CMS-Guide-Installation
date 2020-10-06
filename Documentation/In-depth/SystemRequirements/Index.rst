@@ -18,7 +18,7 @@ TYPO3 requires a web server, PHP and a database system.
   For PHP, several PHP extensions are necessary, others recommended. You possibly want to
   adjust the memory limit. See :ref:`system-requirements-php`.
 
-* TYPO3 can be used with a great many **database** systems (MariaDB >= 10.2 <= 10.3,
+* TYPO3 can be used with many **database** systems (MariaDB >= 10.2 <= 10.3,
   Microsoft SQL Server, MySQL 5.5+, PostgreSQL, SQLite).
   See :ref:`system-requirements-database` on this page for details.
 
@@ -134,6 +134,8 @@ Microsoft Internet Information Services (IIS)
 
 * Default IIS web config file with rewrite rules can be found in
   :file:`EXT:install/Resources/Private/FolderStructureTemplateFiles/root-web-config`
+  
+* Make sure that the `URL Rewrite plugin <https://www.iis.net/downloads/microsoft/url-rewrite>`__ is installed on your system.  
 
 NGINX
 -----
