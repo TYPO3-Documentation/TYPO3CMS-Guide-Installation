@@ -7,7 +7,7 @@
 Troubleshooting
 ===============
 
-The following sections contain hints to help you solve common problems. 
+The following sections contain hints to help you solve common problems.
 Note that you should also check the section
 :guilabel:`"ADMIN TOOLS > Environment > Environment Status"` in the
 Install Tool or TYPO3 backend. TYPO3 will inform you about errors and
@@ -15,9 +15,9 @@ warnings in your installation. Follow the advice given there to fix those issues
 This helps to solve or prevent most issues.
 
 During troubleshooting, in the :guilabel:`"Settings > Configuration Presets"` section of the Install
-Tool, under "Debug settings", you should select the "Debug" preset. This is 
-especially helpful, if e.g. in the Frontend you only see a blank page. With 
-debug settings activated, the PHP error message will be displayed, which will 
+Tool, under "Debug settings", you should select the "Debug" preset. This is
+especially helpful, if e.g. in the Frontend you only see a blank page. With
+debug settings activated, the PHP error message will be displayed, which will
 help you narrow down the problem.
 
 You may also have to enable this TypoScript setting:
@@ -179,8 +179,9 @@ Cached Files in typo3temp/
 --------------------------
 
 Generally you should know that TYPO3 generates temporary "cached"
-files and PHP scripts in :file:`typo3temp/Cache/`. You can remove the
-whole :file:`typo3temp/Cache` directory at any time; the directory
+files and PHP scripts in :file:`<var-path>/cache/` (usually either
+`typo3temp/var/cache` or `var/cache`). You can remove the
+whole :file:`<var-path>/cache` directory at any time; the directory
 structure and all the caches will be re-written on the next hit to the
 system.
 
@@ -190,7 +191,7 @@ cache files become damaged and your system is not running correctly. The
 Install Tool won't load any of these caches or any extension, so it
 should be safe to use regardless of the corrupt state of the Caches.
 
-Amongst other caches, under :file:`typo3temp/Cache/Code/cache_core/`
+Amongst other caches, under :file:`<var-path>/cache/code/core/`
 you find files like these::
 
    -rw-rw----   1 www-data   www-data   61555  2014-03-26 16:28   ext_localconf_8b0519db6112697cceedb50296df89b0ce04ff70.php
