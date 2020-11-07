@@ -17,8 +17,8 @@ TYPO3 site.
    The Upgrade Wizard in the Install Tool.
 
 TYPO3 provides an upgrade wizard for easy upgrading. Go to the "Upgrade Wizard"
-section and take a look at the different wizards provided. You should go them
-through one by one.
+section and take a look at the different wizards provided. You should go
+through them one by one.
 
 You must start by using the "Update database schema: Create tables and fields"
 wizard if it's displayed, which adds new tables and columns to the database.
