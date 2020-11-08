@@ -16,14 +16,15 @@ TYPO3 site.
 
    The Upgrade Wizard in the Install Tool.
 
-TYPO3 provides an upgrade wizard for easy upgrading. Go to the "Upgrade Wizard"
-section and take a look at the different wizards provided. You should go them
+TYPO3 provides an upgrade wizard for easy upgrading. Go to the :guilabel:`Upgrade`
+section and choose :guilabel:`Upgrade Wizard`.
+Take a look at the different wizards provided. You should go them
 through one by one.
 
-You must start by using the "Update database schema: Create tables and fields"
-wizard if it's displayed, which adds new tables and columns to the database.
+You must start with :guilabel:`Create missing tables and fields`
+if it's displayed, which adds new tables and columns to the database.
 
-Click "Execute". Now all :file:`ext_tables.sql` files from core and extensions
+Click :guilabel:`Execute`. Now all :file:`ext_tables.sql` files from core and extensions
 are read and compared to your current database tables and columns. Any missing
 tables and columns will be shown and you'll be able to execute queries
 sufficient to add them.
@@ -63,7 +64,8 @@ note that some wizards provide optional features, like installing system
 extensions (for example simulatestatic) that you may not need in your current
 installation, so take care to only apply those wizards, which you really need.
 
-After running through the upgrade wizards go again to the `Database Analyzer`.
+After running through the upgrade wizards go to :guilabel:`Maintenance` >
+:guilabel:`Analyze Database Structure`.
 You will be able to execute queries to adapt them so that the tables and
 columns used by the TYPO3 Core correspond to the structure required for the new
 TYPO3 version.
