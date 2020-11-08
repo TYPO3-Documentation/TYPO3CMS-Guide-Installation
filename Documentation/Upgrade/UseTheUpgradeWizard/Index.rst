@@ -21,7 +21,7 @@ section and choose :guilabel:`Upgrade Wizard`.
 Take a look at the different wizards provided. You should go them
 through one by one.
 
-You must start by with :guilabel:`Create missing tables and fields`
+You must start with :guilabel:`Create missing tables and fields`
 if it's displayed, which adds new tables and columns to the database.
 
 Click :guilabel:`Execute`. Now all :file:`ext_tables.sql` files from core and extensions
