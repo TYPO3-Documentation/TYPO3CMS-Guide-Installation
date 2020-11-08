@@ -26,7 +26,7 @@ Installing on a Unix Server
    in-depth part of the manual). Use the shell to execute the following
    commands::
 
-      /var/www/site/htdocs/$ cd ..
+      /var/www/site/public/$ cd ..
       /var/www/site/$ wget get.typo3.org/9.5 -O typo3_src-9.5.x.tar.gz
 
 
@@ -50,7 +50,7 @@ Installing on a Unix Server
 
 #. Create these symlinks in your document root::
 
-      cd htdocs
+      cd public
       ln -s ../typo3_src-9.5.x typo3_src
       ln -s typo3_src/index.php index.php
       ln -s typo3_src/typo3 typo3
@@ -59,10 +59,9 @@ Installing on a Unix Server
 You end up with the following structure of files::
 
    typo3_src-9.5.x/
-   htdocs/typo3_src -> ../typo3_src-9.5.x/
-   htdocs/typo3 -> typo3_src/typo3/
-   htdocs/index.php -> typo3_src/index.php
-
+   public/typo3_src -> ../typo3_src-9.5.x/
+   public/typo3 -> typo3_src/typo3/
+   public/index.php -> typo3_src/index.php
 
 The advantage of this setup is that all files from the TYPO3 Source package are
 kept together in the :file:`typo3_src-9.5.x` folder and separated from other
@@ -93,7 +92,7 @@ Installing on a Windows Server
 
 #. Use the shell to create these symbolic links in your document root::
 
-      cd htdocs
+      cd public
       mklink /d typo3_src ..\typo3_src-9.5.x
       mklink /d typo3 typo3_src\typo3
       mklink index.php typo3_src\index.php
@@ -102,10 +101,9 @@ Installing on a Windows Server
    You end up with the following structure of files::
 
       typo3_src-9.5.x/
-      htdocs/typo3_src -> ../typo3_src-9.5.x/
-      htdocs/typo3 -> typo3_src/typo3/
-      htdocs/index.php -> typo3_src/index.php
-
+      public/typo3_src -> ../typo3_src-9.5.x/
+      public/typo3 -> typo3_src/typo3/
+      public/index.php -> typo3_src/index.php
 
 After extraction and symlink creation continue with the steps in
 :ref:`the-install-tool`
