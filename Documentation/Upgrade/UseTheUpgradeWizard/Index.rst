@@ -18,8 +18,8 @@ TYPO3 site.
 
 TYPO3 provides an upgrade wizard for easy upgrading. Go to the :guilabel:`Upgrade`
 section and choose :guilabel:`Upgrade Wizard`.
-Take a look at the different wizards provided. You should go them
-through one by one.
+Take a look at the different wizards provided. You should go
+through them one by one.
 
 You must start with :guilabel:`Create missing tables and fields`
 if it's displayed, which adds new tables and columns to the database.
