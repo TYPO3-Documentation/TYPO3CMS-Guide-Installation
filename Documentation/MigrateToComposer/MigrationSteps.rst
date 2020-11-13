@@ -390,15 +390,15 @@ Move files::
 
 These locations have changed:
 
-+----------------------------+---------------------------+
-| Before                     | After                     |
-+============================+===========================+
-| public/typo3conf/sites     | config/sites              |
-+----------------------------+---------------------------+
-| public/typo3temp/var       | var                       |
-+----------------------------+---------------------------+
-| public/typo3conf/l10n      | var/labels                |
-+----------------------------+---------------------------+
++--------------------------------+-----------------------+
+| Before                         | After                 |
++================================+=======================+
+| :file:`public/typo3conf/sites` | :file:`config/sites`  |
++--------------------------------+-----------------------+
+| :file:`public/typo3temp/var`   | :file:`var`           |
++--------------------------------+-----------------------+
+| :file:`public/typo3conf/l10n`  | :file:`var/labels`    |
++--------------------------------+-----------------------+
 
 
 Have a look at :ref:`t3coreapi:directory-structure` in "TYPO3 Explained". As
@@ -407,15 +407,15 @@ developer, you should also be familiar with the
 
 These file locations have **not** changed:
 
-+----------------------------------------------+
-| public/typo3conf/LocalConfiguration.php      |
-+----------------------------------------------+
-| public/typo3conf/AdditionalConfiguration.php |
-+----------------------------------------------+
-| public/typo3conf/PackageStates.php           |
-+----------------------------------------------+
-| public/typo3conf/ext                         |
-+----------------------------------------------+
++------------------------------------------------------+
+| :file:`public/typo3conf/LocalConfiguration.php`      |
++------------------------------------------------------+
+| :file:`public/typo3conf/AdditionalConfiguration.php` |
++------------------------------------------------------+
+| :file:`public/typo3conf/PackageStates.php`           |
++------------------------------------------------------+
+| :file:`public/typo3conf/ext`                         |
++------------------------------------------------------+
 
 
 This means, the :file:`config` directory does not exactly replace the
