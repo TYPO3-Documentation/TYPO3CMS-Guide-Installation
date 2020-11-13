@@ -365,3 +365,54 @@ After adding paths to the autoload you should run `composer dumpautoload`. This 
    :scale: 65 %
 .. |satis abandoned note| image:: ../Images/satis-abandoned.png
 .. |composer abandoned note| image:: ../Images/composer-ter-abandoned.png
+
+
+New file locations
+==================
+
+As final steps, you should move some files because the location will have
+changed for your site since moving to Composer.
+
+Move site configuration::
+
+   mv public/typo3conf/sites config/sites
+
+
+Move translation files::
+
+   mv public/typo3conf/l10n var/labels
+
+
+Some files are now no longer available inside the web root. For example:
+
+logs:
+
++---------+---------------------------+
+| After:  | var/log                   |
++---------+---------------------------+
+| Before: | public/typo3temp/var/log  |
++---------+---------------------------+
+
+locks:
+
++---------+---------------------------+
+| After:  | var/lock                  |
++---------+---------------------------+
+| Before: | public/typo3temp/var/lock |
++---------+---------------------------+
+
+etc.
+
+.. tip::
+
+   Have a look at :ref:`t3coreapi:directory-structure` in "TYPO3 Explained".
+
+Cleanup
+=======
+
+You can now safely delete some of the files and directories of the files which have moved, e.g.
+:file:`public/typo3temp/var/`.
+
+.. warning::
+
+   Make sure that none of your third party extensions depend on these locations!
