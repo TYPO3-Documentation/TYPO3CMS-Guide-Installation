@@ -136,6 +136,8 @@ is not meant to be used with `composer require`, but to really quickly start new
 Nevertheless, it's very good to have heard about it. If you're interested in more information, you should check
 the packages `README <https://github.com/TYPO3/TYPO3.CMS.BaseDistribution>`__.
 
+.. _secure-web:
+
 Secure Web
 ----------
 

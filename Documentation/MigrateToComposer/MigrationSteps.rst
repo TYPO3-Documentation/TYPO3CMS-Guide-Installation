@@ -359,3 +359,66 @@ After adding paths to the autoload you should run `composer dumpautoload`. This 
    :scale: 65 %
 .. |satis abandoned note| image:: ../Images/satis-abandoned.png
 .. |composer abandoned note| image:: ../Images/composer-ter-abandoned.png
+
+
+New file locations
+==================
+
+As final steps, you should move some files because the location will have
+changed for your site since moving to Composer.
+
+You should at least move the site configuration and the translations.
+
+Move files::
+
+   mv public/typo3conf/sites config/sites
+   mv public/typo3temp/var var
+   mv public/typo3conf/l10n var/labels
+
+.. important::
+
+   The :file:`var` directory may already exist. In that case, move the files
+   individually. You can also delete the "old" files in
+   :file:`public/typo3temp/var`, unless you need to keep the log files
+   or anything else that may still be relevant.
+
+These locations have changed:
+
++--------------------------------+-----------------------+
+| Before                         | After                 |
++================================+=======================+
+| :file:`public/typo3conf/sites` | :file:`config/sites`  |
++--------------------------------+-----------------------+
+| :file:`public/typo3temp/var`   | :file:`var`           |
++--------------------------------+-----------------------+
+| :file:`public/typo3conf/l10n`  | :file:`var/labels`    |
++--------------------------------+-----------------------+
+
+
+Have a look at :ref:`t3coreapi:directory-structure` in "TYPO3 Explained". As
+developer, you should also be familiar with the
+:ref:`Environment API <t3coreapi:Environment>`.
+
+These file locations have **not** changed:
+
++------------------------------------------------------+
+| :file:`public/typo3conf/LocalConfiguration.php`      |
++------------------------------------------------------+
+| :file:`public/typo3conf/AdditionalConfiguration.php` |
++------------------------------------------------------+
+| :file:`public/typo3conf/PackageStates.php`           |
++------------------------------------------------------+
+| :file:`public/typo3conf/ext`                         |
++------------------------------------------------------+
+
+
+This means, the :file:`config` directory does not exactly replace the
+:file:`public/typo3conf` directory. This may change in the future.
+
+.. tip::
+
+   You can take additional measures to move :file:`public/typo3conf/ext` out of the web
+   root too. Have a look at :ref:`mig-composer-clear-typo3conf-ext-folder` in the
+   "Best practices" section. You may also want to look at the
+   :ref:`"Secure Web" <secure-web>` extension which is a way to split up the "public"
+   and "private" files.
