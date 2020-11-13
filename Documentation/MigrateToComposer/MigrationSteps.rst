@@ -25,7 +25,18 @@ Configure Composer
 ==================
 
 Create a file with name :file:`composer.json` in your project root, not inside
-your web root. At the moment, only these few lines are required:
+your web root.
+
+You can use the :file:`composer.json` from typo3/cms-base-distribution as an
+example. Use the file from the branch which matches your current version, e.g.
+`10.x <https://github.com/TYPO3/TYPO3.CMS.BaseDistribution/blob/10.x/composer.json>`__.
+
+However, this may require extensions you don't need or omit extensions you do
+need, so be sure to update the required extensions as described in the next
+sections.
+
+If some of your extensions are not available on packagist, but are available in
+TER, you can add composer.typo3.org as repository:
 
 .. code-block:: json
 
@@ -38,8 +49,31 @@ your web root. At the moment, only these few lines are required:
         ]
     }
 
-Note, that you only need to include this Composer repository, if you have to use
-legacy extensions that are not available on Packagist, but only in TER.
+The :file:`composer.json` in the Base distribution includes a scripts section:
+
+.. code-block:: json
+
+
+   "scripts":{
+      "typo3-cms-scripts": [
+         "typo3cms install:generatepackagestates",
+         "typo3cms install:fixfolderstructure"
+      ],
+      "post-autoload-dump": [
+         "@typo3-cms-scripts"
+      ]
+   }
+
+
+This requires helhum/typo3-console (so be sure to require that too) and is essential
+for generating the file :file:`typo3conf/PackageStates.php`.
+
+
+.. hint::
+
+   The script section may not be available in current master of the Base Distribution.
+   Look at the previous versions.
+
 
 Add All Required Packages to Your Project
 =========================================
