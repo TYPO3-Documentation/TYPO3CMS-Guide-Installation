@@ -367,46 +367,58 @@ New file locations
 As final steps, you should move some files because the location will have
 changed for your site since moving to Composer.
 
-Move site configuration::
+You should at least move the site configuration and the translations.
+
+Move files::
 
    mv public/typo3conf/sites config/sites
-
-
-Move translation files::
-
+   mv public/typo3temp/var var
    mv public/typo3conf/l10n var/labels
 
+.. important::
 
-Some files are now no longer available inside the web root. For example:
+   The :file:`var` directory may already exist. In that case, move the files
+   individually. You can also delete the "old" files in
+   :file:`public/typo3temp/var`, unless you need to keep the log files
+   or anything else that may still be relevant.
 
-logs:
+These locations have changed:
 
-+---------+---------------------------+
-| After:  | var/log                   |
-+---------+---------------------------+
-| Before: | public/typo3temp/var/log  |
-+---------+---------------------------+
++----------------------------+---------------------------+
+| Before                     | After                     |
++============================+===========================+
+| public/typo3conf/sites     | config/sites              |
++----------------------------+---------------------------+
+| public/typo3temp/var       | var                       |
++----------------------------+---------------------------+
+| public/typo3conf/l10n      | var/labels                |
++----------------------------+---------------------------+
 
-locks:
 
-+---------+---------------------------+
-| After:  | var/lock                  |
-+---------+---------------------------+
-| Before: | public/typo3temp/var/lock |
-+---------+---------------------------+
+Have a look at :ref:`t3coreapi:directory-structure` in "TYPO3 Explained". As
+developer, you should also be familiar with the
+:ref:`Environment API <t3coreapi:Environment>`.
 
-etc.
+These file locations have **not** changed:
+
++----------------------------------------------+
+| public/typo3conf/LocalConfiguration.php      |
++----------------------------------------------+
+| public/typo3conf/AdditionalConfiguration.php |
++----------------------------------------------+
+| public/typo3conf/PackageStates.php           |
++----------------------------------------------+
+| public/typo3conf/ext                         |
++----------------------------------------------+
+
+
+This means, the :file:`config` directory does not exactly replace the
+:file:`public/typo3conf` directory. This may change in the future.
 
 .. tip::
 
-   Have a look at :ref:`t3coreapi:directory-structure` in "TYPO3 Explained".
-
-Cleanup
-=======
-
-You can now safely delete some of the files and directories of the files which have moved, e.g.
-:file:`public/typo3temp/var/`.
-
-.. warning::
-
-   Make sure that none of your third party extensions depend on these locations!
+   You can take additional measures to move :file:`public/typo3conf/ext` out of the web
+   root too. Have a look at :ref:`mig-composer-clear-typo3conf-ext-folder` in the
+   "Best practices" section. You may also want to look at the
+   :ref:`"Secure Web" <secure-web>` extension which is a way to split up the "public"
+   and "private" files.
