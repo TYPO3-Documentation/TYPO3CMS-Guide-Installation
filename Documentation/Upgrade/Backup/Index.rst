@@ -19,3 +19,6 @@ Also you may prefer to upgrade a copy of your site first, if there have been a
 lot of changes and some of them might interfere with functions of your site.
 See the `ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/>`_ to
 check that.
+
+For more detailed information about TYPO3 backups see :ref:`t3coreapi:security-backups`
+in *TYPO3 Explained*.
