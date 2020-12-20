@@ -134,8 +134,8 @@ Microsoft Internet Information Services (IIS)
 
 * Default IIS web config file with rewrite rules can be found in
   :file:`EXT:install/Resources/Private/FolderStructureTemplateFiles/root-web-config`
-  
-* Make sure that the `URL Rewrite plugin <https://www.iis.net/downloads/microsoft/url-rewrite>`__ is installed on your system.  
+
+* Make sure that the `URL Rewrite plugin <https://www.iis.net/downloads/microsoft/url-rewrite>`__ is installed on your system.
 
 NGINX
 -----
@@ -218,6 +218,17 @@ Example Configuration:
    location / {
        try_files $uri $uri/ /index.php$is_args$args;
    }
+
+    # TYPO3 Backend URLs
+    location /typo3/ {
+        absolute_redirect off;
+        try_files $uri /typo3/index.php$is_args$args;
+    }
+
+    location = /typo3 {
+        return 302 /typo3/;
+    }
+
 
    location ~ [^/]\.php(/|$) {
        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
