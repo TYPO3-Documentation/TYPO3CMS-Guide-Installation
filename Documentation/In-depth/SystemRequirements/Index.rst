@@ -220,6 +220,10 @@ Example Configuration:
    }
 
     # TYPO3 Backend URLs
+    location = /typo3 {
+        rewrite ^ /typo3/;
+    }
+
     location /typo3/ {
         absolute_redirect off;
         try_files $uri /typo3/index.php$is_args$args;
