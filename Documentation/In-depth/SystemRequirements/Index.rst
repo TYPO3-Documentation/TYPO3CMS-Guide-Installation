@@ -229,9 +229,6 @@ Example Configuration:
         try_files $uri /typo3/index.php$is_args$args;
     }
 
-    location = /typo3 {
-        return 302 /typo3/;
-    }
 
 
    location ~ [^/]\.php(/|$) {
