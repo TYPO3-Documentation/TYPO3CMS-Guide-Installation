@@ -26,7 +26,7 @@ In a non-composer installation execute::
 
 .. tip::
 
-   Use `referenceindex:update 2> /dev/null` to suppress the output of the symfony progressbar to stderr
+   Use `referenceindex:update 2> /dev/null` to suppress the progress output
    (e.g. when the command is executed by a cronjob).
 
 Without Command Line
