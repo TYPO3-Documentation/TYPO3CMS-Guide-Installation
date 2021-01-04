@@ -46,7 +46,7 @@ Include Your Individual Extensions From `packages` Folder
 In the next step, you move all your individual extensions from
 :file:`public/typo3conf/ext` to :file:`packages`. And for this way to include them,
 it's important, that each extension has it's own correct :file:`composer.json` file.
-How this file should look in your extension, can be found on `composer.typo3.org <https://composer.typo3.org/>`__ or
+How this file should look in your extension, is documented in :ref:`Extension Development Documentation <t3coreapi:composer-json>` or
 `this blog post from Helmut Hummel <https://insight.helhum.io/post/148886148725/composerjson-specification-for-typo3-extensions>`__.
 
 Assumed, your package key is, ``foo/bar``, you can type the following command to include your extension to your project::
