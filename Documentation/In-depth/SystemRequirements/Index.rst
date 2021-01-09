@@ -225,7 +225,6 @@ Example Configuration:
     }
 
     location /typo3/ {
-        absolute_redirect off;
         try_files $uri /typo3/index.php$is_args$args;
     }
 
