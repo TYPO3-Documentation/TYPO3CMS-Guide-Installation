@@ -264,7 +264,8 @@ PHP Required Extensions
 Your PHP needs to support the following extensions. Install will check if these
 are available.
 
-* These are usually part of the standard PHP package on most distributions:
+* These are usually part of the standard PHP package on most distributions and
+  are mandatory for a proper function:
 
   * PDO
   * json
@@ -273,9 +274,12 @@ are available.
   * xml
   * filter
   * hash
-  * mbstring
   * SPL
   * standard
+
+* These are optional but highly recommended:
+
+  * mbstring
 
 * These might have to be installed separately:
 
