@@ -159,7 +159,7 @@ that your update is finished.
 .. note::
 
    Make sure to read the release notes of even the minor versions carefully. While
-   great is taken to keep the minor updates as easy as possible, (especially
+   great care is taken to keep the minor updates as easy as possible, (especially
    when releasing security updates) more steps might be necessary.
 
 In case of a *major update*, e.g. from TYPO3 8.7 to 9.5, go ahead with the next
