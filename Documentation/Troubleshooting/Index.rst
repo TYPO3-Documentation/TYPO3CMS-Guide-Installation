@@ -52,7 +52,7 @@ Resetting lost install tool passwords
 -------------------------------------
 
 As long as you have writing access to the file
-:file:`typo3conf/LocalConfiguration.php` you can reset - if not recover -
+:file:`typo3conf/LocalConfiguration.php` you can reset
 the install tool password.
 
 Just enter any desired password into the dialogue asking for your install tool
