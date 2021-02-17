@@ -14,6 +14,72 @@ Install Tool or TYPO3 backend. TYPO3 will inform you about errors and
 warnings in your installation. Follow the advice given there to fix those issues.
 This helps to solve or prevent most issues.
 
+.. _troubleshooting_lost_password:
+
+Lost passwords
+==============
+
+.. _troubleshooting_lost_password_admin:
+
+Resetting lost admin passwords
+------------------------------
+
+If the admin password got lost you can create a new admin user from the admin
+tools section :guilabel:`Maintenance`.
+
+Directly from the TYPO3 backend the admin tools can only be accessed by admin users
+with system maintainer rights. And such a user is lacking.
+
+However the admin tools can be accessed as :guilabel:`Install tool` by calling::
+
+   https://examle.com/typo3/install.php
+
+The install tool expects the install tool password. If you have also lost this
+one see :ref:`troubleshooting_lost_password_install_tool`.
+
+Once in the admin tool go to :guilabel:`Maintenance > Create Administrative User`
+and click on :guilabel:`Create Administrator`. In the following dialogue you
+can enter a new username and password for the new administrator.
+
+Use this new administrator to log into the TYPO3 backend. In the module
+:guilabel:`Backend Users` you can change the passwords of existing users,
+including admins.
+
+
+.. _troubleshooting_lost_password_install_tool:
+
+Resetting lost install tool passwords
+-------------------------------------
+
+As long as you have writing access to the file
+:file:`typo3conf/LocalConfiguration.php` you can reset
+the install tool password.
+
+Just enter any desired password into the dialogue asking for your install tool
+password. If it is not correct you will get a message like this one::
+
+   "Given password does not match the install tool login password. Calculated hash:
+   $argon2i$v=xyz"
+
+Copy this hash including the :php:`$argon2i` part and any trailing dots. Then
+open the file :file:`typo3conf/LocalConfiguration.php` and replace the following
+array entry::
+
+   'BE' => [
+      'installToolPassword' => '$argon2i$v=xyz',
+   ],
+
+.. note::
+
+   If the new install tool password does not work, check if it gets overridden
+   later in the LocalConfiguration.php or in the AdditionalConfiguration.php
+   if one exists. If you can still not log into the install tool check if
+   there are errors in the logs when debugging is turned on.
+
+
+Debug settings
+==============
+
 During troubleshooting, in the :guilabel:`"Settings > Configuration Presets"` section of the Install
 Tool, under "Debug settings", you should select the "Debug" preset. This is
 especially helpful, if e.g. in the Frontend you only see a blank page. With
@@ -246,4 +312,3 @@ set up image processing for the very first time.
 
 The problem is solved by clearing the files in the :file:`typo3temp/`
 folder. Also make sure to clear the database table "cache\_pages".
-
