@@ -27,7 +27,7 @@ Resetting lost admin passwords
 If the admin password got lost you can create a new admin user from the admin
 tools section :guilabel:`Maintenance`.
 
-Directly from the TYPO3 backend the admin tools can only be acced by admin users
+Directly from the TYPO3 backend the admin tools can only be accessed by admin users
 with system maintainer rights. And such a user is lacking.
 
 However the admin tools can be accessed as :guilabel:`Install tool` by calling::
@@ -312,4 +312,3 @@ set up image processing for the very first time.
 
 The problem is solved by clearing the files in the :file:`typo3temp/`
 folder. Also make sure to clear the database table "cache\_pages".
-
