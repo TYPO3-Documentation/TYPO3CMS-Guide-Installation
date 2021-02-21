@@ -1,6 +1,6 @@
 .. include:: /Includes.txt
 
-.. _breackingChangesExtbase6:
+.. _breakingChangesExtbase6:
 
 ==========================================================
 Breaking Changes in Extbase and Fluid in Version 1.1 - 6.2
