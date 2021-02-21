@@ -1,6 +1,6 @@
 .. include:: ../Includes.txt
 
-.. _composer-working-with:
+.. _historical-information:
 
 ======================
 Historical Information
