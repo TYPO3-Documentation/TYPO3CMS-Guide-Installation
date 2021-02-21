@@ -82,6 +82,6 @@ You can find out more about how to do this in :ref:`contribute`.
    MigrateToComposer/Index
    ReleaseIntegrity/Index
    Troubleshooting/Index
-   Historicallnformation/Index
+   HistoricalInformation/Index
    Sitemap/Index
    Linktargets
