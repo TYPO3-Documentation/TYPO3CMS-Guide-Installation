@@ -33,10 +33,10 @@ Export your data
 
 .. rst-class:: bignums
 
-   1. Go to the :guilabel:`Export` module
+   1. Go to the export module
 
       On the page tree left click on the page from where you want to start the
-      export. Select :guilabel:`More options ...` and then :guilabel:`Export`.
+      export. Select :guilabel:`More options ...`:
 
       .. figure:: /Images/ImpExpContext.png
          :class: with-shadow
@@ -44,13 +44,15 @@ Export your data
 
          Select "More options..." from the context menu of the page tree
 
+      Then select :guilabel:`Export` from the context menu.
+
       .. figure:: /Images/ImpExpContext2.png
          :class: with-shadow
          :alt: Then select "Export"
 
          Select Then select "Export"
 
-   2.  Select the tables to be exported
+   2. Select the tables to be exported
 
       You can select the tables manually, from which
       you want to export the entries correlated with the selected page. It
@@ -85,6 +87,12 @@ Export your data
       When the relation to records are lost these will be marked with an
       orange exclamation mark. Reasons for lost relations include records
       stored outside the page tree to be exported and excluded tables.
+
+      .. figure:: /Images/ImpExpCheckExport.png
+         :class: with-shadow
+         :alt: Check the exported data
+
+         Check and adjust the exported data.
 
    5. Save or export the data
 
@@ -150,7 +158,7 @@ The following shows the export dialog of TYPO3 installation of version
 3.8.0. It is often more feasible to use the Import / Export tool then to
 attempt to update very old TYPO3 installations.
 
-.. figure:: /Images/ImpExImport.png
+.. figure:: /Images/ImpExpV3.8.png
    :class: with-shadow
    :alt: Export module of TYPO3 3.8.0 (year 2005)
 
