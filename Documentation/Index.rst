@@ -83,6 +83,7 @@ You can find out more about how to do this in :ref:`contribute`.
    ExtensionInstallation/Index
    Upgrade/Index
    MigrateToComposer/Index
+   MigrateContent/Index
    ReleaseIntegrity/Index
    Troubleshooting/Index
    HistoricalInformation/Index
