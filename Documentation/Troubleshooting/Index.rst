@@ -244,8 +244,7 @@ file (which we changed) but only can reset the complete cache itself.
 This will happen with:
 
 -  OPcache before 7.0.2 (Shouldn't be out in the wild.)
--  APC before 3.1.1 and some mysterious configuration combinations. See
-   APC.
+-  APC before 3.1.1 and some mysterious configuration combinations. 
 -  XCache
 -  ZendOptimizerPlus
 
