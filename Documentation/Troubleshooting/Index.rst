@@ -215,6 +215,46 @@ illogical problems after an upgrade:
   and restart Apache.
 
 
+.. _php-troubleshooting_opcode:
+
+Opcode cache messages
+---------------------
+
+No PHP opcode cache loaded
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You do not have an opcode cache system installed or activated. If you
+want better performance for your website, then you should use one. The
+best choice is OPcache for PHP 5.5 onwards.
+
+This opcode cache is marked as malfunctioning by the TYPO3 CMS Team.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This will be shown if an opcode cache system is found and activated,
+which is known to have "too many" errors and won't be supported by TYPO3
+CMS (no bugfixes, security fixes or anything else). In current TYPO3
+versions only OPcache is supported
+
+This opcode cache may work correctly but has medium performance.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This will be shown if an opcode cache system is found and activated,
+which has some nitpicks. For example we cannot clear the cache for one
+file (which we changed) but only can reset the complete cache itself.
+This will happen with:
+
+-  OPcache before 7.0.2 (Shouldn't be out in the wild.)
+-  APC before 3.1.1 and some mysterious configuration combinations. 
+-  XCache
+-  ZendOptimizerPlus
+
+This opcode cache should work correctly and has good performance.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Well it seems that all is ok and working. Maybe you can tweak something
+more but this is out of our knowledge of your user scenario.
+
+
 .. _mysql:
 
 MySQL
