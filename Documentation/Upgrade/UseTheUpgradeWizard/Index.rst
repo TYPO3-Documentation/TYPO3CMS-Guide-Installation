@@ -60,8 +60,14 @@ features of the new TYPO3 version.
 
 Go through all wizards and apply the (database) updates they propose. Please
 note that some wizards provide optional features, like installing system
-extensions (for example simulatestatic) that you may not need in your current
+extensions that you may not need in your current
 installation, so take care to only apply those wizards, which you really need.
+Apply the optional wizards too - just be sure to select the correct option
+(e.g. "No, do not execute"). This way, these wizards will also be removed from
+the list of wizards to execute and the upgrade will be marked as "done".
+
+.. image:: ../../Images/upgrade_wizard_install_taskcenter.png
+   :alt: Choose "No, do not execute"
 
 After running through the upgrade wizards go again to the `Database Analyzer`.
 You will be able to execute queries to adapt them so that the tables and
