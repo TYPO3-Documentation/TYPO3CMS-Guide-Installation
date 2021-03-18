@@ -15,6 +15,7 @@ Installation explained
 
    SystemRequirements/Index
    WhichPackageAndFormat/Index
+   ComposerJson/Index
    ThePackageInDetail/Index
    TheInstallTool/Index
    Distributions/Index
