@@ -54,12 +54,6 @@ Example composer.json
             "email": "nouser@example.com"
          }
       ],
-      "repositories": [
-         {
-            "type": "composer",
-            "url": "https://composer.typo3.org/"
-         }
-      ],
       "require": {
          "helhum/typo3-console": "^6.4.0",
          "typo3/cms-backend": "^11.0.0",
@@ -168,7 +162,6 @@ afterwards to make sure that your :file:`composer.lock` will be updated.
    composer config platform.php 7.4.1; \
    composer config sort-packages true; \
    composer config extra.typo3/cms.web-dir public; \
-   composer config repositories.typo3 composer https://composer.typo3.org/; \
    \
    composer normalize; \
    composer validate
@@ -216,6 +209,13 @@ repositories
 
 *This setting is not TYPO3 specific.*
 
+You can add additional repositories, if necessary.
+
+The previously often used repository composer.typo3.org is now
+`deprecated <https://get.typo3.org/misc/composer/repository>`__. It is
+recommended to get your packages from `Packagist <https://packagist.org/>`__
+and only use composer.typo3.org if necessary:
+
 .. code-block:: json
 
    {
@@ -226,10 +226,6 @@ repositories
          }
       ]
    }
-
-We have added composer.typo3.org which makes it possible to install
-packages from TER. This is not strictly necessary unless you use packages
-which are available on TER but not on Packagist.
 
 .. _project_composer.json-scripts:
 
