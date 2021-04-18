@@ -144,7 +144,7 @@ Installing the Source Manually
 Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and download
 the source package of the new TYPO3 version.
 
-Extract the package on your web server and—in your TYPO3 document root,
+Extract the package on your web server and, in your TYPO3 document root,
 adjust the :file:`typo3_src` symlink.
 
 
