@@ -21,8 +21,8 @@ Upgrading a Composer Based System
 
 .. caution::
 
-   TYPO3 v9 LTS has no support for the package `typo3/cms` anymore—instead
-   all TYPO3 system extensions are now single packages. When upgrading, remove
+   TYPO3 v9 LTS no longer supports the package `typo3/cms`. 
+   All TYPO3 system extensions are now single packages. When upgrading, remove
    the `typo3/cms` package and use require to fetch the single packages you need.
 
 Use Composer to update your system via for example::
