@@ -169,6 +169,8 @@ potentially wrong or missing settings.
 With **Directory Status** you can check whether all required files and folders
 exist and are writable when necessary. It also shows the default file and
 folder permissions TYPO3 will apply on creation of assets.
+It offers you the possibility to create a file :file:`.htaccess` in the TYPO3 root directory.
+This is the recommended way.
 
 **PHP Info** simply outputs the `phpinfo()`.
 
