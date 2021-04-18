@@ -59,7 +59,7 @@ To find the matching extension versions you can go to `packagist.org
    changes from time to time: Some extensions are merged into others, new system extensions
    are added, and others abandoned or released to the public (and therefore maintained at a
    different place).
-   You will find info on the details in this `list
+   You will find information on the details in this `list
    <https://docs.typo3.org/Home/SystemExtensions.html>`_ or search in the
    `breaking changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_
    for the extension key (not the package name!).
