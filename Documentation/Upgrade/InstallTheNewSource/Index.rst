@@ -165,5 +165,5 @@ that your update is finished.
 In case of a *major update*, e.g. from TYPO3 8.7 to 9.5, go ahead with the next
 step!
 
-Also check out any breaking changes listed in `Changelog
+Also check out any breaking changes listed in the `changelog
 <https://docs.typo3.org/typo3cms/extensions/core/>`_ for the new version.
