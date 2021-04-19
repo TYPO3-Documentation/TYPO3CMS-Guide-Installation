@@ -32,7 +32,7 @@ in the manual you are linking from, e.g.:
 
    [intersphinx_mapping]
 
-   t3install     = https://docs.typo3.org/typo3cms/InstallationGuide/
+   t3install     = https://docs.typo3.org/m/typo3/guide-installation/master/en-us/
 
 The directive `ref-targets-list` below creates an overview of the
 linktargets defined in this manual.
