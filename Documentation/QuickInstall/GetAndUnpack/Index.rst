@@ -54,6 +54,7 @@ Installing on a Unix Server
       ln -s ../typo3_src-10.4.x typo3_src
       ln -s typo3_src/index.php index.php
       ln -s typo3_src/typo3 typo3
+      ln -s typo3_src/vendor vendor
 
 
 You end up with the following structure of files::
@@ -61,6 +62,7 @@ You end up with the following structure of files::
    typo3_src-10.4.x/
    public/typo3_src -> ../typo3_src-10.4.x/
    public/typo3 -> typo3_src/typo3/
+   public/vendor -> typo3_src/vendor/
    public/index.php -> typo3_src/index.php
 
 
