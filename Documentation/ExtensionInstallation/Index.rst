@@ -36,7 +36,7 @@ In the backend:
 
 .. rst-class:: bignums
 
-1. Got to :guilabel:`"ADMIN TOOLS" > "Extensions"`
+1. Go to :guilabel:`"ADMIN TOOLS" > "Extensions"`
 2. In the Docheader, select :guilabel:`"Get Extensions"`
 
    .. figure:: ../Images/em_extensions.png
@@ -279,7 +279,7 @@ as well.
 
 This is relevant, because after the installation, both need to be activated.
 
-You can see the dependencies on https://packagist.org (for example for the 
+You can see the dependencies on https://packagist.org (for example for the
 `Introduction Package <https://packagist.org/packages/typo3/cms-introduction>`__)
 or in the composer.json file of the extension, for example:
 
