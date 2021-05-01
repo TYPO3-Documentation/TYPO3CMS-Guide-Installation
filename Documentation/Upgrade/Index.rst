@@ -29,8 +29,8 @@ Basically these are the steps to be done to update your TYPO3 site:
    Preparation/Index
    Backup/Index
    UpdateReferenceIndex/Index
-   InstallTheNewSource/Index
    ConvertGlobalExtensions/Index
+   InstallTheNewSource/Index
    UseTheUpgradeWizard/Index
    RunTheDatabaseAnalyzer/Index
    ClearCachesAndUserSettings/Index
