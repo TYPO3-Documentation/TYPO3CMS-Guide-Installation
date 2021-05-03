@@ -130,7 +130,7 @@ afterwards to make sure that your :file:`composer.lock` will be updated.
 .. code-block:: shell
 
    composer init --type project; \
-   composer require ergebnis/composer-normalize; \
+   composer require \
    helhum/typo3-console:^6.4.0; \
    typo3/cms-backend:^10.4.15; \
    typo3/cms-belog:^10.4.15; \
@@ -161,7 +161,6 @@ afterwards to make sure that your :file:`composer.lock` will be updated.
    composer config sort-packages true; \
    composer config extra.typo3/cms.web-dir public; \
    \
-   composer normalize; \
    composer validate
 
 
