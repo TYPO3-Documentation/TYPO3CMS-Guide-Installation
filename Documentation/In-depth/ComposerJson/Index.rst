@@ -44,8 +44,8 @@ Example composer.json
 .. code-block:: json
 
    {
-      "name": "vendor/mysite",
-      "description": "",
+      "name": "vendor/my-typo3-project",
+      "description": "TYPO3 project",
       "license": ["GPL-2.0-or-later"],
       "type": "project",
       "authors": [
@@ -55,40 +55,38 @@ Example composer.json
          }
       ],
       "require": {
+         "php": "^7.4",
          "helhum/typo3-console": "^6.4.0",
-         "typo3/cms-backend": "^11.0.0",
-         "typo3/cms-belog": "^11.0.0",
-         "typo3/cms-beuser": "^11.0.0",
-         "typo3/cms-core": "^11.0.0",
-         "typo3/cms-dashboard": "^11.0.0",
-         "typo3/cms-extbase": "^11.0.0",
-         "typo3/cms-extensionmanager": "^11.0.0",
-         "typo3/cms-felogin": "^11.0.0",
-         "typo3/cms-filelist": "^11.0.0",
-         "typo3/cms-fluid": "^11.0.0",
-         "typo3/cms-fluid-styled-content": "^11.0.0",
-         "typo3/cms-form": "^11.0.0",
-         "typo3/cms-frontend": "^11.0.0",
-         "typo3/cms-impexp": "^11.0.0",
-         "typo3/cms-info": "^11.0.0",
-         "typo3/cms-install": "^11.0.0",
-         "typo3/cms-recordlist": "^11.0.0",
-         "typo3/cms-rte-ckeditor": "^11.0.0",
-         "typo3/cms-seo": "^11.0.0",
-         "typo3/cms-setup": "^11.0.0",
-         "typo3/cms-sys-note": "^11.0.0",
-         "typo3/cms-t3editor": "^11.0.0",
-         "typo3/cms-tstemplate": "^11.0.0",
-         "typo3/cms-viewpage": "^11.0.0"
+         "typo3/cms-backend": "^10.4.15",
+         "typo3/cms-belog": "^10.4.15",
+         "typo3/cms-beuser": "^10.4.15",
+         "typo3/cms-core": "^10.4.15",
+         "typo3/cms-dashboard": "^10.4.15",
+         "typo3/cms-extbase": "^10.4.15",
+         "typo3/cms-extensionmanager": "^10.4.15",
+         "typo3/cms-felogin": "^10.4.15",
+         "typo3/cms-filelist": "^10.4.15",
+         "typo3/cms-fluid": "^10.4.15",
+         "typo3/cms-fluid-styled-content": "^10.4.15",
+         "typo3/cms-form": "^10.4.15",
+         "typo3/cms-frontend": "^10.4.15",
+         "typo3/cms-impexp": "^10.4.15",
+         "typo3/cms-info": "^10.4.15",
+         "typo3/cms-install": "^10.4.15",
+         "typo3/cms-recordlist": "^10.4.15",
+         "typo3/cms-rte-ckeditor": "^10.4.15",
+         "typo3/cms-seo": "^10.4.15",
+         "typo3/cms-setup": "^10.4.15",
+         "typo3/cms-sys-note": "^10.4.15",
+         "typo3/cms-t3editor": "^10.4.15",
+         "typo3/cms-tstemplate": "^10.4.15",
+         "typo3/cms-viewpage": "^10.4.15"
       },
       "autoload": {
          "psr-4": {},
          "classmap": []
       },
       "config": {
-         "platform": {
-            "php": "7.4.1"
-         },
          "sort-packages": true
       },
       "extra": {
@@ -134,30 +132,30 @@ afterwards to make sure that your :file:`composer.lock` will be updated.
    composer init --type project; \
    composer require ergebnis/composer-normalize; \
    composer require helhum/typo3-console:^6.4.0; \
-   composer require typo3/cms-backend:^11.0.0; \
-   composer require typo3/cms-belog:^11.0.0; \
-   composer require typo3/cms-beuser:^11.0.0; \
-   composer require typo3/cms-core:^11.0.0; \
-   composer require typo3/cms-dashboard:^11.0.0; \
-   composer require typo3/cms-extbase:^11.0.0; \
-   composer require typo3/cms-extensionmanager:^11.0.0; \
-   composer require typo3/cms-felogin:^11.0.0; \
-   composer require typo3/cms-filelist:^11.0.0; \
-   composer require typo3/cms-fluid:^11.0.0; \
-   composer require typo3/cms-fluid-styled-content:^11.0.0; \
-   composer require typo3/cms-form:^11.0.0; \
-   composer require typo3/cms-frontend:^11.0.0; \
-   composer require typo3/cms-impexp:^11.0.0; \
-   composer require typo3/cms-info:^11.0.0; \
-   composer require typo3/cms-install:^11.0.0; \
-   composer require typo3/cms-recordlist:^11.0.0; \
-   composer require typo3/cms-rte-ckeditor:^11.0.0; \
-   composer require typo3/cms-seo:^11.0.0; \
-   composer require typo3/cms-setup:^11.0.0; \
-   composer require typo3/cms-sys-note:^11.0.0; \
-   composer require typo3/cms-t3editor:^11.0.0; \
-   composer require typo3/cms-tstemplate:^11.0.0; \
-   composer require typo3/cms-viewpage:^11.0.0; \
+   composer require typo3/cms-backend:^10.4.15; \
+   composer require typo3/cms-belog:^10.4.15; \
+   composer require typo3/cms-beuser:^10.4.15; \
+   composer require typo3/cms-core:^10.4.15; \
+   composer require typo3/cms-dashboard:^10.4.15; \
+   composer require typo3/cms-extbase:^10.4.15; \
+   composer require typo3/cms-extensionmanager:^10.4.15; \
+   composer require typo3/cms-felogin:^10.4.15; \
+   composer require typo3/cms-filelist:^10.4.15; \
+   composer require typo3/cms-fluid:^10.4.15; \
+   composer require typo3/cms-fluid-styled-content:^10.4.15; \
+   composer require typo3/cms-form:^10.4.15; \
+   composer require typo3/cms-frontend:^10.4.15; \
+   composer require typo3/cms-impexp:^10.4.15; \
+   composer require typo3/cms-info:^10.4.15; \
+   composer require typo3/cms-install:^10.4.15; \
+   composer require typo3/cms-recordlist:^10.4.15; \
+   composer require typo3/cms-rte-ckeditor:^10.4.15; \
+   composer require typo3/cms-seo:^10.4.15; \
+   composer require typo3/cms-setup:^10.4.15; \
+   composer require typo3/cms-sys-note:^10.4.15; \
+   composer require typo3/cms-t3editor:^10.4.15; \
+   composer require typo3/cms-tstemplate:^10.4.15; \
+   composer require typo3/cms-viewpage:^10.4.15; \
     \
    composer config platform.php 7.4.1; \
    composer config sort-packages true; \
@@ -181,7 +179,7 @@ config/platform/php
    {
       "config": {
          "platform": {
-            "php": "7.4.1"
+            "php": "add PHP version here"
          }
       }
    }
