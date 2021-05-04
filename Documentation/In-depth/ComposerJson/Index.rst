@@ -130,6 +130,9 @@ afterwards to make sure that your :file:`composer.lock` will be updated.
 .. code-block:: shell
 
    composer init --type project
+   composer config platform.php 7.4.1
+   composer config sort-packages true
+   composer config extra.typo3/cms.web-dir public
    composer require helhum/typo3-console:^6.4.0 \
       typo3/cms-backend:^10.4 \
       typo3/cms-belog:^10.4 \
@@ -155,9 +158,6 @@ afterwards to make sure that your :file:`composer.lock` will be updated.
       typo3/cms-t3editor:^10.4 \
       typo3/cms-tstemplate:^10.4 \
       typo3/cms-viewpage:^10.4
-   composer config platform.php 7.4.1
-   composer config sort-packages true
-   composer config extra.typo3/cms.web-dir public
    composer validate
 
 
