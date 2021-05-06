@@ -9,7 +9,7 @@ The Admin Tool
 
 .. tip::
 
-   The "Admin Tool" was formerly called "Install Tool".
+   The "Admin Tool" is also called "Install Tool".
 
 
 #. Hit the start page of your freshly created site with your browser and you
@@ -24,7 +24,7 @@ The Admin Tool
 
 #. Create an empty file :file:`FIRST_INSTALL` in your web root directory (e.g. `public` folder).
    Then reload the page. You will be redirected to the installation process. It will
-   guide you through the steps for installing TYPO3. The Admin Tool is
+   guide you through the steps for installing TYPO3. The Install Tool is
    located in 'typo3/install' in your installation which for example would be
    `http://www.example.com/typo3/install.php
    <http://www.example.com/typo3/install.php>`_.
