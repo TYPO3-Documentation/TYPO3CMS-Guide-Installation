@@ -22,9 +22,9 @@ The Admin Tool
       Success message after download.
 
 
-#. Create the file FIRST_INSTALL in your web root directory (`public` folder)
-   and reload the page. You will be redirected to the install tool. It will
-   guide you through the steps for installing TYPO3. The Install Tool is
+#. Create an empty file :file:`FIRST_INSTALL` in your web root directory (e.g. `public` folder).
+   Then reload the page. You will be redirected to the installation process. It will
+   guide you through the steps for installing TYPO3. The Admin Tool is
    located in 'typo3/install' in your installation which for example would be
    `http://www.example.com/typo3/install.php
    <http://www.example.com/typo3/install.php>`_.
