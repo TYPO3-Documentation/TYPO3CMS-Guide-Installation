@@ -1,0 +1,102 @@
+{
+    "suites": {
+        "Core": {
+            "screenshots": [
+                [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 768
+                    },
+                    {
+                        "action": "see",
+                        "text": "Maintenance"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Maintenance"
+                    },
+                    {
+                        "action": "makeScreenshotOfFullPage",
+                        "fileName": "AdminToolsMaintenanceOverview"
+                    }
+                ]
+            ]
+        },
+        "Introduction": {
+            "screenshots": {
+                "startpage": [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 512
+                    },
+                    {
+                        "action": "see",
+                        "text": "Page"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Page"
+                    },
+                    {"action": "openPageTreePath", "path": ["Congratulations"]},
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Congratulations", "timeout": 5},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "IntroductionStartPage"
+                    }
+                ],
+                "uninstall": [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots"
+                    },
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 512
+                    },
+                    {"action": "switchToMainFrame"},
+                    {
+                        "action": "see",
+                        "text": "Extensions"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Extensions"
+                    },
+                    {"action": "switchToContentFrame"},
+                    {"action": "waitForText", "text": "Extensions", "timeout": 5},
+                    {"action": "moveMouseOver", "cssOrXPath":  "a .icon-actions-system-extension-uninstall"},
+                    {"action": "waitForText", "text": "Deactivate", "timeout": 5},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "EmUninstallExtension",
+                        "captionText": "Select \"Deactivate\" in Extension Manager"
+                    }
+                ]
+            }
+        }
+    }
+}

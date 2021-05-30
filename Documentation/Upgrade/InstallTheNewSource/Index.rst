@@ -21,7 +21,7 @@ Upgrading a Composer Based System
 
 .. caution::
 
-   TYPO3 v9 LTS no longer supports the package `typo3/cms`. 
+   TYPO3 v9 LTS no longer supports the package `typo3/cms`.
    All TYPO3 system extensions are now single packages. When upgrading, remove
    the `typo3/cms` package and use require to fetch the single packages you need.
 
@@ -64,7 +64,7 @@ To find the matching extension versions you can go to `packagist.org
    `breaking changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_
    for the extension key (not the package name!).
 
-.. figure:: ../../Images/ext-on-packagist.png
+.. figure:: ../../Images/ExternalScreenshots/ExtOnPackagist.png
    :class: with-shadow
    :alt: extension on packagist
 

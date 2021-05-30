@@ -15,7 +15,7 @@ The Admin Tool
 #. Hit the start page of your freshly created site with your browser and you
    should see the "thank you for downloading"-message.
 
-   .. figure:: ../../Images/FirstInstall.png
+   .. figure:: ../../Images/ManualScreenshots/FirstInstall.png
       :class: with-shadow
       :alt: Success message after download.
 
@@ -32,7 +32,7 @@ The Admin Tool
 
 #. This is what you should see:
 
-   .. figure:: ../../Images/QuickInstall-1-System-Environment.png
+   .. figure:: ../../Images/ManualScreenshots/QuickInstall-1-System-Environment.png
       :alt: first step
       :class: with-shadow
 
@@ -51,7 +51,7 @@ The Admin Tool
    but you should choose one of the others for running production grade web
    sites.
 
-   .. figure:: ../../Images/QuickInstall-2-Database-Connection.png
+   .. figure:: ../../Images/ManualScreenshots/QuickInstall-2-Database-Connection.png
       :alt: third step
       :class: with-shadow
 
@@ -68,7 +68,7 @@ The Admin Tool
    will also be used for the Install Tool. The "site name" will identify this
    installation (in the page tree and browser title).
 
-   .. figure:: ../../Images/QuickInstall-4-Admin-User-Sitename.png
+   .. figure:: ../../Images/ManualScreenshots/QuickInstall-4-Admin-User-Sitename.png
       :alt: forth step
       :class: with-shadow
 
@@ -79,7 +79,7 @@ The Admin Tool
    TYPO3 or if you want to have a basis to start from.
 
 
-   .. figure:: ../../Images/QuickInstall-5-Last-Step.png
+   .. figure:: ../../Images/ManualScreenshots/QuickInstall-5-Last-Step.png
       :alt: fifth step
       :class: with-shadow
 

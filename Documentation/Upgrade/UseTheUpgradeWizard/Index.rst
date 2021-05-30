@@ -10,7 +10,7 @@ Use the Upgrade Wizard
 Enter the Install Tool at `https://example.com/typo3/install.php` on your
 TYPO3 site.
 
-.. figure:: ../../Images/Upgrade-Wizard.png
+.. figure:: ../../Images/ManualScreenshots/Upgrade-Wizard.png
    :class: with-shadow
    :alt: Upgrade wizard
 
@@ -67,7 +67,7 @@ Apply the optional wizards too - just be sure to select the correct option
 (e.g. "No, do not execute"). This way, these wizards will also be removed from
 the list of wizards to execute and the upgrade will be marked as "done".
 
-.. image:: ../../Images/upgrade_wizard_install_taskcenter.png
+.. image:: ../../Images/ManualScreenshots/upgrade_wizard_install_taskcenter.png
    :alt: Choose "No, do not execute"
 
 After running through the upgrade wizards go to :guilabel:`Maintenance` >

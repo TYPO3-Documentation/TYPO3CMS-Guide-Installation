@@ -39,7 +39,7 @@ In the backend:
 1. Go to :guilabel:`"ADMIN TOOLS" > "Extensions"`
 2. In the Docheader, select :guilabel:`"Get Extensions"`
 
-   .. figure:: ../Images/em_extensions.png
+   .. figure:: ../Images/ManualScreenshots/em_extensions.png
       :class: with-shadow
       :alt: Select "Get Extensions" in Extension Manager
 
@@ -50,7 +50,7 @@ In the backend:
    The button is on the top right.
 
 
-   .. figure:: ../Images/em_extensions_get.png
+   .. figure:: ../Images/ManualScreenshots/em_extensions_get.png
       :class: with-shadow
       :alt: Search for the extension and install
 
@@ -103,9 +103,7 @@ extensions manually with :file:`PackageStates.php` as a last resort, see :ref:`u
 Uninstall / Deactivate Extension via TYPO3 Backend
 --------------------------------------------------
 
-.. figure:: ../Images/em-uninstall-extension.png
-   :class: with-shadow
-   :alt: Select "Deactivate" in Extension Manager
+.. include:: /Images/AutomaticScreenshots/EmUninstallExtension.rst.txt
 
 Log into the TYPO3 Backend and open the Extension Manager ('Ext Manager'). From the menu choose 'Install extensions'.
 You get an overview about installed extensions.
@@ -124,7 +122,7 @@ the grey Extension Install Icon.
 Remove an Extension via the TYPO3 Backend
 --------------------------------------------------
 
-.. figure:: ../Images/em-remove-extension.png
+.. figure:: ../Images/ManualScreenshots/em-remove-extension.png
    :class: with-shadow
    :alt: Select "Remove" in Extension Manager
 
@@ -251,7 +249,7 @@ for example `for the extension news <https://extensions.typo3.org/extension/news
 
 Here, the package name is `georgringer/news`.
 
-.. figure:: ../Images/ter_news.png
+.. figure:: ../Images/ExternalScreenshots/TerNews.png
    :class: with-shadow
    :alt: Detail view for extension "news"
 
@@ -316,7 +314,7 @@ Find out the Extension Key for an Extension
 Again, go to the `Extension Repository <https://extensions.typo3.org/>`__,
 and search for the extension.
 
-.. figure:: ../Images/ter_news.png
+.. figure:: ../Images/ExternalScreenshots/TerNews.png
    :class: with-shadow
    :alt: Detail view for extension "news"
 

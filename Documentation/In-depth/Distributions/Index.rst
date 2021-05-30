@@ -40,7 +40,7 @@ responsive design using bootstrap templates and contains example
 content for testing and evaluation. This is ideal for new users who wish
 to have a "look around" and get more familiar with the CMS.
 
-.. figure:: ../../Images/IntroductionPackage.png
+.. figure:: ../../Images/ManualScreenshots/IntroductionPackage.png
    :alt: Introduction Package
    :class: with-shadow
 

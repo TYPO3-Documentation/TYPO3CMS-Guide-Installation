@@ -79,7 +79,7 @@ In the backend:
    The first distribution on the top left should be the official "Introduction Package".
    Click on :guilabel:`Install` to install.
 
-.. image:: ../../Images/get_introduction_package.png
+.. image:: ../../Images/ManualScreenshots/get_introduction_package.png
 
 
 .. _install-intro-first-steps:
@@ -93,13 +93,14 @@ The "Introduction Package" creates some pages. The top level page is named "Cong
 
 #. Click on "Congratulations" in the page tree.
 
+   .. include:: /Images/AutomaticScreenshots/IntroductionStartPage.rst.txt
 
 #. View the page in the frontend:
 
    Click on the :guilabel:`"View webpage"` icon (with an eye) to view the page
    in the frontend.
 
-.. image:: ../../Images/startpage.png
+   .. image:: ../../Images/ManualScreenshots/IntroductionPackage.png
 
 .. tip::
 
