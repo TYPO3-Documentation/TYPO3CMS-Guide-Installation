@@ -11,7 +11,7 @@ You should also clear all caches when upgrading.
 
 Go to "Maintenance" and click "Flush":
 
-.. figure:: ../../Images/Important-Actions-Clear-All-Cache.png
+.. figure:: ../../Images/ManualScreenshots/Important-Actions-Clear-All-Cache.png
    :class: with-shadow
    :alt: Flush Caches
 
@@ -21,7 +21,7 @@ Additionally, after an upgrade to a new major version, you should also delete
 the other temporary files, which TYPO3 saves in :file:`typo3temp/`. In the
 Install Tool go to "Clean up" to do so.
 
-.. figure:: ../../Images/Remove-Temporary-Assets.png
+.. figure:: ../../Images/ManualScreenshots/Remove-Temporary-Assets.png
    :class: with-shadow
    :alt: Remove temporary assets.
 

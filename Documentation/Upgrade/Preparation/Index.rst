@@ -58,7 +58,7 @@ for more information about the Changelogs and how to read them.
 
    TYPO3 aims at providing a reliable backwards compatibility between versions:
 
-   *  Minor versions are always backwards compatible - unless explicitly stated 
+   *  Minor versions are always backwards compatible - unless explicitly stated
       otherwise (for example in case of security updates)
 
    *  Major versions may contain breaking changes - normally these are
@@ -107,7 +107,7 @@ There are 3 different methods you can use to read the Changelogs:
 #. Read the changelog in the :ref:`Extension Scanner <t3coreapi:extension-scanner>`
    (as explained above).
 
-.. figure:: ../../Images/Upgrade-Analysis.png
+.. figure:: ../../Images/ManualScreenshots/Upgrade-Analysis.png
    :class: with-shadow
    :alt: Uprade Analysis
 

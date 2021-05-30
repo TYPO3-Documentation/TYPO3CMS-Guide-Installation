@@ -38,7 +38,7 @@ Export your data
       On the page tree left click on the page from where you want to start the
       export. Select :guilabel:`More options ...`:
 
-      .. figure:: /Images/ImpExpContext.png
+      .. figure:: /Images/ManualScreenshots/ImpExpContext.png
          :class: with-shadow
          :alt: Select "More options..." from the context menu of the page tree
 
@@ -46,7 +46,7 @@ Export your data
 
       Then select :guilabel:`Export` from the context menu.
 
-      .. figure:: /Images/ImpExpContext2.png
+      .. figure:: /Images/ManualScreenshots/ImpExpContext2.png
          :class: with-shadow
          :alt: Then select "Export"
 
@@ -59,7 +59,7 @@ Export your data
       is also possible to include static relations to tables already present
       in the target installation.
 
-      .. figure:: /Images/ImpExpDialog.png
+      .. figure:: /Images/ManualScreenshots/ImpExpDialog.png
          :class: with-shadow
          :alt: Select the tables to be exported
 
@@ -71,7 +71,7 @@ Export your data
       select 'Infinite' from the :guilabel:`Levels` select box and hit the
       :guilabel:`Update` Button at the end of the dialog.
 
-      .. figure:: /Images/ImpExpDialogInfinite.png
+      .. figure:: /Images/ManualScreenshots/ImpExpDialogInfinite.png
          :class: with-shadow
          :alt: Select the page levels to be exported
 
@@ -88,7 +88,7 @@ Export your data
       orange exclamation mark. Reasons for lost relations include records
       stored outside the page tree to be exported and excluded tables.
 
-      .. figure:: /Images/ImpExpCheckExport.png
+      .. figure:: /Images/ManualScreenshots/ImpExpCheckExport.png
          :class: with-shadow
          :alt: Check the exported data
 
@@ -99,7 +99,7 @@ Export your data
       You can save the exported data to your server or download it in the
       tab :guilabel:`File & Preset`.
 
-      .. figure:: /Images/ImpExpDownload.png
+      .. figure:: /Images/ManualScreenshots/ImpExpDownload.png
          :class: with-shadow
          :alt: Download the export data
 
@@ -124,7 +124,7 @@ Import your data
       the imported page should be as starting point for the import. If you
       want to import the data at root-level, choose the
 
-      .. figure:: /Images/ImpExUpload.png
+      .. figure:: /Images/ManualScreenshots/ImpExUpload.png
          :class: with-shadow
          :alt: Upload the export data
 
@@ -136,7 +136,7 @@ Import your data
       automatically. If you change some options you can reload
       this display with the :guilabel:`preview` button.
 
-      .. figure:: /Images/ImpExImport.png
+      .. figure:: /Images/ManualScreenshots/ImpExImport.png
          :class: with-shadow
          :alt: Preview the data
 
@@ -158,7 +158,7 @@ The following shows the export dialog of TYPO3 installation of version
 3.8.0. It is often more feasible to use the Import / Export tool then to
 attempt to update very old TYPO3 installations.
 
-.. figure:: /Images/ImpExpV3.8.png
+.. figure:: /Images/ManualScreenshots/ImpExpV3.8.png
    :class: with-shadow
    :alt: Export module of TYPO3 3.8.0 (year 2005)
 

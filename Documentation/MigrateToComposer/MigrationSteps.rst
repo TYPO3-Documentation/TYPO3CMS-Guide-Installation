@@ -119,11 +119,11 @@ Install the system extensions::
 
     composer require typo3/minimal:^9.5
     composer require typo3/cms-scheduler:^9.5
-    composer require ... 
+    composer require ...
 
 Or in one line::
 
-    composer require typo3/cms-minimal:^9.5 typo3/cms-scheduler:^9.5 ... 
+    composer require typo3/cms-minimal:^9.5 typo3/cms-scheduler:^9.5 ...
 
 To find the correct package names, you can either take a look in the
 :file:`composer.json` of any system extension or follow the naming
@@ -135,9 +135,9 @@ e.g. :file:`typo3/cms-fluid-styled-content`.
 
     To find out all TYPO3 Core packages, you can visit the TYPO3 Composer Helper website.
     https://get.typo3.org/misc/composer/helper
-    From this website, you can select TYPO3 Core Packages you need and generate 
+    From this website, you can select TYPO3 Core Packages you need and generate
     the composer command to require them.
-    
+
 
 Install Extensions from Packagist
 ---------------------------------
@@ -370,7 +370,7 @@ To complete our example :file:`composer.json`, it would look like this:
             ]
         }
     }
-    
+
 After adding paths to the autoload you should run `composer dumpautoload`. This command will re-generate the autoload info and should be run anytime you add new paths to the autoload portion in the :file:`composer.json`.
 
 .. note::
@@ -381,18 +381,18 @@ After adding paths to the autoload you should run `composer dumpautoload`. This 
     :ref:`completely clear "typo3conf/ext" folder <mig-composer-clear-typo3conf-ext-folder>`
     in the :ref:`Best practices <mig-composer-best-practices>` section.
 
-.. |TER composer command| image:: ../Images/ter-composer-command.png
+.. |TER composer command| image:: ../Images/ExternalScreenshots/TerComposerCommand.png
    :scale: 65 %
-.. |TER screen shot| image:: ../Images/ter-code-link.png
+.. |TER screen shot| image:: ../Images/ExternalScreenshots/TerCodeLink.png
    :scale: 65 %
-.. |file list| image:: ../Images/github-composer-file.png
+.. |file list| image:: ../Images/ExternalScreenshots/GithubComposerFile.png
    :scale: 80 %
-.. |file content| image:: ../Images/github-composer-name.png
+.. |file content| image:: ../Images/ExternalScreenshots/GithubComposerName.png
    :scale: 80 %
-.. |packagist screen shot| image:: ../Images/packagist-mask.png
+.. |packagist screen shot| image:: ../Images/ExternalScreenshots/PackagistMask.png
    :scale: 65 %
-.. |satis abandoned note| image:: ../Images/satis-abandoned.png
-.. |composer abandoned note| image:: ../Images/composer-ter-abandoned.png
+.. |satis abandoned note| image:: ../Images/ExternalScreenshots/SatisAbandoned.png
+.. |composer abandoned note| image:: ../Images/ExternalScreenshots/ComposerTerAbandoned.png
 
 
 New file locations

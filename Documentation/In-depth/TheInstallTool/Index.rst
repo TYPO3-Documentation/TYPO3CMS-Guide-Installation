@@ -34,12 +34,7 @@ Maintenance
 The section provides basic information about your system and several functions
 which you need for maintenance tasks.
 
-.. figure:: ../../Images/admin-tools-maintenance-overview.png
-   :class: with-shadow
-   :alt: Admin Tools: Maintenance Overview
-
-   The "Maintenance" section of the Install Tool.
-
+.. include:: /Images/ManualScreenshots/AdminToolsMaintenanceOverview.rst.txt
 
 The **Flush TYPO3 and PHP Cache** functionality can empty all caches: Frontend,
 Backend, language caches and the OPCode Cache.
