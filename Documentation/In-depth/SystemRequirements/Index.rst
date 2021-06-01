@@ -28,7 +28,7 @@ TYPO3 requires a web server, PHP and a database system.
   newer) installed on the server. (GraphicsMagick should be preferred.)
 
 For an overview see also `get.typo3.org
-<https://get.typo3.org/version/10#system-requirements>`_.
+<https://get.typo3.org/version/11#system-requirements>`_.
 
 Should you encounter problems, the ":ref:`troubleshooting`" chapter will help.
 
@@ -219,16 +219,14 @@ Example Configuration:
        try_files $uri $uri/ /index.php$is_args$args;
    }
 
-    # TYPO3 Backend URLs
-    location = /typo3 {
-        rewrite ^ /typo3/;
-    }
+   # TYPO3 Backend URLs
+   location = /typo3 {
+       rewrite ^ /typo3/;
+   }
 
-    location /typo3/ {
-        try_files $uri /typo3/index.php$is_args$args;
-    }
-
-
+   location /typo3/ {
+       try_files $uri /typo3/index.php$is_args$args;
+   }
 
    location ~ [^/]\.php(/|$) {
        fastcgi_split_path_info ^(.+?\.php)(/.*)$;
