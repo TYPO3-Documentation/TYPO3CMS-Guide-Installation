@@ -1,6 +1,0 @@
-
-.. figure:: /Images/ManualScreenshots/AdminToolsMaintenanceOverview.png
-   :class: with-shadow
-   :alt: Admin Tools: Maintenance Overview
-
-   The "Maintenance" section of the Install Tool.

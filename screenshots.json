@@ -1,35 +1,72 @@
 {
     "suites": {
         "Core": {
-            "screenshots": [
-                [
+            "screenshots": {
+                "AdminTool": [
                     {
                         "action": "setScreenshotsImagePath",
-                        "path": "Images/AutomaticScreenshots"
+                        "path": "Images/AutomaticScreenshots/AdminTools"
                     },
                     {
                         "action": "setScreenshotsRstPath",
-                        "path": "Images/AutomaticScreenshots"
+                        "path": "Images/AutomaticScreenshots/AdminTools"
                     },
                     {
                         "action": "resizeWindow",
-                        "width": 1024,
+                        "width": 1232,
                         "height": 768
                     },
-                    {
-                        "action": "see",
-                        "text": "Maintenance"
-                    },
-                    {
-                        "action": "click",
-                        "link": "Maintenance"
-                    },
+                    {"action": "see", "text": "button#web"},
+                    {"action": "click", "link": "button#web"},
+                    {"action": "see", "text": "button#site"},
+                    {"action": "click", "link": "button#site"},
+                    {"action": "see", "text": "button#file"},
+                    {"action": "click", "link": "button#file"},
+                    {"action": "see", "text": "button#system"},
+                    {"action": "click", "link": "button#system"},
+                    {"action": "see", "text": "Maintenance"},
+                    {"action": "click", "link": "Maintenance"},
+                    {"action": "switchToContentFrame"},
+                    {"action": "fillField", "field": "input#confirmationPassword", "value": "password"},
+                    {"action": "click", "link": "Confirm"},
+                    {"action": "waitForText", "text": "Maintenance", "timeout": 5},
                     {
                         "action": "makeScreenshotOfFullPage",
-                        "fileName": "AdminToolsMaintenanceOverview"
-                    }
+                        "fileName": "AdminToolsMaintenanceOverview",
+                        "captionText": "The \"Maintenance\" section of the Admin Tool."
+                    },
+                    {"action": "switchToMainFrame"},
+                    {"action": "see", "text": "Settings"},
+                    {"action": "click", "link": "Settings"},
+                    {
+                        "action": "makeScreenshotOfFullPage",
+                        "fileName": "AdminToolsSettingsOverview",
+                        "captionText": "The \"Settings\" section of the Admin Tool."
+                    },
+                    {"action": "see", "text": "Upgrade"},
+                    {"action": "click", "link": "Upgrade"},
+                    {
+                        "action": "makeScreenshotOfFullPage",
+                        "fileName": "AdminToolsUpgradeOverview",
+                        "captionText": "The \"Upgrade\" section of the Admin Tool."
+                    },
+                    {"action": "see", "text": "Environment"},
+                    {"action": "click", "link": "Environment"},
+                    {
+                        "action": "makeScreenshotOfFullPage",
+                        "fileName": "AdminToolsEnvironmentOverview",
+                        "captionText": "The \"Environment\" section of the Admin Tool."
+                    },
+                    {"action": "see", "text": "button#web"},
+                    {"action": "click", "link": "button#web"},
+                    {"action": "see", "text": "button#site"},
+                    {"action": "click", "link": "button#site"},
+                    {"action": "see", "text": "button#file"},
+                    {"action": "click", "link": "button#file"},
+                    {"action": "see", "text": "button#system"},
+                    {"action": "click", "link": "button#system"}
                 ]
-            ]
+            }
         },
         "Introduction": {
             "screenshots": {

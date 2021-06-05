@@ -34,7 +34,7 @@ Maintenance
 The section provides basic information about your system and several functions
 which you need for maintenance tasks.
 
-.. include:: /Images/ManualScreenshots/AdminToolsMaintenanceOverview.rst.txt
+.. include:: /Images/AutomaticScreenshots/AdminTools/AdminToolsMaintenanceOverview.rst.txt
 
 The **Flush TYPO3 and PHP Cache** functionality can empty all caches: Frontend,
 Backend, language caches and the OPCode Cache.
@@ -82,6 +82,8 @@ Settings
 ========
 
 This area allows you to configure both TYPO3 extensions as well as the core.
+
+.. include:: /Images/AutomaticScreenshots/AdminTools/AdminToolsSettingsOverview.rst.txt
 
 In **Extension Configuration** you can configure all enabled extensions that
 provide custom configuration options.
@@ -154,6 +156,8 @@ Environment
 
 The section contains a huge number of environment checks, which notify you of
 (potential) problems in your installation.
+
+.. include:: /Images/AutomaticScreenshots/AdminTools/AdminToolsEnvironmentOverview.rst.txt
 
 The **Environment Overview** provides a short system overview that you can also
 access via Application Information in the top bar.
