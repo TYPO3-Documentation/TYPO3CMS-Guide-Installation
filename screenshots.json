@@ -97,6 +97,29 @@
                         "link": "button.t3js-modal-close"
                     },
                     {"action": "switchToContentFrame"},
+
+                    {
+                        "action": "wait",
+                        "timeout": "1"
+                    },
+                    {"action":  "scrollModuleBodyTo", "toSelector":  "button[data-require='TYPO3/CMS/Install/Module/Maintenance/LanguagePacks']"},
+                    {"action": "drawArrow", "selector": "button[data-require='TYPO3/CMS/Install/Module/Maintenance/LanguagePacks']", "position": "right-middle"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "InstallLanguagePacks",
+                        "altText": "Manage language packs",
+                        "captionText": "The option \"Manage language packs\" in the Install Tool"
+                    },
+                    {"action": "clearDrawings"},
+                    {"action":  "scrollModuleBodyTo", "toSelector":  "button[data-require='TYPO3/CMS/Install/Module/Maintenance/ResetBackendUserUc']"},
+                    {"action": "drawArrow", "selector": "button[data-require='TYPO3/CMS/Install/Module/Maintenance/ResetBackendUserUc']", "position": "right-middle"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "ResetUserPreferences",
+                        "altText": "Reset User Preferences",
+                        "captionText": "The option \"Reset Backend User Preferences\" in the Install Tool"
+                    },
+                    {"action": "clearDrawings"},
                     {
                         "action": "resizeWindow",
                         "width": 1232,
