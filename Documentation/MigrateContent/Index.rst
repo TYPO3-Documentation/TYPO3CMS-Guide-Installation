@@ -59,11 +59,7 @@ Export your data
       is also possible to include static relations to tables already present
       in the target installation.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpDialog.png
-         :class: with-shadow
-         :alt: Select the tables to be exported
-
-         Select the tables to be exported
+      .. include:: /Images/AutomaticScreenshots/ImportExport/ExportDialog.rst.txt
 
    3. Choose number of levels to be exported
 
@@ -71,11 +67,7 @@ Export your data
       select 'Infinite' from the :guilabel:`Levels` select box and hit the
       :guilabel:`Update` Button at the end of the dialog.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpDialogInfinite.png
-         :class: with-shadow
-         :alt: Select the page levels to be exported
-
-         Select the page levels to be exported
+      .. include:: /Images/AutomaticScreenshots/ImportExport/ExportDialogInfiniteLevels.rst.txt
 
    4. Check the included records
 
@@ -88,11 +80,7 @@ Export your data
       orange exclamation mark. Reasons for lost relations include records
       stored outside the page tree to be exported and excluded tables.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpCheckExport.png
-         :class: with-shadow
-         :alt: Check the exported data
-
-         Check and adjust the exported data.
+      .. include:: /Images/AutomaticScreenshots/ImportExport/CheckExport.rst.txt
 
    5. Save or export the data
 
@@ -124,11 +112,7 @@ Import your data
       the imported page should be as starting point for the import. If you
       want to import the data at root-level, choose the
 
-      .. figure:: /Images/ManualScreenshots/ImpExUpload.png
-         :class: with-shadow
-         :alt: Upload the export data
-
-         Upload the export data
+      .. include:: /Images/AutomaticScreenshots/ImportExport/UploadImport.rst.txt
 
    2. Preview the data do be imported
 
