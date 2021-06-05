@@ -39,22 +39,13 @@ In the backend:
 1. Go to :guilabel:`"ADMIN TOOLS" > "Extensions"`
 2. In the Docheader, select :guilabel:`"Get Extensions"`
 
-   .. figure:: ../Images/ManualScreenshots/em_extensions.png
-      :class: with-shadow
-      :alt: Select "Get Extensions" in Extension Manager
-
-      Select "Get Extensions" in Extension Manager
+   .. include:: /Images/ManualScreenshots/NonComposer/ExtensionManagerExtensions.rst.txt
 
 3. Click :guilabel:`"Update now"`
 
    The button is on the top right.
 
-
-   .. figure:: ../Images/ManualScreenshots/em_extensions_get.png
-      :class: with-shadow
-      :alt: Search for the extension and install
-
-      Search for the extension and install
+   .. include:: /Images/ManualScreenshots/NonComposer/ExtensionManagerExtensionsGet.rst.txt
 
 
 4. Enter the name of the extension in the search field
@@ -103,7 +94,7 @@ extensions manually with :file:`PackageStates.php` as a last resort, see :ref:`u
 Uninstall / Deactivate Extension via TYPO3 Backend
 --------------------------------------------------
 
-.. include:: /Images/AutomaticScreenshots/EmUninstallExtension.rst.txt
+.. include:: /Images/AutomaticScreenshots/ExtensionManager/UninstallExtension.rst.txt
 
 Log into the TYPO3 Backend and open the Extension Manager ('Ext Manager'). From the menu choose 'Install extensions'.
 You get an overview about installed extensions.
@@ -120,11 +111,9 @@ the grey Extension Install Icon.
 .. _remove-extension-backend:
 
 Remove an Extension via the TYPO3 Backend
---------------------------------------------------
+-----------------------------------------
 
-.. figure:: ../Images/ManualScreenshots/em-remove-extension.png
-   :class: with-shadow
-   :alt: Select "Remove" in Extension Manager
+.. include:: /Images/ManualScreenshots/NonComposer/ExtensionManagerRemoveExtension.rst.txt
 
 After successfully uninstalling an extension via the Extension Manager you can permanently remove the extension by
 clicking on the waste-basket symbol "Remove" beside the extensions entry in the Extension Manager.

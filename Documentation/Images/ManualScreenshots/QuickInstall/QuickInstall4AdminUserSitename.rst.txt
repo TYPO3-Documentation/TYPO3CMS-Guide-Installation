@@ -1,0 +1,5 @@
+.. figure:: /Images/ManualScreenshots/QuickInstall/QuickInstall4AdminUserSitename.png
+   :alt: forth step
+   :class: with-shadow
+
+   Install Tool in 1-2-3 mode, forth step.

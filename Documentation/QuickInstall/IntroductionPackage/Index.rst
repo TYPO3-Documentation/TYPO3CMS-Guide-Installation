@@ -79,7 +79,7 @@ In the backend:
    The first distribution on the top left should be the official "Introduction Package".
    Click on :guilabel:`Install` to install.
 
-.. image:: ../../Images/ManualScreenshots/get_introduction_package.png
+.. include:: /Images/ManualScreenshots/NonComposer/GetIntroductionPackage.rst.txt
 
 
 .. _install-intro-first-steps:

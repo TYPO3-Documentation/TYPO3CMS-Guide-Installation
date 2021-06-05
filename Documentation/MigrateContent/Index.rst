@@ -158,8 +158,4 @@ The following shows the export dialog of TYPO3 installation of version
 3.8.0. It is often more feasible to use the Import / Export tool then to
 attempt to update very old TYPO3 installations.
 
-.. figure:: /Images/ManualScreenshots/ImpExpV3.8.png
-   :class: with-shadow
-   :alt: Export module of TYPO3 3.8.0 (year 2005)
-
-   Export module of TYPO3 3.8.0 (year 2005)
+.. include:: /Images/ManualScreenshots/ImpExpV3.8.rst.txt

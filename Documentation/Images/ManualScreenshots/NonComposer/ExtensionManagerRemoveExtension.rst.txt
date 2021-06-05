@@ -1,0 +1,3 @@
+.. figure:: /Images/ManualScreenshots/NonComposer/ExtensionManagerRemoveExtension.png
+   :class: with-shadow
+   :alt: Select "Remove" in Extension Manager

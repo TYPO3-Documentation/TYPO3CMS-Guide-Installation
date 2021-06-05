@@ -1,7 +1,6 @@
 .. Automatic screenshot: Remove this line if you want to manually change this file
 
-.. figure:: /Images/AutomaticScreenshots/EmUninstallExtension.png
-   :alt: 
+.. figure:: /Images/AutomaticScreenshots/ExtensionManager/UninstallExtension.png
    :class: with-shadow
 
    Select "Deactivate" in Extension Manager

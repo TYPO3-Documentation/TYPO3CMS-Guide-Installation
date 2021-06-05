@@ -30,6 +30,9 @@
                     {"action": "switchToContentFrame"},
                     {"action": "fillField", "field": "input#confirmationPassword", "value": "password"},
                     {"action": "click", "link": "Confirm"},
+                    {"comment": "********************************************************"},
+                    {"comment": "Maintenance Section of Admin Tool"},
+                    {"comment": "********************************************************"},
                     {"action": "waitForText", "text": "Maintenance", "timeout": 5},
                     {
                         "action": "makeScreenshotOfFullPage",
@@ -125,6 +128,10 @@
                         "width": 1232,
                         "height": 768
                     },
+
+                    {"comment": "********************************************************"},
+                    {"comment": "Settings Section of Admin Tool"},
+                    {"comment": "********************************************************"},
                     {"action": "switchToMainFrame"},
                     {"action": "see", "text": "Settings"},
                     {"action": "click", "link": "Settings"},
@@ -133,6 +140,17 @@
                         "fileName": "AdminToolsSettingsOverview",
                         "captionText": "The \"Settings\" section of the Admin Tool."
                     },
+                    {"comment": "********************************************************"},
+                    {"comment": "Upgrade Section of Admin Tool"},
+                    {"comment": "********************************************************"},
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/Upgrade"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/Upgrade"
+                    },
                     {"action": "switchToMainFrame"},
                     {"action": "see", "text": "Upgrade"},
                     {"action": "click", "link": "Upgrade"},
@@ -140,6 +158,89 @@
                         "action": "makeScreenshotOfFullPage",
                         "fileName": "AdminToolsUpgradeOverview",
                         "captionText": "The \"Upgrade\" section of the Admin Tool."
+                    },
+
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 512
+                    },
+                    {"action": "switchToContentFrame"},
+                    {
+                        "action": "see",
+                        "text": "View Upgrade Documentation"
+                    },
+                    {
+                        "action": "click",
+                        "link": "View Upgrade Documentation"
+                    },
+                    {
+                        "action": "waitForModalDialogInMainFrame"
+                    },
+                    {
+                        "action": "click",
+                        "link": "a[aria-controls='#version-0']"
+                    },
+                    {
+                        "action": "wait",
+                        "timeout": "1"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "UpgradeAnalysis",
+                        "altText": "Upgrade Analysis",
+                        "captionText": "The \"Upgrade Analysis\" in the Install Tool"
+                    },
+                    {
+                        "action": "click",
+                        "link": "button.t3js-modal-close"
+                    },
+                    {"action": "switchToContentFrame"},
+                    {
+                        "action": "wait",
+                        "timeout": "1"
+                    },
+                    {
+                        "action": "see",
+                        "text": "Run Upgrade Wizard"
+                    },
+                    {
+                        "action": "click",
+                        "link": "Run Upgrade Wizard"
+                    },
+                    {
+                        "action": "waitForModalDialogInMainFrame"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "UpgradeWizard",
+                        "altText": "Upgrade wizard",
+                        "captionText": "The \"Upgrade Wizard\" in the Install Tool."
+                    },
+                    {
+                        "action": "click",
+                        "link": "button.t3js-modal-close"
+                    },
+                    {"action": "switchToContentFrame"},
+                    {
+                        "action": "wait",
+                        "timeout": "1"
+                    },
+                    {"comment": "********************************************************"},
+                    {"comment": "Environment Section of Admin Tool"},
+                    {"comment": "********************************************************"},
+                    {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 768
+                    },
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/AdminTools"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/AdminTools"
                     },
                     {"action": "switchToMainFrame"},
                     {"action": "see", "text": "Environment"},
@@ -196,11 +297,11 @@
                 "uninstall": [
                     {
                         "action": "setScreenshotsImagePath",
-                        "path": "Images/AutomaticScreenshots"
+                        "path": "Images/AutomaticScreenshots/ExtensionManager"
                     },
                     {
                         "action": "setScreenshotsRstPath",
-                        "path": "Images/AutomaticScreenshots"
+                        "path": "Images/AutomaticScreenshots/ExtensionManager"
                     },
                     {
                         "action": "resizeWindow",
@@ -222,7 +323,7 @@
                     {"action": "waitForText", "text": "Deactivate", "timeout": 5},
                     {
                         "action": "makeScreenshotOfElement",
-                        "fileName": "EmUninstallExtension",
+                        "fileName": "UninstallExtension",
                         "captionText": "Select \"Deactivate\" in Extension Manager"
                     }
                 ]

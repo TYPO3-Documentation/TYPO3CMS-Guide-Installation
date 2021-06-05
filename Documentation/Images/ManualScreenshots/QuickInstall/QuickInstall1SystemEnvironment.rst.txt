@@ -1,0 +1,5 @@
+.. figure:: /Images/ManualScreenshots/QuickInstall/QuickInstall1SystemEnvironment.png
+   :alt: first step
+   :class: with-shadow
+
+   Install Tool in 1-2-3 mode, first step.
