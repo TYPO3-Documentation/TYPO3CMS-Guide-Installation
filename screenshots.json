@@ -16,13 +16,14 @@
                         "width": 1232,
                         "height": 768
                     },
-                    {"action": "see", "text": "button#web"},
+                    {"action": "switchToMainFrame"},
+                    {"action": "waitForElement", "element": "button#web"},
                     {"action": "click", "link": "button#web"},
-                    {"action": "see", "text": "button#site"},
+                    {"action": "waitForElement", "element": "button#site"},
                     {"action": "click", "link": "button#site"},
-                    {"action": "see", "text": "button#file"},
+                    {"action": "waitForElement", "element": "button#file"},
                     {"action": "click", "link": "button#file"},
-                    {"action": "see", "text": "button#system"},
+                    {"action": "waitForElement", "element": "button#system"},
                     {"action": "click", "link": "button#system"},
                     {"action": "see", "text": "Maintenance"},
                     {"action": "click", "link": "Maintenance"},
@@ -35,6 +36,72 @@
                         "fileName": "AdminToolsMaintenanceOverview",
                         "captionText": "The \"Maintenance\" section of the Admin Tool."
                     },
+
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 512
+                    },
+                    {"action": "drawArrow", "selector": "button[data-require='TYPO3/CMS/Install/Module/Maintenance/Cache']", "position": "right-middle"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "ClearAllCache",
+                        "altText": "Flush Caches",
+                        "captionText": "The option \"Flush\" in the Admin Tool."
+                    },
+                    {"action": "clearDrawings"},
+                    {
+                        "action": "click",
+                        "link": "Scan temporary files"
+                    },
+                    {
+                        "action": "waitForModalDialogInMainFrame"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "RemoveTemporaryAssets",
+                        "altText": "Remove temporary assets",
+                        "captionText": "The option \"Remove temporary assets\" in the Install Tool."
+                    },
+                    {
+                        "action": "click",
+                        "link": "button.t3js-modal-close"
+                    },
+                    {"action": "switchToContentFrame"},
+                    {
+                        "action": "wait",
+                        "timeout": "1"
+                    },
+                    {"action": "drawArrow", "selector": "button[data-require='TYPO3/CMS/Install/Module/Maintenance/DatabaseAnalyzer']", "position": "right-middle"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "DatabaseAnalyzer",
+                        "altText": "The Database Analyzer before analyzing the database"
+                    },
+                    {"action": "clearDrawings"},
+                    {
+                        "action": "click",
+                        "link": "Analyze database"
+                    },
+                    {
+                        "action": "waitForModalDialogInMainFrame"
+                    },
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "fileName": "DatabaseAnalyzerDatabaseAnalyzed",
+                        "altText": "Database analyzer",
+                        "captionText": "The Database Analyzer with no updates to do"
+                    },
+                    {
+                        "action": "click",
+                        "link": "button.t3js-modal-close"
+                    },
+                    {"action": "switchToContentFrame"},
+                    {
+                        "action": "resizeWindow",
+                        "width": 1232,
+                        "height": 768
+                    },
                     {"action": "switchToMainFrame"},
                     {"action": "see", "text": "Settings"},
                     {"action": "click", "link": "Settings"},
@@ -43,6 +110,7 @@
                         "fileName": "AdminToolsSettingsOverview",
                         "captionText": "The \"Settings\" section of the Admin Tool."
                     },
+                    {"action": "switchToMainFrame"},
                     {"action": "see", "text": "Upgrade"},
                     {"action": "click", "link": "Upgrade"},
                     {
@@ -50,6 +118,7 @@
                         "fileName": "AdminToolsUpgradeOverview",
                         "captionText": "The \"Upgrade\" section of the Admin Tool."
                     },
+                    {"action": "switchToMainFrame"},
                     {"action": "see", "text": "Environment"},
                     {"action": "click", "link": "Environment"},
                     {
@@ -57,13 +126,14 @@
                         "fileName": "AdminToolsEnvironmentOverview",
                         "captionText": "The \"Environment\" section of the Admin Tool."
                     },
-                    {"action": "see", "text": "button#web"},
+                    {"action": "switchToMainFrame"},
+                    {"action": "waitForElement", "element": "button#web"},
                     {"action": "click", "link": "button#web"},
-                    {"action": "see", "text": "button#site"},
+                    {"action": "waitForElement", "element": "button#site"},
                     {"action": "click", "link": "button#site"},
-                    {"action": "see", "text": "button#file"},
+                    {"action": "waitForElement", "element": "button#file"},
                     {"action": "click", "link": "button#file"},
-                    {"action": "see", "text": "button#system"},
+                    {"action": "waitForElement", "element": "button#system"},
                     {"action": "click", "link": "button#system"}
                 ]
             }
