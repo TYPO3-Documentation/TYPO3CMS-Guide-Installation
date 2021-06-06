@@ -238,11 +238,7 @@ for example `for the extension news <https://extensions.typo3.org/extension/news
 
 Here, the package name is `georgringer/news`.
 
-.. figure:: ../Images/ExternalScreenshots/TerNews.png
-   :class: with-shadow
-   :alt: Detail view for extension "news"
-
-   Detail view for extension "news"
+.. include:: /Images/ExternalScreenshots/TerNews.rst.txt
 
 Often the package name will be vendor + slash + extension key.
 However, if the extension key contains an underscore, it is replaced
@@ -301,13 +297,9 @@ Find out the Extension Key for an Extension
 -------------------------------------------
 
 Again, go to the `Extension Repository <https://extensions.typo3.org/>`__,
-and search for the extension.
+and search for the extension
 
-.. figure:: ../Images/ExternalScreenshots/TerNews.png
-   :class: with-shadow
-   :alt: Detail view for extension "news"
-
-   Detail view for extension "news"
+.. include:: /Images/ExternalScreenshots/TerNews.rst.txt
 
 The extension key is listed on the top. For the
 `extension news <https://extensions.typo3.org/extension/news/>`__,

@@ -38,19 +38,11 @@ Export your data
       On the page tree left click on the page from where you want to start the
       export. Select :guilabel:`More options ...`:
 
-      .. figure:: /Images/ManualScreenshots/ImpExpContext.png
-         :class: with-shadow
-         :alt: Select "More options..." from the context menu of the page tree
-
-         Select "More options..." from the context menu of the page tree
+      .. include:: /Images/ManualScreenshots/ImportExport/ContextMenuMore.rst.txt
 
       Then select :guilabel:`Export` from the context menu.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpContext2.png
-         :class: with-shadow
-         :alt: Then select "Export"
-
-         Select Then select "Export"
+      .. include:: /Images/ManualScreenshots/ImportExport/ContextMenuExport.rst.txt
 
    2. Select the tables to be exported
 
@@ -87,11 +79,7 @@ Export your data
       You can save the exported data to your server or download it in the
       tab :guilabel:`File & Preset`.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpDownload.png
-         :class: with-shadow
-         :alt: Download the export data
-
-         Download the export data
+      .. include:: /Images/ManualScreenshots/ImportExport/DownloadExport.rst.txt
 
 Import your data
 ================
@@ -120,11 +108,7 @@ Import your data
       automatically. If you change some options you can reload
       this display with the :guilabel:`preview` button.
 
-      .. figure:: /Images/ManualScreenshots/ImpExImport.png
-         :class: with-shadow
-         :alt: Preview the data
-
-         Preview the data
+      .. include:: /Images/ManualScreenshots/ImportExport/ImportPreview.rst.txt
 
    3. Import
 
@@ -142,4 +126,4 @@ The following shows the export dialog of TYPO3 installation of version
 3.8.0. It is often more feasible to use the Import / Export tool then to
 attempt to update very old TYPO3 installations.
 
-.. include:: /Images/ManualScreenshots/ImpExpV3.8.rst.txt
+.. include:: /Images/ManualScreenshots/ImportExport/ImpExpV3.8.rst.txt
