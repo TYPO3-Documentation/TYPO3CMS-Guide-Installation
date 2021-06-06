@@ -1,0 +1,2 @@
+.. image:: ../Images/ExternalScreenshots/GithubComposerFile.png
+      :scale: 80 %

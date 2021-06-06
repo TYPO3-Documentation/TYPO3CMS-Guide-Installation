@@ -1,0 +1,5 @@
+.. figure:: /Images/ManualScreenshots/NonComposer/ExtensionManagerExtensions.png
+   :class: with-shadow
+   :alt: Select "Get Extensions" in Extension Manager
+
+   Select "Get Extensions" in Extension Manager

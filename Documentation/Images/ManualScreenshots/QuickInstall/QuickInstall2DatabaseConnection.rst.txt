@@ -1,0 +1,5 @@
+.. figure:: /Images/ManualScreenshots/QuickInstall/QuickInstall2DatabaseConnection.png
+   :alt: third step
+   :class: with-shadow
+
+   Install Tool in 1-2-3 mode, second step.

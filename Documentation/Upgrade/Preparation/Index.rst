@@ -107,8 +107,4 @@ There are 3 different methods you can use to read the Changelogs:
 #. Read the changelog in the :ref:`Extension Scanner <t3coreapi:extension-scanner>`
    (as explained above).
 
-.. figure:: ../../Images/ManualScreenshots/Upgrade-Analysis.png
-   :class: with-shadow
-   :alt: Uprade Analysis
-
-   The "Upgrade Analysis" in the Install Tool
+.. include:: /Images/AutomaticScreenshots/Upgrade/UpgradeAnalysis.rst.txt

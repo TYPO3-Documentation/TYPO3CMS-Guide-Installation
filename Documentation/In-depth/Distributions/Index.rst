@@ -40,11 +40,7 @@ responsive design using bootstrap templates and contains example
 content for testing and evaluation. This is ideal for new users who wish
 to have a "look around" and get more familiar with the CMS.
 
-.. figure:: ../../Images/ManualScreenshots/IntroductionPackage.png
-   :alt: Introduction Package
-   :class: with-shadow
-
-   The Introduction Package provides a fully operational website based on bootstrap.
+.. include:: /Images/AutomaticScreenshots/IntroductionPackage/Backend.rst.txt
 
 
 To install the introduction package, follow the instructions in :ref:`install-introduction-package`.

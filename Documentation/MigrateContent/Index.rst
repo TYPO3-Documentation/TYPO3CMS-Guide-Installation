@@ -38,19 +38,11 @@ Export your data
       On the page tree left click on the page from where you want to start the
       export. Select :guilabel:`More options ...`:
 
-      .. figure:: /Images/ManualScreenshots/ImpExpContext.png
-         :class: with-shadow
-         :alt: Select "More options..." from the context menu of the page tree
-
-         Select "More options..." from the context menu of the page tree
+      .. include:: /Images/ManualScreenshots/ImportExport/ContextMenuMore.rst.txt
 
       Then select :guilabel:`Export` from the context menu.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpContext2.png
-         :class: with-shadow
-         :alt: Then select "Export"
-
-         Select Then select "Export"
+      .. include:: /Images/ManualScreenshots/ImportExport/ContextMenuExport.rst.txt
 
    2. Select the tables to be exported
 
@@ -59,11 +51,7 @@ Export your data
       is also possible to include static relations to tables already present
       in the target installation.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpDialog.png
-         :class: with-shadow
-         :alt: Select the tables to be exported
-
-         Select the tables to be exported
+      .. include:: /Images/AutomaticScreenshots/ImportExport/ExportDialog.rst.txt
 
    3. Choose number of levels to be exported
 
@@ -71,11 +59,7 @@ Export your data
       select 'Infinite' from the :guilabel:`Levels` select box and hit the
       :guilabel:`Update` Button at the end of the dialog.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpDialogInfinite.png
-         :class: with-shadow
-         :alt: Select the page levels to be exported
-
-         Select the page levels to be exported
+      .. include:: /Images/AutomaticScreenshots/ImportExport/ExportDialogInfiniteLevels.rst.txt
 
    4. Check the included records
 
@@ -88,22 +72,14 @@ Export your data
       orange exclamation mark. Reasons for lost relations include records
       stored outside the page tree to be exported and excluded tables.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpCheckExport.png
-         :class: with-shadow
-         :alt: Check the exported data
-
-         Check and adjust the exported data.
+      .. include:: /Images/AutomaticScreenshots/ImportExport/CheckExport.rst.txt
 
    5. Save or export the data
 
       You can save the exported data to your server or download it in the
       tab :guilabel:`File & Preset`.
 
-      .. figure:: /Images/ManualScreenshots/ImpExpDownload.png
-         :class: with-shadow
-         :alt: Download the export data
-
-         Download the export data
+      .. include:: /Images/ManualScreenshots/ImportExport/DownloadExport.rst.txt
 
 Import your data
 ================
@@ -124,11 +100,7 @@ Import your data
       the imported page should be as starting point for the import. If you
       want to import the data at root-level, choose the
 
-      .. figure:: /Images/ManualScreenshots/ImpExUpload.png
-         :class: with-shadow
-         :alt: Upload the export data
-
-         Upload the export data
+      .. include:: /Images/AutomaticScreenshots/ImportExport/UploadImport.rst.txt
 
    2. Preview the data do be imported
 
@@ -136,11 +108,7 @@ Import your data
       automatically. If you change some options you can reload
       this display with the :guilabel:`preview` button.
 
-      .. figure:: /Images/ManualScreenshots/ImpExImport.png
-         :class: with-shadow
-         :alt: Preview the data
-
-         Preview the data
+      .. include:: /Images/ManualScreenshots/ImportExport/ImportPreview.rst.txt
 
    3. Import
 
@@ -158,8 +126,4 @@ The following shows the export dialog of TYPO3 installation of version
 3.8.0. It is often more feasible to use the Import / Export tool then to
 attempt to update very old TYPO3 installations.
 
-.. figure:: /Images/ManualScreenshots/ImpExpV3.8.png
-   :class: with-shadow
-   :alt: Export module of TYPO3 3.8.0 (year 2005)
-
-   Export module of TYPO3 3.8.0 (year 2005)
+.. include:: /Images/ManualScreenshots/ImportExport/ImpExpV3.8.rst.txt

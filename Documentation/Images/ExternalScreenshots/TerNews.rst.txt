@@ -1,0 +1,5 @@
+.. figure:: /Images/ExternalScreenshots/TerNews.png
+   :class: with-shadow
+   :alt: Detail view for extension "news"
+
+   Detail view for extension "news"

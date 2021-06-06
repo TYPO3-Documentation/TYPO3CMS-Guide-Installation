@@ -13,9 +13,7 @@ possibility to *remove* old and unneeded tables and columns from the database.
 
 Use the "Maintenance section" and click "Analyze Database".
 
-.. figure:: ../../Images/ManualScreenshots/Important-Actions-Database-Analyzer.png
-   :alt: The Database Analyzer before analyzing the database.
-   :class: with-shadow
+.. include:: /Images/AutomaticScreenshots/AdminTools/DatabaseAnalyzer.rst.txt
 
 
 You will be able to execute queries to remove these tables and columns so that
@@ -40,19 +38,11 @@ your database corresponds to the structure required for the new TYPO3 version.
 
 Select the upgrades you want and press "Execute":
 
-.. figure:: ../../Images/ManualScreenshots/Important-Actions-Database-Analyzer-Updates-Executed.png
-   :class: with-shadow
-   :alt: Database analyzer
-
-   The Database Analyzer
+.. include:: /Images/ManualScreenshots/DatabaseAnalyzerUpdatesExecuted.rst.txt
 
 When you then click "Compare current database with specification" again and you
 only see the message
 
-.. figure:: ../../Images/ManualScreenshots/Important-Actions-Database-Analyzer-Database-Analyzed.png
-   :class: with-shadow
-   :alt: Database analyzer
-
-   The Database Analyzer with no updates to do.
+.. include:: /Images/AutomaticScreenshots/AdminTools/DatabaseAnalyzerDatabaseAnalyzed.rst.txt
 
 then all database updates have been applied.

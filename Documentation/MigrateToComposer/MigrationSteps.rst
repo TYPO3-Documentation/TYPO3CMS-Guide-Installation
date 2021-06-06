@@ -156,7 +156,7 @@ correct Composer key on `packagist.org <https://packagist.org>`__. Some maintain
 search the extension in TER, you will see a message, which command and Composer
 key you can use to install this extension.
 
-|TER Composer command|
+.. include:: /Images/ExternalScreenshots/TerComposerCommand.rst.txt
 
 .. note::
 
@@ -170,7 +170,7 @@ If you search the extension in https://composer.typo3.org/satis.html and it's li
 `packagist.org <https://packagist.org>`__, they are marked as "abandoned" and you
 will see a message, which Composer key should be used to install this extension.
 
-|satis abandoned note|
+.. include:: /Images/ExternalScreenshots/SatisAbandoned.rst.txt
 
 See Warning During `composer require` Command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -178,7 +178,7 @@ See Warning During `composer require` Command
 If you still install one of the abandoned extensions via its `typo3-ter` package key,
 you will also see a warning during the `composer require` command.
 
-|composer abandoned note|
+.. include:: /Images/ExternalScreenshots/ComposerTerAbandoned.rst.txt
 
 Check Manually
 ~~~~~~~~~~~~~~
@@ -191,21 +191,21 @@ does not provide additional information.
 
 #. Click button "Take a look into the code".
 
-   |TER screen shot|
+   .. include:: /Images/ExternalScreenshots/TerCodeLink.rst.txt
 
 #. Open file :file:`composer.json`.
 
-   |file list|
+   .. include:: /Images/ExternalScreenshots/GithubComposerFile.rst.txt
 
 #. Search for line with property `"name"`, it's value should be
    formatted like `vendor/package`.
 
-   |file content|
+   .. include:: /Images/ExternalScreenshots/GithubComposerName.rst.txt
 
 #. Check, if the package can be found on
    `packagist.org <https://packagist.org>`__.
 
-   |packagist screen shot|
+   .. include:: /Images/ExternalScreenshots/PackagistMask.rst.txt
 
 **Example:**
 To install the mask extension in version 4.1.\*, type::
@@ -380,19 +380,6 @@ After adding paths to the autoload you should run `composer dumpautoload`. This 
     there is an alternative way to include your individual extensions in the chapter
     :ref:`completely clear "typo3conf/ext" folder <mig-composer-clear-typo3conf-ext-folder>`
     in the :ref:`Best practices <mig-composer-best-practices>` section.
-
-.. |TER composer command| image:: ../Images/ExternalScreenshots/TerComposerCommand.png
-   :scale: 65 %
-.. |TER screen shot| image:: ../Images/ExternalScreenshots/TerCodeLink.png
-   :scale: 65 %
-.. |file list| image:: ../Images/ExternalScreenshots/GithubComposerFile.png
-   :scale: 80 %
-.. |file content| image:: ../Images/ExternalScreenshots/GithubComposerName.png
-   :scale: 80 %
-.. |packagist screen shot| image:: ../Images/ExternalScreenshots/PackagistMask.png
-   :scale: 65 %
-.. |satis abandoned note| image:: ../Images/ExternalScreenshots/SatisAbandoned.png
-.. |composer abandoned note| image:: ../Images/ExternalScreenshots/ComposerTerAbandoned.png
 
 
 New file locations

@@ -15,11 +15,7 @@ The Admin Tool
 #. Hit the start page of your freshly created site with your browser and you
    should see the "thank you for downloading"-message.
 
-   .. figure:: ../../Images/ManualScreenshots/FirstInstall.png
-      :class: with-shadow
-      :alt: Success message after download.
-
-      Success message after download.
+   .. include:: /Images/ManualScreenshots/QuickInstall/FirstInstall.rst.txt
 
 
 #. Create an empty file :file:`FIRST_INSTALL` in your web root directory (e.g. `public` folder).
@@ -32,11 +28,7 @@ The Admin Tool
 
 #. This is what you should see:
 
-   .. figure:: ../../Images/ManualScreenshots/QuickInstall-1-System-Environment.png
-      :alt: first step
-      :class: with-shadow
-
-      Install Tool in 1-2-3 mode, first step.
+   .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall1SystemEnvironment.rst.txt
 
 
 #. In case you have problems in your Environment, you will get warnings or
@@ -51,11 +43,7 @@ The Admin Tool
    but you should choose one of the others for running production grade web
    sites.
 
-   .. figure:: ../../Images/ManualScreenshots/QuickInstall-2-Database-Connection.png
-      :alt: third step
-      :class: with-shadow
-
-      Install Tool in 1-2-3 mode, second step.
+   .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall2DatabaseConnection.rst.txt
 
 
 #. *Choose Database.* If you did not select SQLite in the previous step, you
@@ -68,22 +56,14 @@ The Admin Tool
    will also be used for the Install Tool. The "site name" will identify this
    installation (in the page tree and browser title).
 
-   .. figure:: ../../Images/ManualScreenshots/QuickInstall-4-Admin-User-Sitename.png
-      :alt: forth step
-      :class: with-shadow
-
-      Install Tool in 1-2-3 mode, forth step.
+   .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall4AdminUserSitename.rst.txt
 
 
 #. In the last step you can choose whether you want to start with an empty
    TYPO3 or if you want to have a basis to start from.
 
 
-   .. figure:: ../../Images/ManualScreenshots/QuickInstall-5-Last-Step.png
-      :alt: fifth step
-      :class: with-shadow
-
-      Install Tool in 1-2-3 mode, fifth step.
+   .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall5LastStep.rst.txt
 
    .. tip::
 

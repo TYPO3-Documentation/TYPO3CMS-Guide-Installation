@@ -1,0 +1,2 @@
+.. image:: /Images/ExternalScreenshots/TerComposerCommand.png
+   :scale: 65 %

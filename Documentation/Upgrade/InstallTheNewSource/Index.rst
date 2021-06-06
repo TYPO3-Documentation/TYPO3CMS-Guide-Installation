@@ -64,12 +64,7 @@ To find the matching extension versions you can go to `packagist.org
    `breaking changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_
    for the extension key (not the package name!).
 
-.. figure:: ../../Images/ExternalScreenshots/ExtOnPackagist.png
-   :class: with-shadow
-   :alt: extension on packagist
-
-   The "News" extension on packagist
-
+.. include:: /Images/ExternalScreenshots/ExtOnPackagist.rst.txt
 
 
 .. _install-next-step:
