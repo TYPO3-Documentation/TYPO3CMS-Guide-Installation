@@ -1,0 +1,7 @@
+.. Automatic screenshot: Remove this line if you want to manually change this file
+
+.. figure:: /Images/AutomaticScreenshots/IntroductionPackage/Frontend.png
+   :alt: Frontend of the Introduction Package
+   :class: with-shadow
+
+   The Introduction Package provides a fully operational website based on bootstrap

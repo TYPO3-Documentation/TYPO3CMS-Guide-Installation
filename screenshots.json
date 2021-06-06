@@ -267,11 +267,11 @@
                 "startpage": [
                     {
                         "action": "setScreenshotsImagePath",
-                        "path": "Images/AutomaticScreenshots"
+                        "path": "Images/AutomaticScreenshots/IntroductionPackage"
                     },
                     {
                         "action": "setScreenshotsRstPath",
-                        "path": "Images/AutomaticScreenshots"
+                        "path": "Images/AutomaticScreenshots/IntroductionPackage"
                     },
                     {
                         "action": "resizeWindow",
@@ -291,7 +291,27 @@
                     {"action": "waitForText", "text": "Congratulations", "timeout": 5},
                     {
                         "action": "makeScreenshotOfElement",
-                        "fileName": "IntroductionStartPage"
+                        "fileName": "Backend"
+                    },
+
+                    {
+                        "action": "resizeWindow",
+                        "width": 1024,
+                        "height": 2048
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "/?id=1"
+                    },
+                    {
+                        "action": "wait",
+                        "timeout": 1
+                    },
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "Frontend",
+                        "altText": "Frontend of the Introduction Package",
+                        "captionText": "The Introduction Package provides a fully operational website based on bootstrap"
                     }
                 ],
                 "uninstall": [
@@ -307,6 +327,10 @@
                         "action": "resizeWindow",
                         "width": 1024,
                         "height": 512
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "/typo3/"
                     },
                     {"action": "switchToMainFrame"},
                     {
@@ -335,6 +359,10 @@
                     {
                         "action": "setScreenshotsRstPath",
                         "path": "Images/AutomaticScreenshots/ImportExport"
+                    },
+                    {
+                        "action": "amOnPage",
+                        "page": "/typo3/"
                     },
                     {"action": "resizeWindow", "width": 1024,"height": 768},
                     {"action": "see", "text": "List"},

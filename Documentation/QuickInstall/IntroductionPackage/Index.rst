@@ -93,14 +93,14 @@ The "Introduction Package" creates some pages. The top level page is named "Cong
 
 #. Click on "Congratulations" in the page tree.
 
-   .. include:: /Images/AutomaticScreenshots/IntroductionStartPage.rst.txt
+   .. include:: /Images/AutomaticScreenshots/IntroductionPackage/Backend.rst.txt
 
 #. View the page in the frontend:
 
    Click on the :guilabel:`"View webpage"` icon (with an eye) to view the page
    in the frontend.
 
-   .. image:: ../../Images/ManualScreenshots/IntroductionPackage.png
+   .. include:: /Images/AutomaticScreenshots/IntroductionPackage/Frontend.rst.txt
 
 .. tip::
 
