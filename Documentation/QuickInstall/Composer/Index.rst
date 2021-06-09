@@ -5,7 +5,7 @@
 .. _install-via-composer:
 
 ==========================
-Install TYPO3 via composer
+Install TYPO3 via Composer
 ==========================
 
 The recommended way of installing TYPO3 is via Composer, as described on
