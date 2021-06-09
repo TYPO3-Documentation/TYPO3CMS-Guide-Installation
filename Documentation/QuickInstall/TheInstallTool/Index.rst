@@ -59,7 +59,7 @@ The Admin Tool
    .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall4AdminUserSitename.rst.txt
 
 
-#. In the last step you can choose whether you want to start with an empty
+#. In the second last step you can choose whether you want to start with an empty
    TYPO3 or if you want to have a basis to start from.
 
 
@@ -74,6 +74,13 @@ The Admin Tool
       * Without Composer: :guilabel:`"Get preconfigured distributions"`
 
       Proceed with :ref:`install-introduction-package`
+
+
+#. In the last step you verify the image handling settings under the configuration presets 
+   for Image Magick and Graphics Magick.
+   E.g in Windows you must enter without any quotes ::
+
+     C:\Program Files\ImageMagick-7.0.11-Q8
 
 
 If you do not wish to install the "Introduction Package", choose
