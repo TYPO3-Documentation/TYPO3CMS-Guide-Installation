@@ -17,12 +17,18 @@ machine (which needs elevated permissions on Windows machines).
 
 1. Checkout out the system requirements
 
-   Install required software, such as:
+   Install required server software, such as:
 
    * Web server (Apache, Nginx, IIS...)
    * PHP ≥ 7.2
    * Database server (MySQL, PostgreSQL, MariaDB ...)
+   * Image Magick or Graphics Magick   
+   * Open SSL. Under Windows you must add manually the system environment variable, e.g.:
+          *OPENSSL_CONF = C:\Web\Xampp\Xamp-7.3.28\apache\conf\openssl.cnf*
    * ... more see :ref:`system-requirements`
+
+   `XAMPP <https://www.apachefriends.org/index.html>`__ is a software package which 
+   includes Apache, MariaDB and PHP for Windows and Linux. 
 
    .. tip::
       Alternatively, you can use a container solution such as
