@@ -5,7 +5,7 @@
 .. _install-typo3-without-composer:
 
 ==============================
-Install TYPO3 Without Composer
+Install TYPO3 without Composer
 ==============================
 
 .. attention::
@@ -79,7 +79,7 @@ a new patchlevel version of TYPO3 is released.
 
 .. _installation-windows:
 
-Installing on a Windows Server
+Installing on a Windows server
 ==============================
 
 #. Get the Source Package from `http://typo3.org/download/
