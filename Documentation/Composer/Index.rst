@@ -19,10 +19,8 @@ if everything worked
 fine. After running your tests, you can deploy the :file:`vendor` and
 :file:`public` folder to your web server.
 
-To avoid conflicts between your local and your server's PHP version, you
-can define your server's PHP version in your :file:`composer.json` file
-(e.g. ``{"platform": {"php": "7.2"}}``), so `composer` will always check
-the correct dependencies.
+To avoid conflicts between your local and your server's PHP version and PHP extensions, you
+can use a `composer `platform` definition<https://getcomposer.org/doc/06-config.md#platform>`__.
 
 Update Packages
 ===============
