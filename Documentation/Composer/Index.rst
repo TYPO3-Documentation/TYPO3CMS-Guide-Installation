@@ -20,7 +20,7 @@ fine. After running your tests, you can deploy the :file:`vendor` and
 :file:`public` folder to your web server.
 
 To avoid conflicts between your local and your server's PHP version and PHP extensions, you
-can use a `composer `platform` definition<https://getcomposer.org/doc/06-config.md#platform>`__.
+can use a Composer `platform definition <https://getcomposer.org/doc/06-config.md#platform>`__.
 
 Update Packages
 ===============
