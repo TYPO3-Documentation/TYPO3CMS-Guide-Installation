@@ -1,5 +1,59 @@
 {
     "suites": {
+        "Install": {
+            "screenshots": [
+                [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/QuickInstall"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/QuickInstall"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 600},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step1SystemEnvironment",
+                        "captionText": "Install Tool in 1-2-3 mode, first step."
+                    },
+                    {"action": "click", "link": ".btn-success"},
+                    {"action": "waitForText", "text": "Select database"},
+                    {"action": "resizeToFullPage"},
+                    {"action": "fillField", "field": "Username", "value": "db"},
+                    {"action": "fillField", "field": "Password", "value": "db"},
+                    {"action": "fillField", "field": "Host", "value": "db"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step2DatabaseConnection",
+                        "captionText": "Install Tool in 1-2-3 mode, second step."
+                    },
+                    {"action": "click", "link": ".btn-success"},
+                    {"action": "waitForText", "text": "Select a database"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step3ChooseDb",
+                        "captionText": "Install Tool in 1-2-3 mode, third step."
+                    },
+                    {
+                        "action": "selectOption",
+                        "select": "select#t3-install-step-database-existing",
+                        "option": "test"
+                    },
+                    {"action": "click", "link": ".btn-success"},
+                    {"action": "wait", "timeout": 1},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step4AdminUserSitename",
+                        "captionText": "Install Tool in 1-2-3 mode, forth step."
+                    }
+                ]
+            ]
+        },
         "Core": {
             "screenshots": {
                 "AdminTool": [
