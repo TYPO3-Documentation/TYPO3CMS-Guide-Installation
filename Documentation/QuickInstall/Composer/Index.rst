@@ -24,9 +24,18 @@ To create a new TYPO3 project using the TYPO3 Base Distribution::
    
 To create a new TYPO3 project using the TYPO3 Base Distribution in a ddev environment::
 
+   # create and change directory
+   mkdir my-typo3-site
+   cd my-typo3-site
+   # set project type and docroot
+   ddev config --project-type=typo3 --docroot=public --create-docroot
+   ddev start
    # Download the Base Distribution, the latest "LTS" release (10)
    ddev composer create "typo3/cms-base-distribution:^10" --prefer-dist
-
+   # create FIRST_INSTALL file in the folder public/
+   ddev exec touch public/FIRST_INSTALL
+   # start project
+   ddev launch
 
 .. note::
 
