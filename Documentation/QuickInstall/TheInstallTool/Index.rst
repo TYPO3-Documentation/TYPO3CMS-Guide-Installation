@@ -89,6 +89,7 @@ After clicking on the button right to it, you should get a message like
     An ImageMagick version 6 or higher was found in path C:\Program Files\ImageMagick-7.0.11-Q8.
 
 Then you click on its radio button and click on the Activate button at the bottom of the page.
+The path where the executable file is located, gets stored in the variable `$GLOBALS['TYPO3_CONF_VARS']['GFX']['processor_path']` .
 
 If you do not wish to install the "Introduction Package", choose
 :guilabel:`"Take me straight to the backend"` or
