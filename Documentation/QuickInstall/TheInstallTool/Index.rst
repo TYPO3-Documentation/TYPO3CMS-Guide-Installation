@@ -59,7 +59,7 @@ The Admin Tool
    .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall4AdminUserSitename.rst.txt
 
 
-#. In the second last step you can choose whether you want to start with an empty
+#. In the last step you can choose whether you want to start with an empty
    TYPO3 or if you want to have a basis to start from.
 
 
@@ -76,12 +76,19 @@ The Admin Tool
       Proceed with :ref:`install-introduction-package`
 
 
-#. In the last step you verify the image handling settings under the configuration presets 
-   for Image Magick and Graphics Magick.
-   E.g in Windows you must enter without any quotes ::
 
-     C:\Program Files\ImageMagick-7.0.11-Q8
+After the last step of the installation you must verify the image handling settings
+under the configuration presets for Image Magick and Graphics Magick.
+   E.g in Windows you must enter at the left of the button "Find executable in this directory" 
+   a path to an Image Magick installation. Do not use quotes around it.  ::
 
+    C:\Program Files\ImageMagick-7.0.11-Q8
+
+After clicking on the button right to it, you should get a message like
+
+    An ImageMagick version 6 or higher was found in path C:\Program Files\ImageMagick-7.0.11-Q8.
+
+Then you click on its radio button and click on the Activate button at the bottom of the page.
 
 If you do not wish to install the "Introduction Package", choose
 :guilabel:`"Take me straight to the backend"` or
