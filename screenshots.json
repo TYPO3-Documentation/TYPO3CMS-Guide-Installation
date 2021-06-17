@@ -488,6 +488,24 @@
                         "altText": "Check the exported data",
                         "captionText": "Check the exported data"
                     },
+                    {"action": "scrollModuleBodyToTop"},
+                    {
+                        "action": "see",
+                        "text": "File & Preset"
+                    },
+                    {
+                        "action": "click",
+                        "link": "File & Preset"
+                    },
+                    {"action": "fillField", "field": "input#impexp-filename", "value": "MyExport"},
+                    {"action": "drawBox", "selector": "input[name='tx_impexp[download_export]']"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".t3js-impexp-preview",
+                        "fileName": "DownloadExport",
+                        "altText": "Download the export data",
+                        "captionText": "Download the export data"
+                    },
                     {
                         "action": "amOnPage",
                         "page": "/typo3/record/importexport/import?token=x"
