@@ -20,4 +20,5 @@ Installation explained
    TheInstallTool/Index
    Distributions/Index
    TranslatingTheBackend/Index
+   OpcodeCache/Index
 
