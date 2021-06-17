@@ -84,19 +84,19 @@ automatically install the new source code.
 
    For the Core Updater to work, the following setup is required:
 
-   * It only works in Unix-like systems (including macOS).
+   *  It only works in Unix-like systems (including macOS).
 
-   * :file:`typo3_src` must be a symlink.
+   *  :file:`typo3_src` must be a symlink.
 
-   * This symlink needs to be writable (and deletable) by the web-server user.
+   *  This symlink needs to be writable (and deletable) by the web-server user.
 
-   * The document root needs to be writable.
+   *  The document root needs to be writable.
 
-   * One path above document root (:file:`../`) needs to be writable (creation
-   of new directories must be allowed).
+   *  One path above document root (:file:`../`) needs to be writable (creation
+      of new directories must be allowed).
 
-   * The :program:`tar` command must be available (for extracting the Source
-     package).
+   *  The :program:`tar` command must be available (for extracting the Source
+      package).
 
 Disabling the Core Updater
 --------------------------
