@@ -1,5 +1,0 @@
-.. figure:: /Images/ManualScreenshots/QuickInstall/FirstInstall.png
-   :class: with-shadow
-   :alt: Success message after download.
-
-   Success message after download.

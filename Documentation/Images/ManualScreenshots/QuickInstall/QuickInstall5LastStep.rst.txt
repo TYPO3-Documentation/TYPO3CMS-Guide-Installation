@@ -1,6 +1,0 @@
-.. figure:: /Images/ManualScreenshots/QuickInstall/QuickInstall5LastStep.png
-   :alt: fifth step
-   :class: with-shadow
-
-   Install Tool in 1-2-3 mode, fifth step.
-
