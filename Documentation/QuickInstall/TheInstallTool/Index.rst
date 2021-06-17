@@ -15,7 +15,7 @@ The Admin Tool
 #. Hit the start page of your freshly created site with your browser and you
    should see the "thank you for downloading"-message.
 
-   .. include:: /Images/ManualScreenshots/QuickInstall/FirstInstall.rst.txt
+   .. include:: /Images/AutomaticScreenshots/QuickInstall/EnableFirstInstall.rst.txt
 
 
 #. Create an empty file :file:`FIRST_INSTALL` in your web root directory (e.g. `public` folder).
@@ -28,7 +28,7 @@ The Admin Tool
 
 #. This is what you should see:
 
-   .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall1SystemEnvironment.rst.txt
+   .. include:: /Images/AutomaticScreenshots/QuickInstall/Step1SystemEnvironment.rst.txt
 
 
 #. In case you have problems in your Environment, you will get warnings or
@@ -43,12 +43,14 @@ The Admin Tool
    but you should choose one of the others for running production grade web
    sites.
 
-   .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall2DatabaseConnection.rst.txt
+   .. include:: /Images/AutomaticScreenshots/QuickInstall/Step2DatabaseConnection.rst.txt
 
 
 #. *Choose Database.* If you did not select SQLite in the previous step, you
    have to select an empty database for TYPO3 now (or create one if your user
    is allowed to).
+
+   .. include:: /Images/AutomaticScreenshots/QuickInstall/Step3ChooseDb.rst.txt
 
 
 #. Enter a username and password for your first TYPO3 administrator account.
@@ -56,14 +58,14 @@ The Admin Tool
    will also be used for the Install Tool. The "site name" will identify this
    installation (in the page tree and browser title).
 
-   .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall4AdminUserSitename.rst.txt
+   .. include:: /Images/AutomaticScreenshots/QuickInstall/Step4AdminUserSitename.rst.txt
 
 
 #. In the last step you can choose whether you want to start with an empty
    TYPO3 or if you want to have a basis to start from.
 
 
-   .. include:: /Images/ManualScreenshots/QuickInstall/QuickInstall5LastStep.rst.txt
+   .. include:: /Images/AutomaticScreenshots/QuickInstall/Step5LastStep.rst.txt
 
    .. tip::
 

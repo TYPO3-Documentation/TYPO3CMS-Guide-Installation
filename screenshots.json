@@ -1,5 +1,77 @@
 {
     "suites": {
+        "Install": {
+            "screenshots": [
+                [
+                    {
+                        "action": "setScreenshotsImagePath",
+                        "path": "Images/AutomaticScreenshots/QuickInstall"
+                    },
+                    {
+                        "action": "setScreenshotsRstPath",
+                        "path": "Images/AutomaticScreenshots/QuickInstall"
+                    },
+                    {"action": "resizeWindow", "width": 1024,"height": 1200},
+                    {"action": "deleteFileInTypo3PublicPath", "filePath": "FIRST_INSTALL"},
+                    {"action": "reloadInstallationProcess"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "EnableFirstInstall",
+                        "altText": "Success message after download",
+                        "captionText": "Success message after download"
+                    },
+                    {"action": "writeFileToTypo3PublicPath", "filePath": "FIRST_INSTALL"},
+                    {"action": "reloadInstallationProcess"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step1SystemEnvironment",
+                        "captionText": "Install Tool in 1-2-3 mode, first step."
+                    },
+                    {"action": "click", "link": ".btn-success"},
+                    {"action": "waitForText", "text": "Select database"},
+                    {"action": "fillField", "field": "install[values][username]", "value": "root"},
+                    {"action": "fillField", "field": "install[values][password]", "value": "root"},
+                    {"action": "fillField", "field": "install[values][host]", "value": "db"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step2DatabaseConnection",
+                        "captionText": "Install Tool in 1-2-3 mode, second step."
+                    },
+                    {"action": "click", "link": ".btn-success"},
+                    {"action": "waitForText", "text": "Select a database"},
+                    {"action": "fillField", "field": "install[values][new]", "value": "screenshots_install"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step3ChooseDb",
+                        "captionText": "Install Tool in 1-2-3 mode, third step."
+                    },
+                    {"action": "click", "link": ".btn-success"},
+                    {"action": "waitForText", "text": "Create Administrative User"},
+                    {"action": "fillField", "field": "install[values][username]", "value": "admin"},
+                    {"action": "fillField", "field": "install[values][password]", "value": "12345678"},
+                    {"action": "fillField", "field": "install[values][email]", "value": "admin@my.org"},
+                    {"action": "fillField", "field": "install[values][sitename]", "value": "My website"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step4AdminUserSitename",
+                        "captionText": "Install Tool in 1-2-3 mode, forth step."
+                    },
+                    {"action": "click", "link": ".btn-success"},
+                    {"action": "waitForText", "text": "Installation Complete"},
+                    {
+                        "action": "makeScreenshotOfElement",
+                        "selector": ".typo3-install-content",
+                        "fileName": "Step5LastStep",
+                        "captionText": "Install Tool in 1-2-3 mode, fifth step."
+                    }
+                ]
+            ]
+        },
         "Core": {
             "screenshots": {
                 "AdminTool": [
