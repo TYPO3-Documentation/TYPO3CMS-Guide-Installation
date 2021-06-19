@@ -79,7 +79,7 @@ Export your data
       You can save the exported data to your server or download it in the
       tab :guilabel:`File & Preset`.
 
-      .. include:: /Images/ManualScreenshots/ImportExport/DownloadExport.rst.txt
+      .. include:: /Images/AutomaticScreenshots/ImportExport/DownloadExport.rst.txt
 
 Import your data
 ================
