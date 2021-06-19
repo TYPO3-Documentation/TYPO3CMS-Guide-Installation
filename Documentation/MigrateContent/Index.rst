@@ -38,11 +38,11 @@ Export your data
       On the page tree left click on the page from where you want to start the
       export. Select :guilabel:`More options ...`:
 
-      .. include:: /Images/ManualScreenshots/ImportExport/ContextMenuMore.rst.txt
+      .. include:: /Images/AutomaticScreenshots/ImportExport/ContextMenuMore.rst.txt
 
       Then select :guilabel:`Export` from the context menu.
 
-      .. include:: /Images/ManualScreenshots/ImportExport/ContextMenuExport.rst.txt
+      .. include:: /Images/AutomaticScreenshots/ImportExport/ContextMenuExport.rst.txt
 
    2. Select the tables to be exported
 

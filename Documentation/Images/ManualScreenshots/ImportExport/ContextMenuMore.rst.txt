@@ -1,5 +1,0 @@
-.. figure:: /Images/ManualScreenshots/ImportExport/ContextMenuMore.png
-      :class: with-shadow
-      :alt: Select "More options..." from the context menu of the page tree
-
-      Select "More options..." from the context menu of the page tree
