@@ -1,5 +1,0 @@
-.. figure:: /Images/ManualScreenshots/ImportExport/ContextMenuExport.png
-   :class: with-shadow
-   :alt: Then select "Export"
-
-   Select Then select "Export"

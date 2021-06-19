@@ -441,12 +441,23 @@
                     {"action": "click", "link": "List"},
                     {"action": "openPageTreePath", "path": ["Congratulations", "Frontend User"]},
                     {"action": "clickWithRightButton", "cssOrXPath": "//*[@id='typo3-pagetree-treeContainer']//*[text()='Frontend User']/.."},
-                    {"action": "waitForElement", "element": ".context-menu", "timeout": 1},
+                    {"action": "waitForElement", "element": "#contentMenu0", "timeout": 1},
+                    {"action": "drawBox", "selector": "//*[@id='contentMenu0']//*[contains(text(), 'More options...')]"},
                     {
                         "action": "makeScreenshotOfWindow",
                         "fileName": "ContextMenuMore",
                         "altText": "Select \"More options...\" from the context menu of the page tree",
                         "captionText": "Select \"More options...\" from the context menu of the page tree"
+                    },
+                    {"action": "clearDrawings"},
+                    {"action": "click", "link": "//*[@id='contentMenu0']//*[contains(text(), 'More options...')]"},
+                    {"action": "waitForElement", "element": "#contentMenu1", "timeout": 1},
+                    {"action": "click", "link": "//*[@id='contentMenu1']//*[contains(text(), 'Export')]"},
+                    {
+                        "action": "makeScreenshotOfWindow",
+                        "fileName": "ContextMenuExport",
+                        "altText": "Select Then select \"Export\"",
+                        "captionText": "Select Then select \"Export\""
                     }
                 ],
                 "importexport": [
