@@ -492,6 +492,7 @@
                         "action": "amOnPage",
                         "page": "/typo3/record/importexport/export?token=x&id=0&tx_impexp[pagetree][id]=1&tx_impexp[pagetree][levels]=0&tx_impexp[pagetree][tables][]=_ALL"
                     },
+                    {"action": "scrollModuleBodyToTop"},
                     {
                         "action": "makeScreenshotOfElement",
                         "selector": ".t3js-impexp-preview",
@@ -510,13 +511,16 @@
                     },
                     {"action": "fillField", "field": "input#impexp-filename", "value": "MyExport"},
                     {"action": "drawBox", "selector": "input[name='tx_impexp[download_export]']"},
+                    {"action": "resizeWindow", "width": 1024,"height": 1024},
                     {
                         "action": "makeScreenshotOfElement",
-                        "selector": ".t3js-impexp-preview",
                         "fileName": "DownloadExport",
+                        "selector": ".t3js-module-body",
                         "altText": "Download the export data",
                         "captionText": "Download the export data"
-                    },
+                    }
+                ],
+                "import": [
                     {
                         "action": "amOnPage",
                         "page": "/typo3/record/importexport/import?token=x"

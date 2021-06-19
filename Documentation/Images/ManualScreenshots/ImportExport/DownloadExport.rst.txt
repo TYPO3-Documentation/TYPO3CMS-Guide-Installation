@@ -1,6 +1,0 @@
-.. figure:: /Images/ManualScreenshots/ImportExport/DownloadExport.png
-   :class: with-shadow
-   :alt: Download the export data
-
-   Download the export data
-
