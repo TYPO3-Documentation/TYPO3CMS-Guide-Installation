@@ -193,3 +193,17 @@ and displays hints if something goes wrong.
    might need to adjust the settings (via "Settings" > "Configuration Presets"
    > "Image Handling").
 
+After the last step of the installation you must verify the image handling settings
+under the configuration presets for Image Magick and Graphics Magick.
+E.g in Windows you must enter at the left of the button "Find executable in this directory" 
+a path to an Image Magick installation. Do not use quotes around it.  ::
+
+    C:\Program Files\ImageMagick-7.0.11-Q8
+
+After clicking on the button right to it, you should get a message like
+
+    An ImageMagick version 6 or higher was found in path C:\Program Files\ImageMagick-7.0.11-Q8.
+
+Then you click on its radio button and click on the Activate button at the bottom of the page.
+The path where the executable file is located, gets stored in the variable `$GLOBALS['TYPO3_CONF_VARS']['GFX']['processor_path']` .
+
