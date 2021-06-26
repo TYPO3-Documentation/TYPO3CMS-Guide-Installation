@@ -22,8 +22,8 @@ First go to your site and enter the admin tool via `/typo3/install.php`, e.g. ht
 
 .. note::
 
-   The Admin tool was called "Install Tool" in earlier versions, you will
-   likely still see that term in some places.
+   The job of the Admin tool in the backend has been done by the "Install Tool" in earlier versions. 
+   The Admin tool is also a system investigation tool in the frontend.
 
 
 .. _important-actions:
