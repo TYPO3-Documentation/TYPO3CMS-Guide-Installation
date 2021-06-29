@@ -99,8 +99,22 @@ administrators. As administrators still have elevated permissions you should
 still be careful which users can be trusted with these rights.
 
 At **Configuration Presets** TYPO3 offers presets for common settings groups.
-It allows for easier configuration of settings for debugging, image handling,
+It allows for easier configuration of settings for caching, debugging, image handling,
 mail configuration and password hashing.
+The debug settings gives you 3 choices:
+
+#. Live
+   Turn off debug output and set logging to warnings and errors only.
+#. Debug
+   Enable debug output and set logging to info level.
+#. Custom configuration
+   Custom configuration mixture if no other preset fits.
+   
+The Debug option will activate a debug output with a multiline backtrace in the frontend, in the case of errors. 
+However it only works if the environment variable *TYPO3_CONTEXT* has been set to `Development`.
+:ref:`Environment`
+:ref:`application-context`
+
 
 TYPO3 provides **Feature Toggles** for certain features that have a major
 impact on your system. You can enable or disable these features here.
