@@ -45,6 +45,11 @@ Use this new administrator to log into the TYPO3 backend. In the module
 :guilabel:`Backend Users` you can change the passwords of existing users,
 including admins.
 
+Alternative:
+Use a database tool as phpMyAdmin and the following SQL to set a new password::
+
+   UPDATE be_users SET password=md5('login&go') WHERE username='admin';
+
 
 .. _troubleshooting_lost_password_install_tool:
 
