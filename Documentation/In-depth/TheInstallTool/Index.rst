@@ -108,7 +108,7 @@ The debug settings gives you 3 choices:
 #. Debug
    Enable debug output and set logging to info level.
 #. Custom configuration
-   Custom configuration mixture if no other preset fits.
+   Custom configuration is a mixture of settings how to debug and report errors.
    
 The Debug option will activate a debug output with a multiline backtrace in the frontend, 
 in case of errors. Debug output is only displayed if the environment variable 
