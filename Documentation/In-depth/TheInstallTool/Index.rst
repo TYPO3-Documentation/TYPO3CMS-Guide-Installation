@@ -94,6 +94,10 @@ description of the settings carefully at least once, so you get an
 impression of what you can configure. Normally you *can*, but you *don't
 have to* change anything here during installation, as the previous steps
 took care of the most important settings.
+Pay attention to use HTTPS for your website and set :code:`$GLOBALS['TYPO3_CONF_VARS']['BE']['loginSecurityLevel']` to `normal`.
+However, on all websites without HTTPS you should set this to `rsa` and 
+activate the system extension `rsaauth`. Otherwise you will not be able to log
+into the TYPO3 backend.
 
 
 .. _upgrade-wizard:
@@ -153,4 +157,3 @@ meant to provide methods to clean up your TYPO3 installation after it
 has been running for a while. You can use it to delete cached images,
 which is helpful when you are configuring the image processing
 settings. This section is also relevant during an upgrade.
-
