@@ -110,8 +110,10 @@ The debug settings gives you 3 choices:
 #. Custom configuration
    Custom configuration mixture if no other preset fits.
    
-The Debug option will activate a debug output with a multiline backtrace in the frontend, in the case of errors. 
-However it only works if the environment variable *TYPO3_CONTEXT* has been set to `Development`.
+The Debug option will activate a debug output with a multiline backtrace in the frontend, 
+in case of errors. Debug output is only displayed if the environment variable 
+*TYPO3_CONTEXT* has been set to `Development`.
+
 :ref:`Environment`
 :ref:`application-context`
 
@@ -189,7 +191,6 @@ This is the recommended way.
 
 **Test Mail Setup** allows you to test the mail setup of TYPO3 by sending a
 test mail.
-
 .. tip::
 
    If the test mail does not arrive, check the settings via "Settings" >
