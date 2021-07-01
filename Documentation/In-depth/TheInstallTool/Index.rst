@@ -94,6 +94,10 @@ description of the settings carefully at least once, so you get an
 impression of what you can configure. Normally you *can*, but you *don't
 have to* change anything here during installation, as the previous steps
 took care of the most important settings.
+Pay attention to use a https website and set the BE loginSecurityLevel to normal.
+On all http sites however you must set this to rsa and 
+activate the system extension rsaauth. Otherwise you will not be able to log
+into the TYPO3 backend.
 
 
 .. _upgrade-wizard:
