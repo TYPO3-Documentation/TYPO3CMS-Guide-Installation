@@ -195,7 +195,7 @@ and displays hints if something goes wrong.
 
 After the last step of the installation you must verify the image handling settings
 under the configuration presets for Image Magick and Graphics Magick.
-E.g in Windows you must enter at the left of the button "Find executable in this directory" 
+For example in Windows, at the left of the button "Find executable in this directory" you must enter 
 a path to an Image Magick installation. Do not use quotes around it.  ::
 
     C:\Program Files\ImageMagick-7.0.11-Q8
