@@ -95,7 +95,7 @@ impression of what you can configure. Normally you *can*, but you *don't
 have to* change anything here during installation, as the previous steps
 took care of the most important settings.
 Pay attention to use HTTPS for your website and set :code:`$GLOBALS['TYPO3_CONF_VARS']['BE']['loginSecurityLevel']` to `normal`.
-On all http sites however you must set this to rsa and 
+However, on all websites without HTTPS you should set this to `rsa` and 
 activate the system extension `rsaauth`. Otherwise you will not be able to log
 into the TYPO3 backend.
 
