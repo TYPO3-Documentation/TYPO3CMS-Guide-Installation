@@ -191,6 +191,7 @@ This is the recommended way.
 
 **Test Mail Setup** allows you to test the mail setup of TYPO3 by sending a
 test mail.
+
 .. tip::
 
    If the test mail does not arrive, check the settings via "Settings" >
