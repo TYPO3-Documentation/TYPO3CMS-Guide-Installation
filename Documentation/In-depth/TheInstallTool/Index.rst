@@ -112,7 +112,7 @@ The debug settings gives you 3 choices:
    
 The Debug option will activate a debug output with a multiline backtrace in the frontend, 
 in case of errors. Debug output is only displayed if the environment variable 
-*TYPO3_CONTEXT* has been set to `Development`.
+`TYPO3_CONTEXT` has been set to `Development`. See :ref:`t3coreapi:application-context` for details.
 
 :ref:`Environment`
 :ref:`application-context`
@@ -207,4 +207,3 @@ and displays hints if something goes wrong.
    TYPO3 might have problems executing it. If the command does not work, you
    might need to adjust the settings (via "Settings" > "Configuration Presets"
    > "Image Handling").
-
