@@ -195,15 +195,15 @@ and displays hints if something goes wrong.
 
 After the last step of the installation you must verify the image handling settings
 under the configuration presets for Image Magick and Graphics Magick.
-For example in Windows, at the left of the button "Find executable in this directory" you must enter 
+For example in Windows, in the field left of the button :guilabel:`Find executable in this directory` you must enter 
 a path to an Image Magick installation. Do not use quotes around it.  ::
 
     C:\Program Files\ImageMagick-7.0.11-Q8
 
-After clicking on the button right to it, you should get a message like
+After clicking on the button to the right of it, you should see a similar message:
 
     An ImageMagick version 6 or higher was found in path C:\Program Files\ImageMagick-7.0.11-Q8.
 
-Then you click on its radio button and click on the Activate button at the bottom of the page.
+Then click on its radio button and click on the :guilabel:`Activate` button at the bottom of the page.
 The path where the executable file is located, gets stored in the variable `$GLOBALS['TYPO3_CONF_VARS']['GFX']['processor_path']` .
 
