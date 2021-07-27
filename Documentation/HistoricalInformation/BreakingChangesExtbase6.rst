@@ -14,9 +14,9 @@ changes.
 
 For a more complete list please refer to the `Extbase Changelog for 6.2
 and
-below <https://git.typo3.org/Packages/TYPO3.CMS.git/blob/TYPO3_6-2:/typo3/sysext/extbase/ChangeLog.txt>`__
+below <https://github.com/typo3/typo3/blob/TYPO3_6-2/typo3/sysext/extbase/ChangeLog.txt>`__
 and the `Fluid Changelog for 6.2 and
-below <https://git.typo3.org/Packages/TYPO3.CMS.git/blob/TYPO3_6-2:/typo3/sysext/fluid/ChangeLog.txt>`__
+below <https://github.com/typo3/typo3/blob/TYPO3_6-2/typo3/sysext/fluid/ChangeLog.txt>`__
 
 We try to keep breaking changes to a minimum. Nevertheless, there will
 be some changes that might break your existing extensions, especially if
