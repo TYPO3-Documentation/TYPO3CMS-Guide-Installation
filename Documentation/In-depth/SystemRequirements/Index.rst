@@ -29,9 +29,8 @@ TYPO3 requires a web server, PHP and a database system.
    See :ref:`system-requirements-database` on this page for details.
 
 *  If you want TYPO3 to automatically carry out **image processing** – for example
-   scaling or cropping – you will need preferably GraphicsMagick (version 1.3 or newer) or
-   ImageMagick (version 6 or
-   newer) installed on the server.
+   scaling or cropping – you will need either GraphicsMagick (version 1.3 or newer) or
+   ImageMagick (version 6 or newer) installed on the server. GraphicsMagick is recommended.
    
 *  Open SSL. 
    Under Windows you must add manually the system environment variable - for example
