@@ -33,7 +33,7 @@ TYPO3 requires a web server, PHP and a database system.
    ImageMagick (version 6 or newer) installed on the server. GraphicsMagick is recommended.
    
 *  Open SSL. 
-   Under Windows you must add manually the system environment variable - for example
+   Under Windows you must manually add the system environment variable - for example
    +OPENSSL_CONF = C:\Web\Xampp\Xamp-7.3.28\apache\conf\openssl.cnf*
 
 
