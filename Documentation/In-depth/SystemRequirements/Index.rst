@@ -15,7 +15,9 @@ TYPO3 requires a web server, PHP and a database system.
 
 *  TYPO3 requires a **web server** which can run PHP (Apache httpd, Nginx,
    Microsoft IIS, Caddy Server).
-   If you use an Apache web server, some module (for example mod_rewrite) must be activated.
+   If you use an Apache web server, some modules (for example mod_rewrite) must be activated.
+   `XAMPP <https://www.apachefriends.org/index.html>`__ is a software package which 
+   includes Apache, MariaDB, PHP and Open SSL for Windows and Linux. 
    See :ref:`system-requirements-webserver` for details.
 
 *  The current master of TYPO3 requires **PHP >= 7.4 <= 8.0**.
@@ -27,9 +29,14 @@ TYPO3 requires a web server, PHP and a database system.
    See :ref:`system-requirements-database` on this page for details.
 
 *  If you want TYPO3 to automatically carry out **image processing** – for example
-   scaling or cropping – you will need GraphicsMagick (version 1.3 or newer) or
-   ImageMagick (version 6 or
-   newer) installed on the server. (GraphicsMagick should be preferred.)
+   scaling or cropping – you will need either GraphicsMagick (version 1.3 or newer) or
+   ImageMagick (version 6 or newer) installed on the server. GraphicsMagick is recommended.
+   
+*  Open SSL. 
+   Under Windows you must manually add the system environment variable - for example
+   +OPENSSL_CONF = C:\Web\Xampp\Xamp-7.3.28\apache\conf\openssl.cnf*
+
+
 
 For an overview see also `get.typo3.org
 <https://get.typo3.org/version/11#system-requirements>`_.
