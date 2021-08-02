@@ -20,7 +20,7 @@ You have more ways to install TYPO3 via composer:
 To create a new TYPO3 project using the TYPO3 Base Distribution::
 
 	# Download the Base Distribution, the latest "sprint" release (10)
-	composer create-project typo3/cms-base-distribution YourNewProjectFolder
+	composer create-project typo3/cms-base-distribution:"^10" YourNewProjectFolder
    
 To create a new TYPO3 project using the TYPO3 Base Distribution in a ddev environment::
 
