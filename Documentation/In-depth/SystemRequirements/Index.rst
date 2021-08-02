@@ -128,7 +128,7 @@ mod_setenvif:
 .. tip::
 
    Look for `<IfModule>` directives in the default :file:`.htaccess` file
-   `EXT:install/Resources/Private/FolderStructureTemplateFiles/root-htaccess <https://github.com/TYPO3/TYPO3.CMS/blob/master/typo3/sysext/install/Resources/Private/FolderStructureTemplateFiles/root-htaccess>`__
+   `EXT:install/Resources/Private/FolderStructureTemplateFiles/root-htaccess <https://github.com/typo3/typo3/blob/master/typo3/sysext/install/Resources/Private/FolderStructureTemplateFiles/root-htaccess>`__
    for more clues about which modules are used for what purpose. Not all used modules
    may have directives in the .htaccess file so do not necessarily expect :file:`.htaccess`
    to contain a complete list of modules.

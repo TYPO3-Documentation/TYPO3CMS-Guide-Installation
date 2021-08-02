@@ -132,7 +132,7 @@ Primarily, `typo3/cms-base-distribution <https://packagist.org/packages/typo3/cm
 is not meant to be used with `composer require`, but to really quickly start new composer based TYPO3 projects.
 
 Nevertheless, it's very good to have heard about it. If you're interested in more information, you should check
-the packages `README <https://github.com/TYPO3/TYPO3.CMS.BaseDistribution>`__.
+the packages `README <https://github.com/typo3/TYPO3.CMS.BaseDistribution>`__.
 
 .. _secure-web:
 
