@@ -29,7 +29,7 @@ your web root.
 
 You can use the :file:`composer.json` from typo3/cms-base-distribution as an
 example. Use the file from the branch which matches your current version, e.g.
-`10.x <https://github.com/TYPO3/TYPO3.CMS.BaseDistribution/blob/10.x/composer.json>`__.
+`10.x <https://github.com/typo3/typo3.BaseDistribution/blob/10.x/composer.json>`__.
 
 However, this may require extensions you don't need or omit extensions you do
 need, so be sure to update the required extensions as described in the next

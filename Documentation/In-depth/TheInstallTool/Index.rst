@@ -22,8 +22,10 @@ First go to your site and enter the admin tool via `/typo3/install.php`, e.g. ht
 
 .. note::
 
-   The Admin tool was called "Install Tool" in earlier versions, you will
-   likely still see that term in some places.
+   The :guilabel:`Admin tool` in the backend was called "Install Tool" in earlier versions. 
+   
+   There is a tool called "Admin Panel" in the frontend. It has nothing to do with
+   the "Admin tool" described here. See :ref:`Admin Panel<t3tsref:useradmpanel>`.
 
 
 .. _important-actions:
@@ -208,3 +210,27 @@ and displays hints if something goes wrong.
    TYPO3 might have problems executing it. If the command does not work, you
    might need to adjust the settings (via "Settings" > "Configuration Presets"
    > "Image Handling").
+
+After the last step of the installation you must verify the image handling settings
+under the configuration presets for Image Magick and Graphics Magick.
+
+
+Check if Image Magick is correctly configured on Windows
+--------------------------------------------------------
+
+In Windows, in the field left of the button :guilabel:`Find executable in this directory` you must enter 
+a path to an Image Magick installation. Do not use quotes around it.  
+
+.. code-block: none
+
+    C:\Program Files\ImageMagick-7.0.11-Q8
+
+After clicking on the button to the right of it, you should see a similar message:
+
+.. code-block: none
+
+  An ImageMagick version 6 or higher was found in path C:\Program Files\ImageMagick-7.0.11-Q8.
+
+Then click on its radio button and click on the :guilabel:`Activate` button at the bottom of the page.
+The path where the executable file is located, gets stored in the variable 
+:php:`$GLOBALS['TYPO3_CONF_VARS']['GFX']['processor_path']` .
