@@ -60,7 +60,7 @@ database:
 
 *  SELECT, INSERT, UPDATE, DELETE
 
-*  CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES, LOCK TABLES
+*  CREATE, DROP, INDEX, ALTER, CREATE TEMPORARY TABLES
 
 It is recommended to also grant the following privileges:
 
