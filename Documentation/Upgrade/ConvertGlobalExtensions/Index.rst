@@ -14,14 +14,13 @@ Global extensions used to be saved in folders inside
 versions of TYPO3, this location should no longer be used. Instead,
 use local extensions below :file:`typo3conf/ext/`.
 
-To convert a global extension to a local one, do the following:
+To convert a global extension to a local one, make a backup of it,
+then do the following:
 
 * Go to the Extension Manager.
-* Uninstall the global extension.
-* Delete the files of the extension from :file:`typo3/ext/`, including
-  the directory of that extension itself.
-* Reinstall the extension from TER, which will put it into
-  :file:`typo3conf/ext/`.
+* Deactivate the global extension.
+* Delete the directory of that extension and its subfolders and files from the folder :file:`typo3/ext/`.
+* Install the extension into the folder :file:`typo3conf/ext/` and activate it.
 
 
 .. note::
