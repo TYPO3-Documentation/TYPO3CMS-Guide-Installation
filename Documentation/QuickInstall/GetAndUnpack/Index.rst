@@ -98,13 +98,16 @@ Installing on a Windows Server
       mklink /d typo3 typo3_src\typo3
       mklink index.php typo3_src\index.php
 
+.. important::
+   Make sure to upload the whole TYPO3 source directory including the
+   :file:`vendor` directory, otherwise you will miss important dependencies.
 
-   You end up with the following structure of files::
+You end up with the following structure of files::
 
-      typo3_src-10.4.x/
-      public/typo3_src -> ../typo3_src-10.4.x/
-      public/typo3 -> typo3_src/typo3/
-      public/index.php -> typo3_src/index.php
+   typo3_src-10.4.x/
+   public/typo3_src -> ../typo3_src-10.4.x/
+   public/typo3 -> typo3_src/typo3/
+   public/index.php -> typo3_src/index.php
 
 
 After extraction and symlink creation continue with the steps in
