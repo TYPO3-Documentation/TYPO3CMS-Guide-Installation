@@ -14,8 +14,8 @@ guide <get-and-unpack-the-typo3-package>`.
 
 You have more ways to install TYPO3 via composer:
 
-* Install regular via loading the needed packages. Use `Composer helper <https://get.typo3.org/misc/composer/helper/>`_ to generate the composer command.
-* Install the cms-base-distribution package. This is helpful when you are use ddev, because it configures your database and mailserver for Mailhog.
+* Install regularly via loading the needed packages. Use `Composer helper <https://get.typo3.org/misc/composer/helper/>`_ to generate the composer command.
+* Install the cms-base-distribution package. This is helpful when you are using ddev, because it configures your database and mailserver for Mailhog.
 
 To create a new TYPO3 project using the TYPO3 Base Distribution::
 
@@ -44,7 +44,7 @@ To create a new TYPO3 project using the TYPO3 Base Distribution in a ddev enviro
    powershell or git bash started with admin rights).
 
 
-After `composer create project ...` executed, you should have the following folder structure:
+After `composer create project ...` has been executed, you should have the following folder structure:
  
 .. code-block:: none
 
