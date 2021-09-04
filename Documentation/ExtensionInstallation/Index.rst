@@ -179,8 +179,7 @@ with specification`.
 Install an Extension With Composer
 ==================================
 
-
-On the command line:
+Publicly available extensions can be installed with composer like this:
 
 .. rst-class:: bignums
 
@@ -217,6 +216,34 @@ On the command line:
    .. code-block:: shell
 
       ./vendor/bin/typo3 extension:activate news
+
+
+.. _install-local-extension-with-composer:
+
+Install a local extension (sitepackage, custom) with composer
+=============================================================
+
+Local extensions like site packages or custom extensions just used in
+one extension can be put in a directory like :file:`packages/example-extension`
+and then included via composer:
+
+.. code-block:: json
+
+    {
+        "repositories": [
+            {
+                "type": "path",
+                "url": "./packages/*/"
+            },
+        ],
+        "require": {
+            "my/example-extension": "@dev",
+        }
+    }
+
+When `example-extension` is located `packages/example-extension`, it is picked
+up by composer and symlinked into `typo3conf/ext/example_extension` on composer
+install.
 
 
 Remove Extensions With Composer
