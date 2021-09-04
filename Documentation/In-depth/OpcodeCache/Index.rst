@@ -51,9 +51,19 @@ isn't easy fixable and an outstanding
 
 (!) This issue applies to CLI scheduler tasks.
 
-(!) Using ApcBackend, WincacheBackend, XcacheBackend as caching backend
+(!) Using ApcBackend, XcacheBackend or the deprecated WincacheBackend 
+as caching backend
 in your TYPO3 CMS installation will lead to the same problem. You can't
 change the data from the website.
+
+.. deprecated:: 11.4
+   The Caching framework backend implementation 
+   :php:`TYPO3\CMS\Core\Cache\Backend\WincacheBackend` is not maintained 
+   since Microsoft dropped its support. Affected instances could switch 
+   to ApcuBackend if the apcu PHP module is loaded, or alternatively to 
+   some other backend like RedisBackend, MemcachedBackend or 
+   Typo3DatabaseBackend, depending on the specific cache size and usage 
+   characteristics.
 
 Using PHP code on an NFS share
 ------------------------------
