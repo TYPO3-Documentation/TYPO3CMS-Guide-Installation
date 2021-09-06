@@ -22,6 +22,19 @@ fine. After running your tests, you can deploy the :file:`vendor` and
 To avoid conflicts between your local and your server's PHP version and PHP extensions, you
 can use a Composer `platform definition <https://getcomposer.org/doc/06-config.md#platform>`__.
 
+Install extensions
+==================
+
+.. deprecated:: 11.4
+   Installing an extension in a composer-based installation by putting it
+   directly in :file:`typo3conf/ext/` is deprecated.
+
+All extensions must be installed via composer in composer-based installations.
+See :ref:`install-extension-with-composer`. Extensions that are directly in the
+projects version control like sitepackages can be installed via composer by
+keeping them in a separate directory. See
+:ref:`install-local-extension-with-composer`.
+
 Update Packages
 ===============
 
