@@ -31,6 +31,36 @@ On composer based installations it can be required via
 Export your data
 ================
 
+Via CLI command
+----------------
+
+Exporting a TYPO3 page tree without php time limit is possible via
+:ref:`Symfony Console Commands (cli) <symfony-console-commands-cli>`.
+
+.. code-block:: bash
+   :caption: Composer based installation
+
+   vendor/bin/typo3 impexp:export [options] [--] [<filename>]
+
+.. note::
+   If your TYPO3 installation is not based on composer you can run the command
+   with :bash:`typo3/sysext/core/bin/typo3 impexp:export` instead.
+
+and exports the entire TYPO3 page tree - or parts of it - to a data file of
+format XML or T3D, which can be used for import into any TYPO3 instance.
+
+The export can be fine-tuned through the complete set of options also
+available in the export view of the TYPO3 backend:
+You can see the complete list of options by calling the help for the command:
+
+.. code-block:: bash
+
+   vendor/bin/typo3 help impexp:export
+
+
+Manual export from the TYPO3 backend
+------------------------------------
+
 .. rst-class:: bignums
 
    1. Go to the export module
@@ -89,6 +119,36 @@ Import your data
    Make sure all needed extensions are installed and the database scheme
    is up to date before starting the import. Otherwise the data related
    to non-existing tables will not get imported.
+
+
+Via CLI command
+----------------
+
+Importing a TYPO3 page tree without php time limit is possible via
+:ref:`Symfony Console Commands (cli) <symfony-console-commands-cli>`.
+
+.. code-block:: bash
+   :caption: Composer based installation
+
+   vendor/bin/typo3 impexp:import [options] [--] [<filename>]
+
+.. note::
+   If your TYPO3 installation is not based on composer you can run the command
+   with :shell:`typo3/sysext/core/bin/typo3 impexp:import` instead.
+
+
+The import can be fine-tuned through the complete set of options also
+available in the import view of the TYPO3 backend. You can see the complete
+list of options by calling the help for the command:
+
+
+.. code-block:: bash
+
+   vendor/bin/typo3 help impexp:import
+
+
+Manual import from the TYPO3 backend
+------------------------------------
 
 .. rst-class:: bignums
 
