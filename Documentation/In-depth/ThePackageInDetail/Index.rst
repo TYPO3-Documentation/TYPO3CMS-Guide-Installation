@@ -57,7 +57,7 @@ installation of TYPO3:
 
 :file:`typo3conf/PackageStates.php`
   contains information about the extensions, which are activated in your
-  system.
+  system (in non-composer mode).
 
 :file:`typo3conf/AdditionalConfiguration.php`
   is an additional configuration file, which is executed on every request after

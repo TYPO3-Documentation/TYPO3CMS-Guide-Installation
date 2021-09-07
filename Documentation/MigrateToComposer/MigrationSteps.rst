@@ -49,32 +49,6 @@ TER, you can add composer.typo3.org as repository:
         ]
     }
 
-The :file:`composer.json` in the Base distribution includes a scripts section:
-
-.. code-block:: json
-
-   {
-      "scripts": {
-         "typo3-cms-scripts": [
-            "typo3cms install:generatepackagestates",
-            "typo3cms install:fixfolderstructure"
-         ],
-         "post-autoload-dump": [
-            "@typo3-cms-scripts"
-         ]
-      }
-   }
-
-
-This requires helhum/typo3-console (so be sure to require that too) and is essential
-for generating the file :file:`typo3conf/PackageStates.php`.
-
-
-.. hint::
-
-   The script section may not be available in current master of the Base Distribution.
-   Look at the previous versions.
-
 
 Add All Required Packages to Your Project
 =========================================
@@ -429,8 +403,6 @@ These file locations have **not** changed:
 | :file:`public/typo3conf/LocalConfiguration.php`      |
 +------------------------------------------------------+
 | :file:`public/typo3conf/AdditionalConfiguration.php` |
-+------------------------------------------------------+
-| :file:`public/typo3conf/PackageStates.php`           |
 +------------------------------------------------------+
 | :file:`public/typo3conf/ext`                         |
 +------------------------------------------------------+

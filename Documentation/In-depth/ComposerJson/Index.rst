@@ -96,7 +96,6 @@ Example composer.json
       },
       "scripts": {
          "typo3-cms-scripts": [
-            "typo3cms install:generatepackagestates",
             "typo3cms install:fixfolderstructure"
          ],
          "post-autoload-dump": [
@@ -231,7 +230,6 @@ scripts
    {
       "scripts": {
          "typo3-cms-scripts": [
-            "typo3cms install:generatepackagestates",
             "typo3cms install:fixfolderstructure"
          ],
          "post-autoload-dump": [
@@ -248,21 +246,11 @@ As stated in the `Composer <https://getcomposer.org/doc/articles/scripts.md>`__ 
    **post-autoload-dump**: occurs after the autoloader has been dumped,
    either during `install`/`update`, or via the `dump-autoload` command.
 
-These commands are supplied by `helhum/typo3-console`:
-
-`install:generatepackagestates <https://docs.typo3.org/p/helhum/typo3-console/master/en-us/CommandReference/InstallGeneratepackagestates.html>`__:
-
-Generates the :file:`typo3conf/PackageStates.php`. This will automatically
-scan the extension folders and add the extensions to :file:`PackageStates.php`, thus
-marking them active.
+This command is supplied by `helhum/typo3-console`:
 
 `install:fixfolderstructure <https://docs.typo3.org/p/helhum/typo3-console/master/en-us/CommandReference/InstallFixfolderstructure.html>`__
 
 This creates the required folder structure needed for TYPO3.
-
-.. important::
-
-   Should be executed after generatepackagestates.
 
 
 More information

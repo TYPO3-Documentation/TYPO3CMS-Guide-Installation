@@ -87,7 +87,7 @@ If you get an exception and can't even access the Extension Manager anymore beca
 extensions manually with :file:`PackageStates.php` as a last resort, see :ref:`uninstall-extension-manually`
 
 .. tip::
-   Be sure not to uninstall extensions by trial and error on production systems, expecially not under time pressure.
+   Be sure not to uninstall extensions by trial and error on production systems, especially not under time pressure.
 
 .. _uninstall-extension-backend:
 
@@ -203,19 +203,20 @@ Publicly available extensions can be installed with composer like this:
    This will add the extension requirement to your :file:`composer.json`
    and install the extension.
 
-   The extension will - not yet - be active. You must activate it with:
+   The extension will automatically be active but not yet set up.
 
-3. Activate
+3. Setup
+
+   With the command 'extension:setup' all extensions are set up in terms of
+   database schema changes, static data import, distribution files imports, etc.
+   As example, requiring an additional extension and then using this command
+   will create database tables or additional database fields the extension
+   provides.
 
    .. code-block:: shell
 
-      ./vendor/bin/typo3 extension:activate <extension key>
+      ./vendor/bin/typo3 extension:setup
 
-   For example:
-
-   .. code-block:: shell
-
-      ./vendor/bin/typo3 extension:activate news
 
 
 .. _install-local-extension-with-composer:
@@ -315,7 +316,7 @@ as is explained in :ref:`find-out-composer-package-name`.
 Additional Information
 ======================
 
-The following is independant of whether you install with Composer or without.
+The following is independent of whether you install with Composer or without.
 
 
 .. _find-out-extension-key:
