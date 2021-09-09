@@ -3,16 +3,16 @@
 
 .. _convert-global-extensions:
 
-=========================
-Convert Global Extensions
-=========================
+==================================
+Convert Global or Local Extensions
+==================================
 
 If you use global extensions, convert them to local ones.
 
 Global extensions used to be saved in folders inside
-:file:`typo3/ext/`, such as :file:`typo3/ext/news`. In current
-versions of TYPO3, this location should no longer be used. Instead,
-use local extensions below :file:`typo3conf/ext/`.
+:file:`typo3/ext/`, such as :file:`typo3/ext/news`. Also the 
+local extensions folder :file:`typo3conf/ext/` should not be used any more.
+All extensions must be migrated to a local path repository.
 
 To convert a global extension to a local one, make a backup of it,
 then do the following:
