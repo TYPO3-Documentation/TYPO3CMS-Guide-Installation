@@ -21,7 +21,7 @@ Upgrading a Composer Based System
 
 .. caution::
 
-   TYPO3 v9 LTS has no support for the package `typo3/cms` anymore - instead
+   TYPO3 v10 LTS has no support for the package `typo3/cms` anymore - instead
    all TYPO3 system extensions are now single packages. When upgrading, remove
    the `typo3/cms` package and require the single packages you need. To make
    selecting the packages easier, you can use
@@ -29,10 +29,10 @@ Upgrading a Composer Based System
 
 Use composer to update your system via for example::
 
-   composer require typo3/cms-backend:^9.5 typo3/cms-core:^9.5 \
-      typo3/cms-extbase:^9.5 typo3/cms-extensionmanager:^9.5 \
-      typo3/cms-filelist:^9.5 typo3/cms-fluid:^9.5 typo3/cms-frontend:^9.5 \
-      typo3/cms-install:^9.5 typo3/cms-recordlist:^9.5 \
+   composer require typo3/cms-backend:^10.4 typo3/cms-core:^10.4 \
+      typo3/cms-extbase:^10.4 typo3/cms-extensionmanager:^10.4 \
+      typo3/cms-filelist:^10.4 typo3/cms-fluid:^10.4 typo3/cms-frontend:^10.4 \
+      typo3/cms-install:^10.4 typo3/cms-recordlist:^10.4 \
       --update-with-dependencies
 
 If you have extensions installed, you will have to find the corresponding newer
@@ -40,10 +40,10 @@ versions you want to install for your new major version and update them, too.
 
 Example::
 
-   composer require typo3/cms-backend:^9.5 typo3/cms-core:^9.5 \
-      typo3/cms-extbase:^9.5 typo3/cms-extensionmanager:^9.5 \
-      typo3/cms-filelist:^9.5 typo3/cms-fluid:^9.5 typo3/cms-frontend:^9.5 \
-      typo3/cms-install:^9.5 typo3/cms-recordlist:^9.5 georgringer/news:^7.0 \
+   composer require typo3/cms-backend:^10.4 typo3/cms-core:^10.4 \
+      typo3/cms-extbase:^10.4 typo3/cms-extensionmanager:^10.4 \
+      typo3/cms-filelist:^10.4 typo3/cms-fluid:^10.4 typo3/cms-frontend:^10.4 \
+      typo3/cms-install:^10.4 typo3/cms-recordlist:^10.4 georgringer/news:^7.0 \
       --update-with-dependencies
 
 To find the matching extension versions you can go to `packagist.org
@@ -148,7 +148,7 @@ adjust the :file:`typo3_src` symlink.
 What's the Next Step?
 =====================
 
-In case you did a *minor update*, e.g. from TYPO3 9.5.0 to 9.5.1, database
+In case you did a *minor update*, e.g. from TYPO3 10.4.0 to 10.4.1, database
 updates are usually *not* necessary. All you still have to do is to
 :ref:`remove the temporary cache files <remove-temporary-cache-files>`. After
 that your update is finished.
@@ -159,7 +159,7 @@ that your update is finished.
    we take great care to keep the minor updates as easy as possible especially
    when releasing security updates more steps might be necessary.
 
-In case of a *major update*, e.g. from TYPO3 8.7 to 9.5, go ahead with the next
+In case of a *major update*, e.g. from TYPO3 9.5 to 10.4, go ahead with the next
 step!
 
 Also check out the breaking changes listed in `Changelog
