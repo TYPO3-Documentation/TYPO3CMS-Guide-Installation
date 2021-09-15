@@ -43,7 +43,7 @@ Example::
    composer require typo3/cms-backend:^10.4 typo3/cms-core:^10.4 \
       typo3/cms-extbase:^10.4 typo3/cms-extensionmanager:^10.4 \
       typo3/cms-filelist:^10.4 typo3/cms-fluid:^10.4 typo3/cms-frontend:^10.4 \
-      typo3/cms-install:^10.4 typo3/cms-recordlist:^10.4 georgringer/news:^7.0 \
+      typo3/cms-install:^10.4 typo3/cms-recordlist:^10.4 georgringer/news:^8.0 \
       --update-with-dependencies
 
 To find the matching extension versions you can go to `packagist.org
