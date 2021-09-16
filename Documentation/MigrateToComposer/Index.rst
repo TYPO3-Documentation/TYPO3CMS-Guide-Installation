@@ -1,10 +1,10 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
-.. _migrate-to-composer:
+.. _migratetocomposer:
 
-=================================
-Migrate TYPO3 Project to Composer
-=================================
+===================================
+Migrate a TYPO3 project to composer
+===================================
 
 Contributed `initially
 <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/pull/25/>`__

@@ -1,11 +1,11 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 ===============
-Migration Steps
+Migration steps
 ===============
 
-Delete Files
+Delete files
 ============
 
 Yes, that's true. You have to delete some files, because they will be created by
@@ -21,7 +21,7 @@ Please keep only your sitepackage extension or any other extension, which was
 explicitly built for your current project and does not have an own Git
 repository.
 
-Configure Composer
+Configure composer
 ==================
 
 Create a file with name :file:`composer.json` in your project root, not inside
@@ -49,8 +49,34 @@ TER, you can add composer.typo3.org as repository:
         ]
     }
 
+The :file:`composer.json` in the Base distribution includes a scripts section:
 
-Add All Required Packages to Your Project
+.. code-block:: json
+
+   {
+      "scripts": {
+         "typo3-cms-scripts": [
+            "typo3cms install:generatepackagestates",
+            "typo3cms install:fixfolderstructure"
+         ],
+         "post-autoload-dump": [
+            "@typo3-cms-scripts"
+         ]
+      }
+   }
+
+
+This requires helhum/typo3-console (so be sure to require that too) and is essential
+for generating the file :file:`typo3conf/PackageStates.php`.
+
+
+.. hint::
+
+   The script section may not be available in current master of the Base Distribution.
+   Look at the previous versions.
+
+
+Add all required packages to your project
 =========================================
 
 You can add all your required packages with the Composer command `composer
@@ -80,7 +106,7 @@ You have to decide by yourself, which syntax fits best to your needs.
 .. _composer-migration-require-all:
 .. _composer-migration-require-subtree-packages:
 
-Install the Core
+Install the core
 ----------------
 
 .. hint::
@@ -114,7 +140,7 @@ e.g. :file:`typo3/cms-fluid-styled-content`.
     the composer command to require them.
 
 
-Install Extensions from Packagist
+Install extensions from packagist
 ---------------------------------
 
 You already know the TER and always used it to install extensions? Fine.
@@ -123,7 +149,7 @@ directly from `packagist.org <https://packagist.org>`__. This works great, when 
 to there. Many well known extensions are already available.
 You only need to known the package name. There are multiple ways to find it:
 
-Notice on Extension's TER Page
+Notice on extension's TER page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Extension maintainers optionally can link their TYPO3 extension in TER with the
@@ -138,7 +164,7 @@ key you can use to install this extension.
     The command `composer req` is short for `composer require`. Both commands
     exactly do the same and are interchangeable.
 
-Check in TER Satis
+Check in TER satis
 ~~~~~~~~~~~~~~~~~~
 
 If you search the extension in https://composer.typo3.org/satis.html and it's linked to
@@ -147,7 +173,7 @@ will see a message, which Composer key should be used to install this extension.
 
 .. include:: /Images/ExternalScreenshots/SatisAbandoned.rst.txt
 
-See Warning During `composer require` Command
+See warning during `composer require` command
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you still install one of the abandoned extensions via its `typo3-ter` package key,
@@ -155,7 +181,7 @@ you will also see a warning during the `composer require` command.
 
 .. include:: /Images/ExternalScreenshots/ComposerTerAbandoned.rst.txt
 
-Check Manually
+Check manually
 ~~~~~~~~~~~~~~
 
 This is the most exhausting way. But it will work, even if the extension maintainer
@@ -187,7 +213,7 @@ To install the mask extension in version 4.1.\*, type::
 
    composer require mask/mask:~4.1.0
 
-Install Extension from TER
+Install extension from TER
 --------------------------
 
 If the extension is not available on packagist, the good news is: All
@@ -216,7 +242,7 @@ https://composer.typo3.org/satis.html.
     repository block named `https://composer.typo3.org` from your
     :file:`composer.json` to improve speed.
 
-Install Extension from Version Control System (e.g. GitHub, Gitlab, ...)
+Install extension from version control system (e.g. GitHub, Gitlab, ...)
 ------------------------------------------------------------------------
 
 In some cases, you will have to install a TYPO3 extension, which is not
@@ -280,7 +306,7 @@ same way like the other examples::
 
 .. _mig-composer-include-individual-extensions:
 
-Include Individual Extensions like Site Packages
+Include individual extensions like site packages
 ================================================
 
 It's not necessary to move your project's site package to a dedicated
@@ -403,6 +429,8 @@ These file locations have **not** changed:
 | :file:`public/typo3conf/LocalConfiguration.php`      |
 +------------------------------------------------------+
 | :file:`public/typo3conf/AdditionalConfiguration.php` |
++------------------------------------------------------+
+| :file:`public/typo3conf/PackageStates.php`           |
 +------------------------------------------------------+
 | :file:`public/typo3conf/ext`                         |
 +------------------------------------------------------+

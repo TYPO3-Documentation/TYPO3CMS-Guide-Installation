@@ -1,4 +1,4 @@
-.. include:: Includes.txt
+.. include:: /Includes.rst.txt
 
 .. highlight:: bash
 
@@ -49,6 +49,6 @@ Targets for Cross-Referencing
 .. only:: html
 
    .. ref-targets-list::
-   
-   
+
+
 

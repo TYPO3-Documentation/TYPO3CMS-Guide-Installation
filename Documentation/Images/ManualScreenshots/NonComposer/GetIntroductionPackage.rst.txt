@@ -1,1 +1,0 @@
-.. image:: /Images/ManualScreenshots/NonComposer/GetIntroductionPackage.png

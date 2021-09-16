@@ -1,5 +1,0 @@
-.. figure:: /Images/ExternalScreenshots/ExtOnPackagist.png
-   :class: with-shadow
-   :alt: extension on packagist
-
-   The "News" extension on packagist
