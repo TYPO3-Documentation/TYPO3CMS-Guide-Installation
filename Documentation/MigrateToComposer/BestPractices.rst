@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 .. _mig-composer-best-practices:
@@ -12,7 +12,7 @@ specific to migrating to Composer are still here.
 
 .. _mig-composer-clear-typo3conf-ext-folder:
 
-Completely Clear `typo3conf/ext` Folder
+Completely clear `typo3conf/ext` folder
 =======================================
 
 In the "Migration Steps" chapter, this tutorial explained, how you can
@@ -25,7 +25,7 @@ If you are searching for a solution to keep your :file:`typo3conf/ext` folder
 clean and unify the extension handling even for your project's individual
 extension, this section might be useful.
 
-Define a Local Path Repository
+Define a local path repository
 ------------------------------
 
 Create a directory :file:`packages` in your project root folder and define
@@ -40,7 +40,7 @@ this folder as a repository of type "path" in your :file:`composer.json`::
         ]
     }
 
-Include Your Individual Extensions From `packages` Folder
+Include your individual extensions from `packages` folder
 ---------------------------------------------------------
 
 In the next step, you move all your individual extensions from
@@ -62,7 +62,7 @@ number, but tell composer to use the latest ``dev`` state.
     :file:`composer.json` and can be removed from your project's
     :file:`composer.json`.
 
-Exclude `typo3conf/ext` from Version Control System
+Exclude `typo3conf/ext` from version control system
 ---------------------------------------------------
 
 To finish your cleanup of "typo3conf/ext", you should keep the line

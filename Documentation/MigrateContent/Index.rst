@@ -1,6 +1,6 @@
-.. include:: /Includes.txt
+.. include:: /Includes.rst.txt
 
-.. _migrate-content:
+.. _migratecontent:
 
 ===============
 Migrate content

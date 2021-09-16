@@ -1,5 +1,0 @@
-.. figure:: /Images/ManualScreenshots/NonComposer/ExtensionManagerExtensionsGet.png
-   :class: with-shadow
-   :alt: Search for the extension and install
-
-   Search for the extension and install

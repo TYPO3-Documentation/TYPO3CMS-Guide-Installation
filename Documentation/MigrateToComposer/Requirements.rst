@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 ============
@@ -60,7 +60,7 @@ If you do not have such a web root directory, you must refactor your
 project before continuing. Please be aware to tell your web server
 about the changed web root folder, if necessary.
 
-Code Integrity
+Code integrity
 ==============
 
 Your project must have the TYPO3 core and all installed extensions in

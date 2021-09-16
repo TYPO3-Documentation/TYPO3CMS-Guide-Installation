@@ -1,88 +1,98 @@
-.. include:: Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _start:
+.. _upgrading:
 
-==============================
-Installation and Upgrade Guide
-==============================
+=================
+Upgrading TYPO3
+=================
 
-:Version:
-      |release|
+.. container:: row m-0 p-0
 
-:Language:
-      en
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-:Copyright:
-      Since 2000
+      .. container:: card px-0 h-100
 
-:Author:
-      `Documentation Team <https://typo3.org/community/teams/documentation/#c9886>`__ & TYPO3 community (see :ref:`credits`)
+         .. rst-class:: card-header h3
 
-:License:
-      Open Publication License available from `www.opencontent.org/openpub/
-      <http://www.opencontent.org/openpub/>`_
+            .. rubric:: :ref:`Minor upgrades <Minor>`
 
+         .. container:: card-body
 
+            Minor updates contain bugfixes and/or security updates. This section details
+            how to install minor updates using Composer.
 
-The content of this document is related to TYPO3,
-a GNU/GPL CMS/Framework available from `www.typo3.org
-<https://typo3.org/>`_
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
+      .. container:: card px-0 h-100
 
-**About this manual**
+         .. rst-class:: card-header h3
 
-This document describes the file structure of TYPO3 and takes you
-step by step through the installation. It does not focus on
-specific operating systems, but contains some hints on general
-TYPO3 installation issues with regards to Apache, PHP and MySQL.
+            .. rubric:: :ref:`Major upgrades <Major>`
 
+         .. container:: card-body
 
+            This chapter details how major updates are installed using Composer and
+            highlights what tasks need to be carried out before and after the core is updated.
 
-**Official documentation**
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-This document is included as part of the official TYPO3 documentation.
+      .. container:: card px-0 h-100
 
+         .. rst-class:: card-header h3
 
-If you find an error or something is missing, please: `Report a Problem
-<https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/issues/new>`__
+            .. rubric:: :ref:`Upgrading extensions <UpgradingExtensions>`
 
+         .. container:: card-body
 
-**Guide**
+            Just like TYPO3's core, extensions also need to be regularly updated.
+            This chapter details how to upgrade extensions using Composer.
 
-This document is a Guide. Guides are designed to familiarize a reader
-with a specific topic in order to provide a working knowledge of that
-particular process. Readers should peruse the guide from cover to
-cover in order to gain a practical overview of the process. Once
-completed, the Guide becomes a practical reference tool to which a reader
-can refer as needed. Guides offer advice on how best to achieve a
-given task.
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
-**For Contributors**
+      .. container:: card px-0 h-100
 
-You are welcome to help in improving this guide. Just click on
-"Edit me on GitHub" on the top right to submit your change request.
+         .. rst-class:: card-header h3
 
-You can find out more about how to do this in :ref:`contribute`.
+            .. rubric:: :ref:`Legacy upgrade guide <Legacy>`
 
-:ref:`linktargets`
-| `GitHub repository <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation>`__
-| `Issues <https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/issues>`__
+         .. container:: card-body
+
+            Using TYPO3 without Composer? This chapter details how to upgrade TYPO3 manually.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Migrate a TYPO3 installation to Composer <MigrateToComposer>`
+
+         .. container:: card-body
+
+            Information on how to migrate a legacy installation of TYPO3 to a Composer based installation.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
+            .. rubric:: :ref:`Migrate content <MigrateContent>`
+
+         .. container:: card-body
+
+            This chapter details how pages and content can be exported and then imported into another installation of TYPO3.
 
 
 .. toctree::
    :hidden:
 
-   Introduction/Index
-   QuickInstall/Index
-   In-depth/Index
-   Composer/Index
-   ExtensionInstallation/Index
-   Upgrade/Index
+   Minor/Index
+   Major/Index
+   UpgradingExtensions/Index
+   Legacy/Index
    MigrateToComposer/Index
    MigrateContent/Index
-   ReleaseIntegrity/Index
-   Troubleshooting/Index
-   HistoricalInformation/Index
-   Sitemap/Index
    Linktargets
