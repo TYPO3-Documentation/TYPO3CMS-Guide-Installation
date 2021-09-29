@@ -46,6 +46,11 @@ the source package of the new TYPO3 version.
 Extract the package on your web server and, in your TYPO3 document root,
 adjust the :file:`typo3_src` symlink.
 
+.. important::
+   Make sure to upload the whole TYPO3 source directory including the
+   :file:`vendor` directory, otherwise you will miss important dependency
+   updates.
+
 Disabling the Core Updater
 --------------------------
 
