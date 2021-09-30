@@ -12,7 +12,7 @@ installation: Upgrading, checking the system environment, configuring settings
 from and solving problems. The standalone tool usage is not dependent on a
 working Backend, and you access it using a single password.
 
-First go to your site and enter the admin tool via `/typo3/install.php`, e.g. https://www.example.com/typo3/install.php.
+First go to your site and enter the admin tool via `/typo3/install.php`, e.g. :samp:`https://www.example.com/typo3/install.php`.
 
 .. hint::
 
@@ -194,7 +194,7 @@ and displays hints if something goes wrong.
 
 After the last step of the installation you must verify the image handling settings
 under the configuration presets for Image Magick and Graphics Magick.
-For example in Windows, in the field left of the button :guilabel:`Find executable in this directory` you must enter 
+For example in Windows, in the field left of the button :guilabel:`Find executable in this directory` you must enter
 a path to an Image Magick installation. Do not use quotes around it.  ::
 
     C:\Program Files\ImageMagick-7.0.11-Q8
