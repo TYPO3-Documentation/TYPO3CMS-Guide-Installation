@@ -2,7 +2,7 @@
 
 .. _use-the-upgrade-wizard:
 
-Enter the Install Tool at `https://example.com/typo3/install.php` on your
+Enter the Install Tool at :samp:`https://example.com/typo3/install.php` on your
 TYPO3 site.
 
 .. include:: /Images/AutomaticScreenshots/Upgrade/UpgradeWizard.rst.txt
