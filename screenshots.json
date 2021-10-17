@@ -204,7 +204,7 @@
                         "action": "click",
                         "link": "button.t3js-modal-close"
                     },
-                    {"action": "switchToMainFrame"},
+                    {"action": "switchToMainFrame"}
                 ]
             }
         },
@@ -239,13 +239,13 @@
                     {"action": "clearDrawings"},
                     {"action": "click", "link": "//*[@id='contentMenu0']//*[contains(text(), 'More options...')]"},
                     {"action": "waitForElement", "element": "#contentMenu1", "timeout": 1},
-                    {"action": "click", "link": "//*[@id='contentMenu1']//*[contains(text(), 'Export')]"},
                     {
                         "action": "makeScreenshotOfWindow",
                         "fileName": "ContextMenuExport",
                         "altText": "Select Then select \"Export\"",
                         "captionText": "Select Then select \"Export\""
-                    }
+                    },
+                    {"action": "click", "link": "//*[@id='contentMenu1']//*[contains(text(), 'Export')]"}
                 ],
                 "importexport": [
                     {
@@ -299,6 +299,7 @@
                     {"action": "fillField", "field": "input#impexp-filename", "value": "MyExport"},
                     {"action": "drawBox", "selector": "input[name='tx_impexp[download_export]']"},
                     {"action": "resizeWindow", "width": 1024,"height": 1024},
+                    {"action": "scrollModuleBodyToTop"},
                     {
                         "action": "makeScreenshotOfElement",
                         "fileName": "DownloadExport",
