@@ -6,7 +6,7 @@
 Upgrade to v10 from v9
 ======================
 
-Besides following the general upgrade guide, you can find some additional info on new v10 
+Besides following the general upgrade guide, you can find some additional info on new v10
 features here.
 
 General Changes
@@ -15,8 +15,8 @@ General Changes
 sys_template.sitetitle
 ----------------------
 
-Defining the site title in the sys_template record (`sys_template.sitetitle` field) 
-has been deprecated and should not be used any longer. 
+Defining the site title in the sys_template record (`sys_template.sitetitle` field)
+has been deprecated and should not be used any longer.
 This field (database and TCA) will be removed in v11.
 In version 10 the site title in the sys_template will be used as a
 fallback when no Site title is set in the site configuration.
@@ -26,12 +26,13 @@ Copy the site title to the new available field in the site module language confi
 SystemLog API
 -------------
 
-The systemLog API has been changed in TYPO3 v9.0 to use the Logging API as a 
-breaking change. The relevant systemLog options have been kept in TYPO3 v9 for 
+The systemLog API has been changed in TYPO3 v9.0 to use the Logging API as a
+breaking change. The relevant systemLog options have been kept in TYPO3 v9 for
 backwards-compatibility of existing extensions, however have no use in TYPO3 v10
 anymore.
 
 The affected options are:
+
 - :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLog']`
 - :php:`$GLOBALS['TYPO3_CONF_VARS']['SYS']['systemLogLevel']`
 
@@ -45,7 +46,7 @@ should then be removed from the extensions' code.
 Feature Flags
 =============
 
-rearrangedRedirectMiddlewares 
+rearrangedRedirectMiddlewares
 -----------------------------
 
 A new feature switch :php:`rearrangedRedirectMiddlewares` has been introduced to rearrange the middlewares
