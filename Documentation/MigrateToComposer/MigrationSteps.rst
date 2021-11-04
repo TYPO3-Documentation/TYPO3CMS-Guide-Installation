@@ -292,8 +292,7 @@ additional lines added to the :file:`composer.json` from above:
    There is no harm in that, but it won't have any effect.
 
 
-The Git repository must be a TYPO3 extension, with all the required
-files (e.g. :file:`ext_emconf.php`) and must contain a valid
+The Git repository must be a TYPO3 extension with a
 :file:`composer.json` itself. How this file should look in your extension,
 can be found on `composer.typo3.org <https://composer.typo3.org/>`__ or
 `this blog post from Helmut Hummel <https://insight.helhum.io/post/148886148725/composerjson-specification-for-typo3-extensions>`__.
