@@ -12,7 +12,7 @@ settings from :php:`$GLOBALS['TYPO3_CONF_VARS']` and solving problems. Its
 usage is not dependent on a working Backend, and you access it
 using a single password.
 
-First go to your site and enter the install tool via `/typo3/install.php`, e.g. https://www.example.com/typo3/install.php.
+First go to your site and enter the install tool via `/typo3/install.php`, e.g. https://example.org/typo3/install.php.
 
 .. hint::
 
@@ -95,7 +95,7 @@ impression of what you can configure. Normally you *can*, but you *don't
 have to* change anything here during installation, as the previous steps
 took care of the most important settings.
 Pay attention to use HTTPS for your website and set :code:`$GLOBALS['TYPO3_CONF_VARS']['BE']['loginSecurityLevel']` to `normal`.
-However, on all websites without HTTPS you should set this to `rsa` and 
+However, on all websites without HTTPS you should set this to `rsa` and
 activate the system extension `rsaauth`. Otherwise you will not be able to log
 into the TYPO3 backend.
 
