@@ -16,7 +16,7 @@ The Install Tool
    It will guide you through the steps for installing TYPO3. (The
    Install Tool is located in 'typo3/install' in your installation,
    e.g.
-   `http://www.example.com/typo3/install/ <http://www.example.com/typo3/install/>`_.)
+   `https://example.org/typo3/install/ <https://example.org/typo3/install/>`_.)
 
 .. note::
     If you can't access 'typo3/install' use the full install URL: 'typo3/sysext/install/Start/Install.php'
