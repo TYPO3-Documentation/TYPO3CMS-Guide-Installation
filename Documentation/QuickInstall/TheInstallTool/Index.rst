@@ -26,7 +26,7 @@ The Admin Tool
    and reload the page. You will be redirected to the install tool. It will
    guide you through the steps for installing TYPO3. The Install Tool is
    located in 'typo3/install' in your installation which for example would be
-   :samp:`http://www.example.com/typo3/install.php`.
+   :samp:`https://example.org/typo3/install.php`.
 
 
 #. This is what you should see:
