@@ -7,7 +7,7 @@
 Use the Upgrade Wizard
 ======================
 
-Enter the Install Tool at :samp:`https://example.com/typo3/install.php` on your
+Enter the Install Tool at :samp:`https://example.org/typo3/install.php` on your
 TYPO3 site.
 
 .. figure:: ../../Images/Upgrade-Wizard.png
