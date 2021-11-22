@@ -12,7 +12,7 @@ settings from :php:`$GLOBALS['TYPO3_CONF_VARS']` and solving problems. Its
 usage is not dependent on a working Backend, and you access it
 using a single password.
 
-First go to your site and enter the install tool via `/typo3/install.php`, e.g. https://example.org/typo3/install.php.
+First go to your site and enter the install tool via `/typo3/install.php`, e.g. :samp:`https://example.org/typo3/install.php`.
 
 .. hint::
 
