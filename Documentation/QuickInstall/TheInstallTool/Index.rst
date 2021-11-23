@@ -20,7 +20,7 @@ The Install Tool
    It will guide you through the steps for installing TYPO3. The
    Install Tool is located in 'typo3/install' in your installation
    which for example would be
-   `http://www.example.com/typo3/install/ <http://www.example.com/typo3/install/>`_.
+   :samp:`https://example.org/typo3/install/`.
 
 #. This is what you should see:
 
