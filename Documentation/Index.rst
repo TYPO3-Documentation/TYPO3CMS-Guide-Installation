@@ -24,7 +24,7 @@ Installation and Upgrade Guide
 
 :License:
       Open Publication License available from `www.opencontent.org/openpub/
-      <http://www.opencontent.org/openpub/>`_
+      <https://www.opencontent.org/openpub/>`_
 
 
 
