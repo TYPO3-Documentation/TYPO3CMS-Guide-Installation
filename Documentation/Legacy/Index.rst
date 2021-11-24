@@ -40,7 +40,7 @@ automatically install the new source code.
 Major Upgrades - Symlink The Core
 =================================
 
-Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and download
+Go to https://typo3.org/download/ and download
 the source package of the new TYPO3 version.
 
 Extract the package on your web server and, in your TYPO3 document root,
