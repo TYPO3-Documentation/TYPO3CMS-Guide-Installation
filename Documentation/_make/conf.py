@@ -228,7 +228,7 @@ def updateModuleGlobals(GLOBALS, US):
         'papersize': LE.get('papersize') if 0 else 'a4paper',
         'pointsize': LE.get('pointsize') if 0 else '10pt',
         'preamble' : LE.get('preamble' ) if 0 else '\\usepackage{typo3}',
-        # for more see: http://sphinx-doc.org/config.html#confval-latex_elements
+        # for more see: https://www.sphinx-doc.org/en/master/#confval-latex_elements
     }
 
     MP = US.get('man_pages', {})

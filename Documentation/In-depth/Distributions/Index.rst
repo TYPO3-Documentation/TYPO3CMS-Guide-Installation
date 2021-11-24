@@ -16,7 +16,7 @@ a Distribution is an extension which sets up and configures TYPO3 to get you sta
 A Distribution often creates an example page structure and content elements, as
 well as automatically handling the installation and activation of useful extensions like `RealURL`__.
 
-__ http://typo3.org/extensions/repository/view/realurl/
+__ https://typo3.org/extensions/repository/view/realurl/
 
 If you selected the option to load preconfigured Distributions during the final step of
 the installation process (in the Install Tool), you will be redirected to the

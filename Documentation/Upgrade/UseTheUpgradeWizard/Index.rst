@@ -11,7 +11,7 @@
 Use the upgrade wizard
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Enter the Install Tool at ``http://yourwebsite.com/typo3/install/`` on your TYPO3 site.
+Enter the Install Tool at :samp:`https://example.org/typo3/install/` on your TYPO3 site.
 
 (If you don't know the current Install Tool password, you can set a new
 one by entering one in the Install Tool login screen, hitting enter and
