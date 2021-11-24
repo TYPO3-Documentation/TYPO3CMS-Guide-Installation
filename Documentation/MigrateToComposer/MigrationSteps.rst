@@ -218,7 +218,7 @@ Install extension from TER
 
 If the extension is not available on packagist, the good news is: All
 TER extensions are available via Composer! That's, why we added
-`https://composer.typo3.org/` as repository to our :file:`composer.json`
+:samp:`https://composer.typo3.org/` as repository to our :file:`composer.json`
 some lines above. There are little naming conventions:
 
 *  Vendor name is `typo3-ter`.
@@ -239,7 +239,7 @@ https://composer.typo3.org/satis.html.
 .. note ::
 
     If you do not include any packages this way, you can remove the
-    repository block named `https://composer.typo3.org` from your
+    repository block named :samp:`https://composer.typo3.org` from your
     :file:`composer.json` to improve speed.
 
 Install extension from version control system (e.g. GitHub, Gitlab, ...)
