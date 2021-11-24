@@ -138,7 +138,7 @@ Tool.
 Installing the Source Manually
 ==============================
 
-Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and download
+Go to https://typo3.org/download/ and download
 the Source package of the new TYPO3 version.
 
 Extract the package on your web server and - in your TYPO3 document root -
