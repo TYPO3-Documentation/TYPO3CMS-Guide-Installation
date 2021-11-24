@@ -66,7 +66,7 @@ source code manually.
 Installing the source manually
 """"""""""""""""""""""""""""""
 
-Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and
+Go to https://typo3.org/download/ and
 download the Source package of the new TYPO3 version.
 
 Extract the package on your web server and - in your TYPO3 document
