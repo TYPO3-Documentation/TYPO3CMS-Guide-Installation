@@ -18,8 +18,8 @@ Install TYPO3 Without Composer
 Installing on a Unix Server
 ===========================
 
-#. Get the Source Package from `http://typo3.org/download/
-   <http://typo3.org/download/>`_ and upload this package to your web server.
+#. Get the Source Package from https://typo3.org/download/
+   and upload this package to your web server.
    Put it one level above the document root. In this example, we will use the
    :file:`.tar.gz` file format. (If you are not sure which package you should
    choose, read the section ":ref:`which-package-and-which-file-format`" in the
@@ -82,8 +82,8 @@ a new patchlevel version of TYPO3 is released.
 Installing on a Windows Server
 ==============================
 
-#. Get the Source Package from `http://typo3.org/download/
-   <http://typo3.org/download/>`_ and extract it on your local PC. Use FTP,
+#. Get the Source Package from https://typo3.org/download/
+   and extract it on your local PC. Use FTP,
    SFTP or similar to upload the contents of this package to your web server.
    Put them one level above the document root. For this manual, we will use the
    :file:`.zip` file. (If you are not sure which package you should choose,
