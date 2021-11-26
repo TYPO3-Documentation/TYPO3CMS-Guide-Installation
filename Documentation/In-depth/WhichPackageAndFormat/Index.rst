@@ -8,7 +8,7 @@ Which Package and which Format?
 
 It is recommended to install TYPO3 via the PHP package manager `composer`.
 See :ref:`install-via-composer`. If you are not able to use composer for
-your project, download the source package from `https://typo3.org/download/ <https://typo3.org/download/>`_.
+your project, download the source package from https://typo3.org/download/.
 
 .. _which-file-format-to-use:
 

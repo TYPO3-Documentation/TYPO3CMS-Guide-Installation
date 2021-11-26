@@ -99,11 +99,11 @@ to install ``typo3/cms:^9``, but have to name each system extension::
     composer require typo3/cms-core:~9.0.0
     composer require typo3/cms-backend:~9.0.0
     composer require typo3/cms-frontend:~9.0.0
-    composer require ... 
+    composer require ...
 
 Or in one line::
 
-    composer require typo3/cms-core:~9.0.0 typo3/cms-backend:~9.0.0 typo3/cms-frontend:~9.0.0 ... 
+    composer require typo3/cms-core:~9.0.0 typo3/cms-backend:~9.0.0 typo3/cms-frontend:~9.0.0 ...
 
 To find the correct package names, you can either take a look in the
 ``composer.json`` of any system extension or follow the naming
@@ -175,7 +175,7 @@ Install extension from TER
 
 If the extension is not available on packagist, the good news is: All
 TER extensions are available via composer! That's, why we added
-``https://composer.typo3.org/`` as repository to our ``composer.json``
+:samp:`https://composer.typo3.org/` as repository to our ``composer.json``
 some lines above. There are little naming conventions:
 
 *  Vendor name is ``typo3-ter``.
@@ -196,7 +196,7 @@ https://composer.typo3.org/satis.html.
 .. note ::
 
     If you do not include any packages this way, you can remove the
-    repository block named `https://composer.typo3.org` from your
+    repository block named :samp:`https://composer.typo3.org` from your
     :file:`composer.json` to improve speed.
 
 Install extension from version control system (e.g. GitHub, Gitlab, ...)
@@ -312,7 +312,7 @@ To complete our example ``composer.json``, it would look like this:
             ]
         }
     }
-    
+
 After adding paths to the autoload you should run `composer dumpautoload`. This command will re-generate the autoload info and should be run anytime you add new paths to the autoload portion in the :file:`composer.json`.
 
 .. note::
