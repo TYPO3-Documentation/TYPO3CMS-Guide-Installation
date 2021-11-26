@@ -20,7 +20,8 @@ There is only one TYPO3 Package, called “TYPO3 Source”, with which you can i
 Once the main installation process is complete, you will be asked whether you want to load additional “Distributions” 
 to “kick start” an out-of-the-box working environment.
 
-An overview of all available packages and versions (which also contains older supported releases) can be found at `http://typo3.org/download/ <http://typo3.org/download/>`_.
+An overview of all available packages and versions (which also contains older supported releases) can be found at
+https://typo3.org/download/.
 
 .. _which-file-format-to-use:
 

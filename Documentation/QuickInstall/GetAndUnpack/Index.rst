@@ -16,8 +16,8 @@ Get and Unpack the TYPO3 Package
 Installing on a Unix server
 """""""""""""""""""""""""""
 
-#. Get the Source Package from `http://typo3.org/download/
-   <http://typo3.org/download/>`_ and upload this package to your
+#. Get the Source Package from https://typo3.org/download/
+   and upload this package to your
    web server. Put it one level above the document root. For this
    manual, we will use the :file:`.tar.gz` file. (If you are not sure
    which package you should choose, read the section
@@ -88,8 +88,8 @@ released.
 Installing on a Windows server
 """"""""""""""""""""""""""""""
 
-#. Get the Source Package from `http://typo3.org/download/
-   <http://typo3.org/download/>`_ and extract it on your local PC.
+#. Get the Source Package from https://typo3.org/download/
+   and extract it on your local PC.
    Use FTP, SFTP or similar to upload the contents of this package to
    your web server. Put them one level above the document root. For this
    manual, we will use the :file:`.tar.gz` file. (If you are not sure
