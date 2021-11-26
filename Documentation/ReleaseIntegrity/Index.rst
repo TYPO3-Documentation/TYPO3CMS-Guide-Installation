@@ -90,7 +90,7 @@ them to the values published with the release.
 
 .. _MD5: https://en.wikipedia.org/wiki/MD5
 .. _SHA2-256: https://en.wikipedia.org/wiki/SHA-2
-.. _TYPO3 CMS 7.6.4 RELEASE.txt file: http://prdownloads.sourceforge.net/typo3/RELEASE-7.6.4.txt?download
+.. _TYPO3 CMS 7.6.4 RELEASE.txt file: https://prdownloads.sourceforge.net/typo3/RELEASE-7.6.4.txt?download
 
 
 Checking file signatures
@@ -187,8 +187,8 @@ Output:
    gpg: Good signature from "TYPO3 Release Team (RELEASE) <typo3cms@typo3.org>"
 
 .. _Pretty Good Privacy: https://en.wikipedia.org/wiki/Pretty_Good_Privacy
-.. _The GNU Privacy Guard: http://www.gnupg.org/
-.. _OpenPGP: http://www.openpgp.org/
+.. _The GNU Privacy Guard: https://www.gnupg.org/
+.. _OpenPGP: https://www.openpgp.org/
 .. _pgpkeys.mit.edu: https://pgpkeys.mit.edu/
 
 

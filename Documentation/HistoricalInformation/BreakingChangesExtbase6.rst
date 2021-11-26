@@ -207,7 +207,7 @@ Extbase
 
 -  The **Property Mapper** of FLOW3 has been reworked and backported to
    Extbase. The new property mapper is very `configurable and
-   extensible <http://flow3.typo3.org/documentation/guide/partiii/propertymapping.html>`__
+   extensible <https://flow3.typo3.org/documentation/guide/partiii/propertymapping.html>`__
    [not available anymore]. Because this is a breaking change, the new
    behavior is **disabled** by default. You can activate it for your new
    Extensions with

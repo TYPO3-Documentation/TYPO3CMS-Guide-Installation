@@ -31,9 +31,9 @@ typo3/cms-frontend:^9.5 typo3/cms-install:^9.5 typo3/cms-recordlist:^9.5
 
 .. note::
 
-   If you get a RuntimeException like `/web/typo3/sysext/core does not exist and 
-   could not be created.` make sure you have deleted the symlinks from your TYPO3 8 
-   composer installation `typo3 -> ../vendor/typo3/cms/typo3` and 
+   If you get a RuntimeException like `/web/typo3/sysext/core does not exist and
+   could not be created.` make sure you have deleted the symlinks from your TYPO3 8
+   composer installation `typo3 -> ../vendor/typo3/cms/typo3` and
    `index.php -> ../vendor/typo3/cms/index.php`
 
 If you have extensions installed, you will have to find the corresponding newer
@@ -136,7 +136,7 @@ automatically install the new source code.
 Installing the Source Manually
 ==============================
 
-Go to `http://typo3.org/download/ <http://typo3.org/download/>`_ and download
+Go to https://typo3.org/download/ and download
 the Source package of the new TYPO3 version.
 
 Extract the package on your web server and - in your TYPO3 document root -
