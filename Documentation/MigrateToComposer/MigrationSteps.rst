@@ -133,9 +133,9 @@ e.g. :file:`typo3/cms-fluid-styled-content`.
 
 .. note::
 
-    To find out all TYPO3 Core packages, you can visit the TYPO3 Composer Helper website.
+    To find out more about TYPO3 Core packages, you can visit the TYPO3 Composer Helper website.
     https://get.typo3.org/misc/composer/helper
-    From this website, you can select TYPO3 Core Packages you need and generate
+    From this website, you can select the TYPO3 Core Packages you need and generate
     the composer command to require them.
 
 
