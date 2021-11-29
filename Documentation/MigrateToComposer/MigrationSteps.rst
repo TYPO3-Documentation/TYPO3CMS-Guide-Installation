@@ -72,7 +72,7 @@ for generating the file :file:`typo3conf/PackageStates.php`.
 
 .. hint::
 
-   The script section may not be available in current master of the Base Distribution.
+   The script section may not be available in current `main` branch of the Base Distribution.
    Look at the previous versions.
 
 
