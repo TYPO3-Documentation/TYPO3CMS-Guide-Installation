@@ -60,7 +60,7 @@ are likely to change over time. Some extensions are merged into others, new syst
 are added and others abandoned.
 These changes are published `here
 <https://docs.typo3.org/Home/SystemExtensions.html>`_ and can also be found by searching in the
-`breaking changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_
+`breaking changes <https://docs.typo3.org/c/typo3/cms-core/main/en-us/Index.html>`_
 for the extension by its key name.
 
 
