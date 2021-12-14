@@ -19,11 +19,11 @@ replacement. Rector can also help ensure better code quality by means of automat
 
 Rector can run as a standalone package or it can be integrated with your CI pipeline.
 
+Resources
+---------
 
-Find out more
--------------
-
-- `Rector for TYPO3 <https://github.com/sabbelasichon/typo3-rector>`__.
+- `Rector for TYPO3 GitHub page <https://github.com/sabbelasichon/typo3-rector>`__.
+- `Best practice guide <https://github.com/sabbelasichon/typo3-rector/blob/main/docs/best_practice_guide.md>`__.
 
 Support
 -------
