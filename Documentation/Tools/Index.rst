@@ -23,8 +23,7 @@ Rector can run as a standalone package or it can be integrated with your CI pipe
 Find out more
 -------------
 
-- `Rector GitHub <https://github.com/rectorphp/rector>`__ - use this link to install Rector for your TYPO3 project.
-- `Rector for TYPO3 <https://github.com/sabbelasichon/typo3-rector>`__ - development page only.
+- `Rector for TYPO3 <https://github.com/sabbelasichon/typo3-rector>`__.
 
 Support
 -------
