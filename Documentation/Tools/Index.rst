@@ -28,5 +28,5 @@ Resources
 Support
 -------
 
-Visit the `TYPO3 Slack <https://typo3.slack.com/>`__ and search for the `#ext-typo3-rector`
+Visit the `TYPO3 Slack <https://typo3.org/community/meet/chat-slack>`__ and search for the `#ext-typo3-rector`
 channel. You can also open an issue or start a discussion on the projects GitHub page.
