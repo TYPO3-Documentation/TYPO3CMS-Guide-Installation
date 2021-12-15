@@ -6,7 +6,7 @@
 Third-party tools
 =================
 
-A collection of third-party resources than can assist with upgrade and
+A collection of third-party resources that can assist with upgrade and
 maintenance tasks.
 
 Rector for TYPO3
