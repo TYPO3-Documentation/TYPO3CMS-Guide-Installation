@@ -36,8 +36,9 @@ For example, to upgrade `typo3/cms-backend` run `composer require typo3/cms-back
 
 When upgrading to a new major release, each of TYPO3's packages will need to be upgraded.
 
-Given that a typical installation of TYPO3 will consist of a number of packages, it is recommended that the `Composer Helper Tool <https://get.typo3.org/misc/composer/helper>`_ be used
-to help generate the Composer upgrade command.
+Given that a typical installation of TYPO3 will consist of a number of packages,
+it is recommended that the `Composer Helper Tool <https://get.typo3.org/go/composer-helper>`_
+be used to help generate the Composer upgrade command.
 
 Assuming that the packages below are installed locally, the following example would upgrade each of them to version `11.5`.
 
