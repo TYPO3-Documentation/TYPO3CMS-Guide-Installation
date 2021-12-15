@@ -55,6 +55,19 @@ Upgrading TYPO3
 
          .. rst-class:: card-header h3
 
+            .. rubric:: :ref:`Third-party Tools <Tools>`
+
+         .. container:: card-body
+
+            Tools and resources developed by the community that can assist with common
+            upgrade and maintenance tasks.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
             .. rubric:: :ref:`Legacy upgrade guide <Legacy>`
 
          .. container:: card-body
@@ -92,6 +105,7 @@ Upgrading TYPO3
    Minor/Index
    Major/Index
    UpgradingExtensions/Index
+   Tools/Index
    Legacy/Index
    MigrateToComposer/Index
    MigrateContent/Index
