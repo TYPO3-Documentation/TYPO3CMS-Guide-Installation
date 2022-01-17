@@ -56,7 +56,7 @@ Update TYPO3 Core
 
 Update all system extensions::
 
-    composer update typo3/cms-* --with-all-dependencies
+    composer update "typo3/cms-*" --with-all-dependencies
 
 Update Extensions Like "news"
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
