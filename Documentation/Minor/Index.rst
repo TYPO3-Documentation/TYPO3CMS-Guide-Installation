@@ -33,9 +33,9 @@ Alternatively, running `composer outdated "typo3/*"` will present a list of any 
 Execute the upgrade
 ===================
 
-To execute the upgrade, run `composer update -W typo3/*`.
+To execute the upgrade, run `composer update --with-all-dependencies typo3/*`.
 
-This will upgrade all TYPO3 packages, the `-W` (`--with-all-dependencies`) signals that any dependencies should also be upgraded.
+This will upgrade all TYPO3 packages, the `--with-all-dependencies` signals that any dependencies of TYPO3 should also be upgraded.
 
 Post upgrade
 ============
