@@ -25,7 +25,7 @@ for TYPO3 to work correctly.
 
 Prior to upgrading, check which packages are currently installed and make a note of them.
 
-Running `composer info typo3/*` will output a list of all TYPO3 packages that are currently installed.
+Running `composer info "typo3/*"` will output a list of all TYPO3 packages that are currently installed.
 
 Running Composer require
 ------------------------
