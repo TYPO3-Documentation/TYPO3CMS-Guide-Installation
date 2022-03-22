@@ -17,7 +17,7 @@ whether or not your website is affected by the change.
 
 There are 3 different methods you can use to read the Changelogs:
 
-#. Look through the `ChangeLogs <https://docs.typo3.org/typo3cms/extensions/core/>`_
+#. Look through the :doc:`changelogs <ext_core:Index>`
    online. This has the advantage that code blocks will be formatted nicely with
    syntax highlighting.
 #. Read the Changelogs in the backend: :guilabel:`Upgrade > View Upgrade Documentation`.

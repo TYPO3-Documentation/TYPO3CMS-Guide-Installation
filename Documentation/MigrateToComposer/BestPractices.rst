@@ -7,8 +7,7 @@
 Best Practices
 ==============
 
-A number of general best practices have been moved to :ref:`composer-working-with`. The sections
-specific to migrating to Composer are still here.
+The sections specific to migrating to Composer are still here.
 
 .. _mig-composer-clear-typo3conf-ext-folder:
 
