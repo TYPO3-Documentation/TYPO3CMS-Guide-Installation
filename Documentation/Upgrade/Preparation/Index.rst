@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _preparation:
@@ -46,7 +46,7 @@ Read where to find deprecation documentation in the chapter about
 
    TYPO3 aims at providing a reliable backwards compatibility between versions:
 
-   *  Minor versions are always backwards compatible - unless explicitly stated 
+   *  Minor versions are always backwards compatible - unless explicitly stated
       otherwise (for example in case of security updates)
 
    *  Major versions may contain breaking changes - normally these are
