@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: /Includes.rst.txt
+﻿.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 .. _get-and-unpack-the-typo3-package:
