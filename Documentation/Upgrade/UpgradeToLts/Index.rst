@@ -14,7 +14,7 @@ This page gives additional information about upgrading that is specific for upgr
 from 8.7 to 9.5.
 
 You may also want to browse the
-`9.x Changelogs <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog-9.html>`__
+:doc:`9.x Changelogs <ext_core:Changelog-9>`
 before updating. All changes listed for 9.0 to 9.5 and 9.5.x. are relevant
 for upgrading from 8.7 to 9.5.
 
@@ -113,17 +113,17 @@ Extension Development
 
 .. tip::
 
-   Extension Developers should regularly check the `Changelog <https://docs.typo3.org/c/typo3/cms-core/9.5/en-us/>`__
+   Extension Developers should regularly check the :doc:`Changelog <ext_core:Index>`
    for Deprecations and Breaking Changes.
 
 TypoScript
 
-* The `old TypoScript condition syntax is deprecated <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/9.5/Deprecation-86068-OldConditionSyntax.html>`__
+* The :doc:`old TypoScript condition syntax is deprecated <ext_core:Changelog/9.5/Deprecation-86068-OldConditionSyntax>`
   and will be removed in TYPO3 CMS 10.
   The new syntax is based on the symfony expression language. It is described
   at :ref:`t3coreapi:typoscript-syntax-conditions`
   "Global Configuration" setting `[SYS][features][TypoScript.strictSyntax]` can be used to toggle
   support for the old syntax on and off.
-* Amongst others, `cObject FILE <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog/9.5/Deprecation-85970-FileContentObject.html>`__
+* Amongst others, :doc:`cObject FILE <ext_core:Changelog/9.5/Deprecation-85970-FileContentObject>`
   got deprecated and will be removed in TYPO3 10. This
   e.g. influences cObject TEMPLATE which now gives a deprecation message, if used with cObject FILE.
