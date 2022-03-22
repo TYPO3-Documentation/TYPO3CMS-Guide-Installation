@@ -36,7 +36,6 @@ Legacy to Composer mode.
    QuickInstall/Index
    In-depth/Index
    Upgrade/Index
-   UpgradeLTS/Index
    Troubleshooting/Index
 
 .. Meta Menu
