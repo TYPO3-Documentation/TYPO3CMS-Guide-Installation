@@ -1,12 +1,34 @@
 .. include:: /Includes.rst.txt
 
-
 .. _start:
 .. _upgrading:
 
-=================
-Upgrading TYPO3
-=================
+===================
+TYPO3 Upgrade Guide
+===================
+
+:Version:
+   |release|
+
+:Language:
+   en
+
+:Author:
+   TYPO3 contributors
+
+:License:
+   This document is published under the
+   `Open Publication License <https://www.opencontent.org/openpub/>`__.
+
+:Rendered:
+   |today|
+
+----
+
+This document explains how to upgrade TYPO3 and migrate from Legacy to Composer
+mode.
+
+----
 
 .. container:: row m-0 p-0
 
@@ -98,7 +120,6 @@ Upgrading TYPO3
 
             This chapter details how pages and content can be exported and then imported into another installation of TYPO3.
 
-
 .. toctree::
    :hidden:
 
@@ -109,4 +130,11 @@ Upgrading TYPO3
    Legacy/Index
    MigrateToComposer/Index
    MigrateContent/Index
-   Linktargets
+
+.. Meta Menu
+
+.. toctree::
+   :hidden:
+
+   Sitemap
+   genindex
