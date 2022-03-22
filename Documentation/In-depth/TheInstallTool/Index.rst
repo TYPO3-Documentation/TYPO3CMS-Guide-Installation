@@ -3,7 +3,7 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _the-install-tool-in-depth:
@@ -41,7 +41,7 @@ of your database with the expected structure for the TYPO3 version you
 are using. The next step allows you to update the structure of your
 database accordingly.
 
-The **Clear all Cache** functionality can empty all caches: Frontend, 
+The **Clear all Cache** functionality can empty all caches: Frontend,
 Backend and language caches.
 
 The **Check for broken extensions** can be run to make sure that
@@ -63,7 +63,7 @@ Configuration presets
 
 This section provides default settings for different setups.
 
-The section "Character set conversion settings" allows you to select 
+The section "Character set conversion settings" allows you to select
 the program which should be used for character set conversions.
 
 The section "Debug settings" allows you to activate debugging. E.g. if
@@ -88,7 +88,7 @@ Here you can configure *all* installation options concerning your TYPO3
 installation. We suggest you go through the whole list and read the
 description of the settings carefully at least once, so you get an
 impression of what you can configure. Normally you *can*, but you *don't
-have to* change anything here during installation, as the previous steps 
+have to* change anything here during installation, as the previous steps
 took care of the most important settings.
 
 
@@ -97,7 +97,7 @@ took care of the most important settings.
 Upgrade wizard
 """"""""""""""
 
-You don't need the upgrade wizard while *installing* TYPO3. This function 
+You don't need the upgrade wizard while *installing* TYPO3. This function
 will be explained in a later chapter about upgrading TYPO3.
 
 
@@ -108,8 +108,8 @@ System environment
 
 The section contains a huge number of environment checks, which notify
 you of (potential) problems in your installation. It checks Apache
-settings and the status of important PHP modules and PHP settings. It 
-also contains full output of :code:`phpinfo()` and some constants used 
+settings and the status of important PHP modules and PHP settings. It
+also contains full output of :code:`phpinfo()` and some constants used
 by TYPO3.
 
 
@@ -119,7 +119,7 @@ Folder structure
 """"""""""""""""
 
 This section shows whether the files and folders in your installation have
-the correct permissions. This is important so that TYPO3 can function properly 
+the correct permissions. This is important so that TYPO3 can function properly
 and so that other users on the web server do not get access to (possibly confidential)
 data.
 
@@ -132,7 +132,7 @@ Test setup
 The section "Test setup" contains a test for the mail function and for
 image processing. Try each test to see if you have configured your image
 generation settings correctly. If you have problems, check the
-explanation of the test for a hint on how to solve them. Additionally, 
+explanation of the test for a hint on how to solve them. Additionally,
 have a look at the image processing settings in the section "All
 configuration".
 

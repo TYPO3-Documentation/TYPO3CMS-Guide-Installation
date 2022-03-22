@@ -3,7 +3,7 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _which-package-and-which-file-format:
@@ -16,8 +16,8 @@ Which Package and which File Format?
 Which Package to use
 """"""""""""""""""""
 
-There is only one TYPO3 Package, called “TYPO3 Source”, with which you can install an empty instance of TYPO3. 
-Once the main installation process is complete, you will be asked whether you want to load additional “Distributions” 
+There is only one TYPO3 Package, called “TYPO3 Source”, with which you can install an empty instance of TYPO3.
+Once the main installation process is complete, you will be asked whether you want to load additional “Distributions”
 to “kick start” an out-of-the-box working environment.
 
 An overview of all available packages and versions (which also contains older supported releases) can be found at

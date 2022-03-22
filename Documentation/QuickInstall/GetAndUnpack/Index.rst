@@ -3,7 +3,7 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 .. _get-and-unpack-the-typo3-package:
@@ -49,7 +49,7 @@ Installing on a Unix server
     Some servers installations do not allow a symlink on a php file, especially on shared hosting environments. Here you should copy the index.php like this:
 
         cp typo3_src/index.php index.php
-    
+
 
 #. Create an empty file :file:`FIRST_INSTALL` to enable the Install Tool
    to set up and configure the instance in the next step::

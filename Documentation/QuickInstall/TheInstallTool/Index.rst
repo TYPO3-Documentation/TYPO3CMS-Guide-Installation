@@ -3,7 +3,7 @@
 .. --------------------------------------------------
 .. -*- coding: utf-8 -*- with BOM.
 
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _the-install-tool:
@@ -42,7 +42,7 @@ The Install Tool
    .. figure:: ../../Images/QuickInstall-3-Database-Selection.png
       :alt: Install Tool, third step.
 
-#. Enter a username and password for your first TYPO3 admin user. (For security 
+#. Enter a username and password for your first TYPO3 admin user. (For security
    reasons, it's best not to use the name *admin*.) This
    password will also be configured for the Install Tool. The "site
    name" will identify this installation (in the page tree and browser

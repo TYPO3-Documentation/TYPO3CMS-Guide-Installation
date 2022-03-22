@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. highlight:: bash
 
@@ -34,7 +34,7 @@ for upgrading from 6.2 to 7.6.
   CTypes originally provided by css_styled_content. Note that you will most likely have to adjust
   your CSS styles in order to again get the frontend output you want! For videos on YouTube, Vimeo
   and so on, another option is the "online media" feature of the Core; see
-  :doc:`t3core:Changelog/7.5/Feature-61799-ImprovedHandlingOfOnlineMedia`.
+  :doc:`ext_core:Changelog/7.5/Feature-61799-ImprovedHandlingOfOnlineMedia`.
 
 
 .. _lts-upgrade-precondition:
