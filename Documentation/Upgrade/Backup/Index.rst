@@ -15,6 +15,5 @@ the old version. You need a backup of
 
 Also you may prefer to upgrade a copy of your site first, if there have
 been a lot of changes and some of them might interfere with functions
-of your site. See the `ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/8.7/>`_
+of your site. See the :doc:`changelog <ext_core:Index>`
 to check that.
-

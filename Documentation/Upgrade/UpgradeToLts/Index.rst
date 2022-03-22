@@ -17,7 +17,7 @@ Important changes
 =================
 
 We do not list all changes here. You may also want to browse the
-`8.7 Changelogs <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog-8.html>`__
+:doc:`changelogs <ext_core:Index>`
 before updating. All changes listed for 8.0 to 8.7 and 8.7.x. are relevant
 for upgrading from 7.6 to 8.7.
 

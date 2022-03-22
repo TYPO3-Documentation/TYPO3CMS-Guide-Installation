@@ -111,5 +111,5 @@ is to :ref:`remove the temporary cache files
 In case of a *major update*, e.g. from TYPO3 7.6 to 8.7, go ahead with
 the next step!
 
-Also check out the breaking changes listed in `Changelog
-<https://docs.typo3.org/typo3cms/extensions/core/>`_ for the new version.
+Also check out the breaking changes listed in :doc:`changelog <ext_core:Index>`
+for the new version.
