@@ -59,9 +59,8 @@ Monitoring changes to TYPO3's core
 The system extensions that are developed and exist within TYPO3's core
 are likely to change over time. Some extensions are merged into others, new system extensions
 are added and others abandoned.
-These changes are published `here
-<https://docs.typo3.org/Home/SystemExtensions.html>`_ and can also be found by searching in the
-`breaking changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_
+These changes are published :doc:`here <t3home:Home/SystemExtensions>` and can
+also be found by searching in the :doc:`breaking changes <ext_core:Index>`
 for the extension by its key name.
 
 
