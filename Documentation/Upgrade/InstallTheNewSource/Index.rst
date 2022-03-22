@@ -59,9 +59,9 @@ requires section.
    changes from time to time: Some extensions are merged into others, new system extensions
    are added and others abandoned or released to the public and therefore maintained at a
    different place.
-   If you want to know details, you can have a look at this `list
-   <https://docs.typo3.org/Home/SystemExtensions.html>`_ or search in the
-   `breaking changes <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Index.html>`_
+   If you want to know details, you can have a look at this
+   :doc:`list <t3home:Home/SystemExtensions>` or search in the
+   :doc:`breaking changes <ext_core:Index>`
    for the extension key (not the package name!).
 
 .. figure:: ../../Images/ext-on-packagist.png
@@ -160,5 +160,5 @@ that your update is finished.
 In case of a *major update*, e.g. from TYPO3 8.7 to 9.5, go ahead with the next
 step!
 
-Also check out the breaking changes listed in `Changelog
-<https://docs.typo3.org/typo3cms/extensions/core/>`_ for the new version.
+Also check out the breaking changes listed in :doc:`changelog <ext_core:Index>`
+for the new version.

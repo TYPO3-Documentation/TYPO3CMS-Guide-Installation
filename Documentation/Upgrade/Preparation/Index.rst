@@ -30,7 +30,7 @@ Handling Deprecations
 =====================
 
 If you notice some API you are using is deprecated, you should look up the
-corresponding `ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/>`_
+corresponding :doc:`ChangeLog <ext_core:Index>`
 entry and see how to migrate your code corresponding to the documentation.
 
 Since TYPO3 v9 an extension scanner is included, that provides basic scanning
@@ -70,7 +70,7 @@ Upgrade Hints for version 9
 Database Collation and Charset
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If upgrading instances, admins may change :file:`LocalConfiguration.php` to use `utf8mb4` collation 
+If upgrading instances, admins may change :file:`LocalConfiguration.php` to use `utf8mb4` collation
 and charset for allowing multibyte characters like emojis to be used in TYPO3.
 The core does not provide mechanisms to update the collation of existing tables
 from `utf8_unicode_ci` to `utf8mb4_unicode_ci` for existing instances, though. Admins need

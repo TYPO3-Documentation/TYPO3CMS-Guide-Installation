@@ -7,7 +7,7 @@
 Check the ChangeLog
 ===================
 
-Look through the `ChangeLog <https://docs.typo3.org/typo3cms/extensions/core/>`_ online
+Look through the :doc:`ChangeLog <ext_core:Index>` online.
 The ChangeLog is divided into four sections "Breaking Changes", "Features", "Deprecation" and
 "Important". Before upgrading you should at least take a look at the sections "Breaking Changes"
 and "Important" - changes described in those areas might affect your website.

@@ -90,8 +90,7 @@ The `var` Folder
 
 :file:`log/`
   the default location for TYPO3 log files. Can be configured via the TYPO3
-  logging framework. See `Logging Framework
-  <https://docs.typo3.org/typo3cms/CoreApiReference/ApiOverview/Logging/Index.html>`.
+  logging framework. See :doc:`Logging Framework <t3coreapi:ApiOverview/Logging/Index>`.
 
 :file:`session/`
   is where sessions are stored.
