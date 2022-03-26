@@ -443,5 +443,5 @@ This means, the :file:`config` directory does not exactly replace the
    You can take additional measures to move :file:`public/typo3conf/ext` out of the web
    root too. Have a look at :ref:`mig-composer-clear-typo3conf-ext-folder` in the
    "Best practices" section. You may also want to look at the
-   :ref:`"Secure Web" <secure-web>` extension which is a way to split up the "public"
-   and "private" files.
+   `Secure Web <https://packagist.org/packages/helhum/typo3-secure-web>`__
+   package which is a way to split up the "public" and "private" files.
