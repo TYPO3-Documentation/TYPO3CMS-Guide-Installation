@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 ===============
@@ -53,15 +53,16 @@ The :file:`composer.json` in the Base distribution includes a scripts section:
 
 .. code-block:: json
 
-
-   "scripts":{
-      "typo3-cms-scripts": [
-         "typo3cms install:generatepackagestates",
-         "typo3cms install:fixfolderstructure"
-      ],
-      "post-autoload-dump": [
-         "@typo3-cms-scripts"
-      ]
+   {
+      "scripts": {
+         "typo3-cms-scripts": [
+            "typo3cms install:generatepackagestates",
+            "typo3cms install:fixfolderstructure"
+         ],
+         "post-autoload-dump": [
+            "@typo3-cms-scripts"
+         ]
+      }
    }
 
 
@@ -280,11 +281,13 @@ additional lines added to the :file:`composer.json` from above:
 
    .. code-block:: json
 
-      "extra": {
+      {
+         "extra": {
             "typo3/cms": {
-                "cms-package-dir": "{$vendor-dir}/typo3/cms"
+               "cms-package-dir": "{$vendor-dir}/typo3/cms"
             }
-       }
+         }
+      }
 
    There is no harm in that, but it won't have any effect.
 

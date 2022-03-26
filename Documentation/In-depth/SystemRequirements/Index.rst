@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _system-requirements:
@@ -16,7 +16,6 @@ TYPO3 requires a web server, PHP and a database system.
 
 * TYPO3 can be used with many **database** systems (MariaDB >= 10.2 <= 10.3,
   Microsoft SQL Server, MySQL 5.5+, PostgreSQL, SQLite).
-  See :ref:`system-requirements-database` on this page for details.
 
 If you use an Apache web server, the module mod_rewrite must be activated.
 Certain PHP extensions are necessary, others recommended. You possibly want to
@@ -136,8 +135,8 @@ Microsoft Internet Information Services (IIS)
 
 * Default IIS web config file with rewrite rules can be found in
   :file:`EXT:install/Resources/Private/FolderStructureTemplateFiles/root-web-config`
-  
-* Make sure that the `URL Rewrite plugin <https://www.iis.net/downloads/microsoft/url-rewrite>`__ is installed on your system.  
+
+* Make sure that the `URL Rewrite plugin <https://www.iis.net/downloads/microsoft/url-rewrite>`__ is installed on your system.
 
 NGINX
 -----

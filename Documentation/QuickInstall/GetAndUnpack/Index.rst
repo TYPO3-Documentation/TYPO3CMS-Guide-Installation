@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: shell
 
 .. _get-and-unpack-the-typo3-package:

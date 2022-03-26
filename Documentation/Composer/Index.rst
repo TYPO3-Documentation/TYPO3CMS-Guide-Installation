@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: bash
 
 .. _composer-working-with:
@@ -103,7 +103,7 @@ control system.
 
     Please be sure to disable extensions in TYPO3's Extension Manager, before removing them with `composer`.
     Or ensure to regenerate your :file:`typo3conf/PackageStates.php` file automatically, after removing the packages. You could use the
-    `extension "typo3_console" <https://docs.typo3.org/typo3cms/extensions/typo3_console/CommandReference/Index.html#install-generatepackagestates>`__ for that
+    :ref:`TYPO3 Console <typo3_console:typo3_console-command-reference-install-generatepackagestates>` package for that.
 
 Check for Available Updates
 ===========================
