@@ -27,7 +27,7 @@ TYPO3 version.
 
 Check that all system requirements for upgrading are met:
 
-* See :ref:`system-requirements`
+* See :ref:`t3start:system-requirements`
 
 .. _make_a_backup:
 

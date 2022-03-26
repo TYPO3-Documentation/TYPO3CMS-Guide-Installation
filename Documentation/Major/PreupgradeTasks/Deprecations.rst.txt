@@ -1,7 +1,7 @@
 .. include:: /Includes.rst.txt
 
 If you notice some API you are using is deprecated, you should look up the
-corresponding `ChangeLog <https://docs.typo3.org/c/typo3/cms-core/master/en-us/>`_
+corresponding :doc:`changelog <ext_core:Index>`
 entry and see how to migrate your code corresponding to the documentation.
 
 Since TYPO3 v9 an :ref:`extension scanner <t3coreapi:extension-scanner>` is

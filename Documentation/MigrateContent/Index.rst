@@ -134,7 +134,7 @@ Importing a TYPO3 page tree without php time limit is possible via
 
 .. note::
    If your TYPO3 installation is not based on composer you can run the command
-   with :shell:`typo3/sysext/core/bin/typo3 impexp:import` instead.
+   with :bash:`typo3/sysext/core/bin/typo3 impexp:import` instead.
 
 
 The import can be fine-tuned through the complete set of options also
