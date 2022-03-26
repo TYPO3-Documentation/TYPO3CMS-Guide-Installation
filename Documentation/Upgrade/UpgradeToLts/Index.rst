@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 .. highlight:: bash
 
@@ -17,7 +17,7 @@ Important changes
 =================
 
 We do not list all changes here. You may also want to browse the
-`8.7 Changelogs <https://docs.typo3.org/c/typo3/cms-core/master/en-us/Changelog-8.html>`__
+:doc:`changelogs <ext_core:Index>`
 before updating. All changes listed for 8.0 to 8.7 and 8.7.x. are relevant
 for upgrading from 7.6 to 8.7.
 
@@ -34,7 +34,7 @@ RTE
 ---
 
 The old Rich Text Editor *rtehtmlarea* has been removed from the TYPO3 Core. Its replacement is
-:ref:`rte_ckeditor <ckeditor:start>`. If you for now still want to continue using the old editor,
+:ref:`rte_ckeditor <ext_rte_ckeditor:start>`. If you for now still want to continue using the old editor,
 you can use the Upgrade Wizard in the Install Tool to import it from TER.
 
 In v8 the RTE link syntax has changed. Before, `<link ...` was used, now the syntax is `<a href="t3://...`.

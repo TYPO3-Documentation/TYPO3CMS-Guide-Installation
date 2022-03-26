@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 ===================================================
 Convert TYPO3 project from non-composer to composer
