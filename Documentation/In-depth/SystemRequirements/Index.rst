@@ -1,9 +1,4 @@
-﻿.. ==================================================
-.. FOR YOUR INFORMATION
-.. --------------------------------------------------
-.. -*- coding: utf-8 -*- with BOM.
-
-.. include:: ../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 
 .. _system-requirements:
@@ -24,16 +19,16 @@ TYPO3 requires a web server, PHP and a database system.
    * Certain PHP extensions are necessary, others recommended. See file :file:`INSTALL.md` as mentioned below.
    * You possibly want to adjust the memory limit; at least 128 MB is
      recommended:
-     
+
      php.ini:
-     
+
      .. code-block:: none
-     
+
         memory_limit = 128M
 
 * MySQL >= 5.5 <= 5.7 (or compatible such as Percona or MariaDB)
-* If you want TYPO3 to automatically carry out image processing – for example 
-  scaling or cropping – you will need GraphicsMagick or ImageMagick (version 6 or 
+* If you want TYPO3 to automatically carry out image processing – for example
+  scaling or cropping – you will need GraphicsMagick or ImageMagick (version 6 or
   newer) installed on the server.
 
 A detailed list of these requirements is enclosed in the file
