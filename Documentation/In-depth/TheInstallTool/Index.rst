@@ -1,4 +1,4 @@
-﻿.. include:: ../../Includes.txt
+﻿.. include:: /Includes.rst.txt
 
 
 .. _the-install-tool-in-depth:
@@ -25,7 +25,7 @@ First go to your site and enter the admin tool via `/typo3/install.php`, e.g. :s
    The :guilabel:`Admin tool` in the backend was called "Install Tool" in earlier versions.
 
    There is a tool called "Admin Panel" in the frontend. It has nothing to do with
-   the "Admin tool" described here. See :ref:`Admin Panel<t3tsref:useradmpanel>`.
+   the "Admin tool" described here. See :ref:`Admin Panel <t3tsconfig:useradmpanel>`.
 
 
 .. _important-actions:

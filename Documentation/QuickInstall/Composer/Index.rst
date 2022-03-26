@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 .. highlight:: shell
 
 
@@ -21,7 +21,7 @@ To create a new TYPO3 project using the TYPO3 Base Distribution::
 
 	# Download the Base Distribution, the latest "sprint" release (10)
 	composer create-project typo3/cms-base-distribution:"^10" YourNewProjectFolder
-   
+
 To create a new TYPO3 project using the TYPO3 Base Distribution in a ddev environment::
 
    # Download the Base Distribution, the latest "LTS" release (10)
@@ -36,19 +36,19 @@ To create a new TYPO3 project using the TYPO3 Base Distribution in a ddev enviro
 
 
 After `composer create project ...` executed, you should have the following folder structure:
- 
+
 .. code-block:: none
 
     .
-    ├── .gitignore  
+    ├── .gitignore
     ├── composer.json
     ├── composer.lock
     ├── LICENSE
     ├── public
     ├── README.md
     ├── var
-    └── vendor   
-   
+    └── vendor
+
 Point the document root of your web server to the `public` folder.
 
 

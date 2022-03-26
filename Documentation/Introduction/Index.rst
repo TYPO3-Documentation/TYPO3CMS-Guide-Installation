@@ -1,4 +1,4 @@
-.. include:: ../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _introduction:
@@ -54,7 +54,7 @@ Contribution
 
 
 If you find a bug in this manual, please be so kind as to check the
-online version on https://docs.typo3.org/typo3cms/InstallationGuide/.
+online version on https://docs.typo3.org/m/typo3/guide-installation/10.4/en-us/.
 From there you can hit the "Edit me on GitHub" button in the top right corner
 and submit a pull request via GitHub. Alternatively you can just file an issue
 using the bug tracker: https://github.com/TYPO3-Documentation/TYPO3CMS-Guide-Installation/issues.

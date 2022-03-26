@@ -1,4 +1,4 @@
-.. include:: ../../Includes.txt
+.. include:: /Includes.rst.txt
 
 
 .. _preparation:
@@ -40,7 +40,7 @@ Handling Deprecations
 =====================
 
 If you notice some API you are using is deprecated, you should look up the
-corresponding `ChangeLog <https://docs.typo3.org/c/typo3/cms-core/master/en-us/>`_
+corresponding :doc:`ChangeLog <ext_core:Index>`
 entry and see how to migrate your code corresponding to the documentation.
 
 Since TYPO3 v9 an :ref:`extension scanner <t3coreapi:extension-scanner>` is
@@ -58,7 +58,7 @@ for more information about the Changelogs and how to read them.
 
    TYPO3 aims at providing a reliable backwards compatibility between versions:
 
-   *  Minor versions are always backwards compatible - unless explicitly stated 
+   *  Minor versions are always backwards compatible - unless explicitly stated
       otherwise (for example in case of security updates)
 
    *  Major versions may contain breaking changes - normally these are
@@ -98,7 +98,7 @@ whether or not your website is affected by the change.
 
 There are 3 different methods you can use to read the Changelogs:
 
-#. Look through the `ChangeLogs <https://docs.typo3.org/typo3cms/extensions/core/>`_
+#. Look through the :doc:`ChangeLogs <ext_core:Index>`
    online. This has the advantage that code blocks will be formatted nicely with
    syntax highlighting.
 #. Read the Changelogs in the backend: :guilabel:`Upgrade > View Upgrade Documentation`.
