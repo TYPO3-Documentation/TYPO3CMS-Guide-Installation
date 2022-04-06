@@ -34,7 +34,7 @@ RTE
 ---
 
 The old Rich Text Editor *rtehtmlarea* has been removed from the TYPO3 Core. Its replacement is
-:ref:`rte_ckeditor <ext_rte_ckeditor:start>`. If you for now still want to continue using the old editor,
+:doc:`rte_ckeditor <ext_rte_ckeditor:Index>`. If you for now still want to continue using the old editor,
 you can use the Upgrade Wizard in the Install Tool to import it from TER.
 
 In v8 the RTE link syntax has changed. Before, `<link ...` was used, now the syntax is `<a href="t3://...`.
