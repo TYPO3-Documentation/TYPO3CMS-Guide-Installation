@@ -28,7 +28,10 @@ Define a local path repository
 ------------------------------
 
 Create a directory :file:`packages` in your project root folder and define
-this folder as a repository of type "path" in your :file:`composer.json`::
+this folder as a repository of type "path" in your :file:`composer.json`:
+
+.. code-block:: json
+   :caption: typo3_root/composer.json
 
     {
         "repositories": [
@@ -48,9 +51,13 @@ it's important, that each extension has it's own correct :file:`composer.json` f
 How this file should look in your extension, is documented in :ref:`Extension Development Documentation <t3coreapi:composer-json>` or
 `this blog post from Helmut Hummel <https://insight.helhum.io/post/148886148725/composerjson-specification-for-typo3-extensions>`__.
 
-Assumed, your package key is, ``foo/bar``, you can type the following command to include your extension to your project::
+Assumed, your package key is, ``foo/bar``, you can type the following command
+to include your extension to your project:
 
-    composer require foo/bar:@dev
+.. code-block:: shell
+   :caption: typo3_root$
+
+   composer require foo/bar:@dev
 
 In this case, it's the easiest way to not define any composer version
 number, but tell composer to use the latest ``dev`` state.

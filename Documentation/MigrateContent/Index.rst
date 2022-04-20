@@ -24,6 +24,7 @@ from your page tree's context menu check that the system extension
 On composer based installations it can be required via
 
 .. code-block:: bash
+   :caption: typo3_root$
 
    composer req typo3/cms-impexp
 
@@ -54,6 +55,7 @@ available in the export view of the TYPO3 backend:
 You can see the complete list of options by calling the help for the command:
 
 .. code-block:: bash
+   :caption: typo3_root$
 
    vendor/bin/typo3 help impexp:export
 
@@ -141,8 +143,8 @@ The import can be fine-tuned through the complete set of options also
 available in the import view of the TYPO3 backend. You can see the complete
 list of options by calling the help for the command:
 
-
 .. code-block:: bash
+   :caption: typo3_root$
 
    vendor/bin/typo3 help impexp:import
 

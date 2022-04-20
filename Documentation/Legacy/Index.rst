@@ -59,19 +59,24 @@ i.e. if you use your own update mechanism.
 
 This feature is already disabled when TYPO3 is installed via Composer.
 
-To disable the core updater, you can set this environment variable::
+To disable the Core updater, you can set this environment variable:
+
+.. code-block:: none
+   :caption: Environment variable
 
    TYPO3_DISABLE_CORE_UPDATER=1
 
 For example in Apache:
 
 .. code-block:: apacheconf
+   :caption: /etc/httpd/conf/httpd.conf
 
    SetEnv TYPO3_DISABLE_CORE_UPDATER 1
 
 or for NGINX:
 
 .. code-block:: nginx
+   :caption:  /usr/local/nginx/conf/nginx.conf
 
    server {
      location ~ path/to/it {
