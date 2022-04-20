@@ -20,15 +20,18 @@ composer, should be excluded:
 -  :file:`vendor/`
 -  The extensions, you added via composer
 
-A :file:`.gitignore` file could look like this::
+A :file:`.gitignore` file could look like this:
 
-    /vendor/*
-    /public/index.php
-    /public/typo3/*
-    /public/typo3conf/ext/*
-    # allow some extensions
-    !/public/typo3conf/ext/my_sitepackage/
-    !/public/typo3conf/ext/prefix_*
+.. code-block:: none
+   :caption: typo3_root/.gitignore
+
+   /vendor/*
+   /public/index.php
+   /public/typo3/*
+   /public/typo3conf/ext/*
+   # allow some extensions
+   !/public/typo3conf/ext/my_sitepackage/
+   !/public/typo3conf/ext/prefix_*
 
 Checkout from version control system
 ====================================
