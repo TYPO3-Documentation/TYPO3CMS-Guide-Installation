@@ -69,7 +69,7 @@ To disable the Core updater, you can set this environment variable:
 For example in Apache:
 
 .. code-block:: apacheconf
-   :caption: /etc/httpd/conf/httpd.conf
+   :caption: typo3_root/public/.htaccess
 
    SetEnv TYPO3_DISABLE_CORE_UPDATER 1
 
