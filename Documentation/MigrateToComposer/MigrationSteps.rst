@@ -302,7 +302,7 @@ additional lines added to the :file:`composer.json` from above:
    since subtree split. You will sometimes see composer.json files with this:
 
    .. code-block:: json
-      :caption: typo3_root/composer.json
+      :caption: /composer.json
 
       {
          "extra": {
