@@ -31,7 +31,7 @@ Create a directory :file:`packages` in your project root folder and define
 this folder as a repository of type "path" in your :file:`composer.json`:
 
 .. code-block:: json
-   :caption: typo3_root/composer.json
+   :caption: /composer.json
 
     {
         "repositories": [
