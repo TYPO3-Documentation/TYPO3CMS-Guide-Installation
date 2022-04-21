@@ -39,7 +39,7 @@ If some of your extensions are not available on packagist, but are available in
 TER, you can add composer.typo3.org as repository:
 
 .. code-block:: json
-   :caption: typo3_root/composer.json
+   :caption: /composer.json
 
    {
        "repositories": [
