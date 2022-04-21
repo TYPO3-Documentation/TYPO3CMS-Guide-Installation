@@ -277,7 +277,7 @@ As first step, you have to define the repository in your
 additional lines added to the :file:`composer.json` from above:
 
 .. code-block:: json
-   :caption: typo3_root/composer.json
+   :caption: /composer.json
 
     {
         "repositories": [
