@@ -23,7 +23,7 @@ composer, should be excluded:
 A :file:`.gitignore` file could look like this:
 
 .. code-block:: none
-   :caption: typo3_root/.gitignore
+   :caption: /.gitignore
 
    /vendor/*
    /public/index.php
