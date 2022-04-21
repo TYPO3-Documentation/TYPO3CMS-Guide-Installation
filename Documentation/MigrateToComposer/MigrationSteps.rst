@@ -53,7 +53,7 @@ TER, you can add composer.typo3.org as repository:
 The :file:`composer.json` in the Base distribution includes a scripts section:
 
 .. code-block:: json
-   :caption: typo3_root/composer.json
+   :caption: /composer.json
 
    {
       "scripts": {
