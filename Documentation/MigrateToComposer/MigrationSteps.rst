@@ -39,19 +39,21 @@ If some of your extensions are not available on packagist, but are available in
 TER, you can add composer.typo3.org as repository:
 
 .. code-block:: json
+   :caption: /composer.json
 
-    {
-        "repositories": [
-            {
-                "type": "composer",
-                "url": "https://composer.typo3.org/"
-            }
-        ]
-    }
+   {
+       "repositories": [
+           {
+               "type": "composer",
+               "url": "https://composer.typo3.org/"
+           }
+       ]
+   }
 
 The :file:`composer.json` in the Base distribution includes a scripts section:
 
 .. code-block:: json
+   :caption: /composer.json
 
    {
       "scripts": {
@@ -80,13 +82,20 @@ Add all required packages to your project
 =========================================
 
 You can add all your required packages with the Composer command `composer
-require`. The full syntax is::
+require`. The full syntax is:
 
-    composer require anyvendorname/anypackagename:version
+.. code-block:: shell
+   :caption: typo3_root$
 
-**Example**::
+   composer require anyvendorname/anypackagename:version
 
-    composer require typo3/minimal:^9.5
+**Example**:
+
+
+.. code-block:: shell
+   :caption: typo3_root$
+
+   composer require typo3/minimal:^9.5
 
 There are different ways to define the version of the package, you want
 to install. The most common syntaxes start with `^` (e.g.
@@ -116,15 +125,21 @@ Install the core
    system extensions you really need. This, among others, increases security. The
    former `typo3/cms` package cannot be installed anymore.
 
-Install the system extensions::
+Install the system extensions:
 
-    composer require typo3/minimal:^9.5
-    composer require typo3/cms-scheduler:^9.5
-    composer require ...
+.. code-block:: shell
+   :caption: typo3_root$
 
-Or in one line::
+   composer require typo3/minimal:^9.5
+   composer require typo3/cms-scheduler:^9.5
+   composer require ...
 
-    composer require typo3/cms-minimal:^9.5 typo3/cms-scheduler:^9.5 ...
+Or in one line:
+
+.. code-block:: shell
+   :caption: typo3_root$
+
+   composer require typo3/cms-minimal:^9.5 typo3/cms-scheduler:^9.5 ...
 
 To find the correct package names, you can either take a look in the
 :file:`composer.json` of any system extension or follow the naming
@@ -209,7 +224,10 @@ does not provide additional information.
    .. include:: /Images/ExternalScreenshots/PackagistMask.rst.txt
 
 **Example:**
-To install the mask extension in version 4.1.\*, type::
+To install the mask extension in version 4.1.\*, type:
+
+.. code-block:: shell
+   :caption: typo3_root$
 
    composer require mask/mask:~4.1.0
 
@@ -229,14 +247,17 @@ some lines above. There are little naming conventions:
 
 The extension `any_fancy_extension`'s auto generated Composer package
 name would be `typo3-ter/any-fancy-extension`. To add this extension in
-version 1.2.\*, type::
+version 1.2.\*, type:
+
+.. code-block:: shell
+   :caption: typo3_root$
 
    composer require typo3-ter/any-fancy-extension:~1.2.0
 
 You can browse all available extensions and versions via
 https://composer.typo3.org/satis.html.
 
-.. note ::
+.. note::
 
     If you do not include any packages this way, you can remove the
     repository block named :samp:`https://composer.typo3.org` from your
@@ -256,6 +277,7 @@ As first step, you have to define the repository in your
 additional lines added to the :file:`composer.json` from above:
 
 .. code-block:: json
+   :caption: /composer.json
 
     {
         "repositories": [
@@ -280,6 +302,7 @@ additional lines added to the :file:`composer.json` from above:
    since subtree split. You will sometimes see composer.json files with this:
 
    .. code-block:: json
+      :caption: /composer.json
 
       {
          "extra": {
@@ -299,14 +322,20 @@ can be found on `composer.typo3.org <https://composer.typo3.org/>`__ or
 Please note, that Git tags are used as version numbers.
 
 If you fulfill these requirements, you can add your extension in the
-same way like the other examples::
+same way like the other examples:
 
-    composer require foo/bar:~1.0.0
+.. code-block:: shell
+   :caption: typo3_root$
+
+   composer require foo/bar:~1.0.0
 
 .. _mig-composer-include-individual-extensions:
 
 Include individual extensions like site packages
 ================================================
+
+.. todo:: This is not allowed anymore. The sitepackage has to go to another
+   directory and be included via composer properly
 
 It's not necessary to move your project's site package to a dedicated
 Git repository to re-include it in your project. You can keep the files
@@ -315,63 +344,66 @@ only one thing to do; Because TYPO3's autoload feature works differently
 in Composer based installations, you have to register your PHP class
 names in Composer. This is very easy when you use PHP namespaces:
 
-.. this is json but results in warnings if lex "json" is used
+.. code-block:: json
+   :caption: EXT:my_sitepackage/composer.json
 
-.. code-block:: none
-
+   {
         "autoload": {
             "psr-4": {
                 "VendorName\\MySitepackage\\": "public/typo3conf/ext/my_sitepackage/Classes/",
                 "VendorName\\AnyOtherExtension\\": "public/typo3conf/ext/any_other_extension/Classes/"
             }
         }
+   }
 
 For extension without PHP namespaces, this section has to look a bit
 differently. You can decide by yourself, if you want to list each PHP file
 manually or if Composer should search for them inside a folder:
 
-.. this is json but results in warnings if lex "json" is used
+.. code-block:: json
+   :caption: EXT:my_sitepackage/composer.json
 
-.. code-block:: none
-
+   {
         "autoload": {
             "classmap": [
                 "public/typo3conf/ext/my_old_extension/pi1/",
                 "public/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
             ]
         }
+   }
 
 To complete our example :file:`composer.json`, it would look like this:
 
 .. code-block:: json
+   :caption: typo3_root/composer.json
 
-    {
-        "repositories": [
-            {
-                "type": "composer",
-                "url": "https://composer.typo3.org/"
-            },
-            {
-                "type": "vcs",
-                "url": "https://github.com/foo/bar.git"
-            }
-        ],
-        "extra": {
-            "typo3/cms": {
-                "web-dir": "public"
-            }
-        },
-        "autoload": {
-            "psr-4": {
-                "VendorName\\MySitepackage\\": "public/typo3conf/ext/my_sitepackage/Classes/",
-                "VendorName\\AnyOtherExtension\\": "public/typo3conf/ext/any_other_extension/Classes/"
-            },
-            "classmap": [
-                "public/typo3conf/ext/my_old_extension/pi1/",
-                "public/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
-            ]
-        }
-    }
+   {
+       "repositories": [
+           {
+               "type": "composer",
+               "url": "https://composer.typo3.org/"
+           },
+           {
+               "type": "vcs",
+               "url": "https://github.com/foo/bar.git"
+           }
+       ],
+       "extra": {
+           "typo3/cms": {
+               "web-dir": "public"
+           }
+       },
+       "autoload": {
+           "psr-4": {
+               "VendorName\\MySitepackage\\": "public/typo3conf/ext/my_sitepackage/Classes/",
+               "VendorName\\AnyOtherExtension\\": "public/typo3conf/ext/any_other_extension/Classes/"
+           },
+           "classmap": [
+               "public/typo3conf/ext/my_old_extension/pi1/",
+               "public/typo3conf/ext/my_old_extension/pi2/class.tx_myoldextension_pi2.php"
+           ]
+       }
+   }
 
 After adding paths to the autoload you should run `composer dumpautoload`. This command will re-generate the autoload info and should be run anytime you add new paths to the autoload portion in the :file:`composer.json`.
 
@@ -392,7 +424,10 @@ changed for your site since moving to Composer.
 
 You should at least move the site configuration and the translations.
 
-Move files::
+Move files:
+
+.. code-block:: shell
+   :caption: typo3_root$
 
    mv public/typo3conf/sites config/sites
    mv public/typo3temp/var var

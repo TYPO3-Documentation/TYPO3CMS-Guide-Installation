@@ -30,14 +30,16 @@ directly via HTTP request.
 
 **Bad:**
 
-::
+.. code-block:: none
+   :caption: Page tree of directory typo3_root
 
-    /
-      index.php
-      fileadmin/
-      typo3/
-      typo3conf/
-      typo3temp/
+   $ tree typo3_root
+
+   ├── index.php
+   ├── fileadmin/
+   ├── typo3/
+   ├── typo3conf/
+   └── typo3temp/
 
 You need a web root folder inside your project. You can find many
 tutorials with different names for your web root folder. The truth is:
@@ -46,15 +48,17 @@ a later step. I will use ``public`` in my example.
 
 **Good:**
 
-::
 
-    /
-      public/
-        index.php
-        fileadmin/
-        typo3/
-        typo3conf/
-        typo3temp/
+.. code-block:: none
+   :caption: Page tree of directory typo3_root
+
+   $ tree typo3_root
+   └── public/
+       ├── index.php
+       ├── fileadmin/
+       ├── typo3/
+       ├── typo3conf/
+       └── typo3temp/
 
 If you do not have such a web root directory, you must refactor your
 project before continuing. Please be aware to tell your web server
@@ -67,7 +71,7 @@ Your project must have the TYPO3 core and all installed extensions in
 original state. If you applied manual changes to the files, these will
 be lost during the migration steps.
 
-.. note ::
+.. note::
 
     If you need to apply hotfixes or patches to the TYPO3 core or publicly
     available extensions, this `tutorial about applying patches via Composer

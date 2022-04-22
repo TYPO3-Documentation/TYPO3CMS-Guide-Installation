@@ -11,11 +11,15 @@ With command line (recommended)
    As the reference index might take quite long, especially on instances not
    running it regularly, an update via CLI is recommended.
 
-In a composer installation execute::
+In a composer installation execute:
+
+.. code-block:: shell
 
    ./vendor/bin/typo3 referenceindex:update
 
-In a non-composer installation execute::
+In a non-composer installation execute:
+
+.. code-block:: shell
 
    php ./typo3/sysext/core/bin/typo3 referenceindex:update
 
