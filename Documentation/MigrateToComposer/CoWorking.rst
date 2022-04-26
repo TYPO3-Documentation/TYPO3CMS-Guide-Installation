@@ -25,6 +25,8 @@ A :file:`.gitignore` file could look like this:
 .. code-block:: none
    :caption: /.gitignore
 
+   /var/*
+   !/var/labels
    /vendor/*
    /public/index.php
    /public/typo3/*
