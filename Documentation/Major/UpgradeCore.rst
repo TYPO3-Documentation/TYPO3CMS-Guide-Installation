@@ -20,7 +20,7 @@ Check which TYPO3 packages are currently installed
 --------------------------------------------------
 
 TYPO3's core contains a mix of required and optional packages. For example, `typo3/cms-backend`
-is a required package. `typo3/cms-sys-note` is not a required package and does not need to installed
+is a required package. `typo3/cms-sys-note` is not a required package and does not need to be installed
 for TYPO3 to work correctly.
 
 Prior to upgrading, check which packages are currently installed and make a note of them.
