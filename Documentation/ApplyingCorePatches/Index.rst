@@ -44,8 +44,8 @@ the projects main :file:`composer.json`. Each patch can be applied to exactly
 one composer package. The paths used in the patch must be relative to the
 packages path.
 
-Edit your projects main :file:`composer.json`. Add a section :json:`patches`
-within the section :json:`extra`. If there is no section :json:`extra` yet
+Edit your projects main :file:`composer.json`. Add a section `patches`
+within the section `extra`. If there is no section `extra` yet,
 add one.
 
 .. code-block:: json
@@ -65,7 +65,7 @@ add one.
 
 The patch itself can look like this:
 
-.. code-block:: none
+.. code-block:: diff
    :caption: patches/Bug-98106.diff (Simplified)
 
    diff --git a/Classes/Utility/GeneralUtility.php b/Classes/Utility/GeneralUtility.php
@@ -118,8 +118,18 @@ You can get a more verbose error message by calling:
 Creating a diff from a Core change
 ==================================
 
-In case a new Core version has not been released yet but your urgently need
-to apply a certain patch you can download that patch from the according Change
+You can choose between two methods:
+
+-  :ref:`Apply a core patch manually <apply-core-patch-manually>`
+-  :ref:`Apply a core patch automatically via gilbertsoft/typo3-core-patches <apply-core-patch-automatically>`
+
+.. _apply-core-patch-manually:
+
+Apply a core patch manually
+---------------------------
+
+In case a new Core version has not been released yet, but your urgently need
+to apply a certain patch, you can download that patch from the according Change
 on https://review.typo3.org/.
 
 Choose :guilabel:`Download patch` from the option menu (3 dots on top of each
@@ -141,7 +151,7 @@ Then choose your preferred format from the section :guilabel:`Patch file`.
 
 Unzip the diff file and put it into the folder :file:`patches` of your project.
 
-Core diff files are by default relative to the typo3 :json:`web-dir` directory.
+Core diff files are by default relative to the typo3 `web-dir` directory.
 And they can contain changes to more then one system extension. Furthermore
 they often contain changes to files in the directory :file:`Tests` that is not
 present in a Composer-based installation.
@@ -158,7 +168,7 @@ each system extension.
 For example the following patch contains links relative to the web root and
 contains a test:
 
-.. code-block:: none
+.. code-block:: diff
    :caption: patches/ChangeFromCore.diff (Simplified)
 
    diff --git a/typo3/sysext/core/Classes/Utility/GeneralUtility.php b/typo3/sysext/core/Classes/Utility/GeneralUtility.php
@@ -200,7 +210,7 @@ contains a test:
 Remove the tests and adjust the paths to be relative to the system extension
 Core:
 
-.. code-block:: none
+.. code-block:: diff
    :caption: patches/Bug-98106.diff (Simplified)
 
    diff --git a/Classes/Utility/GeneralUtility.php b/Classes/Utility/GeneralUtility.php
@@ -223,3 +233,37 @@ Core:
                 $mode = strtolower($GLOBALS['TYPO3_CONF_VARS']['FE']['versionNumberInFilename']);
                 if ($mode === 'embed') {
                     $mode = true;
+
+
+.. _apply-core-patch-automatically:
+
+Apply a core patch automatically via `gilbertsoft/typo3-core-patches`
+---------------------------------------------------------------------
+
+With the help of the Composer package `gilbertsoft/typo3-core-patches` a core
+patch can by applied automatically. You need at least PHP 7.4 and composer 2.0.
+
+First, install the package:
+
+.. code-block:: bash
+
+   composer req gilbertsoft/typo3-core-patches
+
+Then look up the change ID on `review.typo3.org <https://review.typo3.org/>`.
+You can find it in the URL or left of the title of the change. In the example
+it is `75368`.
+
+.. figure:: /Images/ManualScreenshots/ReviewChangeId.png
+   :class: with-shadow
+   :alt: Look up of the change id
+
+   Look up of the change id
+
+Now execute the following command with your change ID:
+
+.. code-block:: bash
+
+   composer typo3:patch:apply <change-id>
+
+You can find more information about the package and its usage in the
+`documentation <https://packagist.org/packages/gilbertsoft/typo3-core-patches>`__.
