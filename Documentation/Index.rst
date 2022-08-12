@@ -102,6 +102,20 @@ mode.
 
          .. rst-class:: card-header h3
 
+            .. rubric:: :ref:`Applying Core patches <applying-core-patches>`
+
+         .. container:: card-body
+
+            Learn how to apply Core patches in a future proof way: Automatize
+            patch application with `cweagans/composer-patches`. Download
+            a patch for the Core.
+
+   .. container:: col-md-6 pl-0 pr-3 py-3 m-0
+
+      .. container:: card px-0 h-100
+
+         .. rst-class:: card-header h3
+
             .. rubric:: :ref:`Migrate a TYPO3 installation to Composer <MigrateToComposer>`
 
          .. container:: card-body
@@ -128,6 +142,7 @@ mode.
    UpgradingExtensions/Index
    Tools/Index
    Legacy/Index
+   ApplyingCorePatches/Index
    MigrateToComposer/Index
    MigrateContent/Index
 
