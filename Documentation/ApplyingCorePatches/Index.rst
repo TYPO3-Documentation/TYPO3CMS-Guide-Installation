@@ -241,7 +241,9 @@ Apply a core patch automatically via `gilbertsoft/typo3-core-patches`
 ---------------------------------------------------------------------
 
 With the help of the Composer package `gilbertsoft/typo3-core-patches` a core
-patch can by applied automatically. You need at least PHP 7.4 and composer 2.0.
+patch can by applied automatically. It works on top of
+:ref:`cweagans/composer-patches <cweagans-composer-patches>`. You need at least
+PHP 7.4 and composer 2.0.
 
 First, install the package:
 
