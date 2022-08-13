@@ -101,7 +101,7 @@ Apply the patch by running the following command:
    not be automatically applied. In that case delete the installed sources
    and execute :bash:`composer install` once more.
 
-If applying the patch fails you will often get a cryptic error message like:
+If applying the patch fails, you may get a cryptic error message like:
 
 .. code-block:: none
    Example error message
