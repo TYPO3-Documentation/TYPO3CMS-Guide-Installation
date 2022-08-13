@@ -99,7 +99,7 @@ Apply the patch by running the following command:
 .. note::
    Changes to the patch file after the patch was applied successfully will
    not be automatically applied. In that case delete the installed sources
-   then execute :bash:`composer install` once more.
+   and execute :bash:`composer install` once more.
 
 If applying the patch fails you will often get a cryptic error message like:
 
