@@ -257,7 +257,7 @@ it is `75368`.
 
 .. figure:: /Images/ManualScreenshots/ReviewChangeId.png
    :class: with-shadow
-   :alt: Look up of the change id
+   :alt: Look up the change id
 
    Look up the change id
 
