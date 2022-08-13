@@ -259,7 +259,7 @@ it is `75368`.
    :class: with-shadow
    :alt: Look up of the change id
 
-   Look up of the change id
+   Look up the change id
 
 Now execute the following command with your change ID:
 
