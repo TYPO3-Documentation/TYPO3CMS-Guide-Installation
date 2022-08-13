@@ -128,7 +128,7 @@ You can choose between two methods:
 Apply a core patch manually
 ---------------------------
 
-In case a new Core version has not been released yet, but your urgently need
+In case a new Core version has not been released yet, but you urgently need
 to apply a certain patch, you can download that patch from the according Change
 on https://review.typo3.org/.
 
