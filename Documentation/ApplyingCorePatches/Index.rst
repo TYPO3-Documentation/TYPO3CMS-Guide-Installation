@@ -38,7 +38,7 @@ To automatically apply patches first install `cweagans/composer-patches`:
 
    composer req cweagans/composer-patches
 
-Choose a folder to store all patches in. This folder should ideally lie outside
+Choose a folder to store all patches in. This folder should ideally be outside
 of the webroot. Here we use the folder :file:`patches` on the same level like
 the projects main :file:`composer.json`. Each patch can be applied to exactly
 one composer package. The paths used in the patch must be relative to the
