@@ -97,7 +97,7 @@ Apply the patch by running the following command:
    composer install
 
 .. note::
-   Changes to the patch file after the patch was applied successfully once will
+   Changes to the patch file after the patch was applied successfully will
    not be automatically applied. In that case delete the installed sources
    then execute :bash:`composer install` once more.
 
