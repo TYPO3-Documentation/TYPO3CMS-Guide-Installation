@@ -6,16 +6,17 @@
 Applying Core patches
 ==============================
 
-At times you need to apply changes to the TYPO3 Core. **Never** change the code
-of the Core directly. This includes all changes to files in the directory
-:file:`typo3/sysext` and to files in directory :file:`vendor`.
+At some point you may be required to apply changes to TYPO3's core. For example
+you may be testing a colleague's feature or working on a patch of your own.
 
-.. attention::
-   If you manually make changes in the code of your TYPO3 Core all changes will
-   disappear with the next bugfix update!
+**Never** change the code found in the Core directly. This includes all files in 
+:file:`typo3/sysext` and :file:`vendor`.
 
-All changes to be applied to the Core should be kept in :file:`*.diff` files
-and be reapplied automatically after each update.
+Any manual changes you make to TYPO3's Core will be overwritten as soon as the Core
+is updated.
+
+Changes that need to be applied to the Core should be stored in :file:`*.diff` files
+and reapplied after each update.
 
 .. _cweagans-composer-patches:
 
@@ -29,8 +30,7 @@ Automatic patch application with `cweagans/composer-patches`
 
 .. note::
    Automatic application of patches with this method only works with
-   Composer. If you still run a legacy TYPO3 installation consider to
-   :ref:`migrate to Composer <migratetocomposer>`.
+   Composer.
 
 To automatically apply patches first install `cweagans/composer-patches`:
 
@@ -40,11 +40,11 @@ To automatically apply patches first install `cweagans/composer-patches`:
 
 Choose a folder to store all patches in. This folder should ideally be outside
 of the webroot. Here we use the folder :file:`patches` on the same level as
-the projects main :file:`composer.json`. Each patch can be applied to exactly
+the project's main :file:`composer.json`. Each patch can be applied to exactly
 one composer package. The paths used in the patch must be relative to the
 packages path.
 
-Edit your projects main :file:`composer.json`. Add a section `patches`
+Edit your project's main :file:`composer.json`. Add a section `patches`
 within the section `extra`. If there is no section `extra` yet,
 add one.
 
@@ -63,7 +63,7 @@ add one.
      }
    }
 
-The patch itself can look like this:
+The patch itself looks like this:
 
 .. code-block:: diff
    :caption: patches/Bug-98106.diff (Simplified)
@@ -129,7 +129,7 @@ Apply a core patch manually
 ---------------------------
 
 In case a new Core version has not been released yet, but you urgently need
-to apply a certain patch, you can download that patch from the according Change
+to apply a certain patch, you can download that patch from the corresponding change
 on https://review.typo3.org/.
 
 Choose :guilabel:`Download patch` from the option menu (3 dots on top of each
@@ -152,16 +152,16 @@ Then choose your preferred format from the section :guilabel:`Patch file`.
 Unzip the diff file and put it into the folder :file:`patches` of your project.
 
 Core diff files are by default relative to the typo3 `web-dir` directory.
-And they can contain changes to more then one system extension. Furthermore
+And they can contain changes to more than one system extension. Furthermore
 they often contain changes to files in the directory :file:`Tests` that is not
-present in a Composer-based installation.
+present in a Composer based installation.
 
-Therefore when you plan to apply the diff by :ref:`cweagans-composer-patches`
+When you plan to apply the diff by :ref:`cweagans-composer-patches`
 you will need to manually adjust the patch file:
 
 Remove all changes to the directory :file:`Tests` and other files or directories
-that are not present in your installations source. Change all paths to be
-relative to the the path of the extension that should be changed. If more then
+that are not present in your installation's source. Change all paths to be
+relative to the path of the extension that should be changed. If more then
 one extension needs to be changed split up the patch in several parts, one for
 each system extension.
 
@@ -241,7 +241,7 @@ Apply a core patch automatically via `gilbertsoft/typo3-core-patches`
 ---------------------------------------------------------------------
 
 With the help of the Composer package `gilbertsoft/typo3-core-patches` a Core
-patch can by applied automatically. It works on top of
+patch can be applied automatically. It works on top of
 :ref:`cweagans/composer-patches <cweagans-composer-patches>`. You need at least
 PHP 7.4 and composer 2.0.
 
@@ -253,7 +253,7 @@ First, install the package:
 
 Then look up the change ID on `review.typo3.org <https://review.typo3.org/>`.
 You can find it in the URL or left of the title of the change. In the example
-it is `75368`.
+it's `75368`.
 
 .. figure:: /Images/ManualScreenshots/ReviewChangeId.png
    :class: with-shadow
