@@ -54,12 +54,11 @@ Assuming that the packages below are installed locally, the following example wo
    "typo3/cms-setup:^11.5" "typo3/cms-t3editor:^11.5" "typo3/cms-tstemplate:^11.5" \
    "typo3/cms-viewpage:^11.5"
 
-As most installations use additional extensions this command might still create dependency errors. 
-E.g. during an upgrade from 10LTS to 11LTS there could be warning that the current dependency 
-`"helhum/typo3-console": "^6.7"` is only compatible with 10LTS, while the new version `^7.1.2` would support 11LTS. 
-For each of these extension dependency errors, just add the new version like 
-`"helhum/typo3-console:^7.1.2"` at the end of your :bash:`composer require` string and retry the command 
-until everything is resolved.
+A typical TYPO3 installation is likely to have multiple third party extensions installed and running the above command can create dependency errors.
+
+For example, when upgrading from TYPO3 v10 LTS to 11 LTS an error can occur stating that `"helhum/typo3-console": "^6.7"` is only compatible with 10 LTS, with the new version `^7.1.2` supporting TYPO3 v11 LTS.
+
+For each of these dependency errors, add the version requirement `"helhum/typo3-console:^7.1.2"` to the end of your :bash:`composer require` string and retry the command.
 
 Monitoring changes to TYPO3's core
 ----------------------------------
