@@ -9,7 +9,7 @@ Applying Core patches
 At some point you may be required to apply changes to TYPO3's core. For example
 you may be testing a colleague's feature or working on a patch of your own.
 
-**Never** change the code found in the Core directly. This includes all files in 
+**Never** change the code found in the Core directly. This includes all files in
 :file:`typo3/sysext` and :file:`vendor`.
 
 Any manual changes you make to TYPO3's Core will be overwritten as soon as the Core
@@ -49,8 +49,9 @@ within the section `extra`. If there is no section `extra` yet,
 add one.
 
 .. code-block:: json
-   :lineos: 5-9
    :caption: project_root/composer.json
+   :emphasize-lines: 5-9
+   :linenos:
 
    "extra": {
      "typo3/cms": {
