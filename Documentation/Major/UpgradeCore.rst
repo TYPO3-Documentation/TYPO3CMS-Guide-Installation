@@ -44,14 +44,22 @@ Assuming that the packages below are installed locally, the following example wo
 
 .. code::
 
-   $ composer require "typo3/cms-adminpanel:^11.5" "typo3/cms-backend:^11.5"
-   "typo3/cms-belog:^11.5" "typo3/cms-beuser:^11.5" "typo3/cms-core:^11.5" "typo3/cms-dashboard:^11.5"
-   "typo3/cms-felogin:^11.5" "typo3/cms-filelist:^11.5" "typo3/cms-filemetadata:^11.5"
-   "typo3/cms-fluid:^11.5" "typo3/cms-form:^11.5" "typo3/cms-frontend:^11.5" "typo3/cms-info:^11.5"
-   "typo3/cms-install:^11.5" "typo3/cms-linkvalidator:^11.5" "typo3/cms-lowlevel:^11.5"
-   "typo3/cms-recordlist:^11.5" "typo3/cms-recycler:^11.5" "typo3/cms-rte-ckeditor:^11.5"
-   "typo3/cms-setup:^11.5" "typo3/cms-t3editor:^11.5" "typo3/cms-tstemplate:^11.5" "typo3/cms-viewpage:^11.5"
+   $ composer require --update-with-all-dependencies "typo3/cms-adminpanel:^11.5" \
+   "typo3/cms-backend:^11.5" "typo3/cms-belog:^11.5" "typo3/cms-beuser:^11.5" \
+   "typo3/cms-core:^11.5" "typo3/cms-dashboard:^11.5" "typo3/cms-felogin:^11.5" \
+   "typo3/cms-filelist:^11.5" "typo3/cms-filemetadata:^11.5" "typo3/cms-fluid:^11.5" \
+   "typo3/cms-form:^11.5" "typo3/cms-frontend:^11.5" "typo3/cms-info:^11.5" \
+   "typo3/cms-install:^11.5" "typo3/cms-linkvalidator:^11.5" "typo3/cms-lowlevel:^11.5" \
+   "typo3/cms-recordlist:^11.5" "typo3/cms-recycler:^11.5" "typo3/cms-rte-ckeditor:^11.5" \
+   "typo3/cms-setup:^11.5" "typo3/cms-t3editor:^11.5" "typo3/cms-tstemplate:^11.5" \
+   "typo3/cms-viewpage:^11.5"
 
+As most installations use additional extensions this command might still create dependency errors. 
+E.g. during an upgrade from 10LTS to 11LTS there could be warning that the current dependency 
+`"helhum/typo3-console": "^6.7"` is only compatible with 10LTS, while the new version `^7.1.2` would support 11LTS. 
+For each of these extension dependency errors, just add the new version like 
+`"helhum/typo3-console:^7.1.2"` at the end of your :bash:`composer require` string and retry the command 
+until everything is resolved.
 
 Monitoring changes to TYPO3's core
 ----------------------------------
