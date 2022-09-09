@@ -44,14 +44,21 @@ Assuming that the packages below are installed locally, the following example wo
 
 .. code::
 
-   $ composer require "typo3/cms-adminpanel:^11.5" "typo3/cms-backend:^11.5"
-   "typo3/cms-belog:^11.5" "typo3/cms-beuser:^11.5" "typo3/cms-core:^11.5" "typo3/cms-dashboard:^11.5"
-   "typo3/cms-felogin:^11.5" "typo3/cms-filelist:^11.5" "typo3/cms-filemetadata:^11.5"
-   "typo3/cms-fluid:^11.5" "typo3/cms-form:^11.5" "typo3/cms-frontend:^11.5" "typo3/cms-info:^11.5"
-   "typo3/cms-install:^11.5" "typo3/cms-linkvalidator:^11.5" "typo3/cms-lowlevel:^11.5"
-   "typo3/cms-recordlist:^11.5" "typo3/cms-recycler:^11.5" "typo3/cms-rte-ckeditor:^11.5"
-   "typo3/cms-setup:^11.5" "typo3/cms-t3editor:^11.5" "typo3/cms-tstemplate:^11.5" "typo3/cms-viewpage:^11.5"
+   $ composer require --update-with-all-dependencies "typo3/cms-adminpanel:^11.5" \
+   "typo3/cms-backend:^11.5" "typo3/cms-belog:^11.5" "typo3/cms-beuser:^11.5" \
+   "typo3/cms-core:^11.5" "typo3/cms-dashboard:^11.5" "typo3/cms-felogin:^11.5" \
+   "typo3/cms-filelist:^11.5" "typo3/cms-filemetadata:^11.5" "typo3/cms-fluid:^11.5" \
+   "typo3/cms-form:^11.5" "typo3/cms-frontend:^11.5" "typo3/cms-info:^11.5" \
+   "typo3/cms-install:^11.5" "typo3/cms-linkvalidator:^11.5" "typo3/cms-lowlevel:^11.5" \
+   "typo3/cms-recordlist:^11.5" "typo3/cms-recycler:^11.5" "typo3/cms-rte-ckeditor:^11.5" \
+   "typo3/cms-setup:^11.5" "typo3/cms-t3editor:^11.5" "typo3/cms-tstemplate:^11.5" \
+   "typo3/cms-viewpage:^11.5"
 
+A typical TYPO3 installation is likely to have multiple third party extensions installed and running the above command can create dependency errors.
+
+For example, when upgrading from TYPO3 v10 LTS to 11 LTS an error can occur stating that `"helhum/typo3-console": "^6.7"` is only compatible with 10 LTS, with the new version `^7.1.2` supporting TYPO3 v11 LTS.
+
+For each of these dependency errors, add the version requirement `"helhum/typo3-console:^7.1.2"` to the end of your :bash:`composer require` string and retry the command.
 
 Monitoring changes to TYPO3's core
 ----------------------------------
