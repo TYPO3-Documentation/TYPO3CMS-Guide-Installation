@@ -115,15 +115,8 @@ You have to decide by yourself, which syntax fits best to your needs.
 .. _composer-migration-require-all:
 .. _composer-migration-require-subtree-packages:
 
-Install the core
+Install the Core
 ----------------
-
-.. hint::
-
-   Since version 9 TYPO3 must be installed using individual `typo3/cms-*` packages
-   (see "subtree split" for details). This means that you will only install the
-   system extensions you really need. This, among others, increases security. The
-   former `typo3/cms` package cannot be installed anymore.
 
 Install the system extensions:
 
