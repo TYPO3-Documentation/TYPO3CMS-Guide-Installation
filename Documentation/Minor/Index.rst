@@ -28,7 +28,7 @@ There are two ways to check if a minor update is available for an installation o
 
 All supported versions of TYPO3 and their version numbers are published on `get.typo3.org <https://get.typo3.org>`_.
 
-Alternatively, running `composer outdated "typo3/*"` will present a list of any packages that have updates.
+Alternatively, running `composer outdated -m "typo3/*"` will present a list of any packages that have minor updates.
 
 Execute the upgrade
 ===================
