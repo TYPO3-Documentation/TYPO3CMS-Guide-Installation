@@ -1,5 +1,4 @@
-.. include:: /Includes.rst.txt
-.. highlight:: bash
+..  include:: /Includes.rst.txt
 
 ==========
 Co-working
@@ -8,38 +7,38 @@ Co-working
 Add to version control system
 =============================
 
-If you use a version control system like Git, it's important to add
-both files, the :file:`composer.json` and :file:`composer.lock` (which
-automatically was created during the previous steps).
+If you use a version control system such as Git (and you really should!), it is
+important to add both files :file:`composer.json` and :file:`composer.lock`
+(which were created automatically during the previous steps). The
+:file:`composer.lock` file keeps track of the exact versions that are installed,
+so that you are on the same versions as your co-workers (and when deploying to
+the live system).
 
-On the other side, some files and folders, which are added by
-composer, should be excluded:
+On the other side, some files and folders added by Composer should be excluded:
 
--  :file:`public/index.php`
--  :file:`public/typo3/`
--  :file:`vendor/`
--  The extensions, you added via composer
+-   :file:`public/index.php`
+-   :file:`public/typo3/`
+-   :file:`public/typo3conf/ext/`
+-   :file:`vendor/`
 
 A :file:`.gitignore` file could look like this:
 
-.. code-block:: none
-   :caption: /.gitignore
+..  todo: Why should labels be versioned?
 
-   /var/*
-   !/var/labels
-   /vendor/*
-   /public/index.php
-   /public/typo3/*
-   /public/typo3conf/ext/*
-   # allow some extensions
-   !/public/typo3conf/ext/my_sitepackage/
-   !/public/typo3conf/ext/prefix_*
+..  code-block:: none
+    :caption: /.gitignore
+
+    /var/*
+    !/var/labels
+    /vendor/*
+    /public/index.php
+    /public/typo3/*
+    /public/typo3conf/ext/*
 
 Checkout from version control system
 ====================================
 
-All your co-workers should always run ``composer install`` after they
-checked out the files. This command will install the packages and
-versions, defined in :file:`composer.lock`. So you and your co-workers
-always can be sure to have installed the same versions of the TYPO3 core
-and the extensions.
+All your co-workers should always run :bash:`composer install` after they have
+checked out the files. This command will install the packages in the appropriate
+versions defined in :file:`composer.lock`. This way, you and your co-workers
+always have the same versions of the TYPO3 Core and the extensions installed.
