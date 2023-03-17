@@ -35,21 +35,6 @@ However, this may require extensions you don't need or omit extensions you do
 need, so be sure to update the required extensions as described in the next
 sections.
 
-If some of your extensions are not available on packagist, but are available in
-TER, you can add composer.typo3.org as repository:
-
-.. code-block:: json
-   :caption: /composer.json
-
-   {
-       "repositories": [
-           {
-               "type": "composer",
-               "url": "https://composer.typo3.org/"
-           }
-       ]
-   }
-
 The :file:`composer.json` in the Base distribution includes a scripts section:
 
 .. code-block:: json
@@ -80,6 +65,12 @@ for generating the file :file:`typo3conf/PackageStates.php`.
 
 Add all required packages to your project
 =========================================
+
+..  note::
+    Previously, the TYPO3 Composer repository was recommended to use for
+    extensions not available on Packagist. This Composer repository is
+    `deprecated <https://get.typo3.org/misc/composer/repository>`__ and should
+    no longer be used.
 
 You can add all your required packages with the Composer command `composer
 require`. The full syntax is:
@@ -172,23 +163,6 @@ key you can use to install this extension.
     The command `composer req` is short for `composer require`. Both commands
     exactly do the same and are interchangeable.
 
-Check in TER satis
-~~~~~~~~~~~~~~~~~~
-
-If you search the extension in https://composer.typo3.org/satis.html and it's linked to
-`packagist.org <https://packagist.org>`__, they are marked as "abandoned" and you
-will see a message, which Composer key should be used to install this extension.
-
-.. include:: /Images/ExternalScreenshots/SatisAbandoned.rst.txt
-
-See warning during `composer require` command
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-If you still install one of the abandoned extensions via its `typo3-ter` package key,
-you will also see a warning during the `composer require` command.
-
-.. include:: /Images/ExternalScreenshots/ComposerTerAbandoned.rst.txt
-
 Check manually
 ~~~~~~~~~~~~~~
 
@@ -224,37 +198,6 @@ To install the mask extension in version 4.1.\*, type:
 
    composer require mask/mask:~4.1.0
 
-Install extension from TER
---------------------------
-
-If the extension is not available on packagist, the good news is: All
-TER extensions are available via Composer! That's, why we added
-:samp:`https://composer.typo3.org/` as repository to our :file:`composer.json`
-some lines above. There are little naming conventions:
-
-*  Vendor name is `typo3-ter`.
-
-*  Underscores `_` are replaced by dash `-`.
-
-**Example:**
-
-The extension `any_fancy_extension`'s auto generated Composer package
-name would be `typo3-ter/any-fancy-extension`. To add this extension in
-version 1.2.\*, type:
-
-.. code-block:: shell
-   :caption: typo3_root$
-
-   composer require typo3-ter/any-fancy-extension:~1.2.0
-
-You can browse all available extensions and versions via
-https://composer.typo3.org/satis.html.
-
-.. note::
-
-    If you do not include any packages this way, you can remove the
-    repository block named :samp:`https://composer.typo3.org` from your
-    :file:`composer.json` to improve speed.
 
 Install extension from version control system (e.g. GitHub, Gitlab, ...)
 ------------------------------------------------------------------------
@@ -274,10 +217,6 @@ additional lines added to the :file:`composer.json` from above:
 
     {
         "repositories": [
-            {
-                "type": "composer",
-                "url": "https://composer.typo3.org/"
-            },
             {
                 "type": "vcs",
                 "url": "https://github.com/foo/bar.git"
@@ -310,7 +249,7 @@ additional lines added to the :file:`composer.json` from above:
 
 The Git repository must be a TYPO3 extension with a
 :file:`composer.json` itself. How this file should look in your extension,
-can be found on `composer.typo3.org <https://composer.typo3.org/>`__ or
+can be found on
 `this blog post from Helmut Hummel <https://insight.helhum.io/post/148886148725/composerjson-specification-for-typo3-extensions>`__.
 Please note, that Git tags are used as version numbers.
 
@@ -372,10 +311,6 @@ To complete our example :file:`composer.json`, it would look like this:
 
    {
        "repositories": [
-           {
-               "type": "composer",
-               "url": "https://composer.typo3.org/"
-           },
            {
                "type": "vcs",
                "url": "https://github.com/foo/bar.git"
