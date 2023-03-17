@@ -1,8 +1,8 @@
 ..  include:: /Includes.rst.txt
 
-==========
-Co-working
-==========
+===============
+Version control
+===============
 
 Add to version control system
 =============================
@@ -14,7 +14,7 @@ important to add both files :file:`composer.json` and :file:`composer.lock`
 so that you are on the same versions as your co-workers (and when deploying to
 the live system).
 
-On the other side, some files and folders added by Composer should be excluded:
+Additionally, some files and folders added by Composer should be excluded:
 
 -   :file:`public/index.php`
 -   :file:`public/typo3/`
