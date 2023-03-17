@@ -17,6 +17,14 @@ the live system).
 ..  seealso::
     `Commit your composer.lock file to version control <https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-lock-file-to-version-control>`__
 
+..  note::
+    It is always good practice to exclude passwords from checked-in files
+    (for example, :file:`config/system/settings.php`). A solution may be to add
+    the setting containing sensitive information to
+    :file:`config/system/additional.php` and use an :file:`.env` file in the
+    project directory to configure the password and other configuration along
+    with `helhum/dotenv-collector <https://github.com/helhum/dotenv-connector>`__.
+
 Additionally, some files and folders added by Composer should be excluded:
 
 -   :file:`public/index.php`
