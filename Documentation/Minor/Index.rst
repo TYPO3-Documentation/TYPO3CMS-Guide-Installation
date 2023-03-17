@@ -4,7 +4,7 @@
 
 ====================
 Patch/Bugfix upgrade
-=============
+====================
 
 What are patch/bugfix upgrades
 =======================
