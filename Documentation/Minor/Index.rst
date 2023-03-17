@@ -7,7 +7,7 @@ Patch/Bugfix upgrade
 ====================
 
 What are patch/bugfix upgrades
-=======================
+==============================
 
 Patch/Bugfix upgrades contain bugfixes and security updates. They never contain new features and do not break backwards compatibility.
 
