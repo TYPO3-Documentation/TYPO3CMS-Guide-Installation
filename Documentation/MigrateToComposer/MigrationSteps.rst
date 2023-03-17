@@ -66,6 +66,12 @@ for generating the file :file:`typo3conf/PackageStates.php`.
 Add all required packages to your project
 =========================================
 
+..  note::
+    Previously, the TYPO3 Composer repository was recommended to use for
+    extensions not available on Packagist. This Composer repository is
+    `deprecated <https://get.typo3.org/misc/composer/repository>`__ and should
+    no longer be used.
+
 You can add all your required packages with the Composer command `composer
 require`. The full syntax is:
 
