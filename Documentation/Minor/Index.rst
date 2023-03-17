@@ -2,16 +2,16 @@
 
 .. _minor:
 
-=============
-Minor upgrade
-=============
+====================
+Patch/Bugfix upgrade
+====================
 
-What are minor upgrades
-=======================
+What are patch/bugfix upgrades
+==============================
 
-Minor upgrades contain bugfixes and security updates. They never contain new features and do not break backwards compatibility.
+Patch/Bugfix upgrades contain bugfixes and security updates. They never contain new features and do not break backwards compatibility.
 
-For example, upgrading from TYPO3 version `11.5.2` to `11.5.3` is a minor upgrade.
+For example, upgrading from TYPO3 version `11.5.2` to `11.5.3` is a patch/bugfix upgrade.
 
 Before upgrading
 ================
@@ -19,16 +19,16 @@ Before upgrading
 The :ref:`pre-upgrade tasks <preupgradetasks>` chapter contains a list of tasks that should be actioned prior to upgrading
 to a major release.
 
-The only tasks that need to actioned for a minor upgrade are :ref:`making a backup <make_a_backup>` and :ref:`updating the reference index <update_reference_index>`.
+The only tasks that need to actioned for a patch/bugfix upgrade are :ref:`making a backup <make_a_backup>` and :ref:`updating the reference index <update_reference_index>`.
 
 Check if updates are available
 ===============================
 
-There are two ways to check if a minor update is available for an installation of TYPO3.
+There are two ways to check if a patch/bugfix update is available for an installation of TYPO3.
 
 All supported versions of TYPO3 and their version numbers are published on `get.typo3.org <https://get.typo3.org>`_.
 
-Alternatively, running `composer outdated -m "typo3/*"` will present a list of any TYPO3 packages that have minor updates.
+Alternatively, running `composer outdated -m "typo3/*"` will present a list of any TYPO3 packages that have patch/bugfix updates.
 
 Execute the upgrade
 ===================
