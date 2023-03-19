@@ -5,6 +5,14 @@
 Migration steps
 ===============
 
+..  note::
+    If you are not familiar with Composer, please read the following documents
+    first:
+
+    *   `Introduction to Composer <https://getcomposer.org/doc/00-intro.md>`__
+    *   `Basic usage of Composer <https://getcomposer.org/doc/01-basic-usage.md>`__
+
+
 Delete files
 ============
 
