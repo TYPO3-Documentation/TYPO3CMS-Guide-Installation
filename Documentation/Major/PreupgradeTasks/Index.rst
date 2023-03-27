@@ -65,4 +65,4 @@ Resolve Deprecations
 Convert Global Extensions
 =========================
 
-.. include:: Deprecations.rst.txt
+.. include:: ConvertGlobalExtensions.rst.txt
