@@ -1,39 +1,49 @@
-.. include:: /Includes.rst.txt
-.. highlight:: shell
+..  include:: /Includes.rst.txt
+..  highlight:: shell
 
-.. _reference-index:
+..  _reference-index:
+
+..  tip::
+    As the reference index might take some time, especially on instances not
+    running it regularly, an upgrade via
+    :ref:`command line (CLI) <t3coreapi:symfony-console-commands>` is
+    recommended to avoid a timeout.
 
 With command line (recommended)
 -------------------------------
 
-.. sidebar:: Why CLI?
+To run the reference index update, execute in the root folder of your project:
 
-   As the reference index might take quite long, especially on instances not
-   running it regularly, an update via CLI is recommended.
+..  tabs::
 
-In a composer installation execute:
+    ..  group-tab:: Composer-based installation
 
-.. code-block:: shell
+        ..  code-block:: bash
 
-   ./vendor/bin/typo3 referenceindex:update
+            vendor/bin/typo3 referenceindex:update
 
-In a non-composer installation execute:
+    ..  group-tab:: Legacy installation
 
-.. code-block:: shell
+        ..  code-block:: bash
 
-   php ./typo3/sysext/core/bin/typo3 referenceindex:update
+            typo3/sysext/core/bin/typo3 referenceindex:update
 
-.. tip::
 
-   Use `referenceindex:update 2> /dev/null` to suppress the progress output
-   (e.g. when the command is executed by a cronjob).
+..  tip::
+    Use :bash:`referenceindex:update 2> /dev/null` to suppress the progress
+    output, for example, if the command is executed by a cronjob.
 
 Without command line
 --------------------
 
-Still in your old TYPO3 version, go to the "System" > "DB check" module and use
-the "Check and update global reference index" function.
+Still in your old TYPO3 version, go to the
+:guilabel:`Admin Tools > System DB check` module and use the
+:guilabel:`Manage Reference Index` function.
 
-Click on "Update reference index" to update the reference index. In case there
-is a timeout and you do not have CLI access (see above) you might have to run
-the update multiple times.
+Click on :guilabel:`Update reference index` to update the reference index. In
+case there is a timeout, and you do not have CLI access (see above) you might
+have to run the update multiple times.
+
+..  note::
+    The :doc:`lowlevel system extension <ext_lowlevel:Index>` must be installed
+    for the mentioned backend module.
