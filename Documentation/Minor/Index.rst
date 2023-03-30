@@ -2,24 +2,24 @@
 
 .. _minor:
 
-====================
-Patch/Bugfix upgrade
-====================
+===================
+Patch/Bugfix update
+===================
 
-What are patch/bugfix upgrades
-==============================
+What are patch/bugfix updates
+=============================
 
-Patch/Bugfix upgrades contain bugfixes and security updates. They never contain new features and do not break backwards compatibility.
+Patch/Bugfix updates contain bugfixes and security updates. They never contain new features and do not break backwards compatibility.
 
-For example, upgrading from TYPO3 version `11.5.2` to `11.5.3` is a patch/bugfix upgrade.
+For example, updating from TYPO3 version `11.5.2` to `11.5.3` is a patch/bugfix update.
 
-Before upgrading
-================
+Before updating
+===============
 
 The :ref:`pre-upgrade tasks <preupgradetasks>` chapter contains a list of tasks that should be actioned prior to upgrading
 to a major release.
 
-The only tasks that need to actioned for a patch/bugfix upgrade are :ref:`making a backup <make_a_backup>` and :ref:`updating the reference index <update_reference_index>`.
+The only tasks that need to actioned for a patch/bugfix update are :ref:`making a backup <make_a_backup>` and :ref:`updating the reference index <update_reference_index>`.
 
 Check if updates are available
 ===============================
@@ -30,16 +30,16 @@ All supported versions of TYPO3 and their version numbers are published on `get.
 
 Alternatively, running `composer outdated -m "typo3/*"` will present a list of any TYPO3 packages that have patch/bugfix updates.
 
-Execute the upgrade
-===================
+Execute the update
+==================
 
-To execute the upgrade, run `composer update --with-all-dependencies "typo3/*"`.
+To execute the update, run `composer update --with-all-dependencies "typo3/*"`.
 
-This will upgrade all TYPO3 packages, the `--with-all-dependencies` signals that any dependencies of TYPO3 should also be upgraded.
+This will update all TYPO3 packages, the `--with-all-dependencies` signals that any dependencies of TYPO3 should also be updated.
 
-Post upgrade
-============
+Post update
+===========
 
-Once Composer has finished upgrading the installation of TYPO3, log in to the backend and clear all caches.
+Once Composer has finished updating the installation of TYPO3, log in to the backend and clear all caches.
 
 :guilabel:`Admin Tools > Maintenance > Flush TYPO3 and PHP Cache`

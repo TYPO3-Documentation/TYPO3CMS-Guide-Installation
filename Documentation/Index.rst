@@ -38,12 +38,12 @@ mode.
 
          .. rst-class:: card-header h3
 
-            .. rubric:: :ref:`Minor upgrades <Minor>`
+            .. rubric:: :ref:`Patch/bugfix updates <Minor>`
 
          .. container:: card-body
 
-            Minor updates contain bugfixes and/or security updates. This section details
-            how to install minor updates using Composer.
+            Patch/bugfix updates contain bugfixes and/or security updates. This section details
+            how to install them using Composer.
 
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
 
@@ -55,7 +55,7 @@ mode.
 
          .. container:: card-body
 
-            This chapter details how major updates are installed using Composer and
+            This chapter details how major upgrades are installed using Composer and
             highlights what tasks need to be carried out before and after the core is updated.
 
    .. container:: col-md-6 pl-0 pr-3 py-3 m-0
