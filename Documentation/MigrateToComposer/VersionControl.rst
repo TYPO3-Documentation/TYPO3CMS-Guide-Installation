@@ -44,7 +44,6 @@ A :file:`.gitignore` file could look like this:
     /vendor/*
     /public/index.php
     /public/typo3/*
-    /public/typo3conf/ext/*
 
 Checkout from version control system
 ====================================
