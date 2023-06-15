@@ -37,7 +37,7 @@ Without command line
 --------------------
 
 Still in your old TYPO3 version, go to the
-:guilabel:`Admin Tools > System DB check` module and use the
+:guilabel:`System > DB check` module and use the
 :guilabel:`Manage Reference Index` function.
 
 Click on :guilabel:`Update reference index` to update the reference index. In
