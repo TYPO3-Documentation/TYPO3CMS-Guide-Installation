@@ -15,6 +15,9 @@ The extension scanner will show the corresponding changelog which contains
 a description of how to migrate your code. See :ref:`check-the-changelog-and-news-md`
 for more information about the Changelogs and how to read them.
 
+In addition you can use the tool :ref:`typo3-rector` to automatically refactor the code for a lot of deprecations
+(https://github.com/sabbelasichon/typo3-rector)
+
 .. note::
 
    TYPO3 aims at providing a reliable backwards compatibility between versions:
