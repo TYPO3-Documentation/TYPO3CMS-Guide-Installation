@@ -52,11 +52,6 @@ After `composer create project ...` executed, you should have the following fold
 Point the document root of your web server to the `public` folder.
 
 
-Tutorial from the official TYPO3 YouTube channel
-================================================
-
-.. youtube:: M4imQOUKDe4
-
 Next Steps
 ==========
 
