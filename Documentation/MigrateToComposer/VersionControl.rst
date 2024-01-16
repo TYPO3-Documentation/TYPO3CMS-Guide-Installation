@@ -52,3 +52,26 @@ All your co-workers should always run :bash:`composer install` after they have
 checked out the files. This command will install the packages in the appropriate
 versions defined in :file:`composer.lock`. This way, you and your co-workers
 always have the same versions of the TYPO3 Core and the extensions installed.
+
+Maintaining versions / composer update
+======================================
+
+In a living project, from time to time you will want to raise the versions of
+the extensions or TYPO3 versions you use.
+
+The easiest way is to simply update all packages and dependencies to their
+most recent versions according to your :file:`composer.json` version constraints:
+
+.. code-block:: shell
+   :caption: typo3_root$
+
+   composer update
+
+After that command, you can commit the changed :file:`composer.lock` file to your
+git repository.
+
+You can also update single packages by specifying the package name after the
+:bash:`composer update ...` command.
+
+Platforms like GitHub or gitLab offer you ways of using i.e. `depandabot` to automatically
+suggest (and even commit) updates to your Composer dependencies.

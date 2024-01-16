@@ -12,4 +12,3 @@ Migrate a TYPO3 project to composer
    Requirements
    MigrationSteps
    VersionControl
-   BestPractices
