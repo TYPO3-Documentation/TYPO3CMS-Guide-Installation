@@ -92,7 +92,7 @@ which is the de-facto standard for any Composer package.
 Composer packages usually rely on a concept called `SemVer` (semantic
 versioning). This splits any version number into three parts:
 
-*  Major version (10.x.x)
+*  Major version (1.x.x)
 *  Minor version (x.1.x)
 *  patch-level (x.x.1)
 
