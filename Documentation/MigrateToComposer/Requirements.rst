@@ -125,7 +125,7 @@ Local development platforms like `DDEV <https://ddev.com/>`__, Docker or XAMPP/W
 allow you to easily test and maintain TYPO3 projects, based off these git, docker and
 composer concepts.
 
-Of course you can still perform the composer migration on your live site without
+Of course you can still perform the Composer migration on your live site without
 version control and without deployment, but during the migration your site will not be
 accessible, and if you face any problems, you may not be able to easily revert to the
 initial state.

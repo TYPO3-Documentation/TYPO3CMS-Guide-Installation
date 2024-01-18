@@ -127,10 +127,10 @@ In short:
 
 You have to decide by yourself, which syntax fits best to your needs.
 
-This applies to both the TYPO3 core packages as well as extension
+This applies to both the TYPO3 Core packages as well as extension
 packages, or even TYPO3-unrelated dependencies.
 
-As a first step, you should only pick the TYPO3 core extensions to
+As a first step, you should only pick the TYPO3 Core extensions to
 ensure your setup works, and only later add in third-party dependencies.
 
 .. _composer-migration-require-all:
@@ -170,10 +170,10 @@ e.g. :file:`typo3/cms-fluid-styled-content`.
     the composer command to require them.
 
 
-Install extensions from packagist
+Install extensions from Packagist
 ---------------------------------
 
-You already know the `TER <https://extensions.typo3.org>` and always used it to install extensions? Fine.
+You already know the `TYPO3 Extension Repository (TER) <https://extensions.typo3.org/>`__ and always used it to install extensions? Fine.
 But with Composer, the **required way** is to install extensions
 directly from `packagist.org <https://packagist.org>`__.
 
@@ -181,15 +181,15 @@ This is the usual way for most extensions used today. Alternatively, some extens
 authors or commercial providers offer a custom Composer repository that you can
 use (see below). The usage via :bash:`composer require` remains the same.
 
-To install any TYPO3 extension, you need need to know the package name. There are multiple ways to find it:
+To install any TYPO3 extension, you need to know the package name. There are multiple ways to find it:
 
 Notice on extension's TER page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Extension maintainers optionally can link their TYPO3 extension in TER with the
-correct Composer key on `packagist.org <https://packagist.org>`__. Most maintainers already did that and if you
+according Composer package name on `packagist.org <https://packagist.org>`__. Most maintainers already did that and if you
 search the extension in TER, you will see a message, which command and Composer
-key you can use to install this extension.
+package name you can use to install this extension.
 
 .. include:: /Images/ExternalScreenshots/TerComposerCommand.rst.txt
 
@@ -198,10 +198,10 @@ key you can use to install this extension.
     The command `composer req` is short for `composer require`. Both commands
     exactly do the same and are interchangeable.
 
-Search on packagist.org
+Search on Packagist
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-`packagist.org <https://packagist.org>`__ provides a flexible and quick search. Often you can simply
+`Packagist <https://packagist.org>`__ provides a flexible and quick search. Often you can
 search for the known TYPO3 extension key or name of the extension, and you will most likely
 find the package you are looking for.
 
@@ -307,7 +307,7 @@ Git tags of the repository will be used as version numbers.
 
 Apart from only adding a single Git repository, you can also add Composer repositories
 that aggregate multiple packages through tools like `Satis <https://github.com/composer/satis>`__,
-or also private packagist repositories.
+or also `Private Packagist <https://packagist.com/>`__ repositories.
 
 If you fulfill these requirements, you can add your extension in the
 same way like the other examples:
@@ -331,19 +331,19 @@ of the type `path`, so that you can require your sitepackage as if it was
 a normal package. You would not need to put it into a distinct Git or remote
 composer repository.
 
-Usually these extensions are saved in a directory like :file:`<root>/packages/`
-or :file:`<root>/extensions/` (and no longer in `typo3conf/ext/`), so you would use:
+Usually these extensions are saved in a directory like :file:`<project_root>/packages/`
+or :file:`<project_root>/extensions/` (and no longer in :file:`typo3conf/ext/`), so you would use:
 
 .. code-block:: shell
    :caption: typo3_root$
 
    composer config repositories.your-project-name path './packages/*'
-   composer require yourvendor/sitepackage
+   composer require myvendor/sitepackage
 
 This also means that your sitepackage needs to be contained in its own directory like
-:file:`<root>/packages/my_sitepackage/` and provide the right :file:`composer.json` file
+:file:`<project_root>/packages/my_sitepackage/` and provide the right :file:`composer.json` file
 within that directory. That :file:`composer.json` file would also list all the possible
-autoloading-Information of PHP classes that your sitepackage uses:
+autoloading information of PHP classes that your sitepackage uses:
 
 .. code-block:: json
    :caption: EXT:my_sitepackage/composer.json
@@ -351,7 +351,7 @@ autoloading-Information of PHP classes that your sitepackage uses:
    {
         "autoload": {
             "psr-4": {
-                "VendorName\\MySitepackage\\": "Classes/"
+                "MyVendor\\Sitepackage\\": "Classes/"
             }
         }
    }
@@ -375,14 +375,14 @@ manually or if Composer should search for them inside a folder:
 Directory locations are always relative to where the extension-specific :file:`composer.json` is
 stored.
 
-Do not mix up the root-level :file:`composer.json` file with this package-specific :file:`composer.json`
+Do not mix up the project-specific :file:`composer.json` file with this package-specific :file:`composer.json`
 file. Since autoloading information is specific to an extension, you usually do not list it in the
-root file.
+project file.
 
-Note if you do specify autoloading information in the root file, you need to specify the paths relative
+Note: if you specify autoloading information in the project file, you need to specify the paths relative
 to that location.
 
-To complete our example root :file:`composer.json`, it would look like this:
+To complete our example project's :file:`composer.json`, it would look like this:
 
 .. code-block:: json
    :caption: typo3_root/composer.json
@@ -405,8 +405,8 @@ To complete our example root :file:`composer.json`, it would look like this:
        }
    }
 
-After adding or changing paths to the autoload you should run :bash:`composer dumpautoload`. This command
-will re-generate the autoload info and should be run anytime you add new paths to the autoload portion
+After adding or changing paths in the autoload section you should run :bash:`composer dumpautoload`. This command
+will re-generate the autoload information and should be run anytime you add new paths to the autoload section
 in the :file:`composer.json`.
 
 After all custom extensions are moved away from :file:`typo3conf/ext/` you can remove the directory
@@ -420,8 +420,8 @@ As final steps, you should move some files because the location will have
 changed for your site since moving to Composer.
 
 Those directories are internal files that should not be exposed to the
-Webserver, so they are moved outside the :file:`public/` structure,
-in parallel to `vendor/`.
+webserver, so they are moved outside the :file:`public/` structure,
+in parallel to :file:`vendor/`.
 
 You should at least move the site configuration and the translations.
 
