@@ -48,7 +48,7 @@ repository.
 Configure Composer
 ==================
 
-Create a file with name `composer.json <https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ExtensionArchitecture/FileStructure/ComposerJson.html>`__
+Create a file with name :ref:`composer.json <t3coreapi:files-composer-json>`
 in your project root, not inside your web root.
 
 You can use the :file:`composer.json` from typo3/cms-base-distribution as an
@@ -72,7 +72,8 @@ help you to easily initialize this most vital file of a Composer project.
    also would need to be required as a package in your newly created :file:`composer.json`.
    This is optional.
 
-   You can look at previous versions of the `Base-Distribution composer.json <https://github.com/typo3/TYPO3.CMS.BaseDistribution/tree/12.x/composer.json>`__,
+   You can look at previous versions of the
+   `Base-Distribution composer.json <https://github.com/typo3/TYPO3.CMS.BaseDistribution/tree/12.x/composer.json>`__,
    for differences between the TYPO3 versions.
 
 
@@ -186,7 +187,7 @@ Install extensions from Packagist
 
 You already know the `TYPO3 Extension Repository (TER) <https://extensions.typo3.org/>`__ and always used it to install extensions? Fine.
 But with Composer, the **required way** is to install extensions
-directly from `packagist.org <https://packagist.org>`__.
+directly from `Packagist <https://packagist.org>`__.
 
 This is the usual way for most extensions used today. Alternatively, some extension
 authors or commercial providers offer a custom Composer repository that you can
@@ -198,7 +199,7 @@ Notice on extension's TER page
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Extension maintainers optionally can link their TYPO3 extension in TER with the
-according Composer package name on `packagist.org <https://packagist.org>`__. Most maintainers already did that and if you
+according Composer package name on `Packagist <https://packagist.org>`__. Most maintainers already did that and if you
 search the extension in TER, you will see a message, which command and Composer
 package name you can use to install this extension.
 
@@ -239,7 +240,7 @@ does not provide additional information.
    .. include:: /Images/ExternalScreenshots/GithubComposerName.rst.txt
 
 #. Check, if the package can be found on
-   `packagist.org <https://packagist.org>`__.
+   `Packagist <https://packagist.org>`__.
 
    .. include:: /Images/ExternalScreenshots/PackagistMask.rst.txt
 
@@ -256,7 +257,7 @@ Install extension from version control system (e.g. GitHub, Gitlab, ...)
 ------------------------------------------------------------------------
 
 In some cases, you will have to install a TYPO3 extension, which is not
-available on packagist.org or in the TER. Examples could be:
+available on Packagist or in the TER. Examples could be:
 
 *  non-public extension only used by your company.
 *  you forked and modified an existing extension.
@@ -311,8 +312,7 @@ utilize the Composer command to manipulate the file, like this:
 The Git repository must point to a TYPO3 extension that provides a
 :file:`composer.json` itself.
 
-See `TYPO3 Explained Extension development <https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitecture/FileStructure/ComposerJson.html>`__
-for details on how these files should look like.
+See :ref:`t3coreapi:files-composer-json` for details on how these files should look like.
 
 Git tags of the repository will be used as version numbers.
 
@@ -333,7 +333,7 @@ same way like the other examples:
 Include individual extensions like site packages
 ================================================
 
-A project will often contain custom extensions, and at the least a `sitepackage <https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/>`__
+A project will often contain custom extensions, and at the least a :ref:`sitepackage <t3sitepackage:start>`
 that provides the TYPO3-related project templates and configuration.
 
 Previously, this was stored in a directory like :file:`typo3conf/ext/my_sitepackage`.

@@ -114,7 +114,7 @@ not yet use Git versioning, this is a good time to learn about version control f
 
 All operations should ideally take place in a separate branch of your Git repository.
 Only when everything is completed you should move your project files to your
-staging/production instance (usually via `deployment <https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/DeployTYPO3.html>`__,
+staging/production instance (usually via :ref:`deployment <t3start:deploytypo3>`,
 or via direct file upload to your site). If you do not yet use deployment techniques, this is
 a good time to learn about that.
 
@@ -122,7 +122,8 @@ Composer goes hand in hand with a good version control setup and a deployment wo
 The initial effort to learn about all of this is well worth your time, it will
 make any project much smoother and more maintainable.
 
-Local development platforms like `DDEV <https://ddev.com/>`__, Docker or XAMPP/WAMPP/MAMPP
+Local development platforms like `DDEV <https://ddev.com/>`__, `Docker <https://docker.com>`__
+or `XAMPP/WAMPP/MAMPP <https://geekflare.com/lamp-lemp-mean-xampp-stack-intro/>`__
 allow you to easily test and maintain TYPO3 projects, based on these git, docker and
 composer concepts.
 
