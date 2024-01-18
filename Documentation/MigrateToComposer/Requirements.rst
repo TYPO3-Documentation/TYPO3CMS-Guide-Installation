@@ -51,13 +51,13 @@ tutorials with different names for your web root folder (e.g. :file:`www/`,
 The truth is: the name does not matter because we can configure it in the
 settings in a later step. We will use :file:`public/` in our example.
 
-**Also bad:**
+**Bad:**
 
 ..  code-block:: none
     :caption: Page tree of directory typo3_root
 
     $ tree typo3_root
-    └── cms/
+    └── cms/ (web root)
         └── public/
             ├── index.php
             ├── fileadmin/
@@ -90,7 +90,7 @@ resolving issues within the TYPO3 backend.
 If you do not have such a web root directory, you will have to refactor your
 project before proceeding. First, you create the new directory :file:`public` and
 basically move everything you have inside that subdirectory. Then check all
-of your custom code for path references that need to be adjusted to contain
+of your custom code for path references that need to be adjusted to add
 the extra :file:`public/` part inside of it. Usually, HTTP(S) links are relative
 to your root, so only absolute path references may need to be changed (e.g. cronjobs,
 CLI references, configuration files, :file:`.gitignore`, ...).
@@ -100,8 +100,8 @@ server about the changed web root folder if necessary. You do that by changing a
 `DocumentRoot` (Apache) or `root` (Nginx) configuration option. Most hosting
 providers offer a user interface to change the base directory of your project.
 
-Also for local development with DDEV or Docker you will need to adjust the
-corresponding configuration files.
+For local development with `DDEV <https://ddev.com>`__ or `Docker <https://docker.com>`
+you will also need to adjust the corresponding configuration files.
 
 Git version control, local development and deployment
 =====================================================
@@ -114,15 +114,16 @@ not yet use Git versioning, this is a good time to learn about version control f
 
 All operations should ideally take place in a separate branch of your Git repository.
 Only when everything is completed you should move your project files to your
-staging/production instance (usually via deployment, or via direct file upload to your
-site). If you do not yet use deployment, this is a good time to learn about that, too.
+staging/production instance (usually via `deployment <https://docs.typo3.org/m/typo3/tutorial-getting-started/main/en-us/Installation/DeployTYPO3.html>`__,
+or via direct file upload to your site). If you do not yet use deployment techniques, this is
+a good time to learn about that.
 
 Composer goes hand in hand with a good version control setup and a deployment workflow.
 The initial effort to learn about all of this is well worth your time, it will
 make any project much smoother and more maintainable.
 
 Local development platforms like `DDEV <https://ddev.com/>`__, Docker or XAMPP/WAMPP/MAMPP
-allow you to easily test and maintain TYPO3 projects, based off these git, docker and
+allow you to easily test and maintain TYPO3 projects, based on these git, docker and
 composer concepts.
 
 Of course you can still perform the Composer migration on your live site without

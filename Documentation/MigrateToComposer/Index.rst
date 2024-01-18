@@ -3,7 +3,7 @@
 .. _migratetocomposer:
 
 ===================================
-Migrate a TYPO3 project to composer
+Migrate a TYPO3 project to Composer
 ===================================
 
 .. toctree::

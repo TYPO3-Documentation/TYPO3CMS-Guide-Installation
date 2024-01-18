@@ -59,19 +59,34 @@ Maintaining versions / composer update
 In a living project, from time to time you will want to raise the versions of
 the extensions or TYPO3 versions you use.
 
-The easiest way is to simply update all packages and dependencies to their
-most recent versions according to your :file:`composer.json` version constraints:
+The proper way to do this is to update each package one by one (or at least
+grouped with explicit names, if some packages belong together):
 
 .. code-block:: shell
    :caption: typo3_root$
 
-   composer update
+   composer update georgringer/news helhum/typo3-console
 
-After that command, you can commit the changed :file:`composer.lock` file to your
-git repository.
+You can also raise the requirements on certain extensions if you want to
+include a new major release:
 
-You can also update single packages by specifying the package name after the
-:bash:`composer update ...` command.
+.. code-block:: shell
+   :caption: typo3_root$
 
-Platforms like GitHub or gitLab offer you ways of using i.e. `depandabot` to automatically
-suggest (and even commit) updates to your Composer dependencies.
+   composer require someVendor/someExtension:^3.0
+
+For details on upgrading the TYPO3 core to a new major version, please see
+:ref:`upgradecore`.
+
+While it can be tempting to just edit the :file:`composer.json` file manually,
+you should ideally use the proper :bash:`composer` commands to not introduce
+formatting errors or an invalid configuration.
+
+If you have regular maintenance automation (e.g. via `Dependabot <https://github.com/dependabot>`__),
+and your dependencies are locked to minor and patch-level releases, you could
+also use the :bash:`composer update` command, which would update all involved
+packages to their maximum allowed versions.
+
+After any update, you should commit the updated :file:`composer.lock` file to your
+git repository. Ideally, you add a commit message which :bash:`composer` command(s) you
+specifically executed.

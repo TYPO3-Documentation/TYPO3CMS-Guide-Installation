@@ -12,8 +12,25 @@ Migration steps
     *   `Introduction to Composer <https://getcomposer.org/doc/00-intro.md>`__
     *   `Basic usage of Composer <https://getcomposer.org/doc/01-basic-usage.md>`__
 
+
+It is recommended to perform a Composer migration using the latest TYPO3 Major release to prevent
+facing bugs and issues that have been solved already in newer versions. In case you
+are using an older TYPO3 version in Legacy installation mode, you have two viable options:
+
+*   **Upgrade TYPO3 Legacy first**, then do the migration to Composer. This is probably
+    easiest, as you can follow the :ref:`Legacy Upgrade guide <legacy>`, and then this guide.
+*   **Migrate old TYPO3 version to Composer first**, then perform the :ref:`Major Upgrade <major>`.
+    This might cause some friction, because you have to utilize older versions of
+    `typo3/cms-composer-installers` and dependencies like `helhum/typo3-console` or outdated
+    extensions on Packagist.
+    You will also need to inspect older versions of this Guide that matches your old TYPO3
+    version, using the version selector of the documentation.
+
+
 Delete files
 ============
+
+.. include:: Backup.rst.txt
 
 Yes, that's true. You have to delete some files, because they will be created by
 Composer in some of the next steps.
@@ -28,11 +45,11 @@ Please keep only your sitepackage extension or any other extension, which was
 explicitly built for your current project and does not have an own Git
 repository.
 
-Configure composer
+Configure Composer
 ==================
 
-Create a file with name :file:`composer.json` in your project root, not inside
-your web root.
+Create a file with name `composer.json <https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ExtensionArchitecture/FileStructure/ComposerJson.html>`__
+in your project root, not inside your web root.
 
 You can use the :file:`composer.json` from typo3/cms-base-distribution as an
 example. Use the file from the branch which matches your current version, for
@@ -49,27 +66,20 @@ help you to easily initialize this most vital file of a Composer project.
 
 .. hint::
 
-   Versions prior to TYPO3 v12 may reference a `scripts` section that would make use of
+   If you see versions of the :file:`composer.json` for versions older than TYPO3 v12,
+   you may see references to a `scripts` section that would make use of
    `helhum/typo3-console <https://packagist.org/packages/helhum/typo3-console>`__, and which
    also would need to be required as a package in your newly created :file:`composer.json`.
+   This is optional.
 
-   You can look at previous versions of the :file:`composer.json` in the mentioned repository,
-   if you want to migrate an older TYPO3 version to Composer.
-
-   It is recommended to perform a Composer migration with the latest TYPO3 release to prevent
-   facing issues that have been solved already in newer versions.
+   You can look at previous versions of the `Base-Distribution composer.json <https://github.com/typo3/TYPO3.CMS.BaseDistribution/tree/12.x/composer.json>`__,
+   for differences between the TYPO3 versions.
 
 
 Add all required packages to your project
 =========================================
 
-..  note::
-    Previously, the TYPO3 Composer repository was recommended to use for
-    extensions not available on `Packagist <https://packagist.org>`__. This Composer repository is
-    `deprecated <https://get.typo3.org/misc/composer/repository>`__ and should
-    no longer be used.
-
-You can add all your required packages with the Composer command `composer
+You can add all your required packages with the Composer command :bash:`composer
 require`. The full syntax is:
 
 .. code-block:: shell
@@ -89,7 +99,7 @@ This will utilize the `Packagist <https://packagist.org>`__ repository by defaul
 which is the de-facto standard for any Composer package.
 
 
-Composer packages usually rely on a concept called `SemVer` (semantic
+Composer packages usually rely on a concept called `SemVer <https://semver.org/` (semantic
 versioning). This splits any version number into three parts:
 
 *  Major version (1.x.x)
@@ -110,19 +120,19 @@ allow you to continuously update involved packages with an expected outcome
 
 There are different ways to define the version of the package you want
 to install. The most common syntaxes start with `^` (e.g.
-`^9.5`) or with `~` (e.g. `~9.5.0`). A full documentation can be
+`^12.4`) or with `~` (e.g. `~12.4.0`). A full documentation can be
 found at https://getcomposer.org/doc/articles/versions.md
 
 In short:
 
-*  `^9.5` or `^9.5.0` tells Composer to add newest package of
-   version `9.\*` with at least `9.5.0`. When a package releases
-   version `9.9.5`, you would receive that version. A version
-   `10.0.1` would not be fetched. So this allows any new
+*  `^12.4` or `^12.4.0` tells Composer to add newest package of
+   version `12.\*` with at least `12.4.0`. When a package releases
+   version `12.9.5`, you would receive that version. A version
+   `13.0.1` would not be fetched. So this allows any new
    minor or patch-level version, but no new major version.
 
-*  `~9.5.0` tells `composer` to add the newest package of version
-   `9.5.\*` with at least `9.5.0`, but not version `9.6.0` or `10.0.1`.
+*  `~12.4.0` tells Composer to add the newest package of version
+   `12.4.\*` with at least `12.4.0`, but not version `12.5.0` or `13.0.1`.
    This would only fetch newer patch-level versions of a package.
 
 You have to decide by yourself, which syntax fits best to your needs.
@@ -131,7 +141,7 @@ This applies to both the TYPO3 Core packages as well as extension
 packages, or even TYPO3-unrelated dependencies.
 
 As a first step, you should only pick the TYPO3 Core extensions to
-ensure your setup works, and only later add in third-party dependencies.
+ensure your setup works, and only later add third-party dependencies.
 
 .. _composer-migration-require-all:
 .. _composer-migration-require-subtree-packages:
@@ -145,8 +155,8 @@ install the system extensions:
 .. code-block:: shell
    :caption: typo3_root$
 
-   composer require typo3/minimal:^12
-   composer require typo3/cms-scheduler:^12
+   composer require typo3/minimal:^12.4
+   composer require typo3/cms-scheduler:^12.4
    composer require ...
 
 Or in one line:
@@ -154,20 +164,21 @@ Or in one line:
 .. code-block:: shell
    :caption: typo3_root$
 
-   composer require typo3/minimal:^12 typo3/cms-scheduler:^12 ...
+   composer require typo3/minimal:^12.4 typo3/cms-scheduler:^12.4 ...
 
 To find the correct package names, you can either take a look in the
 :file:`composer.json` of the related system extension or follow the naming
 convention
 :file:`typo3/cms-<extension name with dash "-" instead of underscore "_">`,
-e.g. :file:`typo3/cms-fluid-styled-content`.
+e.g. :file:`typo3/cms-fluid-styled-content`. You can also go to `Packagist <https://packagist.org/>`__
+and search for `typo3/cms-` to see all listed packages.
 
 .. note::
 
     To find out all TYPO3 Core packages, you can visit the TYPO3 Composer Helper website.
     https://get.typo3.org/misc/composer/helper
     From this website, you can select TYPO3 Core Packages you need and generate
-    the composer command to require them.
+    the Composer command to require them.
 
 
 Install extensions from Packagist
@@ -195,7 +206,7 @@ package name you can use to install this extension.
 
 .. note::
 
-    The command `composer req` is short for `composer require`. Both commands
+    The command :bash:`composer req` is short for :bash:`composer require`. Both commands
     exactly do the same and are interchangeable.
 
 Search on Packagist
@@ -274,7 +285,7 @@ additional lines added to the :file:`composer.json` from above:
 
 .. note::
    `cms-package-dir` `is no longer supported <https://github.com/TYPO3/CmsComposerInstallers/issues/75#issuecomment-674998506>`__
-   since subtree split. You will sometimes see composer.json files with this:
+   since subtree split. You will sometimes see :file:`composer.json` files with this:
 
    .. code-block:: json
       :caption: /composer.json
@@ -322,14 +333,14 @@ same way like the other examples:
 Include individual extensions like site packages
 ================================================
 
-A project will often contain custom extensions, and at the least a `sitepackage`
+A project will often contain custom extensions, and at the least a `sitepackage <https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/>`__
 that provides the TYPO3-related project templates and configuration.
 
 Previously, this was stored in a directory like :file:`typo3conf/ext/my_sitepackage`.
 In Composer mode, you can easily add a custom repository within your project
 of the type `path`, so that you can require your sitepackage as if it was
 a normal package. You would not need to put it into a distinct Git or remote
-composer repository.
+Composer repository.
 
 Usually these extensions are saved in a directory like :file:`<project_root>/packages/`
 or :file:`<project_root>/extensions/` (and no longer in :file:`typo3conf/ext/`), so you would use:
@@ -353,22 +364,6 @@ autoloading information of PHP classes that your sitepackage uses:
             "psr-4": {
                 "MyVendor\\Sitepackage\\": "Classes/"
             }
-        }
-   }
-
-For extensions without PHP namespaces, this section has to look a bit
-differently. You can decide by yourself, if you want to list each PHP file
-manually or if Composer should search for them inside a folder:
-
-.. code-block:: json
-   :caption: EXT:my_sitepackage/composer.json
-
-   {
-        "autoload": {
-            "classmap": [
-                "pi1/",
-                "pi2/class.tx_myoldextension_pi2.php"
-            ]
         }
    }
 
@@ -410,8 +405,8 @@ will re-generate the autoload information and should be run anytime you add new 
 in the :file:`composer.json`.
 
 After all custom extensions are moved away from :file:`typo3conf/ext/` you can remove the directory
-from your project. You may also want to adapt your :file:`.gitignore` file remove pointers to that
-old directory.
+from your project. You may also want to adapt your :file:`.gitignore` file to remove any entries
+related to that old directory.
 
 New file locations
 ==================
@@ -419,8 +414,8 @@ New file locations
 As final steps, you should move some files because the location will have
 changed for your site since moving to Composer.
 
-Those directories are internal files that should not be exposed to the
-webserver, so they are moved outside the :file:`public/` structure,
+The files listed below are internal files that should not be exposed to
+the webserver, so they are moved outside the :file:`public/` structure,
 in parallel to :file:`vendor/`.
 
 You should at least move the site configuration and the translations.
@@ -444,23 +439,31 @@ Move files:
 These locations have changed, note that TYPO3 v12+ moved some more configuration
 files to a new directory than TYPO3 v11:
 
-+------------------------------------------------------+--------------------------------------+
-| Before                                               | After                                |
-+======================================================+======================================+
-| :file:`public/typo3conf/sites`                       | :file:`config/sites`                 |
-+------------------------------------------------------+--------------------------------------+
-| :file:`public/typo3temp/var`                         | :file:`var`                          |
-+------------------------------------------------------+--------------------------------------+
-| :file:`public/typo3conf/l10n`                        | :file:`var/labels`                   |
-+------------------------------------------------------+--------------------------------------+
-| :file:`public/typo3conf/LocalConfiguration.php`      | :file:`config/system/settings.php`   |
-+------------------------------------------------------+--------------------------------------+
-| :file:`public/typo3conf/AdditionalConfiguration.php` | :file:`config/system/additional.php` |
-+------------------------------------------------------+--------------------------------------+
-| :file:`public/typo3conf/PackageStates.php`           | removed                              |
-+------------------------------------------------------+--------------------------------------+
-| :file:`public/typo3conf/ext`                         | removed                              |
-+------------------------------------------------------+--------------------------------------+
++------------------------------------------------------+-----------------------------------------------------------------+
+| Before                                               | After                                                           |
++======================================================+=================================================================+
+| :file:`public/typo3conf/sites`                       | :file:`config/sites`                                            |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3temp/var`                         | :file:`var`                                                     |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3conf/l10n`                        | :file:`var/labels`                                              |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3conf/LocalConfiguration.php`      | :file:`config/system/settings.php`                              |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3conf/AdditionalConfiguration.php` | :file:`config/system/additional.php`                            |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3conf/system/settings.php`         | :file:`config/system/settings.php`                              |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3conf/system/additional.php`       | :file:`config/system/additional.php`                            |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3`                                 | :file:`vendor/typo3/`                                           |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3conf/PackageStates.php`           | removed                                                         |
++------------------------------------------------------+-----------------------------------------------------------------+
+| :file:`public/typo3conf/ext`                         | removed (replaced by :file:`vendor` and e.g. :file:`packages`)  |
++------------------------------------------------------+-----------------------------------------------------------------+
+| N/A                                                  | :file:`public/_assets` (new)                                    |
++------------------------------------------------------+-----------------------------------------------------------------+
 
 Have a look at :ref:`t3coreapi:directory-structure` in "TYPO3 Explained". As
 developer, you should also be familiar with the
