@@ -88,5 +88,5 @@ also use the :bash:`composer update` command, which would update all involved
 packages to their maximum allowed versions.
 
 After any update, you should commit the updated :file:`composer.lock` file to your
-git repository. Ideally, you add a commit message which :bash:`composer` command(s) you
+Git repository. Ideally, you add a commit message which :bash:`composer` command(s) you
 specifically executed.
