@@ -151,7 +151,7 @@ Install the Core
 ----------------
 
 Once the :file:`composer.json` is updated accordingly, you can
-install the system extensions:
+install additional system extensions:
 
 .. code-block:: shell
    :caption: typo3_root$
