@@ -211,7 +211,7 @@ package name you can use to install this extension.
     exactly do the same and are interchangeable.
 
 Search on Packagist
-~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
 
 `Packagist <https://packagist.org>`__ provides a flexible and quick search. Often you can
 search for the known TYPO3 extension key or name of the extension, and you will most likely
