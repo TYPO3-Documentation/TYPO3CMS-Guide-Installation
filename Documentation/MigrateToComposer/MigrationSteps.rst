@@ -73,7 +73,7 @@ help you to easily initialize this most vital file of a Composer project.
    This is optional.
 
    You can look at previous versions of the
-   `Base-Distribution composer.json <https://github.com/typo3/TYPO3.CMS.BaseDistribution/tree/12.x/composer.json>`__,
+   `Base Distribution's composer.json <https://github.com/typo3/TYPO3.CMS.BaseDistribution/tree/12.x/composer.json>`__,
    for differences between the TYPO3 versions.
 
 
