@@ -75,7 +75,7 @@ include a new major release:
 
    composer require someVendor/someExtension:^3.0
 
-For details on upgrading the TYPO3 core to a new major version, please see
+For details on upgrading the TYPO3 Core to a new major version, please see
 :ref:`upgradecore`.
 
 While it can be tempting to just edit the :file:`composer.json` file manually,
