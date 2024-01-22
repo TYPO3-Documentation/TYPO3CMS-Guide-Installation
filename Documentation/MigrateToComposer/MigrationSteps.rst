@@ -13,7 +13,7 @@ Migration steps
     *   `Basic usage of Composer <https://getcomposer.org/doc/01-basic-usage.md>`__
 
 
-It is recommended to perform a Composer migration using the latest TYPO3 Major release to prevent
+It is recommended to perform a Composer migration using the latest TYPO3 major release to prevent
 facing bugs and issues that have been solved already in newer versions. In case you
 are using an older TYPO3 version in Legacy installation mode, you have two viable options:
 
