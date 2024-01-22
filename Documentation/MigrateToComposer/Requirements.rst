@@ -88,7 +88,7 @@ resolving issues within the TYPO3 backend.
 ..  todo: What does refactor concrete mean?
 
 If you do not have such a web root directory, you will have to refactor your
-project before proceeding. First, you create the new directory :file:`public` and
+project before proceeding. First, you create the new directory :file:`public/` and
 basically move everything you have inside that subdirectory. Then check all
 of your custom code for path references that need to be adjusted to add
 the extra :file:`public/` part inside of it. Usually, HTTP(S) links are relative
