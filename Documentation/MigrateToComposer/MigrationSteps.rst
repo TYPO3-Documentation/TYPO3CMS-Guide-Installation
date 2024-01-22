@@ -352,7 +352,7 @@ or :file:`<project_root>/extensions/` (and no longer in :file:`typo3conf/ext/`),
    composer require myvendor/sitepackage
 
 This also means that your sitepackage needs to be contained in its own directory like
-:file:`<project_root>/packages/my_sitepackage/` and provide the right :file:`composer.json` file
+:file:`<project_root>/packages/my_sitepackage/` and provide a :file:`composer.json` file
 within that directory. That :file:`composer.json` file would also list all the possible
 autoloading information of PHP classes that your sitepackage uses:
 
