@@ -51,7 +51,7 @@ Configure Composer
 Create a file with name :ref:`composer.json <t3coreapi:files-composer-json>`
 in your project root, not inside your web root.
 
-You can use the :file:`composer.json` from typo3/cms-base-distribution as an
+You can use the :file:`composer.json` from `typo3/cms-base-distribution` as an
 example. Use the file from the branch which matches your current version, for
 example `12.x <https://github.com/typo3/TYPO3.CMS.BaseDistribution/tree/12.x/composer.json>`__.
 
