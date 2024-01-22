@@ -348,7 +348,7 @@ or :file:`<project_root>/extensions/` (and no longer in :file:`typo3conf/ext/`),
 .. code-block:: shell
    :caption: typo3_root$
 
-   composer config repositories.your-project-name path './packages/*'
+   composer config repositories.local_packages path './packages/*'
    composer require myvendor/sitepackage
 
 This also means that your sitepackage needs to be contained in its own directory like
