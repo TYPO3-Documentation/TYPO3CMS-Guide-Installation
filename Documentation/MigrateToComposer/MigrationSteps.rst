@@ -60,7 +60,7 @@ need, so be sure to update the required extensions as described in the next
 sections.
 
 You can also create the :file:`composer.json` file via a :bash:`composer init` command.
-Or use the `TYPO3 Composer helper <https://get.typo3.org/misc/composer/helper>`__.
+Or use the `TYPO3 Composer Helper <https://get.typo3.org/misc/composer/helper>`__.
 Also advanced project builders like `CPS-IT project-builder <https://github.com/CPS-IT/project-builder>`__
 help you to easily initialize this most vital file of a Composer project.
 
