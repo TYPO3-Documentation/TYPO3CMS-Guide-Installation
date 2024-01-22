@@ -142,7 +142,7 @@ This applies to both the TYPO3 Core packages as well as extension
 packages, or even TYPO3-unrelated dependencies.
 
 As a first step, you should only pick the TYPO3 Core extensions to
-ensure your setup works, and only later add third-party dependencies.
+ensure your setup works, and add third-party dependencies later.
 
 .. _composer-migration-require-all:
 .. _composer-migration-require-subtree-packages:
