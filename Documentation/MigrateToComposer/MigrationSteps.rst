@@ -105,7 +105,7 @@ versioning). This splits any version number into three parts:
 
 *  Major version (1.x.x)
 *  Minor version (x.1.x)
-*  patch-level (x.x.1)
+*  Patch level (x.x.1)
 
 Only a major version should have intentional breaking changes (like new API,
 changed configuration directives, removed functionality).
