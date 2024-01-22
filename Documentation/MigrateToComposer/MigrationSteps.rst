@@ -36,7 +36,7 @@ Yes, that's true. You have to delete some files, because they will be created by
 Composer in some of the next steps.
 
 You have to delete :file:`public/index.php`, :file:`public/typo3/` and all the
-extensions inside :file:`public/typo3conf/ext/` you downloaded from TER or any
+extensions inside :file:`public/typo3conf/ext/` that you have downloaded from TER or any
 other resources like GitHub. You even have to delete your own extensions, if
 they are available in a separate Git repository and, for example, included as
 Git submodule.
