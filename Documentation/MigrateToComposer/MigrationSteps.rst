@@ -19,7 +19,7 @@ are using an older TYPO3 version in Legacy installation mode, you have two viabl
 
 *   **Upgrade TYPO3 Legacy first**, then do the migration to Composer. This is probably
     easiest, as you can follow the :ref:`Legacy Upgrade guide <legacy>`, and then this guide.
-*   **Migrate old TYPO3 version to Composer first**, then perform the :ref:`Major Upgrade <major>`.
+*   **Migrate old TYPO3 version to Composer first**, then perform the :ref:`major upgrade <major>`.
     This might cause some friction, because you have to utilize older versions of
     `typo3/cms-composer-installers` and dependencies like `helhum/typo3-console` or outdated
     extensions on Packagist.
