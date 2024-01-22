@@ -23,7 +23,7 @@ are using an older TYPO3 version in Legacy installation mode, you have two viabl
     This might cause some friction, because you have to utilize older versions of
     `typo3/cms-composer-installers` and dependencies like `helhum/typo3-console` or outdated
     extensions on Packagist.
-    You will also need to inspect older versions of this Guide that matches your old TYPO3
+    You will also need to inspect older versions of this guide that matches your old TYPO3
     version, using the version selector of the documentation.
 
 
