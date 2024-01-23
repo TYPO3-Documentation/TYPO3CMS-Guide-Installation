@@ -336,7 +336,7 @@ Include individual extensions like site packages
 A project will often contain custom extensions, and at the least a :ref:`sitepackage <t3sitepackage:start>`
 that provides the TYPO3-related project templates and configuration.
 
-Previously, this was stored in a directory like :file:`typo3conf/ext/my_sitepackage`.
+Before TYPO3 v12, this extensions were stored in a directory like :file:`typo3conf/ext/my_sitepackage`.
 In Composer mode, you can easily add a custom repository within your project
 of the type `path`, so that you can require your sitepackage as if it was
 a normal package. You would not need to put it into a distinct Git or remote
