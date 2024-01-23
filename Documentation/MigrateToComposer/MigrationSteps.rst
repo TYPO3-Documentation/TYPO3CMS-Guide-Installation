@@ -191,7 +191,7 @@ directly from `Packagist <https://packagist.org>`__.
 
 This is the usual way for most extensions used today. Alternatively, some extension
 authors or commercial providers offer a custom Composer repository that you can
-use (see below). The usage via :bash:`composer require` remains the same.
+use (:ref:`see below <composer-require-repository>`). The usage via :bash:`composer require` remains the same.
 
 To install any TYPO3 extension, you need to know the package name. There are multiple ways to find it:
 
@@ -252,6 +252,7 @@ To install the mask extension in version 4.1.\*, type:
 
    composer require mask/mask:~4.1.0
 
+.. _composer-require-repository:
 
 Install extension from version control system (e.g. GitHub, Gitlab, ...)
 ------------------------------------------------------------------------
@@ -264,7 +265,7 @@ available on Packagist or in the TER. Examples could be:
 *  commercial plugin / licensed download / Early Access (EAP)
 
 As first step, you have to define the repository in your
-:file:`composer.json`'s `repositories` section. In this example, you find the
+:file:`composer.json` section `repositories`. In this example, you find the
 additional lines added to the :file:`composer.json` from above:
 
 .. code-block:: json
@@ -283,23 +284,6 @@ additional lines added to the :file:`composer.json` from above:
             }
         }
     }
-
-.. note::
-   `cms-package-dir` `is no longer supported <https://github.com/TYPO3/CmsComposerInstallers/issues/75#issuecomment-674998506>`__
-   since subtree split. You will sometimes see :file:`composer.json` files with this:
-
-   .. code-block:: json
-      :caption: /composer.json
-
-      {
-         "extra": {
-            "typo3/cms": {
-               "cms-package-dir": "{$vendor-dir}/typo3/cms"
-            }
-         }
-      }
-
-   There is no harm in having that, but it won't have any effect.
 
 Ideally you should not manually edit a :file:`composer.json` file, but instead
 utilize the Composer command to manipulate the file, like this:
@@ -336,11 +320,11 @@ Include individual extensions like site packages
 A project will often contain custom extensions, and at the least a :ref:`sitepackage <t3sitepackage:start>`
 that provides the TYPO3-related project templates and configuration.
 
-Before TYPO3 v12, this extensions were stored in a directory like :file:`typo3conf/ext/my_sitepackage`.
+Before TYPO3 v12, these extensions were stored in a directory like :file:`typo3conf/ext/my_sitepackage`.
 In Composer mode, you can easily add a custom repository within your project
-of the type `path`, so that you can require your sitepackage as if it was
-a normal package. You would not need to put it into a distinct Git or remote
-Composer repository.
+of the type `path`. This allows you to require your sitepackage as if it was
+a normal package. By doing this, you do not need to publish your sitepackage to a repository like
+GitHub, or publish a package on Packagist.
 
 Usually these extensions are saved in a directory like :file:`<project_root>/packages/`
 or :file:`<project_root>/extensions/` (and no longer in :file:`typo3conf/ext/`), so you would use:
@@ -373,9 +357,6 @@ stored.
 Do not mix up the project-specific :file:`composer.json` file with this package-specific :file:`composer.json`
 file. Since autoloading information is specific to an extension, you usually do not list it in the
 project file.
-
-Note: if you specify autoloading information in the project file, you need to specify the paths relative
-to that location.
 
 To complete our example project's :file:`composer.json`, it would look like this:
 

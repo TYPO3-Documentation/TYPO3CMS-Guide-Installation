@@ -82,10 +82,11 @@ While it can be tempting to just edit the :file:`composer.json` file manually,
 you should ideally use the proper :bash:`composer` commands to not introduce
 formatting errors or an invalid configuration.
 
-If you have regular maintenance automation (e.g. via `Dependabot <https://github.com/dependabot>`__),
-and your dependencies are locked to minor and patch-level releases, you could
-also use the :bash:`composer update` command, which would update all involved
-packages to their maximum allowed versions.
+You should avoid running :bash:`composer update` without specifying package names
+explicitly. You can use regular maintenance automation (e.g. via
+`Dependabot <https://github.com/dependabot>`__) to regularly update dependencies
+to minor and patch-level releases, if your dependency specifications are set up
+like this.
 
 After any update, you should commit the updated :file:`composer.lock` file to your
 Git repository. Ideally, you add a commit message which :bash:`composer` command(s) you
