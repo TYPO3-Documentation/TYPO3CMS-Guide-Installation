@@ -18,7 +18,7 @@ facing bugs and issues that have been solved already in newer versions. In case 
 are using an older TYPO3 version in Legacy installation mode, you have two viable options:
 
 *   **Upgrade TYPO3 Legacy first**, then do the migration to Composer. This is probably
-    easiest, as you can follow the :ref:`Legacy Upgrade Guide <legacy>`, and then this guide.
+    more straight-forward, as you can follow the :ref:`Legacy Upgrade Guide <legacy>`, and then this guide.
 *   **Migrate old TYPO3 version to Composer first**, then perform the :ref:`major upgrade <major>`.
     This might cause some friction, because you have to utilize older versions of
     `typo3/cms-composer-installers` and dependencies like `helhum/typo3-console` or outdated
@@ -62,7 +62,8 @@ sections.
 You can also create the :file:`composer.json` file via a :bash:`composer init` command.
 Or use the `TYPO3 Composer Helper <https://get.typo3.org/misc/composer/helper>`__.
 Also advanced project builders like `CPS-IT project-builder <https://github.com/CPS-IT/project-builder>`__
-help you to easily initialize this most vital file of a Composer project.
+help you to initialize this most vital file of a Composer project with a
+guided approach.
 
 .. hint::
 
@@ -245,12 +246,12 @@ does not provide additional information.
    .. include:: /Images/ExternalScreenshots/PackagistMask.rst.txt
 
 **Example:**
-To install the mask extension in version 4.1.\*, type:
+To install the mask extension in version 8.3.\*, type:
 
 .. code-block:: shell
    :caption: typo3_root$
 
-   composer require mask/mask:~4.1.0
+   composer require mask/mask:~8.3.0
 
 .. _composer-require-repository:
 

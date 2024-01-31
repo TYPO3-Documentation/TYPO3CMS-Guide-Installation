@@ -83,7 +83,7 @@ you should ideally use the proper :bash:`composer` commands to not introduce
 formatting errors or an invalid configuration.
 
 You should avoid running :bash:`composer update` without specifying package names
-explicitly. You can use regular maintenance automation (e.g. via
+explicitly. You can use regular maintenance automation (for example via
 `Dependabot <https://github.com/dependabot>`__) to regularly update dependencies
 to minor and patch-level releases, if your dependency specifications are set up
 like this.
