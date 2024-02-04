@@ -20,5 +20,7 @@
 .settings
 .TemporaryItems
 .webprj
+composer.lock
 nbproject
+vendor
 Documentation-GENERATED-temp
