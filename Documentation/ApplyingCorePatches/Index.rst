@@ -104,6 +104,7 @@ Apply the patch by running the following command:
 If applying the patch fails, you may get a cryptic error message like:
 
 .. code-block:: none
+
    Example error message
 
    Could not apply patch! Skipping. The error was: Cannot apply patch patches/Bug-98106.diff
