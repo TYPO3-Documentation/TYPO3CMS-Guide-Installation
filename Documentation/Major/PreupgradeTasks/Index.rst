@@ -58,11 +58,3 @@ Resolve Deprecations
 ====================
 
 .. include:: Deprecations.rst.txt
-
-
-.. _convert_global_extensions:
-
-Convert Global Extensions
-=========================
-
-.. include:: ConvertGlobalExtensions.rst.txt
