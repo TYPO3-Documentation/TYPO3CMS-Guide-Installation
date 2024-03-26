@@ -30,7 +30,7 @@ are using an older TYPO3 version in Legacy installation mode, you have two viabl
 Delete files
 ============
 
-.. include:: Backup.rst.txt
+.. include:: /Major/PreupgradeTasks/Backup.rst.txt
 
 Yes, that's true. You have to delete some files, because they will be created by
 Composer in some of the next steps.
