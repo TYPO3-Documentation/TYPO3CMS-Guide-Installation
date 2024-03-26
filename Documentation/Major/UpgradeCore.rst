@@ -37,9 +37,15 @@ Given that a typical installation of TYPO3 will consist of a number of packages,
 it is recommended that the `Composer Helper Tool <https://get.typo3.org/go/composer-helper>`_
 be used to help generate the Composer upgrade command.
 
+..  note::
+    With TYPO3 v12 the `typo3/cms-recordlist` package was merged into `typo3/cms-backend`.
+    Therefore, remove the `typo3/cms-recordlist` from your composer.json before upgrading.
+
 Assuming that the packages below are installed locally, the following example would upgrade each of them to version `12.4`.
 
 .. code-block:: bash
+
+   composer remove "typo3/cms-recordlist"
 
    composer require --update-with-all-dependencies "typo3/cms-adminpanel:^12.4" \
    "typo3/cms-backend:^12.4" "typo3/cms-belog:^12.4" "typo3/cms-beuser:^12.4" \
@@ -47,9 +53,8 @@ Assuming that the packages below are installed locally, the following example wo
    "typo3/cms-filelist:^12.4" "typo3/cms-filemetadata:^12.4" "typo3/cms-fluid:^12.4" \
    "typo3/cms-form:^12.4" "typo3/cms-frontend:^12.4" "typo3/cms-info:^12.4" \
    "typo3/cms-install:^12.4" "typo3/cms-linkvalidator:^12.4" "typo3/cms-lowlevel:^12.4" \
-   "typo3/cms-recordlist:^12.4" "typo3/cms-recycler:^12.4" "typo3/cms-rte-ckeditor:^12.4" \
-   "typo3/cms-setup:^12.4" "typo3/cms-t3editor:^12.4" "typo3/cms-tstemplate:^12.4" \
-   "typo3/cms-viewpage:^12.4"
+   "typo3/cms-recycler:^12.4" "typo3/cms-rte-ckeditor:^12.4" "typo3/cms-setup:^12.4" \
+   "typo3/cms-t3editor:^12.4" "typo3/cms-tstemplate:^12.4" "typo3/cms-viewpage:^12.4"
 
 A typical TYPO3 installation is likely to have multiple third party extensions installed and running the above command can create dependency errors.
 
