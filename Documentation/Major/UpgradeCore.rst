@@ -45,12 +45,14 @@ be used to help generate the Composer upgrade command.
 
 ..  note::
     With TYPO3 v12 the `typo3/cms-recordlist` package was merged into
-    `typo3/cms-backend`. Therefore, remove the `typo3/cms-recordlist` from your
-    :file:`composer.json` file before upgrading:
+    `typo3/cms-backend`. With TYPO3 v13 the `typo3/cms-t3editor` package was
+    merged into `typo3/cms-backend`. Therefore, if you have one of them
+    installed, remove them in your :file:`composer.json` file before upgrading:
 
     ..  code-block:: bash
 
         composer remove "typo3/cms-recordlist"
+        composer remove "typo3/cms-t3editor"
 
 Assuming that the packages below are installed locally, the following example
 would upgrade each of them to version 12.4.
