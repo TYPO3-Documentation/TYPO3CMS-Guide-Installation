@@ -1,12 +1,12 @@
 .. include:: /Includes.rst.txt
 
-.. _index:
+.. _postupgradetasks:
 
 ==================
 Post-upgrade tasks
 ==================
 
-.. _postupgradetasks:
+.. _run_upgrade_wizard:
 
 Run the upgrade wizard
 ======================
