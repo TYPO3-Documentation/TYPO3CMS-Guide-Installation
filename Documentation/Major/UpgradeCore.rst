@@ -45,7 +45,7 @@ Assuming that the packages below are installed locally, the following example wo
 
 .. code-block:: bash
 
-   composer remove typo3/cms-recordlist
+   composer remove "typo3/cms-recordlist"
 
    composer require --update-with-all-dependencies "typo3/cms-adminpanel:^12.4" \
    "typo3/cms-backend:^12.4" "typo3/cms-belog:^12.4" "typo3/cms-beuser:^12.4" \
