@@ -6,46 +6,56 @@
 Upgrade the Core
 ================
 
-Upgrading to a major release using composer
+Upgrading to a major release using Composer
 ===========================================
 
-This example details how to upgrade from one LTS release to another. In this example,
-the installation is running TYPO3 version 11.5.34 and the new LTS release is
-version 12.4.10.
+This example details how to upgrade from one LTS release to another. In this
+example, the installation is running TYPO3 version 11.5.34 and the new LTS
+release is version 12.4.10.
 
 Check which TYPO3 packages are currently installed
 --------------------------------------------------
 
-TYPO3's Core contains a mix of required and optional packages. For example, `typo3/cms-backend`
-is a required package. `typo3/cms-sys-note` is not a required package and does not need to be installed
-for TYPO3 to work correctly.
+TYPO3's Core contains a mix of required and optional packages. For example,
+`typo3/cms-backend` is a required package. `typo3/cms-sys-note` is an optional
+package and does not need to be installed for TYPO3 to work correctly.
 
-Prior to upgrading, check which packages are currently installed and make a note of them.
+Prior to upgrading, check which packages are currently installed and make a note
+of them.
 
-Running `composer info "typo3/*"` will output a list of all TYPO3 packages that are currently installed.
+Running `composer info "typo3/*"` will output a list of all TYPO3 packages that
+are currently installed.
 
-Running Composer require
-------------------------
 
-To upgrade a Composer package, run `Composer require` with the package name and version number.
+Running `composer require`
+--------------------------
 
-For example, to upgrade `typo3/cms-backend` run `composer require typo3/cms-backend:~12.4`.
+To upgrade a Composer package, run `composer require` with the package name and
+version number.
 
-When upgrading to a new major release, each of TYPO3's packages will need to be upgraded.
+For example, to upgrade `typo3/cms-backend` run
+`composer require typo3/cms-backend:^12.4`.
+
+When upgrading to a new major release, each of TYPO3's packages will need to be
+upgraded.
 
 Given that a typical installation of TYPO3 will consist of a number of packages,
 it is recommended that the `Composer Helper Tool <https://get.typo3.org/go/composer-helper>`_
 be used to help generate the Composer upgrade command.
 
 ..  note::
-    With TYPO3 v12 the `typo3/cms-recordlist` package was merged into `typo3/cms-backend`.
-    Therefore, remove the `typo3/cms-recordlist` from your composer.json before upgrading.
+    With TYPO3 v12 the `typo3/cms-recordlist` package was merged into
+    `typo3/cms-backend`. Therefore, remove the `typo3/cms-recordlist` from your
+    :file:`composer.json` file before upgrading:
 
-Assuming that the packages below are installed locally, the following example would upgrade each of them to version `12.4`.
+    ..  code-block:: bash
+
+        composer remove "typo3/cms-recordlist"
+
+Assuming that the packages below are installed locally, the following example
+would upgrade each of them to version 12.4.
 
 .. code-block:: bash
-
-   composer remove "typo3/cms-recordlist"
 
    composer require --update-with-all-dependencies "typo3/cms-adminpanel:^12.4" \
    "typo3/cms-backend:^12.4" "typo3/cms-belog:^12.4" "typo3/cms-beuser:^12.4" \
@@ -56,20 +66,26 @@ Assuming that the packages below are installed locally, the following example wo
    "typo3/cms-recycler:^12.4" "typo3/cms-rte-ckeditor:^12.4" "typo3/cms-setup:^12.4" \
    "typo3/cms-t3editor:^12.4" "typo3/cms-tstemplate:^12.4" "typo3/cms-viewpage:^12.4"
 
-A typical TYPO3 installation is likely to have multiple third party extensions installed and running the above command can create dependency errors.
+A typical TYPO3 installation is likely to have multiple third-party extensions
+installed and running the above command can create dependency errors.
 
-For example, when upgrading from TYPO3 v11 LTS to 12 LTS an error can occur stating that `"helhum/typo3-console": "^6.7"` is only compatible with 10 LTS, with the new version `^8.1.0` supporting TYPO3 v12 LTS.
+For example, when upgrading from TYPO3 v11 LTS to v12 LTS an error can occur
+stating that `"helhum/typo3-console": "^7.1"` is only compatible with v11 LTS,
+with the new version `^8.1` supporting TYPO3 v12 LTS.
 
-For each of these dependency errors, add the version requirement `"helhum/typo3-console:^8.1"` to the end of your :bash:`composer require` string and retry the command.
+For each of these dependency errors, add the version requirement
+`"helhum/typo3-console:^8.1"` to the end of your :bash:`composer require` string
+and retry the command.
 
 Monitoring changes to TYPO3's Core
 ----------------------------------
 
 The system extensions that are developed and exist within TYPO3's Core
-are likely to change over time. Some extensions are merged into others, new system extensions
-are added and others abandoned.
-These changes are published :doc:`here <t3home:Home/SystemExtensions>` and can
-also be found by searching in the :doc:`breaking changes <ext_core:Index>`
+are likely to change over time. Some extensions are merged into others, new
+system extensions are added and others abandoned.
+These changes are published
+:doc:`in the system extensions chapter <t3home:Home/SystemExtensions>` and can
+also be found by searching in the :doc:`changelogs <ext_core:Index>`
 for the extension by its key name.
 
 
@@ -78,4 +94,5 @@ for the extension by its key name.
 Next steps
 ==========
 
-Once the upgrade is complete, there are a set of tasks that need to actioned to complete the process.
+Once the upgrade is complete, there are a set of tasks that need to actioned to
+complete the process. See :ref:`postupgradetasks`.
