@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _upgradecore:
+..  _upgradecore:
 
 ================
 Upgrade the Core
@@ -55,16 +55,16 @@ be used to help generate the Composer upgrade command.
 Assuming that the packages below are installed locally, the following example
 would upgrade each of them to version 12.4.
 
-.. code-block:: bash
+..  code-block:: bash
 
-   composer require --update-with-all-dependencies "typo3/cms-adminpanel:^12.4" \
-   "typo3/cms-backend:^12.4" "typo3/cms-belog:^12.4" "typo3/cms-beuser:^12.4" \
-   "typo3/cms-core:^12.4" "typo3/cms-dashboard:^12.4" "typo3/cms-felogin:^12.4" \
-   "typo3/cms-filelist:^12.4" "typo3/cms-filemetadata:^12.4" "typo3/cms-fluid:^12.4" \
-   "typo3/cms-form:^12.4" "typo3/cms-frontend:^12.4" "typo3/cms-info:^12.4" \
-   "typo3/cms-install:^12.4" "typo3/cms-linkvalidator:^12.4" "typo3/cms-lowlevel:^12.4" \
-   "typo3/cms-recycler:^12.4" "typo3/cms-rte-ckeditor:^12.4" "typo3/cms-setup:^12.4" \
-   "typo3/cms-t3editor:^12.4" "typo3/cms-tstemplate:^12.4" "typo3/cms-viewpage:^12.4"
+    composer require --update-with-all-dependencies "typo3/cms-adminpanel:^12.4" \
+    "typo3/cms-backend:^12.4" "typo3/cms-belog:^12.4" "typo3/cms-beuser:^12.4" \
+    "typo3/cms-core:^12.4" "typo3/cms-dashboard:^12.4" "typo3/cms-felogin:^12.4" \
+    "typo3/cms-filelist:^12.4" "typo3/cms-filemetadata:^12.4" "typo3/cms-fluid:^12.4" \
+    "typo3/cms-form:^12.4" "typo3/cms-frontend:^12.4" "typo3/cms-info:^12.4" \
+    "typo3/cms-install:^12.4" "typo3/cms-linkvalidator:^12.4" "typo3/cms-lowlevel:^12.4" \
+    "typo3/cms-recycler:^12.4" "typo3/cms-rte-ckeditor:^12.4" "typo3/cms-setup:^12.4" \
+    "typo3/cms-t3editor:^12.4" "typo3/cms-tstemplate:^12.4" "typo3/cms-viewpage:^12.4"
 
 A typical TYPO3 installation is likely to have multiple third-party extensions
 installed and running the above command can create dependency errors.
@@ -89,7 +89,7 @@ also be found by searching in the :doc:`changelogs <ext_core:Index>`
 for the extension by its key name.
 
 
-.. _install-next-step:
+..  _install-next-step:
 
 Next steps
 ==========
