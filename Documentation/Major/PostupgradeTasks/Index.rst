@@ -1,42 +1,42 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _postupgradetasks:
+..  _postupgradetasks:
 
 ==================
 Post-upgrade tasks
 ==================
 
-.. _run_upgrade_wizard:
+..  _run_upgrade_wizard:
 
 Run the upgrade wizard
 ======================
 
-.. include:: UpgradeWizard.rst.txt
+..  include:: UpgradeWizard.rst.txt
 
-.. _run_the_database_analyser:
+..  _run_the_database_analyser:
 
 Run the database analyser
 =========================
 
-.. include:: DatabaseAnalyser.rst.txt
+..  include:: DatabaseAnalyser.rst.txt
 
-.. _clear_user_settings:
+..  _clear_user_settings:
 
 Clear user settings
 ===================
 
-.. include:: UserSettings.rst.txt
+..  include:: UserSettings.rst.txt
 
-.. _post_upgrade_clear_caches:
+..  _post_upgrade_clear_caches:
 
 Clear caches
 ============
 
-.. include:: ClearCaches.rst.txt
+..  include:: ClearCaches.rst.txt
 
-.. _update_backend_translation:
+..  _update_backend_translation:
 
 Update backend translations
 ===========================
 
-.. include:: BackendTranslations.rst.txt
+..  include:: BackendTranslations.rst.txt
