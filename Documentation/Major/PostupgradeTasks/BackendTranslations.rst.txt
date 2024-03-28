@@ -1,6 +1,6 @@
-.. include:: /Includes.rst.txt
+..  include:: /Includes.rst.txt
 
-.. _update-translations:
+..  _update-translations:
 
 In the Install tool, go to the module "Maintenance" -> "Manage languages" and
 update your translations. If you don't update your translations, new texts will
@@ -8,4 +8,4 @@ only be displayed in English. Missing languages or translations can be added
 following the section
 :ref:`Internationalization and Localization <t3coreapi:internationalization>`.
 
-.. include:: /Images/AutomaticScreenshots/AdminTools/InstallLanguagePacks.rst.txt
+..  include:: /Images/AutomaticScreenshots/AdminTools/InstallLanguagePacks.rst.txt
