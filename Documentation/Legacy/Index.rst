@@ -91,7 +91,7 @@ Tool.
 What's the Next Step?
 =====================
 
-In case you performed a *minor update*, e.g. from TYPO3 9.5.0 to 9.5.1, database
+In case you performed a *minor update*, e.g. from TYPO3 12.4.0 to 12.4.1, database
 updates are usually *not* necessary, though you still have to
 :ref:`remove the temporary cache files <clear_caches>`. After
 that your update is finished.
@@ -102,7 +102,7 @@ that your update is finished.
    great care is taken to keep the minor updates as easy as possible, (especially
    when releasing security updates) more steps might be necessary.
 
-In case of a *major update*, e.g. from TYPO3 8.7 to 9.5, go ahead with the next
+In case of a *major update*, e.g. from TYPO3 11.5 to 12.4, go ahead with the next
 step!
 
 Also check out any breaking changes listed in the :doc:`changelog <ext_core:Index>`
