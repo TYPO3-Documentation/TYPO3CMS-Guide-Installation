@@ -10,7 +10,7 @@ Before starting the upgrade check your system for compatibility with a newer
 TYPO3 version.
 
 * Before you upgrade to the next major version, make sure you have run all
-  Upgrade Wizards of the the current TYPO3 major version.
+  Upgrade Wizards of the current TYPO3 major version.
 
 * Check for deprecations: Enable the deprecation log and let it log all
   deprecations for a while.
