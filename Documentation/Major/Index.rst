@@ -43,7 +43,7 @@ Major upgrade
             ..  container:: card-body
 
                 Once TYPO3's Core has been upgraded, there are a few tasks that need to be followed
-                up on to complete the process.
+                to complete the process.
 
 ..  toctree::
     :hidden:
