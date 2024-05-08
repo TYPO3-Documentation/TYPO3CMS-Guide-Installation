@@ -42,7 +42,8 @@ Major upgrade
 
             ..  container:: card-body
 
-                Once TYPO3's Core has been upgraded, there a few tasks that need to be actioned to complete the process.
+                Once TYPO3's Core has been upgraded, there are a few tasks that need to be followed
+                to complete the process.
 
 ..  toctree::
     :hidden:

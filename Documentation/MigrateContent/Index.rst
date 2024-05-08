@@ -185,7 +185,7 @@ ages of TYPO3. It is possible to export content from TYPO3 installations
 that are 15 and more years old into modern TYPO3 Installations.
 
 The following shows the export dialog of TYPO3 installation of version
-3.8.0. It is often more feasible to use the Import / Export tool then to
+3.8.0. It is often more feasible to use the Import / Export tool than to
 attempt to update very old TYPO3 installations.
 
 .. include:: /Images/ManualScreenshots/ImportExport/ImpExpV3.8.rst.txt
