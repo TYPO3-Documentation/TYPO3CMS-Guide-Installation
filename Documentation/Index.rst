@@ -152,4 +152,3 @@ mode.
    :hidden:
 
    Sitemap
-   genindex
