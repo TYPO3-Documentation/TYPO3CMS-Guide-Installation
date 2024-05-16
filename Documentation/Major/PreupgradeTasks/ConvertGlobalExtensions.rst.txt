@@ -15,8 +15,8 @@ To convert a global extension to a local one, do the following:
 *   Go to the :guilabel:`Admin Tools > Extensions` backend module.
 *   Uninstall the global extension.
 *   On a filesystem-level of the installation (for example, via SSH shell
-or S/FTP), delete the directory including files and subdirectories of the 
-corresponding extension directory in :file:`typo3/ext/`.
+    or S/FTP), delete the directory including files and subdirectories of the 
+    corresponding extension directory in :file:`typo3/ext/`.
 *   Reinstall the extension from the TYPO3 Extension Repository, which will put
     it into :file:`typo3conf/ext/`.
 
