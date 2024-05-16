@@ -1,7 +1,5 @@
 .. include:: /Includes.rst.txt
 
-.. _backup:
-
 Make a backup first! If things go wrong, you can at least go back to the old
 version. You need a backup of
 

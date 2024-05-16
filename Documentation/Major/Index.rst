@@ -48,6 +48,6 @@ Major upgrade
   :hidden:
   :titlesonly:
 
-  PreupgradeTasks/Index
-  UpgradeCore.rst
-  PostupgradeTasks/Index
+    PreupgradeTasks/Index
+    UpgradeCore
+    PostupgradeTasks/Index

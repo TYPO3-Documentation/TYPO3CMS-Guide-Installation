@@ -36,7 +36,7 @@ Via CLI command
 ----------------
 
 Exporting a TYPO3 page tree without php time limit is possible via
-:ref:`Symfony Console Commands (cli) <symfony-console-commands-cli>`.
+:ref:`Symfony Console Commands (cli) <t3coreapi:symfony-console-commands-cli>`.
 
 .. code-block:: bash
    :caption: Composer based installation
@@ -127,7 +127,7 @@ Via CLI command
 ----------------
 
 Importing a TYPO3 page tree without php time limit is possible via
-:ref:`Symfony Console Commands (cli) <symfony-console-commands-cli>`.
+:ref:`Symfony Console Commands (cli) <t3coreapi:symfony-console-commands-cli>`.
 
 .. code-block:: bash
    :caption: Composer based installation
