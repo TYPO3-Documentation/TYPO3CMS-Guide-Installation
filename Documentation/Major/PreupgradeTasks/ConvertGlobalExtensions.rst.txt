@@ -12,12 +12,13 @@ use local extensions below :file:`typo3conf/ext/`.
 
 To convert a global extension to a local one, do the following:
 
-* Go to the Extension Manager.
-* Uninstall the global extension.
-* Delete the files of the extension from :file:`typo3/ext/`, including
-  the directory of that extension itself.
-* Reinstall the extension from TER, which will put it into
-  :file:`typo3conf/ext/`.
+*   Go to the :guilabel:`Admin Tools > Extensions` backend module.
+*   Uninstall the global extension.
+*   On a filesystem-level of the installation (for example, via SSH shell
+or S/FTP), delete the directory including files and subdirectories of the 
+corresponding extension directory in :file:`typo3/ext/`.
+*   Reinstall the extension from the TYPO3 Extension Repository, which will put
+    it into :file:`typo3conf/ext/`.
 
 
 .. note::
