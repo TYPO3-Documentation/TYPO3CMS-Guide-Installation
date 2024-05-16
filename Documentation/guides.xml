@@ -10,6 +10,7 @@
                edit-on-github-branch="main"
                edit-on-github="TYPO3-Documentation/TYPO3CMS-Guide-Installation"
                typo3-core-preferred="main"
+               interlink-shortcode="t3upgrade"
     />
     <project title="TYPO3 Upgrade Guide"
              release="main (development)"
