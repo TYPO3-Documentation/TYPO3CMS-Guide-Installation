@@ -50,5 +50,5 @@ Major upgrade
     :titlesonly:
 
     PreupgradeTasks/Index
-    UpgradeCore.rst
+    UpgradeCore
     PostupgradeTasks/Index
