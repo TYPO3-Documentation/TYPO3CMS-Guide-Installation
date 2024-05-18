@@ -40,7 +40,7 @@ The TYPO3 extension was initially developed as
 `EXT:core-upgraderv2 <https://github.com/WapplerSystems/core_upgrader>` (Composer package
 `wapplersystems/core-upgrader`, compatible up to TYPO3 v12).
 
-The extension allows to perform multiple TYPO3 core version upgrades in one step by offering
+The extension allows to perform multiple TYPO3 Core version upgrades in one step by offering
 the older upgrade wizards.
 
 Another way to perform (and test/verify) upgrades of multiple TYPO3 versions in one go is outlined
