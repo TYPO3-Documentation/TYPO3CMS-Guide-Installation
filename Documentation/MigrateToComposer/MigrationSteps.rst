@@ -444,10 +444,14 @@ files to a new directory than TYPO3 v11:
 +------------------------------------------------------+-----------------------------------------------------------------+
 | :file:`public/typo3conf/ext`                         | removed (replaced by :file:`vendor` and e.g. :file:`packages`)  |
 +------------------------------------------------------+-----------------------------------------------------------------+
-| N/A                                                  | :file:`public/_assets` (new)                                    |
+| :file:`public/typo3conf/ext/.../Resources/Public`    | :file:`public/_assets` (new)                                    |
 +------------------------------------------------------+-----------------------------------------------------------------+
+
+The directory :file:`public/_assets/` and how to migrate public web assets from extensions or your
+:ref:`sitepackage <t3sitepackage:start>` is described in: :ref:`migrate-public-assets` .
 
 Have a look at :ref:`t3coreapi:directory-structure` in "TYPO3 Explained". As
 developer, you should also be familiar with the
 :ref:`Environment API <t3coreapi:Environment>`.
+
 
