@@ -1,6 +1,6 @@
 .. include:: /Includes.rst.txt
 
-.. todo: When PHP-based rendering is used, create a shorter custom page title
+:navigation-title: Migrating public web assets
 
 .. _migrate-public-assets:
 
@@ -47,7 +47,7 @@ migration steps:
     code for `typo3conf/ext/`). Ideally change code within Fluid or TypoScript, so
     that you can use a `EXT:my_extension/Resources/Public/...`
     reference. Those will automatically point to the right :file:`_assets` directory.
-    For example, the :html:`f:uri.resource` ViewHelper will help you with this, as
+    For example, the :fluid:`f:uri.resource` ViewHelper will help you with this, as
     well as the TypoScript :ref:`stdWrap insertData and data path <t3tsref:data-type-gettext-path>` or
     :ref:`typolink <t3tsref:typolink>` / :ref:`IMG_RESOURCE <t3tsref:cobj-img-resource>`
     functionality. Also, in most YAML definitions you can use
@@ -59,8 +59,8 @@ migration steps:
     to either utilize dynamic routes, middleware endpoints or static files/directories
     from custom directories in your project's public web path.
 *   References within the same extension should use relative links, for example use
-    :html:`background-image: url('../Images/logo.jpg')` instead of
-    :html:`background-image: url('/typo3conf/ext/my_extension/Resources/Public/Images/logo.jpg')`.
+    :css:`background-image: url('../Images/logo.jpg')` instead of
+    :css:`background-image: url('/typo3conf/ext/my_extension/Resources/Public/Images/logo.jpg')`.
 *   You can use TypoScript/PHP/Fluid as mentioned above to create variables with
     resolved asset URI locations. These variables can utilize the
     `EXT:my_extension/Resources/Public/...` notation, and can be passed along
@@ -72,7 +72,7 @@ migration steps:
     *   Create a central, sitepackage-like extension that can take care of delivering
         all assets. CSS classes could be defined that refer to assets, and then other
         extensions could use the CSS class, instead of utilizing
-        their own :html:`background-image: url(...)` directives. Ideally, use a bundler
+        their own :css:`background-image: url(...)` directives. Ideally, use a bundler
         for your CSS/JavaScript (for example Vite, webpack, grunt/gulp, encore, ...)
         so that you only have a single extension that is responsible for shared assets.
         Bundlers can also help you to have a central asset storage, and distribute
@@ -82,7 +82,7 @@ migration steps:
         resolved via the TYPO3 method
         :php:`PathUtility::getAbsoluteWebPath(GeneralUtility::getFileAbsFileName('EXT:my-extension/Resources/Public/logo.jpg')`.
     *   If all else fails: You can link to the full MD5 hashed URL, like
-        :html:`background-image: url('/_assets/9e592a1e5eec5752a1be78133e5e1a60/Images/logo.jpg')`
+        :css:`background-image: url('/_assets/9e592a1e5eec5752a1be78133e5e1a60/Images/logo.jpg')`
         (or create a custom stable symlink, for example within your deployment, that points
         to the hashed directory name).
         The caveat of this: the hashing method may change in future TYPO3 major versions,
