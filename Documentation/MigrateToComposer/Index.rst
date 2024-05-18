@@ -11,4 +11,5 @@ Migrate a TYPO3 project to Composer
 
    Requirements
    MigrationSteps
+   AssetMigration
    VersionControl
