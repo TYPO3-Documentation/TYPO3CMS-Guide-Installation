@@ -28,14 +28,14 @@ There are two ways to check if a patch/bugfix update is available for an install
 
 All supported versions of TYPO3 and their version numbers are published on `get.typo3.org <https://get.typo3.org>`_.
 
-Alternatively, running `composer outdated -m "typo3/*"` will present a list of any TYPO3 packages that have patch/bugfix updates.
+Alternatively, running  :bash:`composer outdated -m "typo3/*"` will present a list of any TYPO3 packages that have patch/bugfix updates.
 
 Execute the update
 ==================
 
-To execute the update, run `composer update --with-all-dependencies "typo3/*"`.
+To execute the update, run :bash:`composer update --with-all-dependencies "typo3/*"`.
 
-This will update all TYPO3 packages, the `--with-all-dependencies` signals that any dependencies of TYPO3 should also be updated.
+This will update all TYPO3 packages, the :bash:`--with-all-dependencies` signals that any dependencies of TYPO3 should also be updated.
 
 Post update
 ===========
