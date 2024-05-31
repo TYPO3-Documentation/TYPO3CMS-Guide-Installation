@@ -30,11 +30,11 @@ are currently installed.
 Running `composer require`
 --------------------------
 
-To upgrade a Composer package, run `composer require` with the package name and
+To upgrade a Composer package, run :bash:`composer require` with the package name and
 version number.
 
 For example, to upgrade `typo3/cms-backend` run
-`composer require typo3/cms-backend:^12.4`.
+:bash:`composer require typo3/cms-backend:^12.4`.
 
 When upgrading to a new major release, each of TYPO3's packages will need to be
 upgraded.
