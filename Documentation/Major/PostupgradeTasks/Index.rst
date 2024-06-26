@@ -14,7 +14,7 @@ Run the upgrade wizard
 ..  include:: UpgradeWizard.rst.txt
 
 ..  note:: 
-    There is an extension, :composer:`wapplersystems/core-upgrader`. It contains 
+    There is an extension :composer:`wapplersystems/core-upgrader`. It contains 
     upgrade wizards older than two TYPO3 versions. It can be used to migrate the
     data of installations that need to be upgraded more than two major versions at once.
 
