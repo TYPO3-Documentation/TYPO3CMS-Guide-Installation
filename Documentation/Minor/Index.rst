@@ -11,7 +11,7 @@ What are patch/bugfix updates
 
 Patch/Bugfix updates contain bugfixes and security updates. They never contain new features and do not break backwards compatibility.
 
-For example, updating from TYPO3 version `12.4.12` to `12.4.16` is a patch/bugfix update.
+For example, updating from TYPO3 version `11.5.2` to `11.5.3` is a patch/bugfix update.
 
 Before updating
 ===============
