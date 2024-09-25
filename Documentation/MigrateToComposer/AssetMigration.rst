@@ -92,7 +92,7 @@ migration steps:
         would then break frontend functionality.
 
 The `TYPO3-Console <https://packagist.org/packages/helhum/typo3-console>`__ extension has a helpful
-command :bash:`vendor/bin/typo3 frontend:asseturl` command, that lists all the installed TYPO3
+:bash:`vendor/bin/typo3 frontend:asseturl` command, that lists all the installed TYPO3
 extensions plus their public resource directory hash.
 
 For more details and the background about the change, read more:
