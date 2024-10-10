@@ -57,12 +57,17 @@ add one.
      "typo3/cms": {
        "web-dir": "public"
      },
+     "composer-exit-on-patch-failure": true,
      "patches": {
        "typo3/cms-core": {
          "Bug #98106 fix something":"patches/Bug-98106.diff"
        }
      }
    }
+
+.. note::
+   Use :bash:`composer-exit-on-patch-failure` to exit the running process on patch failures.
+   Otherwise, you may not notice the error.
 
 The patch itself looks like this:
 
